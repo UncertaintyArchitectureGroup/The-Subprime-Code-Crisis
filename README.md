@@ -4,7 +4,7 @@
 ### How AI Code Assistants, "Placebo Analytics" and Default Market Strategy Are Engineering a Collapse
 
 
->> **Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+>**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 ---
 
 ## ⚡ Executive Summary

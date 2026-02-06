@@ -1,6 +1,6 @@
 # 🛡️ Defense Protocols: Information Defense
 
-> > **Navigation:** [🏠 Home](../README.md) | [📉 The Report](../report/01_the_illusion.md) | **Protocols** | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [📉 The Report](../report/01_the_illusion.md) | **Protocols** | [📚 References](../REFERENCES.md)
 > > 
 ## The Counter-Measure: Breaking the "Speed" Hallucination
 
