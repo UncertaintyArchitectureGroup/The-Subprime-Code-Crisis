@@ -3,13 +3,13 @@
 > **Navigation:** [🏠 Home](../README.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | **Part 2** | [🔥 Part 3: The Aftermath](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
-*   [Chapter 4. Deep Dive: The Death of Code Review](#chapter-4-deep-dive-the-death-of-code-review)
-*   [Chapter 5. A Case Study in Complexity](#chapter-5-a-case-study-in-complexity-why-there-is-no-simple-fix)
-*   [Chapter 6. The Chain Reaction](#chapter-6-the-chain-reaction-how-ai-broke-the-entire-value-stream)
+*   [Chapter 5. Deep Dive: The Death of Code Review](#chapter-5-deep-dive-the-death-of-code-review)
+*   [Chapter 6. A Case Study in Complexity](#chapter-6-a-case-study-in-complexity-why-there-is-no-simple-fix)
+*   [Chapter 7. The Chain Reaction](#chapter-7-the-chain-reaction-how-ai-broke-the-entire-value-stream)
 
 ---
 
-## Chapter 4. Deep Dive: The Death of Code Review
+## Chapter 5. Deep Dive: The Death of Code Review
 
 If the SDLC is a highway and Code Review is the toll booth, let's look at the poor soul sitting inside that booth: the **Senior Engineer**.
 
@@ -74,7 +74,7 @@ Worse, it kills mentorship. Since the Senior is just trying to survive the flood
 *   **METR (March 19, 2025)**: [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — AI task completion horizons are doubling every 7 months; GPT-5.2 reaches a 7-hour human-equivalent task horizon at 50% reliability.
 
 ---
-## Chapter 5. A Case Study in Complexity: Why There Is No Simple Fix
+## Chapter 6. A Case Study in Complexity: Why There Is No Simple Fix
 
 We have diagnosed the bottleneck at the Code Review stage. A logical engineer might say: **"If AI created the flood, let's use AI to build a dam."**
 Let's explore this hypothetical solution—the **AI Code Review Agent**—not as a silver bullet, but as a case study to demonstrate the immense cost and complexity of rebalancing just *one* node of the SDLC.
@@ -114,7 +114,7 @@ This case study proves a frightening truth: **There is no "plugin" that fixes th
 
 ---
 
-## Chapter 6. The Chain Reaction: How AI Broke the Entire Value Stream
+## Chapter 7. The Chain Reaction: How AI Broke the Entire Value Stream
 
 The failure of Code Review (Chapter 4) and the complexity of fixing it (Chapter 5) are just one localized fracture.
 If we look at the Software Development Life Cycle through the lens of the **Theory of Constraints**, we see that AI has introduced "Local Optima" (local speed) at multiple points, which has paradoxically degraded the "Global Optima" (delivery of value).

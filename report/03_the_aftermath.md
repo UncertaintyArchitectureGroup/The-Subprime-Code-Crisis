@@ -3,13 +3,13 @@
 > **Navigation:** [🏠 Home](../README.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | [⚙️ Part 2: Broken Mechanics](02_broken_mechanics.md) | **Part 3** | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
-*   [Chapter 7. The Paradox of Local Solutions](#chapter-7-conclusion-the-paradox-of-local-solutions-and-the-necessity-of-balance)
-*   [Chapter 8. The Macro-Economic End Game](#chapter-8-the-macro-economic-end-game-the-trajectory-of-crisis)
-*   [Chapter 9. The Architecture of Unintended Consequences](#chapter-9-the-architecture-of-unintended-consequences-who-is-actually-to-blame)
+*   [Chapter 8. The Paradox of Local Solutions](#chapter-8-conclusion-the-paradox-of-local-solutions-and-the-necessity-of-balance)
+*   [Chapter 9. The Macro-Economic End Game](#chapter-9-the-macro-economic-end-game-the-trajectory-of-crisis)
+*   [Chapter 10. The Architecture of Unintended Consequences](#chapter-10-the-architecture-of-unintended-consequences-who-is-actually-to-blame)
 
 ---
 
-## Chapter 7. Conclusion: The Paradox of Local Solutions and the Necessity of Balance
+## Chapter 8. Conclusion: The Paradox of Local Solutions and the Necessity of Balance
 
 We began this article with a paradox: Why does everyone feel faster, while the data shows we are slowing down?
 The answer, as we have explored, is that the industry has fundamentally misunderstood the nature of AI in software engineering. We treated AI as a **Tool**—a faster keyboard—when in reality, it acts as a massive, unregulated **Workforce**.
@@ -51,7 +51,7 @@ Or you can accept the hard truth: **There is no free lunch.**
 The entire system must be redesigned as a whole, accepting that every gain in speed in one area requires a deliberate investment in stability in another.
 
 ---
-## Chapter 8. The Macro-Economic End Game: The Trajectory of Crisis
+## Chapter 9. The Macro-Economic End Game: The Trajectory of Crisis
 
 The systemic setup we have analyzed—the collision of market pressure, the "Execution Mandate," and a broken SDLC—is not merely a collection of local management errors. It is a **self-reinforcing degradation mechanism** that is currently driving the entire industry toward a precipice.
 
@@ -94,7 +94,7 @@ By refusing to pay the upfront cost of rebalancing the SDLC today, leadership is
 
 ***
 
-## Chapter 9. The Architecture of Unintended Consequences: Who Is Actually to Blame?
+## Chapter 10. The Architecture of Unintended Consequences: Who Is Actually to Blame?
 
 We live and work in an ecosystem of extreme complexity, bordering on chaos. In such systems, the human brain craves simple answers. We want a villain. We want a name, a company logo, or a job title to point at and say: *"This is your fault."*
 

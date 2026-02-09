@@ -58,17 +58,18 @@ flowchart TD
 The analysis is divided into three parts, covering the data, the mechanics of the failure, and the projected economic outcomes.
 
 *   **[Part 1: The Illusion](report/01_the_illusion.md)**
-    *   **Ch 1:** Why we feel faster but deliver slower (Analysis of METR & GitClear Data).
-    *   **Ch 2:** The "Free Lunch" trap: Why Boards choose a strategy of degradation.
-    *   **Ch 3:** The Physics of the break (Theory of Constraints applied to AI).
+    *   **Ch 1: The Great Illusion.** Why we feel faster but deliver slower (Analysis of METR, Xu et al. & GitClear).
+    *   **Ch 2: The Missing Price Tag.** The invisible infrastructure costs (30-120x multiplier) required to make AI safe.
+    *   **Ch 3: The "Free Lunch" Trap.** Why Boards choose a strategy of degradation (The Execution Mandate).
+    *   **Ch 4: Anatomy of the Break.** How the "Safe Scenario" kills the SDLC (Theory of Constraints applied to AI).
 *   **[Part 2: Broken Mechanics](report/02_broken_mechanics.md)**
-    *   **Ch 4:** The death of Code Review and the "Senior Penalty."
-    *   **Ch 5:** Why AI Agents won't fix the mess they created (The Context Tax).
-    *   **Ch 6:** The chain reaction across the Value Stream (Product, QA, Maintenance).
-*   **[Part 3: The Aftermath](03_the_aftermath.md)**
-    *   **Ch 7:** The Paradox of Local Solutions.
-    *   **Ch 8:** End Game Scenarios: The Crash vs. The Slow Rot.
-    *   **Ch 9:** The Architecture of Unintended Consequences.
+    *   **Ch 5:** The death of Code Review and the "Senior Penalty."
+    *   **Ch 6:** A Case Study in Complexity (Why AI Agents won't fix the mess).
+    *   **Ch 7:** The chain reaction across the Value Stream (Product, QA, Maintenance).
+*   **[Part 3: The Aftermath](report/03_the_aftermath.md)**
+    *   **Ch 8:** The Paradox of Local Solutions.
+    *   **Ch 9:** End Game Scenarios: The Crash vs. The Slow Rot.
+    *   **Ch 10:** The Architecture of Unintended Consequences.
 
 ## 🛡️ Risk Mitigation
 
