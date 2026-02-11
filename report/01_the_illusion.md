@@ -23,12 +23,12 @@ To understand this, we must look at the cold, hard data from independent researc
 
 The most damaging myth of the AI era is that it turns junior engineers into seniors, and senior engineers into "10x" architects. The reality is far more complex. We now have evidence from two independent vectors: a controlled trial and a massive longitudinal study.
 
-**1. The Mechanics of Slowdown (METR, July 2025):**
+**1. [The Mechanics of Slowdown (METR, July 2025)](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/):**
 In a randomized controlled trial, researchers measured the impact of AI on **experienced open-source developers** working on their own repositories.
 * **The Result:** When using frontier AI Code Assistants (Cursor Pro with Claude 3.5/3.7), developers took **19% longer** to complete tasks compared to working without them.
 * **The Subjective Illusion:** Despite being slower, the developers *believed* the AI made them faster. They forecasted a **24% speedup** and, even after the experiment, estimated they had gained **20%**.
 
-**2. The Scale Validation (Xu et al., arXiv 2025):**
+**2. [The Scale Validation (Xu et al., arXiv 2025)](https://arxiv.org/abs/2510.10165):**
 Critics often dismiss controlled trials as "too small." However, **Xu et al. (2025)** analyzed telemetry from over **10,000 developers** across diverse enterprise environments, independently confirming the "Senior Penalty" at scale.
 * **Labor Redistribution:** While peripheral contributors (Juniors) exploded their output (**+43.5% commits**), Core Contributors (Seniors) saw their coding output collapse (**-19% commits**).
 * **The Maintenance Trap:** Instead of writing code, seniors were forced to shift to reviewing it, with their review load increasing by **+6.5%**. Crucially, the AI-generated code required **2.4% more rework** per PR to meet quality standards.
@@ -38,7 +38,7 @@ The AI shifted the senior engineer's role from "Author" to "Reviewer/Debugger." 
 
 ---
 
-### The Cognitive Tax: Complexity & Warnings (Agarwal et al., 2026)
+### [The Cognitive Tax: Complexity & Warnings (Agarwal et al., 2026)](https://arxiv.org/abs/2601.13597)
 
 If we are typing faster, what exactly are we producing? **Agarwal et al. (2026)** conducted a deep structural analysis of AI-generated codebases versus human-authored ones. The findings explain *why* the maintenance burden is exploding:
 
@@ -49,7 +49,7 @@ If we are typing faster, what exactly are we producing? **Agarwal et al. (2026)*
 
 ---
 
-### The Data: A Crisis of Quality (GitClear)
+### [The Data: A Crisis of Quality (GitClear)](https://www.gitclear.com/ai_assistant_code_quality_2025_research)
 
 When we overlay the complexity data (Agarwal) with volume data (GitClear), the picture becomes complete. Analyzing **211 million lines of code** relative to a 2022 baseline:
 
@@ -73,7 +73,7 @@ This aligns with public statements from Google leadership. In late 2025, CEO Sun
 
 Scientific integrity demands that we address findings that appear to contradict our thesis.
 
-We do not dispute that AI accelerates isolated coding tasks, particularly for less-experienced developers. The evidence for this is robust. **Peng et al. (2023)** conducted a randomized controlled trial ($n = 196$) showing a **55.8% speedup** on greenfield coding tasks. **Xu et al. (2025)** — the same study we cite above — confirms that peripheral contributors saw a **+43.5% increase** in commit volume. Individual developers, particularly juniors, genuinely do produce code faster with AI assistance.
+We do not dispute that AI accelerates isolated coding tasks, particularly for less-experienced developers. The evidence for this is robust. [**Peng et al. (2023)**](https://arxiv.org/abs/2302.06590) conducted a randomized controlled trial ($n = 196$) showing a **55.8% speedup** on greenfield coding tasks. [**Xu et al. (2025)**](https://arxiv.org/abs/2510.10165) — the same study we cite above — confirms that peripheral contributors saw a **+43.5% increase** in commit volume. Individual developers, particularly juniors, genuinely do produce code faster with AI assistance.
 
 Our concern is different: **these local gains do not translate into system-level productivity improvements, and may actively degrade them.** The Peng et al. study measured isolated task completion in a greenfield environment — writing small programs from scratch. This has limited relevance to brownfield enterprise engineering, where 80-90% of work involves maintaining, extending, and debugging existing systems. And as Xu et al. themselves demonstrate, the aggregate productivity increase at the project level disappears once you account for the redistribution of labor onto seniors and the increased rework rate.
 
