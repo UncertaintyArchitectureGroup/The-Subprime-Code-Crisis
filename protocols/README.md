@@ -2,6 +2,14 @@
 
 > **Navigation:** [🏠 Home](../README.md) | [📉 The Report](../report/01_the_illusion.md) | **Protocols** | [📚 References](../REFERENCES.md)
 > > 
+## Operational Protocols
+
+These protocols are practical operating patterns for teams adopting AI-assisted software development.
+
+They are not intended to discourage AI adoption. Their purpose is to help teams absorb AI-generated output safely by strengthening review capacity, QA signals, architectural ownership, security validation, and feedback loops.
+
+Use them as adaptation patterns, not as rigid rules.
+
 ## The Counter-Measure: Breaking the "Speed" Hallucination
 
 The AI circus has been going on for too long, and frankly, the **hype is exhausting**. But beneath the noise lies a cold, dangerous reality: the potential for a systemic crash is growing every day.
