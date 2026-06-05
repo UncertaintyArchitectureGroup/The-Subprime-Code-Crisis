@@ -7,6 +7,7 @@
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
 >**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+>**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🛡️ **How to mitigate risk**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 ---
 ## Research framing
 
