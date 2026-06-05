@@ -33,9 +33,13 @@ It focuses on what happens when organizations treat faster code generation as eq
 ## What this is not
 
 This is not a claim that AI coding tools are useless.
+
 This is not an argument against AI-assisted software development.
+
 This is not a prediction that every organization will fail.
+
 This is not a rejection of developer productivity gains in isolated tasks.
+
 It is a warning that local acceleration does not automatically become system-level throughput.
 
 
