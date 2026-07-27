@@ -6,7 +6,7 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
->**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+>**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 
 ## Research framing
 
@@ -54,7 +54,6 @@ This report argues that unmanaged AI-assisted coding can create a Subprime Code 
 The risk is not caused by AI alone. It emerges from the collision of two forces:
 
 1. Tool behavior: AI code assistants reduce the effort required to generate code-like output, but they do not reduce the verification burden at the same rate.
-
 2. Market behavior: organizations often adopt AI tools as productivity multipliers without redesigning the operating model around the increased output flow.
 
 The result is a dangerous mismatch: code generation scales faster than the organization’s capacity to review, test, understand, secure, and maintain that code.
@@ -70,6 +69,47 @@ The alternative is not to reject AI-assisted development. The alternative is to 
 | AI-assisted coding can shift bottlenecks into review, QA, security, and maintenance            | Evidence-backed inference | Medium-High |
 | Unmanaged adoption may inflate technical debt                                                  | Risk scenario             | Medium      |
 | Industry-wide “technical bankruptcy” is possible under aggressive cost-cutting adoption models | Warning scenario          | Medium-Low  |
+
+## 🧾 Evidence Map
+
+The repository separates source material from interpretation and operational response. This prevents measured findings, model-derived values, and project conclusions from being presented as if they had the same evidentiary status.
+
+| Layer | Purpose | Current examples |
+| --- | --- | --- |
+| **Primary evidence** | Original studies and measurement reports with inspectable methods and results | [NBER: Writing Code vs. Shipping Code](evidence/primary/2026-writing-code-vs-shipping-code.md), METR controlled productivity research, GitClear code-change measurements |
+| **Secondary evidence** | Reviews, industry reports, practitioner analyses, and synthesis used for context or triangulation | DORA reports, enterprise surveys, industry analyses |
+| **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md) |
+| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md) |
+| **Protocols** | Practical responses, controls, metrics, and decision rules derived from the risk analysis | [Operational protocols](protocols/README.md) |
+
+```mermaid
+flowchart LR
+    P[Primary Evidence<br/>Original studies and measurements]
+    S[Secondary Evidence<br/>Reviews and industry context]
+    D[Datasets<br/>Provenance and coverage]
+    I[Repository Interpretation<br/>Subprime Code Crisis synthesis]
+    R[Report Claims<br/>Findings, inferences, scenarios]
+    O[Protocols<br/>Operational responses]
+
+    D --> P
+    P --> I
+    S --> I
+    I --> R
+    R --> O
+
+    P -. claim boundaries .-> R
+    O -. implementation feedback .-> I
+```
+
+The evidence flow is intentionally directional:
+
+1. **Sources report findings.**
+2. **The repository interprets those findings.**
+3. **The report turns the interpretation into bounded claims and risk scenarios.**
+4. **Protocols translate those risks into operating practices.**
+
+A protocol is therefore not empirical proof, and a repository interpretation is not a finding directly reported by a source. Detailed classification rules and evidence-brief standards are documented in the [Evidence Library](evidence/README.md).
+
 ## 📊 The Crisis Map
 
 ```mermaid
@@ -113,7 +153,7 @@ It can be read in three ways:
 - As a delivery-system analysis of bottleneck migration.
 - As a starting point for engineering governance patterns around AI-generated code.
 
-Readers looking for the evidence base should start with the References section.
+Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md) and then use [References](REFERENCES.md) as the compact bibliography.
 
 Readers looking for immediate operating practices should start with the Risk Mitigation section.
 ## 📂 Report Structure
