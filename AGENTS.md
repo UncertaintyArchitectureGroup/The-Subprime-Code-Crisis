@@ -170,13 +170,159 @@ After the source is registered and integrated:
 - verify links from report sections;
 - verify navigation in any changed files.
 
+## Verifying the integration of each source
+
+Creating an evidence brief does not complete the source work. Every reviewed source must pass a repository-wide integration verification before it is considered fully processed.
+
+Apply this procedure both to newly added sources and to legacy sources already cited in the repository.
+
+### 1. Establish the source ground truth
+
+Read the original source rather than relying on the current report text or an existing summary. Record:
+
+- canonical title, authors, date, and publication status;
+- official publisher or author URL;
+- research design, dataset, population, time period, and comparator;
+- exact definitions of the reported metrics;
+- exact reported numbers and uncertainty where available;
+- whether each result is observed, derived, model-calibrated, self-reported, or interpreted by the source authors;
+- stated limitations, conflicts of interest, and external-validity boundaries.
+
+### 2. Locate every repository use
+
+Search the whole repository for:
+
+- source ID;
+- author names;
+- publication title;
+- distinctive metric names;
+- every numeric value attributed to the source;
+- paraphrases of its findings that may not contain a citation.
+
+Inspect at minimum:
+
+- all files under `report/`;
+- `README.md`, including diagrams, tables, captions, the executive summary, and the claim-confidence map;
+- all files under `protocols/`;
+- `REFERENCES.md`;
+- `evidence/SOURCES.md` and the relevant evidence indexes.
+
+Do not rely only on the `Current use` field in `evidence/SOURCES.md`; verify actual repository usage.
+
+### 3. Build a claim-to-source trace
+
+For every repository statement supported by the source, record the relationship:
+
+| Repository claim | Location | Source result | Relationship | Action |
+| --- | --- | --- | --- | --- |
+| Exact or paraphrased statement | File and section | Exact finding or record | Direct, derived, synthesis, scenario, or unsupported | Keep, qualify, correct, relocate, or remove |
+
+The trace may be included in the evidence brief, PR description, or review notes. It must be inspectable during review.
+
+### 4. Verify numbers and units
+
+For every number derived from or attributed to the source:
+
+- confirm the numerator, denominator, unit, population, and time window;
+- distinguish percentage changes from percentage-point changes;
+- distinguish cumulative, average, median, long-run, and short-run effects;
+- preserve confidence intervals or uncertainty when they materially affect interpretation;
+- do not combine numbers from different samples, tools, studies, or periods into one apparent sequence without explicit labeling;
+- independently reproduce simple derived calculations where practical;
+- remove obsolete or rounded numbers that cannot be traced to the source.
+
+A number in a diagram or table is a claim and must be verified in the same way as prose.
+
+### 5. Verify argument fit
+
+Check whether the report uses the source for a conclusion its design can actually support.
+
+Ask:
+
+- Does observational evidence get presented as causal?
+- Does a bounded task result get generalized to an organization, industry, or economy?
+- Are experienced developers, junior developers, open-source contributors, and enterprise teams being treated as interchangeable populations?
+- Are activity measures being described as productivity, quality, shipped value, or business impact without justification?
+- Is source-author interpretation being presented as an observed finding?
+- Is repository synthesis clearly identified as synthesis?
+- Does contradictory or positive evidence receive equivalent treatment?
+
+Correct the argument even when the correction weakens the repository thesis.
+
+### 6. Verify report integration
+
+For every report section using the source:
+
+- ensure the source is introduced with enough methodological context;
+- link to the evidence brief rather than only to an external URL;
+- keep directly reported findings separate from repository inference;
+- expose material limitations near the claim, not only in the evidence brief;
+- remove duplicate retellings that drift into inconsistent wording;
+- update neighboring paragraphs when a corrected claim changes the logic of the section;
+- verify that chapter conclusions still follow after the correction.
+
+Do not treat a corrected citation as sufficient when the surrounding argument remains misleading.
+
+### 7. Verify repository-level integration
+
+Reassess `README.md` when the source contributes to:
+
+- the executive summary;
+- the claim-confidence map;
+- the Evidence Map;
+- the Crisis Map or another diagram;
+- repository-level numeric claims;
+- the reading guide or source coverage description.
+
+Multi-source diagrams must label source boundaries. Do not visually connect numbers from unrelated studies as though they describe one observed causal chain.
+
+### 8. Verify protocol implications
+
+Inspect protocols for rules, metrics, thresholds, or explanations that cite or implicitly rely on the source.
+
+Then choose one explicit outcome:
+
+- **No protocol change** — the source changes evidence description but not an operational decision.
+- **Protocol clarification** — wording or evidence boundaries must be corrected.
+- **Protocol change** — a metric, gate, risk boundary, escalation rule, disclosure requirement, or organizational control must change.
+
+Document the decision. Do not update a protocol merely to create symmetry with a report change.
+
+### 9. Synchronize source records
+
+After all corrections:
+
+- update the evidence brief;
+- update the source status and `Current use` locations in `evidence/SOURCES.md`;
+- update the relevant evidence-directory index;
+- update `REFERENCES.md`;
+- verify all internal and external links;
+- record superseded versions, corrections, or removed claims explicitly.
+
+### 10. Declare completion
+
+A source is fully integrated only when all of the following are true:
+
+- [ ] The original source has been read and classified.
+- [ ] A reviewed evidence brief exists.
+- [ ] Every repository mention and attributed number has been located.
+- [ ] Every material number has been checked against the source.
+- [ ] Claim strength matches the research design.
+- [ ] Report arguments and nearby conclusions remain valid after corrections.
+- [ ] README tables and diagrams have been reassessed.
+- [ ] Protocol implications have an explicit documented outcome.
+- [ ] `evidence/SOURCES.md`, evidence indexes, and `REFERENCES.md` are synchronized.
+- [ ] Links work and no obsolete parallel summary remains.
+
+Do not mark a source as fully integrated merely because its evidence brief is complete.
+
 ## Updating an existing source
 
 When a working paper becomes peer reviewed, a report is revised, or a dataset changes:
 
 1. Update `evidence/SOURCES.md`.
 2. Update the evidence brief and clearly note the new version.
-3. Recheck every report claim that uses the source.
+3. Re-run the full **Verifying the integration of each source** procedure.
 4. Reassess claim confidence.
 5. Update `REFERENCES.md`.
 6. Record corrections rather than silently preserving obsolete numbers.
@@ -201,19 +347,22 @@ Before opening a PR, confirm:
 - [ ] Findings and repository interpretation are separated.
 - [ ] Publication status is explicit.
 - [ ] Strong claims link to reviewed briefs where possible.
+- [ ] All repository uses and attributed numbers were searched for.
+- [ ] A claim-to-source trace was created for material uses.
 - [ ] Report language matches the source design.
-- [ ] README claim confidence was reassessed.
-- [ ] Protocol implications were considered but not forced.
-- [ ] `REFERENCES.md` and indexes are synchronized.
+- [ ] Numeric values, units, samples, and time windows were checked.
+- [ ] README claim confidence and diagrams were reassessed.
+- [ ] Protocol implications have an explicit outcome.
+- [ ] `REFERENCES.md`, `evidence/SOURCES.md`, and indexes are synchronized.
 - [ ] Navigation links work.
-- [ ] The PR description lists evidence boundaries and what the source does not establish.
+- [ ] The PR description lists evidence boundaries, corrections, and what the source does not establish.
 
 ## Preferred PR structure
 
 For a substantial new source, use separate PRs when practical:
 
 1. source registration and evidence brief;
-2. report integration;
+2. report integration and source-wide verification;
 3. repository-map or protocol updates, only if needed.
 
-This keeps evidence review separate from argument and policy changes.
+This keeps evidence review separate from argument and policy changes while requiring the complete integration verification before a source is considered finished.
