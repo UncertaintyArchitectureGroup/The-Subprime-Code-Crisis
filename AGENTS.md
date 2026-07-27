@@ -340,134 +340,267 @@ Use when the source itself is unchanged, but a report claim, README diagram, sum
 
 ### Flow E — Discover newer or missing evidence
 
-Use to identify newer, missing, stronger, contradictory, null, or positive evidence relevant to the report. Discovery does not itself add evidence to the report. Accepted candidates enter Flow A.
+Use Flow E to identify evidence candidates relevant to a defined repository claim, evidence gap, uncertainty, or freshness requirement.
 
-#### 1. Define the search question
+Discovery is not evidence acceptance. Flow E must not directly change report claims, protocols, source statuses, confidence classifications, or repository maps. Every accepted candidate enters Flow A.
 
-Record:
+#### 1. Search Strategy
 
-- the report claim, evidence gap, or topic being investigated;
-- inclusion and exclusion criteria;
-- relevant populations, tasks, tools, outcomes, and time period;
-- preferred evidence types;
-- search date and freshness window.
+Before searching, create a written strategy that records:
 
-Do not search only for evidence supporting the repository thesis.
+- the repository claim, evidence gap, uncertainty, or topic being investigated;
+- the purpose of the search: freshness, contradiction testing, replication search, gap filling, or broader landscape review;
+- the search date and freshness window;
+- databases, indexes, repositories, institutional sites, and other channels to search;
+- representative queries and terminology variants;
+- target evidence types and publication periods;
+- populations, tasks, tools, outcomes, and settings of interest;
+- known blind spots and expected search limitations.
 
-#### 2. Search broadly
+Use multiple query families that deliberately seek positive, negative, null, mixed, contradictory, replication, and critique evidence. A search designed only to confirm the repository thesis is invalid.
 
-Search multiple channels. Prioritize:
+Prioritize original and inspectable sources:
 
-1. arXiv and other primary preprint repositories;
-2. peer-reviewed journals and conference proceedings;
+1. peer-reviewed journals and conference proceedings;
+2. authoritative preprint repositories;
 3. original institutional or laboratory publications;
 4. official datasets, filings, standards, and technical reports;
 5. credible industry research with inspectable methods;
 6. secondary synthesis and practitioner commentary for discovery only.
 
-Use query families covering:
+Record enough detail for another reviewer to rerun representative searches.
 
-- positive, negative, mixed, and null outcomes;
-- productivity, quality, review, maintenance, defects, security, release, and business outcomes;
-- replications and critiques;
-- updated or peer-reviewed versions of known work;
-- terminology variants and adjacent disciplines.
+#### 2. Inclusion
 
-Record the databases or sites searched and representative queries.
+Define inclusion criteria before candidate selection. Criteria should address:
 
-#### 3. Deduplicate and identify canonical versions
+- direct or material relevance to the search question;
+- identifiable authorship or responsible publishing entity;
+- accessible abstract, methods, dataset description, or full text sufficient for screening;
+- clear publication date and version;
+- identifiable population, task, intervention or exposure, comparator, and outcome where applicable;
+- evidence type allowed by the search strategy;
+- time period and language boundaries;
+- minimum methodological transparency appropriate to the source type.
 
-For each candidate:
+A source may be included for contradiction, limitation, replication, context, or null results. Inclusion does not mean that the source supports the repository thesis.
 
-- find the canonical title, authors, identifier, and URL;
-- distinguish preprint, accepted manuscript, published version, dataset, summary, and commentary;
-- prefer the latest authoritative version while preserving version history;
-- identify duplicates and derivative reporting.
+#### 3. Exclusion
 
-#### 4. Assess relevance
+Define exclusion criteria before final screening. Common reasons include:
 
-Record:
+- duplicate or derivative reporting when an original source is available;
+- promotional material without inspectable methods or underlying evidence;
+- inaccessible claims that cannot be checked beyond a search snippet;
+- unclear authorship, date, version, or source identity;
+- irrelevance to the defined population, task, outcome, or repository claim;
+- commentary presented as empirical evidence;
+- superseded versions when the authoritative version is available;
+- unverifiable numbers or claims with no traceable source;
+- material methodological opacity that prevents even bounded interpretation.
 
-- relevance: direct, adjacent, contextual, or not relevant;
-- which repository claims it may support, weaken, contradict, or contextualize;
-- whether it adds a new outcome, population, method, or time period;
-- whether it is materially stronger than an existing source.
+Do not exclude a source merely because it is unfavorable, null, contradictory, industry-funded, a preprint, or produced by a vendor. Record the concern and assess it explicitly.
 
-Title or abstract similarity alone is insufficient.
+Every excluded candidate in a claim-critical or systematic search must retain an exclusion reason in the Candidate Register.
 
-#### 5. Assess the research entity
+#### 4. Research Entity Assessment
 
-Identify:
+For every candidate that survives initial screening, identify:
 
 - authors and affiliations;
-- laboratory, company, university, consortium, or public body;
-- funding source when disclosed;
-- commercial interests or advocacy position;
-- prior relevant research record when material;
-- whether the entity controls the measured product, platform, or dataset.
+- laboratory, university, company, consortium, standards body, public agency, or other responsible entity;
+- whether the entity created, owns, sells, funds, administers, or controls the studied product, platform, benchmark, or dataset;
+- prior relevant research or publication record when material;
+- disclosed advocacy, policy, commercial, or institutional position;
+- independence of data collection and analysis where determinable.
 
-Entity reputation is context, not a substitute for methodological review.
+Entity reputation is context, not evidence quality. A prestigious institution does not cure weak methods, and a commercial affiliation does not automatically invalidate results.
 
-#### 6. Assess source quality and publication status
+#### 5. Publication Status
+
+Record the exact publication state:
+
+- working paper;
+- preprint;
+- submitted manuscript;
+- accepted manuscript;
+- peer-reviewed conference paper;
+- peer-reviewed journal article;
+- institutional report;
+- technical report;
+- dataset or data release;
+- standard, filing, or other documentary source;
+- correction, retraction, expression of concern, or superseded version.
+
+Verify peer-review claims from the publisher or venue when practical. An arXiv, SSRN, DOI, repository page, or conference upload does not by itself establish peer review.
+
+Publication status affects confidence and review depth but is not a binary acceptance rule.
+
+#### 6. Funding
 
 Record:
 
-- source type and publication status;
-- peer-review status;
-- method transparency;
-- data and code availability;
-- sample size and selection;
-- comparator or baseline;
-- preregistration or protocol availability;
-- statistical uncertainty;
-- conflicts of interest;
-- replication or independent validation status;
-- major limitations and external-validity risks.
+- disclosed funders and grant identifiers;
+- employer sponsorship or internal company research;
+- provision of tools, compute, data, recruitment, or researcher access;
+- funder role in study design, analysis, publication, or approval;
+- absence of a funding statement when one would normally be expected;
+- whether the measured vendor or platform financed the work.
 
-Do not reject arXiv work solely because it is a preprint. Do not treat an arXiv identifier as proof of quality.
+Funding is a risk and context signal, not an automatic reason for inclusion or exclusion.
 
-#### 7. Define scope and boundaries
+#### 7. Conflicts
 
-For every candidate, state:
+Record disclosed and reasonably identifiable conflicts, including:
+
+- employment, consulting, equity, patents, advisory roles, or vendor relationships;
+- ownership or commercial interest in the evaluated product or method;
+- control over the measured dataset or benchmark;
+- advocacy or policy commitments directly related to the conclusion;
+- publication approval rights or contractual restrictions;
+- conflicts declared absent by the authors;
+- conflicts that remain unknown.
+
+Separate documented conflicts from repository inference. Do not imply misconduct without evidence.
+
+#### 8. Scope
+
+For each candidate, state the exact evidence boundary:
 
 - population and experience level;
-- task type and complexity;
-- tool, model, and version;
-- study setting;
+- sample size and selection mechanism;
+- task type, duration, and complexity;
+- tool, model, version, configuration, and access conditions;
+- study or operational setting;
+- comparator or baseline;
 - observation period;
-- measured outcomes and definitions;
-- causal or observational design;
-- what the study does not establish;
-- limits on generalization to teams, organizations, industries, or the economy.
+- outcomes and metric definitions;
+- causal, experimental, quasi-experimental, observational, documentary, or theoretical design;
+- unit of analysis;
+- what the source directly establishes;
+- what the source does not establish.
 
-#### 8. Screen and record candidates
+Title, abstract, or headline similarity is insufficient for scope classification.
 
-Assign one provisional decision:
+#### 9. External Validity
 
-- `Accept for Flow A`
-- `Hold for comparison or newer version`
-- `Context only`
-- `Reject`
+Assess whether and how the source may generalize beyond its observed setting. Examine:
 
-For systematic or claim-critical searches, keep a candidate log with decision reasons. Rejected sources must not disappear without explanation.
+- representativeness of participants, organizations, tasks, tools, and environments;
+- artificial or benchmark conditions versus production work;
+- short-term measurement versus maintenance and lifecycle effects;
+- individual activity versus team, delivery-system, organizational, industry, or economic outcomes;
+- differences between novice, intermediate, and expert populations;
+- model, product, and workflow version dependence;
+- selection, survivorship, novelty, and observer effects;
+- geographic, organizational, and regulatory boundaries;
+- whether claimed generalization exceeds the measured unit of analysis.
 
-#### 9. Independent discovery review
+Record external validity as a bounded assessment, not a single quality score. A narrow study may be rigorous and still support only a narrow claim.
 
-A second agent or reviewer must independently:
+#### 10. Replication
 
-- rerun representative searches;
-- check for omitted positive, negative, contradictory, or null evidence;
-- verify canonical versions and publication status;
-- challenge relevance and source-quality assessments;
-- review candidate decisions and rejection reasons.
+Search explicitly for:
 
-Unresolved disagreements or material omissions must be discussed with the human user before candidates are accepted.
+- direct replications;
+- conceptual replications;
+- independent reanalyses;
+- corrections and critiques;
+- contradictory studies using comparable outcomes;
+- follow-up studies with different populations, tools, tasks, or periods;
+- repeated findings from the same authors or organization;
+- evidence that the result has not yet been independently tested.
 
-#### 10. Route accepted evidence
+Record whether replication is independent, partial, failed, mixed, contested, or unavailable. Repeated vendor or laboratory publications are not independent replication unless data collection and analysis are genuinely independent.
 
-Every accepted candidate enters Flow A. Discovery notes do not substitute for registration, evidence review, an evidence brief, integration audit, or independent verification.
+Replication status must inform candidate priority and later claim confidence, but absence of replication does not automatically exclude a new source.
 
-Freshness search is not a substitute for validating sources already used by the repository.
+#### 11. Canonical Version
+
+For every candidate:
+
+- identify the canonical title, authors, date, identifier, and URL;
+- distinguish preprint, accepted manuscript, published version, dataset, appendix, correction, summary, and commentary;
+- prefer the latest authoritative version for review;
+- preserve links and dates for materially different earlier versions;
+- identify retractions, corrections, expressions of concern, and superseding publications;
+- avoid registering the same research object as multiple independent sources;
+- record when no authoritative canonical version can be established.
+
+When versions materially differ, route the source through Flow C after registration or document the version relationship before Flow A begins.
+
+#### 12. Candidate Register
+
+Maintain a Candidate Register for every claim-critical, systematic, or multi-source discovery task.
+
+Each entry must contain:
+
+| Field | Required record |
+| --- | --- |
+| Candidate ID | Temporary search identifier |
+| Citation | Title, authors or entity, year |
+| Canonical URL | Best current authoritative link |
+| Canonical version | Version and publication state |
+| Search provenance | Database, site, query, and search date |
+| Relevance | Direct, adjacent, contextual, or not relevant |
+| Relationship | May support, weaken, contradict, replicate, or contextualize |
+| Inclusion result | Included, excluded, or held |
+| Decision reason | Specific screening rationale |
+| Research entity | Authors, affiliations, and responsible organization |
+| Funding | Disclosed, absent, or unknown |
+| Conflicts | Disclosed, inferred risk, none declared, or unknown |
+| Scope | Population, task, tool, setting, period, and outcome |
+| External validity | Main generalization boundaries |
+| Replication | Independent, partial, failed, mixed, same-entity, or unavailable |
+| Proposed routing | Flow A, Flow C, context only, hold, or reject |
+
+Candidates must not disappear from the record because they are inconvenient, unfavorable, duplicated, or rejected. Deduplicate them while preserving the decision trail.
+
+#### 13. Candidate Decision and Routing
+
+Assign exactly one provisional outcome:
+
+- `Accept for Flow A` — a new evidence object warrants registration and full review;
+- `Route to Flow C` — an existing registered source has a newer, corrected, peer-reviewed, or superseding version;
+- `Hold` — potentially relevant but awaiting access, clarification, comparison, or authoritative publication;
+- `Context only` — useful for terminology, landscape, or interpretation but not accepted as evidence for a material claim;
+- `Reject` — does not meet inclusion criteria or meets an exclusion criterion.
+
+For each accepted candidate, state which repository claim it may support, weaken, contradict, replicate, or contextualize. Acceptance into Flow A is not permission to cite the source in the report.
+
+#### 14. Independent Search Review
+
+A second agent or reviewer that did not perform the primary search must independently:
+
+- read the Search Strategy, Inclusion, and Exclusion criteria;
+- rerun representative queries across more than one search channel;
+- search specifically for omitted positive, negative, null, mixed, contradictory, replication, and critique evidence;
+- verify a sample of excluded and held candidates;
+- verify canonical versions and publication statuses;
+- challenge Research Entity, Funding, Conflicts, Scope, External Validity, and Replication assessments;
+- inspect Candidate Register completeness and deduplication;
+- assess whether candidate routing follows the declared criteria.
+
+Record one outcome:
+
+- `Confirmed`;
+- `Corrections required`;
+- `Unresolved disagreement`;
+- `Review unavailable`.
+
+If corrections are required, update the search and Candidate Register, then repeat independent review. If disagreement remains or independent review is unavailable, escalate to the human user before accepting candidates.
+
+Flow E is complete only when:
+
+- the Search Strategy is recorded;
+- Inclusion and Exclusion criteria are explicit;
+- all screened candidates are traceable in the Candidate Register;
+- canonical versions, publication status, research entity, funding, conflicts, scope, external validity, and replication are assessed for accepted candidates;
+- candidate routing is explicit;
+- Independent Search Review is `Confirmed`;
+- unresolved disagreements and material omissions are absent.
+
+Every accepted new candidate then enters Flow A. Flow E notes, abstracts, summaries, or Candidate Register entries do not substitute for registration, evidence review, an evidence brief, integration audit, or repository-wide verification.
 
 ## Registration and classification
 
