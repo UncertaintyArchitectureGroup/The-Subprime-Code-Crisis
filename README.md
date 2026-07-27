@@ -62,6 +62,8 @@ The alternative is not to reject AI-assisted development. The alternative is to 
 
 ## Claim confidence map
 
+The **Claim confidence map** evaluates the repository's conclusions: what kind of claim each statement is and how strongly the current body of evidence supports it. It does not classify sources.
+
 | Claim                                                                                          | Type                      | Confidence  |
 | ---------------------------------------------------------------------------------------------- | ------------------------- | ----------- |
 | AI tools can accelerate isolated coding tasks                                                  | Empirical finding         | High        |
@@ -72,29 +74,39 @@ The alternative is not to reject AI-assisted development. The alternative is to 
 
 ## 🧾 Evidence Map
 
-The repository separates source material from interpretation and operational response. This prevents measured findings, model-derived values, and project conclusions from being presented as if they had the same evidentiary status.
+The **Evidence Map** classifies the materials used to build those claims. It answers a different question from the Claim confidence map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
 
-| Layer | Purpose | Current examples |
+The table below is a repository-level map, not a replacement for the complete [Bibliography & Data Sources](REFERENCES.md). It names the current source families and the major sources already used in the report.
+
+| Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
-| **Primary evidence** | Original studies and measurement reports with inspectable methods and results | [NBER: Writing Code vs. Shipping Code](evidence/primary/2026-writing-code-vs-shipping-code.md), METR controlled productivity research, GitClear code-change measurements |
-| **Secondary evidence** | Reviews, industry reports, practitioner analyses, and synthesis used for context or triangulation | DORA reports, enterprise surveys, industry analyses |
-| **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md) |
-| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md) |
+| **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: Writing Code vs. Shipping Code](evidence/primary/2026-writing-code-vs-shipping-code.md); METR developer-productivity RCT and long-task measurement; Xu et al. large-scale developer study; Agarwal et al. code-structure analysis; Peng et al. Copilot RCT; GitClear code-change and productivity measurement reports |
+| **Primary documentary sources** | First-party records used for infrastructure, spending, and organizational claims | Alphabet, Meta, and Microsoft filings; official product and engineering documentation; published engineering-system descriptions |
+| **Secondary evidence and industry context** | Reviews, surveys, practitioner analyses, and synthesis used for triangulation or context | DORA reports; McKinsey and Deloitte enterprise surveys; SoftwareSeni review analysis; TechnoDiaries practitioner reporting; Andreas Horn industry commentary |
+| **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | Goldratt's Theory of Constraints; software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
+| **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md); GitHub activity and marketplace datasets documented in cited studies |
+| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), Claim confidence map, and the Crisis Map below |
 | **Protocols** | Practical responses, controls, metrics, and decision rules derived from the risk analysis | [Operational protocols](protocols/README.md) |
 
 ```mermaid
 flowchart LR
-    P[Primary Evidence<br/>Original studies and measurements]
-    S[Secondary Evidence<br/>Reviews and industry context]
+    P[Primary Empirical Research<br/>Measured effects]
+    F[Primary Documentary Sources<br/>Filings and first-party records]
+    S[Secondary Evidence<br/>Surveys, reviews, industry context]
+    T[Theory and Methodology<br/>Interpretive frameworks]
     D[Datasets<br/>Provenance and coverage]
     I[Repository Interpretation<br/>Subprime Code Crisis synthesis]
+    C[Claim Confidence Map<br/>Claim type and support level]
     R[Report Claims<br/>Findings, inferences, scenarios]
     O[Protocols<br/>Operational responses]
 
     D --> P
     P --> I
+    F --> I
     S --> I
-    I --> R
+    T --> I
+    I --> C
+    C --> R
     R --> O
 
     P -. claim boundaries .-> R
@@ -103,12 +115,13 @@ flowchart LR
 
 The evidence flow is intentionally directional:
 
-1. **Sources report findings.**
-2. **The repository interprets those findings.**
-3. **The report turns the interpretation into bounded claims and risk scenarios.**
-4. **Protocols translate those risks into operating practices.**
+1. **Sources report findings, records, or context.**
+2. **The repository interprets those materials.**
+3. **The Claim confidence map labels the resulting claims and their current support level.**
+4. **The report develops bounded findings, inferences, and risk scenarios.**
+5. **Protocols translate those risks into operating practices.**
 
-A protocol is therefore not empirical proof, and a repository interpretation is not a finding directly reported by a source. Detailed classification rules and evidence-brief standards are documented in the [Evidence Library](evidence/README.md).
+A protocol is therefore not empirical proof, a repository interpretation is not a finding directly reported by a source, and a confidence rating is not a source category. Detailed classification rules and evidence-brief standards are documented in the [Evidence Library](evidence/README.md); the complete source inventory remains in [References](REFERENCES.md).
 
 ## 📊 The Crisis Map
 
@@ -153,7 +166,7 @@ It can be read in three ways:
 - As a delivery-system analysis of bottleneck migration.
 - As a starting point for engineering governance patterns around AI-generated code.
 
-Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md) and then use [References](REFERENCES.md) as the compact bibliography.
+Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md) and then use [References](REFERENCES.md) as the complete bibliography and compact source index.
 
 Readers looking for immediate operating practices should start with the Risk Mitigation section.
 ## 📂 Report Structure
