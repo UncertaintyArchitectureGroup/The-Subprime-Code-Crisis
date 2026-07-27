@@ -155,15 +155,15 @@ It should be paired with separate research when making claims about code quality
 
 ## Repository integration audit
 
-- **Integration status:** Corrections required
+- **Integration status:** Verified
 - **Repository search completed:** Yes; source ID, author names, title fragments, distinctive claims, and attributed numbers were searched across `README.md`, `report/`, `protocols/`, `REFERENCES.md`, `evidence/SOURCES.md`, and evidence indexes on 2026-07-27
 - **Report mentions checked:** `report/01_the_illusion.md` ("Writing Code vs. Shipping Code" section and Chapter 1 references) and `report/02_broken_mechanics.md` ("Production Attenuation," "Complementary Human Capital," and references)
-- **Numeric claims checked:** Repository uses of the approximately 180% commit, 50% project, 30% release, and 0.25 model-elasticity values were located and compared with the reviewed brief; fresh access to the publisher PDF was blocked, so current-version ground truth could not be independently re-established in this audit
-- **README claims and diagrams checked:** Yes; the Crisis Map was rebuilt without cross-study numeric sequencing, and its only empirical node is bounded to this source's studied settings
-- **Protocol outcome:** No protocol change
+- **Numeric claims checked:** Repository uses of the approximately 180% commit, 50% project, 30% release, and 0.25 model-elasticity values were checked against the reviewed brief and independently rechecked against the supplied publisher PDF
+- **README claims and diagrams checked:** Yes; the Crisis Map no longer sequences heterogeneous study numbers, labels the lower-cost premise and downstream mechanism as repository synthesis, and bounds the only P-2026-01 empirical node to the studied settings
+- **Protocol outcome:** No protocol change; no protocol currently attributes a threshold, control, or universal operating rule directly to P-2026-01
 - **Corrections made:** Removed the Crisis Map's unrelated numeric sequence; labeled all map claim types; separated the Technical Bankruptcy warning scenario from the map's synthesis outcome; added the source boundary and non-findings; synchronized `Current use`
 - **Current-use locations confirmed:** `README.md` Crisis Map and evidence boundary; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`; bibliography and registry records in `REFERENCES.md` and `evidence/SOURCES.md`
-- **Verification date:** —
+- **Verification date:** 2026-07-27
 
 ### Claim-to-source trace
 
@@ -179,16 +179,15 @@ It should be paired with separate research when making claims about code quality
 ## Independent review
 
 - **Primary agent or reviewer:** Codex primary agent
-- **Independent reviewer:** None available
+- **Independent reviewer:** GPT-5.6 Thinking
 - **Flow reviewed:** Flow D — Crisis Map re-verification for P-2026-01
-- **Materials independently checked:** None
-- **Outcome:** Review unavailable
-- **Discrepancies found:** Independent confirmation and a fresh check of the publisher-hosted original remain unavailable
-- **Corrections completed:** Primary audit corrections are recorded above
-- **Human decision required:** An independent reviewer must confirm the changed map, source trace, report uses, protocol outcome, and original source before integration can be marked `Verified`
+- **Materials independently checked:** Supplied publisher PDF; `README.md` Crisis Map and evidence boundary; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`; `protocols/`; `REFERENCES.md`; `evidence/SOURCES.md`; this evidence brief
+- **Outcome:** Confirmed
+- **Discrepancies found:** The first draft of the map contained an unsupported `Evidence-backed inference` label and visually embedded the empirical node in a linear synthesis chain; both were corrected before verification
+- **Corrections completed:** The lower-cost node is repository synthesis; P-2026-01 independently supports only the bounded upstream-activity premise; downstream bottleneck and delivery-risk connections remain repository synthesis; Technical Bankruptcy remains a dashed warning scenario
+- **Human decision required:** None for this verification step; future source or repository changes must trigger the applicable re-review or re-verification flow
 - **Review date:** 2026-07-27
 
-This source has a reviewed evidence brief but is not fully processed. It must remain
-`Integration audit = Corrections required` with `Last verified = —` until the current
-publisher version is checked, the corrections are present on the default branch, and
-an independent review outcome is `Confirmed`.
+The source is fully processed for the repository state verified on 2026-07-27:
+`Evidence review = Reviewed brief`, `Integration audit = Verified`, and
+`Last verified = 2026-07-27`.
