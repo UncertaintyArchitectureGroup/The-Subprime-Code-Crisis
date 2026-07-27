@@ -152,3 +152,17 @@ This source is suitable for claims about:
 - the need to measure releases and usage rather than relying only on code-production metrics.
 
 It should be paired with separate research when making claims about code quality, defects, review burden, maintainability, security, or long-term organizational outcomes.
+
+## Repository integration audit
+
+- **Integration status:** Not started
+- **Repository search completed:** No
+- **Report mentions checked:** Not yet
+- **Numeric claims checked:** The brief's numbers were checked against the source; repository-wide uses have not yet been audited
+- **README claims and diagrams checked:** Not yet
+- **Protocol outcome:** Not yet assessed
+- **Corrections made:** None recorded through the complete integration procedure
+- **Current-use locations confirmed:** No; the registry locations remain provisional until repository-wide search
+- **Verification date:** —
+
+This source has a reviewed evidence brief but is not fully processed. It must remain `Integration audit = Not started` in `evidence/SOURCES.md` until the complete procedure in `AGENTS.md` has been run and all required corrections are merged.
