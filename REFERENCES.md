@@ -1,4 +1,3 @@
-
 ---
 
 # 📚 Bibliography & Data Sources
@@ -8,6 +7,12 @@
 This repository relies on empirical data, not marketing hype. Below is the complete list of primary research, industry reports, and theoretical frameworks cited in the **Subprime Code Crisis** analysis.
 
 ## 🧪 Primary Research (The Data)
+
+**NBER — Software Production Hierarchy**
+*   **Demirer, Musolff & Yang (NBER Working Paper, 2026):** ["Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools"](https://www.nber.org/papers/w35275)
+    *   *Key Finding:* AI coding tools substantially increase commits, but the measured effect attenuates across the production hierarchy. For the cumulative async-agent generation, the reported increase falls from approximately **180% for commits** to **50% for projects** and **30% for releases**; the authors report no increase in total early usage across four app marketplaces.
+    *   *Evidence brief:* [Methods, findings, model-calibrated results, and limitations](evidence/primary/2026-writing-code-vs-shipping-code.md)
+    *   *Status:* NBER working paper; not peer reviewed.
 
 **METR (Model Evaluation & Threat Research)**
 *   [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) (July 2025)
