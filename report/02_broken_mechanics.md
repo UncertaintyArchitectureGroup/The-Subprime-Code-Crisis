@@ -6,6 +6,9 @@
 *   [Chapter 5. Deep Dive: The Death of Code Review](#chapter-5-deep-dive-the-death-of-code-review)
 *   [Chapter 6. A Case Study in Complexity](#chapter-6-a-case-study-in-complexity-why-there-is-no-simple-fix)
 *   [Chapter 7. The Chain Reaction](#chapter-7-the-chain-reaction-how-ai-broke-the-entire-value-stream)
+    *   [Production Attenuation](#production-attenuation)
+    *   [Complementary Human Capital](#complementary-human-capital)
+    *   [The Verification Bottleneck](#the-verification-bottleneck)
 
 ---
 
@@ -74,6 +77,7 @@ Worse, it kills mentorship. Since the Senior is just trying to survive the flood
 *   **METR (March 19, 2025)**: [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — AI task completion horizons are doubling every 7 months; GPT-5.2 reaches a 7-hour human-equivalent task horizon at 50% reliability.
 
 ---
+
 ## Chapter 6. A Case Study in Complexity: Why There Is No Simple Fix
 
 We have diagnosed the bottleneck at the Code Review stage. A logical engineer might say: **"If AI created the flood, let's use AI to build a dam."**
@@ -116,10 +120,56 @@ This case study proves a frightening truth: **There is no "plugin" that fixes th
 
 ## Chapter 7. The Chain Reaction: How AI Broke the Entire Value Stream
 
-The failure of Code Review (Chapter 4) and the complexity of fixing it (Chapter 5) are just one localized fracture.
+The failure of Code Review (Chapter 5) and the complexity of fixing it (Chapter 6) are just one localized fracture.
 If we look at the Software Development Life Cycle through the lens of the **Theory of Constraints**, we see that AI has introduced "Local Optima" (local speed) at multiple points, which has paradoxically degraded the "Global Optima" (delivery of value).
 
 AI has intervened in the entire chain, creating points of failure from the Boardroom to QA.
+
+### Production Attenuation
+
+NBER Working Paper 35275, *Writing Code vs. Shipping Code*, follows AI-assisted output across a hierarchy of production outcomes rather than treating code generation as the final result. The study reports large increases in upstream coding activity after adoption of successive generations of AI tools, but the measured effect becomes smaller as work moves toward shipped software.
+
+For the cumulative generation that includes asynchronous agents, the reported effect falls from approximately:
+
+- **180%** for commits;
+- to **50%** for distinct projects or repositories touched;
+- to **30%** for releases.
+
+The same pattern appears for earlier tool generations. The exact values belong to specific samples and event-study specifications; they are not universal productivity constants. The important result is the shape of the funnel: each downstream stage absorbs part of the upstream increase.
+
+```text
+Generated code
+      ↓
+Commits
+      ↓
+Pull requests and review
+      ↓
+Projects and releases
+      ↓
+Usage and customer value
+```
+
+This is **production attenuation**: a local acceleration at the code-production layer does not propagate one-for-one through integration, review, release, adoption, and realized value. Measuring generated code, accepted suggestions, or commits alone therefore overstates system-level productivity.
+
+### Complementary Human Capital
+
+The NBER paper also estimates how readily AI-augmented upstream output can substitute for downstream human work. Its hierarchical production model produces an elasticity of substitution of approximately **0.25**.
+
+**This is a model-calibrated value, not a directly observed ratio and not a universal constant.** In the paper's model, a value well below one indicates strong complementarity: additional upstream output still requires human effort in review, integration, release management, product judgment, and other downstream stages.
+
+The practical implication is not that AI creates no value. It is that organizations cannot scale generation independently of the human and technical capacity required to absorb that generation. More code can increase the demand for complementary expertise rather than eliminate it.
+
+### The Verification Bottleneck
+
+When generation capacity rises faster than verification capacity, verification becomes the governing constraint on throughput. The bottleneck may appear in code review, testing, security analysis, integration, release engineering, product acceptance, or operational validation. Its exact location differs by organization, but the system-level effect is the same: unverified work accumulates upstream of the constrained gate.
+
+The NBER marketplace analysis reinforces the distinction between supply and realized value. Across four application marketplaces, the authors report an increase in new application supply beginning around mid-2025, but no increase in total application usage during the first three months after launch. The increase was concentrated largely among applications with little or no user base. This does not show that every AI-assisted application lacks value; it shows that producing more software artifacts is not equivalent to producing more adopted software.
+
+> **Architecture insight:** AI scales code generation faster than most organizations can scale verification, integration, release, and adoption capacity. Once that happens, the productivity bottleneck has moved. Optimizing generation further increases inventory unless the downstream control system expands with it.
+
+The evidence does **not** establish that AI-generated code is always lower quality, that every additional commit is waste, or that review is the only possible bottleneck. Those claims require separate evidence. What it does establish is that upstream activity and downstream outcomes must be measured separately.
+
+For the full methodology, findings, limitations, and claim boundaries, see the repository's [NBER evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md).
 
 ### 1. The Sponsor-Team Disconnect (The "Zero-Cost" Fallacy)
 
@@ -149,6 +199,12 @@ According to the Theory of Constraints, a system is only as fast as its slowest 
 AI has drastically accelerated specific nodes (Spec Generation, Code Generation, Test Generation) without rebalancing the whole system.
 
 We have created **Islands of Speed** separated by **Oceans of Chaos**. The result is not a faster factory; it is a pile-up of half-baked, unverified, and unmaintainable artifacts at every stage of the process.
+
+---
+
+#### References
+
+*   **Demirer, Musolff, and Yang (NBER Working Paper 35275, 2026):** [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](https://www.nber.org/papers/w35275) — Observational evidence of substantial attenuation from commits to projects and releases; the paper's production model estimates an elasticity of substitution of approximately 0.25 between upstream AI-augmented output and downstream human effort. See the [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) for limitations and interpretation boundaries.
 
 ---
 **Next:** [🔥 Part 3: The Aftermath](03_the_aftermath.md)

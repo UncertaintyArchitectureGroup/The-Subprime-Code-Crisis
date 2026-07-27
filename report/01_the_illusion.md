@@ -4,6 +4,7 @@
 
 **Table of Contents:**
 *   [Chapter 1. The Great Illusion](#chapter-1-the-great-illusion-why-we-feel-faster-but-data-shows-were-slowing-down)
+    *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
 *   [Chapter 2. The Missing Price Tag](#chapter-2-the-missing-price-tag-the-true-cost-of-making-ai-work)
 *   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-why-the-board-chooses-a-strategy-of-degradation)
 *   [Chapter 4. Anatomy of the Break](#chapter-4-anatomy-of-the-break-how-the-safe-scenario-kills-the-sdlc)
@@ -81,6 +82,40 @@ The question is not whether AI makes typing faster. It does. The question is whe
 
 ---
 
+### Writing Code vs. Shipping Code
+
+NBER Working Paper 35275, *Writing Code vs. Shipping Code*, provides direct evidence for the distinction between local coding activity and downstream software outcomes. The authors examine successive generations of AI coding tools and follow their measured effects across a production hierarchy rather than stopping at lines of code or commits.
+
+For the cumulative generation that includes asynchronous agents, the reported effect falls from approximately:
+
+- **180%** for commits;
+- to **50%** for distinct projects or repositories touched;
+- to **30%** for releases.
+
+The exact percentages come from specific samples and event-study specifications. They should not be treated as universal productivity constants. The robust insight is the attenuation pattern: the further measurement moves from writing code toward shipping and adoption, the smaller the observed gain becomes.
+
+```text
+Generated code
+      ↓
+Commits
+      ↓
+Pull requests and review
+      ↓
+Projects and releases
+      ↓
+Usage and customer value
+```
+
+The paper also reports that new application supply increased across four marketplaces beginning around mid-2025, while total application usage did not increase during the first three months after launch. This does not mean that no AI-assisted application creates value. It means that producing more software artifacts is not the same as producing more adopted software.
+
+> **Architecture insight:** The productivity bottleneck has shifted. AI can scale code generation faster than organizations can scale verification, integration, release, and adoption capacity. Once downstream capacity becomes the constraint, additional upstream output increases inventory more readily than delivered value.
+
+This evidence strengthens the report's central distinction between **activity metrics** and **system-level productivity**. It does not, by itself, establish that AI-generated code is generally lower quality, that all additional commits are waste, or that every organization experiences the same effects. Those claims require separate evidence.
+
+For the study's methodology, observed findings, model-calibrated estimate, limitations, and explicit claim boundaries, see the repository's [NBER evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md).
+
+---
+
 ### The "Fear Factor" in Productivity
 
 There is an even darker interpretation of the modest ~10% net productivity gain seen in some datasets. We must ask: Is this gain technological, or is it psychological?
@@ -149,6 +184,7 @@ We have built a high-speed conveyor belt for disposable code. By lowering the co
 * **Agarwal et al. (arXiv, 2026):** ["AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents"](https://arxiv.org/abs/2601.13597) — AI-generated code shows +18% static analysis warnings and +39% higher cognitive complexity. Quality degradation persists even when velocity gains fade.
 * **Peng et al. (arXiv, 2023):** ["The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"](https://arxiv.org/abs/2302.06590) — RCT ($n = 196$) showing 55.8% speedup on greenfield coding tasks, primarily benefiting less-experienced developers. Foundational positive evidence for task-level acceleration.
 * **GitClear (2025):** [AI Assistant Code Quality 2025 Research](https://www.gitclear.com/ai_assistant_code_quality_2025_research) — 8x increase in duplicated code blocks, code reuse dropped from ~25% to <10%. Dataset: 211 million changed lines.
+* **Demirer, Musolff, and Yang (NBER Working Paper 35275, 2026):** [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](https://www.nber.org/papers/w35275) — Reports substantial attenuation from commits toward projects and releases, and increased application supply without higher early aggregate usage. See the [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) for methodology, limitations, and claim boundaries.
 * **Post-Copilot Burnout (Oct 2025):** [Are AI Assistants Making Senior Developers the New Bottleneck?](https://technodiaries.medium.com/post-copilot-burnout-are-ai-assistants-making-senior-developers-the-new-bottleneck-1689e20364f1) — Senior devs report doubled review time, PR queues described as "tidal wave."
 * **Stack Overflow Developer Survey (2024):** [Developer Survey Results](https://survey.stackoverflow.co/2024/) — Documents rising developer anxiety regarding AI displacement and shifting productivity expectations.
 
