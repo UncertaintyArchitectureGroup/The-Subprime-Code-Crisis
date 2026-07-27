@@ -195,7 +195,7 @@ The registry is the machine- and human-readable inventory of source identity, cl
 
 ### Why discovery does not update the report directly
 
-Search results are candidates, not evidence accepted by the repository. Each selected candidate must enter Flow A, be registered, reviewed, integration-audited, independently checked, and synchronized before it can support report claims.
+Search results are candidates, not evidence accepted by the repository. Each selected candidate must receive explicit routing. A previously unregistered evidence object enters Flow A. A changed, corrected, peer-reviewed, retracted, or superseding version of an already registered source enters Flow C. The applicable flow must be completed before the source can support report claims.
 
 ### Why independent review is required
 
@@ -361,7 +361,7 @@ Use when the source itself is unchanged, but a report claim, README diagram, sum
 
 Use Flow E to identify evidence candidates relevant to a defined repository claim, evidence gap, uncertainty, or freshness requirement.
 
-Discovery is not evidence acceptance. Flow E must not directly change report claims, protocols, source statuses, confidence classifications, or repository maps. Every accepted candidate enters Flow A.
+Discovery is not evidence acceptance. Flow E must not directly change report claims, protocols, source statuses, confidence classifications, or repository maps. Every accepted candidate must receive explicit routing. A previously unregistered evidence object enters Flow A. A changed, corrected, peer-reviewed, retracted, or superseding version of an already registered source enters Flow C.
 
 #### 1. Search Strategy
 
@@ -609,6 +609,15 @@ Record one outcome:
 
 If corrections are required, update the search and Candidate Register, then repeat independent review. If disagreement remains or independent review is unavailable, escalate to the human user before accepting candidates.
 
+For Flow E, Independent Search Review satisfies the repository-wide Independent Review requirement when it:
+
+- reviews the complete Flow E output;
+- is performed by a reviewer who did not conduct the primary search;
+- uses the standard repository review outcomes;
+- records the required review metadata.
+
+A separate second reviewer is not required when the Independent Search Review already covers the complete Flow E output and meets these conditions.
+
 Flow E is complete only when:
 
 - the Search Strategy is recorded;
@@ -619,7 +628,7 @@ Flow E is complete only when:
 - Independent Search Review is `Confirmed`;
 - unresolved disagreements and material omissions are absent.
 
-Every accepted new candidate then enters Flow A. Flow E notes, abstracts, summaries, or Candidate Register entries do not substitute for registration, evidence review, an evidence brief, integration audit, or repository-wide verification.
+Accepted new sources enter Flow A. Changed or superseding versions of registered sources enter Flow C. Flow E notes, abstracts, summaries, or Candidate Register entries do not substitute for registration, evidence review, an evidence brief, integration audit, or repository-wide verification.
 
 ## Registration and classification
 
@@ -946,21 +955,26 @@ User correction or recurring process signal
         ↓
 Classify the observation
         ↓
-Does an existing flow already cover it?
-        ├─ Yes → execution error or one-off scope decision; follow the existing flow
+Does an existing flow cover this work type?
+        ├─ Yes
+        │    ↓
+        │  Was the existing flow followed correctly?
+        │    ├─ No → execution error; follow and correct through the existing flow
+        │    └─ Yes
+        │         ↓
+        │  Is a required step, check, transition, or completion condition missing?
+        │    ├─ Yes → propose an extension to the existing flow
+        │    └─ No
+        │         ↓
+        │  Is the current workflow ambiguous or internally inconsistent?
+        │    ├─ Yes → propose clarification or restructuring
+        │    └─ No → treat as a one-off preference or scope decision
         └─ No
              ↓
-Is a required step or verification check missing?
-        ├─ Yes → propose an extension to the existing flow
-        └─ No
-             ↓
-Is this a new recurring work pattern with its own trigger and completion condition?
-        ├─ Yes → propose a new flow
-        └─ No
-             ↓
-Is the current workflow ambiguous or internally inconsistent?
-        ├─ Yes → propose clarification or restructuring
-        └─ No → treat as a one-off preference or scope decision
+        Is this a new recurring work pattern with its own trigger,
+        procedure, state transition, and completion condition?
+             ├─ Yes → propose a new flow
+             └─ No → treat as a one-off preference or unresolved boundary
              ↓
 Discuss the proposed change with the repository maintainer
         ↓
@@ -997,6 +1011,8 @@ Before proposing a change:
 - avoid adding a rule merely because one execution was poor;
 - search for equivalent instructions elsewhere in `AGENTS.md` to avoid duplication or contradiction.
 
+The existence of an applicable flow does not prove that the flow is complete. First determine whether the flow was followed. Then determine whether following it still exposed a missing step, missing check, ambiguous obligation, or incomplete completion condition.
+
 An execution error should normally be corrected through the existing flow, not through new governance.
 
 ### 3. Decide whether to extend, add, or clarify
@@ -1005,6 +1021,8 @@ An execution error should normally be corrected through the existing flow, not t
 - **Add a new primary flow** only when the work has a distinct recurring trigger, procedure, state transition, and completion condition.
 - **Clarify or restructure governance** when existing language permits multiple reasonable interpretations or creates inconsistent obligations.
 - **Do not change the workflow** for one-off preferences, temporary scope choices, or failures caused by ignoring an adequate instruction.
+
+When the signal does not justify a workflow change but remains unresolved, record the local scope decision explicitly. Do not silently generalize it into a repository-wide rule.
 
 Cross-cutting controls such as independent review, human escalation, safe-versus-substantive classification, and constitutional principles must remain outside source-specific flows.
 
