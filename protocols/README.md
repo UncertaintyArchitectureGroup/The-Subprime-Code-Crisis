@@ -1,6 +1,6 @@
 # 🛡️ Operational Protocols
 
-> **Navigation:** [🏠 Home](../README.md) | [📉 The Report](../report/01_the_illusion.md) | **Protocols** | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [📉 The Report](../report/01_the_illusion.md) | **Protocols** | [🧾 Evidence Library](../evidence/README.md) | [📋 Source Registry](../evidence/SOURCES.md) | [📚 References](../REFERENCES.md)
 
 ## From diagnosis to operating practice
 
@@ -116,10 +116,17 @@ The reverse sequence is a common failure mode: executives announce broad adoptio
 
 These protocols are derived from the report's risk analysis and evidence synthesis. They should be evaluated through implementation feedback, local measurement, and further empirical study.
 
+- The [Source Registry](../evidence/SOURCES.md) is the canonical source inventory and status registry. It records evidence-review status, integration-audit status, verification date, and actual repository use.
 - The [Evidence Library](../evidence/README.md) documents source classes and evidence briefs.
+- [References](../REFERENCES.md) is the compact human-readable bibliography; it is not the canonical inventory or status database.
 - The [Claim confidence map](../README.md#claim-confidence-map) identifies the current support level of major repository claims.
-- [References](../REFERENCES.md) remains the complete bibliography and compact source inventory.
 - [Uncertainty Architecture](https://github.com/UncertaintyArchitectureGroup/uncertainty-architecture) provides a broader specification for governing non-deterministic systems; it complements this repository but does not replace these software-delivery protocols.
+
+A protocol may be motivated by one or more sources, but it is not empirical proof. During a source integration audit, protocol implications must be recorded as exactly one of:
+
+- **No protocol change**
+- **Protocol clarification**
+- **Protocol change**
 
 ---
 
