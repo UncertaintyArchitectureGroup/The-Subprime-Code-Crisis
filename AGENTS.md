@@ -1,21 +1,198 @@
 # AGENTS.md
 
-## Purpose
+## Canonical status
 
-This file is the canonical instruction for human contributors and AI agents working in this repository. It defines how to process sources and modify the repository without mixing evidence, repository interpretation, operational guidance, and navigation metadata.
+This file is the canonical operating specification for human contributors and AI agents working in this repository.
 
-The repository has four layers:
+Before performing any repository work, read this file in full from the target branch. Instructions remembered from an earlier task, conversation, branch, cached context, or model memory are not sufficient. When remembered instructions conflict with this file, this file wins.
 
-1. **Evidence** — what external sources report.
-2. **Report** — the Subprime Code Crisis synthesis and argument.
-3. **Protocols** — operational responses derived from the risk analysis.
-4. **Repository maps** — navigation, source status, claim confidence, diagrams, and bibliography.
+## Repository overview
+
+The Subprime Code Crisis repository examines how AI-assisted software development changes software-delivery systems.
+
+It focuses on the gap between local code-generation speed and end-to-end delivery outcomes such as review capacity, rework, quality, security, release performance, maintenance, and organizational control.
+
+The repository is:
+
+- an evidence-governed research synthesis;
+- a structured argument about delivery-system risks;
+- an operational protocol library for engineering organizations;
+- an inspectable record of sources, interpretations, confidence, and unresolved uncertainty.
+
+The repository is not:
+
+- an anti-AI manifesto;
+- a vendor ranking or benchmark leaderboard;
+- a collection of citations without source review;
+- proof that one study, tool, team, or metric represents the software industry;
+- a claim that every protocol is empirically validated or universally applicable.
+
+Mixed, positive, null, contradictory, and unfavorable evidence is part of the repository's subject matter and must be treated fairly.
+
+## Repository goal
+
+The goal is to maintain a credible, inspectable, and operationally useful account of AI-assisted software-delivery risk.
+
+The repository is healthy when:
+
+1. every material factual claim traces to a registered source;
+2. source findings are separated from source-author interpretation and repository inference;
+3. important sources have reviewed evidence briefs;
+4. every repository use of a source has been integration-audited;
+5. report arguments match the strength and scope of the evidence;
+6. protocols are clearly identified as evidence-backed, systems-derived, or proposed practice;
+7. contradictory and limiting evidence remains visible;
+8. source status, bibliography, indexes, diagrams, and current-use records remain synchronized;
+9. substantive changes remain subject to human judgment and explicit approval.
+
+Speed, volume of changes, persuasive language, and number of citations are not success criteria.
+
+## Repository architecture
+
+The repository has five connected layers.
+
+```text
+External source material
+        ↓
+Evidence registry and evidence briefs
+        ↓
+Report synthesis and argument
+        ↓
+Operational protocols
+        ↓
+Repository maps and navigation
+```
+
+### Layer 1 — External source material
+
+Original papers, datasets, filings, standards, institutional reports, and other external records.
+
+The original source is authoritative for what it reports. Repository text, summaries, search snippets, and prior agent notes are not substitutes.
+
+### Layer 2 — Evidence registry and briefs
+
+- `evidence/SOURCES.md` is the canonical source inventory and status registry.
+- Evidence briefs document source design, findings, calculations, interpretation, limitations, scope, and repository use.
+- Evidence review determines whether the source itself has been understood and documented accurately.
+
+### Layer 3 — Report
+
+Files under `report/` synthesize multiple sources and develop the Subprime Code Crisis argument.
+
+The report may make systems-level inferences, but those inferences must be distinguishable from source findings and bounded by the underlying evidence.
+
+### Layer 4 — Protocols
+
+Files under `protocols/` translate the risk analysis into adaptable operating practices.
+
+Protocols are not empirical proof. A source may motivate a control without proving that a specific threshold, role, gate, or escalation rule is universally valid.
+
+### Layer 5 — Repository maps and navigation
+
+This includes:
+
+- the root `README.md`;
+- claim-confidence and evidence maps;
+- diagrams, including the Crisis Map;
+- evidence-directory indexes;
+- `REFERENCES.md`, the compact human-readable bibliography.
+
+These artifacts summarize and navigate the repository. They must not silently introduce stronger claims than the evidence and report support.
 
 Do not collapse these layers.
 
+## Design principles
+
+### Original source over summary
+
+Read the original source whenever accessible. Secondary summaries and repository interpretations may help locate material but cannot establish source ground truth.
+
+### Evidence before rhetoric
+
+Claim strength must follow source design, scope, uncertainty, and external-validity limits. Correct or weaken the repository argument when the evidence requires it.
+
+### Findings, interpretation, and inference remain separate
+
+Always distinguish:
+
+- directly observed or documented findings;
+- derived calculations;
+- model-calibrated estimates;
+- source-author interpretation;
+- repository interpretation;
+- claims not established by the source.
+
+### Mixed evidence is expected
+
+Do not search only for confirming evidence. Preserve positive, null, mixed, contradictory, replication, and critique evidence.
+
+### Every material claim remains inspectable
+
+A reader must be able to trace a material claim to its source, evidence brief, relationship type, repository location, and current status.
+
+### Workflow correctness over speed
+
+Do not skip registration, review, integration audit, independent review, synchronization, or human escalation to complete work faster.
+
+### Human-curated substantive logic
+
+Agents may discover evidence, identify inconsistencies, calculate implications, and propose changes.
+
+Agents must not silently change:
+
+- the report's current logic or material argument;
+- major conclusions or causal framing;
+- claim-confidence classifications;
+- the Executive Summary, Crisis Map, or other load-bearing synthesis;
+- protocol logic, controls, roles, thresholds, or escalation rules;
+- repository governance or workflow architecture.
+
+When an agent finds a reason to make such a change, it must stop before editing the substantive artifact and discuss the proposed change with the human user in the active interaction. The discussion must present:
+
+- the evidence or inconsistency found;
+- the current repository position;
+- the proposed change;
+- reasonable alternatives;
+- expected consequences for the report, protocols, maps, and source statuses;
+- the decision required from the human user.
+
+Only after explicit human approval may the substantive change be implemented.
+
+Editorial corrections that do not alter meaning—such as spelling, formatting, broken links, or exact synchronization—may proceed without a separate substantive-change decision.
+
+## Design rationale
+
+### Why evidence review and integration audit are separate
+
+Understanding and documenting a source is different from verifying every place where the repository uses that source.
+
+A correct evidence brief does not prove that report claims, diagrams, calculations, protocols, and navigation artifacts use the source correctly. Therefore the two activities have independent states and completion conditions.
+
+### Why `evidence/SOURCES.md` is canonical
+
+The registry is the machine- and human-readable inventory of source identity, classification, evidence-review status, integration-audit status, verification date, and current repository use.
+
+`REFERENCES.md` is intentionally a compact bibliography. Treating it as a status database would mix navigation with workflow state and allow inconsistencies to remain hidden.
+
+### Why discovery does not update the report directly
+
+Search results are candidates, not evidence accepted by the repository. Each selected candidate must enter Flow A, be registered, reviewed, integration-audited, independently checked, and synchronized before it can support report claims.
+
+### Why independent review is required
+
+The same agent that produced a search, brief, calculation, or integration audit may repeat its own assumptions. Independent review creates a separate attempt to find omissions, misreadings, contradictory evidence, status errors, and misleading synthesis.
+
+### Why substantive changes require human discussion
+
+Evidence can support more than one reasonable interpretation, and repository arguments and protocols contain normative and strategic judgments. Agents may expose the decision but must not silently replace the maintainer's judgment with their own.
+
+### Why user corrections can change the workflow
+
+A user correction may reveal an execution mistake, a missing check, an ambiguous instruction, or a new recurring work type. The agent must classify the correction and propose workflow evolution when appropriate, but `AGENTS.md` itself must not change silently.
+
 ## Mandatory start-of-work gate
 
-Before reading, editing, reviewing, searching for evidence, or changing source status, read the current `AGENTS.md` from the target branch in full.
+Before reading other repository files, editing, reviewing, searching for evidence, or changing source status, read the current `AGENTS.md` from the target branch in full.
 
 Instructions remembered from an earlier task, conversation, branch, or cached context are not sufficient. The repository version is authoritative.
 
@@ -24,7 +201,8 @@ Before changing anything, state:
 - the selected primary flow;
 - the files and source IDs in scope;
 - whether evidence review, integration audit, or both are required;
-- whether an independent reviewer is available.
+- whether an independent reviewer is available;
+- whether the task may trigger a substantive-change discussion.
 
 Then read:
 
@@ -449,7 +627,7 @@ Check whether:
 - repository synthesis is clearly identified;
 - positive, null, mixed, contradictory, and unfavorable findings are treated fairly.
 
-Correct the argument even when this weakens the repository thesis.
+When this check reveals a possible need to change report logic, a major conclusion, claim confidence, protocol logic, or a load-bearing repository map, do not edit that substantive artifact yet. Trigger the human-curated substantive-change discussion defined above.
 
 ### 7. Verify report integration
 
@@ -460,9 +638,11 @@ For every report use:
 - separate findings from repository inference;
 - expose material limitations near the claim;
 - remove inconsistent duplicate retellings;
-- update neighboring paragraphs and chapter conclusions when needed.
+- identify neighboring paragraphs and chapter conclusions that may require change.
 
 A corrected citation is insufficient if the surrounding argument remains misleading.
+
+Substantive report changes require explicit human approval before implementation.
 
 ### 8. Verify README and repository maps
 
@@ -477,19 +657,23 @@ Reassess:
 
 Multi-source diagrams must label source boundaries and must not present unrelated numbers as one measured causal chain.
 
+Changes to load-bearing synthesis or claim confidence require explicit human approval before implementation.
+
 ### 9. Verify protocol implications
 
 Inspect every protocol for explicit or implicit reliance on the source. Document exactly one outcome:
 
 - `No protocol change`
 - `Protocol clarification`
-- `Protocol change`
+- `Protocol change proposed`
 
 Do not change a protocol merely for symmetry with a report change.
 
+A proposed protocol clarification or protocol change must be discussed with and approved by the human user before implementation.
+
 ### 10. Synchronize records
 
-After corrections:
+After approved corrections:
 
 - update the brief;
 - update actual `Current use` locations in `evidence/SOURCES.md`;
@@ -540,12 +724,15 @@ Escalate before finalizing when:
 - agents disagree on relevance, source quality, claim strength, calculation, or status;
 - a source is ambiguous, inaccessible, superseded, or internally inconsistent;
 - repository claims cannot be traced confidently;
+- evidence suggests changing the current report logic, material argument, major conclusion, claim confidence, protocol logic, or load-bearing repository map;
 - a correction would materially weaken, reverse, or remove a major conclusion;
 - a new flow or material instruction change appears necessary;
 - the independent reviewer reports unresolved doubt;
 - the requested action conflicts with this file.
 
-Present the decision needed, competing interpretations, supporting evidence, and practical consequences.
+Present the decision needed, competing interpretations, supporting evidence, and practical consequences in the active interaction with the human user.
+
+Do not implement the substantive change until the human user explicitly approves it.
 
 ## User-correction and workflow-maintenance trigger
 
@@ -596,7 +783,8 @@ A source may be marked `Verified` only when:
 - [ ] A claim-to-source trace exists for all material uses.
 - [ ] Numbers, units, populations, and periods were checked.
 - [ ] Claim strength matches source design.
-- [ ] Report arguments and nearby conclusions remain valid.
+- [ ] Report arguments and nearby conclusions were assessed.
+- [ ] Any substantive report, protocol, map, or governance change was explicitly approved by the human user before implementation.
 - [ ] README claims, tables, and diagrams were reassessed.
 - [ ] Protocol implications have a documented outcome.
 - [ ] `Current use` lists actual locations.
@@ -611,7 +799,7 @@ For substantial source work, prefer separate PRs:
 
 1. registration and evidence brief;
 2. report integration and corrections;
-3. README or protocol changes, only when required;
+3. README or protocol changes, only when required and approved;
 4. independent-review corrections, when required;
 5. final verification-status update after all required changes exist on the default branch.
 
