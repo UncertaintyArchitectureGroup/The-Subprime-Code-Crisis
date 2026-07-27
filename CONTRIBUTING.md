@@ -4,13 +4,14 @@ This repository is an independent research synthesis and operational guidance pr
 
 Contributions are welcome from engineers, researchers, delivery leaders, QA and security practitioners, and organizations willing to publish inspectable results.
 
-Before contributing, read:
+Read [`AGENTS.md`](AGENTS.md) first.
 
-1. [`README.md`](README.md) — repository scope and claim boundaries.
-2. [`evidence/README.md`](evidence/README.md) — evidence taxonomy and evidence-brief standard.
-3. [`evidence/SOURCES.md`](evidence/SOURCES.md) — canonical source inventory and status registry.
-4. [`AGENTS.md`](AGENTS.md) — flow selection, evidence review, integration audit, and status transitions.
-5. [`REFERENCES.md`](REFERENCES.md) — compact human-readable bibliography.
+Then follow the mandatory start-of-work read order defined there. The following links are supporting entry points, not a competing canonical sequence:
+
+- [`README.md`](README.md) — repository scope and claim boundaries.
+- [`evidence/README.md`](evidence/README.md) — evidence taxonomy and evidence-brief standard.
+- [`evidence/SOURCES.md`](evidence/SOURCES.md) — canonical source inventory and status registry.
+- [`REFERENCES.md`](REFERENCES.md) — compact human-readable bibliography and navigation aid.
 
 `evidence/SOURCES.md` is canonical. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
 
@@ -84,9 +85,11 @@ For source-related work:
 6. build an inspectable claim-to-source trace;
 7. correct report claims and surrounding argument;
 8. reassess README-level claims and diagrams;
-9. document one protocol outcome: no change, clarification, or change;
+9. document exactly one protocol outcome: `No protocol change`, `Protocol clarification`, or `Protocol change proposed`;
 10. synchronize `Current use`, indexes, links, and `REFERENCES.md`;
-11. mark integration `Verified` only after all required corrections are merged.
+11. pass independent review;
+12. resolve all corrections;
+13. mark integration `Verified` only when the independent-review outcome is `Confirmed` and all required corrections exist on the default branch.
 
 Do not add a citation directly to the report without registering the source.
 
@@ -150,8 +153,9 @@ For substantial source work, prefer separate PRs for:
 
 1. registration and evidence brief;
 2. report integration and corrections;
-3. repository-map or protocol changes, only when required;
-4. final verification-status update after all required changes exist on the default branch.
+3. README or protocol changes, only when required and approved;
+4. independent-review corrections, when required;
+5. final verification-status update after the complete state exists on the default branch.
 
 ## License and conduct
 
