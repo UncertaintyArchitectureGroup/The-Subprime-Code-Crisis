@@ -155,14 +155,34 @@ It should be paired with separate research when making claims about code quality
 
 ## Repository integration audit
 
-- **Integration status:** Not started
-- **Repository search completed:** No
-- **Report mentions checked:** Not yet
-- **Numeric claims checked:** The brief's numbers were checked against the source; repository-wide uses have not yet been audited
-- **README claims and diagrams checked:** Not yet
-- **Protocol outcome:** Not yet assessed
-- **Corrections made:** None recorded through the complete integration procedure
-- **Current-use locations confirmed:** No; the registry locations remain provisional until repository-wide search
+### Claim-to-source trace
+
+| Repository claim | Location | Exact source result | Relationship | Action |
+| --- | --- | --- | --- | --- |
+| Higher upstream coding activity in studied settings | `README.md`, Crisis Map | P-2026-01 reports increased upstream coding activity after AI-tool adoption in its studied samples and specifications | Direct, bounded empirical support | Keep as the only Crisis Map node directly supported by P-2026-01 |
+| Lower cost of producing code-like output | `README.md`, Crisis Map | P-2026-01 does not directly measure a general reduction in the cost of producing code-like output | Repository synthesis, not an evidence-backed inference | Reclassify as repository synthesis |
+| Higher upstream activity can contribute to downstream verification bottlenecks and wider delivery-system risk | `README.md`, Crisis Map and evidence-boundary text | P-2026-01 reports attenuation from upstream activity toward downstream outcomes; it does not measure the map's full bottleneck-and-risk mechanism | Repository synthesis connecting the bounded empirical finding to the wider model | Keep the empirical node independent and label downstream connections as repository synthesis |
+
+- **Integration status:** Corrections required
+- **Repository search completed:** Yes
+- **Report mentions checked:** Yes
+- **Numeric claims checked:** Yes; no numeric claim is added by this correction
+- **README claims and diagrams checked:** Yes; the Crisis Map now limits P-2026-01 to the upstream-activity node and labels the wider mechanism as repository synthesis
+- **Protocol outcome:** No protocol change
+- **Corrections made:** Reclassified “Lower cost of producing code-like output” as repository synthesis; separated the P-2026-01 finding from the proposed downstream mechanism; added an explicit evidence boundary and claim-to-source trace
+- **Current-use locations confirmed:** `README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`
 - **Verification date:** —
 
-This source has a reviewed evidence brief but is not fully processed. It must remain `Integration audit = Not started` in `evidence/SOURCES.md` until the complete procedure in `AGENTS.md` has been run and all required corrections are merged.
+The source remains `Integration audit = Corrections required`. These corrections do not establish verified integration, and the source must not be marked `Verified` without a `Confirmed` independent review after all corrections are merged.
+
+## Independent review
+
+- **Primary agent or reviewer:** Repository agent implementing the approved PR #28 corrections
+- **Independent reviewer:** Not available
+- **Flow reviewed:** Flow D — changed repository content relying on P-2026-01
+- **Materials independently checked:** None independently checked
+- **Outcome:** Review unavailable
+- **Discrepancies found:** Independent review was not available
+- **Corrections completed:** The two requested Crisis Map corrections were implemented; confirmation remains outstanding
+- **Human decision required:** Keep PR #28 in draft and retain `Corrections required` until independent review is available
+- **Review date:** 2026-07-27

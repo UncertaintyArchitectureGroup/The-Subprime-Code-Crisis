@@ -127,35 +127,25 @@ A protocol is therefore not empirical proof, a repository interpretation is not 
 
 ```mermaid
 flowchart TD
-    %% Setup Styles
-    classDef volume fill:#ffcccc,stroke:#333,stroke-width:2px;
-    classDef value fill:#ccffcc,stroke:#333,stroke-width:2px;
-    classDef crisis fill:#ff0000,color:white,stroke:#333,stroke-width:4px;
+    A[AI-assisted generation<br/><b>Repository synthesis: starting condition</b>]
+    B[Lower cost of producing code-like output<br/><b>Repository synthesis</b>]
+    C[Higher upstream coding activity in studied settings<br/><b>Empirical finding: P-2026-01</b>]
+    D[Upstream output can grow faster than downstream verification capacity<br/><b>Repository synthesis</b>]
+    E[Review / QA / security / architecture bottlenecks<br/><b>Repository synthesis: risk mechanism</b>]
+    F[More rework, uncertainty, and maintenance exposure<br/><b>Repository synthesis: conditional risk</b>]
+    G[Accumulated delivery-system risk<br/><b>Repository synthesis</b>]
+    H[Technical Bankruptcy<br/><b>Warning scenario / repository hypothesis</b>]
 
-    Start((2023: AI Adoption Starts)) --> Split{THE SPLIT}
-
-    subgraph Illusion ["The Illusion (Volume)"]
-        Split -->|Generates Syntax| Vol1[Code Volume +50%]
-        Vol1 --> Vol2[Code Volume +131%]
-        Vol2 --> Vol3[Duplication 8x]
-    end
-
-    subgraph Reality ["The Reality (Value)"]
-        Split -->|Creates Complexity| Val1[Velocity Stalls]
-        Val1 --> Val2[Review Time x2]
-        Val2 --> Val3[Feature Delivery -19%]
-    end
-
-    Vol3 --> Gap{THE GAP}
-    Val3 --> Gap
-
-    Gap --> Crisis[SUBPRIME CODE CRISIS Technical Bankruptcy]
-
-    %% Apply Styles
-    class Vol1,Vol2,Vol3 volume;
-    class Val1,Val2,Val3 value;
-    class Crisis crisis;
+    A --> B
+    B --> D
+    C -->|empirical support for upstream-growth premise| D
+    D --> E --> F --> G
+    G -. possible scenario, not an observed outcome .-> H
 ```
+
+### Evidence boundary for the map
+
+P-2026-01 supports only the bounded premise that AI-tool adoption was associated with higher upstream coding activity in the settings studied. The connection from that finding to downstream verification bottlenecks and accumulated delivery-system risk is repository synthesis. The map does not present a single causal chain measured by P-2026-01, and the warning scenario is not an observed outcome of that study.
 ## How to read this report
 
 This report is intentionally written for engineering leaders, senior developers, architects, QA leaders, delivery managers, and AI adoption decision-makers.
