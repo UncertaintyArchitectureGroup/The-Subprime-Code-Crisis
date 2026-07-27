@@ -97,7 +97,7 @@ Safe editorial or mechanical changes that do not alter meaning, interpretation, 
 
 Every source has separate `Evidence review` and `Integration audit` states. Allowed statuses, transitions, reset behavior, and `Last verified` rules are defined once in the mandatory [`status-model.md`](governance/status-model.md).
 
-In summary, full processing requires `Evidence review = Reviewed brief` and `Integration audit = Verified`. `Last verified` contains a date only when integration is `Verified`; otherwise it is `—`. `Verified` is prohibited unless every correction is merged, every completion gate passes, and independent review is `Confirmed`. A brief, citation, corrected paragraph, PR, merge, or plausible result cannot establish verification by inference.
+In summary, full processing requires `Evidence review = Reviewed brief` and `Integration audit = Verified`. `Last verified` contains a date only when integration is `Verified`; otherwise it is `—`. `Verified` is prohibited unless every correction is merged, every completion gate passes, and independent review is `Confirmed`. A brief, citation, corrected paragraph, completed or merged PR, or plausible result cannot establish verification by inference.
 
 ## Flow selection table
 
