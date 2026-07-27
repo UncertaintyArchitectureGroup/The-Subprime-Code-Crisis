@@ -2,37 +2,37 @@
 
 ## Purpose
 
-This file defines how human contributors and AI agents should read, modify, and extend this repository without mixing evidence, interpretation, and operational guidance.
+This file defines how human contributors and AI agents should read, modify, and extend this repository without mixing evidence, interpretation, operational guidance, and navigation metadata.
 
 The repository has four distinct layers:
 
 1. **Evidence** — what external sources actually report.
 2. **Report** — the Subprime Code Crisis synthesis and argument.
 3. **Protocols** — practical controls derived from the risk analysis.
-4. **Repository maps** — navigation, claim confidence, source status, and bibliography.
+4. **Repository maps** — navigation, claim confidence, source status, diagrams, and bibliography.
 
 Do not collapse these layers.
 
 ## Read order
 
-Before making changes, read in this order:
+Before making changes, read:
 
-1. `README.md` — scope, major claims, evidence map, and repository structure.
-2. `evidence/README.md` — source taxonomy and evidence-brief standard.
-3. `evidence/SOURCES.md` — canonical source registry, evidence-review status, integration-audit status, and current use.
-4. The relevant evidence brief under `evidence/`, when one exists.
-5. Every relevant chapter under `report/`.
-6. Every relevant operational response under `protocols/`.
+1. `README.md` — scope, major claims, maps, and repository structure.
+2. `evidence/README.md` — evidence taxonomy and brief standard.
+3. `evidence/SOURCES.md` — canonical source registry and status database.
+4. The relevant evidence brief, when one exists.
+5. Every relevant file under `report/`.
+6. Every relevant file under `protocols/`.
 7. `REFERENCES.md` — compact bibliography.
-8. `CONTRIBUTING.md` — contribution and disclosure requirements.
+8. `CONTRIBUTING.md` — contribution expectations.
 
-`REFERENCES.md` is not the canonical status database. `evidence/SOURCES.md` is.
+`evidence/SOURCES.md` is the canonical source inventory and status database. `REFERENCES.md` is only a human-readable bibliography.
 
 ## Repository boundaries
 
 ### Evidence layer
 
-Evidence entries describe external material. They must separate:
+Evidence briefs must separate:
 
 - directly observed or documented findings;
 - derived calculations;
@@ -42,29 +42,26 @@ Evidence entries describe external material. They must separate:
 - claims not established by the source;
 - limitations, conflicts, and external-validity risks.
 
-Never write a repository conclusion as though it were a finding reported by a source.
+Never write a repository conclusion as though it were reported directly by a source.
 
 ### Report layer
 
-The report may combine multiple sources and systems reasoning. Every material factual claim must trace to:
+The report may combine multiple sources and systems reasoning. Every material factual claim must trace to a registered source. Strong or load-bearing claims should trace to a reviewed evidence brief.
 
-- a reviewed evidence brief; or
-- a registered source whose brief is explicitly marked pending.
-
-Use bounded language when the design cannot support a strong causal or general claim.
+Use bounded language when the source design cannot support a causal, universal, or enterprise-wide conclusion.
 
 ### Protocol layer
 
-Protocols are operating patterns, not empirical proof. A source may motivate a protocol, but no local threshold, gate, role, workflow, or control is universally validated unless evidence directly supports that claim.
+Protocols are operating patterns, not empirical proof. A source may motivate a protocol, but no local threshold, role, gate, workflow, escalation rule, or control is universally validated unless evidence directly establishes that claim.
 
 ### Repository maps
 
 The following must remain synchronized:
 
 - `evidence/SOURCES.md` — canonical source and status registry;
-- evidence directory indexes — reviewed briefs available in each class;
+- evidence-directory indexes — briefs available in each evidence class;
 - `REFERENCES.md` — compact bibliography;
-- `README.md` — repository-level claims, maps, diagrams, and source coverage.
+- `README.md` — repository-level claims, diagrams, source coverage, and navigation.
 
 ## Source state model
 
@@ -96,30 +93,91 @@ Evidence review = Reviewed brief
 Integration audit = Verified
 ```
 
-The existence of a brief does not imply that report integration has been verified.
+The existence of a brief does not imply that repository integration has been verified.
 
-`Last verified` must contain a date only when `Integration audit = Verified`. Otherwise use `—`.
+`Last verified` contains a date only when `Integration audit = Verified`. Use `—` for every other state.
 
-## Mandatory source-processing flow
+## Choose the correct flow first
 
-Use this flow for every new source and every legacy source already used by the repository.
+Before editing anything, select exactly one primary flow.
 
-Do not skip steps, and do not mark the source complete after creating the brief.
+### Flow A — Add a new source
 
-### Step 1 — Register the source
+Use when the source is not yet listed in `evidence/SOURCES.md`.
 
-Add the source to `evidence/SOURCES.md` before adding or revising report claims.
+Sequence:
 
-Record:
+1. Register and classify the source.
+2. Set `Evidence review = Registered`, `Integration audit = Not started`, and `Last verified = —`.
+3. Complete the evidence-review procedure.
+4. Complete the integration-audit procedure.
+5. Synchronize all maps and records.
+6. Mark `Verified` only after all required corrections are merged.
+
+### Flow B — Process a legacy registered source
+
+Use when the source is already cited or registered but has no reviewed brief or no completed integration audit.
+
+Sequence:
+
+1. Confirm or correct its source ID, class, canonical link, publication status, and `Current use` hypothesis.
+2. Do not create a duplicate registry entry.
+3. Complete the evidence-review procedure if no current reviewed brief exists.
+4. Complete the integration-audit procedure across all existing repository uses.
+5. Correct report claims, diagrams, references, and protocol implications.
+6. Mark `Verified` only after all corrections are merged.
+
+### Flow C — Update a changed source
+
+Use when a working paper, report, filing, dataset, or methodology source has changed, been superseded, or become peer reviewed.
+
+Sequence:
+
+1. Set `Evidence review = Needs re-review`.
+2. Set `Integration audit = Needs re-verification`.
+3. Clear `Last verified` to `—`.
+4. Record the new version in the evidence brief.
+5. Re-run the evidence-review procedure.
+6. Re-run the complete integration audit.
+7. Restore `Reviewed brief` and `Verified` only after completion.
+
+### Flow D — Change repository content that relies on a verified source
+
+Use when the source itself has not changed, but a report claim, README diagram, summary, protocol, or calculation relying on it changes materially.
+
+Sequence:
+
+1. Keep `Evidence review = Reviewed brief` unless the brief itself is now inadequate.
+2. Set `Integration audit = Needs re-verification`.
+3. Clear `Last verified` to `—`.
+4. Re-run the integration audit for the affected source.
+5. Restore `Verified` only after the changed repository state has been checked and merged.
+
+### Flow E — Discover newer or missing evidence
+
+Use only after the currently registered source backlog has been processed far enough to understand the evidence gaps.
+
+Sequence:
+
+1. Identify unresolved claims, weak source classes, stale evidence, missing positive evidence, contradictions, and replication gaps.
+2. Search for newer, stronger, original, peer-reviewed, contradictory, null, and positive evidence.
+3. Do not add search results directly to the report.
+4. Route every selected source through Flow A.
+5. Record rejected candidate sources and the reason when the search was systematic or claim-critical.
+
+Freshness search is not a substitute for validating the sources already used by the repository.
+
+## Registering and classifying a source
+
+Before adding or revising report claims, register the source in `evidence/SOURCES.md` with:
 
 - stable source ID;
 - canonical title and authors or publisher;
 - year and publication status;
 - canonical URL;
 - evidence class;
-- `Evidence review = Registered`;
-- `Integration audit = Not started`;
-- `Last verified = —`;
+- both status fields;
+- `Last verified`;
 - what the source can support;
 - known or proposed repository use.
 
@@ -131,8 +189,6 @@ Use IDs in the form:
 - `M-YYYY-NN` — methodology or theory;
 - `DS-YYYY-NN` — dataset.
 
-### Step 2 — Classify the source
-
 Choose exactly one primary class:
 
 - `evidence/primary/`
@@ -143,9 +199,11 @@ Choose exactly one primary class:
 
 Classification describes what the source is, not whether it supports the repository thesis.
 
-### Step 3 — Start the evidence review
+## Evidence-review procedure
 
-When review begins, set:
+### 1. Start review
+
+Set:
 
 ```text
 Evidence review = Brief in progress
@@ -153,34 +211,35 @@ Integration audit = Not started
 Last verified = —
 ```
 
-Read the original source, not only a summary or the repository's existing interpretation.
+For Flow C, retain `Needs re-verification` until the integration audit begins.
 
-### Step 4 — Create the evidence brief
+Read the original source, not only a summary or the repository's current interpretation.
 
-Create a kebab-case Markdown file in the correct evidence directory.
+### 2. Create or update the evidence brief
 
-Include:
+Create a kebab-case Markdown file in the correct evidence directory. Include:
 
 1. Source ID and full citation.
-2. Publication status and version.
+2. Publication status and exact version.
 3. Research question or documentary purpose.
-4. Scope, dataset, population, time period, comparator, and methodology.
+4. Scope, dataset, population, period, comparator, and methodology.
 5. Directly observed or documented findings.
 6. Derived or model-calibrated findings.
 7. Source-author interpretation.
-8. Repository-relevant interpretation.
+8. Repository interpretation.
 9. What the source does not establish.
 10. Limitations, conflicts, and external-validity risks.
 11. Known repository locations using the source.
 12. A `Repository integration audit` section.
 
-Use this section template:
+Use this template:
 
 ```markdown
 ## Repository integration audit
 
 - Integration status: Not started | In progress | Corrections required | Verified | Needs re-verification
 - Repository search completed:
+- Claim-to-source trace location:
 - Report mentions checked:
 - Numeric claims checked:
 - README claims and diagrams checked:
@@ -190,7 +249,9 @@ Use this section template:
 - Verification date:
 ```
 
-When the brief is complete and indexed, set:
+### 3. Complete evidence review
+
+Add the brief to the relevant evidence-directory index and set:
 
 ```text
 Evidence review = Reviewed brief
@@ -198,22 +259,24 @@ Integration audit = Not started
 Last verified = —
 ```
 
-This is not completion of the source-processing flow.
+For Flow C, the integration state may remain `Needs re-verification` until the audit starts.
 
-### Step 5 — Start the integration audit
+A reviewed brief is not completion of the source-processing flow.
 
-Before changing report text, set:
+## Integration-audit procedure
+
+### 1. Start the audit
+
+Set:
 
 ```text
 Integration audit = In progress
 Last verified = —
 ```
 
-Then execute the complete procedure below.
+Update the same status in the evidence brief.
 
-## Verifying the integration of each source
-
-### 1. Establish source ground truth
+### 2. Establish source ground truth
 
 Record from the original source:
 
@@ -225,16 +288,17 @@ Record from the original source:
 - whether each result is observed, derived, model-calibrated, self-reported, or interpreted;
 - stated limitations and conflicts.
 
-### 2. Locate every repository use
+### 3. Locate every repository use
 
 Search the entire repository for:
 
 - source ID;
-- author names;
+- author and organization names;
 - title fragments;
 - distinctive metric names;
 - every attributed number;
-- paraphrases that may not contain a citation.
+- paraphrases that may not contain a citation;
+- diagrams, captions, summaries, or protocol language that implicitly depend on the source.
 
 Inspect at minimum:
 
@@ -243,11 +307,11 @@ Inspect at minimum:
 - all files under `protocols/`;
 - `REFERENCES.md`;
 - `evidence/SOURCES.md`;
-- evidence directory indexes.
+- evidence-directory indexes.
 
-Do not rely only on the existing `Current use` field. Confirm actual usage and correct the field.
+Do not rely on the existing `Current use` field. Confirm actual usage and correct it.
 
-### 3. Build a claim-to-source trace
+### 4. Build a claim-to-source trace
 
 For every material repository statement supported by the source, record:
 
@@ -255,9 +319,9 @@ For every material repository statement supported by the source, record:
 | --- | --- | --- | --- | --- |
 | Claim or paraphrase | File and section | Finding or record | Direct, derived, synthesis, scenario, or unsupported | Keep, qualify, correct, relocate, or remove |
 
-The trace may live in the brief, PR description, or review notes, but it must be inspectable.
+The trace must be inspectable. Put it in the evidence brief, PR description, or a linked review artifact. Record its location in the brief.
 
-### 4. Verify numbers and units
+### 5. Verify numbers and units
 
 For every number:
 
@@ -271,7 +335,7 @@ For every number:
 
 A number in a table, caption, or diagram is a claim and must be checked exactly like prose.
 
-### 5. Verify argument fit
+### 6. Verify argument fit
 
 Check whether the repository uses the source for a conclusion its design can support.
 
@@ -283,11 +347,11 @@ Ask:
 - Is activity described as productivity, quality, shipped value, or business impact without justification?
 - Is source-author interpretation presented as an observed result?
 - Is repository synthesis clearly identified?
-- Are positive, null, mixed, and contradictory results treated fairly?
+- Are positive, null, mixed, contradictory, and unfavorable results treated fairly?
 
 Correct the argument even when the correction weakens the repository thesis.
 
-### 6. Verify report integration
+### 7. Verify report integration
 
 For every report use:
 
@@ -300,7 +364,7 @@ For every report use:
 
 A corrected citation is not enough if the surrounding argument remains misleading.
 
-### 7. Verify repository-level integration
+### 8. Verify repository-level integration
 
 Reassess `README.md` when the source contributes to:
 
@@ -313,7 +377,7 @@ Reassess `README.md` when the source contributes to:
 
 Multi-source diagrams must label source boundaries. Do not visually connect unrelated numbers as one observed causal chain.
 
-### 8. Verify protocol implications
+### 9. Verify protocol implications
 
 Inspect all protocols for explicit or implicit reliance on the source.
 
@@ -325,18 +389,18 @@ Choose and document exactly one outcome:
 
 Do not modify a protocol merely for symmetry with a report change.
 
-### 9. Synchronize records
+### 10. Synchronize records
 
 After corrections:
 
 - update the evidence brief;
 - update `Current use` in `evidence/SOURCES.md`;
-- update the relevant evidence index;
+- update the relevant evidence-directory index;
 - update `REFERENCES.md`;
 - verify internal and external links;
 - record superseded versions and removed claims.
 
-### 10. Set the final status
+### 11. Set the final status
 
 When unresolved problems remain, set:
 
@@ -353,7 +417,7 @@ Integration audit = Verified
 Last verified = YYYY-MM-DD
 ```
 
-Also update the brief's `Repository integration audit` section with the same status, outcome, locations, corrections, and date.
+Update the evidence brief with the same status, protocol outcome, locations, corrections, trace location, and date.
 
 The status in the brief and `evidence/SOURCES.md` must match.
 
@@ -376,22 +440,7 @@ A source may be marked `Verified` only when:
 - [ ] `evidence/SOURCES.md` records `Integration audit = Verified` and the same date.
 - [ ] No unresolved correction remains.
 
-Never mark a source `Verified` merely because a brief, citation, or PR exists.
-
-## Updating an existing source
-
-When a working paper becomes peer reviewed, a report is revised, a dataset changes, or a relevant repository claim changes:
-
-1. Set `Evidence review = Needs re-review` when the source itself changed materially.
-2. Set `Integration audit = Needs re-verification` when the source, report use, README diagram, or protocol implication changed materially.
-3. Clear `Last verified` to `—`.
-4. Update the evidence brief and record the new version.
-5. Re-run the entire integration procedure.
-6. Apply corrections.
-7. Restore `Reviewed brief` and `Verified` only after completion.
-8. Record the new verification date.
-
-Do not preserve obsolete numbers silently.
+Never mark a source `Verified` merely because a brief, citation, corrected paragraph, or PR exists.
 
 ## Evidence-strength rules
 
@@ -402,12 +451,24 @@ Do not preserve obsolete numbers silently.
 - Do not treat arXiv or working-paper status as peer review.
 - Do not treat company marketing as independent evidence.
 - Do not use one team's threshold as a universal standard.
-- Preserve null, mixed, contradictory, and positive evidence.
+- Preserve null, mixed, contradictory, positive, and unfavorable evidence.
+
+## PR strategy
+
+For a substantial source, use separate PRs when practical:
+
+1. source registration and evidence brief;
+2. report integration and source-wide corrections;
+3. repository-map or protocol changes, only when required;
+4. final verification-status update after all required changes are present on the default branch.
+
+A single PR may combine these steps for a small source, but it must not set `Integration audit = Verified` before the default branch reflects the complete checked state.
 
 ## PR checklist
 
 Before opening or completing a source PR, confirm:
 
+- [ ] The correct flow was selected.
 - [ ] The source is registered with both status fields.
 - [ ] Its evidence class is correct.
 - [ ] Publication status and version are explicit.
@@ -415,7 +476,7 @@ Before opening or completing a source PR, confirm:
 - [ ] Evidence-review status matches the actual brief state.
 - [ ] Integration-audit status matches the actual audit state.
 - [ ] All repository uses and attributed numbers were searched.
-- [ ] A claim-to-source trace exists.
+- [ ] A claim-to-source trace exists and its location is recorded.
 - [ ] Numeric values, units, samples, and periods were checked.
 - [ ] Report language matches the source design.
 - [ ] README claims and diagrams were reassessed.
@@ -424,13 +485,3 @@ Before opening or completing a source PR, confirm:
 - [ ] The brief and registry show matching status and date.
 - [ ] Navigation links work.
 - [ ] The PR description lists boundaries, corrections, and unresolved work.
-
-## Preferred PR structure
-
-For a substantial source, use separate PRs when practical:
-
-1. source registration and evidence brief;
-2. report integration and source-wide verification;
-3. repository-map or protocol updates, only when required.
-
-Do not set `Integration audit = Verified` until all required PRs are merged and the repository's default branch reflects the completed state.
