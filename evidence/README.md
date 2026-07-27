@@ -80,6 +80,7 @@ Each evidence brief should include:
 11. Limitations, conflicts, and external-validity risks.
 12. Repository locations using the source.
 13. A `Repository integration audit` section matching the status in `SOURCES.md`.
+14. An `Independent review` section matching the outcome required by `AGENTS.md`.
 
 Use this audit template:
 
@@ -91,10 +92,26 @@ Use this audit template:
 - Report mentions checked:
 - Numeric claims checked:
 - README claims and diagrams checked:
-- Protocol outcome: No change | Clarification | Operational change
+- Protocol outcome: No protocol change | Protocol clarification | Protocol change proposed
 - Corrections made:
 - Current-use locations confirmed:
 - Verification date:
+```
+
+Use this independent-review template:
+
+```markdown
+## Independent review
+
+- Primary agent or reviewer:
+- Independent reviewer:
+- Flow reviewed:
+- Materials independently checked:
+- Outcome: Confirmed | Corrections required | Unresolved disagreement | Review unavailable
+- Discrepancies found:
+- Corrections completed:
+- Human decision required:
+- Review date:
 ```
 
 ## Interpretation labels
@@ -118,4 +135,4 @@ Do not mark a source `Verified` merely because:
 - a PR was merged;
 - a report paragraph was corrected.
 
-`Verified` requires the complete repository-wide procedure in `AGENTS.md`, synchronized status in the brief and `SOURCES.md`, and a recorded verification date.
+`Verified` requires the complete repository-wide procedure in `AGENTS.md`, synchronized status in the brief and `SOURCES.md`, a `Confirmed` independent-review outcome, and a recorded verification date.

@@ -57,7 +57,7 @@ Documentary and methodology sources use the same review lifecycle. Their briefs 
 | ID | Source | Evidence review | Integration audit | Last verified | Can support | Current use |
 | --- | --- | --- | --- | --- | --- | --- |
 | **S-2025-01** | Deloitte, *State of Generative AI in the Enterprise* | Registered | Not started | — | Surveyed enterprise adoption, expectations, and reported constraints | Adoption and organizational-context discussion |
-| **S-2025-02** | McKinsey enterprise AI reporting, currently linked through a third-party summary | Registered; original source required | Not started | — | Context on reported adoption and impact; not load-bearing until the original report is linked and reviewed | Market-sentiment discussion |
+| **S-2025-02** | McKinsey enterprise AI reporting, currently linked through a third-party summary | Registered | Not started | — | Context only until the original McKinsey publication is identified, registered, and reviewed | Market-sentiment discussion |
 | **S-2025-03** | Artur Markus, *The Inference Cost Paradox* | Registered | Not started | — | Practitioner interpretation of enterprise AI spending and Jevons-style effects | Cost-paradox discussion |
 | **S-2026-01** | Andreas Horn, *The Most Important Chart in AI* | Registered | Not started | — | Practitioner framing and visual interpretation | Market and capability narrative context |
 | **S-2025-04** | SoftwareSeni, *Why AI Coding Speed Gains Disappear in Code Reviews* | Registered | Not started | — | Practitioner synthesis about review bottlenecks | Review-bottleneck framing |
@@ -79,7 +79,7 @@ Dataset registry entries must use the same `Evidence review`, `Integration audit
 
 1. Register a source before adding it to the report.
 2. Set `Evidence review` to `Reviewed brief` only after a source-oriented brief exists and is indexed.
-3. Set `Integration audit` to `Verified` only after completing every step in **Verifying the integration of each source** in `AGENTS.md`.
+3. Set `Integration audit` to `Verified` only after completing every step in the **Integration-audit procedure** in `AGENTS.md`.
 4. Never infer `Verified` from the existence of a brief, citation, or prior PR.
 5. Record the verification date only when the status becomes `Verified`.
 6. If a source version changes, set `Evidence review` to `Needs re-review` and `Integration audit` to `Needs re-verification` until both procedures are rerun.

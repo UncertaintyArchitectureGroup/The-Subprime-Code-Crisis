@@ -76,7 +76,7 @@ The **Claim confidence map** evaluates the repository's conclusions: what kind o
 
 The **Evidence Map** classifies the materials used to build those claims. It answers a different question from the Claim confidence map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
 
-The table below is a repository-level map, not a replacement for the complete [Bibliography & Data Sources](REFERENCES.md). It names the current source families and the major sources already used in the report.
+The table below is a repository-level map, not a replacement for the canonical source inventory and status registry in [`evidence/SOURCES.md`](evidence/SOURCES.md). [`REFERENCES.md`](REFERENCES.md) remains a compact human-readable bibliography and navigation aid.
 
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
@@ -121,7 +121,7 @@ The evidence flow is intentionally directional:
 4. **The report develops bounded findings, inferences, and risk scenarios.**
 5. **Protocols translate those risks into operating practices.**
 
-A protocol is therefore not empirical proof, a repository interpretation is not a finding directly reported by a source, and a confidence rating is not a source category. Detailed classification rules and evidence-brief standards are documented in the [Evidence Library](evidence/README.md); the complete source inventory remains in [References](REFERENCES.md).
+A protocol is therefore not empirical proof, a repository interpretation is not a finding directly reported by a source, and a confidence rating is not a source category. Detailed classification rules and evidence-brief standards are documented in the [Evidence Library](evidence/README.md). The canonical source inventory and status registry is [`evidence/SOURCES.md`](evidence/SOURCES.md); [`REFERENCES.md`](REFERENCES.md) is the compact human-readable bibliography and navigation aid.
 
 ## 📊 The Crisis Map
 
@@ -166,7 +166,7 @@ It can be read in three ways:
 - As a delivery-system analysis of bottleneck migration.
 - As a starting point for engineering governance patterns around AI-generated code.
 
-Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md) and then use [References](REFERENCES.md) as the complete bibliography and compact source index.
+Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md), use the canonical [Source Registry](evidence/SOURCES.md) for inventory and status, and use [References](REFERENCES.md) as the compact human-readable bibliography and navigation aid.
 
 Readers looking for immediate operating practices should start with the [Operational Protocols](protocols/README.md).
 ## 📂 Report Structure

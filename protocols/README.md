@@ -126,7 +126,7 @@ A protocol may be motivated by one or more sources, but it is not empirical proo
 
 - **No protocol change**
 - **Protocol clarification**
-- **Protocol change**
+- **Protocol change proposed**
 
 ---
 
