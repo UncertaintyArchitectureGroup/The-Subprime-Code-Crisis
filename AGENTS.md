@@ -10,20 +10,22 @@ Before performing any repository work, read this file in full from the target br
 
 The following principles govern all repository work. They take precedence over individual flows, local convenience, agent preference, and remembered instructions.
 
-No contributor or agent may weaken, bypass, reinterpret, or replace these principles without an explicit decision from the repository maintainer, a reviewable change to `AGENTS.md`, and independent review.
+No contributor or agent may weaken, bypass, reinterpret, or replace these principles.
 
 1. **Original evidence over summaries.** The original source is authoritative for what it reports. Search snippets, secondary summaries, repository text, and prior agent notes are not substitutes.
 2. **Every material claim must remain traceable.** A material factual claim must trace to a registered source, its reviewed evidence brief when required, and the repository locations where it is used.
 3. **Evidence review is not integration audit.** Understanding a source and verifying every repository use of that source are separate activities with separate states and completion conditions.
 4. **Evidence strength governs claim strength.** Repository language, confidence, and scope must follow source design, uncertainty, limitations, and external validity.
 5. **Contradictory evidence remains visible.** Positive, negative, null, mixed, contradictory, replication, and limiting evidence must be treated fairly and must not be removed for rhetorical convenience.
-6. **Humans approve substantive repository changes.** Agents may identify, analyze, and propose substantive changes, but the repository maintainer must explicitly approve them before implementation.
-7. **Workflow changes require prior discussion.** Changes to flows, gates, statuses, governance, contributor obligations, or repository architecture must be discussed with the repository maintainer before `AGENTS.md` is edited.
+6. **Humans approve substantive repository changes.**
+7. **Workflow changes require prior discussion.**
 8. **Repository arguments evolve through evidence, not agent preference.** Agents must not change arguments, conclusions, confidence, or protocol logic merely because an alternative formulation appears more persuasive or convenient.
 9. **Important decisions remain inspectable.** Material changes must preserve the triggering evidence or problem, alternatives considered, human decision, implementation, and independent-review outcome.
 10. **`AGENTS.md` is the canonical operating specification.** Entry points, supporting documents, and agent memory must not override it.
 11. **Verification cannot be inferred.** A citation, evidence brief, corrected paragraph, completed PR, or plausible result does not by itself establish reviewed or verified status.
-12. **No silent governance change.** `AGENTS.md` must never be updated silently. Every proposed workflow or constitutional change must first be discussed with the repository maintainer and explicitly approved.
+12. **No silent governance change.**
+
+The operational procedures that enforce these principles are defined under `Repository Governance` and `Workflow Evolution`.
 
 ## Repository overview
 
@@ -157,27 +159,7 @@ Do not skip registration, review, integration audit, independent review, synchro
 
 Agents may discover evidence, identify inconsistencies, calculate implications, and propose changes.
 
-Agents must not silently change:
-
-- the report's current logic or material argument;
-- major conclusions or causal framing;
-- claim-confidence classifications;
-- the Executive Summary, Crisis Map, or other load-bearing synthesis;
-- protocol logic, controls, roles, thresholds, or escalation rules;
-- repository governance or workflow architecture.
-
-When an agent finds a reason to make such a change, it must stop before editing the substantive artifact and discuss the proposed change with the human user in the active interaction. The discussion must present:
-
-- the evidence or inconsistency found;
-- the current repository position;
-- the proposed change;
-- reasonable alternatives;
-- expected consequences for the report, protocols, maps, and source statuses;
-- the decision required from the human user.
-
-Only after explicit human approval may the substantive change be implemented.
-
-Editorial corrections that do not alter meaning—such as spelling, formatting, broken links, or exact synchronization—may proceed without a separate substantive-change decision.
+Classify proposed edits using `Safe vs Substantive Changes` under `Repository Governance`. Substantive changes are governed by the canonical `Human Escalation`, `Repository Change Proposal`, and `Independent Review` procedures in that section. Apply `Workflow Evolution` as well when the proposed change affects repository governance or workflow architecture.
 
 ## Design rationale
 
@@ -195,7 +177,7 @@ The registry is the machine- and human-readable inventory of source identity, cl
 
 ### Why discovery does not update the report directly
 
-Search results are candidates, not evidence accepted by the repository. Each selected candidate must enter Flow A, be registered, reviewed, integration-audited, independently checked, and synchronized before it can support report claims.
+Search results are candidates, not evidence accepted by the repository. Each selected candidate must receive explicit routing. A previously unregistered evidence object enters Flow A. A changed, corrected, peer-reviewed, retracted, or superseding version of an already registered source enters Flow C. The applicable flow must be completed before the source can support report claims.
 
 ### Why independent review is required
 
@@ -361,7 +343,7 @@ Use when the source itself is unchanged, but a report claim, README diagram, sum
 
 Use Flow E to identify evidence candidates relevant to a defined repository claim, evidence gap, uncertainty, or freshness requirement.
 
-Discovery is not evidence acceptance. Flow E must not directly change report claims, protocols, source statuses, confidence classifications, or repository maps. Every accepted candidate enters Flow A.
+Discovery is not evidence acceptance. Flow E must not directly change report claims, protocols, source statuses, confidence classifications, or repository maps. Every accepted candidate must receive explicit routing. A previously unregistered evidence object enters Flow A. A changed, corrected, peer-reviewed, retracted, or superseding version of an already registered source enters Flow C.
 
 #### 1. Search Strategy
 
@@ -609,6 +591,15 @@ Record one outcome:
 
 If corrections are required, update the search and Candidate Register, then repeat independent review. If disagreement remains or independent review is unavailable, escalate to the human user before accepting candidates.
 
+For Flow E, Independent Search Review satisfies the repository-wide Independent Review requirement when it:
+
+- reviews the complete Flow E output;
+- is performed by a reviewer who did not conduct the primary search;
+- uses the standard repository review outcomes;
+- records the required review metadata.
+
+A separate second reviewer is not required when the Independent Search Review already covers the complete Flow E output and meets these conditions.
+
 Flow E is complete only when:
 
 - the Search Strategy is recorded;
@@ -619,7 +610,7 @@ Flow E is complete only when:
 - Independent Search Review is `Confirmed`;
 - unresolved disagreements and material omissions are absent.
 
-Every accepted new candidate then enters Flow A. Flow E notes, abstracts, summaries, or Candidate Register entries do not substitute for registration, evidence review, an evidence brief, integration audit, or repository-wide verification.
+Accepted new sources enter Flow A. Changed or superseding versions of registered sources enter Flow C. Flow E notes, abstracts, summaries, or Candidate Register entries do not substitute for registration, evidence review, an evidence brief, integration audit, or repository-wide verification.
 
 ## Registration and classification
 
@@ -779,7 +770,7 @@ Check whether:
 - repository synthesis is clearly identified;
 - positive, null, mixed, contradictory, and unfavorable findings are treated fairly.
 
-When this check reveals a possible need to change report logic, a major conclusion, claim confidence, protocol logic, or a load-bearing repository map, do not edit that substantive artifact yet. Trigger the human-curated substantive-change discussion defined above.
+When this check reveals a possible need to change report logic, a major conclusion, claim confidence, protocol logic, or a load-bearing repository map, follow the `Human Escalation` gate under `Repository Governance`.
 
 ### 7. Verify report integration
 
@@ -794,7 +785,7 @@ For every report use:
 
 A corrected citation is insufficient if the surrounding argument remains misleading.
 
-Substantive report changes require explicit human approval before implementation.
+For substantive report changes, apply `Safe vs Substantive Changes`, `Human Escalation`, and `Repository Change Proposal` under `Repository Governance`.
 
 ### 8. Verify README and repository maps
 
@@ -809,7 +800,7 @@ Reassess:
 
 Multi-source diagrams must label source boundaries and must not present unrelated numbers as one measured causal chain.
 
-Changes to load-bearing synthesis or claim confidence require explicit human approval before implementation.
+For changes to load-bearing synthesis or claim confidence, apply `Safe vs Substantive Changes`, `Human Escalation`, and `Repository Change Proposal` under `Repository Governance`.
 
 ### 9. Verify protocol implications
 
@@ -821,7 +812,7 @@ Inspect every protocol for explicit or implicit reliance on the source. Document
 
 Do not change a protocol merely for symmetry with a report change.
 
-A proposed protocol clarification or protocol change must be discussed with and approved by the human user before implementation.
+For a proposed protocol clarification or protocol change, apply `Safe vs Substantive Changes`, `Human Escalation`, and `Repository Change Proposal` under `Repository Governance`.
 
 ### 10. Synchronize records
 
@@ -886,7 +877,7 @@ Escalate before finalizing when:
 
 Present the decision needed, competing interpretations, supporting evidence, and practical consequences in the active interaction with the human user.
 
-Do not implement the substantive change until the human user explicitly approves it.
+Implementation may begin only after the human user explicitly approves the substantive change.
 
 ### Repository Change Proposal
 
@@ -903,7 +894,7 @@ The proposal must include:
 - the decision required from the human maintainer;
 - the recommended next action.
 
-A proposal is not approval. Do not edit the substantive artifact until the human maintainer explicitly accepts one option.
+A proposal is not approval. Apply the `Human Escalation` approval gate before implementation.
 
 After approval, record the decision in the PR description, proposal artifact, or affected document so the rationale remains inspectable.
 
@@ -931,7 +922,7 @@ Substantive changes alter meaning, repository position, decision logic, confiden
 - repository architecture, primary flows, governance, or contributor obligations;
 - removal or weakening of contradictory evidence or limitations.
 
-Substantive changes require a Repository Change Proposal, explicit human approval, implementation in a reviewable PR, and independent review.
+For substantive changes, apply `Human Escalation`, `Repository Change Proposal`, and `Independent Review` in this section, and implement the approved change in a reviewable PR.
 
 When classification is uncertain, treat the change as substantive and escalate.
 
@@ -946,31 +937,33 @@ User correction or recurring process signal
         ↓
 Classify the observation
         ↓
-Does an existing flow already cover it?
-        ├─ Yes → execution error or one-off scope decision; follow the existing flow
+Does an existing flow cover this work type?
+        ├─ Yes
+        │    ↓
+        │  Was the existing flow followed correctly?
+        │    ├─ No → execution error; follow and correct through the existing flow
+        │    └─ Yes
+        │         ↓
+        │  Is a required step, check, transition, or completion condition missing?
+        │    ├─ Yes → propose an extension to the existing flow
+        │    └─ No
+        │         ↓
+        │  Is the current workflow ambiguous or internally inconsistent?
+        │    ├─ Yes → propose clarification or restructuring
+        │    └─ No → treat as a one-off preference or scope decision
         └─ No
              ↓
-Is a required step or verification check missing?
-        ├─ Yes → propose an extension to the existing flow
-        └─ No
+        Is this a new recurring work pattern with its own trigger,
+        procedure, state transition, and completion condition?
+             ├─ Yes → propose a new flow
+             └─ No → treat as a one-off preference or unresolved boundary
              ↓
-Is this a new recurring work pattern with its own trigger and completion condition?
-        ├─ Yes → propose a new flow
-        └─ No
-             ↓
-Is the current workflow ambiguous or internally inconsistent?
-        ├─ Yes → propose clarification or restructuring
-        └─ No → treat as a one-off preference or scope decision
-             ↓
-Discuss the proposed change with the repository maintainer
+Apply Human Escalation and Repository Change Proposal
+under Repository Governance
         ↓
-Prepare a Repository Change Proposal
+Implement the approved AGENTS.md change in a reviewable PR
         ↓
-Obtain explicit human approval
-        ↓
-Update AGENTS.md in a reviewable PR
-        ↓
-Complete independent review
+Apply Independent Review under Repository Governance
         ↓
 Merge and treat the new workflow as canonical
 ```
@@ -997,6 +990,8 @@ Before proposing a change:
 - avoid adding a rule merely because one execution was poor;
 - search for equivalent instructions elsewhere in `AGENTS.md` to avoid duplication or contradiction.
 
+The existence of an applicable flow does not prove that the flow is complete. First determine whether the flow was followed. Then determine whether following it still exposed a missing step, missing check, ambiguous obligation, or incomplete completion condition.
+
 An execution error should normally be corrected through the existing flow, not through new governance.
 
 ### 3. Decide whether to extend, add, or clarify
@@ -1006,43 +1001,29 @@ An execution error should normally be corrected through the existing flow, not t
 - **Clarify or restructure governance** when existing language permits multiple reasonable interpretations or creates inconsistent obligations.
 - **Do not change the workflow** for one-off preferences, temporary scope choices, or failures caused by ignoring an adequate instruction.
 
+When the signal does not justify a workflow change but remains unresolved, record the local scope decision explicitly. Do not silently generalize it into a repository-wide rule.
+
 Cross-cutting controls such as independent review, human escalation, safe-versus-substantive classification, and constitutional principles must remain outside source-specific flows.
 
-### 4. Prepare the workflow proposal
+### 4. Apply Repository Governance
 
-Before editing `AGENTS.md`, present the repository maintainer with:
-
-- the user correction or recurring signal;
-- its classification;
-- the existing flow or missing governance boundary;
-- why the current instruction is adequate or inadequate;
-- the exact proposed change;
-- whether it extends, adds, removes, or clarifies a rule;
-- alternatives, including making no workflow change;
-- expected effects on contributors, agents, repository artifacts, and existing flows;
-- migration or synchronization work required;
-- unresolved uncertainty and reversibility;
-- the decision required from the maintainer.
+Use `Human Escalation` and `Repository Change Proposal` under `Repository Governance` before editing `AGENTS.md`. In the proposal, include the signal's classification, the existing flow or missing governance boundary, whether the proposal extends, adds, removes, or clarifies a rule, and any migration or synchronization work. The remaining proposal content and approval gate are defined only in `Repository Governance`.
 
 ### 5. Human decision before implementation
 
 **Never update `AGENTS.md` silently.**
 
-**Always discuss proposed workflow changes with the repository maintainer first.**
-
-A user correction, repeated failure, agent confidence, apparent improvement, or successful local experiment does not constitute permission to change the canonical workflow.
-
-Only explicit maintainer approval authorizes implementation. Approval must identify the accepted direction clearly enough to distinguish it from the rejected alternatives.
+Discuss proposed workflow changes with the repository maintainer through `Human Escalation` and `Repository Change Proposal` under `Repository Governance`. A user correction, repeated failure, agent confidence, apparent improvement, or successful local experiment does not replace those gates or authorize a governance edit.
 
 ### 6. Implement and verify
 
-After explicit approval:
+After approval through `Repository Governance`:
 
 - update `AGENTS.md` in a reviewable PR;
 - update affected entry points only after the canonical rule is present;
 - avoid unrelated governance cleanup in the same PR;
 - document the trigger, classification, decision, and expected consequences in the PR;
-- run independent review against the approved proposal and the Repository Constitution;
+- apply `Independent Review` under `Repository Governance` against the approved proposal and the Repository Constitution;
 - do not treat the new workflow as canonical until the PR is merged.
 
 If implementation exposes a materially different decision than the one approved, stop and return to the repository maintainer.
@@ -1076,7 +1057,7 @@ A source may be marked `Verified` only when:
 - [ ] Numbers, units, populations, and periods were checked.
 - [ ] Claim strength matches source design.
 - [ ] Report arguments and nearby conclusions were assessed.
-- [ ] Any substantive report, protocol, map, or governance change was explicitly approved by the human user before implementation.
+- [ ] Any substantive report, protocol, map, or governance change passed the applicable `Repository Governance` gates before implementation.
 - [ ] README claims, tables, and diagrams were reassessed.
 - [ ] Protocol implications have a documented outcome.
 - [ ] `Current use` lists actual locations.
