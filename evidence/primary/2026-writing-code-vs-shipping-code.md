@@ -6,7 +6,8 @@ Demirer, Mert, Leon Musolff, and Liyuan Yang. **“Writing Code vs. Shipping Cod
 
 - Official paper page: https://www.nber.org/papers/w35275
 - Official PDF: https://www.nber.org/system/files/working_papers/w35275/w35275.pdf
-- Local source copy: [`sources/w35275.pdf`](sources/w35275.pdf)
+
+The repository links to the publisher-hosted PDF rather than redistributing the copyrighted full paper.
 
 ## Publication status
 
