@@ -682,9 +682,11 @@ After approved corrections:
 - verify links;
 - record superseded versions and removed claims.
 
-## Independent review gate
+## Repository Governance
 
-Every completed Flow A–E must be reviewed by a second agent or reviewer that did not produce the work.
+### Independent Review
+
+Every completed Flow A–E and every substantive repository change must be reviewed by a second agent or reviewer that did not produce the work.
 
 The reviewer must independently inspect the original source or search results, changed files, status transitions, claim-to-source trace, calculations, and completion checklist. The reviewer must not merely summarize the first agent's notes.
 
@@ -717,7 +719,7 @@ Use this record:
 - Review date:
 ```
 
-## Human escalation gate
+### Human Escalation
 
 Escalate before finalizing when:
 
@@ -734,26 +736,94 @@ Present the decision needed, competing interpretations, supporting evidence, and
 
 Do not implement the substantive change until the human user explicitly approves it.
 
-## User-correction and workflow-maintenance trigger
+### Repository Change Proposal
 
-Whenever the user corrects an agent's result, classify the correction as:
+Before implementing any substantive change, prepare a Repository Change Proposal in the active interaction or in a dedicated proposal artifact when the change spans multiple review cycles.
+
+The proposal must include:
+
+- the current repository position or rule;
+- the evidence, inconsistency, failure, or recurring need that triggered the proposal;
+- the exact change proposed;
+- reasonable alternatives, including preserving the current state;
+- expected consequences for evidence briefs, report logic, protocols, maps, source statuses, workflows, and contributors;
+- unresolved uncertainty and reversibility;
+- the decision required from the human maintainer;
+- the recommended next action.
+
+A proposal is not approval. Do not edit the substantive artifact until the human maintainer explicitly accepts one option.
+
+After approval, record the decision in the PR description, proposal artifact, or affected document so the rationale remains inspectable.
+
+### Safe vs Substantive Changes
+
+Classify every proposed repository edit before implementation.
+
+Safe changes do not alter meaning, evidence interpretation, decision logic, status, or contributor obligations. Examples include:
+
+- spelling, grammar, formatting, and broken-link fixes;
+- exact synchronization of already-approved text or metadata;
+- bibliography, index, and navigation maintenance that introduces no new claim;
+- mechanical renaming or relocation with all references updated;
+- correction of an objectively verifiable transcription error when no interpretation is required.
+
+Safe changes may proceed without a separate Repository Change Proposal, but they still require normal verification and must not be used to disguise a substantive edit.
+
+Substantive changes alter meaning, repository position, decision logic, confidence, obligations, or architecture. Examples include:
+
+- report arguments, causal framing, major conclusions, or claim confidence;
+- evidence interpretation, source scope, or repository inference;
+- protocol controls, roles, thresholds, gates, or escalation rules;
+- the Executive Summary, Crisis Map, Evidence Map, or other load-bearing synthesis;
+- source-state definitions or verification requirements;
+- repository architecture, primary flows, governance, or contributor obligations;
+- removal or weakening of contradictory evidence or limitations.
+
+Substantive changes require a Repository Change Proposal, explicit human approval, implementation in a reviewable PR, and independent review.
+
+When classification is uncertain, treat the change as substantive and escalate.
+
+### Governance Trigger
+
+Whenever the user corrects an agent's result, or repository work reveals a recurring process problem, classify the trigger as:
 
 1. **Execution error** — the existing flow was adequate but followed incorrectly.
 2. **Missing check** — the flow lacks a required verification step.
 3. **Ambiguous instruction** — more than one reasonable interpretation exists.
 4. **New recurring work type** — the request does not fit current flows.
 5. **One-off preference or scope decision** — no process change is required.
+6. **Recurring repository inconsistency** — multiple artifacts repeatedly drift out of synchronization.
+7. **New repository artifact or boundary** — the current architecture does not define how it is governed.
 
-Compare the correction with the current flows and gates.
+Compare the trigger with the current flows and gates.
 
-If categories 2–4 apply, explain the suspected process gap and ask the user whether `AGENTS.md` should be updated. Do not silently change the workflow because of one interaction.
+If categories 2–4, 6, or 7 apply, prepare a Repository Change Proposal for `AGENTS.md`. Do not silently change governance because of one interaction.
 
 When the user approves a workflow change:
 
 - extend an existing flow when the trigger, state transition, and completion condition remain the same;
 - add a new primary flow only when the work has a distinct trigger, procedure, and completion condition;
 - keep cross-cutting controls such as independent review and human escalation outside primary source flows;
-- update entry points only after the canonical instruction is merged.
+- update entry points only after the canonical instruction is merged;
+- independently review the governance change before treating it as canonical.
+
+The governance evolution sequence is:
+
+```text
+Observe trigger
+        ↓
+Classify process gap
+        ↓
+Prepare Repository Change Proposal
+        ↓
+Obtain explicit human approval
+        ↓
+Update AGENTS.md in a reviewable PR
+        ↓
+Complete independent review
+        ↓
+Merge and treat as canonical
+```
 
 ## Final status and completion checklist
 
