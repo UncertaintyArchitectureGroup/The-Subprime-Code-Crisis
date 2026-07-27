@@ -30,6 +30,16 @@ Documentary and methodology sources use the same review lifecycle. Their briefs 
 
 `Last verified` is the date on which the integration audit reached `Verified`. Leave it as `—` for every other status.
 
+## Flow ownership
+
+Use the flow selector in [`AGENTS.md`](../AGENTS.md):
+
+- new sources use Flow A;
+- legacy registered sources use Flow B;
+- changed or superseded sources use Flow C;
+- repository-only changes affecting verified sources use Flow D;
+- systematic freshness and gap searches use Flow E, with every selected source routed back through Flow A.
+
 ## Primary empirical research
 
 | ID | Source | Evidence review | Integration audit | Last verified | Can support | Current use |
@@ -77,14 +87,15 @@ Dataset registry entries must use the same `Evidence review`, `Integration audit
 
 ## Registry maintenance rules
 
-1. Register a source before adding it to the report.
-2. Set `Evidence review` to `Reviewed brief` only after a source-oriented brief exists and is indexed.
-3. Set `Integration audit` to `Verified` only after completing every step in **Verifying the integration of each source** in `AGENTS.md`.
-4. Never infer `Verified` from the existence of a brief, citation, or prior PR.
-5. Record the verification date only when the status becomes `Verified`.
-6. If a source version changes, set `Evidence review` to `Needs re-review` and `Integration audit` to `Needs re-verification` until both procedures are rerun.
-7. If a report claim, README diagram, or protocol materially relying on a source changes, set its integration status to `Needs re-verification`.
-8. A pending brief may support provisional or low-load claims, but strong claims should link to a reviewed brief.
-9. Replace secondary links with original sources whenever possible.
-10. Keep `Current use` synchronized with actual repository usage discovered during the audit.
-11. Preserve contradictory, null, mixed, and positive evidence; classification and status are independent of whether a source supports the repository thesis.
+1. Select the correct flow in `AGENTS.md` before changing a source entry.
+2. Register a source before adding it to the report.
+3. Set `Evidence review` to `Reviewed brief` only after a source-oriented brief exists and is indexed.
+4. Set `Integration audit` to `Verified` only after completing every integration-audit step in `AGENTS.md` and merging all required corrections.
+5. Never infer `Verified` from a brief, citation, corrected paragraph, or prior PR.
+6. Record the verification date only when the status becomes `Verified`.
+7. If a source version changes, use Flow C.
+8. If a report claim, README diagram, or protocol materially relying on a verified source changes, use Flow D.
+9. A pending brief may support provisional or low-load claims, but strong claims should link to a reviewed brief.
+10. Replace secondary links with original sources whenever possible.
+11. Keep `Current use` synchronized with actual repository usage discovered during the audit.
+12. Preserve contradictory, null, mixed, positive, and unfavorable evidence; classification and status are independent of whether a source supports the repository thesis.
