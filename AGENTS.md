@@ -788,7 +788,7 @@ Check whether:
 - repository synthesis is clearly identified;
 - positive, null, mixed, contradictory, and unfavorable findings are treated fairly.
 
-When this check reveals a possible need to change report logic, a major conclusion, claim confidence, protocol logic, or a load-bearing repository map, do not edit that substantive artifact yet. Trigger the human-curated substantive-change discussion defined above.
+When this check reveals a possible need to change report logic, a major conclusion, claim confidence, protocol logic, or a load-bearing repository map, do not edit that substantive artifact yet. Trigger the human-curated substantive-change discussion defined above, then follow [Human Escalation](#human-escalation) and [Repository Change Proposal](#repository-change-proposal).
 
 ### 7. Verify report integration
 
@@ -830,7 +830,7 @@ Inspect every protocol for explicit or implicit reliance on the source. Document
 
 Do not change a protocol merely for symmetry with a report change.
 
-A proposed protocol clarification or protocol change must be discussed with and approved by the human user before implementation.
+A proposed protocol clarification or protocol change must follow [Human Escalation](#human-escalation) and [Repository Change Proposal](#repository-change-proposal), and must be discussed with and approved by the human user before implementation.
 
 ### 10. Synchronize records
 
@@ -1024,11 +1024,11 @@ An execution error should normally be corrected through the existing flow, not t
 
 When the signal does not justify a workflow change but remains unresolved, record the local scope decision explicitly. Do not silently generalize it into a repository-wide rule.
 
-Cross-cutting controls such as independent review, human escalation, safe-versus-substantive classification, and constitutional principles must remain outside source-specific flows.
+Cross-cutting controls—[Independent Review](#independent-review), [Human Escalation](#human-escalation), [Safe vs Substantive Changes](#safe-vs-substantive-changes), and the [Repository Constitution](#repository-constitution)—must remain outside source-specific flows.
 
 ### 4. Prepare the workflow proposal
 
-Before editing `AGENTS.md`, present the repository maintainer with:
+Prepare the proposal under [Repository Change Proposal](#repository-change-proposal). Before editing `AGENTS.md`, present the repository maintainer with:
 
 - the user correction or recurring signal;
 - its classification;
@@ -1043,6 +1043,8 @@ Before editing `AGENTS.md`, present the repository maintainer with:
 - the decision required from the maintainer.
 
 ### 5. Human decision before implementation
+
+Follow [Human Escalation](#human-escalation) and [Safe vs Substantive Changes](#safe-vs-substantive-changes) throughout this decision.
 
 **Never update `AGENTS.md` silently.**
 
@@ -1060,7 +1062,7 @@ After explicit approval:
 - update affected entry points only after the canonical rule is present;
 - avoid unrelated governance cleanup in the same PR;
 - document the trigger, classification, decision, and expected consequences in the PR;
-- run independent review against the approved proposal and the Repository Constitution;
+- run [Independent Review](#independent-review) against the approved proposal and the Repository Constitution;
 - do not treat the new workflow as canonical until the PR is merged.
 
 If implementation exposes a materially different decision than the one approved, stop and return to the repository maintainer.
