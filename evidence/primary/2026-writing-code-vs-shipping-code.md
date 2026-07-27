@@ -1,5 +1,9 @@
 # Writing Code vs. Shipping Code
 
+## Source ID
+
+**P-2026-01**
+
 ## Citation
 
 Demirer, Mert, Leon Musolff, and Liyuan Yang. **“Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools.”** NBER Working Paper No. 35275, May 2026.
@@ -15,7 +19,7 @@ The repository links to the publisher-hosted PDF rather than redistributing the 
 
 ## Research question and scope
 
-The paper asks two related questions:
+The paper asks:
 
 1. How do measured productivity effects change across successive generations of AI coding tools?
 2. How much of the increase in upstream coding activity propagates into higher-level outputs such as pull requests, projects, releases, new applications, and application usage?
@@ -28,7 +32,7 @@ The study focuses on software development from 2022 through 2026 and distinguish
 
 ## Dataset and methodology
 
-The authors combine several data sources:
+The authors combine:
 
 - public GitHub activity for more than 100,000 developers;
 - internal Microsoft telemetry on GitHub Copilot adoption and usage;
@@ -83,7 +87,13 @@ This result concerns marketplace-level usage as measured in the study. It does n
 
 In their production model, a value well below one indicates strong complementarity: more upstream output cannot readily substitute for human work in review, integration, release management, and other downstream stages.
 
-This number is produced by the paper’s fitted hierarchical production model. It is not a directly observed ratio and should not be presented as a universal property of software engineering organizations.
+This number is produced by the paper’s fitted hierarchical production model. It is not a directly observed ratio and should not be presented as a universal property of software-engineering organizations.
+
+## Source-author interpretation
+
+The authors interpret the attenuation pattern as evidence consistent with a weak-link production model in which upstream AI-generated output and downstream human effort are strongly complementary.
+
+That mechanism is an interpretation supported by the paper’s model and empirical pattern. It is not identical to the directly observed event-study estimates.
 
 ## Repository interpretation
 
@@ -130,39 +140,34 @@ Those claims require separate evidence.
 
 ## Limitations and external-validity risks
 
-The paper’s main limitations include:
-
 1. **Working-paper status.** The analysis has not yet been peer reviewed.
 2. **Observational adoption design.** Tool adopters may differ from matched non-adopters in ways that are not fully observed.
 3. **Public-repository emphasis.** Much of the GitHub analysis relies on public activity, although the authors provide a limited private-repository validation.
 4. **Rare release outcome.** Release analysis uses a smaller selected sample because releases are infrequent and require pre-period release activity.
-5. **Measurement hierarchy.** Commits, repositories, and releases are useful proxies but do not capture quality, revenue, reliability, security, or customer outcomes completely.
+5. **Measurement hierarchy.** Commits, repositories, and releases do not capture quality, revenue, reliability, security, or customer outcomes completely.
 6. **Marketplace scope.** Four marketplaces cover a meaningful but incomplete portion of the software industry.
 7. **Rapid technological change.** Estimates from tools and workflows observed between 2022 and 2026 may not generalize to later systems.
 8. **Cumulative tool generations.** Estimates for newer generations often represent adoption of a stack of tools rather than the isolated causal effect of one tool.
 9. **Usage interpretation.** Flat aggregate usage can coexist with redistribution, consumer-surplus gains, or value not captured by the study’s metrics.
 
-## Use in this repository
+## Known use in this repository
 
-This source is suitable for claims about:
+This source is currently known to support claims in:
 
-- increased upstream coding activity after AI-tool adoption;
-- attenuation between coding activity and shipped output;
-- complementarity between AI-generated upstream work and downstream human effort;
-- the need to measure releases and usage rather than relying only on code-production metrics.
+- `report/01_the_illusion.md`;
+- `report/02_broken_mechanics.md`.
 
-It should be paired with separate research when making claims about code quality, defects, review burden, maintainability, security, or long-term organizational outcomes.
+The complete `Current use` field must be confirmed during the repository-wide integration audit rather than inferred from this preliminary list.
 
 ## Repository integration audit
 
-- **Integration status:** Not started
-- **Repository search completed:** No
-- **Report mentions checked:** Not yet
-- **Numeric claims checked:** The brief's numbers were checked against the source; repository-wide uses have not yet been audited
-- **README claims and diagrams checked:** Not yet
-- **Protocol outcome:** Not yet assessed
-- **Corrections made:** None recorded through the complete integration procedure
-- **Current-use locations confirmed:** No; the registry locations remain provisional until repository-wide search
-- **Verification date:** —
-
-This source has a reviewed evidence brief but is not fully processed. It must remain `Integration audit = Not started` in `evidence/SOURCES.md` until the complete procedure in `AGENTS.md` has been run and all required corrections are merged.
+- Integration status: Not started
+- Repository search completed: No
+- Claim-to-source trace location: Not created
+- Report mentions checked: Not started
+- Numeric claims checked: Not started
+- README claims and diagrams checked: Not started
+- Protocol outcome: Not assessed
+- Corrections made: None recorded under the new audit procedure
+- Current-use locations confirmed: No
+- Verification date: —
