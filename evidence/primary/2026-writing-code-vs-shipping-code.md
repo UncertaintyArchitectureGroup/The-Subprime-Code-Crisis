@@ -155,14 +155,39 @@ It should be paired with separate research when making claims about code quality
 
 ## Repository integration audit
 
-- **Integration status:** Not started
-- **Repository search completed:** No
-- **Report mentions checked:** Not yet
-- **Numeric claims checked:** The brief's numbers were checked against the source; repository-wide uses have not yet been audited
-- **README claims and diagrams checked:** Not yet
-- **Protocol outcome:** Not yet assessed
-- **Corrections made:** None recorded through the complete integration procedure
-- **Current-use locations confirmed:** No; the registry locations remain provisional until repository-wide search
+- **Integration status:** Corrections required
+- **Repository search completed:** Yes; source ID, author names, title fragments, distinctive claims, and attributed numbers were searched across `README.md`, `report/`, `protocols/`, `REFERENCES.md`, `evidence/SOURCES.md`, and evidence indexes on 2026-07-27
+- **Report mentions checked:** `report/01_the_illusion.md` ("Writing Code vs. Shipping Code" section and Chapter 1 references) and `report/02_broken_mechanics.md` ("Production Attenuation," "Complementary Human Capital," and references)
+- **Numeric claims checked:** Repository uses of the approximately 180% commit, 50% project, 30% release, and 0.25 model-elasticity values were located and compared with the reviewed brief; fresh access to the publisher PDF was blocked, so current-version ground truth could not be independently re-established in this audit
+- **README claims and diagrams checked:** Yes; the Crisis Map was rebuilt without cross-study numeric sequencing, and its only empirical node is bounded to this source's studied settings
+- **Protocol outcome:** No protocol change
+- **Corrections made:** Removed the Crisis Map's unrelated numeric sequence; labeled all map claim types; separated the Technical Bankruptcy warning scenario from the map's synthesis outcome; added the source boundary and non-findings; synchronized `Current use`
+- **Current-use locations confirmed:** `README.md` Crisis Map and evidence boundary; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`; bibliography and registry records in `REFERENCES.md` and `evidence/SOURCES.md`
 - **Verification date:** —
 
-This source has a reviewed evidence brief but is not fully processed. It must remain `Integration audit = Not started` in `evidence/SOURCES.md` until the complete procedure in `AGENTS.md` has been run and all required corrections are merged.
+### Claim-to-source trace
+
+| Repository claim | Location | Exact source result | Relationship | Action |
+| --- | --- | --- | --- | --- |
+| Higher upstream coding activity in studied settings | `README.md`, Crisis Map | Adoption estimates increase for upstream coding-activity measures in the paper's matched event-study settings | Direct, bounded finding | Keep with source ID and scope label |
+| The map's downstream bottleneck and risk sequence | `README.md`, Crisis Map | The paper reports attenuation toward projects and releases but does not measure the complete depicted mechanism | Repository synthesis | Keep only with an explicit non-causal-chain label |
+| Commit effects attenuate toward projects and releases | `report/01_the_illusion.md`, "Writing Code vs. Shipping Code" | Approximately 180% commits, 50% projects or repositories touched, and 30% releases for the cumulative asynchronous-agent generation | Direct finding across distinct outcomes in the paper's studied setting | Keep with nearby limitations and brief link |
+| Production attenuation and complementary downstream effort | `report/02_broken_mechanics.md`, "Production Attenuation" and "Complementary Human Capital" | Attenuated outcome estimates; model-calibrated elasticity of substitution of approximately 0.25 | Direct finding plus model-calibrated interpretation | Keep with observational/model boundaries |
+| Technical Bankruptcy | `README.md`, Crisis Map | Not measured or established by the paper | Warning scenario / repository hypothesis | Separate from the synthesis outcome and connect with a dashed scenario edge |
+
+## Independent review
+
+- **Primary agent or reviewer:** Codex primary agent
+- **Independent reviewer:** None available
+- **Flow reviewed:** Flow D — Crisis Map re-verification for P-2026-01
+- **Materials independently checked:** None
+- **Outcome:** Review unavailable
+- **Discrepancies found:** Independent confirmation and a fresh check of the publisher-hosted original remain unavailable
+- **Corrections completed:** Primary audit corrections are recorded above
+- **Human decision required:** An independent reviewer must confirm the changed map, source trace, report uses, protocol outcome, and original source before integration can be marked `Verified`
+- **Review date:** 2026-07-27
+
+This source has a reviewed evidence brief but is not fully processed. It must remain
+`Integration audit = Corrections required` with `Last verified = —` until the current
+publisher version is checked, the corrections are present on the default branch, and
+an independent review outcome is `Confirmed`.

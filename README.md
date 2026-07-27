@@ -125,37 +125,54 @@ A protocol is therefore not empirical proof, a repository interpretation is not 
 
 ## 📊 The Crisis Map
 
+The Crisis Map is an **explanatory systems synthesis**, not a chronology, an evidence
+scorecard, or a causal chain measured by one study. Each node states its claim type.
+Solid arrows show the repository's proposed system mechanism; they do not imply that
+one population, tool, period, or metric was followed from end to end.
+
 ```mermaid
 flowchart TD
-    %% Setup Styles
-    classDef volume fill:#ffcccc,stroke:#333,stroke-width:2px;
-    classDef value fill:#ccffcc,stroke:#333,stroke-width:2px;
-    classDef crisis fill:#ff0000,color:white,stroke:#333,stroke-width:4px;
+    classDef empirical fill:#d9edf7,stroke:#31708f,stroke-width:2px;
+    classDef inference fill:#fcf8e3,stroke:#8a6d3b,stroke-width:2px;
+    classDef synthesis fill:#eeeeee,stroke:#555,stroke-width:2px;
+    classDef scenario fill:#f2dede,stroke:#a94442,stroke-width:2px,stroke-dasharray: 5 5;
 
-    Start((2023: AI Adoption Starts)) --> Split{THE SPLIT}
+    A[AI-assisted generation<br/><b>Repository synthesis: starting condition</b>]
+    B[Lower cost of producing code-like output<br/><b>Evidence-backed inference</b>]
+    C[Higher upstream coding activity in studied settings<br/><b>Empirical finding: P-2026-01</b>]
+    D[Verification capacity may not scale proportionally<br/><b>Repository synthesis</b>]
+    E[Review / QA / security / architecture bottlenecks<br/><b>Repository synthesis: risk mechanism</b>]
+    F[More rework, uncertainty, and maintenance exposure<br/><b>Repository synthesis: conditional risk</b>]
+    G[Accumulated delivery-system risk<br/><b>Repository synthesis</b>]
+    H[Technical Bankruptcy<br/><b>Warning scenario / repository hypothesis</b>]
 
-    subgraph Illusion ["The Illusion (Volume)"]
-        Split -->|Generates Syntax| Vol1[Code Volume +50%]
-        Vol1 --> Vol2[Code Volume +131%]
-        Vol2 --> Vol3[Duplication 8x]
-    end
+    A --> B --> C --> D --> E --> F --> G
+    G -. possible scenario, not an observed outcome .-> H
 
-    subgraph Reality ["The Reality (Value)"]
-        Split -->|Creates Complexity| Val1[Velocity Stalls]
-        Val1 --> Val2[Review Time x2]
-        Val2 --> Val3[Feature Delivery -19%]
-    end
-
-    Vol3 --> Gap{THE GAP}
-    Val3 --> Gap
-
-    Gap --> Crisis[SUBPRIME CODE CRISIS Technical Bankruptcy]
-
-    %% Apply Styles
-    class Vol1,Vol2,Vol3 volume;
-    class Val1,Val2,Val3 value;
-    class Crisis crisis;
+    class C empirical;
+    class B inference;
+    class A,D,E,F,G synthesis;
+    class H scenario;
 ```
+
+### Evidence boundary for the map
+
+- **P-2026-01** is a 2022–2026 observational matched event study of more than
+  100,000 developers, supplemented by Microsoft telemetry and four application
+  marketplaces. It reports increased upstream activity after adoption of successive
+  AI-tool generations and attenuation toward projects and releases. The map does not
+  reproduce its percentages because they refer to distinct outcomes, samples, and
+  specifications; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
+- The arrows after the empirical node are **repository synthesis, not a single
+  measured causal chain**. P-2026-01 does not establish general code-quality decline,
+  review as the only bottleneck, technical debt, security effects, or Technical
+  Bankruptcy.
+- The former `+50%`, `+131%`, `8x`, `x2`, and `-19%` nodes have been removed. They
+  came from different sources, populations, periods, units, and metric definitions;
+  placing them in sequence overstated what the combined evidence measured.
+- **Technical Bankruptcy** remains only as a warning scenario and repository
+  hypothesis. It is not an empirically measured final outcome. The map's final
+  synthesis outcome is **Accumulated delivery-system risk**.
 ## How to read this report
 
 This report is intentionally written for engineering leaders, senior developers, architects, QA leaders, delivery managers, and AI adoption decision-makers.
