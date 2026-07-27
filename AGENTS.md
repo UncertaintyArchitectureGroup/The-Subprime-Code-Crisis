@@ -6,6 +6,25 @@ This file is the canonical operating specification for human contributors and AI
 
 Before performing any repository work, read this file in full from the target branch. Instructions remembered from an earlier task, conversation, branch, cached context, or model memory are not sufficient. When remembered instructions conflict with this file, this file wins.
 
+## Repository Constitution
+
+The following principles govern all repository work. They take precedence over individual flows, local convenience, agent preference, and remembered instructions.
+
+No contributor or agent may weaken, bypass, reinterpret, or replace these principles without an explicit decision from the repository maintainer, a reviewable change to `AGENTS.md`, and independent review.
+
+1. **Original evidence over summaries.** The original source is authoritative for what it reports. Search snippets, secondary summaries, repository text, and prior agent notes are not substitutes.
+2. **Every material claim must remain traceable.** A material factual claim must trace to a registered source, its reviewed evidence brief when required, and the repository locations where it is used.
+3. **Evidence review is not integration audit.** Understanding a source and verifying every repository use of that source are separate activities with separate states and completion conditions.
+4. **Evidence strength governs claim strength.** Repository language, confidence, and scope must follow source design, uncertainty, limitations, and external validity.
+5. **Contradictory evidence remains visible.** Positive, negative, null, mixed, contradictory, replication, and limiting evidence must be treated fairly and must not be removed for rhetorical convenience.
+6. **Humans approve substantive repository changes.** Agents may identify, analyze, and propose substantive changes, but the repository maintainer must explicitly approve them before implementation.
+7. **Workflow changes require prior discussion.** Changes to flows, gates, statuses, governance, contributor obligations, or repository architecture must be discussed with the repository maintainer before `AGENTS.md` is edited.
+8. **Repository arguments evolve through evidence, not agent preference.** Agents must not change arguments, conclusions, confidence, or protocol logic merely because an alternative formulation appears more persuasive or convenient.
+9. **Important decisions remain inspectable.** Material changes must preserve the triggering evidence or problem, alternatives considered, human decision, implementation, and independent-review outcome.
+10. **`AGENTS.md` is the canonical operating specification.** Entry points, supporting documents, and agent memory must not override it.
+11. **Verification cannot be inferred.** A citation, evidence brief, corrected paragraph, completed PR, or plausible result does not by itself establish reviewed or verified status.
+12. **No silent governance change.** `AGENTS.md` must never be updated silently. Every proposed workflow or constitutional change must first be discussed with the repository maintainer and explicitly approved.
+
 ## Repository overview
 
 The Subprime Code Crisis repository examines how AI-assisted software development changes software-delivery systems.
@@ -916,38 +935,36 @@ Substantive changes require a Repository Change Proposal, explicit human approva
 
 When classification is uncertain, treat the change as substantive and escalate.
 
-### Governance Trigger
+## Workflow Evolution
 
-Whenever the user corrects an agent's result, or repository work reveals a recurring process problem, classify the trigger as:
+User corrections, repeated execution failures, recurring repository inconsistencies, missing checks, new repository artifacts, and recurring manual clarifications are inputs to workflow evolution. They are not permission to edit governance automatically.
 
-1. **Execution error** — the existing flow was adequate but followed incorrectly.
-2. **Missing check** — the flow lacks a required verification step.
-3. **Ambiguous instruction** — more than one reasonable interpretation exists.
-4. **New recurring work type** — the request does not fit current flows.
-5. **One-off preference or scope decision** — no process change is required.
-6. **Recurring repository inconsistency** — multiple artifacts repeatedly drift out of synchronization.
-7. **New repository artifact or boundary** — the current architecture does not define how it is governed.
-
-Compare the trigger with the current flows and gates.
-
-If categories 2–4, 6, or 7 apply, prepare a Repository Change Proposal for `AGENTS.md`. Do not silently change governance because of one interaction.
-
-When the user approves a workflow change:
-
-- extend an existing flow when the trigger, state transition, and completion condition remain the same;
-- add a new primary flow only when the work has a distinct trigger, procedure, and completion condition;
-- keep cross-cutting controls such as independent review and human escalation outside primary source flows;
-- update entry points only after the canonical instruction is merged;
-- independently review the governance change before treating it as canonical.
-
-The governance evolution sequence is:
+Use this decision path:
 
 ```text
-Observe trigger
+User correction or recurring process signal
         ↓
-Classify process gap
+Classify the observation
         ↓
-Prepare Repository Change Proposal
+Does an existing flow already cover it?
+        ├─ Yes → execution error or one-off scope decision; follow the existing flow
+        └─ No
+             ↓
+Is a required step or verification check missing?
+        ├─ Yes → propose an extension to the existing flow
+        └─ No
+             ↓
+Is this a new recurring work pattern with its own trigger and completion condition?
+        ├─ Yes → propose a new flow
+        └─ No
+             ↓
+Is the current workflow ambiguous or internally inconsistent?
+        ├─ Yes → propose clarification or restructuring
+        └─ No → treat as a one-off preference or scope decision
+             ↓
+Discuss the proposed change with the repository maintainer
+        ↓
+Prepare a Repository Change Proposal
         ↓
 Obtain explicit human approval
         ↓
@@ -955,8 +972,80 @@ Update AGENTS.md in a reviewable PR
         ↓
 Complete independent review
         ↓
-Merge and treat as canonical
+Merge and treat the new workflow as canonical
 ```
+
+### 1. Classify the correction or signal
+
+Use exactly one primary classification:
+
+1. **Execution error** — the existing flow was adequate but was followed incorrectly.
+2. **Missing step** — the existing flow lacks a necessary action, verification check, state transition, or completion condition.
+3. **New recurring pattern** — a recurring work type has a distinct trigger, procedure, and completion condition not covered by current flows.
+4. **Workflow ambiguity** — more than one reasonable interpretation of the current instruction exists, or two instructions conflict.
+5. **Recurring repository inconsistency** — artifacts repeatedly drift because ownership, synchronization, or verification rules are incomplete.
+6. **New repository artifact or boundary** — the current architecture does not define how a new artifact is created, reviewed, synchronized, or governed.
+7. **One-off preference or scope decision** — the existing workflow does not need to change.
+
+### 2. Test the existing workflow first
+
+Before proposing a change:
+
+- identify the current flow or gate that should govern the work;
+- compare the observed failure with the written trigger, procedure, and completion conditions;
+- determine whether the problem was non-compliance rather than missing governance;
+- avoid adding a rule merely because one execution was poor;
+- search for equivalent instructions elsewhere in `AGENTS.md` to avoid duplication or contradiction.
+
+An execution error should normally be corrected through the existing flow, not through new governance.
+
+### 3. Decide whether to extend, add, or clarify
+
+- **Extend an existing flow** when the trigger and completion condition remain the same but a necessary step or check is missing.
+- **Add a new primary flow** only when the work has a distinct recurring trigger, procedure, state transition, and completion condition.
+- **Clarify or restructure governance** when existing language permits multiple reasonable interpretations or creates inconsistent obligations.
+- **Do not change the workflow** for one-off preferences, temporary scope choices, or failures caused by ignoring an adequate instruction.
+
+Cross-cutting controls such as independent review, human escalation, safe-versus-substantive classification, and constitutional principles must remain outside source-specific flows.
+
+### 4. Prepare the workflow proposal
+
+Before editing `AGENTS.md`, present the repository maintainer with:
+
+- the user correction or recurring signal;
+- its classification;
+- the existing flow or missing governance boundary;
+- why the current instruction is adequate or inadequate;
+- the exact proposed change;
+- whether it extends, adds, removes, or clarifies a rule;
+- alternatives, including making no workflow change;
+- expected effects on contributors, agents, repository artifacts, and existing flows;
+- migration or synchronization work required;
+- unresolved uncertainty and reversibility;
+- the decision required from the maintainer.
+
+### 5. Human decision before implementation
+
+**Never update `AGENTS.md` silently.**
+
+**Always discuss proposed workflow changes with the repository maintainer first.**
+
+A user correction, repeated failure, agent confidence, apparent improvement, or successful local experiment does not constitute permission to change the canonical workflow.
+
+Only explicit maintainer approval authorizes implementation. Approval must identify the accepted direction clearly enough to distinguish it from the rejected alternatives.
+
+### 6. Implement and verify
+
+After explicit approval:
+
+- update `AGENTS.md` in a reviewable PR;
+- update affected entry points only after the canonical rule is present;
+- avoid unrelated governance cleanup in the same PR;
+- document the trigger, classification, decision, and expected consequences in the PR;
+- run independent review against the approved proposal and the Repository Constitution;
+- do not treat the new workflow as canonical until the PR is merged.
+
+If implementation exposes a materially different decision than the one approved, stop and return to the repository maintainer.
 
 ## Final status and completion checklist
 
