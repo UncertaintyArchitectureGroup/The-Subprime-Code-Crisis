@@ -133,12 +133,11 @@ one population, tool, period, or metric was followed from end to end.
 ```mermaid
 flowchart TD
     classDef empirical fill:#d9edf7,stroke:#31708f,stroke-width:2px;
-    classDef inference fill:#fcf8e3,stroke:#8a6d3b,stroke-width:2px;
     classDef synthesis fill:#eeeeee,stroke:#555,stroke-width:2px;
     classDef scenario fill:#f2dede,stroke:#a94442,stroke-width:2px,stroke-dasharray: 5 5;
 
     A[AI-assisted generation<br/><b>Repository synthesis: starting condition</b>]
-    B[Lower cost of producing code-like output<br/><b>Evidence-backed inference</b>]
+    B[Lower cost of producing code-like output<br/><b>Repository synthesis</b>]
     C[Higher upstream coding activity in studied settings<br/><b>Empirical finding: P-2026-01</b>]
     D[Verification capacity may not scale proportionally<br/><b>Repository synthesis</b>]
     E[Review / QA / security / architecture bottlenecks<br/><b>Repository synthesis: risk mechanism</b>]
@@ -146,12 +145,14 @@ flowchart TD
     G[Accumulated delivery-system risk<br/><b>Repository synthesis</b>]
     H[Technical Bankruptcy<br/><b>Warning scenario / repository hypothesis</b>]
 
-    A --> B --> C --> D --> E --> F --> G
+    A --> B
+    B --> D
+    C -->|empirical support for upstream-growth premise| D
+    D --> E --> F --> G
     G -. possible scenario, not an observed outcome .-> H
 
     class C empirical;
-    class B inference;
-    class A,D,E,F,G synthesis;
+    class A,B,D,E,F,G synthesis;
     class H scenario;
 ```
 
