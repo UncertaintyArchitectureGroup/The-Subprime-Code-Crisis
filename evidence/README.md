@@ -20,7 +20,7 @@ Use these sources for factual records and institutional descriptions, not as ind
 
 ### [Secondary evidence](secondary/README.md)
 
-Industry reports, practitioner analyses, replications, reviews, surveys, and other materials that synthesize or interpret primary data.
+Industry reports, practitioner analyses, replications, reviews, surveys, and materials that synthesize or interpret primary data.
 
 Use these sources for triangulation and context, not as substitutes for an available primary source.
 
@@ -28,7 +28,7 @@ Use these sources for triangulation and context, not as substitutes for an avail
 
 Analytical frameworks used to interpret evidence, such as production theory, bottleneck analysis, and software-productivity frameworks.
 
-These sources structure reasoning but do not directly measure the effects of AI coding tools unless they also contain empirical analysis.
+These sources structure reasoning but do not directly measure AI-tool effects unless they also contain empirical analysis.
 
 ### [Datasets](datasets/README.md)
 
@@ -38,7 +38,7 @@ Dataset entries should describe provenance, coverage, transformations, access co
 
 ## Canonical registry
 
-[`SOURCES.md`](SOURCES.md) is the canonical registry for every source.
+[`SOURCES.md`](SOURCES.md) is the canonical inventory and status database for every source.
 
 It tracks two separate states:
 
@@ -54,14 +54,26 @@ Integration audit = Verified
 
 The existence of a brief does not imply verified integration.
 
+## Source flows
+
+[`AGENTS.md`](../AGENTS.md) defines five distinct flows:
+
+- **Flow A** — add a new source;
+- **Flow B** — process a legacy registered source;
+- **Flow C** — update a changed or superseded source;
+- **Flow D** — re-verify repository content that relies on a verified source;
+- **Flow E** — search systematically for newer or missing evidence.
+
+Flow E never bypasses evidence review. Every selected new source returns to Flow A.
+
 ## Relationship to the rest of the repository
 
 - `report/` contains the Subprime Code Crisis argument and synthesis.
 - `protocols/` contains operational responses and decision rules.
-- `evidence/` contains source-oriented briefs that distinguish reported findings from repository interpretation.
+- `evidence/` contains source-oriented briefs.
 - `evidence/SOURCES.md` contains classification, review status, integration status, verification date, and current use.
-- `REFERENCES.md` is the compact bibliography and navigation index.
-- `AGENTS.md` defines the mandatory source-processing and integration-verification procedure.
+- `REFERENCES.md` is the compact bibliography.
+- `AGENTS.md` defines the mandatory source flows and verification procedure.
 
 ## Evidence brief standard
 
@@ -69,7 +81,7 @@ Each evidence brief should include:
 
 1. Full citation and canonical links.
 2. Source ID.
-3. Publication status and version.
+3. Publication status and exact version.
 4. Research question or documentary purpose.
 5. Dataset, population, period, comparator, and methodology where applicable.
 6. Directly observed or documented findings.
@@ -79,7 +91,7 @@ Each evidence brief should include:
 10. What the source does not establish.
 11. Limitations, conflicts, and external-validity risks.
 12. Repository locations using the source.
-13. A `Repository integration audit` section matching the status in `SOURCES.md`.
+13. A `Repository integration audit` section matching `SOURCES.md`.
 
 Use this audit template:
 
@@ -88,6 +100,7 @@ Use this audit template:
 
 - Integration status: Not started | In progress | Corrections required | Verified | Needs re-verification
 - Repository search completed:
+- Claim-to-source trace location:
 - Report mentions checked:
 - Numeric claims checked:
 - README claims and diagrams checked:
@@ -118,4 +131,4 @@ Do not mark a source `Verified` merely because:
 - a PR was merged;
 - a report paragraph was corrected.
 
-`Verified` requires the complete repository-wide procedure in `AGENTS.md`, synchronized status in the brief and `SOURCES.md`, and a recorded verification date.
+`Verified` requires the complete integration-audit procedure in `AGENTS.md`, a claim-to-source trace, synchronized status in the brief and `SOURCES.md`, and a recorded verification date after all required changes exist on the default branch.
