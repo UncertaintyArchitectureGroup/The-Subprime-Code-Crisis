@@ -168,7 +168,7 @@ It can be read in three ways:
 
 Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md) and then use [References](REFERENCES.md) as the complete bibliography and compact source index.
 
-Readers looking for immediate operating practices should start with the Risk Mitigation section.
+Readers looking for immediate operating practices should start with the [Operational Protocols](protocols/README.md).
 ## 📂 Report Structure
 
 The analysis is divided into three parts, covering the data, the mechanics of the failure, and the projected economic outcomes.
@@ -189,9 +189,24 @@ The analysis is divided into three parts, covering the data, the mechanics of th
 
 ## 🛡️ Risk Mitigation
 
-For engineering leaders and practitioners, this repository includes operational protocols for reducing the risks identified in the report.
+The repository's operational response is organized as a four-layer control stack:
 
-These are practical operating measures for teams that want to adopt AI-assisted development without overwhelming code review, QA, security, architecture, and maintenance capacity.
+```mermaid
+flowchart LR
+    A[Engineer<br/>Boundaries and verification]
+    --> B[Team<br/>Metrics, gates, escalation]
+    --> C[Public evidence<br/>Disclosure and correction]
+    --> D[Organization<br/>Ownership, policy, capacity]
+```
+
+| Layer | Protocol | Primary question |
+| --- | --- | --- |
+| **Engineer** | [Personal Defense](protocols/01_personal_defense.md) | What generated output may cross into durable code, and under what verification? |
+| **Team** | [Operational Defense](protocols/02_operational_defense.md) | Is local acceleration improving or degrading delivery-system outcomes? |
+| **Public evidence** | [Public Evidence and Disclosure](protocols/03_public_defense.md) | What can be claimed, with what support, limitations, and correction path? |
+| **Organization** | [Systemic Cure](protocols/04_systemic_cure.md) | Who owns adoption policy, capacity, exceptions, escalation, and learning? |
+
+These are practical operating patterns, not universal thresholds or empirical proof. Teams should adapt them to local risk, architecture, regulation, and delivery constraints, then feed implementation results back into the evidence base.
 
 👉 **[ACCESS OPERATIONAL PROTOCOLS](protocols/README.md)**
 
