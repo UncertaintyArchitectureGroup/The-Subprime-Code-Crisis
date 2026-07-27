@@ -1,12 +1,14 @@
 # Bibliography and Data Sources
 
-> **Navigation:** [Home](README.md) | [Evidence Library](evidence/README.md) | [Source Registry](evidence/SOURCES.md) | [Read the Report](report/01_the_illusion.md)
+> **Navigation:** [Home](README.md) | [Evidence Library](evidence/README.md) | [Canonical Source Registry](evidence/SOURCES.md) | [Read the Report](report/01_the_illusion.md)
 
 This file is the compact human-readable bibliography for the repository.
 
-The canonical classification, review status, and report usage for each source live in [`evidence/SOURCES.md`](evidence/SOURCES.md). Detailed source evaluation lives in evidence briefs under `evidence/`.
+[`evidence/SOURCES.md`](evidence/SOURCES.md) is the canonical source inventory and status registry. It records classification, evidence-review status, integration-audit status, verification date, and actual repository use. This bibliography provides readable citations and navigation; it is not a source-status database.
 
-A source appearing here is not automatically peer reviewed, independently validated, or strong enough to support every claim attributed to it. Follow the source-registry and evidence-brief links for boundaries and limitations.
+Detailed source evaluation lives in evidence briefs under `evidence/`.
+
+A source appearing here is not automatically peer reviewed, independently validated, supported by a reviewed brief, or verified across every repository use. Follow the source-registry and evidence-brief links for current status, boundaries, and limitations.
 
 ## Primary empirical research
 
@@ -108,10 +110,11 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 When adding or updating a source:
 
-1. register it in `evidence/SOURCES.md`;
-2. classify it and create or update an evidence brief;
-3. integrate it into the report only where it changes the argument;
-4. reassess README-level claims and protocols;
-5. update this bibliography last.
+1. select the applicable flow in [`AGENTS.md`](AGENTS.md);
+2. register or update it in [`evidence/SOURCES.md`](evidence/SOURCES.md);
+3. create or update the appropriate evidence brief and index;
+4. complete the required repository-wide integration audit;
+5. synchronize actual repository use and verification status in the canonical registry;
+6. update this bibliography last.
 
-See [`AGENTS.md`](AGENTS.md) for the complete workflow.
+Do not infer `Reviewed brief` or `Verified` from a citation appearing here. See [`AGENTS.md`](AGENTS.md) for the complete workflow and [`evidence/SOURCES.md`](evidence/SOURCES.md) for current status.
