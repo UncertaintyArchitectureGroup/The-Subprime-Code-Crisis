@@ -7,9 +7,12 @@ Contributions are welcome from engineers, researchers, delivery leaders, QA and 
 Before contributing, read:
 
 1. [`README.md`](README.md) — repository scope and claim boundaries.
-2. [`evidence/README.md`](evidence/README.md) — evidence taxonomy.
-3. [`evidence/SOURCES.md`](evidence/SOURCES.md) — canonical source registry.
-4. [`AGENTS.md`](AGENTS.md) — end-to-end workflow for sources, report changes, and protocol updates.
+2. [`evidence/README.md`](evidence/README.md) — evidence taxonomy and evidence-brief standard.
+3. [`evidence/SOURCES.md`](evidence/SOURCES.md) — canonical source inventory and status registry.
+4. [`AGENTS.md`](AGENTS.md) — flow selection, evidence review, integration audit, and status transitions.
+5. [`REFERENCES.md`](REFERENCES.md) — compact human-readable bibliography.
+
+`evidence/SOURCES.md` is canonical. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
 
 ## Contribution principles
 
@@ -19,21 +22,21 @@ Do not submit unsupported claims, promotional language, or criticism based only 
 
 Good contributions distinguish:
 
-- what was directly observed;
-- what was derived or modeled;
+- what was directly observed or documented;
+- what was derived or model-calibrated;
 - what the source author concluded;
 - what this repository infers;
 - what remains unknown.
 
 ### AI assistance is allowed; unverified output is not
 
-AI tools may be used for search support, outlining, editing, or drafting. The contributor remains responsible for every claim, citation, and link.
+AI tools may be used for search support, outlining, editing, or drafting. The contributor remains responsible for every claim, number, citation, and link.
 
 Do not submit text that has not been checked against the cited source. Remove fabricated citations, generic filler, unsupported certainty, and repetitive model-generated phrasing.
 
 ### Preserve mixed and contradictory evidence
 
-A source does not need to support the Subprime Code Crisis thesis to be included. Positive productivity evidence, null results, critiques, and replications are necessary for a credible synthesis.
+A source does not need to support the Subprime Code Crisis thesis to be included. Positive productivity evidence, null results, critiques, contradictions, and replications are necessary for a credible synthesis.
 
 ### Protect confidential information
 
@@ -47,19 +50,45 @@ For internal case studies:
 
 ## Ways to contribute
 
-### Add or update a source
+### Add, process, or update a source
 
-Follow the source lifecycle in [`AGENTS.md`](AGENTS.md):
+Select the correct primary flow in [`AGENTS.md`](AGENTS.md) before editing source-related content:
 
-1. register the source in `evidence/SOURCES.md`;
-2. classify it;
-3. create an evidence brief;
-4. update the evidence-class index;
-5. integrate it into the report only where relevant;
-6. reassess README-level claims and protocols;
-7. update `REFERENCES.md` last.
+- **Flow A — New source:** the source is not yet registered.
+- **Flow B — Legacy registered source:** the source is already cited or registered but lacks a current reviewed brief or completed integration audit.
+- **Flow C — Changed source:** the source itself changed, was superseded, or changed publication status.
+- **Flow D — Repository use changed:** the source is unchanged, but a claim, diagram, protocol, summary, or calculation relying on it changed materially.
+- **Flow E — Discover newer or missing evidence:** search for stronger, newer, contradictory, positive, null, or replication evidence after real gaps are identified.
 
-Do not add a citation directly to the report without registering it.
+Every registered source has two independent states:
+
+- **Evidence review** — whether the source itself has been reviewed and documented in a current evidence brief.
+- **Integration audit** — whether every material use of that source across the repository has been checked.
+
+A source is fully processed only when:
+
+```text
+Evidence review = Reviewed brief
+Integration audit = Verified
+```
+
+**Reviewed brief does not mean verified integration.** A brief, citation, merged PR, or corrected paragraph does not by itself establish that every repository use has been checked.
+
+For source-related work:
+
+1. select the applicable flow;
+2. register or confirm the source entry in `evidence/SOURCES.md`;
+3. create or update the evidence brief when required;
+4. update the relevant evidence-class index;
+5. run the repository-wide integration audit when required;
+6. build an inspectable claim-to-source trace;
+7. correct report claims and surrounding argument;
+8. reassess README-level claims and diagrams;
+9. document one protocol outcome: no change, clarification, or change;
+10. synchronize `Current use`, indexes, links, and `REFERENCES.md`;
+11. mark integration `Verified` only after all required corrections are merged.
+
+Do not add a citation directly to the report without registering the source.
 
 ### Submit a measured case study
 
@@ -81,9 +110,11 @@ Anecdotes may be useful for hypothesis generation, but must be labeled as anecdo
 
 Report changes should:
 
+- trace material factual claims to registered sources;
 - link to reviewed evidence briefs where possible;
 - distinguish evidence-backed findings from systems inference and warning scenarios;
 - weaken or remove claims when the evidence does not support them;
+- trigger re-verification when a material use of a previously verified source changes;
 - update the claim-confidence map when a major conclusion changes.
 
 ### Improve the protocols
@@ -96,27 +127,31 @@ Protocol changes should explain:
 - required evidence or signals;
 - failure modes;
 - conditions for escalation, pause, or reversal;
-- whether the change is evidence-backed, systems-derived, or a proposed practice.
+- whether the change is evidence-backed, systems-derived, or a proposed practice;
+- which source integrations, if any, require re-verification.
 
 Protocols are adaptable operating patterns, not universal thresholds.
 
 ## Pull-request expectations
 
-A PR should state:
+A source-related PR should state:
 
+- which flow from `AGENTS.md` applies;
 - files changed and why;
 - source IDs affected;
-- claims added, removed, or reclassified;
-- evidence boundaries;
-- what the cited sources do not establish;
-- whether README claims or protocols were reassessed;
-- any unresolved source-quality or link issues.
+- evidence-review and integration-audit states before and after;
+- claims added, removed, corrected, or reclassified;
+- claim-to-source trace location;
+- evidence boundaries and what the sources do not establish;
+- whether README claims, diagrams, or protocols were reassessed;
+- unresolved source-quality, link, or correction issues.
 
-For substantial new evidence, prefer separate PRs for:
+For substantial source work, prefer separate PRs for:
 
 1. registration and evidence brief;
-2. report integration;
-3. repository-map or protocol changes, only when required.
+2. report integration and corrections;
+3. repository-map or protocol changes, only when required;
+4. final verification-status update after all required changes exist on the default branch.
 
 ## License and conduct
 
