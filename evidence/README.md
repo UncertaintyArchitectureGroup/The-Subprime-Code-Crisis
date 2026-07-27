@@ -1,102 +1,121 @@
 # Evidence Library
 
-This directory separates external evidence from the report's interpretation and from the repository's operational protocols.
+This directory separates empirical and documentary sources from the report's interpretation and from the repository's operational protocols.
 
-The goal is not to flatten every source into one confidence score. Different source types answer different questions and support different claims.
-
-## Start here
-
-- [`SOURCES.md`](SOURCES.md) — canonical registry of all external sources, classifications, review status, and report usage.
-- [`../REFERENCES.md`](../REFERENCES.md) — compact human-readable bibliography derived from the registry.
-- [`../AGENTS.md`](../AGENTS.md) — workflow for reading the repository and adding or updating evidence.
+The goal is not to flatten every source into a single confidence level. Different materials answer different questions and support different kinds of claims.
 
 ## Evidence classes
 
 ### [Primary empirical research](primary/README.md)
 
-Original studies, working papers, controlled experiments, large-scale observational analyses, and original measurement reports with inspectable methods.
+Original studies, working papers, controlled experiments, and large-scale observational analyses that directly report methods and results.
 
 Use these sources for claims about measured effects. Record publication status, dataset, method, directly observed findings, model-derived estimates, and limitations.
 
 ### [Primary documentary sources](documentary/README.md)
 
-First-party records such as filings, official documentation, standards, policies, and published engineering-system descriptions.
+First-party records such as annual filings, standards, official documentation, and published engineering-system descriptions.
 
-Use these sources for factual claims about what an organization reported, documented, spent, implemented, or required. Documentary evidence does not automatically establish independent validation or causal effect.
+Use these sources for factual records and institutional descriptions, not as independent proof of causal effects.
 
 ### [Secondary evidence](secondary/README.md)
 
-Industry reports, practitioner analyses, reviews, replications, critiques, and materials that synthesize or interpret primary evidence.
+Industry reports, practitioner analyses, replications, reviews, surveys, and other materials that synthesize or interpret primary data.
 
-Use these sources for triangulation, context, and hypothesis generation. Do not substitute them for an available primary source.
+Use these sources for triangulation and context, not as substitutes for an available primary source.
 
 ### [Theory and methodology](methodology/README.md)
 
-Frameworks used to interpret delivery-system behavior, such as Theory of Constraints, productivity models, queueing, reliability, and control concepts.
+Analytical frameworks used to interpret evidence, such as production theory, bottleneck analysis, and software-productivity frameworks.
 
-These sources support analytical reasoning. They are not direct empirical evidence of AI effects unless they include an empirical study.
+These sources structure reasoning but do not directly measure the effects of AI coding tools unless they also contain empirical analysis.
 
 ### [Datasets](datasets/README.md)
 
 Public or documented datasets used by cited research or maintained for independent analysis.
 
-Dataset entries should describe provenance, coverage, transformations, access conditions, licensing, and the claims the data can and cannot support.
+Dataset entries should describe provenance, coverage, transformations, access conditions, and the claims the data can and cannot support.
+
+## Canonical registry
+
+[`SOURCES.md`](SOURCES.md) is the canonical registry for every source.
+
+It tracks two separate states:
+
+- **Evidence review** — whether a source-oriented brief exists and is current.
+- **Integration audit** — whether every use of the source across the report, README, diagrams, references, and protocols has been checked.
+
+A source is fully processed only when:
+
+```text
+Evidence review = Reviewed brief
+Integration audit = Verified
+```
+
+The existence of a brief does not imply verified integration.
 
 ## Relationship to the rest of the repository
 
-- `evidence/SOURCES.md` is the canonical source registry.
-- evidence subdirectories contain reviewed source briefs and class-specific indexes.
-- `REFERENCES.md` is the compact bibliography and navigation view.
 - `report/` contains the Subprime Code Crisis argument and synthesis.
 - `protocols/` contains operational responses and decision rules.
-- `README.md` contains the repository-level claim-confidence and evidence maps.
-
-A bibliography entry is not an evidence brief. A registered source is not necessarily reviewed. A protocol is not empirical proof.
+- `evidence/` contains source-oriented briefs that distinguish reported findings from repository interpretation.
+- `evidence/SOURCES.md` contains classification, review status, integration status, verification date, and current use.
+- `REFERENCES.md` is the compact bibliography and navigation index.
+- `AGENTS.md` defines the mandatory source-processing and integration-verification procedure.
 
 ## Evidence brief standard
 
 Each evidence brief should include:
 
-1. Stable source ID from `SOURCES.md`.
-2. Full citation and canonical source links.
-3. Publication status, including whether the work is peer reviewed.
-4. Research question, documentary purpose, or methodological role.
-5. Scope, dataset, and methodology where applicable.
+1. Full citation and canonical links.
+2. Source ID.
+3. Publication status and version.
+4. Research question or documentary purpose.
+5. Dataset, population, period, comparator, and methodology where applicable.
 6. Directly observed or documented findings.
-7. Model-calibrated or derived findings.
-8. Source-author interpretation where material.
-9. Repository interpretation relevant to this project.
+7. Derived or model-calibrated findings.
+8. Source-author interpretation.
+9. Repository interpretation.
 10. What the source does not establish.
-11. Limitations, conflicts of interest, and external-validity risks.
-12. Links to report sections using the source.
-13. Links to any lawful local source copy retained in the repository.
+11. Limitations, conflicts, and external-validity risks.
+12. Repository locations using the source.
+13. A `Repository integration audit` section matching the status in `SOURCES.md`.
 
-A source may be registered before a full brief exists, but it must be marked **Registered; brief pending**. Pending sources should not carry load-bearing strong claims without visible qualification.
+Use this audit template:
+
+```markdown
+## Repository integration audit
+
+- Integration status: Not started | In progress | Corrections required | Verified | Needs re-verification
+- Repository search completed:
+- Report mentions checked:
+- Numeric claims checked:
+- README claims and diagrams checked:
+- Protocol outcome: No change | Clarification | Operational change
+- Corrections made:
+- Current-use locations confirmed:
+- Verification date:
+```
 
 ## Interpretation labels
 
 Use these labels where useful:
 
 - **Observed:** directly reported from empirical analysis.
-- **Documented:** explicitly stated in a first-party record.
-- **Derived:** calculated from reported results without introducing a new causal claim.
+- **Documented:** stated in an authoritative first-party record.
+- **Derived:** calculated from reported results without adding a new causal claim.
 - **Model-calibrated:** produced by a fitted or calibrated model rather than directly measured.
-- **Source interpretation:** the source author's explanation or framing.
+- **Source-author interpretation:** interpretation offered by the source authors.
 - **Repository interpretation:** the Subprime Code Crisis project's synthesis or application.
-- **Not established:** a plausible claim that the source does not demonstrate.
+- **Not established:** a plausible claim that the source does not itself demonstrate.
 
-## Source lifecycle
+## Completion rule
 
-```mermaid
-flowchart LR
-    A[Discover source] --> B[Register in SOURCES.md]
-    B --> C[Classify source]
-    C --> D[Create evidence brief]
-    D --> E[Update class index]
-    E --> F[Integrate into report]
-    F --> G[Reassess README claims]
-    G --> H[Reassess protocols if decisions change]
-    H --> I[Update REFERENCES.md and navigation]
-```
+Do not mark a source `Verified` merely because:
 
-Detailed execution rules are in [`AGENTS.md`](../AGENTS.md).
+- a brief exists;
+- a citation was added;
+- a PR was merged;
+- a report paragraph was corrected.
+
+`Verified` requires the complete repository-wide procedure in `AGENTS.md`, synchronized status in the brief and `SOURCES.md`, and a recorded verification date.
