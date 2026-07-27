@@ -2,6 +2,12 @@
 
 This directory contains evidence briefs for original empirical studies.
 
+## Evidence briefs
+
+- [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](2026-writing-code-vs-shipping-code.md) — NBER Working Paper 35275 (May 2026); large-scale matched event study across successive generations of AI coding tools.
+
+## Inclusion criteria
+
 Eligible materials include:
 
 - peer-reviewed research;
