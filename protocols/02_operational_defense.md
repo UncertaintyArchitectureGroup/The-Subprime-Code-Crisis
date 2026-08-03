@@ -1,7 +1,7 @@
 # Protocol 2: The Operational Defense
 ## Measure Delivery Health, Not Output Volume
 
-> **Navigation:** [🏠 Home](../README.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 1](01_personal_defense.md) | **Protocol 2** | [Protocol 3: Public Defense](03_public_defense.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 1](01_personal_defense.md) | **Protocol 2** | [Protocol 3: Public Defense](03_public_defense.md) | [📚 References](../REFERENCES.md)
 
 AI-assisted development changes the flow of work. It can reduce the effort required to produce code while increasing pressure on review, testing, security validation, architecture, and maintenance.
 
