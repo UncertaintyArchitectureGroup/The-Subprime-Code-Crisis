@@ -45,7 +45,7 @@ The flow is directional, but it is not a claim that every artifact is produced m
 
 ## Cross-cutting artifacts
 
-These artifacts inspect, bound, govern, cite, record, or navigate the core flow. They are not additional evidence stages.
+These artifacts inspect, bound, govern, cite, record, or navigate the core flow. They are not additional evidence stages. Reader-facing groupings such as the README's Foundation documents section are navigation aids, not alternative artifact classifications.
 
 | Artifact | Purpose | Boundary |
 | --- | --- | --- |
