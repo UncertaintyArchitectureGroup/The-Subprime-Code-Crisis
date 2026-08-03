@@ -9,6 +9,8 @@ _LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 _HTML_RE = re.compile(r"<[^>]+>")
 _TABLE_SEPARATOR_RE = re.compile(r"^:?-{3,}:?$")
 _INLINE_CODE_RE = re.compile(r"`([^`]+)`")
+_LIST_ITEM_RE = re.compile(r"^\s*-\s*(.*?)\s*$")
+_CANONICAL_STATUS_ITEM_RE = re.compile(r"^`([^`]+)`$")
 
 
 @dataclass(frozen=True)
@@ -16,6 +18,14 @@ class MarkdownTable:
     headers: tuple[str, ...]
     rows: tuple[tuple[str, ...], ...]
     start_line: int
+
+
+@dataclass(frozen=True)
+class MarkdownListItem:
+    value: str
+    raw: str
+    line: int
+    canonical_inline_code: bool
 
 
 def visible_text(value: str) -> str:
@@ -56,7 +66,7 @@ def extract_headings(text: str) -> tuple[str, ...]:
     return tuple(headings)
 
 
-def _split_table_row(line: str) -> tuple[str, ...]:
+def split_table_row(line: str) -> tuple[str, ...]:
     stripped = line.strip()
     if stripped.startswith("|"):
         stripped = stripped[1:]
@@ -66,7 +76,7 @@ def _split_table_row(line: str) -> tuple[str, ...]:
     return tuple(cell.replace(r"\|", "|").strip() for cell in cells)
 
 
-def _is_separator_row(cells: tuple[str, ...]) -> bool:
+def is_table_separator_row(cells: tuple[str, ...]) -> bool:
     return bool(cells) and all(
         _TABLE_SEPARATOR_RE.fullmatch(cell.strip()) for cell in cells
     )
@@ -95,12 +105,12 @@ def parse_markdown_tables(text: str) -> tuple[MarkdownTable, ...]:
             index += 1
             continue
 
-        headers = _split_table_row(lines[index])
-        separator = _split_table_row(lines[index + 1])
+        headers = split_table_row(lines[index])
+        separator = split_table_row(lines[index + 1])
         if (
             len(headers) < 2
             or len(headers) != len(separator)
-            or not _is_separator_row(separator)
+            or not is_table_separator_row(separator)
         ):
             index += 1
             continue
@@ -111,7 +121,7 @@ def parse_markdown_tables(text: str) -> tuple[MarkdownTable, ...]:
             line = lines[cursor]
             if not line.strip() or "|" not in line:
                 break
-            cells = _split_table_row(line)
+            cells = split_table_row(line)
             if len(cells) != len(headers):
                 break
             rows.append(cells)
@@ -129,16 +139,14 @@ def parse_markdown_tables(text: str) -> tuple[MarkdownTable, ...]:
     return tuple(tables)
 
 
-def inline_code_bullets_under_heading(text: str, heading: str) -> tuple[str, ...]:
-    """Extract `value` bullets below one heading until the next heading."""
-    lines = text.splitlines()
-    target_level: int | None = None
+def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem, ...]:
+    """Return every Markdown dash-list item in one heading block."""
     collecting = False
-    values: list[str] = []
+    items: list[MarkdownListItem] = []
     in_fence = False
     fence_marker = ""
 
-    for line in lines:
+    for line_number, line in enumerate(text.splitlines(), start=1):
         stripped = line.lstrip()
         if stripped.startswith(("```", "~~~")):
             marker = stripped[:3]
@@ -154,18 +162,36 @@ def inline_code_bullets_under_heading(text: str, heading: str) -> tuple[str, ...
 
         heading_match = _HEADING_RE.match(line)
         if heading_match:
-            level = len(heading_match.group(1))
             current = visible_text(heading_match.group(2))
-            if collecting and target_level is not None and level <= target_level:
+            if collecting:
                 break
             if current == heading:
                 collecting = True
-                target_level = level
             continue
 
-        if collecting:
-            bullet = re.match(r"^\s*-\s+`([^`]+)`\s*$", line)
-            if bullet:
-                values.append(bullet.group(1))
+        if not collecting:
+            continue
+        bullet = _LIST_ITEM_RE.match(line)
+        if not bullet:
+            continue
+        raw = bullet.group(1).strip()
+        canonical = _CANONICAL_STATUS_ITEM_RE.fullmatch(raw)
+        items.append(
+            MarkdownListItem(
+                value=visible_text(raw),
+                raw=raw,
+                line=line_number,
+                canonical_inline_code=canonical is not None,
+            )
+        )
 
-    return tuple(values)
+    return tuple(items)
+
+
+def inline_code_bullets_under_heading(text: str, heading: str) -> tuple[str, ...]:
+    """Compatibility helper returning only canonical inline-code list values."""
+    return tuple(
+        item.value
+        for item in list_items_under_heading(text, heading)
+        if item.canonical_inline_code
+    )
