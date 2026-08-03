@@ -2,7 +2,7 @@
 
 ## Status and precedence
 
-This playbook is a mandatory procedural extension of [`AGENTS.md`](../AGENTS.md) when a substantive repository change may affect more than one artifact or reader surface.
+This playbook is a mandatory procedural extension of [`AGENTS.md`](../AGENTS.md) for every substantive repository change.
 
 `AGENTS.md` is canonical and has precedence. This playbook does not create source states, evidence-review outcomes, integration-verification outcomes, or exceptions to human approval and independent review.
 
