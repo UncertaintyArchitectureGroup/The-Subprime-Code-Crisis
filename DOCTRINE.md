@@ -6,13 +6,13 @@ This document defines the content doctrine of *The Subprime Code Crisis*: how th
 
 [`AGENTS.md`](AGENTS.md) remains the canonical operating specification for workflows, approval gates, source states, verification, contributor obligations, and independent review. This doctrine does not override it, create an alternative workflow, or change evidence status.
 
-[`GLOSSARY.md`](GLOSSARY.md) defines the repository's canonical vocabulary. [`evidence/SOURCES.md`](evidence/SOURCES.md) remains the canonical source identity and status registry. Original sources remain authoritative for what they report.
+[`GLOSSARY.md`](GLOSSARY.md) defines the repository's canonical vocabulary. [`SCOPE.md`](SCOPE.md) expands the repository's subject boundary. [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) provides the dedicated reader-facing map of artifact relationships defined by this doctrine. [`evidence/SOURCES.md`](evidence/SOURCES.md) remains the canonical source identity and status registry. Original sources remain authoritative for what they report.
 
 ## Repository philosophy
 
 The repository treats AI-assisted coding as a change to a software-delivery system, not merely as a faster way to produce syntax.
 
-Its purpose is to maintain an inspectable account of how local acceleration can interact with review, testing, security, architecture, release, operations, maintenance, incentives, and organizational control.
+Its purpose is to maintain an inspectable account of how local acceleration can interact with review, testing, security, architecture, release, operations, maintenance, incentives, and organizational control. The detailed subject boundary is maintained in [`SCOPE.md`](SCOPE.md).
 
 The repository is therefore four things at once:
 
@@ -44,6 +44,12 @@ Positive, negative, null, mixed, contradictory, replication, and limiting eviden
 ### 5. The argument must remain falsifiable and correctable
 
 Claims, mechanisms, maps, and protocols should be stated so that new evidence or implementation feedback can qualify, weaken, revise, or reject them.
+
+### 6. Scope must remain explicit
+
+A related topic belongs in the repository only when it directly supports the core research question and its relationship is bounded. Popularity, rhetorical usefulness, or general importance does not by itself make a topic in scope.
+
+`SCOPE.md` expands this principle into explicit in-scope, out-of-scope, and adjacent-topic rules. Out of scope does not mean false or unimportant; it means the repository is not the appropriate place to establish or govern the topic.
 
 ## Evidence principles
 
@@ -131,6 +137,8 @@ A claim must not be silently relabeled as more directly evidenced or more certai
 
 ## Repository artifact model
 
+The repository separates a core flow of evidence, interpretation, claims, and operating response:
+
 ```text
 External source material
         ↓
@@ -140,7 +148,7 @@ Evidence briefs
         ↓
 Repository interpretation
         ↓
-Report synthesis and claims
+Report claims and synthesis
         ↓
 Operational protocols
         ↓
@@ -149,20 +157,10 @@ Implementation feedback and new evidence
 
 The Claim confidence map and explanatory maps assess, classify, or visualize report claims; they are cross-cutting views rather than mandatory sequential stages between the report and protocols.
 
-| Artifact | Primary purpose | What it must not become |
-| --- | --- | --- |
-| [`evidence/SOURCES.md`](evidence/SOURCES.md) | Canonical source identity, status, verification date, and current use | A narrative argument or compact bibliography |
-| Evidence brief | Source-oriented review, findings, limitations, and repository use | A report chapter or endorsement of the thesis |
-| [`REFERENCES.md`](REFERENCES.md) | Human-readable bibliography and navigation | A source-status registry |
-| Report | Structured synthesis, mechanisms, implications, and scenarios | A collection of unbounded source summaries |
-| Claim confidence map | Current support assessment for major repository claims | A ranking of source quality |
-| Evidence Map | Classification of evidence and repository artifacts | A confidence scorecard |
-| Crisis Map | Explanatory systems synthesis | A measured end-to-end causal chain |
-| Protocol | Adaptable operating response | Universal policy or empirical proof |
-| [`GLOSSARY.md`](GLOSSARY.md) | Canonical meaning of repository terms | A source of factual evidence or workflow rules |
+The dedicated [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) expands this model with artifact purposes, boundaries, relationship rules, and reader navigation. It is subordinate to this doctrine and does not create an evidence layer, workflow, source state, or claim.
 
 ## Change discipline
 
-The doctrine should evolve only when the repository's content model, claim boundaries, or artifact relationships genuinely change. Editorial preferences and one-off wording decisions do not justify doctrine expansion.
+The doctrine should evolve only when the repository's content model, scope principles, claim boundaries, or artifact relationships genuinely change. Editorial preferences and one-off wording decisions do not justify doctrine expansion.
 
 Any substantive doctrine change remains subject to the approval and independent-review requirements in [`AGENTS.md`](AGENTS.md).

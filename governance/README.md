@@ -2,12 +2,14 @@
 
 [`AGENTS.md`](../AGENTS.md) is the canonical operating specification and has precedence over every file in this directory. Read `AGENTS.md` in full before any repository work. These playbooks are mandatory procedural extensions when the selected flow requires them; they cannot override `AGENTS.md`. Resolve conflicts in favor of `AGENTS.md` and escalate unresolved ambiguity.
 
-The repository also maintains two cross-cutting content artifacts:
+The repository also maintains four cross-cutting content references:
 
-- [`DOCTRINE.md`](../DOCTRINE.md) defines research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact relationships.
+- [`DOCTRINE.md`](../DOCTRINE.md) defines research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact principles.
+- [`SCOPE.md`](../SCOPE.md) expands the repository's in-scope, out-of-scope, and adjacent-topic boundaries.
+- [`ARTIFACT_MODEL.md`](../ARTIFACT_MODEL.md) expands the reader-facing map of repository artifacts and relationships.
 - [`GLOSSARY.md`](../GLOSSARY.md) defines canonical repository vocabulary.
 
-Neither document creates a workflow, source status, verification outcome, contributor obligation, or exception to `AGENTS.md`. When terminology is ambiguous, use the glossary unless an original source explicitly uses the term differently.
+These documents do not create a workflow, source status, verification outcome, contributor obligation, or exception to `AGENTS.md`. Doctrine remains the canonical content authority for artifact and interpretation principles; Scope and Artifact Model are dedicated supporting references. When terminology is ambiguous, use the Glossary unless an original source explicitly uses the term differently.
 
 After selecting a flow under `AGENTS.md`, read only its required playbooks plus the repository materials required by the start-of-work gate.
 

@@ -1,12 +1,12 @@
 # Bibliography and Data Sources
 
-> **Navigation:** [Home](README.md) | [Doctrine](DOCTRINE.md) | [Glossary](GLOSSARY.md) | [Evidence Library](evidence/README.md) | [Canonical Source Registry](evidence/SOURCES.md) | [Read the Report](report/01_the_illusion.md)
+> **Navigation:** [Home](README.md) | [Scope](SCOPE.md) | [Artifact Model](ARTIFACT_MODEL.md) | [Doctrine](DOCTRINE.md) | [Glossary](GLOSSARY.md) | [Evidence Library](evidence/README.md) | [Canonical Source Registry](evidence/SOURCES.md) | [Read the Report](report/01_the_illusion.md)
 
 This file is the compact human-readable bibliography for the repository.
 
 [`evidence/SOURCES.md`](evidence/SOURCES.md) is the canonical source inventory and status registry. It records classification, evidence-review status, integration-audit status, verification date, and actual repository use. This bibliography provides readable citations and navigation; it is not a source-status database.
 
-Detailed source evaluation lives in evidence briefs under `evidence/`. Canonical meanings for source classes, evidence briefs, repository interpretation, evidence review, and integration audit are maintained in [`GLOSSARY.md`](GLOSSARY.md); their boundaries are defined in [`DOCTRINE.md`](DOCTRINE.md).
+Detailed source evaluation lives in evidence briefs under `evidence/`. Canonical meanings for source classes, evidence briefs, repository interpretation, evidence review, and integration audit are maintained in [`GLOSSARY.md`](GLOSSARY.md); their boundaries are defined in [`DOCTRINE.md`](DOCTRINE.md). The repository's subject boundary and artifact relationships are expanded in [`SCOPE.md`](SCOPE.md) and [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md).
 
 A source appearing here is not automatically peer reviewed, independently validated, supported by a reviewed brief, or verified across every repository use. Follow the source-registry and evidence-brief links for current status, boundaries, and limitations.
 
@@ -103,7 +103,7 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### M-1984-01 — Theory of Constraints
 
-- Goldratt, Eliyahu M. *The Goal: A Process of Ongoing Improvement*. 1984.
+- Goldratt, Eliyahu M. *The Goal: A Process of Ongoing Improvement.* 1984.
 - Status: methodology source used to interpret bottleneck migration, local optimization, and inventory. It is not direct evidence of AI-tool effects.
 
 ## Maintenance rule

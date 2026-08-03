@@ -5,7 +5,7 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
-> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🎯 **Scope**](SCOPE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 
 ## Repository purpose and boundaries
 
@@ -15,16 +15,20 @@ It treats AI-assisted coding as a delivery-system change rather than only a code
 
 The repository distinguishes source-reported empirical findings and documented facts from repository interpretations, including evidence-backed and systems inferences, and from risk or warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. Local acceleration simply does not automatically become end-to-end throughput.
 
+The dedicated [Repository Scope](SCOPE.md) defines what is in scope, what is out of scope, and how adjacent topics may be used. Out of scope does not mean false or unimportant; it means this repository is not the appropriate place to establish or govern that topic.
+
 ## Foundation documents
 
 | Document | Purpose |
 | --- | --- |
-| [Repository Doctrine](DOCTRINE.md) | Research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact model |
+| [Repository Scope](SCOPE.md) | In-scope and out-of-scope research boundaries, adjacent-topic rules, and audience |
+| [Repository Artifact Model](ARTIFACT_MODEL.md) | Reader-facing map from sources through evidence, interpretation, claims, protocols, and feedback |
+| [Repository Doctrine](DOCTRINE.md) | Research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact principles |
 | [Glossary](GLOSSARY.md) | Canonical definitions for recurring repository terms |
 | [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) | Public-record provenance of the name and boundaries of the repository's attributable contribution |
 | [`AGENTS.md`](AGENTS.md) | Canonical operating specification for workflows, approval, evidence states, verification, and independent review |
 
-`AGENTS.md` governs repository work. The doctrine and glossary govern content meaning and vocabulary; they do not override source evidence or workflow rules.
+`AGENTS.md` governs repository work. The Doctrine governs content principles and artifact boundaries; the Scope and Artifact Model expand those boundaries for readers; the Glossary governs vocabulary. None of these documents overrides original source evidence or source-state rules.
 
 > **Name and attribution:** This repository does not claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Its attributable contribution is the evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, maps, and operational protocols. See [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the documented public record and citation boundaries.
 
@@ -69,7 +73,7 @@ Canonical definitions for these claim types are maintained in the [Glossary](GLO
 
 The **Evidence Map** classifies the materials used to build those claims. It answers a different question from the Claim confidence map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
 
-The table below is a repository-level map, not a replacement for the canonical source inventory and status registry in [`evidence/SOURCES.md`](evidence/SOURCES.md). [`REFERENCES.md`](REFERENCES.md) remains a compact human-readable bibliography and navigation aid.
+The table below is a repository-level map, not a replacement for the canonical source inventory and status registry in [`evidence/SOURCES.md`](evidence/SOURCES.md). [`REFERENCES.md`](REFERENCES.md) remains a compact human-readable bibliography and navigation aid. For the complete relationship among all repository artifacts, see the [Repository Artifact Model](ARTIFACT_MODEL.md).
 
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
@@ -179,6 +183,8 @@ It can be read in three ways:
 - As a warning about unmanaged AI-assisted coding adoption.
 - As a delivery-system analysis of bottleneck migration.
 - As a starting point for engineering governance patterns around AI-generated code.
+
+Readers looking for the research boundary and artifact relationships should start with [Repository Scope](SCOPE.md) and the [Repository Artifact Model](ARTIFACT_MODEL.md).
 
 Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md), use the canonical [Source Registry](evidence/SOURCES.md) for inventory and status, and use [References](REFERENCES.md) as the compact human-readable bibliography and navigation aid.
 
