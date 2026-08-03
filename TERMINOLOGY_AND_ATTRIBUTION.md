@@ -1,6 +1,6 @@
 # Terminology and attribution
 
-> **Navigation:** [Home](README.md) | [Doctrine](DOCTRINE.md) | [Glossary](GLOSSARY.md) | [Evidence Library](evidence/README.md) | [References](REFERENCES.md)
+> **Navigation:** [Home](README.md) | [Scope](SCOPE.md) | [Artifact Model](ARTIFACT_MODEL.md) | [Doctrine](DOCTRINE.md) | [Glossary](GLOSSARY.md) | [Evidence Library](evidence/README.md) | [References](REFERENCES.md)
 
 ## Purpose of this note
 
@@ -8,7 +8,7 @@ This note separates the name of the project from the contribution made by the re
 
 The repository does **not** claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. The phrase is a compact metaphor for a broader software-delivery risk: code-like output can be produced and valued as immediate productivity while verification, integration, maintenance, and operational costs are deferred or transferred elsewhere in the delivery system.
 
-Canonical meanings for **delivery system**, **risk scenario**, **warning scenario**, **Technical Bankruptcy**, and **independent conceptual convergence** are maintained in the [Glossary](GLOSSARY.md). The repository's contribution and claim boundaries are defined in the [Repository Doctrine](DOCTRINE.md).
+Canonical meanings for **delivery system**, **risk scenario**, **warning scenario**, **Technical Bankruptcy**, and **independent conceptual convergence** are maintained in the [Glossary](GLOSSARY.md). The repository's contribution and claim boundaries are defined in the [Repository Doctrine](DOCTRINE.md), and the broader subject boundary is expanded in [Repository Scope](SCOPE.md).
 
 ## Project provenance
 
