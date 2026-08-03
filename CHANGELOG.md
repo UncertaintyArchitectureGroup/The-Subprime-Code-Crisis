@@ -12,7 +12,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
-- Restructured the README around Quick Start, Key Takeaways, and Repository Map; reduced duplicate navigation and artifact-flow explanation while preserving the Claim Confidence Map, Evidence Map, Crisis Map boundaries, and operational control stack.
+- Restructured the README around Quick Start, Key Takeaways, and a repository map; reduced duplicate navigation and artifact-flow explanation while preserving the Claim confidence map, Evidence Map, Crisis Map boundaries, and operational control stack.
 - Expanded the Doctrine's map principles so reader summaries and visualizations preserve claim class, scope, uncertainty, attribution, and source boundaries.
 
 ### Governance
