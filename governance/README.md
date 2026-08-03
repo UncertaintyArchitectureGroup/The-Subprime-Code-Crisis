@@ -11,7 +11,7 @@ The repository also maintains four cross-cutting content references:
 
 These documents do not create a workflow, source status, verification outcome, contributor obligation, or exception to `AGENTS.md`. Doctrine remains the canonical content authority for artifact and interpretation principles; Scope and Artifact Model are dedicated supporting references. When terminology is ambiguous, use the Glossary unless an original source explicitly uses the term differently.
 
-After selecting a flow under `AGENTS.md`, read only its required playbooks plus the repository materials required by the start-of-work gate.
+After selecting a flow under `AGENTS.md`, read only its required playbooks plus the repository materials required by the start-of-work gate. For every substantive repository change, also use the [content synchronization](content-synchronization.md) playbook to assess affected surfaces and make an explicit changelog decision.
 
 | Flow | Required playbooks |
 | --- | --- |
@@ -27,5 +27,6 @@ After selecting a flow under `AGENTS.md`, read only its required playbooks plus 
 - [Integration audit](integration-audit.md): repository-wide use search, trace, numeric and argument checks, corrections, synchronization, and verification completion.
 - [Evidence discovery](evidence-discovery.md): complete Flow E methodology and Independent Search Review.
 - [Independent review](independent-review.md): reviewer independence, allowed outcomes, correction loop, escalation, and verification gate.
+- [Content synchronization](content-synchronization.md): affected-surface assessment, explicit non-applicability, and changelog decision for substantive changes.
 - [Status model](status-model.md): allowed states, transitions, resets, and `Last verified`.
 - [Templates](templates.md): mandatory records used by the applicable procedures.
