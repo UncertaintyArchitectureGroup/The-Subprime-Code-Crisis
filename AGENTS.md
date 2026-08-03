@@ -65,8 +65,8 @@ Repository maps and navigation
 Before reading other repository files, editing, reviewing, searching for evidence, or changing source status:
 
 1. Read the current `AGENTS.md` from the target branch in full.
-2. State the selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration).
-3. Read the playbooks marked mandatory for the selected flow in the [flow table](#flow-selection-table).
+2. State the selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether the content synchronization assessment is required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration).
+3. Read the playbooks marked mandatory for the selected flow in the [flow table](#flow-selection-table), plus any cross-cutting playbook triggered by the declared work.
 4. Read `DOCTRINE.md` and `GLOSSARY.md`, then read `README.md`, `evidence/README.md`, `evidence/SOURCES.md`, the relevant evidence brief when one exists, every relevant file under `report/` and `protocols/`, `REFERENCES.md`, and `CONTRIBUTING.md`.
 
 Do not rely on remembered instructions. `evidence/SOURCES.md` is canonical for source state; `REFERENCES.md` is not a status database. When an external source uses a repository term differently, preserve and attribute the source's meaning rather than silently normalizing it to the glossary.
