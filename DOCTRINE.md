@@ -142,12 +142,12 @@ Repository interpretation
         ↓
 Report synthesis and claims
         ↓
-Claim-confidence assessment and explanatory maps
-        ↓
 Operational protocols
         ↓
 Implementation feedback and new evidence
 ```
+
+The Claim confidence map and explanatory maps assess, classify, or visualize report claims; they are cross-cutting views rather than mandatory sequential stages between the report and protocols.
 
 | Artifact | Primary purpose | What it must not become |
 | --- | --- | --- |
