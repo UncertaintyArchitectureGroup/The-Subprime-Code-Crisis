@@ -52,6 +52,7 @@ def make_contract() -> RepositoryContract:
             integration_heading="Allowed Integration audit statuses",
         ),
         registry=RegistryRequirement(
+            table_sections=("Primary empirical research",),
             required_columns=(
                 "ID",
                 "Source",
@@ -113,6 +114,8 @@ def registry_text(
 ) -> str:
     return f"""# Source Registry
 
+## Primary empirical research
+
 | ID | Source | Evidence review | Integration audit | Last verified | Can support | Current use |
 | --- | --- | --- | --- | --- | --- | --- |
 | **{source_id}** | Example source | {evidence} | {integration} | {verified} | Bounded finding | `README.md` |
@@ -147,8 +150,11 @@ class MarkdownTests(unittest.TestCase):
 
 class RegistryTests(unittest.TestCase):
     def test_parser_extracts_status_and_brief_link(self) -> None:
+        contract = make_contract()
         records = parse_source_registry(
-            registry_text(), make_contract().registry.required_columns
+            registry_text(),
+            contract.registry.required_columns,
+            contract.registry.table_sections,
         )
         self.assertEqual(records[0].source_id, "P-2026-01")
         self.assertEqual(records[0].evidence_review, "Reviewed brief")
@@ -197,8 +203,11 @@ class ValidatorTests(unittest.TestCase):
     def test_duplicate_source_id_is_reported(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
-            duplicate = registry_text() + registry_text()
-            self._write_fixture(root, duplicate)
+            registry = registry_text()
+            row = next(
+                line for line in registry.splitlines() if line.startswith("| **P-")
+            )
+            self._write_fixture(root, registry.rstrip() + "\n" + row + "\n")
             codes = {
                 issue.code
                 for issue in RepositoryValidator(root, make_contract()).validate()
@@ -209,6 +218,7 @@ class ValidatorTests(unittest.TestCase):
         contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
         self.assertEqual(contract.policy_authority, "AGENTS.md")
         self.assertIn("Verified", contract.integration_audit_statuses)
+        self.assertIn("Primary empirical research", contract.registry.table_sections)
 
     @unittest.skipUnless(
         (REPO_ROOT / "AGENTS.md").exists(),
