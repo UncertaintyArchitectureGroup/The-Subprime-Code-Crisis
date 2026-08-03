@@ -45,7 +45,7 @@ The flow is directional, but it is not a claim that every artifact is produced m
 
 ## Cross-cutting artifacts
 
-These artifacts inspect, bound, govern, cite, or navigate the core flow. They are not additional evidence stages.
+These artifacts inspect, bound, govern, cite, record, or navigate the core flow. They are not additional evidence stages.
 
 | Artifact | Purpose | Boundary |
 | --- | --- | --- |
@@ -53,6 +53,7 @@ These artifacts inspect, bound, govern, cite, or navigate the core flow. They ar
 | [`DOCTRINE.md`](DOCTRINE.md) | Defines research, evidence, interpretation, protocol, claim-boundary, and artifact principles | Does not create workflows or source states |
 | [`GLOSSARY.md`](GLOSSARY.md) | Defines canonical meanings for recurring repository terms | Does not provide factual evidence |
 | [`README.md`](README.md) | Primary reader entry point, executive summary, repository-level maps, major navigation, and citation guidance | Not canonical for source status and not a substitute for the report, evidence briefs, or Source Registry |
+| [`CHANGELOG.md`](CHANGELOG.md) | Records selected material reader-facing, evidence, protocol, content-architecture, attribution, citation, and governance changes | Not an exhaustive commit ledger, source-status registry, evidence brief, or release certification |
 | **Claim confidence map** | Assesses the current support and class of selected major repository claims | Not a source-quality ranking or mandatory workflow stage |
 | **Evidence Map** | Classifies evidence types, repository interpretation, and protocols by role | Not a confidence scorecard or source-status registry |
 | **Crisis Map** | Visualizes the proposed systems mechanism and bounded scenarios | Not a chronology or a measured end-to-end causal chain |
@@ -74,7 +75,7 @@ These artifacts inspect, bound, govern, cite, or navigate the core flow. They ar
 5. A protocol translates a bounded risk into operating practice; it does not prove the risk or the control universally valid.
 6. Maps and confidence assessments are views over repository claims and artifacts; they do not replace the Source Registry, evidence briefs, or report argument.
 7. Implementation feedback may support, weaken, or redesign a protocol, but it enters the evidence system through the applicable process in `AGENTS.md`.
-8. Contributor, governance, citation, attribution, and navigation artifacts must remain synchronized with the canonical content they expose, but they cannot silently redefine it.
+8. Contributor, governance, citation, attribution, history, and navigation artifacts must remain synchronized with the canonical content they expose, but they cannot silently redefine it.
 
 ## Where to start
 
@@ -83,6 +84,7 @@ These artifacts inspect, bound, govern, cite, or navigate the core flow. They ar
 | Understand the research boundary | [`SCOPE.md`](SCOPE.md) |
 | Understand the repository's reasoning rules | [`DOCTRINE.md`](DOCTRINE.md) |
 | Resolve a recurring term | [`GLOSSARY.md`](GLOSSARY.md) |
+| Inspect material repository evolution | [`CHANGELOG.md`](CHANGELOG.md) |
 | Inspect source identity or status | [`evidence/SOURCES.md`](evidence/SOURCES.md) |
 | Inspect a source's methods, findings, and limitations | [Evidence Library](evidence/README.md) |
 | Read the complete argument | [Report](report/01_the_illusion.md) |
