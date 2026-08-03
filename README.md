@@ -5,63 +5,46 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
-> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🎯 **Scope**](SCOPE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🕒 **Changelog**](CHANGELOG.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🎯 **Scope**](SCOPE.md) | [🧭 **Doctrine**](DOCTRINE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [📖 **Glossary**](GLOSSARY.md) | [📚 **References**](REFERENCES.md) | [🕒 **Changelog**](CHANGELOG.md)
 
-## Repository purpose and boundaries
+## Quick Start
 
-This repository examines one core hypothesis: AI-assisted coding can create local productivity gains while shifting cost into downstream delivery constraints such as code review, QA, security validation, architecture, maintenance, and production stability.
-
-It treats AI-assisted coding as a delivery-system change rather than only a code-generation tool. The goal is not to reject AI assistance, but to prevent incomplete adoption models from creating technical debt, organizational backlash, and loss of trust in a genuinely important technology.
-
-The repository distinguishes source-reported empirical findings and documented facts from repository interpretations, including evidence-backed and systems inferences, and from risk or warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. Local acceleration simply does not automatically become end-to-end throughput.
-
-The dedicated [Repository Scope](SCOPE.md) defines what is in scope, what is out of scope, and how adjacent topics may be used. Out of scope does not mean false or unimportant; it means this repository is not the appropriate place to establish or govern that topic.
-
-## Foundation documents
-
-| Document | Purpose |
+| Need | Start here |
 | --- | --- |
-| [Repository Scope](SCOPE.md) | In-scope and out-of-scope research boundaries, adjacent-topic rules, and audience |
-| [Repository Artifact Model](ARTIFACT_MODEL.md) | Reader-facing map from sources through evidence, interpretation, claims, protocols, and feedback |
-| [Repository Doctrine](DOCTRINE.md) | Research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact principles |
-| [Glossary](GLOSSARY.md) | Canonical definitions for recurring repository terms |
-| [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) | Public-record provenance of the name and boundaries of the repository's attributable contribution |
-| [`AGENTS.md`](AGENTS.md) | Canonical operating specification for workflows, approval, evidence states, verification, and independent review |
+| Understand the complete argument | [Read the report](report/01_the_illusion.md) |
+| Inspect sources, evidence briefs, and source status | [Evidence Library](evidence/README.md) and [Source Registry](evidence/SOURCES.md) |
+| Apply practical controls | [Operational Protocols](protocols/README.md) |
+| Understand the research and reasoning boundaries | [Scope](SCOPE.md), [Doctrine](DOCTRINE.md), and [Artifact Model](ARTIFACT_MODEL.md) |
+| Contribute or change the repository | [`AGENTS.md`](AGENTS.md) and [Contributing](CONTRIBUTING.md) |
 
-`AGENTS.md` governs repository work. The Doctrine governs content principles and artifact boundaries; the Scope and Artifact Model expand those boundaries for readers; the Glossary governs vocabulary. None of these documents overrides original source evidence or source-state rules.
+## Key Takeaways
 
-## Repository history
+1. AI tools can accelerate isolated coding work.
+2. Local code-generation speed does not guarantee end-to-end software-delivery throughput.
+3. Additional output can shift constraints into review, QA, security, architecture, integration, and maintenance.
+4. The risk comes from unmanaged adoption and insufficient verification capacity, not from AI assistance alone.
+5. The practical response is to redesign the delivery control system rather than reject the technology.
 
-- [Changelog](CHANGELOG.md) — selected material history of reader-facing, evidence, protocol, architecture, attribution, citation, and governance changes.
+The repository examines this as a delivery-system problem. It distinguishes source-reported findings and documented facts from repository interpretations, systems inferences, risk scenarios, and warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. The detailed research boundary is defined in [Repository Scope](SCOPE.md).
 
-> **Name and attribution:** This repository does not claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Its attributable contribution is the evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, maps, and operational protocols. See [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the documented public record and citation boundaries.
+## Repository Map
 
-## How to cite this repository
+| Area | Purpose | Start here |
+| --- | --- | --- |
+| **Report** | Complete argument about local acceleration, downstream constraints, and accumulated delivery-system risk | [Part 1: The Illusion](report/01_the_illusion.md) |
+| **Evidence** | Source registry, evidence taxonomy, source-oriented briefs, limitations, and integration status | [Evidence Library](evidence/README.md) |
+| **Protocols** | Adaptable controls for engineers, teams, public evidence, and organizations | [Operational Protocols](protocols/README.md) |
+| **Scope and Doctrine** | Subject boundaries, evidence principles, claim boundaries, and reasoning rules | [Scope](SCOPE.md) and [Doctrine](DOCTRINE.md) |
+| **Artifact Model and Glossary** | Repository structure, artifact relationships, and canonical terminology | [Artifact Model](ARTIFACT_MODEL.md) and [Glossary](GLOSSARY.md) |
+| **Governance** | Workflows, approval, source states, verification, synchronization, and independent review | [`AGENTS.md`](AGENTS.md) and [governance playbooks](governance/README.md) |
+| **Citation and attribution** | Repository citation metadata, terminology provenance, and reuse boundaries | [`CITATION.cff`](CITATION.cff) and [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) |
+| **History** | Selected material evolution of the repository | [Changelog](CHANGELOG.md) |
 
-> Oborskyi, Vitalii, and contributors. *The Subprime Code Crisis: An Independent Research Synthesis on AI-Assisted Software Delivery Risk*. Uncertainty Architecture Group, 2026. https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis
+`AGENTS.md` governs repository work. The Doctrine governs content principles and claim boundaries. Scope and the Artifact Model expand those boundaries for readers. The Glossary governs recurring repository vocabulary. None of these documents overrides original source evidence or the canonical source-state rules.
 
-Citation managers and GitHub's **Cite this repository** function can use [`CITATION.cff`](CITATION.cff). When reusing a specific diagram, report chapter, evidence brief, or protocol, cite that artifact in addition to the repository. Attribution applies to the repository's analysis and artifacts; it does not imply ownership of the general phrase **Subprime Code Crisis**.
+## Claim Confidence Map
 
-## Executive Summary
-
-AI code assistants are powerful tools, but their current adoption model is often incomplete.
-
-Most enterprise rollouts measure local productivity gains: faster code generation, faster task completion, more output per developer. But software delivery is not limited by typing speed. In mature engineering organizations, the real constraints often sit downstream: code review, testing, security validation, architecture, deployment, maintenance, and production stability.
-
-This report argues that unmanaged AI-assisted coding can create a Subprime Code Bubble: a growing volume of plausible, syntactically valid, but insufficiently reviewed and poorly integrated code that shifts cost into the future.
-
-The risk is not caused by AI alone. It emerges from the collision of two forces:
-
-1. Tool behavior: AI code assistants reduce the effort required to generate code-like output, but they do not reduce the verification burden at the same rate.
-2. Market behavior: organizations often adopt AI tools as productivity multipliers without redesigning the operating model around the increased output flow.
-
-The result is a dangerous mismatch: code generation scales faster than the organization’s capacity to review, test, understand, secure, and maintain that code.
-
-The alternative is not to reject AI-assisted development. The alternative is to govern it as a delivery-system change.
-
-## Claim confidence map
-
-The **Claim confidence map** evaluates the repository's conclusions: what kind of claim each statement is and how strongly the current body of evidence supports it. It does not classify sources.
+The **Claim Confidence Map** evaluates selected repository conclusions: what kind of claim each statement is and how strongly the current evidence supports it. It does not classify sources.
 
 | Claim                                                                                          | Type                      | Confidence  |
 | ---------------------------------------------------------------------------------------------- | ------------------------- | ----------- |
@@ -71,13 +54,11 @@ The **Claim confidence map** evaluates the repository's conclusions: what kind o
 | Unmanaged adoption may inflate technical debt                                                  | Risk scenario             | Medium      |
 | Industry-wide “technical bankruptcy” is possible under aggressive cost-cutting adoption models | Warning scenario          | Medium-Low  |
 
-Canonical definitions for these claim types are maintained in the [Glossary](GLOSSARY.md); their use is governed by the claim boundaries in the [Repository Doctrine](DOCTRINE.md#claim-boundaries).
+Canonical definitions for these claim types are maintained in the [Glossary](GLOSSARY.md); their use is governed by the [Repository Doctrine](DOCTRINE.md#claim-boundaries).
 
 ## 🧾 Evidence Map
 
-The **Evidence Map** classifies the materials used to build those claims. It answers a different question from the Claim confidence map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
-
-The table below is a repository-level map, not a replacement for the canonical source inventory and status registry in [`evidence/SOURCES.md`](evidence/SOURCES.md). [`REFERENCES.md`](REFERENCES.md) remains a compact human-readable bibliography and navigation aid. For the complete relationship among all repository artifacts, see the [Repository Artifact Model](ARTIFACT_MODEL.md).
+The **Evidence Map** classifies materials by role. It answers a different question from the Claim Confidence Map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
 
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
@@ -86,52 +67,14 @@ The table below is a repository-level map, not a replacement for the canonical s
 | **Secondary evidence and industry context** | Reviews, surveys, practitioner analyses, and synthesis used for triangulation or context | DORA reports; McKinsey and Deloitte enterprise surveys; SoftwareSeni review analysis; TechnoDiaries practitioner reporting; Andreas Horn industry commentary |
 | **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | Goldratt's Theory of Constraints; software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
 | **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md); GitHub activity and marketplace datasets documented in cited studies |
-| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), Claim confidence map, and the Crisis Map below |
-| **Protocols** | Practical responses, controls, metrics, and decision rules derived from the risk analysis | [Operational protocols](protocols/README.md) |
+| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), Claim Confidence Map, and Crisis Map |
+| **Protocols** | Practical responses, controls, metrics, and decision rules derived from the risk analysis | [Operational Protocols](protocols/README.md) |
 
-```mermaid
-flowchart LR
-    P[Primary Empirical Research<br/>Measured effects]
-    F[Primary Documentary Sources<br/>Filings and first-party records]
-    S[Secondary Evidence<br/>Surveys, reviews, industry context]
-    T[Theory and Methodology<br/>Interpretive frameworks]
-    D[Datasets<br/>Provenance and coverage]
-    I[Repository Interpretation<br/>Subprime Code Crisis synthesis]
-    R[Report Claims<br/>Findings, inferences, scenarios]
-    C[Claim Confidence Map<br/>Claim type and support level]
-    O[Protocols<br/>Operational responses]
-
-    D --> P
-    P --> I
-    F --> I
-    S --> I
-    T --> I
-    I --> R
-    R --> O
-    R -. assessed by .-> C
-    C -. bounds claim and protocol strength .-> O
-
-    P -. claim boundaries .-> R
-    O -. implementation feedback .-> I
-```
-
-The evidence flow is intentionally directional:
-
-1. **Sources report findings, records, or context.**
-2. **The repository interprets those materials.**
-3. **The report formulates bounded findings, inferences, mechanisms, and risk scenarios.**
-4. **Protocols translate those bounded risks into operating practices.**
-
-The Claim confidence map is a cross-cutting assessment of selected report claims, not a mandatory processing stage that every claim must pass through before a protocol can be formulated.
-
-A protocol is therefore not empirical proof, a repository interpretation is not a finding directly reported by a source, and a confidence rating is not a source category. Detailed classification rules and evidence-brief standards are documented in the [Evidence Library](evidence/README.md). The canonical source inventory and status registry is [`evidence/SOURCES.md`](evidence/SOURCES.md); [`REFERENCES.md`](REFERENCES.md) is the compact human-readable bibliography and navigation aid.
+The canonical source inventory and status registry is [`evidence/SOURCES.md`](evidence/SOURCES.md). [`REFERENCES.md`](REFERENCES.md) is a compact bibliography and navigation aid. The [Artifact Model](ARTIFACT_MODEL.md) explains the complete relationship among sources, briefs, interpretation, claims, protocols, and feedback.
 
 ## 📊 The Crisis Map
 
-The Crisis Map is an **explanatory systems synthesis**, not a chronology, an evidence
-scorecard, or a causal chain measured by one study. Each node states its claim type.
-Solid arrows show the repository's proposed system mechanism; they do not imply that
-one population, tool, period, or metric was followed from end to end.
+The Crisis Map is an **explanatory systems synthesis**, not a chronology, an evidence scorecard, or a causal chain measured by one study. Each node states its claim type. Solid arrows show the repository's proposed system mechanism; they do not imply that one population, tool, period, or metric was followed from end to end.
 
 ```mermaid
 flowchart TD
@@ -161,68 +104,15 @@ flowchart TD
 
 ### Evidence boundary for the map
 
-- **P-2026-01** is a 2022–2026 observational matched event study of more than
-  100,000 developers, supplemented by Microsoft telemetry and four application
-  marketplaces. It reports increased upstream activity after adoption of successive
-  AI-tool generations and attenuation toward projects and releases. The map does not
-  reproduce its percentages because they refer to distinct outcomes, samples, and
-  specifications; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
-- The arrows after the empirical node are **repository synthesis, not a single
-  measured causal chain**. P-2026-01 does not establish general code-quality decline,
-  review as the only bottleneck, technical debt, security effects, or Technical
-  Bankruptcy.
-- The former `+50%`, `+131%`, `8x`, `x2`, and `-19%` nodes have been removed. They
-  came from different sources, populations, periods, units, and metric definitions;
-  placing them in sequence overstated what the combined evidence measured.
-- **Technical Bankruptcy** remains only as a warning scenario and repository
-  hypothesis. It is not an empirically measured final outcome. The map's final
-  synthesis outcome is **Accumulated delivery-system risk**.
+- **P-2026-01** reports increased upstream activity after adoption of successive AI-tool generations and attenuation toward projects and releases within its 2022–2026 observational matched-event-study setting; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
+- The arrows after the empirical node are **repository synthesis, not one measured causal chain**. P-2026-01 does not establish general code-quality decline, review as the only bottleneck, technical debt, security effects, or Technical Bankruptcy.
+- **Technical Bankruptcy** remains a warning scenario and repository hypothesis, not an empirically measured outcome. The map's final synthesis outcome is **Accumulated delivery-system risk**.
 
-## How to read this report
+The Doctrine defines why these maps remain bounded views rather than substitutes for evidence, report argument, or source status.
 
-This report is intentionally written for engineering leaders, senior developers, architects, QA leaders, delivery managers, and AI adoption decision-makers.
+## 🛡️ Operational Response
 
-It can be read in three ways:
-
-- As a warning about unmanaged AI-assisted coding adoption.
-- As a delivery-system analysis of bottleneck migration.
-- As a starting point for engineering governance patterns around AI-generated code.
-
-Readers looking for the research boundary and artifact relationships should start with [Repository Scope](SCOPE.md) and the [Repository Artifact Model](ARTIFACT_MODEL.md).
-
-Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md), use the canonical [Source Registry](evidence/SOURCES.md) for inventory and status, and use [References](REFERENCES.md) as the compact human-readable bibliography and navigation aid.
-
-Readers looking for immediate operating practices should start with the [Operational Protocols](protocols/README.md).
-
-## 📂 Report Structure
-
-The analysis is divided into three parts, covering the data, the mechanics of the failure, and the projected economic outcomes.
-
-*   **[Part 1: The Illusion](report/01_the_illusion.md)**
-    *   **Ch 1: The Great Illusion.** Why we feel faster but deliver slower (Analysis of METR, Xu et al. & GitClear).
-    *   **Ch 2: The Missing Price Tag.** The invisible infrastructure costs (30-120x multiplier) required to make AI safe.
-    *   **Ch 3: The "Free Lunch" Trap.** Why Boards choose a strategy of degradation (The Execution Mandate).
-    *   **Ch 4: Anatomy of the Break.** How the "Safe Scenario" kills the SDLC (Theory of Constraints applied to AI).
-*   **[Part 2: Broken Mechanics](report/02_broken_mechanics.md)**
-    *   **Ch 5:** The death of Code Review and the "Senior Penalty."
-    *   **Ch 6:** A Case Study in Complexity (Why AI Agents won't fix the mess).
-    *   **Ch 7:** The chain reaction across the Value Stream (Product, QA, Maintenance).
-*   **[Part 3: The Aftermath](report/03_the_aftermath.md)**
-    *   **Ch 8:** The Paradox of Local Solutions.
-    *   **Ch 9:** End Game Scenarios: The Crash vs. The Slow Rot.
-    *   **Ch 10:** The Architecture of Unintended Consequences.
-
-## 🛡️ Risk Mitigation
-
-The repository's operational response is organized as a four-layer control stack:
-
-```mermaid
-flowchart LR
-    A[Engineer<br/>Boundaries and verification]
-    --> B[Team<br/>Metrics, gates, escalation]
-    --> C[Public evidence<br/>Disclosure and correction]
-    --> D[Organization<br/>Ownership, policy, capacity]
-```
+The repository organizes its practical response as a four-layer control stack:
 
 | Layer | Protocol | Primary question |
 | --- | --- | --- |
@@ -231,9 +121,15 @@ flowchart LR
 | **Public evidence** | [Public Evidence and Disclosure](protocols/03_public_defense.md) | What can be claimed, with what support, limitations, and correction path? |
 | **Organization** | [Systemic Cure](protocols/04_systemic_cure.md) | Who owns adoption policy, capacity, exceptions, escalation, and learning? |
 
-These are practical operating patterns, not universal thresholds or empirical proof. Teams should adapt them to local risk, architecture, regulation, and delivery constraints, then feed implementation results back into the evidence base.
+These are adaptable operating patterns, not universal thresholds or empirical proof. Teams should adapt them to local risk, architecture, regulation, and delivery constraints, then return measured implementation feedback to the evidence system.
 
-👉 **[ACCESS OPERATIONAL PROTOCOLS](protocols/README.md)**
+## Citation, Attribution, and History
+
+> Oborskyi, Vitalii, and contributors. *The Subprime Code Crisis: An Independent Research Synthesis on AI-Assisted Software Delivery Risk*. Uncertainty Architecture Group, 2026. https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis
+
+Use [`CITATION.cff`](CITATION.cff) with GitHub's **Cite this repository** function. When reusing a specific diagram, report chapter, evidence brief, or protocol, cite that artifact in addition to the repository. See [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for name provenance and contribution boundaries, and [Changelog](CHANGELOG.md) for selected material history.
+
+This repository does not claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Its attributable contribution is the evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, maps, and operational protocols.
 
 ---
 *License: CC-BY-SA 4.0*
