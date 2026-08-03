@@ -280,4 +280,4 @@ Do not use a stronger term merely because it is more memorable. In particular:
 - do not replace **risk scenario** with **prediction**;
 - do not replace **warning scenario** with **observed outcome**;
 - do not equate **local productivity** with **throughput**; and
-- do not equate **Reviewed brief** with **Verified integration**.
+- do not equate **Evidence review = Reviewed brief** with **Integration audit = Verified**.
