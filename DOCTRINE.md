@@ -115,9 +115,9 @@ Operational experience may support, weaken, qualify, or redesign a protocol. Ane
 
 ## Claim boundaries
 
-The repository distinguishes the following levels:
+The repository distinguishes the following claim and interpretation classes:
 
-| Level | Meaning | Appropriate use |
+| Class | Meaning | Appropriate use |
 | --- | --- | --- |
 | **Empirical finding** | Directly reported result from an empirical source | Describe the measured result within the source's scope and current review status |
 | **Documented fact** | Statement contained in a first-party documentary source | Describe what an organization, standard, filing, or public record states |
@@ -127,7 +127,7 @@ The repository distinguishes the following levels:
 | **Risk scenario** | Plausible adverse trajectory requiring further validation | Support monitoring, control design, and contingency planning |
 | **Warning scenario** | Lower-confidence, high-consequence scenario used to expose potential failure | Communicate urgency while explicitly denying prediction or observed status |
 
-A claim must not silently move upward in certainty when copied into a summary, map, protocol, presentation, or social post.
+A claim must not be silently relabeled as more directly evidenced or more certain when copied into a summary, map, protocol, presentation, or social post.
 
 ## Repository artifact model
 
@@ -138,9 +138,11 @@ Source Registry
         ↓
 Evidence briefs
         ↓
-Repository interpretation and claim-confidence assessment
+Repository interpretation
         ↓
-Report synthesis and explanatory maps
+Report synthesis and claims
+        ↓
+Claim-confidence assessment and explanatory maps
         ↓
 Operational protocols
         ↓
