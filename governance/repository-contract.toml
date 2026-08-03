@@ -17,10 +17,16 @@ required_files = [
   "CHANGELOG.md",
   "CONTRIBUTING.md",
   "CITATION.cff",
+  "LICENSE.md",
   "REFERENCES.md",
   "TERMINOLOGY_AND_ATTRIBUTION.md",
   "evidence/README.md",
   "evidence/SOURCES.md",
+  "evidence/primary/README.md",
+  "evidence/documentary/README.md",
+  "evidence/secondary/README.md",
+  "evidence/methodology/README.md",
+  "evidence/datasets/README.md",
   "governance/README.md",
   "governance/status-model.md",
   "governance/content-synchronization.md",
@@ -73,12 +79,6 @@ evidence_heading = "Allowed Evidence review statuses"
 integration_heading = "Allowed Integration audit statuses"
 
 [registry]
-table_sections = [
-  "Primary empirical research",
-  "Primary documentary sources",
-  "Secondary evidence and industry context",
-  "Theory and methodology",
-]
 required_columns = [
   "ID",
   "Source",
@@ -101,7 +101,28 @@ source_id_pattern = '^(?:P|D|S|M)-\d{4}-\d{2}$'
 date_pattern = '^\d{4}-\d{2}-\d{2}$'
 empty_date = "—"
 verified_status = "Verified"
+verified_requires_evidence_status = "Reviewed brief"
 local_brief_link_required_for = ["Reviewed brief"]
+
+[[registry.sections]]
+heading = "Primary empirical research"
+id_prefix = "P-"
+minimum_rows = 1
+
+[[registry.sections]]
+heading = "Primary documentary sources"
+id_prefix = "D-"
+minimum_rows = 1
+
+[[registry.sections]]
+heading = "Secondary evidence and industry context"
+id_prefix = "S-"
+minimum_rows = 1
+
+[[registry.sections]]
+heading = "Theory and methodology"
+id_prefix = "M-"
+minimum_rows = 1
 
 [[documents]]
 path = "AGENTS.md"
