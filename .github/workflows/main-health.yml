@@ -1,0 +1,32 @@
+name: Main health
+
+# Diagnostic baseline only. This workflow is not a required status check and does
+# not establish governance completion, independent review, or source verification.
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repository-contract:
+    name: Repository contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Show Python version
+        run: python3 --version
+
+      - name: Run validator tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Validate repository contract
+        run: python3 -m tools.repository_validator --format github
