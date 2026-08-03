@@ -31,7 +31,7 @@ Claim confidence:
 
 The README artifact that lists selected major repository claims, their claim type, and the repository's current confidence assessment.
 
-It evaluates claims rather than source quality. It is a summary and does not replace the underlying evidence briefs, source registry, or argument.
+It evaluates claims rather than source quality. It is a cross-cutting assessment and does not represent a mandatory workflow stage through which every report claim or protocol must pass. It does not replace the underlying evidence briefs, source registry, or argument.
 
 ### Crisis Map
 
