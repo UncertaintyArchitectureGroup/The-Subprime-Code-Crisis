@@ -1,12 +1,12 @@
 # Bibliography and Data Sources
 
-> **Navigation:** [Home](README.md) | [Evidence Library](evidence/README.md) | [Canonical Source Registry](evidence/SOURCES.md) | [Read the Report](report/01_the_illusion.md)
+> **Navigation:** [Home](README.md) | [Doctrine](DOCTRINE.md) | [Glossary](GLOSSARY.md) | [Evidence Library](evidence/README.md) | [Canonical Source Registry](evidence/SOURCES.md) | [Read the Report](report/01_the_illusion.md)
 
 This file is the compact human-readable bibliography for the repository.
 
 [`evidence/SOURCES.md`](evidence/SOURCES.md) is the canonical source inventory and status registry. It records classification, evidence-review status, integration-audit status, verification date, and actual repository use. This bibliography provides readable citations and navigation; it is not a source-status database.
 
-Detailed source evaluation lives in evidence briefs under `evidence/`.
+Detailed source evaluation lives in evidence briefs under `evidence/`. Canonical meanings for source classes, evidence briefs, repository interpretation, evidence review, and integration audit are maintained in [`GLOSSARY.md`](GLOSSARY.md); their boundaries are defined in [`DOCTRINE.md`](DOCTRINE.md).
 
 A source appearing here is not automatically peer reviewed, independently validated, supported by a reviewed brief, or verified across every repository use. Follow the source-registry and evidence-brief links for current status, boundaries, and limitations.
 

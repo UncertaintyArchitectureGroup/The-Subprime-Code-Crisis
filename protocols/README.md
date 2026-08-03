@@ -1,12 +1,14 @@
 # 🛡️ Operational Protocols
 
-> **Navigation:** [🏠 Home](../README.md) | [📉 The Report](../report/01_the_illusion.md) | **Protocols** | [🧾 Evidence Library](../evidence/README.md) | [📋 Source Registry](../evidence/SOURCES.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 The Report](../report/01_the_illusion.md) | **Protocols** | [🧾 Evidence Library](../evidence/README.md) | [📋 Source Registry](../evidence/SOURCES.md) | [📚 References](../REFERENCES.md)
 
 ## From diagnosis to operating practice
 
 These protocols translate the repository's delivery-system risk analysis into practical controls for AI-assisted software development.
 
 They are not empirical proof and they are not universal policy. They are operating patterns that teams and organizations can adapt to their own architecture, risk profile, regulatory obligations, and delivery constraints.
+
+The protocol boundaries and adaptation principles are defined in the [Repository Doctrine](../DOCTRINE.md#protocol-principles). Canonical terms such as **delivery system**, **verification capacity**, **protocol**, **risk scenario**, and **throughput** are defined in the [Glossary](../GLOSSARY.md).
 
 The four protocols form one control stack:
 
@@ -116,6 +118,8 @@ The reverse sequence is a common failure mode: executives announce broad adoptio
 
 These protocols are derived from the report's risk analysis and evidence synthesis. They should be evaluated through implementation feedback, local measurement, and further empirical study.
 
+- The [Repository Doctrine](../DOCTRINE.md) defines how protocols relate to evidence, interpretation, and claim boundaries.
+- The [Glossary](../GLOSSARY.md) defines the canonical terms used across the protocol stack.
 - The [Source Registry](../evidence/SOURCES.md) is the canonical source inventory and status registry. It records evidence-review status, integration-audit status, verification date, and actual repository use.
 - The [Evidence Library](../evidence/README.md) documents source classes and evidence briefs.
 - [References](../REFERENCES.md) is the compact human-readable bibliography; it is not the canonical inventory or status database.

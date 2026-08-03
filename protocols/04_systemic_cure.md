@@ -1,7 +1,7 @@
 # Protocol 4: The Systemic Cure
 ## Build an Organizational Control System for AI-Assisted Delivery
 
-> **Navigation:** [🏠 Home](../README.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 3](03_public_defense.md) | **Protocol 4** | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 3](03_public_defense.md) | **Protocol 4** | [📚 References](../REFERENCES.md)
 
 The Subprime Code Crisis cannot be solved by asking individual engineers to be more careful. Personal discipline and team-level gates matter, but they operate inside a larger system of incentives, budgets, deadlines, ownership, and executive expectations.
 

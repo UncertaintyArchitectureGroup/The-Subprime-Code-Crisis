@@ -1,6 +1,6 @@
 # Part 2: Broken Mechanics
 
-> **Navigation:** [🏠 Home](../README.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | **Part 2** | [🔥 Part 3: The Aftermath](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | **Part 2** | [🔥 Part 3: The Aftermath](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
 *   [Chapter 5. Deep Dive: The Death of Code Review](#chapter-5-deep-dive-the-death-of-code-review)

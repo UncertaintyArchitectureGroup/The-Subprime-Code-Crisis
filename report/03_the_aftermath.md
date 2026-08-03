@@ -1,6 +1,6 @@
 # Part 3: The Aftermath
 
-> **Navigation:** [🏠 Home](../README.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | [⚙️ Part 2: Broken Mechanics](02_broken_mechanics.md) | **Part 3** | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | [⚙️ Part 2: Broken Mechanics](02_broken_mechanics.md) | **Part 3** | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
 *   [Chapter 8. The Paradox of Local Solutions](#chapter-8-conclusion-the-paradox-of-local-solutions-and-the-necessity-of-balance)
