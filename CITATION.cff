@@ -1,9 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this report in your research or articles, please cite it as follows."
+message: "If you use this research synthesis, risk model, diagrams, or protocols, please cite the repository."
+title: "The Subprime Code Crisis: An Independent Research Synthesis on AI-Assisted Software Delivery Risk"
+type: report
 authors:
-  - name: "The Subprime Code Crisis Working Group"
-title: "The Subprime Code Crisis: How AI Code Assistants Are Engineering a Collapse"
-version: 1.0.0
-date-released: 2026-02-06
+  - family-names: Oborskyi
+    given-names: Vitalii
+  - name: "Uncertainty Architecture Group contributors"
+repository-code: "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis"
 url: "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis"
 license: CC-BY-SA-4.0
+version: "living-repository"
+date-released: 2026-02-06
+keywords:
+  - AI-assisted software development
+  - software delivery
+  - technical debt
+  - engineering governance
+  - code review
+  - software quality
+abstract: >-
+  An evidence-governed research synthesis examining how local gains in AI-assisted
+  code generation can shift cost and risk into review, QA, security, architecture,
+  integration, maintenance, and production stability, with operational protocols
+  for governing the resulting delivery-system change.

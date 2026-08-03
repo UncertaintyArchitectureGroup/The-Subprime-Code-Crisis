@@ -6,7 +6,7 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
->**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+>**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🧭 **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 
 ## Research framing
 
@@ -23,6 +23,20 @@ The report is written in a strong practitioner voice, but its claims should be r
 - evidence-backed findings;
 - system-level inferences;
 - risk scenarios requiring further validation.
+
+## About the name and the contribution
+
+This project does **not** claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Similar terminology emerged in multiple public works during 2025–2026 as practitioners examined related AI-assisted-development conditions.
+
+The repository's contribution is the inspectable analysis behind the name: the delivery-system mechanism, evidence-governed synthesis, claim boundaries, risk model, and operational protocols. The project describes its provenance as **independent conceptual convergence**, not as a claim of coinage and not as evidence that the work was derived from another framework.
+
+See [Terminology and attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the documented public-record timeline, evidence boundaries, and attribution guidance.
+
+## How to cite this repository
+
+> Oborskyi, Vitalii, and contributors. *The Subprime Code Crisis: An Independent Research Synthesis on AI-Assisted Software Delivery Risk*. Uncertainty Architecture Group, 2026. https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis
+
+Citation managers and GitHub's **Cite this repository** function can use [`CITATION.cff`](CITATION.cff). When reusing a specific diagram, report chapter, evidence brief, or protocol, cite that artifact in addition to the repository. Attribution applies to the repository's analysis and artifacts; it does not imply ownership of the general phrase **Subprime Code Crisis**.
 
 ## What this is
 
@@ -81,7 +95,7 @@ The table below is a repository-level map, not a replacement for the canonical s
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
 | **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: Writing Code vs. Shipping Code](evidence/primary/2026-writing-code-vs-shipping-code.md); METR developer-productivity RCT and long-task measurement; Xu et al. large-scale developer study; Agarwal et al. code-structure analysis; Peng et al. Copilot RCT; GitClear code-change and productivity measurement reports |
-| **Primary documentary sources** | First-party records used for infrastructure, spending, and organizational claims | Alphabet, Meta, and Microsoft filings; official product and engineering documentation; published engineering-system descriptions |
+| **Primary documentary sources** | First-party records used for infrastructure, spending, organizational, and terminology-provenance claims | Alphabet, Meta, and Microsoft filings; official product and engineering documentation; published engineering-system descriptions; [terminology provenance records](evidence/documentary/terminology-provenance.md) |
 | **Secondary evidence and industry context** | Reviews, surveys, practitioner analyses, and synthesis used for triangulation or context | DORA reports; McKinsey and Deloitte enterprise surveys; SoftwareSeni review analysis; TechnoDiaries practitioner reporting; Andreas Horn industry commentary |
 | **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | Goldratt's Theory of Constraints; software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
 | **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md); GitHub activity and marketplace datasets documented in cited studies |

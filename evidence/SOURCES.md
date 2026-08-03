@@ -51,6 +51,9 @@ Documentary and methodology sources use the same review lifecycle. Their briefs 
 | **D-2024-01** | Alphabet annual filings | Registered | Not started | — | Alphabet-reported capital expenditure and business records | AI infrastructure-spending discussion |
 | **D-2024-02** | Meta annual filings | Registered | Not started | — | Meta-reported capital expenditure and business records | AI infrastructure-spending discussion |
 | **D-2024-03** | Microsoft annual filings | Registered | Not started | — | Microsoft-reported capital expenditure and business records | AI infrastructure-spending discussion |
+| **D-2025-05** | Nick Vigier, *“Subprime Code”: How Vibe Coding Could Trigger the Next Great Crash* (2025-09-16) | [Reviewed brief](documentary/terminology-provenance.md) | In progress | — | The dated public use of “Subprime Code” and “subprime coding crisis” in relation to AI-assisted coding | `TERMINOLOGY_AND_ATTRIBUTION.md`; terminology provenance brief |
+| **D-2025-06** | Igor Światowski, *The Subprime Code Crisis Has Started* (public LinkedIn profile listing dated 2025-12-16) | [Reviewed brief](documentary/terminology-provenance.md) | In progress | — | The dated public listing of an article using the full phrase “The Subprime Code Crisis” | `TERMINOLOGY_AND_ATTRIBUTION.md`; terminology provenance brief |
+| **D-2026-04** | Richard Ewing, *The Subprime Code Crisis* (2026-05-01) | [Reviewed brief](documentary/terminology-provenance.md) | In progress | — | A dated later public use of the full phrase and a separately developed technical-debt analogy | `TERMINOLOGY_AND_ATTRIBUTION.md`; terminology provenance brief |
 
 ## Secondary evidence and industry context
 
