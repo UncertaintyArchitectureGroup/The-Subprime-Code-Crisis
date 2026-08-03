@@ -1,8 +1,10 @@
-# Contributing to the Subprime Code Crisis
+# Contributing to The Subprime Code Crisis
 
-This repository is an independent research synthesis and operational guidance project about AI-assisted software-delivery risk.
+Thank you for contributing evidence, analysis, corrections, or operational practices.
 
-Contributions are welcome from engineers, researchers, delivery leaders, QA and security practitioners, and organizations willing to publish inspectable results.
+This repository values traceability, claim discipline, and transparent uncertainty over volume or rhetorical strength.
+
+## Before contributing
 
 Read [`AGENTS.md`](AGENTS.md) first.
 
@@ -22,15 +24,12 @@ Then follow the mandatory start-of-work read order defined there. The following 
 
 ## Contribution principles
 
-### Evidence before rhetoric
-
-Do not submit unsupported claims, promotional language, or criticism based only on intuition.
+### Distinguish evidence from interpretation
 
 Good contributions distinguish:
 
-- what was directly observed or documented;
-- what was derived or model-calibrated;
-- what the source author concluded;
+- what a source directly reports;
+- what a source author interprets;
 - what this repository infers;
 - what remains unknown.
 
@@ -60,57 +59,80 @@ Do not edit unrelated artifacts merely to make the diff look comprehensive. Do n
 
 AI tools may be used for search support, outlining, editing, or drafting. The contributor remains responsible for every claim, number, citation, and link.
 
-Do not submit text that has not been checked against the cited source. Remove fabricated citations, generic filler, unsupported certainty, and repetitive model-generated phrasing.
-
-### Preserve mixed and contradictory evidence
-
-A source does not need to support the Subprime Code Crisis thesis to be included. Positive productivity evidence, null results, critiques, contradictions, and replications are necessary for a credible synthesis.
-
-### Protect confidential information
-
-For internal case studies:
-
-- remove company and client identifiers unless publication is authorized;
-- remove proprietary code and data;
-- disclose the measurement window and relevant context;
-- explain how metrics were calculated;
-- avoid presenting one team as representative of the industry.
-
 ## Ways to contribute
 
-### Add, process, or update a source
+### Add or improve evidence
 
-Select the correct primary flow in [`AGENTS.md`](AGENTS.md) before editing source-related content:
+Evidence contributions may include:
 
-- **Flow A — New source:** the source is not yet registered.
-- **Flow B — Legacy registered source:** the source is already cited or registered but lacks a current reviewed brief or completed integration audit.
-- **Flow C — Changed source:** the source itself changed, was superseded, or changed publication status.
-- **Flow D — Repository use changed:** the source is unchanged, but a claim, diagram, protocol, summary, or calculation relying on it changed materially.
-- **Flow E — Discover newer or missing evidence:** search for stronger, newer, contradictory, positive, null, or replication evidence after real gaps are identified.
+- peer-reviewed research;
+- high-quality preprints;
+- first-party filings or technical documentation;
+- transparent datasets;
+- systematic reviews;
+- replication or contradiction;
+- well-documented industry measurements;
+- corrections to existing evidence briefs.
 
-Every registered source has two independent states:
+Follow the applicable source flow in `AGENTS.md`. Do not add a citation directly to the report without registering and processing the source.
 
-- **Evidence review** — whether the source itself has been reviewed and documented in a current evidence brief.
-- **Integration audit** — whether every material use of that source across the repository has been checked.
+### Improve the report
 
-A source is fully processed only when:
+Report contributions may:
 
-```text
-Evidence review = Reviewed brief
-Integration audit = Verified
-```
+- correct a factual or interpretive error;
+- qualify an overbroad claim;
+- improve causal or systems reasoning;
+- expose contradictory evidence;
+- clarify uncertainty or external-validity boundaries;
+- improve traceability to evidence briefs.
 
-**Reviewed brief does not mean verified integration.** A brief, citation, merged PR, or corrected paragraph does not by itself establish that every repository use has been checked.
+### Improve the protocols
+
+Protocol contributions may:
+
+- add a measurable control;
+- clarify decision rights;
+- define escalation or pause conditions;
+- add failure modes;
+- improve implementation feedback;
+- identify unsupported thresholds or universal claims.
+
+### Contribute datasets or analysis
+
+Dataset contributions should include:
+
+- provenance and license;
+- collection method;
+- schema and units;
+- missingness and known bias;
+- reproducible transformations;
+- explicit limits on interpretation.
+
+### Report issues
+
+Issues are welcome for:
+
+- broken links;
+- citation mismatches;
+- unsupported claims;
+- contradictory evidence;
+- outdated source versions;
+- unclear terminology;
+- protocol failure modes;
+- governance inconsistencies.
+
+## Evidence workflow expectations
 
 For source-related work:
 
-1. select the applicable flow;
-2. register or confirm the source entry in `evidence/SOURCES.md`;
-3. create or update the evidence brief when required;
-4. update the relevant evidence-class index;
-5. run the repository-wide integration audit when required;
-6. build an inspectable claim-to-source trace;
-7. correct report claims and surrounding argument;
+1. select the applicable flow in `AGENTS.md`;
+2. register or reconcile the source in `evidence/SOURCES.md`;
+3. use the original source whenever accessible;
+4. create or update the evidence brief;
+5. distinguish findings, calculations, interpretations, limitations, and repository inference;
+6. search every repository use;
+7. audit numeric and argument fit;
 8. reassess README-level claims and diagrams;
 9. document exactly one protocol outcome: `No protocol change`, `Protocol clarification`, or `Protocol change proposed`;
 10. synchronize `Current use`, indexes, links, and `REFERENCES.md`;
@@ -121,23 +143,7 @@ For source-related work:
 
 Do not add a citation directly to the report without registering the source.
 
-### Submit a measured case study
-
-Open an issue or PR with:
-
-- context and system boundary;
-- adoption intervention;
-- observation period;
-- comparator or baseline;
-- metric definitions;
-- measured results;
-- confounders and limitations;
-- operational response;
-- disclosure and anonymization status.
-
-Anecdotes may be useful for hypothesis generation, but must be labeled as anecdotes rather than empirical proof.
-
-### Improve the report
+## Report-change expectations
 
 Report changes should:
 
@@ -153,14 +159,14 @@ Report changes should:
 - update the claim-confidence map when a major conclusion changes;
 - complete the content synchronization assessment and changelog decision.
 
-### Improve the protocols
+## Protocol-change expectations
 
 Protocol changes should explain:
 
-- the operational problem;
-- the control or decision rule;
-- the intended scope;
-- required evidence or signals;
+- the risk or failure mode being addressed;
+- the proposed control;
+- owner and decision rights;
+- measurable signals;
 - failure modes;
 - conditions for escalation, pause, or reversal;
 - whether the change is evidence-backed, systems-derived, or a proposed practice;
@@ -177,30 +183,39 @@ Every substantive PR should include the [Content synchronization assessment](gov
 - artifacts updated;
 - artifacts considered but not applicable, with reasons;
 - `Changelog: Updated` or `Changelog: Not required — <specific reason>`;
-- unresolved drift or maintainer decisions.
+- unresolved drift or maintainer decisions;
+- assessment record status.
+
+The PR completion summary must separately state overall governance completion. A completed synchronization record does not establish independent-review completion, verification, or merge readiness.
 
 A source-related PR should also state:
 
 - which flow from `AGENTS.md` applies;
 - files changed and why;
-- source IDs affected;
-- evidence-review and integration-audit states before and after;
-- claims added, removed, corrected, or reclassified;
-- claim-to-source trace location;
-- evidence boundaries and what the sources do not establish;
-- whether README claims, diagrams, or protocols were reassessed;
-- unresolved source-quality, link, or correction issues.
+- source IDs in scope;
+- evidence-review and integration-audit status;
+- numeric checks and calculations;
+- report, map, and protocol implications;
+- independent-review outcome;
+- unresolved decisions;
+- whether a ready-for-merge claim is permitted.
 
-For substantial source work, prefer separate PRs for:
+## Review expectations
 
-1. registration and evidence brief;
-2. report integration and corrections;
-3. README or protocol changes, only when required and approved;
-4. independent-review corrections, when required;
-5. final verification-status update after the complete state exists on the default branch.
+Reviewers should verify:
 
-## License and conduct
+- source identity and version;
+- claim-to-source trace;
+- numeric accuracy;
+- distinction between findings and inference;
+- visibility of contradictory evidence;
+- repository-wide use and synchronization;
+- protocol implications;
+- source-state correctness;
+- compliance with `AGENTS.md` and mandatory playbooks.
 
-By contributing, you agree that your contribution will be licensed under **CC BY-SA 4.0**, unless a specific repository file states otherwise.
+A review that only checks prose quality is insufficient for substantive evidence or governance work.
 
-Critique claims, tools, methods, incentives, and operating models—not individuals. Disclose commercial or institutional conflicts when they may affect interpretation.
+## Licensing
+
+By contributing, you agree that your contribution may be distributed under the repository's applicable license terms.
