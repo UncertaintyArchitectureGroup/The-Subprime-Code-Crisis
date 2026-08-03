@@ -1,61 +1,36 @@
 # The Subprime Code Crisis
 ![crisis_cover](assets/crisis_cover.png)
 
-
 # An independent research synthesis on AI-assisted software delivery risk
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
->**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🧭 **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 
-## Research framing
+## Repository purpose and boundaries
 
-This repository is an independent research synthesis on AI-assisted software delivery risk.
+This repository examines one core hypothesis: AI-assisted coding can create local productivity gains while shifting cost into downstream delivery constraints such as code review, QA, security validation, architecture, maintenance, and production stability.
 
-It aggregates public empirical studies, industry reports, and delivery-system analysis to examine one core hypothesis:
+It treats AI-assisted coding as a delivery-system change rather than only a code-generation tool. The goal is not to reject AI assistance, but to prevent incomplete adoption models from creating technical debt, organizational backlash, and loss of trust in a genuinely important technology.
 
-AI-assisted coding can create local productivity gains while shifting cost into downstream delivery constraints such as code review, QA, security validation, architecture, maintenance, and production stability.
+The repository distinguishes evidence-backed findings, repository interpretations, and risk or warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. Local acceleration simply does not automatically become end-to-end throughput.
 
-This is not an argument against AI-assisted development. The goal is to prevent poor adoption models from creating technical debt, organizational backlash, and loss of trust in a genuinely important technology.
+## Foundation documents
 
-The report is written in a strong practitioner voice, but its claims should be read across three levels:
+| Document | Purpose |
+| --- | --- |
+| [Repository Doctrine](DOCTRINE.md) | Research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact model |
+| [Glossary](GLOSSARY.md) | Canonical definitions for recurring repository terms |
+| [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) | Public-record provenance of the name and boundaries of the repository's attributable contribution |
+| [`AGENTS.md`](AGENTS.md) | Canonical operating specification for workflows, approval, evidence states, verification, and independent review |
 
-- evidence-backed findings;
-- system-level inferences;
-- risk scenarios requiring further validation.
-
-## About the name and the contribution
-
-This project does **not** claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Similar terminology emerged in multiple public works during 2025–2026 as practitioners examined related AI-assisted-development conditions.
-
-The repository's contribution is the inspectable analysis behind the name: the delivery-system mechanism, evidence-governed synthesis, claim boundaries, risk model, and operational protocols. The project describes its provenance as **independent conceptual convergence**, not as a claim of coinage and not as evidence that the work was derived from another framework.
-
-See [Terminology and attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the documented public-record timeline, evidence boundaries, and attribution guidance.
+`AGENTS.md` governs repository work. The doctrine and glossary govern content meaning and vocabulary; they do not override source evidence or workflow rules.
 
 ## How to cite this repository
 
 > Oborskyi, Vitalii, and contributors. *The Subprime Code Crisis: An Independent Research Synthesis on AI-Assisted Software Delivery Risk*. Uncertainty Architecture Group, 2026. https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis
 
 Citation managers and GitHub's **Cite this repository** function can use [`CITATION.cff`](CITATION.cff). When reusing a specific diagram, report chapter, evidence brief, or protocol, cite that artifact in addition to the repository. Attribution applies to the repository's analysis and artifacts; it does not imply ownership of the general phrase **Subprime Code Crisis**.
-
-## What this is
-
-This is a delivery-system risk analysis of AI-assisted software development.
-
-It focuses on what happens when organizations treat faster code generation as equivalent to faster software delivery, without rebalancing the surrounding system: code review, QA, security validation, architecture, deployment, maintenance, and governance.
-
-## What this is not
-
-This is not a claim that AI coding tools are useless.
-
-This is not an argument against AI-assisted software development.
-
-This is not a prediction that every organization will fail.
-
-This is not a rejection of developer productivity gains in isolated tasks.
-
-It is a warning that local acceleration does not automatically become system-level throughput.
-
 
 ## Executive Summary
 
@@ -85,6 +60,8 @@ The **Claim confidence map** evaluates the repository's conclusions: what kind o
 | AI-assisted coding can shift bottlenecks into review, QA, security, and maintenance            | Evidence-backed inference | Medium-High |
 | Unmanaged adoption may inflate technical debt                                                  | Risk scenario             | Medium      |
 | Industry-wide “technical bankruptcy” is possible under aggressive cost-cutting adoption models | Warning scenario          | Medium-Low  |
+
+Canonical definitions for these claim types are maintained in the [Glossary](GLOSSARY.md); their use is governed by the claim boundaries in the [Repository Doctrine](DOCTRINE.md#claim-boundaries).
 
 ## 🧾 Evidence Map
 
@@ -188,6 +165,7 @@ flowchart TD
 - **Technical Bankruptcy** remains only as a warning scenario and repository
   hypothesis. It is not an empirically measured final outcome. The map's final
   synthesis outcome is **Accumulated delivery-system risk**.
+
 ## How to read this report
 
 This report is intentionally written for engineering leaders, senior developers, architects, QA leaders, delivery managers, and AI adoption decision-makers.
@@ -201,6 +179,7 @@ It can be read in three ways:
 Readers looking for the evidence base should start with the [Evidence Library](evidence/README.md), use the canonical [Source Registry](evidence/SOURCES.md) for inventory and status, and use [References](REFERENCES.md) as the compact human-readable bibliography and navigation aid.
 
 Readers looking for immediate operating practices should start with the [Operational Protocols](protocols/README.md).
+
 ## 📂 Report Structure
 
 The analysis is divided into three parts, covering the data, the mechanics of the failure, and the projected economic outcomes.
