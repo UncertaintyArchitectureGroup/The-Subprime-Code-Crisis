@@ -7,6 +7,17 @@ from typing import Any
 import tomllib
 
 
+REQUIRED_REGISTRY_COLUMNS = (
+    "ID",
+    "Source",
+    "Evidence review",
+    "Integration audit",
+    "Last verified",
+    "Can support",
+    "Current use",
+)
+
+
 class ContractError(ValueError):
     """Raised when the executable contract is malformed."""
 
@@ -86,7 +97,7 @@ def _safe_relative_path(value: str, key: str) -> str:
 def load_contract(path: Path) -> RepositoryContract:
     try:
         data = tomllib.loads(path.read_text(encoding="utf-8"))
-    except (OSError, tomllib.TOMLDecodeError) as exc:
+    except (OSError, UnicodeError, tomllib.TOMLDecodeError) as exc:
         raise ContractError(f"cannot read contract {path}: {exc}") from exc
 
     version = data.get("contract_version")
@@ -106,6 +117,8 @@ def load_contract(path: Path) -> RepositoryContract:
         _safe_relative_path(item, "required_files")
         for item in _string_list(data, "required_files")
     )
+    if len(required_files) != len(set(required_files)):
+        raise ContractError("required_files contains duplicate normalized paths")
 
     statuses = data.get("status_enums")
     if not isinstance(statuses, dict):
@@ -140,6 +153,10 @@ def load_contract(path: Path) -> RepositoryContract:
         ),
     )
 
+    if registry.required_columns != REQUIRED_REGISTRY_COLUMNS:
+        raise ContractError(
+            "registry.required_columns must match the Source Registry parser schema"
+        )
     unknown_nonempty_columns = set(registry.required_nonempty_columns) - set(
         registry.required_columns
     )
@@ -147,6 +164,19 @@ def load_contract(path: Path) -> RepositoryContract:
         raise ContractError(
             "required_nonempty_columns contains columns absent from required_columns: "
             + ", ".join(sorted(unknown_nonempty_columns))
+        )
+    if registry.verified_status not in integration_statuses:
+        raise ContractError(
+            "registry.verified_status must be an allowed Integration audit status"
+        )
+    unknown_brief_statuses = set(registry.local_brief_link_required_for) - set(
+        evidence_statuses
+    )
+    if unknown_brief_statuses:
+        raise ContractError(
+            "local_brief_link_required_for contains unsupported Evidence review "
+            "statuses: "
+            + ", ".join(sorted(unknown_brief_statuses))
         )
 
     documents_data = data.get("documents")
@@ -168,6 +198,19 @@ def load_contract(path: Path) -> RepositoryContract:
                 path=document_path,
                 required_headings=_string_list(item, "required_headings"),
             )
+        )
+
+    protected_references = {
+        policy_authority,
+        source_registry,
+        status_model.path,
+        *seen_paths,
+    }
+    unprotected_references = protected_references - set(required_files)
+    if unprotected_references:
+        raise ContractError(
+            "contract references files that are absent from required_files: "
+            + ", ".join(sorted(unprotected_references))
         )
 
     return RepositoryContract(
