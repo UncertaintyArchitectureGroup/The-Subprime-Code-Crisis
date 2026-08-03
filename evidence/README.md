@@ -1,8 +1,12 @@
 # Evidence Library
 
+> **Navigation:** [Home](../README.md) | [Doctrine](../DOCTRINE.md) | [Glossary](../GLOSSARY.md) | [Source Registry](SOURCES.md) | [Report](../report/01_the_illusion.md) | [Protocols](../protocols/README.md) | [References](../REFERENCES.md)
+
 This directory separates empirical and documentary sources from the report's interpretation and from the repository's operational protocols.
 
 The goal is not to flatten every source into a single confidence level. Different materials answer different questions and support different kinds of claims.
+
+Canonical definitions for evidence classes, evidence briefs, repository interpretation, evidence review, and integration audit are maintained in [`GLOSSARY.md`](../GLOSSARY.md). Their content boundaries are defined in [`DOCTRINE.md`](../DOCTRINE.md).
 
 ## Evidence classes
 
@@ -56,12 +60,16 @@ The existence of a brief does not imply verified integration.
 
 ## Relationship to the rest of the repository
 
+- `DOCTRINE.md` defines the research, evidence, interpretation, protocol, and claim-boundary principles.
+- `GLOSSARY.md` defines canonical repository vocabulary.
 - `report/` contains the Subprime Code Crisis argument and synthesis.
 - `protocols/` contains operational responses and decision rules.
 - `evidence/` contains source-oriented briefs that distinguish reported findings from repository interpretation.
 - `evidence/SOURCES.md` contains classification, review status, integration status, verification date, and current use.
 - `REFERENCES.md` is the compact bibliography and navigation index.
 - `AGENTS.md` defines the mandatory source-processing and integration-verification procedure.
+
+`AGENTS.md` has precedence for workflow and status. The doctrine and glossary do not change source state or establish evidence.
 
 ## Evidence brief standard
 
@@ -81,6 +89,8 @@ Each evidence brief should include:
 12. Repository locations using the source.
 13. A `Repository integration audit` section matching the status in `SOURCES.md`.
 14. An `Independent review` section matching the outcome required by `AGENTS.md`.
+
+Use the canonical meanings in [`GLOSSARY.md`](../GLOSSARY.md); do not treat a repository interpretation as a source finding or a reviewed brief as verified integration.
 
 Use this audit template:
 
@@ -116,7 +126,7 @@ Use this independent-review template:
 
 ## Interpretation labels
 
-Use these labels where useful:
+The canonical definitions are in [`GLOSSARY.md`](../GLOSSARY.md). Use these labels where useful:
 
 - **Observed:** directly reported from empirical analysis.
 - **Documented:** stated in an authoritative first-party record.
