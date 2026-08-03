@@ -4,8 +4,10 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
+from tools.repository_validator.contract import ContractError, load_contract
 from tools.repository_validator.validator import RepositoryValidator
 from repository_validator.test_validator import (
+    REPO_ROOT,
     STATUS_MODEL,
     make_contract,
     registry_text,
@@ -25,6 +27,17 @@ def write_fixture(root: Path, registry: str) -> None:
     (root / "governance/status-model.md").write_text(
         STATUS_MODEL, encoding="utf-8"
     )
+
+
+def write_contract_variant(root: Path, old: str, new: str) -> Path:
+    source = (REPO_ROOT / "governance/repository-contract.toml").read_text(
+        encoding="utf-8"
+    )
+    if old not in source:
+        raise AssertionError(f"contract fixture text not found: {old}")
+    path = root / "repository-contract.toml"
+    path.write_text(source.replace(old, new, 1), encoding="utf-8")
+    return path
 
 
 class ContractInvariantTests(unittest.TestCase):
@@ -91,6 +104,26 @@ class ContractInvariantTests(unittest.TestCase):
                 for issue in RepositoryValidator(root, make_contract()).validate()
             }
             self.assertIn("source-registry-parse", codes)
+
+    def test_contract_rejects_invalid_regex(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = write_contract_variant(
+                Path(directory),
+                r"source_id_pattern = '^(?:P|D|S|M)-\d{4}-\d{2}$'",
+                "source_id_pattern = '['",
+            )
+            with self.assertRaises(ContractError):
+                load_contract(path)
+
+    def test_contract_rejects_unprotected_canonical_reference(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = write_contract_variant(
+                Path(directory),
+                '  "AGENTS.md",\n',
+                "",
+            )
+            with self.assertRaises(ContractError):
+                load_contract(path)
 
 
 if __name__ == "__main__":
