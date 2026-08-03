@@ -1,6 +1,6 @@
 # Governance playbooks
 
-[`AGENTS.md`](../AGENTS.md) is the canonical operating specification and has precedence over every file in this directory. Read `AGENTS.md` in full before any repository work. These playbooks are mandatory procedural extensions when the selected flow requires them; they cannot override `AGENTS.md`. Resolve conflicts in favor of `AGENTS.md` and escalate unresolved ambiguity.
+[`AGENTS.md`](../AGENTS.md) is the canonical operating specification and has precedence over every file in this directory. Read `AGENTS.md` in full before any repository work. These playbooks are mandatory procedural extensions when the selected flow or a cross-cutting requirement requires them; they cannot override `AGENTS.md`. Resolve conflicts in favor of `AGENTS.md` and escalate unresolved ambiguity.
 
 The repository also maintains four cross-cutting content references:
 
@@ -15,18 +15,16 @@ After selecting a flow under `AGENTS.md`, read only its required playbooks plus 
 
 | Flow | Required playbooks |
 | --- | --- |
-| A — Add source | [status model](status-model.md), [evidence review](evidence-review.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| B — Legacy source | [status model](status-model.md), [evidence review](evidence-review.md) when needed, [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| C — Changed source | [status model](status-model.md), [evidence review](evidence-review.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| D — Changed repository use | [status model](status-model.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| E — Evidence discovery | [evidence discovery](evidence-discovery.md), [independent review](independent-review.md), [templates](templates.md) |
+| Flow A — Add source | [Status model](status-model.md), [Evidence review](evidence-review.md), [Integration audit](integration-audit.md), [Independent review](independent-review.md), [Templates](templates.md) |
+| Flow B — Legacy source | [Status model](status-model.md), [Evidence review](evidence-review.md) when required, [Integration audit](integration-audit.md), [Independent review](independent-review.md), [Templates](templates.md) |
+| Flow C — Changed source | [Status model](status-model.md), [Evidence review](evidence-review.md), [Integration audit](integration-audit.md), [Independent review](independent-review.md), [Templates](templates.md) |
+| Flow D — Changed repository use | [Status model](status-model.md), [Integration audit](integration-audit.md), [Independent review](independent-review.md), [Templates](templates.md) |
+| Flow E — Discover evidence | [Evidence discovery](evidence-discovery.md), [Independent review](independent-review.md), [Templates](templates.md) |
 
-## Navigation
-
-- [Evidence review](evidence-review.md): registration, source acquisition and assessment, evidence brief, and completion.
+- [Evidence review](evidence-review.md): source registration, acquisition, assessment, evidence brief, and evidence-review completion.
 - [Integration audit](integration-audit.md): repository-wide use search, trace, numeric and argument checks, corrections, synchronization, and verification completion.
 - [Evidence discovery](evidence-discovery.md): complete Flow E methodology and Independent Search Review.
 - [Independent review](independent-review.md): reviewer independence, allowed outcomes, correction loop, escalation, and verification gate.
-- [Content synchronization](content-synchronization.md): affected-surface assessment, explicit non-applicability, and changelog decision for substantive changes.
+- [Content synchronization](content-synchronization.md): affected-surface assessment, explicit non-applicability, changelog decision, and separation of assessment-record completion from overall governance completion.
 - [Status model](status-model.md): allowed states, transitions, resets, and `Last verified`.
 - [Templates](templates.md): mandatory records used by the applicable procedures.
