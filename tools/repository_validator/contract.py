@@ -29,14 +29,22 @@ class DocumentRequirement:
 
 
 @dataclass(frozen=True)
+class RegistrySectionRequirement:
+    heading: str
+    id_prefix: str
+    minimum_rows: int
+
+
+@dataclass(frozen=True)
 class RegistryRequirement:
-    table_sections: tuple[str, ...]
+    sections: tuple[RegistrySectionRequirement, ...]
     required_columns: tuple[str, ...]
     required_nonempty_columns: tuple[str, ...]
     source_id_pattern: str
     date_pattern: str
     empty_date: str
     verified_status: str
+    verified_requires_evidence_status: str
     local_brief_link_required_for: tuple[str, ...]
 
 
@@ -78,6 +86,13 @@ def _string_list(data: dict[str, Any], key: str) -> tuple[str, ...]:
     return tuple(value)
 
 
+def _positive_int(data: dict[str, Any], key: str) -> int:
+    value = data.get(key)
+    if not isinstance(value, int) or isinstance(value, bool) or value < 1:
+        raise ContractError(f"{key} must be a positive integer")
+    return value
+
+
 def _regex(data: dict[str, Any], key: str) -> str:
     value = _string(data, key)
     try:
@@ -92,6 +107,36 @@ def _safe_relative_path(value: str, key: str) -> str:
     if path.is_absolute() or ".." in path.parts:
         raise ContractError(f"{key} must be a safe repository-relative path")
     return path.as_posix()
+
+
+def _registry_sections(data: dict[str, Any]) -> tuple[RegistrySectionRequirement, ...]:
+    raw_sections = data.get("sections")
+    if not isinstance(raw_sections, list) or not raw_sections:
+        raise ContractError("registry.sections must contain at least one table")
+
+    sections: list[RegistrySectionRequirement] = []
+    headings: set[str] = set()
+    prefixes: set[str] = set()
+    for index, item in enumerate(raw_sections):
+        if not isinstance(item, dict):
+            raise ContractError(f"registry.sections[{index}] must be a table")
+        heading = _string(item, "heading")
+        id_prefix = _string(item, "id_prefix")
+        minimum_rows = _positive_int(item, "minimum_rows")
+        if heading in headings:
+            raise ContractError(f"duplicate registry section heading: {heading}")
+        if id_prefix in prefixes:
+            raise ContractError(f"duplicate registry section ID prefix: {id_prefix}")
+        headings.add(heading)
+        prefixes.add(id_prefix)
+        sections.append(
+            RegistrySectionRequirement(
+                heading=heading,
+                id_prefix=id_prefix,
+                minimum_rows=minimum_rows,
+            )
+        )
+    return tuple(sections)
 
 
 def load_contract(path: Path) -> RepositoryContract:
@@ -139,7 +184,7 @@ def load_contract(path: Path) -> RepositoryContract:
     if not isinstance(registry_data, dict):
         raise ContractError("registry table is required")
     registry = RegistryRequirement(
-        table_sections=_string_list(registry_data, "table_sections"),
+        sections=_registry_sections(registry_data),
         required_columns=_string_list(registry_data, "required_columns"),
         required_nonempty_columns=_string_list(
             registry_data, "required_nonempty_columns"
@@ -148,6 +193,9 @@ def load_contract(path: Path) -> RepositoryContract:
         date_pattern=_regex(registry_data, "date_pattern"),
         empty_date=_string(registry_data, "empty_date"),
         verified_status=_string(registry_data, "verified_status"),
+        verified_requires_evidence_status=_string(
+            registry_data, "verified_requires_evidence_status"
+        ),
         local_brief_link_required_for=_string_list(
             registry_data, "local_brief_link_required_for"
         ),
@@ -169,6 +217,11 @@ def load_contract(path: Path) -> RepositoryContract:
         raise ContractError(
             "registry.verified_status must be an allowed Integration audit status"
         )
+    if registry.verified_requires_evidence_status not in evidence_statuses:
+        raise ContractError(
+            "registry.verified_requires_evidence_status must be an allowed "
+            "Evidence review status"
+        )
     unknown_brief_statuses = set(registry.local_brief_link_required_for) - set(
         evidence_statuses
     )
@@ -178,6 +231,21 @@ def load_contract(path: Path) -> RepositoryContract:
             "statuses: "
             + ", ".join(sorted(unknown_brief_statuses))
         )
+    if (
+        registry.verified_requires_evidence_status
+        not in registry.local_brief_link_required_for
+    ):
+        raise ContractError(
+            "the Evidence review status required for Verified integration must also "
+            "require a local evidence-brief link"
+        )
+    for section in registry.sections:
+        sample_id = f"{section.id_prefix}2000-01"
+        if not re.fullmatch(registry.source_id_pattern, sample_id):
+            raise ContractError(
+                f"registry section prefix {section.id_prefix!r} is incompatible "
+                "with source_id_pattern"
+            )
 
     documents_data = data.get("documents")
     if not isinstance(documents_data, list) or not documents_data:
