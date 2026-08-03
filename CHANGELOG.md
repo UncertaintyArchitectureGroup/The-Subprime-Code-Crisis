@@ -10,6 +10,11 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 - Added this repository changelog and a dedicated content-synchronization playbook.
 
+### Changed
+
+- Restructured the README around Quick Start, Key Takeaways, and Repository Map; reduced duplicate navigation and artifact-flow explanation while preserving the Claim Confidence Map, Evidence Map, Crisis Map boundaries, and operational control stack.
+- Expanded the Doctrine's map principles so reader summaries and visualizations preserve claim class, scope, uncertainty, attribution, and source boundaries.
+
 ### Governance
 
 - Added a mandatory content-synchronization assessment and explicit changelog decision for substantive repository changes.
