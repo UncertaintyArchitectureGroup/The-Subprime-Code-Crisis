@@ -7,13 +7,14 @@ import unittest
 from tools.repository_validator.contract import (
     DocumentRequirement,
     RegistryRequirement,
+    RegistrySectionRequirement,
     RepositoryContract,
     StatusModelRequirement,
     load_contract,
 )
 from tools.repository_validator.markdown import (
     extract_headings,
-    inline_code_bullets_under_heading,
+    list_items_under_heading,
     parse_markdown_tables,
 )
 from tools.repository_validator.registry import parse_source_registry
@@ -52,7 +53,13 @@ def make_contract() -> RepositoryContract:
             integration_heading="Allowed Integration audit statuses",
         ),
         registry=RegistryRequirement(
-            table_sections=("Primary empirical research",),
+            sections=(
+                RegistrySectionRequirement(
+                    heading="Primary empirical research",
+                    id_prefix="P-",
+                    minimum_rows=1,
+                ),
+            ),
             required_columns=(
                 "ID",
                 "Source",
@@ -75,6 +82,7 @@ def make_contract() -> RepositoryContract:
             date_pattern=r"^\d{4}-\d{2}-\d{2}$",
             empty_date="—",
             verified_status="Verified",
+            verified_requires_evidence_status="Reviewed brief",
             local_brief_link_required_for=("Reviewed brief",),
         ),
         documents=(
@@ -139,26 +147,30 @@ class MarkdownTests(unittest.TestCase):
         self.assertEqual(len(tables), 1)
         self.assertEqual(tables[0].headers[0], "ID")
 
-    def test_status_bullets_are_scoped_to_heading(self) -> None:
-        self.assertEqual(
-            inline_code_bullets_under_heading(
-                STATUS_MODEL, "Allowed Evidence review statuses"
-            ),
-            ("Registered", "Brief in progress", "Reviewed brief", "Needs re-review"),
+    def test_status_list_parser_includes_noncanonical_items(self) -> None:
+        text = STATUS_MODEL.replace(
+            "- `Needs re-review`\n",
+            "- `Needs re-review`\n- **Archived**\n",
         )
+        items = list_items_under_heading(
+            text, "Allowed Evidence review statuses"
+        )
+        self.assertEqual(items[-1].value, "Archived")
+        self.assertFalse(items[-1].canonical_inline_code)
 
 
 class RegistryTests(unittest.TestCase):
-    def test_parser_extracts_status_and_brief_link(self) -> None:
+    def test_parser_extracts_status_brief_link_and_section_boundary(self) -> None:
         contract = make_contract()
         records = parse_source_registry(
             registry_text(),
             contract.registry.required_columns,
-            contract.registry.table_sections,
+            contract.registry.sections,
         )
         self.assertEqual(records[0].source_id, "P-2026-01")
         self.assertEqual(records[0].evidence_review, "Reviewed brief")
         self.assertEqual(records[0].brief_link, "primary/example.md")
+        self.assertEqual(records[0].expected_prefix, "P-")
 
 
 class ValidatorTests(unittest.TestCase):
@@ -218,7 +230,10 @@ class ValidatorTests(unittest.TestCase):
         contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
         self.assertEqual(contract.policy_authority, "AGENTS.md")
         self.assertIn("Verified", contract.integration_audit_statuses)
-        self.assertIn("Primary empirical research", contract.registry.table_sections)
+        headings = tuple(section.heading for section in contract.registry.sections)
+        self.assertIn("Primary empirical research", headings)
+        self.assertIn("LICENSE.md", contract.required_files)
+        self.assertIn("evidence/datasets/README.md", contract.required_files)
 
     @unittest.skipUnless(
         (REPO_ROOT / "AGENTS.md").exists(),
