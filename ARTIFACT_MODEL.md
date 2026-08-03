@@ -45,19 +45,25 @@ The flow is directional, but it is not a claim that every artifact is produced m
 
 ## Cross-cutting artifacts
 
-These artifacts inspect, bound, or navigate the core flow. They are not additional evidence stages.
+These artifacts inspect, bound, govern, cite, or navigate the core flow. They are not additional evidence stages.
 
 | Artifact | Purpose | Boundary |
 | --- | --- | --- |
 | [`SCOPE.md`](SCOPE.md) | Expands what the repository studies, what it excludes, and how adjacent topics may be used | Does not decide whether a specific factual claim is true or override the boundaries in `AGENTS.md` and Doctrine |
 | [`DOCTRINE.md`](DOCTRINE.md) | Defines research, evidence, interpretation, protocol, claim-boundary, and artifact principles | Does not create workflows or source states |
 | [`GLOSSARY.md`](GLOSSARY.md) | Defines canonical meanings for recurring repository terms | Does not provide factual evidence |
+| [`README.md`](README.md) | Primary reader entry point, executive summary, repository-level maps, major navigation, and citation guidance | Not canonical for source status and not a substitute for the report, evidence briefs, or Source Registry |
 | **Claim confidence map** | Assesses the current support and class of selected major repository claims | Not a source-quality ranking or mandatory workflow stage |
 | **Evidence Map** | Classifies evidence types, repository interpretation, and protocols by role | Not a confidence scorecard or source-status registry |
 | **Crisis Map** | Visualizes the proposed systems mechanism and bounded scenarios | Not a chronology or a measured end-to-end causal chain |
+| [`evidence/README.md`](evidence/README.md) and evidence-class indexes | Define evidence taxonomy, brief standards, and navigation to available source reviews | Not canonical for source identity, status, verification date, or actual current use |
 | [`REFERENCES.md`](REFERENCES.md) | Compact human-readable bibliography and navigation aid | Not canonical for source identity, status, or current use |
+| [`TERMINOLOGY_AND_ATTRIBUTION.md`](TERMINOLOGY_AND_ATTRIBUTION.md) | Documents public-record terminology provenance and attribution boundaries | Not a definitive etymology, ownership claim, or substitute for its documentary evidence brief |
+| [`CITATION.cff`](CITATION.cff) | Machine-readable repository citation metadata | Not a change history, release ledger, evidence source, or attribution analysis |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Explains contributor mechanics, expectations, and repository entry points | Cannot override `AGENTS.md`, Doctrine, the status model, or source evidence |
+| [`governance/`](governance/README.md) playbooks | Provide mandatory procedural extensions selected by the workflow in `AGENTS.md` | Cannot override or independently change `AGENTS.md`, statuses, gates, or contributor obligations |
 | Repository navigation | Helps readers move among the report, evidence, protocols, and foundation documents | Must not introduce stronger claims than the underlying artifacts |
-| [`AGENTS.md`](AGENTS.md) | Governs how repository work is performed and reviewed | Not a source of empirical evidence or a substitute for the content artifacts |
+| [`AGENTS.md`](AGENTS.md) | Governs how repository work is classified, performed, synchronized, reviewed, and escalated | Not a source of empirical evidence or a substitute for the content artifacts |
 
 ## Relationship rules
 
@@ -68,6 +74,7 @@ These artifacts inspect, bound, or navigate the core flow. They are not addition
 5. A protocol translates a bounded risk into operating practice; it does not prove the risk or the control universally valid.
 6. Maps and confidence assessments are views over repository claims and artifacts; they do not replace the Source Registry, evidence briefs, or report argument.
 7. Implementation feedback may support, weaken, or redesign a protocol, but it enters the evidence system through the applicable process in `AGENTS.md`.
+8. Contributor, governance, citation, attribution, and navigation artifacts must remain synchronized with the canonical content they expose, but they cannot silently redefine it.
 
 ## Where to start
 
@@ -80,7 +87,9 @@ These artifacts inspect, bound, or navigate the core flow. They are not addition
 | Inspect a source's methods, findings, and limitations | [Evidence Library](evidence/README.md) |
 | Read the complete argument | [Report](report/01_the_illusion.md) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |
-| Contribute or change the repository | [`AGENTS.md`](AGENTS.md) and [`CONTRIBUTING.md`](CONTRIBUTING.md) |
+| Understand name provenance or attribution | [`TERMINOLOGY_AND_ATTRIBUTION.md`](TERMINOLOGY_AND_ATTRIBUTION.md) |
+| Cite the repository | [`README.md`](README.md#how-to-cite-this-repository) and [`CITATION.cff`](CITATION.cff) |
+| Contribute or change the repository | [`AGENTS.md`](AGENTS.md), [`CONTRIBUTING.md`](CONTRIBUTING.md), and the applicable [governance playbooks](governance/README.md) |
 
 ## Change discipline
 
