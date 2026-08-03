@@ -2,6 +2,13 @@
 
 [`AGENTS.md`](../AGENTS.md) is the canonical operating specification and has precedence over every file in this directory. Read `AGENTS.md` in full before any repository work. These playbooks are mandatory procedural extensions when the selected flow requires them; they cannot override `AGENTS.md`. Resolve conflicts in favor of `AGENTS.md` and escalate unresolved ambiguity.
 
+The repository also maintains two cross-cutting content artifacts:
+
+- [`DOCTRINE.md`](../DOCTRINE.md) defines research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact relationships.
+- [`GLOSSARY.md`](../GLOSSARY.md) defines canonical repository vocabulary.
+
+Neither document creates a workflow, source status, verification outcome, contributor obligation, or exception to `AGENTS.md`. When terminology is ambiguous, use the glossary unless an original source explicitly uses the term differently.
+
 After selecting a flow under `AGENTS.md`, read only its required playbooks plus the repository materials required by the start-of-work gate.
 
 | Flow | Required playbooks |
