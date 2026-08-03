@@ -104,7 +104,7 @@ flowchart TD
 
 ### Evidence boundary for the map
 
-- **P-2026-01** combines public GitHub activity for more than 100,000 developers, Microsoft Copilot telemetry, and data from four application marketplaces. Its developer-level analysis uses an observational matched event-study design for adoption observed from 2022 through 2026 and reports increased upstream activity, with attenuation toward projects and releases; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
+- **P-2026-01** combines public GitHub activity for more than 100,000 developers, Microsoft Copilot telemetry, and data from four application marketplaces. Its developer-level analysis uses an observational matched event-study design covering adoption observed from 2022 through 2026 and reports increased upstream activity, with attenuation toward projects and releases; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
 - The arrows after the empirical node are **repository synthesis, not one measured causal chain**. P-2026-01 does not establish general code-quality decline, review as the only bottleneck, technical debt, security effects, or Technical Bankruptcy.
 - **Technical Bankruptcy** remains a warning scenario and repository hypothesis, not an empirically measured outcome. The map's final synthesis outcome is **Accumulated delivery-system risk**.
 
