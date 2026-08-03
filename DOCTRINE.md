@@ -89,7 +89,7 @@ The repository may propose mechanisms such as bottleneck migration, verification
 
 Repository maps and summaries are bounded views over the underlying artifacts. They answer different questions and must not be treated as interchangeable scorecards or as one empirically measured causal sequence:
 
-- the README's **repository map** routes readers to the relevant artifacts;
+- the README repository map routes readers to the relevant artifacts;
 - the **Claim confidence map** assesses the class and current support of selected report claims;
 - the **Evidence Map** classifies sources, repository interpretation, and protocols by role;
 - the **Crisis Map** visualizes a proposed systems mechanism and bounded scenarios;
