@@ -89,13 +89,13 @@ The repository may propose mechanisms such as bottleneck migration, verification
 
 Repository maps and summaries are bounded views over the underlying artifacts. They answer different questions and must not be treated as interchangeable scorecards or as one empirically measured causal sequence:
 
-- the **Repository Map** routes readers to the relevant artifacts;
-- the **Claim Confidence Map** assesses the class and current support of selected report claims;
+- the README's **repository map** routes readers to the relevant artifacts;
+- the **Claim confidence map** assesses the class and current support of selected report claims;
 - the **Evidence Map** classifies sources, repository interpretation, and protocols by role;
 - the **Crisis Map** visualizes a proposed systems mechanism and bounded scenarios;
 - protocol diagrams visualize operating controls and relationships.
 
-No map or summary replaces the Source Registry, evidence briefs, report argument, or protocol validation. When a claim is condensed, copied, or visualized, its class, scope, uncertainty, attribution, and source boundary must remain intact. A summary view must not silently strengthen a claim, convert repository synthesis into a source finding, or remove a limitation merely to improve readability.
+No map or summary replaces the Source Registry, evidence briefs, report argument, or a protocol's documented controls, assumptions, and limits. When a claim is condensed, copied, or visualized, its class, scope, uncertainty, attribution, and source boundary must remain intact. A summary view must not silently strengthen a claim, convert repository synthesis into a source finding, or remove a limitation merely to improve readability.
 
 ### Confidence belongs to claims, not slogans
 
