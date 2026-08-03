@@ -5,7 +5,7 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
-> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🎯 **Scope**](SCOPE.md) | [🧭 **Doctrine**](DOCTRINE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [📖 **Glossary**](GLOSSARY.md) | [📚 **References**](REFERENCES.md) | [🕒 **Changelog**](CHANGELOG.md)
+> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md)
 
 ## Quick Start
 
@@ -19,11 +19,11 @@ How AI code assistants can create local productivity gains while shifting cost i
 
 ## Key Takeaways
 
-1. AI tools can accelerate isolated coding work.
-2. Local code-generation speed does not guarantee end-to-end software-delivery throughput.
-3. Additional output can shift constraints into review, QA, security, architecture, integration, and maintenance.
-4. The risk comes from unmanaged adoption and insufficient verification capacity, not from AI assistance alone.
-5. The practical response is to redesign the delivery control system rather than reject the technology.
+1. **Empirical finding:** AI tools can accelerate isolated coding work.
+2. **Systems inference:** Local code-generation speed does not guarantee end-to-end software-delivery throughput.
+3. **Evidence-backed inference:** Additional output can shift constraints into downstream verification and delivery stages.
+4. **Repository risk framing:** The risk comes from unmanaged adoption and insufficient verification capacity, not from AI assistance alone.
+5. **Proposed practice:** Redesign the delivery control system rather than reject the technology.
 
 The repository examines this as a delivery-system problem. It distinguishes source-reported findings and documented facts from repository interpretations, systems inferences, risk scenarios, and warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. The detailed research boundary is defined in [Repository Scope](SCOPE.md).
 
@@ -37,14 +37,14 @@ The repository examines this as a delivery-system problem. It distinguishes sour
 | **Scope and Doctrine** | Subject boundaries, evidence principles, claim boundaries, and reasoning rules | [Scope](SCOPE.md) and [Doctrine](DOCTRINE.md) |
 | **Artifact Model and Glossary** | Repository structure, artifact relationships, and canonical terminology | [Artifact Model](ARTIFACT_MODEL.md) and [Glossary](GLOSSARY.md) |
 | **Governance** | Workflows, approval, source states, verification, synchronization, and independent review | [`AGENTS.md`](AGENTS.md) and [governance playbooks](governance/README.md) |
-| **Citation and attribution** | Repository citation metadata, terminology provenance, and reuse boundaries | [`CITATION.cff`](CITATION.cff) and [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) |
+| **Citation and attribution** | Repository citation metadata, terminology provenance, and attribution boundaries | [`CITATION.cff`](CITATION.cff) and [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) |
 | **History** | Selected material evolution of the repository | [Changelog](CHANGELOG.md) |
 
 `AGENTS.md` governs repository work. The Doctrine governs content principles and claim boundaries. Scope and the Artifact Model expand those boundaries for readers. The Glossary governs recurring repository vocabulary. None of these documents overrides original source evidence or the canonical source-state rules.
 
-## Claim Confidence Map
+## Claim confidence map
 
-The **Claim Confidence Map** evaluates selected repository conclusions: what kind of claim each statement is and how strongly the current evidence supports it. It does not classify sources.
+The **Claim confidence map** evaluates selected repository conclusions: what kind of claim each statement is and how strongly the current evidence supports it. It does not classify sources.
 
 | Claim                                                                                          | Type                      | Confidence  |
 | ---------------------------------------------------------------------------------------------- | ------------------------- | ----------- |
@@ -58,7 +58,7 @@ Canonical definitions for these claim types are maintained in the [Glossary](GLO
 
 ## 🧾 Evidence Map
 
-The **Evidence Map** classifies materials by role. It answers a different question from the Claim Confidence Map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
+The **Evidence Map** classifies materials by role. It answers a different question from the Claim confidence map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
 
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ The **Evidence Map** classifies materials by role. It answers a different questi
 | **Secondary evidence and industry context** | Reviews, surveys, practitioner analyses, and synthesis used for triangulation or context | DORA reports; McKinsey and Deloitte enterprise surveys; SoftwareSeni review analysis; TechnoDiaries practitioner reporting; Andreas Horn industry commentary |
 | **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | Goldratt's Theory of Constraints; software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
 | **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md); GitHub activity and marketplace datasets documented in cited studies |
-| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), Claim Confidence Map, and Crisis Map |
+| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), Claim confidence map, and Crisis Map |
 | **Protocols** | Practical responses, controls, metrics, and decision rules derived from the risk analysis | [Operational Protocols](protocols/README.md) |
 
 The canonical source inventory and status registry is [`evidence/SOURCES.md`](evidence/SOURCES.md). [`REFERENCES.md`](REFERENCES.md) is a compact bibliography and navigation aid. The [Artifact Model](ARTIFACT_MODEL.md) explains the complete relationship among sources, briefs, interpretation, claims, protocols, and feedback.
