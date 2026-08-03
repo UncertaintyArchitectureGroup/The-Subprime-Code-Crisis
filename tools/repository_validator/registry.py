@@ -145,38 +145,49 @@ def _parse_source_table(
             f"found '{actual}'"
         )
 
+    body_start = header_index + 2
+    nonblank_body_indexes = [
+        index for index in range(body_start, len(lines)) if lines[index].strip()
+    ]
+    last_body_index = nonblank_body_indexes[-1] if nonblank_body_indexes else None
+
     records: list[SourceRecord] = []
-    for index, line in enumerate(lines[header_index + 2 :], start=header_index + 2):
-        if not line.strip():
-            continue
-        if "|" not in line:
-            raise RegistryParseError(
-                f"section '{section.name}' contains non-table content inside or "
-                f"after its source table on line {section.content_start_line + index}"
+    if last_body_index is not None:
+        for index in range(body_start, last_body_index + 1):
+            line = lines[index]
+            if not line.strip():
+                raise RegistryParseError(
+                    f"section '{section.name}' has an interrupted source table on "
+                    f"line {section.content_start_line + index}"
+                )
+            if "|" not in line:
+                raise RegistryParseError(
+                    f"section '{section.name}' contains non-table content inside its "
+                    f"source table on line {section.content_start_line + index}"
+                )
+            cells = split_table_row(line)
+            if len(cells) != len(required_columns):
+                raise RegistryParseError(
+                    f"section '{section.name}' has a malformed source row on line "
+                    f"{section.content_start_line + index}; expected "
+                    f"{len(required_columns)} columns, found {len(cells)}"
+                )
+            raw = dict(zip(required_columns, cells, strict=True))
+            records.append(
+                SourceRecord(
+                    source_id=visible_text(raw["ID"]),
+                    source=visible_text(raw["Source"]),
+                    evidence_review=visible_text(raw["Evidence review"]),
+                    integration_audit=visible_text(raw["Integration audit"]),
+                    last_verified=visible_text(raw["Last verified"]),
+                    can_support=visible_text(raw["Can support"]),
+                    current_use=visible_text(raw["Current use"]),
+                    brief_link=first_link_target(raw["Evidence review"]),
+                    section=section.name,
+                    expected_prefix=requirement.id_prefix,
+                    line=section.content_start_line + index,
+                )
             )
-        cells = split_table_row(line)
-        if len(cells) != len(required_columns):
-            raise RegistryParseError(
-                f"section '{section.name}' has a malformed source row on line "
-                f"{section.content_start_line + index}; expected "
-                f"{len(required_columns)} columns, found {len(cells)}"
-            )
-        raw = dict(zip(required_columns, cells, strict=True))
-        records.append(
-            SourceRecord(
-                source_id=visible_text(raw["ID"]),
-                source=visible_text(raw["Source"]),
-                evidence_review=visible_text(raw["Evidence review"]),
-                integration_audit=visible_text(raw["Integration audit"]),
-                last_verified=visible_text(raw["Last verified"]),
-                can_support=visible_text(raw["Can support"]),
-                current_use=visible_text(raw["Current use"]),
-                brief_link=first_link_target(raw["Evidence review"]),
-                section=section.name,
-                expected_prefix=requirement.id_prefix,
-                line=section.content_start_line + index,
-            )
-        )
 
     if len(records) < requirement.minimum_rows:
         raise RegistryParseError(
