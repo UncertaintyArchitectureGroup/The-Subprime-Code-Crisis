@@ -65,6 +65,33 @@ class ContractInvariantTests(unittest.TestCase):
             }
             self.assertIn("reviewed-brief-link-required", codes)
 
+    def test_reviewed_brief_must_stay_under_evidence(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(
+                root,
+                registry_text(evidence="[Reviewed brief](../README.md)"),
+            )
+            codes = {
+                issue.code
+                for issue in RepositoryValidator(root, make_contract()).validate()
+            }
+            self.assertIn("reviewed-brief-link-outside-evidence", codes)
+
+    def test_malformed_required_registry_table_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            broken = registry_text().replace(
+                "| ID | Source | Evidence review | Integration audit | Last verified | Can support | Current use |",
+                "| ID | Source | Evidence review |",
+            )
+            write_fixture(root, broken)
+            codes = {
+                issue.code
+                for issue in RepositoryValidator(root, make_contract()).validate()
+            }
+            self.assertIn("source-registry-parse", codes)
+
 
 if __name__ == "__main__":
     unittest.main()
