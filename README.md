@@ -5,7 +5,7 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
-> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🎯 **Scope**](SCOPE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🎯 **Scope**](SCOPE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🕒 **Changelog**](CHANGELOG.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 
 ## Repository purpose and boundaries
 
@@ -25,6 +25,7 @@ The dedicated [Repository Scope](SCOPE.md) defines what is in scope, what is out
 | [Repository Artifact Model](ARTIFACT_MODEL.md) | Reader-facing map from sources through evidence, interpretation, claims, protocols, and feedback |
 | [Repository Doctrine](DOCTRINE.md) | Research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact principles |
 | [Glossary](GLOSSARY.md) | Canonical definitions for recurring repository terms |
+| [Changelog](CHANGELOG.md) | Selected material history of reader-facing, evidence, protocol, architecture, attribution, citation, and governance changes |
 | [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) | Public-record provenance of the name and boundaries of the repository's attributable contribution |
 | [`AGENTS.md`](AGENTS.md) | Canonical operating specification for workflows, approval, evidence states, verification, and independent review |
 
