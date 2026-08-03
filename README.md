@@ -104,7 +104,7 @@ flowchart TD
 
 ### Evidence boundary for the map
 
-- **P-2026-01** reports increased upstream activity after adoption of successive AI-tool generations and attenuation toward projects and releases within its 2022–2026 observational matched-event-study setting; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
+- **P-2026-01** is a 2022–2026 observational matched-event study covering more than 100,000 GitHub developers, supplemented by Microsoft telemetry and four application marketplaces. It reports increased upstream activity after adoption of successive AI-tool generations and attenuation toward projects and releases; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
 - The arrows after the empirical node are **repository synthesis, not one measured causal chain**. P-2026-01 does not establish general code-quality decline, review as the only bottleneck, technical debt, security effects, or Technical Bankruptcy.
 - **Technical Bankruptcy** remains a warning scenario and repository hypothesis, not an empirically measured outcome. The map's final synthesis outcome is **Accumulated delivery-system risk**.
 
