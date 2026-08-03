@@ -99,8 +99,8 @@ flowchart LR
     S --> I
     T --> I
     I --> R
-    R --> C
     R --> O
+    R -. assessed by .-> C
     C -. bounds claim and protocol strength .-> O
 
     P -. claim boundaries .-> R
@@ -112,8 +112,9 @@ The evidence flow is intentionally directional:
 1. **Sources report findings, records, or context.**
 2. **The repository interprets those materials.**
 3. **The report formulates bounded findings, inferences, mechanisms, and risk scenarios.**
-4. **The Claim confidence map labels selected report claims and their current support level.**
-5. **Protocols translate those bounded risks into operating practices.**
+4. **Protocols translate those bounded risks into operating practices.**
+
+The Claim confidence map is a cross-cutting assessment of selected report claims, not a mandatory processing stage that every claim must pass through before a protocol can be formulated.
 
 A protocol is therefore not empirical proof, a repository interpretation is not a finding directly reported by a source, and a confidence rating is not a source category. Detailed classification rules and evidence-brief standards are documented in the [Evidence Library](evidence/README.md). The canonical source inventory and status registry is [`evidence/SOURCES.md`](evidence/SOURCES.md); [`REFERENCES.md`](REFERENCES.md) is the compact human-readable bibliography and navigation aid.
 
