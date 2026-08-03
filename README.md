@@ -13,7 +13,7 @@ This repository examines one core hypothesis: AI-assisted coding can create loca
 
 It treats AI-assisted coding as a delivery-system change rather than only a code-generation tool. The goal is not to reject AI assistance, but to prevent incomplete adoption models from creating technical debt, organizational backlash, and loss of trust in a genuinely important technology.
 
-The repository distinguishes evidence-backed findings, repository interpretations, and risk or warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. Local acceleration simply does not automatically become end-to-end throughput.
+The repository distinguishes empirical findings, evidence-backed inferences, repository interpretations, and risk or warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. Local acceleration simply does not automatically become end-to-end throughput.
 
 ## Foundation documents
 
