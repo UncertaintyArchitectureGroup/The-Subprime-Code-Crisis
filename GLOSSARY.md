@@ -27,6 +27,12 @@ Claim confidence:
 - may change when evidence, scope, or interpretation changes; and
 - does not replace the underlying source review.
 
+### Dataset
+
+A documented collection of observations or records used by a source or by repository analysis.
+
+A dataset entry should preserve provenance, coverage, units, collection method, transformations, access conditions, known limitations, and the claims the data can and cannot support. The existence of a dataset does not by itself establish a finding or causal interpretation.
+
 ### Delivery system
 
 The end-to-end socio-technical system that turns an intended change into operated and maintained software.
@@ -35,7 +41,7 @@ It includes task selection, requirements, design, implementation, review, testin
 
 ### Documentary source
 
-A first-party record used to establish what an organization, standard, filing, product, public record, or documented system states.
+A record used to establish what an organization, standard, filing, product, public record, or documented system states.
 
 Examples include regulatory filings, official documentation, standards, organizational records, and dated public publications. Documentary sources can establish records and statements; they do not automatically prove causal effects or independent validity.
 
@@ -105,6 +111,18 @@ Directly reported from empirical measurement or inspection in the cited source.
 
 The label does not mean universal, causal, replicated, or free from measurement error.
 
+### Primary documentary source
+
+A first-party documentary source closest to the authoritative record being described, such as a filing, official standard, product documentation, organizational record, or an author's dated public publication.
+
+It can establish what the record contains or what the issuing party stated. It does not automatically establish independent validity or causal effects.
+
+### Primary empirical research
+
+Original empirical work that directly reports its research question, data or population, methods, analysis, and measured results.
+
+Primary empirical research may be controlled, observational, experimental, or descriptive. Primary status does not imply peer review, low bias, broad external validity, or high confidence.
+
 ### Primary evidence
 
 An umbrella term for material closest to the original observation or authoritative record.
@@ -114,13 +132,13 @@ In this repository it includes:
 - **primary empirical research**, which directly reports methods and measured results; and
 - **primary documentary sources**, which provide first-party records.
 
-Primary does not automatically mean strong, unbiased, peer reviewed, or broadly generalizable.
+Primary evidence is an umbrella description, not a replacement for the more specific source classes in the Source Registry. Primary does not automatically mean strong, unbiased, peer reviewed, or broadly generalizable.
 
 ### Production attenuation
 
-The reduction in translation from upstream coding activity to downstream project, release, adoption, or marketplace outcomes.
+A reduction in translation from upstream coding activity to downstream project, release, adoption, marketplace, or production outcomes.
 
-The repository uses the term most directly for the bounded pattern reported in P-2026-01, where increased upstream activity attenuated toward downstream outcomes in the studied setting. Broader uses must be labeled as repository interpretation rather than treated as a universal measured law.
+When production attenuation is reported as an empirical finding, its population, period, tool, outcome boundary, and method must remain tied to the relevant source. Broader use as a general delivery mechanism must be labeled as repository interpretation rather than treated as a universal measured law.
 
 ### Protocol
 
@@ -133,6 +151,12 @@ A protocol is not empirical proof or universal policy. Its suitability depends o
 The project's synthesis, application, systems inference, or bounded extrapolation from one or more sources, methods, and delivery-system concepts.
 
 A repository interpretation is authored by the project and must remain distinguishable from an empirical finding, documented fact, or source-author interpretation.
+
+### Repository synthesis
+
+A composite presentation of repository interpretation that connects multiple findings, records, theories, or system relationships into a structured argument, map, or mechanism.
+
+Repository synthesis is not an additional evidence class and must not be presented as a finding directly reported by one source.
 
 ### Risk scenario
 
@@ -176,6 +200,12 @@ A **warning scenario** in which accumulated technical debt, verification deficit
 
 The repository does not present Technical Bankruptcy as an empirically observed industry-wide final outcome. It is more severe than ordinary technical debt and should remain explicitly labeled as a scenario or hypothesis.
 
+### Theory and methodology source
+
+A source used to structure reasoning, define analytical concepts, or provide a method for interpreting evidence rather than to directly measure the effects under investigation.
+
+Examples include production theory, bottleneck analysis, research-method guidance, and software-productivity frameworks. A theory or method may inform repository interpretation without empirically establishing that the proposed mechanism occurred in the studied context.
+
 ### Throughput
 
 The rate at which useful, verified, releasable, and maintainable change moves through the complete delivery system.
@@ -198,7 +228,7 @@ A warning scenario must be clearly distinguished from an empirical finding, fore
 
 Do not use a stronger term merely because it is more memorable. In particular:
 
-- do not replace **repository interpretation** with **finding**;
+- do not replace **repository interpretation** or **repository synthesis** with **finding**;
 - do not replace **risk scenario** with **prediction**;
 - do not replace **warning scenario** with **observed outcome**;
 - do not equate **local productivity** with **throughput**; and
