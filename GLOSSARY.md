@@ -10,6 +10,12 @@ When introducing a project-defined term in a report, protocol, evidence brief, d
 
 ## Terms
 
+### Artifact model
+
+The structured representation of the repository's artifact types, purposes, boundaries, and relationships from external source material through evidence briefs, repository interpretation, report claims, operational protocols, and implementation feedback.
+
+[`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) is the dedicated reader-facing map. It expands the artifact principles in [`DOCTRINE.md`](DOCTRINE.md) but does not create a workflow, evidence layer, source state, or claim.
+
 ### Bottleneck migration
 
 A **systems inference** that acceleration or automation at one stage shifts the effective delivery constraint to another stage, such as review, testing, security validation, architecture, release, operations, or maintenance.
@@ -199,6 +205,12 @@ The report is not a substitute for the Source Registry or evidence briefs and mu
 The project's synthesis, application, systems inference, or bounded extrapolation from one or more sources, methods, and delivery-system concepts.
 
 A repository interpretation is authored by the project and must remain distinguishable from an empirical finding, documented fact, or source-author interpretation.
+
+### Repository scope
+
+The subject boundary that defines which questions, adjacent topics, audiences, and artifact types the repository is intended to address.
+
+[`SCOPE.md`](SCOPE.md) is the dedicated scope reference. A topic being in scope does not establish it as true; a topic being out of scope does not mean it is false or unimportant.
 
 ### Repository synthesis
 
