@@ -6,7 +6,7 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
->**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+>**Navigation:**  [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🧭 **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 
 ## Research framing
 
@@ -23,6 +23,14 @@ The report is written in a strong practitioner voice, but its claims should be r
 - evidence-backed findings;
 - system-level inferences;
 - risk scenarios requiring further validation.
+
+## About the name and the contribution
+
+This project does **not** claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Similar terminology may emerge independently when different practitioners examine the same industry conditions.
+
+The repository's contribution is the inspectable analysis behind the name: the delivery-system mechanism, evidence-governed synthesis, claim boundaries, risk model, and operational protocols. The project describes its own provenance as **independent conceptual convergence**, not as a claim of coinage and not as evidence that the work was derived from another framework.
+
+See [Terminology and attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the full scope and citation guidance.
 
 ## What this is
 
