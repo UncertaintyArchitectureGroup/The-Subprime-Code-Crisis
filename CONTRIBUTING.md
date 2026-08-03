@@ -8,14 +8,16 @@ Read [`AGENTS.md`](AGENTS.md) first.
 
 Then follow the mandatory start-of-work read order defined there. The following links are supporting entry points, not a competing canonical sequence:
 
-- [`DOCTRINE.md`](DOCTRINE.md) — research philosophy, claim boundaries, and artifact relationships.
+- [`DOCTRINE.md`](DOCTRINE.md) — research philosophy, claim boundaries, and artifact principles.
+- [`SCOPE.md`](SCOPE.md) — explicit in-scope, out-of-scope, and adjacent-topic boundaries.
+- [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) — reader-facing map of repository artifacts and relationships.
 - [`GLOSSARY.md`](GLOSSARY.md) — canonical repository vocabulary.
-- [`README.md`](README.md) — repository scope, major claims, maps, and navigation.
+- [`README.md`](README.md) — repository purpose, major claims, maps, and navigation.
 - [`evidence/README.md`](evidence/README.md) — evidence taxonomy and evidence-brief standard.
 - [`evidence/SOURCES.md`](evidence/SOURCES.md) — canonical source inventory and status registry.
 - [`REFERENCES.md`](REFERENCES.md) — compact human-readable bibliography and navigation aid.
 
-`AGENTS.md` governs workflow and contributor obligations. `DOCTRINE.md` governs content boundaries. `GLOSSARY.md` governs repository terminology. `evidence/SOURCES.md` is canonical for source identity and status. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
+`AGENTS.md` governs workflow and contributor obligations. `DOCTRINE.md` governs content principles and artifact boundaries. `SCOPE.md` expands the subject boundary. `ARTIFACT_MODEL.md` expands the reader-facing artifact map. `GLOSSARY.md` governs repository terminology. `evidence/SOURCES.md` is canonical for source identity and status. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
 
 ## Contribution principles
 
@@ -31,11 +33,21 @@ Good contributions distinguish:
 - what this repository infers;
 - what remains unknown.
 
+### Stay within the repository boundary
+
+Use [`SCOPE.md`](SCOPE.md) to determine whether a proposed contribution belongs in this repository. An adjacent topic should be included only when it has a direct, bounded relationship to an in-scope research question.
+
+In scope does not mean established, and out of scope does not mean false or unimportant. Do not broaden the repository into a general AI, economic, legal, or management framework through an isolated contribution.
+
 ### Use canonical terminology
 
 Use the meanings defined in [`GLOSSARY.md`](GLOSSARY.md) for project terms such as **repository interpretation**, **evidence brief**, **integration audit**, **risk scenario**, **warning scenario**, **production attenuation**, and **Technical Bankruptcy**.
 
 When a source uses the same term differently, preserve and attribute the source's meaning rather than silently normalizing it. Do not strengthen a claim by substituting a more certain label.
+
+### Preserve artifact boundaries
+
+Use [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) to determine where a contribution belongs. A source record is not an evidence brief, an evidence brief is not a report chapter, a repository interpretation is not a source finding, and a protocol is not empirical proof.
 
 ### AI assistance is allowed; unverified output is not
 
@@ -121,10 +133,12 @@ Anecdotes may be useful for hypothesis generation, but must be labeled as anecdo
 
 Report changes should:
 
+- remain within the boundary in [`SCOPE.md`](SCOPE.md);
 - trace material factual claims to registered sources;
 - link to reviewed evidence briefs where possible;
 - distinguish empirical findings and evidence-backed inferences from systems inference and warning scenarios;
 - use the claim boundaries in [`DOCTRINE.md`](DOCTRINE.md#claim-boundaries);
+- preserve artifact relationships in [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md);
 - use canonical terms from [`GLOSSARY.md`](GLOSSARY.md);
 - weaken or remove claims when the evidence does not support them;
 - trigger re-verification when a material use of a previously verified source changes;
@@ -143,7 +157,7 @@ Protocol changes should explain:
 - whether the change is evidence-backed, systems-derived, or a proposed practice;
 - which source integrations, if any, require re-verification.
 
-Protocols are adaptable operating patterns, not universal thresholds. Follow the protocol principles in [`DOCTRINE.md`](DOCTRINE.md#protocol-principles).
+Protocols are adaptable operating patterns, not universal thresholds. Follow the protocol principles in [`DOCTRINE.md`](DOCTRINE.md#protocol-principles), the repository boundary in [`SCOPE.md`](SCOPE.md), and the artifact relationship rules in [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md).
 
 ## Pull-request expectations
 
