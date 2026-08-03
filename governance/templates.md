@@ -12,6 +12,7 @@ These templates are mandatory record shapes when required by [`AGENTS.md`](../AG
 - Source IDs in scope:
 - Evidence review required: Yes | No
 - Integration audit required: Yes | No
+- Content synchronization assessment required: Yes | No
 - Independent reviewer available: Yes | No
 - Substantive-change discussion potentially required: Yes | No
 - Mandatory playbooks read:
@@ -107,6 +108,22 @@ Maintain this table for every claim-critical, systematic, or multi-source Flow E
 - Independent-review outcome:
 ```
 
+## Content synchronization assessment
+
+```markdown
+## Content synchronization assessment
+
+- Canonical change or approved decision:
+- Surfaces assessed:
+- Artifacts updated:
+- Artifacts considered but not applicable, with reasons:
+- Changelog: Updated | Not required — <specific reason>
+- Validation performed:
+- Unresolved drift or maintainer decision:
+```
+
+Do not list a surface as synchronized merely because it was opened. Record the actual effect, update, or reason it is not applicable.
+
 ## PR completion summary
 
 ```markdown
@@ -127,7 +144,9 @@ Maintain this table for every claim-critical, systematic, or multi-source Flow E
 - Evidence review status, if applicable:
 - Integration audit status, if applicable:
 - Last verified, if applicable:
+- Content synchronization assessment:
 - Synchronized artifacts:
+- Changelog: Updated | Not required — <specific reason>
 
 ## Human decision
 
