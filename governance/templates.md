@@ -12,10 +12,13 @@ These templates are mandatory record shapes when required by [`AGENTS.md`](../AG
 - Source IDs in scope:
 - Evidence review required: Yes | No
 - Integration audit required: Yes | No
+- Content synchronization assessment required: Yes | No — <specific reason>
 - Independent reviewer available: Yes | No
 - Substantive-change discussion potentially required: Yes | No
 - Mandatory playbooks read:
 ```
+
+When content synchronization is declared `No`, state why the work is strictly mechanical and does not alter meaning, status, behavior, navigation structure, or reader understanding. Do not use `No` merely because the final edit is small or metadata-shaped.
 
 ## Claim-to-source trace
 
@@ -107,6 +110,23 @@ Maintain this table for every claim-critical, systematic, or multi-source Flow E
 - Independent-review outcome:
 ```
 
+## Content synchronization assessment
+
+```markdown
+## Content synchronization assessment
+
+- Canonical change or approved decision:
+- Surfaces assessed:
+- Artifacts updated:
+- Artifacts considered but not applicable, with reasons:
+- Changelog: Updated | Not required — <specific reason>
+- Validation performed:
+- Unresolved drift or maintainer decision:
+- Assessment record status: Completed | Incomplete — <specific reason>
+```
+
+Do not list a surface as synchronized merely because it was opened. Record the actual effect, update, or reason it is not applicable. `Assessment record status: Completed` does not establish independent-review completion, verification, or merge readiness.
+
 ## PR completion summary
 
 ```markdown
@@ -127,7 +147,10 @@ Maintain this table for every claim-critical, systematic, or multi-source Flow E
 - Evidence review status, if applicable:
 - Integration audit status, if applicable:
 - Last verified, if applicable:
+- Content synchronization record: Completed | Incomplete — <specific reason>
 - Synchronized artifacts:
+- Changelog: Updated | Not required — <specific reason>
+- Overall governance completion: Achieved | Not achieved — <specific reason>
 
 ## Human decision
 

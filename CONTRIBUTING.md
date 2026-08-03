@@ -12,12 +12,13 @@ Then follow the mandatory start-of-work read order defined there. The following 
 - [`SCOPE.md`](SCOPE.md) — explicit in-scope, out-of-scope, and adjacent-topic boundaries.
 - [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) — reader-facing map of repository artifacts and relationships.
 - [`GLOSSARY.md`](GLOSSARY.md) — canonical repository vocabulary.
+- [`CHANGELOG.md`](CHANGELOG.md) — selected material repository history.
 - [`README.md`](README.md) — repository purpose, major claims, maps, and navigation.
 - [`evidence/README.md`](evidence/README.md) — evidence taxonomy and evidence-brief standard.
 - [`evidence/SOURCES.md`](evidence/SOURCES.md) — canonical source inventory and status registry.
 - [`REFERENCES.md`](REFERENCES.md) — compact human-readable bibliography and navigation aid.
 
-`AGENTS.md` governs workflow and contributor obligations. `DOCTRINE.md` governs content principles and artifact boundaries. `SCOPE.md` expands the subject boundary. `ARTIFACT_MODEL.md` expands the reader-facing artifact map. `GLOSSARY.md` governs repository terminology. `evidence/SOURCES.md` is canonical for source identity and status. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
+`AGENTS.md` governs workflow and contributor obligations. `DOCTRINE.md` governs content principles and artifact boundaries. `SCOPE.md` expands the subject boundary. `ARTIFACT_MODEL.md` expands the reader-facing artifact map. `GLOSSARY.md` governs repository terminology. `CHANGELOG.md` records selected material changes but is not a source-status or evidence record. `evidence/SOURCES.md` is canonical for source identity and status. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
 
 ## Contribution principles
 
@@ -48,6 +49,12 @@ When a source uses the same term differently, preserve and attribute the source'
 ### Preserve artifact boundaries
 
 Use [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) to determine where a contribution belongs. A source record is not an evidence brief, an evidence brief is not a report chapter, a repository interpretation is not a source finding, and a protocol is not empirical proof.
+
+### Synchronize substantive changes
+
+Every substantive contribution must complete the [content synchronization assessment](governance/content-synchronization.md). Inspect the affected repository surfaces, update only those that are actually impacted, explain why other considered surfaces are not applicable, and record one explicit changelog decision.
+
+Do not edit unrelated artifacts merely to make the diff look comprehensive. Do not omit the assessment merely because the change is documentation-only.
 
 ### AI assistance is allowed; unverified output is not
 
@@ -107,9 +114,10 @@ For source-related work:
 8. reassess README-level claims and diagrams;
 9. document exactly one protocol outcome: `No protocol change`, `Protocol clarification`, or `Protocol change proposed`;
 10. synchronize `Current use`, indexes, links, and `REFERENCES.md`;
-11. pass independent review;
-12. resolve all corrections;
-13. mark integration `Verified` only when the independent-review outcome is `Confirmed` and all required corrections exist on the default branch.
+11. complete the content synchronization assessment and changelog decision;
+12. pass independent review;
+13. resolve all corrections;
+14. mark integration `Verified` only when the independent-review outcome is `Confirmed` and all required corrections exist on the default branch.
 
 Do not add a citation directly to the report without registering the source.
 
@@ -142,7 +150,8 @@ Report changes should:
 - use canonical terms from [`GLOSSARY.md`](GLOSSARY.md);
 - weaken or remove claims when the evidence does not support them;
 - trigger re-verification when a material use of a previously verified source changes;
-- update the claim-confidence map when a major conclusion changes.
+- update the claim-confidence map when a major conclusion changes;
+- complete the content synchronization assessment and changelog decision.
 
 ### Improve the protocols
 
@@ -155,13 +164,22 @@ Protocol changes should explain:
 - failure modes;
 - conditions for escalation, pause, or reversal;
 - whether the change is evidence-backed, systems-derived, or a proposed practice;
-- which source integrations, if any, require re-verification.
+- which source integrations, if any, require re-verification;
+- which repository surfaces and changelog entry are affected.
 
-Protocols are adaptable operating patterns, not universal thresholds. Follow the protocol principles in [`DOCTRINE.md`](DOCTRINE.md#protocol-principles), the repository boundary in [`SCOPE.md`](SCOPE.md), and the artifact relationship rules in [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md).
+Protocols are adaptable operating patterns, not universal thresholds. Follow the protocol principles in [`DOCTRINE.md`](DOCTRINE.md#protocol-principles), the repository boundary in [`SCOPE.md`](SCOPE.md), the artifact relationship rules in [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md), and the [content synchronization](governance/content-synchronization.md) playbook.
 
 ## Pull-request expectations
 
-A source-related PR should state:
+Every substantive PR should include the [Content synchronization assessment](governance/templates.md#content-synchronization-assessment), including:
+
+- surfaces assessed;
+- artifacts updated;
+- artifacts considered but not applicable, with reasons;
+- `Changelog: Updated` or `Changelog: Not required — <specific reason>`;
+- unresolved drift or maintainer decisions.
+
+A source-related PR should also state:
 
 - which flow from `AGENTS.md` applies;
 - files changed and why;

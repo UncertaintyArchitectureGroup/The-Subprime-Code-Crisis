@@ -65,8 +65,8 @@ Repository maps and navigation
 Before reading other repository files, editing, reviewing, searching for evidence, or changing source status:
 
 1. Read the current `AGENTS.md` from the target branch in full.
-2. State the selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration).
-3. Read the playbooks marked mandatory for the selected flow in the [flow table](#flow-selection-table).
+2. State the selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether the content synchronization assessment is required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration). When declaring the content synchronization assessment not required, state the specific reason the work is strictly mechanical and does not alter meaning, status, behavior, navigation structure, or reader understanding.
+3. Read the playbooks marked mandatory for the selected flow in the [flow table](#flow-selection-table), plus any cross-cutting playbook triggered by the declared work.
 4. Read `DOCTRINE.md` and `GLOSSARY.md`, then read `README.md`, `evidence/README.md`, `evidence/SOURCES.md`, the relevant evidence brief when one exists, every relevant file under `report/` and `protocols/`, `REFERENCES.md`, and `CONTRIBUTING.md`.
 
 Do not rely on remembered instructions. `evidence/SOURCES.md` is canonical for source state; `REFERENCES.md` is not a status database. When an external source uses a repository term differently, preserve and attribute the source's meaning rather than silently normalizing it to the glossary.
@@ -126,12 +126,13 @@ Select exactly one primary flow before editing. Cross-cutting governance work fo
 
 ## Required playbooks by flow
 
-Playbooks are normative procedural extensions of this file when listed as mandatory in the flow table:
+Playbooks are normative procedural extensions of this file when listed as mandatory in the flow table or by a cross-cutting requirement:
 
 - [`governance/evidence-review.md`](governance/evidence-review.md) — registration, acquisition, source assessment, brief, and evidence-review completion.
 - [`governance/integration-audit.md`](governance/integration-audit.md) — repository-wide trace, numeric/argument checks, correction handling, and synchronization.
 - [`governance/evidence-discovery.md`](governance/evidence-discovery.md) — complete Flow E search, screening, Candidate Register, routing, and Independent Search Review method.
 - [`governance/independent-review.md`](governance/independent-review.md) — reviewer independence, materials, outcomes, correction loop, escalation, and relationship to verification.
+- [`governance/content-synchronization.md`](governance/content-synchronization.md) — mandatory affected-surface assessment and changelog decision for substantive repository changes.
 - [`governance/status-model.md`](governance/status-model.md) — the only definitions of allowed source states and transition rules.
 - [`governance/templates.md`](governance/templates.md) — mandatory record shapes when the applicable procedure requires them.
 
@@ -140,6 +141,8 @@ Playbooks are normative procedural extensions of this file when listed as mandat
 After approved corrections, synchronize the evidence brief, actual `Current use` in `evidence/SOURCES.md`, the relevant evidence-directory index, `REFERENCES.md`, README claims/tables/diagrams and other maps, report usage, protocol implications, links, superseded-version history, and removed claims. These artifacts must reflect actual repository state and must not silently drift or strengthen claims.
 
 When a substantive change alters the content model, artifact relationships, claim boundaries, or canonical terminology, synchronize `DOCTRINE.md` and `GLOSSARY.md` as applicable. Do not update either document merely to restate a one-off wording choice.
+
+Every substantive repository change must complete the [Content synchronization assessment](governance/content-synchronization.md). Inspect all reasonably affected surfaces, update only applicable artifacts, record non-applicable surfaces with reasons, and record exactly one changelog decision: `Updated` or `Not required — <specific reason>`. Do not update artifacts merely for symmetry.
 
 ## Completion and verification gates
 

@@ -5,7 +5,7 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
-> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🎯 **Scope**](SCOPE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
+> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🎯 **Scope**](SCOPE.md) | [🧩 **Artifact Model**](ARTIFACT_MODEL.md) | [🧭 **Doctrine**](DOCTRINE.md) | [📖 **Glossary**](GLOSSARY.md) | [🕒 **Changelog**](CHANGELOG.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md) | [🏷️ **Terminology & Attribution**](TERMINOLOGY_AND_ATTRIBUTION.md) | [📚 **References**](REFERENCES.md) | [📊 **Contributing Data**](CONTRIBUTING.md)
 
 ## Repository purpose and boundaries
 
@@ -29,6 +29,10 @@ The dedicated [Repository Scope](SCOPE.md) defines what is in scope, what is out
 | [`AGENTS.md`](AGENTS.md) | Canonical operating specification for workflows, approval, evidence states, verification, and independent review |
 
 `AGENTS.md` governs repository work. The Doctrine governs content principles and artifact boundaries; the Scope and Artifact Model expand those boundaries for readers; the Glossary governs vocabulary. None of these documents overrides original source evidence or source-state rules.
+
+## Repository history
+
+- [Changelog](CHANGELOG.md) — selected material history of reader-facing, evidence, protocol, architecture, attribution, citation, and governance changes.
 
 > **Name and attribution:** This repository does not claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Its attributable contribution is the evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, maps, and operational protocols. See [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the documented public record and citation boundaries.
 
