@@ -76,7 +76,7 @@ Do not rely on remembered instructions. `evidence/SOURCES.md` is canonical for s
 Agents may discover evidence, identify inconsistencies, calculate implications, and propose changes. They must stop before editing any substantive artifact when work may alter:
 
 - report logic, a material argument, causal framing, major conclusion, or claim-confidence classification;
-- the Executive Summary, Crisis Map, Evidence Map, or another load-bearing synthesis;
+- Key Takeaways, Crisis Map, Evidence Map, or another load-bearing synthesis;
 - evidence interpretation, source scope, or repository inference;
 - protocol logic, controls, roles, thresholds, gates, or escalation rules;
 - source-state definitions, verification requirements, governance, contributor obligations, flows, or repository architecture;
