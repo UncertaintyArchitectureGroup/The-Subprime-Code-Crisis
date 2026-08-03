@@ -25,11 +25,14 @@ The dedicated [Repository Scope](SCOPE.md) defines what is in scope, what is out
 | [Repository Artifact Model](ARTIFACT_MODEL.md) | Reader-facing map from sources through evidence, interpretation, claims, protocols, and feedback |
 | [Repository Doctrine](DOCTRINE.md) | Research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact principles |
 | [Glossary](GLOSSARY.md) | Canonical definitions for recurring repository terms |
-| [Changelog](CHANGELOG.md) | Selected material history of reader-facing, evidence, protocol, architecture, attribution, citation, and governance changes |
 | [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) | Public-record provenance of the name and boundaries of the repository's attributable contribution |
 | [`AGENTS.md`](AGENTS.md) | Canonical operating specification for workflows, approval, evidence states, verification, and independent review |
 
 `AGENTS.md` governs repository work. The Doctrine governs content principles and artifact boundaries; the Scope and Artifact Model expand those boundaries for readers; the Glossary governs vocabulary. None of these documents overrides original source evidence or source-state rules.
+
+## Repository history
+
+- [Changelog](CHANGELOG.md) — selected material history of reader-facing, evidence, protocol, architecture, attribution, citation, and governance changes.
 
 > **Name and attribution:** This repository does not claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Its attributable contribution is the evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, maps, and operational protocols. See [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the documented public record and citation boundaries.
 
