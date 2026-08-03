@@ -1,7 +1,7 @@
 # The Subprime Code Crisis
 ![crisis_cover](assets/crisis_cover.png)
 
-# An independent research synthesis on AI-assisted software delivery risk
+**An independent research synthesis on AI-assisted software delivery risk**
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
@@ -13,7 +13,7 @@ This repository examines one core hypothesis: AI-assisted coding can create loca
 
 It treats AI-assisted coding as a delivery-system change rather than only a code-generation tool. The goal is not to reject AI assistance, but to prevent incomplete adoption models from creating technical debt, organizational backlash, and loss of trust in a genuinely important technology.
 
-The repository distinguishes empirical findings, evidence-backed inferences, repository interpretations, and risk or warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. Local acceleration simply does not automatically become end-to-end throughput.
+The repository distinguishes source-reported empirical findings and documented facts from repository interpretations, including evidence-backed and systems inferences, and from risk or warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. Local acceleration simply does not automatically become end-to-end throughput.
 
 ## Foundation documents
 
@@ -25,6 +25,8 @@ The repository distinguishes empirical findings, evidence-backed inferences, rep
 | [`AGENTS.md`](AGENTS.md) | Canonical operating specification for workflows, approval, evidence states, verification, and independent review |
 
 `AGENTS.md` governs repository work. The doctrine and glossary govern content meaning and vocabulary; they do not override source evidence or workflow rules.
+
+> **Name and attribution:** This repository does not claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Its attributable contribution is the evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, maps, and operational protocols. See [Terminology and Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the documented public record and citation boundaries.
 
 ## How to cite this repository
 
