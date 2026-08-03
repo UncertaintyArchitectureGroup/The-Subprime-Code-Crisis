@@ -145,6 +145,7 @@ class RepositoryValidator:
             records = parse_source_registry(
                 path.read_text(encoding="utf-8"),
                 self.contract.registry.required_columns,
+                self.contract.registry.table_sections,
             )
         except RegistryParseError as exc:
             return [Issue(relative, "source-registry-parse", str(exc))]
@@ -258,54 +259,67 @@ class RepositoryValidator:
             )
 
         if record.evidence_review in registry.local_brief_link_required_for:
-            if not record.brief_link:
-                issues.append(
-                    Issue(
-                        relative,
-                        "reviewed-brief-link-required",
-                        f"{record.source_id} is {record.evidence_review} but has no "
-                        "local evidence-brief link",
-                        record.line,
-                    )
-                )
-            elif "://" in record.brief_link or record.brief_link.startswith("#"):
-                issues.append(
-                    Issue(
-                        relative,
-                        "reviewed-brief-link-not-local",
-                        f"{record.source_id} must link to a repository evidence brief",
-                        record.line,
-                    )
-                )
-            else:
-                brief_path = (
-                    self._path(relative).parent / record.brief_link
-                ).resolve()
-                try:
-                    brief_path.relative_to(self.root)
-                except ValueError:
-                    issues.append(
-                        Issue(
-                            relative,
-                            "reviewed-brief-link-escapes-repository",
-                            f"{record.source_id} evidence-brief link escapes the "
-                            "repository",
-                            record.line,
-                        )
-                    )
-                else:
-                    if not brief_path.is_file():
-                        issues.append(
-                            Issue(
-                                relative,
-                                "reviewed-brief-missing",
-                                f"{record.source_id} linked evidence brief does not "
-                                f"exist: {record.brief_link}",
-                                record.line,
-                            )
-                        )
+            issues.extend(self._validate_reviewed_brief_link(record))
 
         return issues
+
+    def _validate_reviewed_brief_link(self, record: SourceRecord) -> list[Issue]:
+        relative = self.contract.source_registry
+        if not record.brief_link:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-required",
+                    f"{record.source_id} is {record.evidence_review} but has no "
+                    "local evidence-brief link",
+                    record.line,
+                )
+            ]
+        if "://" in record.brief_link or record.brief_link.startswith("#"):
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-not-local",
+                    f"{record.source_id} must link to a repository evidence brief",
+                    record.line,
+                )
+            ]
+
+        evidence_root = self._path(relative).parent.resolve()
+        brief_path = (evidence_root / record.brief_link).resolve()
+        try:
+            relative_brief = brief_path.relative_to(evidence_root)
+        except ValueError:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-outside-evidence",
+                    f"{record.source_id} evidence-brief link must stay under evidence/",
+                    record.line,
+                )
+            ]
+
+        if len(relative_brief.parts) < 2 or relative_brief.suffix.lower() != ".md":
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-invalid-path",
+                    f"{record.source_id} must link to a Markdown brief in an "
+                    "evidence-class subdirectory",
+                    record.line,
+                )
+            ]
+        if not brief_path.is_file():
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-missing",
+                    f"{record.source_id} linked evidence brief does not exist: "
+                    f"{record.brief_link}",
+                    record.line,
+                )
+            ]
+        return []
 
 
 def validate_repository(
