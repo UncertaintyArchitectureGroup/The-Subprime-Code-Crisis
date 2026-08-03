@@ -2,9 +2,9 @@
 
 ## Status and precedence
 
-This document defines the subject boundary of *The Subprime Code Crisis*: what the repository studies, what it does not attempt to establish, and how adjacent topics may be used.
+This document is the dedicated subject-boundary reference for *The Subprime Code Crisis*: what the repository studies, what it does not attempt to establish, and how adjacent topics may be used. It expands the purpose and boundary principles in [`AGENTS.md`](AGENTS.md) and [`DOCTRINE.md`](DOCTRINE.md) without overriding them.
 
-[`AGENTS.md`](AGENTS.md) remains canonical for workflows, approval, source states, verification, contributor obligations, and independent review. [`DOCTRINE.md`](DOCTRINE.md) defines research and interpretation principles. [`GLOSSARY.md`](GLOSSARY.md) defines canonical terminology. [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) defines the repository's artifact relationships.
+[`AGENTS.md`](AGENTS.md) remains canonical for workflows, approval, source states, verification, contributor obligations, and repository-level purpose and boundaries. [`DOCTRINE.md`](DOCTRINE.md) defines research and interpretation principles. [`GLOSSARY.md`](GLOSSARY.md) defines canonical terminology. [`ARTIFACT_MODEL.md`](ARTIFACT_MODEL.md) provides the dedicated reader-facing artifact map.
 
 This scope does not determine whether a factual claim is true, create evidence status, or override original sources. It limits the questions the repository is intended to answer.
 
