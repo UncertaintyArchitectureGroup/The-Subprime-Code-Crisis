@@ -17,11 +17,12 @@ After selecting a flow under `AGENTS.md`, read only its required playbooks plus 
 
 [`repository-contract.toml`](repository-contract.toml) is a machine-readable projection of selected structural invariants already defined by `AGENTS.md` and the governance playbooks. It cannot create or override policy, source states, gates, contributor obligations, review outcomes, or exceptions.
 
-The standard-library Python validator under [`tools/repository_validator/`](../tools/repository_validator/) checks:
+The Python 3.11+ standard-library validator under [`tools/repository_validator/`](../tools/repository_validator/) checks:
 
 - required files and required Markdown headings;
 - exact Evidence review and Integration audit enums;
-- Source Registry table structure, Source ID uniqueness and format;
+- every configured Source Registry section and its table schema;
+- Source ID uniqueness and format;
 - `Last verified` invariants; and
 - local evidence-brief links for sources marked `Reviewed brief`.
 
@@ -33,6 +34,8 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
 The [`Main health`](../.github/workflows/main-health.yml) workflow runs these checks on pull requests, pushes to `main`, and manual dispatch. In this baseline phase it is diagnostic and non-blocking: it is not a required status check and does not establish governance completion, independent review, or source verification.
+
+On a pull request, Main health executes the validator version proposed by that pull request. It is therefore a validator self-test, not tamper-resistant enforcement. On `main`, it checks the merged canonical version. A trusted base-branch validator and required status check belong to the later enforcement layer.
 
 | Flow | Required playbooks |
 | --- | --- |
