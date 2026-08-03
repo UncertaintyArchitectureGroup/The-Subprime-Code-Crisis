@@ -73,6 +73,12 @@ evidence_heading = "Allowed Evidence review statuses"
 integration_heading = "Allowed Integration audit statuses"
 
 [registry]
+table_sections = [
+  "Primary empirical research",
+  "Primary documentary sources",
+  "Secondary evidence and industry context",
+  "Theory and methodology",
+]
 required_columns = [
   "ID",
   "Source",
