@@ -106,7 +106,7 @@ Substantive report changes require explicit human approval before implementation
 
 Reassess:
 
-- executive summary;
+- Key Takeaways;
 - claim-confidence map;
 - Evidence Map;
 - Crisis Map and other diagrams;

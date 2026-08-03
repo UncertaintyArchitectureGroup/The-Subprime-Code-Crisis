@@ -45,7 +45,7 @@ For every applicable change:
 | **Scope and content model** | research boundary, adjacent topics, claim classes, interpretation rules, artifact roles | `SCOPE.md`, `DOCTRINE.md`, `GLOSSARY.md`, `ARTIFACT_MODEL.md` |
 | **Reader entry points** | repository purpose, major claims, reading order, maps, navigation, practical starting points | `README.md`, report navigation, protocol navigation, evidence and governance indexes |
 | **Evidence state and traceability** | source identity, status, findings, limitations, current use, or bibliography | `evidence/SOURCES.md`, evidence briefs, evidence-class indexes, `REFERENCES.md` |
-| **Report argument** | material claims, causal framing, calculations, conclusions, mechanisms, scenarios | `report/`, Executive Summary, Claim confidence map |
+| **Report argument** | material claims, causal framing, calculations, conclusions, mechanisms, scenarios | `report/`, Key Takeaways, Claim confidence map |
 | **Maps and diagrams** | node meaning, arrows, classifications, attributed numbers, or system relationships | Evidence Map, Crisis Map, protocol diagrams, report diagrams |
 | **Operational protocols** | controls, roles, metrics, gates, thresholds, escalation, decision rights, implementation feedback | `protocols/` and protocol index |
 | **Attribution and citation** | repository title, authorship, reuse guidance, terminology provenance, contribution boundary | `TERMINOLOGY_AND_ATTRIBUTION.md`, `CITATION.cff`, README citation guidance |
@@ -71,7 +71,7 @@ This assessment does not replace Flow A–D or an integration audit.
 Inspect:
 
 - supporting sources and evidence briefs;
-- Executive Summary and adjacent report argument;
+- Key Takeaways and adjacent report argument;
 - Claim confidence map;
 - Evidence Map and Crisis Map;
 - protocol implications;
@@ -85,7 +85,7 @@ Inspect:
 - protocol index and related protocol layers;
 - report risk or mechanism that motivates the control;
 - evidence and interpretation boundaries;
-- README Risk Mitigation section;
+- README Operational Response section;
 - roles, gates, metrics, escalation, and decision records;
 - changelog.
 
