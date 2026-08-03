@@ -12,7 +12,24 @@ The name used by this project emerged from the authors' synthesis of observed AI
 
 Similar metaphors and formulations can arise independently when different practitioners examine the same industry conditions. This is best understood as **independent conceptual convergence**: multiple observers may reach related language or conclusions without one work being derived from another.
 
-Because the public record may contain earlier, parallel, or later uses of similar wording, this repository deliberately avoids a claim of coinage. Discovery of another use of the phrase does not by itself establish derivation, priority over the underlying analysis, or identity between the respective frameworks.
+Because the public record contains earlier, parallel, and later uses of similar wording, this repository deliberately avoids a claim of coinage. Discovery of another use of the phrase does not by itself establish derivation, priority over the underlying analysis, or identity between the respective frameworks.
+
+## Documented public record
+
+The following timeline records the earliest public uses located and inspected during the repository's current provenance review. It is **not** a definitive etymology.
+
+| Date | Author | Located public wording | What the record supports |
+| --- | --- | --- | --- |
+| 2025-09-16 | Nick Vigier | “Subprime Code” and “subprime coding crisis” | An early located public use of the mortgage-crisis metaphor for AI-assisted coding |
+| 2025-12-16 | Igor Światowski | “The Subprime Code Crisis Has Started” | The earliest located dated record in this review using the full phrase **The Subprime Code Crisis** |
+| 2026-05-01 | Richard Ewing | “The Subprime Code Crisis” | A later public use developing a separate technical-debt analogy and framework |
+| 2026 | This repository | *The Subprime Code Crisis* | Evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, and operational protocols |
+
+The source-oriented review is maintained in [`evidence/documentary/terminology-provenance.md`](evidence/documentary/terminology-provenance.md).
+
+The bounded conclusion is that related terminology was in public circulation across multiple independent works. The available inspected record does **not** establish a single originator, a complete lineage, or that this repository derived its analysis from any of the listed works.
+
+“Earliest located” means earliest found and inspected in the current search. Search indexes are incomplete, publication metadata can change, and earlier private, deleted, or unindexed uses may exist.
 
 ## What this repository contributes
 
@@ -31,15 +48,15 @@ Those arguments, mechanisms, evidence integrations, maps, and protocols should b
 
 When citing the work, attribute the repository rather than implying that the project owns a general phrase:
 
-> *The Subprime Code Crisis*, Uncertainty Architecture Group, an independent research synthesis on AI-assisted software-delivery risk.
+> Oborskyi, Vitalii, and contributors. *The Subprime Code Crisis: An Independent Research Synthesis on AI-Assisted Software Delivery Risk*. Uncertainty Architecture Group, 2026. https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis
 
-A citation may also identify the specific report chapter, evidence brief, diagram, or protocol being reused.
+For software and citation managers, use the repository's [`CITATION.cff`](CITATION.cff). A citation may also identify the specific report chapter, evidence brief, diagram, or protocol being reused.
 
 Do not describe the repository as having invented the words **subprime**, **subprime code**, or **Subprime Code Crisis** unless a reliable historical record independently establishes that claim. Likewise, the existence of similar terminology elsewhere should not be represented as proof that this repository copied, adopted, or is equivalent to another framework without evidence of derivation.
 
 ## Scope boundary
 
-This note is a provenance and attribution statement. It does not establish a complete history of every public use of related terminology, adjudicate priority disputes, or convert project recollection into empirical evidence. Any future historical timeline should be built from dated, inspectable primary records and should distinguish:
+This note does not adjudicate priority disputes or convert project recollection into empirical evidence. Any future expansion of the timeline must continue to distinguish:
 
 - first known use found in a particular search from definitive first use;
 - identical wording from a materially equivalent concept;
