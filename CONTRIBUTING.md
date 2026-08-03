@@ -8,12 +8,14 @@ Read [`AGENTS.md`](AGENTS.md) first.
 
 Then follow the mandatory start-of-work read order defined there. The following links are supporting entry points, not a competing canonical sequence:
 
-- [`README.md`](README.md) — repository scope and claim boundaries.
+- [`DOCTRINE.md`](DOCTRINE.md) — research philosophy, claim boundaries, and artifact relationships.
+- [`GLOSSARY.md`](GLOSSARY.md) — canonical repository vocabulary.
+- [`README.md`](README.md) — repository scope, major claims, maps, and navigation.
 - [`evidence/README.md`](evidence/README.md) — evidence taxonomy and evidence-brief standard.
 - [`evidence/SOURCES.md`](evidence/SOURCES.md) — canonical source inventory and status registry.
 - [`REFERENCES.md`](REFERENCES.md) — compact human-readable bibliography and navigation aid.
 
-`evidence/SOURCES.md` is canonical. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
+`AGENTS.md` governs workflow and contributor obligations. `DOCTRINE.md` governs content boundaries. `GLOSSARY.md` governs repository terminology. `evidence/SOURCES.md` is canonical for source identity and status. `REFERENCES.md` is a bibliography and navigation aid, not a source-status database.
 
 ## Contribution principles
 
@@ -28,6 +30,12 @@ Good contributions distinguish:
 - what the source author concluded;
 - what this repository infers;
 - what remains unknown.
+
+### Use canonical terminology
+
+Use the meanings defined in [`GLOSSARY.md`](GLOSSARY.md) for project terms such as **repository interpretation**, **evidence brief**, **integration audit**, **risk scenario**, **warning scenario**, **production attenuation**, and **Technical Bankruptcy**.
+
+When a source uses the same term differently, preserve and attribute the source's meaning rather than silently normalizing it. Do not strengthen a claim by substituting a more certain label.
 
 ### AI assistance is allowed; unverified output is not
 
@@ -116,6 +124,8 @@ Report changes should:
 - trace material factual claims to registered sources;
 - link to reviewed evidence briefs where possible;
 - distinguish evidence-backed findings from systems inference and warning scenarios;
+- use the claim boundaries in [`DOCTRINE.md`](DOCTRINE.md#claim-boundaries);
+- use canonical terms from [`GLOSSARY.md`](GLOSSARY.md);
 - weaken or remove claims when the evidence does not support them;
 - trigger re-verification when a material use of a previously verified source changes;
 - update the claim-confidence map when a major conclusion changes.
@@ -133,7 +143,7 @@ Protocol changes should explain:
 - whether the change is evidence-backed, systems-derived, or a proposed practice;
 - which source integrations, if any, require re-verification.
 
-Protocols are adaptable operating patterns, not universal thresholds.
+Protocols are adaptable operating patterns, not universal thresholds. Follow the protocol principles in [`DOCTRINE.md`](DOCTRINE.md#protocol-principles).
 
 ## Pull-request expectations
 
