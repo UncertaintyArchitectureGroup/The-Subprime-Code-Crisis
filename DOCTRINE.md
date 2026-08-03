@@ -119,10 +119,10 @@ The repository distinguishes the following levels:
 
 | Level | Meaning | Appropriate use |
 | --- | --- | --- |
-| **Empirical finding** | Directly reported result from a reviewed empirical source | Describe the measured result within the source's scope |
+| **Empirical finding** | Directly reported result from an empirical source | Describe the measured result within the source's scope and current review status |
 | **Documented fact** | Statement contained in a first-party documentary source | Describe what an organization, standard, filing, or public record states |
 | **Derived result** | Reproducible calculation from reported values without a new causal claim | Make the calculation and its assumptions inspectable |
-| **Evidence-backed inference** | Repository conclusion supported by multiple relevant findings but not directly measured end to end | Explain a bounded implication and preserve source boundaries |
+| **Evidence-backed inference** | Repository conclusion supported by one or more relevant findings but not directly measured end to end | Explain a bounded implication and preserve source boundaries |
 | **Systems inference** | Interpretation based on system structure, theory, and available evidence | Propose a mechanism without presenting it as directly observed |
 | **Risk scenario** | Plausible adverse trajectory requiring further validation | Support monitoring, control design, and contingency planning |
 | **Warning scenario** | Lower-confidence, high-consequence scenario used to expose potential failure | Communicate urgency while explicitly denying prediction or observed status |
