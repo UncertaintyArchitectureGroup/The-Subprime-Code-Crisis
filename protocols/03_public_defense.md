@@ -1,7 +1,7 @@
 # Protocol 3: The Public Defense
 ## Publish Evidence, Bound Claims, Correct the Record
 
-> **Navigation:** [🏠 Home](../README.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 2](02_operational_defense.md) | **Protocol 3** | [Protocol 4: Systemic Cure](04_systemic_cure.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 2](02_operational_defense.md) | **Protocol 3** | [Protocol 4: Systemic Cure](04_systemic_cure.md) | [📚 References](../REFERENCES.md)
 
 Protocols 1 and 2 protect the engineer and the team. Protocol 3 protects the wider decision environment in which AI adoption is justified, funded, expanded, and judged.
 
