@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import re
 from typing import Any
 import tomllib
 
@@ -18,6 +19,7 @@ class DocumentRequirement:
 
 @dataclass(frozen=True)
 class RegistryRequirement:
+    table_sections: tuple[str, ...]
     required_columns: tuple[str, ...]
     required_nonempty_columns: tuple[str, ...]
     source_id_pattern: str
@@ -63,6 +65,15 @@ def _string_list(data: dict[str, Any], key: str) -> tuple[str, ...]:
     if len(value) != len(set(value)):
         raise ContractError(f"{key} must not contain duplicates")
     return tuple(value)
+
+
+def _regex(data: dict[str, Any], key: str) -> str:
+    value = _string(data, key)
+    try:
+        re.compile(value)
+    except re.error as exc:
+        raise ContractError(f"{key} must be a valid regular expression: {exc}") from exc
+    return value
 
 
 def _safe_relative_path(value: str, key: str) -> str:
@@ -115,18 +126,28 @@ def load_contract(path: Path) -> RepositoryContract:
     if not isinstance(registry_data, dict):
         raise ContractError("registry table is required")
     registry = RegistryRequirement(
+        table_sections=_string_list(registry_data, "table_sections"),
         required_columns=_string_list(registry_data, "required_columns"),
         required_nonempty_columns=_string_list(
             registry_data, "required_nonempty_columns"
         ),
-        source_id_pattern=_string(registry_data, "source_id_pattern"),
-        date_pattern=_string(registry_data, "date_pattern"),
+        source_id_pattern=_regex(registry_data, "source_id_pattern"),
+        date_pattern=_regex(registry_data, "date_pattern"),
         empty_date=_string(registry_data, "empty_date"),
         verified_status=_string(registry_data, "verified_status"),
         local_brief_link_required_for=_string_list(
             registry_data, "local_brief_link_required_for"
         ),
     )
+
+    unknown_nonempty_columns = set(registry.required_nonempty_columns) - set(
+        registry.required_columns
+    )
+    if unknown_nonempty_columns:
+        raise ContractError(
+            "required_nonempty_columns contains columns absent from required_columns: "
+            + ", ".join(sorted(unknown_nonempty_columns))
+        )
 
     documents_data = data.get("documents")
     if not isinstance(documents_data, list) or not documents_data:
