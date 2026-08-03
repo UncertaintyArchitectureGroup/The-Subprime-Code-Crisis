@@ -6,6 +6,8 @@ This file is the canonical operating specification for human contributors and AI
 
 Before performing any repository work, read this file in full from the target branch. Instructions remembered from an earlier task, conversation, branch, cached context, model memory, entry point, or supporting document are not sufficient. This file has precedence over every supporting governance playbook. The playbooks under [`governance/`](governance/README.md) are mandatory procedural extensions when the selected flow requires them; they do not override this file. Resolve every conflict in favor of `AGENTS.md` and escalate unresolved ambiguity.
 
+[`DOCTRINE.md`](DOCTRINE.md) is the canonical content doctrine for research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact relationships. [`GLOSSARY.md`](GLOSSARY.md) is the canonical repository vocabulary. Both are subordinate to `AGENTS.md`, original source evidence, and the canonical source-state rules. Neither document may create or change a workflow, source status, verification outcome, contributor obligation, or exception to this file.
+
 After reading this file, read only the playbooks required by the selected flow, plus the repository materials required by the [start-of-work gate](#mandatory-start-of-work-gate).
 
 ## Repository Constitution
@@ -49,6 +51,8 @@ Operational protocols
 Repository maps and navigation
 ```
 
+`DOCTRINE.md` and `GLOSSARY.md` are cross-cutting content artifacts: the doctrine defines boundaries between these layers, and the glossary standardizes their terminology. They are not additional evidence layers.
+
 - Original papers, datasets, filings, standards, and institutional reports are authoritative for what they report.
 - `evidence/SOURCES.md` is the canonical source identity, status, verification-date, and `Current use` registry. `REFERENCES.md` is only a compact bibliography.
 - Evidence briefs document source design, findings, calculations, interpretations, limitations, scope, and repository use.
@@ -63,9 +67,9 @@ Before reading other repository files, editing, reviewing, searching for evidenc
 1. Read the current `AGENTS.md` from the target branch in full.
 2. State the selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration).
 3. Read the playbooks marked mandatory for the selected flow in the [flow table](#flow-selection-table).
-4. Then read `README.md`, `evidence/README.md`, `evidence/SOURCES.md`, the relevant evidence brief when one exists, every relevant file under `report/` and `protocols/`, `REFERENCES.md`, and `CONTRIBUTING.md`.
+4. Read `DOCTRINE.md` and `GLOSSARY.md`, then read `README.md`, `evidence/README.md`, `evidence/SOURCES.md`, the relevant evidence brief when one exists, every relevant file under `report/` and `protocols/`, `REFERENCES.md`, and `CONTRIBUTING.md`.
 
-Do not rely on remembered instructions. `evidence/SOURCES.md` is canonical for source state; `REFERENCES.md` is not a status database.
+Do not rely on remembered instructions. `evidence/SOURCES.md` is canonical for source state; `REFERENCES.md` is not a status database. When an external source uses a repository term differently, preserve and attribute the source's meaning rather than silently normalizing it to the glossary.
 
 ## Human approval and substantive-change gate
 
@@ -92,6 +96,7 @@ Safe editorial or mechanical changes that do not alter meaning, interpretation, 
 - Preserve positive, negative, null, mixed, contradictory, replication, critique, and limiting evidence. Do not search only for confirmation.
 - A number in a table, caption, or diagram is a claim. Multi-source diagrams must label source boundaries and must not depict unrelated numbers as one observed causal chain.
 - Workflow correctness governs speed: registration, evidence review, integration audit, synchronization, human escalation, and independent review must not be skipped.
+- Use canonical claim and artifact terms from `GLOSSARY.md`; do not use terminology to strengthen a claim beyond the evidence or the boundaries in `DOCTRINE.md`.
 
 ## Canonical source state model
 
@@ -133,6 +138,8 @@ Playbooks are normative procedural extensions of this file when listed as mandat
 ## Synchronization requirements
 
 After approved corrections, synchronize the evidence brief, actual `Current use` in `evidence/SOURCES.md`, the relevant evidence-directory index, `REFERENCES.md`, README claims/tables/diagrams and other maps, report usage, protocol implications, links, superseded-version history, and removed claims. These artifacts must reflect actual repository state and must not silently drift or strengthen claims.
+
+When a substantive change alters the content model, artifact relationships, claim boundaries, or canonical terminology, synchronize `DOCTRINE.md` and `GLOSSARY.md` as applicable. Do not update either document merely to restate a one-off wording choice.
 
 ## Completion and verification gates
 
