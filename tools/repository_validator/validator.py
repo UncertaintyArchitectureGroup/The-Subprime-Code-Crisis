@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 
 from .contract import RepositoryContract, load_contract
-from .markdown import extract_headings, inline_code_bullets_under_heading
+from .markdown import extract_headings, list_items_under_heading
 from .registry import RegistryParseError, SourceRecord, parse_source_registry
 
 
@@ -101,6 +101,55 @@ class RepositoryValidator:
                     )
         return issues
 
+    def _status_block_issues(
+        self,
+        *,
+        path: str,
+        text: str,
+        heading: str,
+        expected: tuple[str, ...],
+        dimension: str,
+    ) -> list[Issue]:
+        items = list_items_under_heading(text, heading)
+        issues: list[Issue] = []
+        seen: dict[str, int] = {}
+
+        for item in items:
+            if not item.canonical_inline_code:
+                issues.append(
+                    Issue(
+                        path,
+                        f"{dimension}-status-noncanonical-syntax",
+                        "status entries must use exactly '- `Status`'; found "
+                        f"'- {item.raw}'",
+                        item.line,
+                    )
+                )
+            if item.value in seen:
+                issues.append(
+                    Issue(
+                        path,
+                        f"duplicate-{dimension}-status",
+                        f"duplicate status {item.value!r}; first seen on line "
+                        f"{seen[item.value]}",
+                        item.line,
+                    )
+                )
+            else:
+                seen[item.value] = item.line
+
+        actual = tuple(item.value for item in items)
+        if actual != expected:
+            issues.append(
+                Issue(
+                    path,
+                    f"{dimension}-status-model-drift",
+                    f"allowed {dimension.replace('-', ' ').title()} statuses do not "
+                    "match repository-contract.toml",
+                )
+            )
+        return issues
+
     def _validate_status_model(self) -> list[Issue]:
         requirement = self.contract.status_model
         path = self._path(requirement.path)
@@ -108,31 +157,25 @@ class RepositoryValidator:
             return []
 
         text = path.read_text(encoding="utf-8")
-        evidence = inline_code_bullets_under_heading(
-            text, requirement.evidence_heading
-        )
-        integration = inline_code_bullets_under_heading(
-            text, requirement.integration_heading
-        )
         issues: list[Issue] = []
-        if evidence != self.contract.evidence_review_statuses:
-            issues.append(
-                Issue(
-                    requirement.path,
-                    "evidence-status-model-drift",
-                    "allowed Evidence review statuses do not match "
-                    "repository-contract.toml",
-                )
+        issues.extend(
+            self._status_block_issues(
+                path=requirement.path,
+                text=text,
+                heading=requirement.evidence_heading,
+                expected=self.contract.evidence_review_statuses,
+                dimension="evidence",
             )
-        if integration != self.contract.integration_audit_statuses:
-            issues.append(
-                Issue(
-                    requirement.path,
-                    "integration-status-model-drift",
-                    "allowed Integration audit statuses do not match "
-                    "repository-contract.toml",
-                )
+        )
+        issues.extend(
+            self._status_block_issues(
+                path=requirement.path,
+                text=text,
+                heading=requirement.integration_heading,
+                expected=self.contract.integration_audit_statuses,
+                dimension="integration",
             )
+        )
         return issues
 
     def _validate_source_registry(self) -> list[Issue]:
@@ -145,7 +188,7 @@ class RepositoryValidator:
             records = parse_source_registry(
                 path.read_text(encoding="utf-8"),
                 self.contract.registry.required_columns,
-                self.contract.registry.table_sections,
+                self.contract.registry.sections,
             )
         except RegistryParseError as exc:
             return [Issue(relative, "source-registry-parse", str(exc))]
@@ -203,6 +246,16 @@ class RepositoryValidator:
                     record.line,
                 )
             )
+        elif not record.source_id.startswith(record.expected_prefix):
+            issues.append(
+                Issue(
+                    relative,
+                    "source-id-section-mismatch",
+                    f"{record.source_id} is in '{record.section}' but that section "
+                    f"requires IDs beginning with {record.expected_prefix}",
+                    record.line,
+                )
+            )
 
         if record.evidence_review not in self.contract.evidence_review_statuses:
             issues.append(
@@ -224,6 +277,17 @@ class RepositoryValidator:
             )
 
         if record.integration_audit == registry.verified_status:
+            if record.evidence_review != registry.verified_requires_evidence_status:
+                issues.append(
+                    Issue(
+                        relative,
+                        "verified-requires-reviewed-brief",
+                        f"{record.source_id} is {registry.verified_status}, so Evidence "
+                        "review must be "
+                        f"{registry.verified_requires_evidence_status}",
+                        record.line,
+                    )
+                )
             if not re.fullmatch(registry.date_pattern, record.last_verified):
                 issues.append(
                     Issue(
