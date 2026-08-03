@@ -145,6 +145,24 @@ class ContractInvariantTests(unittest.TestCase):
             write_fixture(root, broken)
             self.assertIn("source-registry-parse", validation_codes(root))
 
+    def test_interrupted_registry_table_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            valid = registry_text()
+            original_row = next(
+                line for line in valid.splitlines() if line.startswith("| **P-")
+            )
+            later_row = (
+                "| **P-2025-02** | Later source | Registered | Not started | — | "
+                "Bounded finding | `report/01_the_illusion.md` |"
+            )
+            broken = valid.replace(
+                original_row,
+                original_row + "\n\n" + later_row,
+            )
+            write_fixture(root, broken)
+            self.assertIn("source-registry-parse", validation_codes(root))
+
     def test_required_registry_section_cannot_be_empty(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
