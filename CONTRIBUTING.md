@@ -123,7 +123,7 @@ Report changes should:
 
 - trace material factual claims to registered sources;
 - link to reviewed evidence briefs where possible;
-- distinguish evidence-backed findings from systems inference and warning scenarios;
+- distinguish empirical findings and evidence-backed inferences from systems inference and warning scenarios;
 - use the claim boundaries in [`DOCTRINE.md`](DOCTRINE.md#claim-boundaries);
 - use canonical terms from [`GLOSSARY.md`](GLOSSARY.md);
 - weaken or remove claims when the evidence does not support them;
