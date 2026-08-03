@@ -27,17 +27,35 @@ Claim confidence:
 - may change when evidence, scope, or interpretation changes; and
 - does not replace the underlying source review.
 
+### Claim confidence map
+
+The README artifact that lists selected major repository claims, their claim type, and the repository's current confidence assessment.
+
+It evaluates claims rather than source quality. It is a summary and does not replace the underlying evidence briefs, source registry, or argument.
+
+### Crisis Map
+
+The repository's explanatory systems map of the proposed Subprime Code Crisis mechanism and its bounded warning scenario.
+
+It combines empirical support and repository synthesis while labeling their boundaries. It is not a chronology, a source scorecard, or a single measured end-to-end causal chain.
+
 ### Dataset
 
 A documented collection of observations or records used by a source or by repository analysis.
 
-A dataset entry should preserve provenance, coverage, units, collection method, transformations, access conditions, known limitations, and the claims the data can and cannot support. The existence of a dataset does not by itself establish a finding or causal interpretation.
+A complete dataset description records provenance, coverage, units, collection method, transformations, access conditions, known limitations, and the claims the data can and cannot support. The existence of a dataset does not by itself establish a finding or causal interpretation.
 
 ### Delivery system
 
 The end-to-end socio-technical system that turns an intended change into operated and maintained software.
 
 It includes task selection, requirements, design, implementation, review, testing, security, architecture, integration, release, production operation, maintenance, people, incentives, tools, policies, and decision rights.
+
+### Documented
+
+An interpretation label indicating that a statement is directly contained in a first-party documentary source.
+
+The label identifies the relationship to the record. It does not imply that the statement is independently confirmed, causal, complete, or unbiased.
 
 ### Documentary source
 
@@ -47,9 +65,15 @@ Examples include regulatory filings, official documentation, standards, organiza
 
 ### Documented fact
 
-A statement directly contained in an authoritative first-party documentary source.
+A claim directly supported by an authoritative first-party documentary source.
 
 A documented fact establishes that the record says or reports something. It does not necessarily establish that the statement is complete, unbiased, causal, or independently confirmed.
+
+### Derived
+
+An interpretation label indicating that a value or statement was calculated from source-reported inputs without adding a new causal claim.
+
+The calculation remains a derived result only while its inputs, formula, units, assumptions, and rounding remain inspectable.
 
 ### Derived result
 
@@ -62,6 +86,12 @@ The inputs, formula, units, assumptions, and rounding should remain inspectable.
 A result directly reported by an empirical source from its observed data or analysis.
 
 An empirical finding must remain bounded by the source's population, setting, period, tools, methods, outcomes, uncertainty, and publication status.
+
+### Evidence Map
+
+The README artifact that classifies source types, repository interpretation, and protocols by their role in the repository.
+
+It answers what kind of artifact or evidence layer something is. It is not a claim-confidence scorecard, source-quality ranking, or source-status registry.
 
 ### Evidence-backed inference
 
@@ -99,11 +129,23 @@ Improvement measured within a bounded activity or stage, such as code generation
 
 Local productivity does not by itself establish better end-to-end delivery throughput, reliability, maintainability, or total engineering economics.
 
+### Model-calibrated
+
+An interpretation label indicating that a value was produced by a fitted, simulated, or calibrated model rather than directly observed as a raw outcome.
+
+The label does not establish model validity. The model, assumptions, calibration data, uncertainty, and validation limits remain relevant to any use.
+
 ### Model-calibrated result
 
 An estimate produced by a fitted, simulated, or calibrated model rather than directly observed as a raw outcome.
 
 The model, assumptions, calibration data, uncertainty, and validation limits should be visible.
+
+### Not established
+
+An interpretation label for a claim that may be plausible or relevant but is not demonstrated by the cited source.
+
+It identifies a source boundary, not necessarily a conclusion that the claim is false.
 
 ### Observed
 
@@ -145,6 +187,12 @@ When production attenuation is reported as an empirical finding, its population,
 An adaptable operating pattern that translates identified risks into controls, roles, signals, gates, decision rights, escalation paths, or feedback loops.
 
 A protocol is not empirical proof or universal policy. Its suitability depends on local risk, architecture, regulation, reversibility, and verification capacity.
+
+### Report
+
+The structured repository argument maintained under `report/`, combining bounded source findings, documentary records, repository interpretation, mechanisms, implications, and scenarios.
+
+The report is not a substitute for the Source Registry or evidence briefs and must not flatten source boundaries into one universal claim.
 
 ### Repository interpretation
 
