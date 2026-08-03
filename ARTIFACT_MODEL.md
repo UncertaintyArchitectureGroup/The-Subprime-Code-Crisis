@@ -2,9 +2,9 @@
 
 ## Status and precedence
 
-This document is the canonical reader-facing map of the repository's artifacts and their relationships.
+This document is the dedicated reader-facing map of the repository's artifacts and their relationships. It expands the artifact relationships defined in [`DOCTRINE.md`](DOCTRINE.md) without replacing the Doctrine as the canonical content authority.
 
-[`AGENTS.md`](AGENTS.md) governs workflows, approval gates, source states, verification, contributor obligations, and independent review. [`DOCTRINE.md`](DOCTRINE.md) governs research and interpretation principles. [`GLOSSARY.md`](GLOSSARY.md) governs canonical terminology. [`SCOPE.md`](SCOPE.md) defines the research boundary.
+[`AGENTS.md`](AGENTS.md) governs workflows, approval gates, source states, verification, contributor obligations, and independent review. [`DOCTRINE.md`](DOCTRINE.md) governs research and interpretation principles and artifact boundaries. [`GLOSSARY.md`](GLOSSARY.md) governs canonical terminology. [`SCOPE.md`](SCOPE.md) expands the repository's research boundary.
 
 This artifact model does not create a workflow, change source status, establish verification, or strengthen a claim. Original sources remain authoritative for what they report, and [`evidence/SOURCES.md`](evidence/SOURCES.md) remains canonical for source identity and status.
 
@@ -49,8 +49,8 @@ These artifacts inspect, bound, or navigate the core flow. They are not addition
 
 | Artifact | Purpose | Boundary |
 | --- | --- | --- |
-| [`SCOPE.md`](SCOPE.md) | Defines what the repository studies, what it excludes, and how adjacent topics may be used | Does not decide whether a specific factual claim is true |
-| [`DOCTRINE.md`](DOCTRINE.md) | Defines research, evidence, interpretation, protocol, and claim-boundary principles | Does not create workflows or source states |
+| [`SCOPE.md`](SCOPE.md) | Expands what the repository studies, what it excludes, and how adjacent topics may be used | Does not decide whether a specific factual claim is true or override the boundaries in `AGENTS.md` and Doctrine |
+| [`DOCTRINE.md`](DOCTRINE.md) | Defines research, evidence, interpretation, protocol, claim-boundary, and artifact principles | Does not create workflows or source states |
 | [`GLOSSARY.md`](GLOSSARY.md) | Defines canonical meanings for recurring repository terms | Does not provide factual evidence |
 | **Claim confidence map** | Assesses the current support and class of selected major repository claims | Not a source-quality ranking or mandatory workflow stage |
 | **Evidence Map** | Classifies evidence types, repository interpretation, and protocols by role | Not a confidence scorecard or source-status registry |
