@@ -1,7 +1,7 @@
 # Protocol 1: The Personal Defense
 ## Master the Tool, Don't Serve It (The "No Vibe Coding" Standard)
 
-> **Navigation:** [🏠 Home](../README.md) | [🛡️ Protocols Index](README.md) | **Protocol 1** | [Protocol 2: Operational Defense](02_operational_defense.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | **Protocol 1** | [Protocol 2: Operational Defense](02_operational_defense.md)
 
 **"Vibe Coding"** is the practice of accepting AI-generated code because it *looks* right, without verifying whether it *is* right. It is one mechanism that can contribute to the Subprime Code Crisis.
 
