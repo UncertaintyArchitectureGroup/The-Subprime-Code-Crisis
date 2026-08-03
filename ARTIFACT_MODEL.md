@@ -45,14 +45,14 @@ The flow is directional, but it is not a claim that every artifact is produced m
 
 ## Cross-cutting artifacts
 
-These artifacts inspect, bound, govern, cite, record, or navigate the core flow. They are not additional evidence stages. Reader-facing groupings such as the README's Foundation documents section are navigation aids, not alternative artifact classifications.
+These artifacts inspect, bound, govern, cite, record, or navigate the core flow. They are not additional evidence stages. Reader-facing groupings such as the README repository map are navigation aids, not alternative artifact classifications.
 
 | Artifact | Purpose | Boundary |
 | --- | --- | --- |
 | [`SCOPE.md`](SCOPE.md) | Expands what the repository studies, what it excludes, and how adjacent topics may be used | Does not decide whether a specific factual claim is true or override the boundaries in `AGENTS.md` and Doctrine |
 | [`DOCTRINE.md`](DOCTRINE.md) | Defines research, evidence, interpretation, protocol, claim-boundary, and artifact principles | Does not create workflows or source states |
 | [`GLOSSARY.md`](GLOSSARY.md) | Defines canonical meanings for recurring repository terms | Does not provide factual evidence |
-| [`README.md`](README.md) | Primary reader entry point, executive summary, repository-level maps, major navigation, and citation guidance | Not canonical for source status and not a substitute for the report, evidence briefs, or Source Registry |
+| [`README.md`](README.md) | Primary reader entry point, Key Takeaways, repository-level maps, major navigation, and citation guidance | Not canonical for source status and not a substitute for the report, evidence briefs, or Source Registry |
 | [`CHANGELOG.md`](CHANGELOG.md) | Records selected material reader-facing, evidence, protocol, content-architecture, attribution, citation, and governance changes | Not an exhaustive commit ledger, source-status registry, evidence brief, or release certification |
 | **Claim confidence map** | Assesses the current support and class of selected major repository claims | Not a source-quality ranking or mandatory workflow stage |
 | **Evidence Map** | Classifies evidence types, repository interpretation, and protocols by role | Not a confidence scorecard or source-status registry |
@@ -63,7 +63,7 @@ These artifacts inspect, bound, govern, cite, record, or navigate the core flow.
 | [`CITATION.cff`](CITATION.cff) | Machine-readable repository citation metadata | Not a change history, release ledger, evidence source, or attribution analysis |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Explains contributor mechanics, expectations, and repository entry points | Cannot override `AGENTS.md`, Doctrine, the status model, or source evidence |
 | [`governance/`](governance/README.md) playbooks | Provide mandatory procedural extensions selected by the workflow in `AGENTS.md` | Cannot override or independently change `AGENTS.md`, statuses, gates, or contributor obligations |
-| Repository navigation | Helps readers move among the report, evidence, protocols, and foundation documents | Must not introduce stronger claims than the underlying artifacts |
+| Repository navigation | Helps readers move among the report, evidence, protocols, and supporting documents | Must not introduce stronger claims than the underlying artifacts |
 | [`AGENTS.md`](AGENTS.md) | Governs how repository work is classified, performed, synchronized, reviewed, and escalated | Not a source of empirical evidence or a substitute for the content artifacts |
 
 ## Relationship rules
@@ -90,7 +90,7 @@ These artifacts inspect, bound, govern, cite, record, or navigate the core flow.
 | Read the complete argument | [Report](report/01_the_illusion.md) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |
 | Understand name provenance or attribution | [`TERMINOLOGY_AND_ATTRIBUTION.md`](TERMINOLOGY_AND_ATTRIBUTION.md) |
-| Cite the repository | [`README.md`](README.md#how-to-cite-this-repository) and [`CITATION.cff`](CITATION.cff) |
+| Cite the repository | [`README.md`](README.md#citation-attribution-and-history) and [`CITATION.cff`](CITATION.cff) |
 | Contribute or change the repository | [`AGENTS.md`](AGENTS.md), [`CONTRIBUTING.md`](CONTRIBUTING.md), and the applicable [governance playbooks](governance/README.md) |
 
 ## Change discipline
