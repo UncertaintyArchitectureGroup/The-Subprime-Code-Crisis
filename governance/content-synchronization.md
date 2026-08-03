@@ -16,17 +16,16 @@ The assessment is not a requirement to edit every listed file. Symmetry is not c
 
 ## Trigger
 
-Complete this assessment for every substantive documentation, content-architecture, evidence-integration, report, map, protocol, attribution, citation, contributor, or governance change.
+Complete this assessment for every substantive repository change, including documentation, content-architecture, evidence-integration, report, map, protocol, attribution, citation, contributor, governance, tooling, automation, or dataset-schema changes.
 
 The assessment is normally not required for a strictly mechanical change that does not alter meaning, behavior, status, navigation structure, or reader understanding, such as:
 
 - spelling or punctuation correction;
 - formatting or final-newline repair;
 - replacement of an objectively broken link;
-- exact metadata synchronization already required by an applicable source flow;
 - internal refactoring invisible to readers and contributors.
 
-When classification is uncertain, treat the assessment as required.
+When classification is uncertain, treat the assessment as required. Source-state, `Current use`, evidence-integration, and verification changes are not mechanical exceptions merely because the final edit is metadata-shaped.
 
 ## Core rule
 
@@ -124,13 +123,13 @@ Inspect:
 
 ## Changelog decision
 
-Update [`CHANGELOG.md`](../CHANGELOG.md) when a merged change materially affects:
+Update [`CHANGELOG.md`](../CHANGELOG.md) in the same PR when a change proposed for merge would materially affect:
 
 - repository scope, doctrine, artifact relationships, or canonical terminology;
 - major report claims, conclusions, confidence, Evidence Map, or Crisis Map;
 - protocol controls, roles, gates, decision rules, or the protocol stack;
 - evidence integration that changes the reader-facing repository position;
-- governance, workflows, gates, statuses, contributor obligations, or templates;
+- governance, workflows, gates, status definitions or the source-state model, contributor obligations, or templates;
 - terminology provenance, attribution boundaries, citation identity, or licensing presentation;
 - repository structure or navigation in a way that materially changes how readers or contributors use the project.
 
@@ -139,7 +138,7 @@ A changelog entry is normally not required for:
 - spelling, punctuation, formatting, or final-newline fixes;
 - objectively broken-link repair;
 - navigation-only maintenance with no material routing change;
-- exact source-state synchronization that does not change the reader-facing position;
+- exact source-state synchronization that does not change status definitions, `Current use`, claim meaning, or the reader-facing position;
 - internal refactoring with no material reader or contributor effect.
 
 Every substantive PR must record one of:
@@ -161,18 +160,20 @@ The record must identify:
 - artifacts considered but not applicable, with reasons;
 - changelog decision;
 - validation performed;
-- unresolved drift or maintainer decision.
+- unresolved drift or maintainer decision;
+- whether the assessment record itself is complete.
 
-## Completion conditions
+## Assessment-record completion
 
-The assessment is complete only when:
+The assessment record is complete only when:
 
 - all reasonably affected surfaces have been inspected;
 - affected artifacts are synchronized;
 - non-applicable surfaces are explicitly justified;
 - the changelog decision is recorded and implemented when required;
 - links and terminology are consistent;
-- no synchronized text introduces a stronger claim, new status, or new obligation than the canonical change;
-- independent review has the outcome required by `AGENTS.md` for the substantive change.
+- no synchronized text introduces a stronger claim, new status, or new obligation than the canonical change.
 
-A clean local diff or a merged PR does not by itself demonstrate repository-wide synchronization.
+Completing the assessment record does not establish completion, verification, or merge readiness of the substantive repository change. The change remains subject to human decisions, independent review, source-flow completion, and every other applicable gate in [`AGENTS.md`](../AGENTS.md).
+
+A clean local diff, a completed assessment record, or a merged PR does not by itself demonstrate repository-wide completion or verification.
