@@ -18,7 +18,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 ### Governance
 
 - Added a mandatory content-synchronization assessment and explicit changelog decision for substantive repository changes.
-- Added a non-blocking executable repository contract, standard-library validator and tests, Source Registry parser, and diagnostic Main health workflow.
+- Added a non-blocking executable repository contract, standard-library validator and tests, five-class Source Registry parser including the canonical dataset section, inactive-Markdown filtering, and diagnostic Main health workflow.
 
 ## 2026-08-03
 
