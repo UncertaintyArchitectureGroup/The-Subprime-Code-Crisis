@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import tomllib
 import unittest
 
 from tools.repository_validator.contract import load_contract
@@ -23,6 +24,22 @@ class PRGovernanceContractTests(unittest.TestCase):
             "tests/test_pr_governance_contract.py",
         }
         self.assertTrue(expected <= set(contract.required_files))
+
+    def test_evidence_state_contour_is_required_and_critical(self) -> None:
+        expected = {
+            "tools/evidence_state_check.py",
+            "tools/evidence_transition_gate.py",
+            "tools/repository_validator/evidence_state.py",
+            "tests/test_evidence_state_integrity.py",
+        }
+        contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
+        matrix = tomllib.loads(
+            (REPO_ROOT / "governance/synchronization-matrix.toml").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertTrue(expected <= set(contract.required_files))
+        self.assertTrue(expected <= set(matrix["critical_paths"]))
 
     def test_pr_playbook_headings_are_part_of_executable_contract(self) -> None:
         contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
@@ -49,6 +66,13 @@ class PRGovernanceContractTests(unittest.TestCase):
             "A passing Repository Gate does not establish maintainer approval",
             agents,
         )
+
+    def test_agents_makes_evidence_state_obligations_canonical(self) -> None:
+        agents = (REPO_ROOT / "AGENTS.md").read_text(encoding="utf-8")
+        self.assertIn("TOML front matter", agents)
+        self.assertIn("registry and brief state must remain synchronized", agents)
+        self.assertIn("machine-readable `Current use` paths", agents)
+        self.assertIn("changed verified integration surface", agents)
 
 
 if __name__ == "__main__":

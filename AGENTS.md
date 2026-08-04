@@ -104,6 +104,10 @@ Every source has separate `Evidence review` and `Integration audit` states. Allo
 
 In summary, full processing requires `Evidence review = Reviewed brief` and `Integration audit = Verified`. `Last verified` contains a date only when integration is `Verified`; otherwise it is `—`. `Verified` is prohibited unless every correction is merged, every completion gate passes, and independent review is `Confirmed`. A brief, citation, corrected paragraph, completed or merged PR, or plausible result cannot establish verification by inference.
 
+Every reviewed evidence brief must begin with canonical TOML front matter declaring its Source IDs, evidence-review state, integration-audit state, `Last verified`, independent-review outcome, and machine-readable `Current use` paths. The registry and brief state must remain synchronized. `Verified` front matter requires `Evidence review = Reviewed brief`, `independent_review = Confirmed`, and a valid verification date; every non-`Verified` brief must use `Last verified = —`. Machine-readable `Current use` paths must exist in the repository and must be enclosed in backticks in `evidence/SOURCES.md`.
+
+A changed source identity requires `Needs re-review`, `Needs re-verification`, and `Last verified = —`. A changed verified integration surface—including an added or removed machine-readable `Current use` path or a changed reviewed-brief link—requires `Integration audit = Needs re-verification` and `Last verified = —` before the changed state may be accepted.
+
 ## Flow selection table
 
 Select exactly one primary flow before editing. Cross-cutting governance work follows the [governance change procedure](#governance-change-procedure), not an invented source flow.

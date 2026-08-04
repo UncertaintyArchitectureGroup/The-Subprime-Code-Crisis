@@ -92,5 +92,5 @@ Dataset registry entries use `DS-YYYY-NN` IDs and the same `Evidence review`, `I
 7. If a report claim, README diagram, or protocol materially relying on a source changes, set its integration status to `Needs re-verification`.
 8. A pending brief may support provisional or low-load claims, but strong claims should link to a reviewed brief.
 9. Replace secondary links with original sources whenever possible.
-10. Keep `Current use` synchronized with actual repository usage discovered during the audit.
+10. Keep `Current use` synchronized with actual repository usage discovered during the audit. Repository paths in this field must be enclosed in backticks; descriptive prose must remain outside the backticks.
 11. Preserve contradictory, null, mixed, and positive evidence; classification and status are independent of whether a source supports the repository thesis.
