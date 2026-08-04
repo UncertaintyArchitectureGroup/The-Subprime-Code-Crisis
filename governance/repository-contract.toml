@@ -1,0 +1,251 @@
+# Executable projection of repository governance.
+#
+# AGENTS.md is canonical and has precedence. This contract cannot create or
+# override a workflow, source state, gate, contributor obligation, or exception.
+
+contract_version = 1
+policy_authority = "AGENTS.md"
+source_registry = "evidence/SOURCES.md"
+
+required_files = [
+  "AGENTS.md",
+  "DOCTRINE.md",
+  "GLOSSARY.md",
+  "SCOPE.md",
+  "ARTIFACT_MODEL.md",
+  "README.md",
+  "CHANGELOG.md",
+  "CONTRIBUTING.md",
+  "CITATION.cff",
+  "LICENSE.md",
+  "REFERENCES.md",
+  "TERMINOLOGY_AND_ATTRIBUTION.md",
+  "evidence/README.md",
+  "evidence/SOURCES.md",
+  "evidence/primary/README.md",
+  "evidence/documentary/README.md",
+  "evidence/secondary/README.md",
+  "evidence/methodology/README.md",
+  "evidence/datasets/README.md",
+  "governance/README.md",
+  "governance/status-model.md",
+  "governance/content-synchronization.md",
+  "governance/templates.md",
+  "governance/evidence-review.md",
+  "governance/integration-audit.md",
+  "governance/evidence-discovery.md",
+  "governance/independent-review.md",
+  "report/01_the_illusion.md",
+  "report/02_broken_mechanics.md",
+  "report/03_the_aftermath.md",
+  "protocols/README.md",
+  "protocols/01_personal_defense.md",
+  "protocols/02_operational_defense.md",
+  "protocols/03_public_defense.md",
+  "protocols/04_systemic_cure.md",
+  "governance/repository-contract.toml",
+  "tools/__init__.py",
+  "tools/repository_validator/__init__.py",
+  "tools/repository_validator/__main__.py",
+  "tools/repository_validator/contract.py",
+  "tools/repository_validator/markdown.py",
+  "tools/repository_validator/registry.py",
+  "tools/repository_validator/validator.py",
+  "tests/__init__.py",
+  "tests/repository_validator/__init__.py",
+  "tests/repository_validator/test_contract_invariants.py",
+  "tests/repository_validator/test_validator.py",
+  ".github/workflows/main-health.yml",
+]
+
+[status_enums]
+evidence_review = [
+  "Registered",
+  "Brief in progress",
+  "Reviewed brief",
+  "Needs re-review",
+]
+integration_audit = [
+  "Not started",
+  "In progress",
+  "Corrections required",
+  "Verified",
+  "Needs re-verification",
+]
+
+[status_model]
+path = "governance/status-model.md"
+evidence_heading = "Allowed Evidence review statuses"
+integration_heading = "Allowed Integration audit statuses"
+
+[registry]
+required_columns = [
+  "ID",
+  "Source",
+  "Evidence review",
+  "Integration audit",
+  "Last verified",
+  "Can support",
+  "Current use",
+]
+required_nonempty_columns = [
+  "ID",
+  "Source",
+  "Evidence review",
+  "Integration audit",
+  "Last verified",
+  "Can support",
+  "Current use",
+]
+source_id_pattern = '^(?:DS|P|D|S|M)-[0-9]{4}-[0-9]{2}$'
+date_pattern = '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
+empty_date = "—"
+verified_status = "Verified"
+verified_requires_evidence_status = "Reviewed brief"
+local_brief_link_required_for = ["Reviewed brief"]
+
+[[registry.sections]]
+heading = "Primary empirical research"
+id_prefix = "P-"
+brief_directory = "primary"
+minimum_rows = 1
+
+[[registry.sections]]
+heading = "Primary documentary sources"
+id_prefix = "D-"
+brief_directory = "documentary"
+minimum_rows = 1
+
+[[registry.sections]]
+heading = "Secondary evidence and industry context"
+id_prefix = "S-"
+brief_directory = "secondary"
+minimum_rows = 1
+
+[[registry.sections]]
+heading = "Theory and methodology"
+id_prefix = "M-"
+brief_directory = "methodology"
+minimum_rows = 1
+
+# The canonical dataset class exists before any dataset source is registered.
+[[registry.sections]]
+heading = "Datasets"
+id_prefix = "DS-"
+brief_directory = "datasets"
+minimum_rows = 0
+
+[[documents]]
+path = "AGENTS.md"
+required_headings = [
+  "Canonical status and precedence",
+  "Repository Constitution",
+  "Repository purpose and boundaries",
+  "Mandatory start-of-work gate",
+  "Human approval and substantive-change gate",
+  "Evidence and claim-type rules",
+  "Canonical source state model",
+  "Flow selection table",
+  "Required playbooks by flow",
+  "Synchronization requirements",
+  "Completion and verification gates",
+  "PR and implementation rules",
+  "Escalation and conflict handling",
+  "Governance change procedure",
+]
+
+[[documents]]
+path = "DOCTRINE.md"
+required_headings = [
+  "Status and precedence",
+  "Repository philosophy",
+  "Research principles",
+  "Evidence principles",
+  "Interpretation principles",
+  "Protocol principles",
+  "Claim boundaries",
+]
+
+[[documents]]
+path = "GLOSSARY.md"
+required_headings = ["Status and use", "Terms", "Usage rule"]
+
+[[documents]]
+path = "ARTIFACT_MODEL.md"
+required_headings = [
+  "Status and precedence",
+  "Core artifact flow",
+  "Core artifacts",
+  "Cross-cutting artifacts",
+  "Relationship rules",
+  "Where to start",
+  "Change discipline",
+]
+
+[[documents]]
+path = "README.md"
+required_headings = [
+  "Quick Start",
+  "Key Takeaways",
+  "Repository Map",
+  "Claim confidence map",
+  "🧾 Evidence Map",
+  "📊 The Crisis Map",
+  "🛡️ Operational Response",
+  "Citation, Attribution, and History",
+]
+
+[[documents]]
+path = "CHANGELOG.md"
+required_headings = ["Unreleased", "Maintenance rule"]
+
+[[documents]]
+path = "evidence/SOURCES.md"
+required_headings = [
+  "Evidence-review status",
+  "Integration-audit status",
+  "Primary empirical research",
+  "Primary documentary sources",
+  "Secondary evidence and industry context",
+  "Theory and methodology",
+  "Datasets",
+  "Registry maintenance rules",
+]
+
+[[documents]]
+path = "governance/status-model.md"
+required_headings = [
+  "Independent dimensions",
+  "Allowed Evidence review statuses",
+  "Allowed Integration audit statuses",
+  "Last verified",
+  "Transition rules",
+  "Prohibition on inferred verification",
+]
+
+[[documents]]
+path = "governance/content-synchronization.md"
+required_headings = [
+  "Status and precedence",
+  "Purpose",
+  "Trigger",
+  "Core rule",
+  "Synchronization surfaces",
+  "Change-specific checks",
+  "Changelog decision",
+  "Required record",
+  "Assessment-record completion",
+]
+
+[[documents]]
+path = "governance/templates.md"
+required_headings = [
+  "Start-of-work declaration",
+  "Claim-to-source trace",
+  "Integration audit record",
+  "Independent review record",
+  "Candidate Register",
+  "Human decision record",
+  "Content synchronization assessment",
+  "PR completion summary",
+]

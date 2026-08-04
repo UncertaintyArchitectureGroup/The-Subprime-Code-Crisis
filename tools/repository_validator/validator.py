@@ -1,0 +1,484 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import date
+from pathlib import Path
+import re
+
+from .contract import RepositoryContract, load_contract
+from .markdown import (
+    extract_headings,
+    heading_lines,
+    list_items_under_heading,
+    scan_markdown_lines,
+    visible_text,
+)
+from .registry import RegistryParseError, SourceRecord, parse_source_registry
+
+
+@dataclass(frozen=True)
+class Issue:
+    path: str
+    code: str
+    message: str
+    line: int | None = None
+
+    def text(self) -> str:
+        location = self.path
+        if self.line is not None:
+            location += f":{self.line}"
+        return f"{location}: [{self.code}] {self.message}"
+
+    def github_annotation(self) -> str:
+        location = f"file={self.path}"
+        if self.line is not None:
+            location += f",line={self.line}"
+        message = (
+            self.message.replace("%", "%25")
+            .replace("\r", "%0D")
+            .replace("\n", "%0A")
+        )
+        return f"::error {location}::[{self.code}] {message}"
+
+
+class RepositoryValidator:
+    def __init__(self, root: Path, contract: RepositoryContract):
+        self.root = root.resolve()
+        self.contract = contract
+
+    def validate(self) -> tuple[Issue, ...]:
+        issues: list[Issue] = []
+        issues.extend(self._validate_required_files())
+        issues.extend(self._validate_required_headings())
+        issues.extend(self._validate_status_model())
+        issues.extend(self._validate_source_registry())
+        unique = {
+            (issue.path, issue.code, issue.message, issue.line): issue
+            for issue in issues
+        }
+        return tuple(
+            sorted(
+                unique.values(),
+                key=lambda issue: (
+                    issue.path,
+                    issue.line if issue.line is not None else 0,
+                    issue.code,
+                    issue.message,
+                ),
+            )
+        )
+
+    def _path(self, relative: str) -> Path:
+        return self.root / relative
+
+    def _validate_required_files(self) -> list[Issue]:
+        issues: list[Issue] = []
+        for relative in self.contract.required_files:
+            path = self._path(relative)
+            if not path.is_file():
+                issues.append(
+                    Issue(
+                        relative,
+                        "required-file-missing",
+                        "required file does not exist",
+                    )
+                )
+            elif path.stat().st_size == 0:
+                issues.append(
+                    Issue(relative, "required-file-empty", "required file is empty")
+                )
+        return issues
+
+    def _validate_required_headings(self) -> list[Issue]:
+        issues: list[Issue] = []
+        for requirement in self.contract.documents:
+            path = self._path(requirement.path)
+            if not path.is_file():
+                continue
+            headings = set(extract_headings(path.read_text(encoding="utf-8")))
+            for heading in requirement.required_headings:
+                if heading not in headings:
+                    issues.append(
+                        Issue(
+                            requirement.path,
+                            "required-heading-missing",
+                            f"required heading is missing: {heading}",
+                        )
+                    )
+        return issues
+
+    def _status_block_issues(
+        self,
+        *,
+        path: str,
+        text: str,
+        heading: str,
+        expected: tuple[str, ...],
+        dimension: str,
+    ) -> list[Issue]:
+        occurrences = heading_lines(text, heading)
+        items = list_items_under_heading(text, heading)
+        issues: list[Issue] = []
+        seen: dict[str, int] = {}
+
+        if not occurrences:
+            issues.append(
+                Issue(
+                    path,
+                    f"{dimension}-status-heading-missing",
+                    f"canonical status heading is missing: {heading}",
+                )
+            )
+        elif len(occurrences) > 1:
+            issues.append(
+                Issue(
+                    path,
+                    f"duplicate-{dimension}-status-heading",
+                    f"canonical status heading {heading!r} appears more than once; "
+                    f"first seen on line {occurrences[0]}",
+                    occurrences[1],
+                )
+            )
+
+        for item in items:
+            if not item.canonical_inline_code:
+                issues.append(
+                    Issue(
+                        path,
+                        f"{dimension}-status-noncanonical-syntax",
+                        "status entries must use exactly '- `Status`'; found "
+                        f"'{item.marker} {item.raw}'",
+                        item.line,
+                    )
+                )
+            if item.value in seen:
+                issues.append(
+                    Issue(
+                        path,
+                        f"duplicate-{dimension}-status",
+                        f"duplicate status {item.value!r}; first seen on line "
+                        f"{seen[item.value]}",
+                        item.line,
+                    )
+                )
+            else:
+                seen[item.value] = item.line
+
+        actual = tuple(item.value for item in items)
+        if actual != expected:
+            issues.append(
+                Issue(
+                    path,
+                    f"{dimension}-status-model-drift",
+                    f"allowed {dimension.replace('-', ' ').title()} statuses do not "
+                    "match repository-contract.toml",
+                )
+            )
+        return issues
+
+    def _validate_status_model(self) -> list[Issue]:
+        requirement = self.contract.status_model
+        path = self._path(requirement.path)
+        if not path.is_file():
+            return []
+
+        text = path.read_text(encoding="utf-8")
+        issues: list[Issue] = []
+        issues.extend(
+            self._status_block_issues(
+                path=requirement.path,
+                text=text,
+                heading=requirement.evidence_heading,
+                expected=self.contract.evidence_review_statuses,
+                dimension="evidence",
+            )
+        )
+        issues.extend(
+            self._status_block_issues(
+                path=requirement.path,
+                text=text,
+                heading=requirement.integration_heading,
+                expected=self.contract.integration_audit_statuses,
+                dimension="integration",
+            )
+        )
+        return issues
+
+    def _validate_source_registry(self) -> list[Issue]:
+        relative = self.contract.source_registry
+        path = self._path(relative)
+        if not path.is_file():
+            return []
+
+        try:
+            records = parse_source_registry(
+                path.read_text(encoding="utf-8"),
+                self.contract.registry.required_columns,
+                self.contract.registry.sections,
+                self.contract.registry.source_id_pattern,
+            )
+        except RegistryParseError as exc:
+            return [Issue(relative, "source-registry-parse", str(exc))]
+
+        issues: list[Issue] = []
+        seen: dict[str, int] = {}
+        for record in records:
+            issues.extend(self._validate_source_record(record))
+            if record.source_id in seen:
+                issues.append(
+                    Issue(
+                        relative,
+                        "duplicate-source-id",
+                        f"duplicate Source ID {record.source_id}; "
+                        f"first seen on line {seen[record.source_id]}",
+                        record.line,
+                    )
+                )
+            else:
+                seen[record.source_id] = record.line
+        return issues
+
+    def _validate_source_record(self, record: SourceRecord) -> list[Issue]:
+        relative = self.contract.source_registry
+        registry = self.contract.registry
+        issues: list[Issue] = []
+
+        fields = {
+            "ID": record.source_id,
+            "Source": record.source,
+            "Evidence review": record.evidence_review,
+            "Integration audit": record.integration_audit,
+            "Last verified": record.last_verified,
+            "Can support": record.can_support,
+            "Current use": record.current_use,
+        }
+        for column in registry.required_nonempty_columns:
+            if not fields[column]:
+                issues.append(
+                    Issue(
+                        relative,
+                        "source-registry-empty-field",
+                        f"{record.source_id or 'source row'} has an empty {column} field",
+                        record.line,
+                    )
+                )
+
+        if not re.fullmatch(registry.source_id_pattern, record.source_id):
+            issues.append(
+                Issue(
+                    relative,
+                    "invalid-source-id",
+                    f"Source ID does not match {registry.source_id_pattern}: "
+                    f"{record.source_id}",
+                    record.line,
+                )
+            )
+        elif not record.source_id.startswith(record.expected_prefix):
+            issues.append(
+                Issue(
+                    relative,
+                    "source-id-section-mismatch",
+                    f"{record.source_id} is in '{record.section}' but that section "
+                    f"requires IDs beginning with {record.expected_prefix}",
+                    record.line,
+                )
+            )
+
+        if record.evidence_review not in self.contract.evidence_review_statuses:
+            issues.append(
+                Issue(
+                    relative,
+                    "invalid-evidence-status",
+                    f"unsupported Evidence review status: {record.evidence_review}",
+                    record.line,
+                )
+            )
+        if record.integration_audit not in self.contract.integration_audit_statuses:
+            issues.append(
+                Issue(
+                    relative,
+                    "invalid-integration-status",
+                    f"unsupported Integration audit status: {record.integration_audit}",
+                    record.line,
+                )
+            )
+
+        if record.integration_audit == registry.verified_status:
+            if record.evidence_review != registry.verified_requires_evidence_status:
+                issues.append(
+                    Issue(
+                        relative,
+                        "verified-requires-reviewed-brief",
+                        f"{record.source_id} is {registry.verified_status}, so Evidence "
+                        "review must be "
+                        f"{registry.verified_requires_evidence_status}",
+                        record.line,
+                    )
+                )
+            if not re.fullmatch(registry.date_pattern, record.last_verified):
+                issues.append(
+                    Issue(
+                        relative,
+                        "verified-date-required",
+                        f"{record.source_id} is Verified but Last verified is not "
+                        "YYYY-MM-DD",
+                        record.line,
+                    )
+                )
+            else:
+                try:
+                    date.fromisoformat(record.last_verified)
+                except ValueError:
+                    issues.append(
+                        Issue(
+                            relative,
+                            "invalid-verification-date",
+                            f"{record.source_id} has an invalid calendar date: "
+                            f"{record.last_verified}",
+                            record.line,
+                        )
+                    )
+        elif record.last_verified != registry.empty_date:
+            issues.append(
+                Issue(
+                    relative,
+                    "unverified-date-prohibited",
+                    f"{record.source_id} is not Verified, so Last verified must be "
+                    f"{registry.empty_date}",
+                    record.line,
+                )
+            )
+
+        if record.evidence_review in registry.local_brief_link_required_for:
+            issues.extend(self._validate_reviewed_brief_link(record))
+
+        return issues
+
+    def _validate_reviewed_brief_link(self, record: SourceRecord) -> list[Issue]:
+        relative = self.contract.source_registry
+        if not record.brief_link:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-required",
+                    f"{record.source_id} is {record.evidence_review} but has no "
+                    "local evidence-brief link",
+                    record.line,
+                )
+            ]
+        if "://" in record.brief_link or record.brief_link.startswith("#"):
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-not-local",
+                    f"{record.source_id} must link to a repository evidence brief",
+                    record.line,
+                )
+            ]
+
+        evidence_root = self._path(relative).parent.resolve()
+        brief_path = (evidence_root / record.brief_link).resolve()
+        try:
+            relative_brief = brief_path.relative_to(evidence_root)
+        except ValueError:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-outside-evidence",
+                    f"{record.source_id} evidence-brief link must stay under evidence/",
+                    record.line,
+                )
+            ]
+
+        if len(relative_brief.parts) < 2 or relative_brief.suffix.lower() != ".md":
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-link-invalid-path",
+                    f"{record.source_id} must link to a Markdown brief in an "
+                    "evidence-class subdirectory",
+                    record.line,
+                )
+            ]
+        if relative_brief.parts[0] != record.expected_brief_directory:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-wrong-class",
+                    f"{record.source_id} must link to a brief under "
+                    f"evidence/{record.expected_brief_directory}/",
+                    record.line,
+                )
+            ]
+        if relative_brief.name.lower() == "readme.md":
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-index-prohibited",
+                    f"{record.source_id} links to an evidence-class index, not a brief",
+                    record.line,
+                )
+            ]
+        if not brief_path.is_file():
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-missing",
+                    f"{record.source_id} linked evidence brief does not exist: "
+                    f"{record.brief_link}",
+                    record.line,
+                )
+            ]
+
+        try:
+            brief_text = brief_path.read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-unreadable",
+                    f"{record.source_id} linked evidence brief cannot be read: {exc}",
+                    record.line,
+                )
+            ]
+
+        active_text = "\n".join(
+            visible_text(source_line.text)
+            for source_line in scan_markdown_lines(brief_text)
+            if source_line.active and visible_text(source_line.text)
+        )
+        if not active_text:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-empty",
+                    f"{record.source_id} linked evidence brief has no active content",
+                    record.line,
+                )
+            ]
+
+        source_id = re.escape(record.source_id)
+        source_id_pattern = re.compile(
+            rf"(?<![A-Za-z0-9-]){source_id}(?![A-Za-z0-9-])"
+        )
+        if source_id_pattern.search(active_text) is None:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-source-id-missing",
+                    f"{record.source_id} linked evidence brief does not contain its "
+                    "exact Source ID in active Markdown",
+                    record.line,
+                )
+            ]
+        return []
+
+
+def validate_repository(
+    root: Path,
+    contract_path: Path | None = None,
+) -> tuple[Issue, ...]:
+    root = root.resolve()
+    path = contract_path or root / "governance/repository-contract.toml"
+    contract = load_contract(path)
+    return RepositoryValidator(root, contract).validate()
