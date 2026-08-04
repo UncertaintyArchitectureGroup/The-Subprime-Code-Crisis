@@ -87,10 +87,10 @@ def _string_list(data: dict[str, Any], key: str) -> tuple[str, ...]:
     return tuple(value)
 
 
-def _positive_int(data: dict[str, Any], key: str) -> int:
+def _nonnegative_int(data: dict[str, Any], key: str) -> int:
     value = data.get(key)
-    if not isinstance(value, int) or isinstance(value, bool) or value < 1:
-        raise ContractError(f"{key} must be a positive integer")
+    if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+        raise ContractError(f"{key} must be a non-negative integer")
     return value
 
 
@@ -136,7 +136,7 @@ def _registry_sections(data: dict[str, Any]) -> tuple[RegistrySectionRequirement
             _string(item, "brief_directory"),
             f"registry.sections[{index}].brief_directory",
         )
-        minimum_rows = _positive_int(item, "minimum_rows")
+        minimum_rows = _nonnegative_int(item, "minimum_rows")
         if heading in headings:
             raise ContractError(f"duplicate registry section heading: {heading}")
         if id_prefix in prefixes:
