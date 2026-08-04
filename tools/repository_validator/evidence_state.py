@@ -194,6 +194,23 @@ def validate_transition(old: SourceRecord, new: SourceRecord) -> tuple[str, ...]
         if new.last_verified != "—":
             errors.append("changed source identity requires Last verified = —")
 
+    old_current_use = old.current_use_raw or old.current_use
+    new_current_use = new.current_use_raw or new.current_use
+    integration_surface_changed = (
+        set(registry_current_use_paths(old_current_use))
+        != set(registry_current_use_paths(new_current_use))
+        or old.brief_link != new.brief_link
+    )
+    if old.integration_audit == "Verified" and integration_surface_changed:
+        if new.integration_audit != "Needs re-verification":
+            errors.append(
+                "changed verified integration surface requires Integration audit = Needs re-verification"
+            )
+        if new.last_verified != "—":
+            errors.append(
+                "changed verified integration surface requires Last verified = —"
+            )
+
     if old.evidence_review == "Reviewed brief" and new.evidence_review == "Registered":
         errors.append("Reviewed brief may not transition directly to Registered")
     if old.integration_audit == "Verified" and new.integration_audit not in {
