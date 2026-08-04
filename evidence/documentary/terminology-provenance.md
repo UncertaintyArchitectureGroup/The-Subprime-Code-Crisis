@@ -1,3 +1,12 @@
++++
+source_ids = ["D-2025-05", "D-2025-06", "D-2026-04"]
+evidence_review = "Reviewed brief"
+integration_audit = "In progress"
+last_verified = "—"
+independent_review = "Review unavailable"
+current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "evidence/SOURCES.md", "evidence/documentary/README.md"]
++++
+
 # Terminology provenance: early located public records
 
 ## Review scope
