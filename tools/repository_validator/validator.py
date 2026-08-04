@@ -189,6 +189,7 @@ class RepositoryValidator:
                 path.read_text(encoding="utf-8"),
                 self.contract.registry.required_columns,
                 self.contract.registry.sections,
+                self.contract.registry.source_id_pattern,
             )
         except RegistryParseError as exc:
             return [Issue(relative, "source-registry-parse", str(exc))]
