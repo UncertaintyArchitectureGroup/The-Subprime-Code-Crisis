@@ -9,7 +9,9 @@ _LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 _HTML_RE = re.compile(r"<[^>]+>")
 _TABLE_SEPARATOR_RE = re.compile(r"^:?-{3,}:?$")
 _INLINE_CODE_RE = re.compile(r"`([^`]+)`")
-_LIST_ITEM_RE = re.compile(r"^\s*-\s*(.*?)\s*$")
+_LIST_ITEM_RE = re.compile(
+    r"^\s*(?P<marker>[-+*]|\d+[.)])\s+(?P<body>.*?)\s*$"
+)
 _CANONICAL_STATUS_ITEM_RE = re.compile(r"^`([^`]+)`$")
 
 
@@ -24,6 +26,7 @@ class MarkdownTable:
 class MarkdownListItem:
     value: str
     raw: str
+    marker: str
     line: int
     canonical_inline_code: bool
 
@@ -140,7 +143,7 @@ def parse_markdown_tables(text: str) -> tuple[MarkdownTable, ...]:
 
 
 def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem, ...]:
-    """Return every Markdown dash-list item in one heading block."""
+    """Return every Markdown list item in one heading block."""
     collecting = False
     items: list[MarkdownListItem] = []
     in_fence = False
@@ -174,12 +177,14 @@ def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem,
         bullet = _LIST_ITEM_RE.match(line)
         if not bullet:
             continue
-        raw = bullet.group(1).strip()
-        canonical = _CANONICAL_STATUS_ITEM_RE.fullmatch(raw)
+        marker = bullet.group("marker")
+        raw = bullet.group("body").strip()
+        canonical = marker == "-" and _CANONICAL_STATUS_ITEM_RE.fullmatch(raw)
         items.append(
             MarkdownListItem(
                 value=visible_text(raw),
                 raw=raw,
+                marker=marker,
                 line=line_number,
                 canonical_inline_code=canonical is not None,
             )
