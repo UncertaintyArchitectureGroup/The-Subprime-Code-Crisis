@@ -35,7 +35,8 @@ def check(policy_root: Path, candidate_root: Path | None = None) -> tuple[str, .
     linked_briefs: dict[str, set[str]] = {}
 
     for record in records:
-        for value in registry_current_use_paths(record.current_use):
+        current_use_source = record.current_use_raw or record.current_use
+        for value in registry_current_use_paths(current_use_source):
             problem = validate_repo_path(candidate_root, value)
             if problem:
                 errors.append(
