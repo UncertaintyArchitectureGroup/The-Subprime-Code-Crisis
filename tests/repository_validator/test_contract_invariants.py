@@ -22,7 +22,7 @@ def write_fixture(root: Path, registry: str) -> None:
     )
     (root / "evidence/SOURCES.md").write_text(registry, encoding="utf-8")
     (root / "evidence/primary/example.md").write_text(
-        "# Example brief\n", encoding="utf-8"
+        "# Example brief\n\nSource ID: P-2026-01\n", encoding="utf-8"
     )
     (root / "governance/status-model.md").write_text(
         STATUS_MODEL, encoding="utf-8"
@@ -140,6 +140,40 @@ class ContractInvariantTests(unittest.TestCase):
             self.assertIn("duplicate-evidence-status", codes)
             self.assertIn("evidence-status-model-drift", codes)
 
+    def test_duplicate_evidence_status_heading_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root, registry_text())
+            duplicate = (
+                STATUS_MODEL
+                + "\n### Allowed Evidence review statuses\n\n- `Archived`\n"
+            )
+            (root / "governance/status-model.md").write_text(
+                duplicate,
+                encoding="utf-8",
+            )
+            self.assertIn(
+                "duplicate-evidence-status-heading",
+                validation_codes(root),
+            )
+
+    def test_duplicate_integration_status_heading_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root, registry_text())
+            duplicate = (
+                STATUS_MODEL
+                + "\n### Allowed Integration audit statuses\n\n- `Archived`\n"
+            )
+            (root / "governance/status-model.md").write_text(
+                duplicate,
+                encoding="utf-8",
+            )
+            self.assertIn(
+                "duplicate-integration-status-heading",
+                validation_codes(root),
+            )
+
     def test_reviewed_brief_link_is_required(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
@@ -185,6 +219,44 @@ class ContractInvariantTests(unittest.TestCase):
                 "# Documentary brief\n", encoding="utf-8"
             )
             self.assertIn("reviewed-brief-wrong-class", validation_codes(root))
+
+    def test_reviewed_brief_cannot_be_empty(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root, registry_text())
+            (root / "evidence/primary/example.md").write_text("", encoding="utf-8")
+            self.assertIn("reviewed-brief-empty", validation_codes(root))
+
+    def test_reviewed_brief_must_contain_exact_source_id(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root, registry_text())
+            (root / "evidence/primary/example.md").write_text(
+                "# Other source\n\nSource ID: P-2026-02\n",
+                encoding="utf-8",
+            )
+            self.assertIn(
+                "reviewed-brief-source-id-missing",
+                validation_codes(root),
+            )
+
+    def test_shared_reviewed_brief_may_contain_multiple_source_ids(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            first = registry_text(integration="In progress", verified="—")
+            first_row = next(
+                line for line in first.splitlines() if line.startswith("| **P-")
+            )
+            second_row = first_row.replace("P-2026-01", "P-2026-02")
+            write_fixture(root, first.rstrip() + "\n" + second_row + "\n")
+            (root / "evidence/primary/example.md").write_text(
+                "# Shared brief\n\nSources: P-2026-01 and P-2026-02.\n",
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                RepositoryValidator(root, make_contract()).validate(),
+                (),
+            )
 
     def test_malformed_required_registry_header_is_reported(self) -> None:
         with TemporaryDirectory() as directory:
@@ -247,6 +319,20 @@ class ContractInvariantTests(unittest.TestCase):
             write_fixture(root, broken)
             self.assertIn("source-registry-parse", validation_codes(root))
 
+    def test_malformed_prefixed_row_after_interruption_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            valid = registry_text()
+            original_row = next(
+                line for line in valid.splitlines() if line.startswith("| **P-")
+            )
+            broken = valid.replace(
+                original_row,
+                original_row + "\n\n| **P-2025-2** | Broken source | Registered |",
+            )
+            write_fixture(root, broken)
+            self.assertIn("source-registry-parse", validation_codes(root))
+
     def test_plain_source_line_after_interruption_is_reported(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
@@ -257,6 +343,20 @@ class ContractInvariantTests(unittest.TestCase):
             broken = valid.replace(
                 original_row,
                 original_row + "\n\nP-2025-02 Broken source row",
+            )
+            write_fixture(root, broken)
+            self.assertIn("source-registry-parse", validation_codes(root))
+
+    def test_plain_malformed_prefixed_line_after_interruption_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            valid = registry_text()
+            original_row = next(
+                line for line in valid.splitlines() if line.startswith("| **P-")
+            )
+            broken = valid.replace(
+                original_row,
+                original_row + "\n\nP-ABC Broken source row",
             )
             write_fixture(root, broken)
             self.assertIn("source-registry-parse", validation_codes(root))
