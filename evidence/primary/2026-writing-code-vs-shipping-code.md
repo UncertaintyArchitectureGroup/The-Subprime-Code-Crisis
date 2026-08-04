@@ -1,3 +1,12 @@
++++
+source_ids = ["P-2026-01"]
+evidence_review = "Reviewed brief"
+integration_audit = "Verified"
+last_verified = "2026-07-27"
+independent_review = "Confirmed"
+current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md"]
++++
+
 # Writing Code vs. Shipping Code
 
 ## Citation
