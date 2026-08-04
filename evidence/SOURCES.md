@@ -74,9 +74,12 @@ Documentary and methodology sources use the same review lifecycle. Their briefs 
 
 ## Datasets
 
-Dataset-level entries should be added to `datasets/README.md` when the repository independently uses, republishes, or analyzes a dataset. Datasets merely described inside an evidence brief do not need a separate registry entry unless they become reusable repository assets.
+| ID | Source | Evidence review | Integration audit | Last verified | Can support | Current use |
+| --- | --- | --- | --- | --- | --- | --- |
 
-Dataset registry entries must use the same `Evidence review`, `Integration audit`, and `Last verified` fields.
+Dataset-level entries should be added here and to `datasets/README.md` when the repository independently uses, republishes, or analyzes a dataset. Datasets merely described inside an evidence brief do not need a separate registry entry unless they become reusable repository assets.
+
+Dataset registry entries use `DS-YYYY-NN` IDs and the same `Evidence review`, `Integration audit`, and `Last verified` fields.
 
 ## Registry maintenance rules
 
