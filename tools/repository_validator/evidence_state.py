@@ -18,7 +18,7 @@ REVIEW_OUTCOMES = (
 )
 _INLINE_CODE_RE = re.compile(r"`([^`]+)`")
 _PATH_TOKEN_RE = re.compile(
-    r"(?<![A-Za-z0-9_.-])(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.(?:md|toml|ya?ml|py|json|csv)(?![A-Za-z0-9_.-])"
+    r"(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.(?:md|toml|ya?ml|py|json|csv)"
 )
 _PATH_FULL_RE = re.compile(
     r"(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.(?:md|toml|ya?ml|py|json|csv)"
