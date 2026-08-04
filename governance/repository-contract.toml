@@ -35,6 +35,9 @@ required_files = [
   "governance/integration-audit.md",
   "governance/evidence-discovery.md",
   "governance/independent-review.md",
+  "governance/pr-process-and-synchronization.md",
+  "governance/synchronization-matrix.toml",
+  "governance/work-records/README.md",
   "report/01_the_illusion.md",
   "report/02_broken_mechanics.md",
   "report/03_the_aftermath.md",
@@ -45,6 +48,7 @@ required_files = [
   "protocols/04_systemic_cure.md",
   "governance/repository-contract.toml",
   "tools/__init__.py",
+  "tools/repository_gate.py",
   "tools/repository_validator/__init__.py",
   "tools/repository_validator/__main__.py",
   "tools/repository_validator/contract.py",
@@ -52,10 +56,13 @@ required_files = [
   "tools/repository_validator/registry.py",
   "tools/repository_validator/validator.py",
   "tests/__init__.py",
+  "tests/test_repository_gate.py",
   "tests/repository_validator/__init__.py",
   "tests/repository_validator/test_contract_invariants.py",
   "tests/repository_validator/test_validator.py",
+  ".github/pull_request_template.md",
   ".github/workflows/main-health.yml",
+  ".github/workflows/repository-gate.yml",
 ]
 
 [status_enums]
@@ -236,6 +243,21 @@ required_headings = [
   "Required record",
   "Assessment-record completion",
 ]
+
+[[documents]]
+path = "governance/pr-process-and-synchronization.md"
+required_headings = [
+  "Status and precedence",
+  "Pull request records",
+  "Changed-path classification",
+  "Changelog decision",
+  "Critical deletion protection",
+  "Repository Gate",
+]
+
+[[documents]]
+path = "governance/work-records/README.md"
+required_headings = ["Machine-readable work records", "Required shape"]
 
 [[documents]]
 path = "governance/templates.md"
