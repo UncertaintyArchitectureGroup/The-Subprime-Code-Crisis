@@ -13,6 +13,8 @@ Every governed pull request uses both:
 
 The work record must use one of the canonical independent-review outcomes: `Confirmed`, `Corrections required`, `Unresolved disagreement`, or `Review unavailable`.
 
+Merged work records are append-only repository history. A later pull request may add its own record but may not modify, delete, or rename an existing `governance/work-records/*.toml` file. Corrections must be recorded in a new work record that references the earlier record rather than rewriting it.
+
 ## Changed-path classification
 
 `governance/synchronization-matrix.toml` maps repository paths to synchronization surfaces. Repository Gate fails closed when a changed path is not classified or when the work record omits a required surface.
@@ -29,6 +31,8 @@ The work record must declare exactly one decision:
 ## Critical deletion protection
 
 Critical paths listed in the trusted base-branch synchronization matrix cannot be deleted or renamed by an ordinary pull request. Changing that protected set is itself a substantive governance change and does not weaken protection for the pull request proposing the change.
+
+Historical work records receive prefix-based append-only protection rather than relying on the exact-path critical list. Repository Gate rejects modification, deletion, or rename of an existing TOML work record while still allowing exactly one newly added record for the current pull request.
 
 ## Repository Gate
 
