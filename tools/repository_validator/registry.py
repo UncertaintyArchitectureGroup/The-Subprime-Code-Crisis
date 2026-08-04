@@ -31,6 +31,7 @@ class SourceRecord:
     brief_link: str | None
     section: str
     expected_prefix: str
+    expected_brief_directory: str
     line: int
 
 
@@ -97,12 +98,7 @@ def _h2_sections(text: str) -> dict[str, RegistrySection]:
     return sections
 
 
-def _parse_source_table(
-    section: RegistrySection,
-    requirement: RegistrySectionRequirement,
-    required_columns: tuple[str, ...],
-) -> tuple[SourceRecord, ...]:
-    lines = section.text.splitlines()
+def _table_candidates(lines: list[str]) -> list[int]:
     candidates: list[int] = []
     for index in range(len(lines) - 1):
         if "|" not in lines[index]:
@@ -115,6 +111,25 @@ def _parse_source_table(
             and is_table_separator_row(separator)
         ):
             candidates.append(index)
+    return candidates
+
+
+def _looks_like_later_source_row(
+    line: str,
+    required_columns: tuple[str, ...],
+) -> bool:
+    if "|" not in line:
+        return False
+    return len(split_table_row(line)) == len(required_columns)
+
+
+def _parse_source_table(
+    section: RegistrySection,
+    requirement: RegistrySectionRequirement,
+    required_columns: tuple[str, ...],
+) -> tuple[SourceRecord, ...]:
+    lines = section.text.splitlines()
+    candidates = _table_candidates(lines)
 
     if len(candidates) != 1:
         raise RegistryParseError(
@@ -123,18 +138,6 @@ def _parse_source_table(
         )
 
     header_index = candidates[0]
-    unexpected_before = [
-        (index, line)
-        for index, line in enumerate(lines[:header_index])
-        if line.strip()
-    ]
-    if unexpected_before:
-        index, _ = unexpected_before[0]
-        raise RegistryParseError(
-            f"section '{section.name}' contains non-table content before its source "
-            f"table on line {section.content_start_line + index}"
-        )
-
     raw_headers = split_table_row(lines[header_index])
     headers = tuple(visible_text(header) for header in raw_headers)
     if headers != required_columns:
@@ -145,48 +148,44 @@ def _parse_source_table(
             f"found '{actual}'"
         )
 
-    body_start = header_index + 2
-    nonblank_body_indexes = [
-        index for index in range(body_start, len(lines)) if lines[index].strip()
-    ]
-    last_body_index = nonblank_body_indexes[-1] if nonblank_body_indexes else None
-
     records: list[SourceRecord] = []
-    if last_body_index is not None:
-        for index in range(body_start, last_body_index + 1):
-            line = lines[index]
-            if not line.strip():
-                raise RegistryParseError(
-                    f"section '{section.name}' has an interrupted source table on "
-                    f"line {section.content_start_line + index}"
-                )
-            if "|" not in line:
-                raise RegistryParseError(
-                    f"section '{section.name}' contains non-table content inside its "
-                    f"source table on line {section.content_start_line + index}"
-                )
-            cells = split_table_row(line)
-            if len(cells) != len(required_columns):
-                raise RegistryParseError(
-                    f"section '{section.name}' has a malformed source row on line "
-                    f"{section.content_start_line + index}; expected "
-                    f"{len(required_columns)} columns, found {len(cells)}"
-                )
-            raw = dict(zip(required_columns, cells, strict=True))
-            records.append(
-                SourceRecord(
-                    source_id=visible_text(raw["ID"]),
-                    source=visible_text(raw["Source"]),
-                    evidence_review=visible_text(raw["Evidence review"]),
-                    integration_audit=visible_text(raw["Integration audit"]),
-                    last_verified=visible_text(raw["Last verified"]),
-                    can_support=visible_text(raw["Can support"]),
-                    current_use=visible_text(raw["Current use"]),
-                    brief_link=first_link_target(raw["Evidence review"]),
-                    section=section.name,
-                    expected_prefix=requirement.id_prefix,
-                    line=section.content_start_line + index,
-                )
+    cursor = header_index + 2
+    while cursor < len(lines):
+        line = lines[cursor]
+        if not line.strip() or "|" not in line:
+            break
+        cells = split_table_row(line)
+        if len(cells) != len(required_columns):
+            raise RegistryParseError(
+                f"section '{section.name}' has a malformed source row on line "
+                f"{section.content_start_line + cursor}; expected "
+                f"{len(required_columns)} columns, found {len(cells)}"
+            )
+        raw = dict(zip(required_columns, cells, strict=True))
+        records.append(
+            SourceRecord(
+                source_id=visible_text(raw["ID"]),
+                source=visible_text(raw["Source"]),
+                evidence_review=visible_text(raw["Evidence review"]),
+                integration_audit=visible_text(raw["Integration audit"]),
+                last_verified=visible_text(raw["Last verified"]),
+                can_support=visible_text(raw["Can support"]),
+                current_use=visible_text(raw["Current use"]),
+                brief_link=first_link_target(raw["Evidence review"]),
+                section=section.name,
+                expected_prefix=requirement.id_prefix,
+                expected_brief_directory=requirement.brief_directory,
+                line=section.content_start_line + cursor,
+            )
+        )
+        cursor += 1
+
+    for index in range(cursor, len(lines)):
+        line = lines[index]
+        if _looks_like_later_source_row(line, required_columns):
+            raise RegistryParseError(
+                f"section '{section.name}' has a source row after the table was "
+                f"interrupted on line {section.content_start_line + index}"
             )
 
     if len(records) < requirement.minimum_rows:
