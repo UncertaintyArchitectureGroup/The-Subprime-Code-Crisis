@@ -58,12 +58,36 @@ class ContractInvariantTests(unittest.TestCase):
             self.assertIn("required-file-missing", codes)
             self.assertIn("required-heading-missing", codes)
 
+    def test_commented_required_heading_is_not_counted(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root, registry_text())
+            (root / "AGENTS.md").write_text(
+                "# AGENTS.md\n\n<!--\n## Repository Constitution\n-->\n",
+                encoding="utf-8",
+            )
+            self.assertIn("required-heading-missing", validation_codes(root))
+
     def test_status_model_drift_is_reported(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
             write_fixture(root, registry_text())
             (root / "governance/status-model.md").write_text(
                 STATUS_MODEL.replace("- `Needs re-review`\n", ""),
+                encoding="utf-8",
+            )
+            self.assertIn("evidence-status-model-drift", validation_codes(root))
+
+    def test_commented_statuses_do_not_satisfy_model(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root, registry_text())
+            commented = STATUS_MODEL.replace(
+                "- `Registered`\n- `Brief in progress`\n- `Reviewed brief`\n- `Needs re-review`\n",
+                "<!--\n- `Registered`\n- `Brief in progress`\n- `Reviewed brief`\n- `Needs re-review`\n-->\n",
+            )
+            (root / "governance/status-model.md").write_text(
+                commented,
                 encoding="utf-8",
             )
             self.assertIn("evidence-status-model-drift", validation_codes(root))
@@ -209,6 +233,34 @@ class ContractInvariantTests(unittest.TestCase):
             write_fixture(root, broken)
             self.assertIn("source-registry-parse", validation_codes(root))
 
+    def test_malformed_row_after_interruption_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            valid = registry_text()
+            original_row = next(
+                line for line in valid.splitlines() if line.startswith("| **P-")
+            )
+            broken = valid.replace(
+                original_row,
+                original_row + "\n\n| **P-2025-02** | Broken source | Registered |",
+            )
+            write_fixture(root, broken)
+            self.assertIn("source-registry-parse", validation_codes(root))
+
+    def test_plain_source_line_after_interruption_is_reported(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            valid = registry_text()
+            original_row = next(
+                line for line in valid.splitlines() if line.startswith("| **P-")
+            )
+            broken = valid.replace(
+                original_row,
+                original_row + "\n\nP-2025-02 Broken source row",
+            )
+            write_fixture(root, broken)
+            self.assertIn("source-registry-parse", validation_codes(root))
+
     def test_required_registry_section_cannot_be_empty(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
@@ -247,7 +299,7 @@ class ContractInvariantTests(unittest.TestCase):
         with TemporaryDirectory() as directory:
             path = write_contract_variant(
                 Path(directory),
-                r"source_id_pattern = '^(?:P|D|S|M)-\d{4}-\d{2}$'",
+                r"source_id_pattern = '^(?:DS|P|D|S|M)-\d{4}-\d{2}$'",
                 "source_id_pattern = '['",
             )
             with self.assertRaises(ContractError):
