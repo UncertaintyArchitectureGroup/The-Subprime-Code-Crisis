@@ -57,6 +57,7 @@ def make_contract() -> RepositoryContract:
                 RegistrySectionRequirement(
                     heading="Primary empirical research",
                     id_prefix="P-",
+                    brief_directory="primary",
                     minimum_rows=1,
                 ),
             ),
@@ -171,6 +172,21 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual(records[0].evidence_review, "Reviewed brief")
         self.assertEqual(records[0].brief_link, "primary/example.md")
         self.assertEqual(records[0].expected_prefix, "P-")
+        self.assertEqual(records[0].expected_brief_directory, "primary")
+
+    def test_parser_allows_prose_before_and_after_source_table(self) -> None:
+        contract = make_contract()
+        text = registry_text().replace(
+            "## Primary empirical research\n\n",
+            "## Primary empirical research\n\nRegistered empirical sources follow.\n\n",
+        ).rstrip() + "\n\nPublication details remain in each evidence brief.\n"
+        records = parse_source_registry(
+            text,
+            contract.registry.required_columns,
+            contract.registry.sections,
+        )
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0].source_id, "P-2026-01")
 
 
 class ValidatorTests(unittest.TestCase):
@@ -232,6 +248,12 @@ class ValidatorTests(unittest.TestCase):
         self.assertIn("Verified", contract.integration_audit_statuses)
         headings = tuple(section.heading for section in contract.registry.sections)
         self.assertIn("Primary empirical research", headings)
+        primary = next(
+            section
+            for section in contract.registry.sections
+            if section.id_prefix == "P-"
+        )
+        self.assertEqual(primary.brief_directory, "primary")
         self.assertIn("LICENSE.md", contract.required_files)
         self.assertIn("evidence/datasets/README.md", contract.required_files)
 
