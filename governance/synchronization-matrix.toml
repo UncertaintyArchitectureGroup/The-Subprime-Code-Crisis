@@ -16,9 +16,14 @@ critical_paths = [
   "governance/repository-contract.toml",
   "governance/status-model.md",
   "governance/content-synchronization.md",
+  "governance/pr-process-and-synchronization.md",
   "governance/synchronization-matrix.toml",
+  "governance/work-records/README.md",
   ".github/pull_request_template.md",
+  ".github/workflows/main-health.yml",
   ".github/workflows/repository-gate.yml",
+  "tools/repository_gate.py",
+  "tests/test_repository_gate.py",
 ]
 
 # Every changed path must match at least one classifier rule. The first matching
