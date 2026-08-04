@@ -7,6 +7,7 @@ from .contract import RegistrySectionRequirement
 from .markdown import (
     first_link_target,
     is_table_separator_row,
+    scan_markdown_lines,
     split_table_row,
     visible_text,
 )
@@ -49,8 +50,6 @@ def _h2_sections(text: str) -> dict[str, RegistrySection]:
     current_heading_line = 0
     current_content_start = 0
     current_lines: list[str] = []
-    in_fence = False
-    fence_marker = ""
 
     def finish() -> None:
         nonlocal current_name, current_lines
@@ -69,26 +68,14 @@ def _h2_sections(text: str) -> dict[str, RegistrySection]:
         current_name = None
         current_lines = []
 
-    for line_number, line in enumerate(text.splitlines(), start=1):
-        stripped = line.lstrip()
-        if stripped.startswith(("```", "~~~")):
-            marker = stripped[:3]
-            if not in_fence:
-                in_fence = True
-                fence_marker = marker
-            elif marker == fence_marker:
-                in_fence = False
-                fence_marker = ""
-            if current_name is not None:
-                current_lines.append(line)
-            continue
-
-        heading = None if in_fence else _H2_RE.match(line)
+    for source_line in scan_markdown_lines(text):
+        line = source_line.text if source_line.active else ""
+        heading = _H2_RE.match(line) if source_line.active else None
         if heading:
             finish()
             current_name = visible_text(heading.group(1))
-            current_heading_line = line_number
-            current_content_start = line_number + 1
+            current_heading_line = source_line.line
+            current_content_start = source_line.line + 1
             continue
 
         if current_name is not None:
@@ -114,19 +101,29 @@ def _table_candidates(lines: list[str]) -> list[int]:
     return candidates
 
 
-def _looks_like_later_source_row(
-    line: str,
-    required_columns: tuple[str, ...],
-) -> bool:
-    if "|" not in line:
+def _source_id_at_row_start(line: str, source_id_pattern: str) -> bool:
+    if not line.strip():
         return False
-    return len(split_table_row(line)) == len(required_columns)
+
+    if "|" in line:
+        cells = split_table_row(line)
+        if not cells:
+            return False
+        candidate = visible_text(cells[0])
+        return re.fullmatch(source_id_pattern, candidate) is not None
+
+    visible = visible_text(line)
+    if not visible:
+        return False
+    first_token = visible.split(maxsplit=1)[0].rstrip(":;,.—–")
+    return re.fullmatch(source_id_pattern, first_token) is not None
 
 
 def _parse_source_table(
     section: RegistrySection,
     requirement: RegistrySectionRequirement,
     required_columns: tuple[str, ...],
+    source_id_pattern: str,
 ) -> tuple[SourceRecord, ...]:
     lines = section.text.splitlines()
     candidates = _table_candidates(lines)
@@ -182,9 +179,9 @@ def _parse_source_table(
 
     for index in range(cursor, len(lines)):
         line = lines[index]
-        if _looks_like_later_source_row(line, required_columns):
+        if _source_id_at_row_start(line, source_id_pattern):
             raise RegistryParseError(
-                f"section '{section.name}' has a source row after the table was "
+                f"section '{section.name}' has a source-like row after the table was "
                 f"interrupted on line {section.content_start_line + index}"
             )
 
@@ -200,6 +197,7 @@ def parse_source_registry(
     text: str,
     required_columns: tuple[str, ...],
     required_sections: tuple[RegistrySectionRequirement, ...],
+    source_id_pattern: str,
 ) -> tuple[SourceRecord, ...]:
     records: list[SourceRecord] = []
     sections = _h2_sections(text)
@@ -211,9 +209,12 @@ def parse_source_registry(
                 f"required Source Registry section is missing: {requirement.heading}"
             )
         records.extend(
-            _parse_source_table(section, requirement, required_columns)
+            _parse_source_table(
+                section,
+                requirement,
+                required_columns,
+                source_id_pattern,
+            )
         )
 
-    if not records:
-        raise RegistryParseError("Source Registry contains no source records")
     return tuple(records)
