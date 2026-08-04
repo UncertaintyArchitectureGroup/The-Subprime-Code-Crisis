@@ -34,4 +34,4 @@ jobs:
         run: python3 -m tools.repository_validator --format github
 
       - name: Validate evidence-state integrity
-        run: python3 tools/evidence_state_check.py
+        run: python3 -m tools.evidence_state_check
