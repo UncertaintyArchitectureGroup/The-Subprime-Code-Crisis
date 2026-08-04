@@ -1,0 +1,96 @@
+matrix_version = 1
+
+# Files that may not be deleted or renamed by an ordinary pull request.
+# Changes to this list require an explicitly approved governance change.
+critical_paths = [
+  "AGENTS.md",
+  "DOCTRINE.md",
+  "GLOSSARY.md",
+  "SCOPE.md",
+  "ARTIFACT_MODEL.md",
+  "README.md",
+  "CHANGELOG.md",
+  "CONTRIBUTING.md",
+  "LICENSE.md",
+  "evidence/SOURCES.md",
+  "governance/repository-contract.toml",
+  "governance/status-model.md",
+  "governance/content-synchronization.md",
+  "governance/synchronization-matrix.toml",
+  ".github/pull_request_template.md",
+  ".github/workflows/repository-gate.yml",
+]
+
+# Every changed path must match at least one classifier rule. The first matching
+# rule supplies the primary surface; all matching rules contribute required
+# synchronization surfaces.
+
+[[classifiers]]
+name = "canonical-governance"
+patterns = ["AGENTS.md", "governance/**", "CONTRIBUTING.md", ".github/**", "tools/**", "tests/**"]
+primary_surface = "governance"
+requires = ["governance", "contributor-guidance", "history"]
+
+[[classifiers]]
+name = "doctrine-and-terms"
+patterns = ["DOCTRINE.md", "GLOSSARY.md", "TERMINOLOGY_AND_ATTRIBUTION.md"]
+primary_surface = "doctrine"
+requires = ["doctrine", "reader-navigation", "history"]
+
+[[classifiers]]
+name = "repository-architecture"
+patterns = ["SCOPE.md", "ARTIFACT_MODEL.md"]
+primary_surface = "repository-architecture"
+requires = ["repository-architecture", "reader-navigation", "history"]
+
+[[classifiers]]
+name = "source-registry"
+patterns = ["evidence/SOURCES.md", "evidence/*/README.md"]
+primary_surface = "source-registry"
+requires = ["source-registry", "evidence-indexes", "history"]
+
+[[classifiers]]
+name = "evidence-briefs"
+patterns = ["evidence/primary/**", "evidence/documentary/**", "evidence/secondary/**", "evidence/methodology/**", "evidence/datasets/**"]
+primary_surface = "evidence"
+requires = ["evidence", "source-registry", "evidence-indexes", "references", "history"]
+
+[[classifiers]]
+name = "report"
+patterns = ["report/**"]
+primary_surface = "report"
+requires = ["report", "reader-navigation", "source-registry", "history"]
+
+[[classifiers]]
+name = "protocols"
+patterns = ["protocols/**"]
+primary_surface = "protocols"
+requires = ["protocols", "reader-navigation", "source-registry", "history"]
+
+[[classifiers]]
+name = "reader-entry-points"
+patterns = ["README.md", "REFERENCES.md", "CITATION.cff"]
+primary_surface = "reader-navigation"
+requires = ["reader-navigation", "references", "history"]
+
+[[classifiers]]
+name = "history"
+patterns = ["CHANGELOG.md", "governance/work-records/**"]
+primary_surface = "history"
+requires = ["history"]
+
+[allowed_surfaces]
+values = [
+  "governance",
+  "contributor-guidance",
+  "doctrine",
+  "repository-architecture",
+  "source-registry",
+  "evidence",
+  "evidence-indexes",
+  "references",
+  "report",
+  "protocols",
+  "reader-navigation",
+  "history",
+]
