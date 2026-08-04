@@ -23,8 +23,12 @@ critical_paths = [
   ".github/workflows/main-health.yml",
   ".github/workflows/repository-gate.yml",
   "tools/repository_gate.py",
+  "tools/evidence_state_check.py",
+  "tools/evidence_transition_gate.py",
+  "tools/repository_validator/evidence_state.py",
   "tests/test_repository_gate.py",
   "tests/test_pr_governance_contract.py",
+  "tests/test_evidence_state_integrity.py",
 ]
 
 # Every changed path must match at least one classifier rule. The first matching
