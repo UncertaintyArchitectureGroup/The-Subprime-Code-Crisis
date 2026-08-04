@@ -318,7 +318,7 @@ class ValidatorTests(unittest.TestCase):
         )
         (root / "evidence/SOURCES.md").write_text(registry, encoding="utf-8")
         (root / "evidence/primary/example.md").write_text(
-            "# Example brief\n", encoding="utf-8"
+            "# Example brief\n\nSource ID: P-2026-01\n", encoding="utf-8"
         )
         (root / "governance/status-model.md").write_text(
             STATUS_MODEL, encoding="utf-8"
