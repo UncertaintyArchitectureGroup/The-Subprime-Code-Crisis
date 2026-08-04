@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import sys
 
@@ -14,9 +15,11 @@ from tools.repository_validator.evidence_state import (
 from tools.repository_validator.registry import RegistryParseError, parse_source_registry
 
 
-def check(root: Path) -> tuple[str, ...]:
-    contract = load_contract(root / "governance/repository-contract.toml")
-    registry_path = root / contract.source_registry
+def check(policy_root: Path, candidate_root: Path | None = None) -> tuple[str, ...]:
+    policy_root = policy_root.resolve()
+    candidate_root = (candidate_root or policy_root).resolve()
+    contract = load_contract(policy_root / "governance/repository-contract.toml")
+    registry_path = candidate_root / contract.source_registry
     try:
         records = parse_source_registry(
             registry_path.read_text(encoding="utf-8"),
@@ -33,7 +36,7 @@ def check(root: Path) -> tuple[str, ...]:
 
     for record in records:
         for value in registry_current_use_paths(record.current_use):
-            problem = validate_repo_path(root, value)
+            problem = validate_repo_path(candidate_root, value)
             if problem:
                 errors.append(
                     f"{contract.source_registry}:{record.line}: {record.source_id} "
@@ -42,13 +45,17 @@ def check(root: Path) -> tuple[str, ...]:
         if record.brief_link:
             brief_path = (registry_path.parent / record.brief_link).resolve()
             try:
-                relative = brief_path.relative_to(root.resolve()).as_posix()
+                relative = brief_path.relative_to(candidate_root).as_posix()
             except ValueError:
+                errors.append(
+                    f"{contract.source_registry}:{record.line}: {record.source_id} "
+                    "brief link escapes the candidate repository"
+                )
                 continue
             linked_briefs.setdefault(relative, set()).add(record.source_id)
 
     for relative, linked_ids in sorted(linked_briefs.items()):
-        path = root / relative
+        path = candidate_root / relative
         try:
             brief = parse_front_matter(path.read_text(encoding="utf-8"), relative)
         except (OSError, UnicodeError, EvidenceStateError) as exc:
@@ -60,7 +67,7 @@ def check(root: Path) -> tuple[str, ...]:
                 f"match registry links {sorted(linked_ids)}"
             )
         for error in validate_brief_state(
-            root,
+            candidate_root,
             brief,
             by_id,
             contract.evidence_review_statuses,
@@ -72,8 +79,14 @@ def check(root: Path) -> tuple[str, ...]:
     return tuple(errors)
 
 
-def main() -> int:
-    errors = check(Path.cwd())
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="Validate registry and evidence-brief state integrity"
+    )
+    parser.add_argument("--policy-root", type=Path, default=Path.cwd())
+    parser.add_argument("--candidate-root", type=Path)
+    args = parser.parse_args(argv)
+    errors = check(args.policy_root, args.candidate_root)
     if errors:
         for error in errors:
             print(f"::error::{error}")
