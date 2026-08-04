@@ -36,6 +36,8 @@ required_files = [
   "governance/evidence-discovery.md",
   "governance/independent-review.md",
   "governance/pr-process-and-synchronization.md",
+  "governance/github-enforcement.toml",
+  "governance/github-enforcement.md",
   "governance/synchronization-matrix.toml",
   "governance/work-records/README.md",
   "report/01_the_illusion.md",
@@ -65,6 +67,7 @@ required_files = [
   "tests/repository_validator/__init__.py",
   "tests/repository_validator/test_contract_invariants.py",
   "tests/repository_validator/test_validator.py",
+  ".github/CODEOWNERS",
   ".github/pull_request_template.md",
   ".github/workflows/main-health.yml",
   ".github/workflows/repository-gate.yml",
@@ -258,6 +261,18 @@ required_headings = [
   "Changelog decision",
   "Critical deletion protection",
   "Repository Gate",
+]
+
+[[documents]]
+path = "governance/github-enforcement.md"
+required_headings = [
+  "Status and precedence",
+  "Protected branch",
+  "Required checks and freshness",
+  "Pull request requirements",
+  "Merge strategy",
+  "CODEOWNERS",
+  "Activation boundary",
 ]
 
 [[documents]]
