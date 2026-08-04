@@ -17,14 +17,16 @@ jobs:
       - name: Check out trusted base governance
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
+          repository: ${{ github.event.pull_request.base.repo.full_name }}
           ref: ${{ github.event.pull_request.base.sha }}
           path: trusted
           persist-credentials: false
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Check out candidate repository
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.sha }}
           path: candidate
           persist-credentials: false
@@ -32,12 +34,18 @@ jobs:
 
       - name: Fetch comparison base into candidate checkout
         working-directory: candidate
-        run: git fetch --no-tags origin "${{ github.event.pull_request.base.sha }}"
+        env:
+          BASE_REPOSITORY: ${{ github.event.pull_request.base.repo.full_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git remote add governance-base "https://github.com/${BASE_REPOSITORY}.git"
+          git fetch --no-tags governance-base "${BASE_SHA}"
 
-      - name: Validate candidate with trusted base gate
+      - name: Validate candidate with trusted base gate and policy
         run: >-
           python3 trusted/tools/repository_gate.py
-          --root candidate
+          --policy-root trusted
+          --candidate-root candidate
           --repo candidate
           --base "${{ github.event.pull_request.base.sha }}"
           --head "${{ github.event.pull_request.head.sha }}"
