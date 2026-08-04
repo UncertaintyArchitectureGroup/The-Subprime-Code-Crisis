@@ -2,6 +2,8 @@
 
 Each pull request must add exactly one TOML record in this directory. The record is the machine-readable counterpart to the human-readable pull request template and is validated by Repository Gate.
 
+Merged TOML records are append-only history. Do not modify, delete, or rename an existing record. When a historical decision or declaration needs correction, add a new work record that names the earlier record and explains the correction; preserve the original record unchanged.
+
 ## Required shape
 
 ```toml
