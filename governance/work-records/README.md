@@ -2,7 +2,7 @@
 
 Each pull request must add exactly one TOML record in this directory. The record is the machine-readable counterpart to the human-readable pull request template and is validated by Repository Gate.
 
-Required shape:
+## Required shape
 
 ```toml
 record_version = 1
