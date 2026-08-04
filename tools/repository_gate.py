@@ -220,6 +220,10 @@ def validate(
 
         if change.status == "R" and change.old_path and is_work_record(change.old_path):
             errors.append(f"historical work record may not be renamed: {change.old_path}")
+            errors.append(
+                "historical work record may not be modified or deleted: "
+                + change.old_path
+            )
         elif is_work_record(change.path) and change.status != "A":
             errors.append(
                 f"historical work record may not be modified or deleted: {change.path}"
