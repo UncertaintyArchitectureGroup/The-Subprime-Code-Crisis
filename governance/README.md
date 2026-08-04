@@ -24,7 +24,7 @@ The Python 3.11+ standard-library validator under [`tools/repository_validator/`
 - every configured Source Registry section and its table schema;
 - Source ID uniqueness and format;
 - `Last verified` invariants; and
-- local evidence-brief links for sources marked `Reviewed brief`.
+- local evidence-brief links for sources marked `Reviewed brief`, including the configured evidence class and exclusion of class-index `README.md` files.
 
 Run it from the repository root:
 
