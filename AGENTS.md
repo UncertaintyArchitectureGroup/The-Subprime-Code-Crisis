@@ -133,6 +133,7 @@ Playbooks are normative procedural extensions of this file when listed as mandat
 - [`governance/evidence-discovery.md`](governance/evidence-discovery.md) — complete Flow E search, screening, Candidate Register, routing, and Independent Search Review method.
 - [`governance/independent-review.md`](governance/independent-review.md) — reviewer independence, materials, outcomes, correction loop, escalation, and relationship to verification.
 - [`governance/content-synchronization.md`](governance/content-synchronization.md) — mandatory affected-surface assessment and changelog decision for substantive repository changes.
+- [`governance/pr-process-and-synchronization.md`](governance/pr-process-and-synchronization.md) — mandatory PR record, changed-path classification, synchronization declaration, changelog decision, and Repository Gate procedure for every governed pull request.
 - [`governance/status-model.md`](governance/status-model.md) — the only definitions of allowed source states and transition rules.
 - [`governance/templates.md`](governance/templates.md) — mandatory record shapes when the applicable procedure requires them.
 
@@ -159,6 +160,10 @@ A source may be marked `Verified` only after every item in the [integration-audi
 ## PR and implementation rules
 
 - Implement approved substantive work in a reviewable PR and preserve its trigger, alternatives, human decision, implementation, and independent-review outcome.
+- Every governed pull request must use the human-readable `.github/pull_request_template.md` and add exactly one new machine-readable `governance/work-records/*.toml` record.
+- The work record must declare the applicable flow or approved procedure, human-decision reference, independent-review outcome, changelog decision, and all synchronization surfaces required by the trusted changed-path classifier. The PR body remains the human-readable review surface; the work record is only the machine-readable declaration.
+- The trusted `Repository Gate` checks changed-path classification, required synchronization surfaces, the changelog decision, the work-record shape, and protected deletions or renames. After the bootstrap workflow is merged to the default branch, branch rules must require the status check named `Repository Gate`.
+- A passing Repository Gate does not establish maintainer approval, evidence review, integration verification, independent confirmation, completion, or readiness for merge.
 - For substantial source work, prefer separate PRs for registration/brief, integration/corrections, separately approved README or protocol changes, independent-review corrections, and final default-branch verification status.
 - Do not set `Integration audit = Verified` until the default branch reflects the completed and independently confirmed state.
 - Use the [PR completion summary](governance/templates.md#pr-completion-summary). A PR must disclose unresolved decisions and independent review status; it must not be described as complete or ready for merge when review is not `Confirmed`.

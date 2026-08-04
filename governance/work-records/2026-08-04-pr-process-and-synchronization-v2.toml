@@ -1,0 +1,15 @@
+record_version = 1
+title = "PR process and synchronization contract"
+primary_flow = "Approved governance change"
+human_decision = "Maintainer approved PR 2 in conversation on 2026-08-04."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "The change adds a repository-wide PR gate and contributor obligations."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "The PR template and dedicated governance documentation carry the contributor-facing mechanics; no evidence, report, protocol, doctrine, or source-state artifact changes are applicable."
