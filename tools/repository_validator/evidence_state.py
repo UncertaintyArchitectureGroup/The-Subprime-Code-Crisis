@@ -16,8 +16,12 @@ REVIEW_OUTCOMES = (
     "Unresolved disagreement",
     "Review unavailable",
 )
-CURRENT_USE_PATH_RE = re.compile(
+_INLINE_CODE_RE = re.compile(r"`([^`]+)`")
+_PATH_TOKEN_RE = re.compile(
     r"(?<![A-Za-z0-9_.-])(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.(?:md|toml|ya?ml|py|json|csv)(?![A-Za-z0-9_.-])"
+)
+_PATH_FULL_RE = re.compile(
+    r"(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.(?:md|toml|ya?ml|py|json|csv)"
 )
 
 
@@ -97,7 +101,28 @@ def parse_front_matter(text: str, path: str) -> BriefState:
 
 
 def registry_current_use_paths(value: str) -> tuple[str, ...]:
-    return tuple(dict.fromkeys(CURRENT_USE_PATH_RE.findall(value)))
+    paths = [
+        span.strip()
+        for span in _INLINE_CODE_RE.findall(value)
+        if _PATH_FULL_RE.fullmatch(span.strip()) is not None
+    ]
+    return tuple(dict.fromkeys(paths))
+
+
+def validate_registry_current_use(value: str) -> tuple[str, ...]:
+    errors: list[str] = []
+    spans = _INLINE_CODE_RE.findall(value)
+    for span in spans:
+        candidate = span.strip()
+        if _PATH_FULL_RE.fullmatch(candidate) is None:
+            errors.append(
+                f"Current use inline code {candidate!r} must contain exactly one repository path"
+            )
+
+    without_inline_code = _INLINE_CODE_RE.sub("", value)
+    if _PATH_TOKEN_RE.search(without_inline_code):
+        errors.append("Current use repository paths must be enclosed in backticks")
+    return tuple(errors)
 
 
 def validate_repo_path(root: Path, value: str) -> str | None:
