@@ -140,6 +140,18 @@ def extract_headings(text: str) -> tuple[str, ...]:
     return tuple(headings)
 
 
+def heading_lines(text: str, heading: str) -> tuple[int, ...]:
+    """Return line numbers for every active occurrence of one Markdown heading."""
+    lines: list[int] = []
+    for source_line in scan_markdown_lines(text):
+        if not source_line.active:
+            continue
+        match = _HEADING_RE.match(source_line.text)
+        if match and visible_text(match.group(2)) == heading:
+            lines.append(source_line.line)
+    return tuple(lines)
+
+
 def split_table_row(line: str) -> tuple[str, ...]:
     stripped = line.strip()
     if stripped.startswith("|"):
