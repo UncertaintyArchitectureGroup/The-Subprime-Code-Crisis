@@ -1,0 +1,37 @@
+enforcement_version = 1
+repository = "UncertaintyArchitectureGroup/The-Subprime-Code-Crisis"
+target_branch = "main"
+ruleset_name = "Main branch enforcement"
+
+[merge_policy]
+allow_merge_commit = false
+allow_rebase_merge = false
+allow_squash_merge = true
+require_linear_history = true
+
+[pull_requests]
+required_approving_review_count = 1
+require_code_owner_review = true
+require_conversation_resolution = true
+dismiss_stale_reviews_on_push = true
+require_last_push_approval = true
+
+[status_checks]
+strict_branch_freshness = true
+required = ["Repository Gate"]
+
+[branch_protection]
+block_force_pushes = true
+block_deletions = true
+require_pull_request = true
+
+[reviewer_pool]
+team_required = false
+team_slug = ""
+activation_condition = "Set team_required = true and team_slug when an independent reviewer team exists and is granted repository access."
+
+[activation]
+repository_settings_applied = false
+ruleset_applied = false
+codeowners_active_after_merge = true
+note = "Repository settings and organization rulesets are external GitHub state. Apply them after this configuration is merged, then set both applied fields to true in a follow-up audited change."
