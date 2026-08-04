@@ -41,6 +41,50 @@ class PRGovernanceContractTests(unittest.TestCase):
         self.assertTrue(expected <= set(contract.required_files))
         self.assertTrue(expected <= set(matrix["critical_paths"]))
 
+    def test_github_enforcement_contour_is_required_and_critical(self) -> None:
+        expected = {
+            ".github/CODEOWNERS",
+            "governance/github-enforcement.toml",
+            "governance/github-enforcement.md",
+        }
+        contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
+        matrix = tomllib.loads(
+            (REPO_ROOT / "governance/synchronization-matrix.toml").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertTrue(expected <= set(contract.required_files))
+        self.assertTrue(expected <= set(matrix["critical_paths"]))
+
+    def test_github_enforcement_review_gates_are_conditional(self) -> None:
+        policy = tomllib.loads(
+            (REPO_ROOT / "governance/github-enforcement.toml").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(policy["pull_requests"]["required_approving_review_count"], 0)
+        self.assertFalse(policy["pull_requests"]["require_code_owner_review"])
+        self.assertFalse(policy["pull_requests"]["require_last_push_approval"])
+        self.assertFalse(policy["reviewer_pool"]["team_required"])
+        self.assertEqual(policy["reviewer_pool"]["team_slug"], "")
+
+    def test_github_enforcement_playbook_headings_are_part_of_contract(self) -> None:
+        contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
+        requirements = {document.path: document for document in contract.documents}
+        playbook = requirements["governance/github-enforcement.md"]
+        self.assertEqual(
+            playbook.required_headings,
+            (
+                "Status and precedence",
+                "Protected branch",
+                "Required checks and freshness",
+                "Pull request requirements",
+                "Merge strategy",
+                "CODEOWNERS",
+                "Activation boundary",
+            ),
+        )
+
     def test_pr_playbook_headings_are_part_of_executable_contract(self) -> None:
         contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
         requirements = {document.path: document for document in contract.documents}
