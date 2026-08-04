@@ -49,3 +49,11 @@ jobs:
           --repo candidate
           --base "${{ github.event.pull_request.base.sha }}"
           --head "${{ github.event.pull_request.head.sha }}"
+
+      - name: Validate evidence-state transitions with trusted policy
+        run: >-
+          PYTHONPATH=trusted python3 trusted/tools/evidence_transition_gate.py
+          --policy-root trusted
+          --candidate-root candidate
+          --repo candidate
+          --base "${{ github.event.pull_request.base.sha }}"
