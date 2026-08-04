@@ -16,6 +16,9 @@ REVIEW_OUTCOMES = (
     "Unresolved disagreement",
     "Review unavailable",
 )
+CURRENT_USE_PATH_RE = re.compile(
+    r"(?<![A-Za-z0-9_.-])(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.(?:md|toml|ya?ml|py|json|csv)(?![A-Za-z0-9_.-])"
+)
 
 
 class EvidenceStateError(ValueError):
@@ -94,7 +97,7 @@ def parse_front_matter(text: str, path: str) -> BriefState:
 
 
 def registry_current_use_paths(value: str) -> tuple[str, ...]:
-    return tuple(dict.fromkeys(re.findall(r"`([^`]+)`", value)))
+    return tuple(dict.fromkeys(CURRENT_USE_PATH_RE.findall(value)))
 
 
 def validate_repo_path(root: Path, value: str) -> str | None:
