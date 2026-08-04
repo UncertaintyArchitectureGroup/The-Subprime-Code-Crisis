@@ -19,12 +19,14 @@ After selecting a flow under `AGENTS.md`, read only its required playbooks plus 
 
 The Python 3.11+ standard-library validator under [`tools/repository_validator/`](../tools/repository_validator/) checks:
 
-- required files and required Markdown headings;
+- required files and required active Markdown headings;
 - exact Evidence review and Integration audit enums across supported Markdown list markers;
-- every configured Source Registry section and its table schema while allowing ordinary explanatory prose around the table;
-- Source ID uniqueness and format;
+- every configured Source Registry section and its table schema, including the zero-row dataset section, while allowing ordinary explanatory prose around the table;
+- Source ID uniqueness, format, class placement, and `DS-YYYY-NN` dataset IDs;
 - `Last verified` invariants; and
 - local evidence-brief links for sources marked `Reviewed brief`, including the configured evidence class and exclusion of class-index `README.md` files.
+
+Fenced code, multiline HTML comments, and indented code are treated as inactive Markdown and cannot satisfy required headings, status enums, or Source Registry tables.
 
 Run it from the repository root:
 
