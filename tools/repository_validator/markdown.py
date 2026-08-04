@@ -179,14 +179,16 @@ def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem,
             continue
         marker = bullet.group("marker")
         raw = bullet.group("body").strip()
-        canonical = marker == "-" and _CANONICAL_STATUS_ITEM_RE.fullmatch(raw)
+        canonical = (
+            marker == "-" and _CANONICAL_STATUS_ITEM_RE.fullmatch(raw) is not None
+        )
         items.append(
             MarkdownListItem(
                 value=visible_text(raw),
                 raw=raw,
                 marker=marker,
                 line=line_number,
-                canonical_inline_code=canonical is not None,
+                canonical_inline_code=canonical,
             )
         )
 
