@@ -11,7 +11,7 @@ The repository also maintains four cross-cutting content references:
 
 These documents do not create a workflow, source status, verification outcome, contributor obligation, or exception to `AGENTS.md`. Doctrine remains the canonical content authority for artifact and interpretation principles; Scope and Artifact Model are dedicated supporting references. When terminology is ambiguous, use the Glossary unless an original source explicitly uses the term differently.
 
-After selecting a flow under `AGENTS.md`, read only its required playbooks plus the repository materials required by the start-of-work gate. For every substantive repository change, also use the [content synchronization](content-synchronization.md) playbook to assess affected surfaces and make an explicit changelog decision.
+After selecting a flow under `AGENTS.md`, read only its required playbooks plus the repository materials required by the start-of-work gate. For every substantive repository change, also use the [content synchronization](content-synchronization.md) playbook to assess affected surfaces and make an explicit changelog decision. Every governed pull request must also follow the [PR process and synchronization](pr-process-and-synchronization.md) playbook.
 
 ## Executable repository contract
 
@@ -37,15 +37,15 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 
 The [`Main health`](../.github/workflows/main-health.yml) workflow runs these checks on pull requests, pushes to `main`, and manual dispatch. In this baseline phase it is diagnostic and non-blocking: it is not a required status check and does not establish governance completion, independent review, or source verification.
 
-On a pull request, Main health executes the validator version proposed by that pull request. It is therefore a validator self-test, not tamper-resistant enforcement. On `main`, it checks the merged canonical version. A trusted base-branch validator and required status check belong to the later enforcement layer.
+On a pull request, Main health executes the validator version proposed by that pull request. It is therefore a validator self-test, not tamper-resistant enforcement. On `main`, it checks the merged canonical version. The trusted [`Repository Gate`](../.github/workflows/repository-gate.yml) uses the base-branch implementation and synchronization matrix to enforce the governed PR record, changed-path classification, changelog decision, required synchronization surfaces, and protected deletion rules.
 
 | Flow | Required playbooks |
 | --- | --- |
-| A — Add source | [status model](status-model.md), [evidence review](evidence-review.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| B — Legacy source | [status model](status-model.md), [evidence review](evidence-review.md) when needed, [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| C — Changed source | [status model](status-model.md), [evidence review](evidence-review.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| D — Changed repository use | [status model](status-model.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md) |
-| E — Evidence discovery | [evidence discovery](evidence-discovery.md), [independent review](independent-review.md), [templates](templates.md) |
+| A — Add source | [status model](status-model.md), [evidence review](evidence-review.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md), [PR process](pr-process-and-synchronization.md) |
+| B — Legacy source | [status model](status-model.md), [evidence review](evidence-review.md) when needed, [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md), [PR process](pr-process-and-synchronization.md) |
+| C — Changed source | [status model](status-model.md), [evidence review](evidence-review.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md), [PR process](pr-process-and-synchronization.md) |
+| D — Changed repository use | [status model](status-model.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md), [PR process](pr-process-and-synchronization.md) |
+| E — Evidence discovery | [evidence discovery](evidence-discovery.md), [independent review](independent-review.md), [templates](templates.md), [PR process](pr-process-and-synchronization.md) |
 
 ## Navigation
 
@@ -54,6 +54,7 @@ On a pull request, Main health executes the validator version proposed by that p
 - [Evidence discovery](evidence-discovery.md): complete Flow E methodology and Independent Search Review.
 - [Independent review](independent-review.md): reviewer independence, allowed outcomes, correction loop, escalation, and verification gate.
 - [Content synchronization](content-synchronization.md): affected-surface assessment, explicit non-applicability, and changelog decision for substantive changes.
+- [PR process and synchronization](pr-process-and-synchronization.md): human-readable PR record, machine-readable work record, path classification, changelog decision, protected deletions, and trusted Repository Gate.
 - [Status model](status-model.md): allowed states, transitions, resets, and `Last verified`.
 - [Templates](templates.md): mandatory records used by the applicable procedures.
 - [Executable repository contract](repository-contract.toml): machine-readable structural invariants consumed by the repository validator.
