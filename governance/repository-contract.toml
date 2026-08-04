@@ -128,6 +128,7 @@ id_prefix = "M-"
 brief_directory = "methodology"
 minimum_rows = 1
 
+# The canonical dataset class exists before any dataset source is registered.
 [[registry.sections]]
 heading = "Datasets"
 id_prefix = "DS-"
