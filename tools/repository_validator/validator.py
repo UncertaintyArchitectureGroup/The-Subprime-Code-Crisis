@@ -121,7 +121,7 @@ class RepositoryValidator:
                         path,
                         f"{dimension}-status-noncanonical-syntax",
                         "status entries must use exactly '- `Status`'; found "
-                        f"'- {item.raw}'",
+                        f"'{item.marker} {item.raw}'",
                         item.line,
                     )
                 )
@@ -370,6 +370,25 @@ class RepositoryValidator:
                     "reviewed-brief-link-invalid-path",
                     f"{record.source_id} must link to a Markdown brief in an "
                     "evidence-class subdirectory",
+                    record.line,
+                )
+            ]
+        if relative_brief.parts[0] != record.expected_brief_directory:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-wrong-class",
+                    f"{record.source_id} must link to a brief under "
+                    f"evidence/{record.expected_brief_directory}/",
+                    record.line,
+                )
+            ]
+        if relative_brief.name.lower() == "readme.md":
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-index-prohibited",
+                    f"{record.source_id} links to an evidence-class index, not a brief",
                     record.line,
                 )
             ]
