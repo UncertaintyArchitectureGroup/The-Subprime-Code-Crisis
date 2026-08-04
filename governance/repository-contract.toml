@@ -97,7 +97,7 @@ required_nonempty_columns = [
   "Can support",
   "Current use",
 ]
-source_id_pattern = '^(?:P|D|S|M)-\d{4}-\d{2}$'
+source_id_pattern = '^(?:DS|P|D|S|M)-\d{4}-\d{2}$'
 date_pattern = '^\d{4}-\d{2}-\d{2}$'
 empty_date = "—"
 verified_status = "Verified"
@@ -127,6 +127,12 @@ heading = "Theory and methodology"
 id_prefix = "M-"
 brief_directory = "methodology"
 minimum_rows = 1
+
+[[registry.sections]]
+heading = "Datasets"
+id_prefix = "DS-"
+brief_directory = "datasets"
+minimum_rows = 0
 
 [[documents]]
 path = "AGENTS.md"
