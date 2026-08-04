@@ -4,7 +4,7 @@ evidence_review = "Reviewed brief"
 integration_audit = "In progress"
 last_verified = "—"
 independent_review = "Review unavailable"
-current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "evidence/SOURCES.md", "evidence/documentary/README.md"]
+current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md"]
 +++
 
 # Terminology provenance: early located public records
