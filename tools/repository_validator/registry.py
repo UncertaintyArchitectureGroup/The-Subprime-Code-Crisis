@@ -35,6 +35,7 @@ class SourceRecord:
     expected_prefix: str
     expected_brief_directory: str
     line: int
+    current_use_raw: str = ""
 
 
 @dataclass(frozen=True)
@@ -187,6 +188,7 @@ def _parse_source_table(
                 expected_prefix=requirement.id_prefix,
                 expected_brief_directory=requirement.brief_directory,
                 line=section.content_start_line + cursor,
+                current_use_raw=raw["Current use"].strip(),
             )
         )
         cursor += 1
