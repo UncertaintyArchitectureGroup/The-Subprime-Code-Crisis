@@ -15,6 +15,7 @@ INDEPENDENT_REVIEW_STATUSES = (
     "Unresolved disagreement",
     "Review unavailable",
 )
+WORK_RECORD_PREFIX = "governance/work-records/"
 
 
 class GateError(ValueError):
@@ -82,6 +83,10 @@ def _string_array(value: object, label: str, *, allow_empty: bool = False) -> tu
     if len(value) != len(set(value)):
         raise GateError(f"{label} must not contain duplicates")
     return tuple(value)
+
+
+def is_work_record(path: str) -> bool:
+    return path.startswith(WORK_RECORD_PREFIX) and path.endswith(".toml")
 
 
 def load_matrix(path: Path) -> tuple[tuple[str, ...], tuple[str, ...], tuple[Rule, ...]]:
@@ -213,12 +218,15 @@ def validate(
         if change.status in {"D", "R"} and removed in critical:
             errors.append(f"critical path may not be deleted or renamed: {removed}")
 
+        if change.status == "R" and change.old_path and is_work_record(change.old_path):
+            errors.append(f"historical work record may not be renamed: {change.old_path}")
+        elif is_work_record(change.path) and change.status != "A":
+            errors.append(
+                f"historical work record may not be modified or deleted: {change.path}"
+            )
+
     record_changes = [
-        change
-        for change in changes
-        if change.path.startswith("governance/work-records/")
-        and change.path.endswith(".toml")
-        and change.status == "A"
+        change for change in changes if is_work_record(change.path) and change.status == "A"
     ]
     if len(record_changes) != 1:
         errors.append("exactly one new governance/work-records/*.toml file is required")
