@@ -101,7 +101,11 @@ def _table_candidates(lines: list[str]) -> list[int]:
     return candidates
 
 
-def _source_id_at_row_start(line: str, source_id_pattern: str) -> bool:
+def _source_id_at_row_start(
+    line: str,
+    source_id_pattern: str,
+    source_prefixes: tuple[str, ...],
+) -> bool:
     if not line.strip():
         return False
 
@@ -110,13 +114,15 @@ def _source_id_at_row_start(line: str, source_id_pattern: str) -> bool:
         if not cells:
             return False
         candidate = visible_text(cells[0])
-        return re.fullmatch(source_id_pattern, candidate) is not None
+    else:
+        visible = visible_text(line)
+        if not visible:
+            return False
+        candidate = visible.split(maxsplit=1)[0].rstrip(":;,.—–")
 
-    visible = visible_text(line)
-    if not visible:
-        return False
-    first_token = visible.split(maxsplit=1)[0].rstrip(":;,.—–")
-    return re.fullmatch(source_id_pattern, first_token) is not None
+    return re.fullmatch(source_id_pattern, candidate) is not None or candidate.startswith(
+        source_prefixes
+    )
 
 
 def _parse_source_table(
@@ -124,6 +130,7 @@ def _parse_source_table(
     requirement: RegistrySectionRequirement,
     required_columns: tuple[str, ...],
     source_id_pattern: str,
+    source_prefixes: tuple[str, ...],
 ) -> tuple[SourceRecord, ...]:
     lines = section.text.splitlines()
     candidates = _table_candidates(lines)
@@ -179,7 +186,7 @@ def _parse_source_table(
 
     for index in range(cursor, len(lines)):
         line = lines[index]
-        if _source_id_at_row_start(line, source_id_pattern):
+        if _source_id_at_row_start(line, source_id_pattern, source_prefixes):
             raise RegistryParseError(
                 f"section '{section.name}' has a source-like row after the table was "
                 f"interrupted on line {section.content_start_line + index}"
@@ -201,6 +208,7 @@ def parse_source_registry(
 ) -> tuple[SourceRecord, ...]:
     records: list[SourceRecord] = []
     sections = _h2_sections(text)
+    source_prefixes = tuple(section.id_prefix for section in required_sections)
 
     for requirement in required_sections:
         section = sections.get(requirement.heading)
@@ -214,6 +222,7 @@ def parse_source_registry(
                 requirement,
                 required_columns,
                 source_id_pattern,
+                source_prefixes,
             )
         )
 
