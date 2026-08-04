@@ -20,8 +20,8 @@ After selecting a flow under `AGENTS.md`, read only its required playbooks plus 
 The Python 3.11+ standard-library validator under [`tools/repository_validator/`](../tools/repository_validator/) checks:
 
 - required files and required Markdown headings;
-- exact Evidence review and Integration audit enums;
-- every configured Source Registry section and its table schema;
+- exact Evidence review and Integration audit enums across supported Markdown list markers;
+- every configured Source Registry section and its table schema while allowing ordinary explanatory prose around the table;
 - Source ID uniqueness and format;
 - `Last verified` invariants; and
 - local evidence-brief links for sources marked `Reviewed brief`, including the configured evidence class and exclusion of class-index `README.md` files.
