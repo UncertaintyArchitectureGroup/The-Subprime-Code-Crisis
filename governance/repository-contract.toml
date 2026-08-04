@@ -107,21 +107,25 @@ local_brief_link_required_for = ["Reviewed brief"]
 [[registry.sections]]
 heading = "Primary empirical research"
 id_prefix = "P-"
+brief_directory = "primary"
 minimum_rows = 1
 
 [[registry.sections]]
 heading = "Primary documentary sources"
 id_prefix = "D-"
+brief_directory = "documentary"
 minimum_rows = 1
 
 [[registry.sections]]
 heading = "Secondary evidence and industry context"
 id_prefix = "S-"
+brief_directory = "secondary"
 minimum_rows = 1
 
 [[registry.sections]]
 heading = "Theory and methodology"
 id_prefix = "M-"
+brief_directory = "methodology"
 minimum_rows = 1
 
 [[documents]]
