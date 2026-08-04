@@ -83,6 +83,23 @@ class ContractInvariantTests(unittest.TestCase):
             self.assertIn("evidence-status-noncanonical-syntax", codes)
             self.assertIn("evidence-status-model-drift", codes)
 
+    def test_alternate_status_markers_are_not_ignored(self) -> None:
+        for marker in ("*", "+", "1."):
+            with self.subTest(marker=marker):
+                with TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    write_fixture(root, registry_text())
+                    (root / "governance/status-model.md").write_text(
+                        STATUS_MODEL.replace(
+                            "- `Needs re-review`\n",
+                            f"- `Needs re-review`\n{marker} Archived\n",
+                        ),
+                        encoding="utf-8",
+                    )
+                    codes = validation_codes(root)
+                    self.assertIn("evidence-status-noncanonical-syntax", codes)
+                    self.assertIn("evidence-status-model-drift", codes)
+
     def test_duplicate_status_is_reported(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
@@ -115,6 +132,35 @@ class ContractInvariantTests(unittest.TestCase):
             self.assertIn(
                 "reviewed-brief-link-outside-evidence", validation_codes(root)
             )
+
+    def test_reviewed_brief_cannot_be_class_index(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(
+                root,
+                registry_text(evidence="[Reviewed brief](primary/README.md)"),
+            )
+            (root / "evidence/primary/README.md").write_text(
+                "# Primary evidence index\n", encoding="utf-8"
+            )
+            self.assertIn(
+                "reviewed-brief-index-prohibited", validation_codes(root)
+            )
+
+    def test_reviewed_brief_must_match_evidence_class(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(
+                root,
+                registry_text(
+                    evidence="[Reviewed brief](documentary/example.md)"
+                ),
+            )
+            (root / "evidence/documentary").mkdir(parents=True)
+            (root / "evidence/documentary/example.md").write_text(
+                "# Documentary brief\n", encoding="utf-8"
+            )
+            self.assertIn("reviewed-brief-wrong-class", validation_codes(root))
 
     def test_malformed_required_registry_header_is_reported(self) -> None:
         with TemporaryDirectory() as directory:
@@ -223,6 +269,16 @@ class ContractInvariantTests(unittest.TestCase):
                 Path(directory),
                 'id_prefix = "P-"',
                 'id_prefix = "X-"',
+            )
+            with self.assertRaises(ContractError):
+                load_contract(path)
+
+    def test_contract_rejects_nested_brief_directory(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = write_contract_variant(
+                Path(directory),
+                'brief_directory = "primary"',
+                'brief_directory = "primary/nested"',
             )
             with self.assertRaises(ContractError):
                 load_contract(path)
