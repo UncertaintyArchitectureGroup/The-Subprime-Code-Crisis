@@ -10,6 +10,7 @@ from tools.repository_validator.evidence_state import (
     parse_front_matter,
     registry_current_use_paths,
     validate_brief_state,
+    validate_registry_current_use,
     validate_repo_path,
 )
 from tools.repository_validator.registry import RegistryParseError, parse_source_registry
@@ -36,6 +37,10 @@ def check(policy_root: Path, candidate_root: Path | None = None) -> tuple[str, .
 
     for record in records:
         current_use_source = record.current_use_raw or record.current_use
+        for issue in validate_registry_current_use(current_use_source):
+            errors.append(
+                f"{contract.source_registry}:{record.line}: {record.source_id} {issue}"
+            )
         for value in registry_current_use_paths(current_use_source):
             problem = validate_repo_path(candidate_root, value)
             if problem:
