@@ -78,6 +78,7 @@ class GitFixture:
         (self.repo / "CHANGELOG.md").write_text("# Changelog\n", encoding="utf-8")
         (self.repo / "governance").mkdir(exist_ok=True)
         shutil.copyfile(MATRIX, self.repo / "governance/synchronization-matrix.toml")
+        write_record(self.repo, "historical.toml")
         run_git(self.repo, "add", ".")
         run_git(self.repo, "commit", "-m", "base")
         self.base = run_git(self.repo, "rev-parse", "HEAD")
@@ -165,6 +166,48 @@ assessed_surfaces = ["history"]
             (fixture.repo / "CHANGELOG.md").write_text("# Changelog\n\nGate test.\n", encoding="utf-8")
             errors = fixture.validate(fixture.commit())
             self.assertIn("critical path may not be deleted or renamed: AGENTS.md", errors)
+
+    def test_historical_work_record_modification_is_blocked(self) -> None:
+        with TemporaryDirectory() as directory:
+            fixture = GitFixture(Path(directory))
+            historical = fixture.repo / "governance/work-records/historical.toml"
+            historical.write_text(historical.read_text(encoding="utf-8") + "\n# rewritten\n", encoding="utf-8")
+            write_record(fixture.repo)
+            (fixture.repo / "CHANGELOG.md").write_text("# Changelog\n\nGate test.\n", encoding="utf-8")
+            errors = fixture.validate(fixture.commit())
+            self.assertIn(
+                "historical work record may not be modified or deleted: governance/work-records/historical.toml",
+                errors,
+            )
+
+    def test_historical_work_record_deletion_is_blocked(self) -> None:
+        with TemporaryDirectory() as directory:
+            fixture = GitFixture(Path(directory))
+            (fixture.repo / "governance/work-records/historical.toml").unlink()
+            write_record(fixture.repo)
+            (fixture.repo / "CHANGELOG.md").write_text("# Changelog\n\nGate test.\n", encoding="utf-8")
+            errors = fixture.validate(fixture.commit())
+            self.assertIn(
+                "historical work record may not be modified or deleted: governance/work-records/historical.toml",
+                errors,
+            )
+
+    def test_historical_work_record_rename_is_blocked(self) -> None:
+        with TemporaryDirectory() as directory:
+            fixture = GitFixture(Path(directory))
+            run_git(
+                fixture.repo,
+                "mv",
+                "governance/work-records/historical.toml",
+                "governance/work-records/renamed.toml",
+            )
+            write_record(fixture.repo)
+            (fixture.repo / "CHANGELOG.md").write_text("# Changelog\n\nGate test.\n", encoding="utf-8")
+            errors = fixture.validate(fixture.commit())
+            self.assertIn(
+                "historical work record may not be renamed: governance/work-records/historical.toml",
+                errors,
+            )
 
     def test_exactly_one_new_work_record_is_required(self) -> None:
         with TemporaryDirectory() as directory:
