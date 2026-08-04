@@ -6,7 +6,13 @@ from pathlib import Path
 import re
 
 from .contract import RepositoryContract, load_contract
-from .markdown import extract_headings, list_items_under_heading
+from .markdown import (
+    extract_headings,
+    heading_lines,
+    list_items_under_heading,
+    scan_markdown_lines,
+    visible_text,
+)
 from .registry import RegistryParseError, SourceRecord, parse_source_registry
 
 
@@ -110,9 +116,29 @@ class RepositoryValidator:
         expected: tuple[str, ...],
         dimension: str,
     ) -> list[Issue]:
+        occurrences = heading_lines(text, heading)
         items = list_items_under_heading(text, heading)
         issues: list[Issue] = []
         seen: dict[str, int] = {}
+
+        if not occurrences:
+            issues.append(
+                Issue(
+                    path,
+                    f"{dimension}-status-heading-missing",
+                    f"canonical status heading is missing: {heading}",
+                )
+            )
+        elif len(occurrences) > 1:
+            issues.append(
+                Issue(
+                    path,
+                    f"duplicate-{dimension}-status-heading",
+                    f"canonical status heading {heading!r} appears more than once; "
+                    f"first seen on line {occurrences[0]}",
+                    occurrences[1],
+                )
+            )
 
         for item in items:
             if not item.canonical_inline_code:
@@ -400,6 +426,48 @@ class RepositoryValidator:
                     "reviewed-brief-missing",
                     f"{record.source_id} linked evidence brief does not exist: "
                     f"{record.brief_link}",
+                    record.line,
+                )
+            ]
+
+        try:
+            brief_text = brief_path.read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-unreadable",
+                    f"{record.source_id} linked evidence brief cannot be read: {exc}",
+                    record.line,
+                )
+            ]
+
+        active_text = "\n".join(
+            visible_text(source_line.text)
+            for source_line in scan_markdown_lines(brief_text)
+            if source_line.active and visible_text(source_line.text)
+        )
+        if not active_text:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-empty",
+                    f"{record.source_id} linked evidence brief has no active content",
+                    record.line,
+                )
+            ]
+
+        source_id = re.escape(record.source_id)
+        source_id_pattern = re.compile(
+            rf"(?<![A-Za-z0-9-]){source_id}(?![A-Za-z0-9-])"
+        )
+        if source_id_pattern.search(active_text) is None:
+            return [
+                Issue(
+                    relative,
+                    "reviewed-brief-source-id-missing",
+                    f"{record.source_id} linked evidence brief does not contain its "
+                    "exact Source ID in active Markdown",
                     record.line,
                 )
             ]
