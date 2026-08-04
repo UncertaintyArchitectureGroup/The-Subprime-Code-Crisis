@@ -27,6 +27,7 @@ def record(
     integration: str = "Verified",
     verified: str = "2026-07-27",
     current_use: str = "`README.md`",
+    brief_link: str | None = "primary/example.md",
 ) -> SourceRecord:
     return SourceRecord(
         source_id=source_id,
@@ -36,7 +37,7 @@ def record(
         last_verified=verified,
         can_support="Example",
         current_use=current_use,
-        brief_link="primary/example.md",
+        brief_link=brief_link,
         section="Primary empirical research",
         expected_prefix="P-",
         expected_brief_directory="primary",
@@ -202,6 +203,54 @@ class EvidenceStateIntegrityTests(unittest.TestCase):
         )
         self.assertIn(
             "changed source identity requires Last verified = —",
+            errors,
+        )
+
+    def test_added_current_use_path_requires_verified_reset(self) -> None:
+        errors = validate_transition(
+            record(current_use="`README.md`"),
+            record(current_use="`README.md`; `report/01_the_illusion.md`"),
+        )
+        self.assertIn(
+            "changed verified integration surface requires Integration audit = Needs re-verification",
+            errors,
+        )
+
+    def test_removed_current_use_path_requires_verified_reset(self) -> None:
+        errors = validate_transition(
+            record(current_use="`README.md`; `report/01_the_illusion.md`"),
+            record(current_use="`README.md`"),
+        )
+        self.assertIn(
+            "changed verified integration surface requires Last verified = —",
+            errors,
+        )
+
+    def test_changed_brief_link_requires_verified_reset(self) -> None:
+        errors = validate_transition(
+            record(brief_link="primary/old.md"),
+            record(brief_link="primary/new.md"),
+        )
+        self.assertIn(
+            "changed verified integration surface requires Integration audit = Needs re-verification",
+            errors,
+        )
+
+    def test_changed_integration_surface_accepts_full_reset(self) -> None:
+        errors = validate_transition(
+            record(current_use="`README.md`"),
+            record(
+                current_use="`README.md`; `report/01_the_illusion.md`",
+                integration="Needs re-verification",
+                verified="—",
+            ),
+        )
+        self.assertNotIn(
+            "changed verified integration surface requires Integration audit = Needs re-verification",
+            errors,
+        )
+        self.assertNotIn(
+            "changed verified integration surface requires Last verified = —",
             errors,
         )
 
