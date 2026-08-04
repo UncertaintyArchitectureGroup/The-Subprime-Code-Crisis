@@ -10,7 +10,9 @@ from tools.repository_validator.evidence_state import (
     BriefState,
     EvidenceStateError,
     parse_front_matter,
+    registry_current_use_paths,
     validate_brief_state,
+    validate_registry_current_use,
     validate_transition,
 )
 from tools.repository_validator.registry import SourceRecord
@@ -252,6 +254,42 @@ class EvidenceStateIntegrityTests(unittest.TestCase):
         self.assertNotIn(
             "changed verified integration surface requires Last verified = —",
             errors,
+        )
+
+    def test_backtick_path_is_accepted(self) -> None:
+        self.assertEqual(validate_registry_current_use("Used in `README.md`."), ())
+        self.assertEqual(registry_current_use_paths("Used in `README.md`."), ("README.md",))
+
+    def test_path_without_backticks_is_rejected(self) -> None:
+        self.assertIn(
+            "Current use repository paths must be enclosed in backticks",
+            validate_registry_current_use("Used in README.md."),
+        )
+
+    def test_descriptive_prose_without_path_is_allowed(self) -> None:
+        self.assertEqual(validate_registry_current_use("Used for conceptual framing."), ())
+        self.assertEqual(registry_current_use_paths("Used for conceptual framing."), ())
+
+    def test_multiple_backtick_paths_are_extracted(self) -> None:
+        value = "Used in `README.md` and `report/01_the_illusion.md`."
+        self.assertEqual(validate_registry_current_use(value), ())
+        self.assertEqual(
+            registry_current_use_paths(value),
+            ("README.md", "report/01_the_illusion.md"),
+        )
+
+    def test_non_path_inline_code_is_rejected(self) -> None:
+        self.assertIn(
+            "Current use inline code 'concept' must contain exactly one repository path",
+            validate_registry_current_use("Used for `concept`."),
+        )
+
+    def test_multiple_values_in_one_inline_code_span_are_rejected(self) -> None:
+        self.assertIn(
+            "Current use inline code 'README.md report/01_the_illusion.md' must contain exactly one repository path",
+            validate_registry_current_use(
+                "Used in `README.md report/01_the_illusion.md`."
+            ),
         )
 
     def test_candidate_checker_tampering_does_not_change_trusted_check(self) -> None:
