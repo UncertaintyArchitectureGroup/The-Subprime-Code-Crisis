@@ -169,7 +169,8 @@ def validate_brief_state(
                 f"registry and brief state differ for {source_id}: "
                 f"registry={expected}, brief={actual}"
             )
-        registry_paths = set(registry_current_use_paths(record.current_use))
+        current_use_source = record.current_use_raw or record.current_use
+        registry_paths = set(registry_current_use_paths(current_use_source))
         brief_paths = set(brief.current_use)
         if registry_paths != brief_paths:
             errors.append(
