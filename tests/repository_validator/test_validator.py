@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from dataclasses import replace
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
@@ -17,7 +18,10 @@ from tools.repository_validator.markdown import (
     list_items_under_heading,
     parse_markdown_tables,
 )
-from tools.repository_validator.registry import parse_source_registry
+from tools.repository_validator.registry import (
+    RegistryParseError,
+    parse_source_registry,
+)
 from tools.repository_validator.validator import RepositoryValidator
 
 
@@ -79,7 +83,7 @@ def make_contract() -> RepositoryContract:
                 "Can support",
                 "Current use",
             ),
-            source_id_pattern=r"^(?:P|D|S|M)-\d{4}-\d{2}$",
+            source_id_pattern=r"^(?:DS|P|D|S|M)-\d{4}-\d{2}$",
             date_pattern=r"^\d{4}-\d{2}-\d{2}$",
             empty_date="—",
             verified_status="Verified",
@@ -90,6 +94,24 @@ def make_contract() -> RepositoryContract:
             DocumentRequirement(
                 path="AGENTS.md",
                 required_headings=("Repository Constitution",),
+            ),
+        ),
+    )
+
+
+def make_dataset_contract() -> RepositoryContract:
+    contract = make_contract()
+    return replace(
+        contract,
+        registry=replace(
+            contract.registry,
+            sections=(
+                RegistrySectionRequirement(
+                    heading="Datasets",
+                    id_prefix="DS-",
+                    brief_directory="datasets",
+                    minimum_rows=0,
+                ),
             ),
         ),
     )
@@ -131,6 +153,22 @@ def registry_text(
 """
 
 
+def dataset_registry_text(source_id: str | None = None) -> str:
+    row = ""
+    if source_id is not None:
+        row = (
+            f"| **{source_id}** | Example dataset | Registered | Not started | — | "
+            "Dataset-level analysis | `evidence/datasets/README.md` |\n"
+        )
+    return f"""# Source Registry
+
+## Datasets
+
+| ID | Source | Evidence review | Integration audit | Last verified | Can support | Current use |
+| --- | --- | --- | --- | --- | --- | --- |
+{row}"""
+
+
 class MarkdownTests(unittest.TestCase):
     def test_headings_ignore_fenced_examples(self) -> None:
         text = """# Real
@@ -143,10 +181,35 @@ class MarkdownTests(unittest.TestCase):
 """
         self.assertEqual(extract_headings(text), ("Real", "Actual"))
 
+    def test_headings_ignore_comments_and_indented_code(self) -> None:
+        text = """# Real
+
+<!--
+## Commented
+-->
+
+    ## Indented code
+
+## Actual
+"""
+        self.assertEqual(extract_headings(text), ("Real", "Actual"))
+
     def test_table_parser_returns_visible_headers(self) -> None:
         tables = parse_markdown_tables(registry_text())
         self.assertEqual(len(tables), 1)
         self.assertEqual(tables[0].headers[0], "ID")
+
+    def test_table_parser_ignores_inactive_tables(self) -> None:
+        table = """| ID | Source |
+| --- | --- |
+| P-2026-01 | Example |
+"""
+        text = (
+            f"```markdown\n{table}```\n"
+            f"<!--\n{table}-->\n"
+            + "\n".join(f"    {line}" for line in table.splitlines())
+        )
+        self.assertEqual(parse_markdown_tables(text), ())
 
     def test_status_list_parser_includes_noncanonical_items(self) -> None:
         text = STATUS_MODEL.replace(
@@ -159,6 +222,21 @@ class MarkdownTests(unittest.TestCase):
         self.assertEqual(items[-1].value, "Archived")
         self.assertFalse(items[-1].canonical_inline_code)
 
+    def test_status_list_parser_ignores_commented_items(self) -> None:
+        text = """### Allowed Evidence review statuses
+
+<!--
+- `Registered`
+- `Brief in progress`
+- `Reviewed brief`
+- `Needs re-review`
+-->
+"""
+        self.assertEqual(
+            list_items_under_heading(text, "Allowed Evidence review statuses"),
+            (),
+        )
+
 
 class RegistryTests(unittest.TestCase):
     def test_parser_extracts_status_brief_link_and_section_boundary(self) -> None:
@@ -167,6 +245,7 @@ class RegistryTests(unittest.TestCase):
             registry_text(),
             contract.registry.required_columns,
             contract.registry.sections,
+            contract.registry.source_id_pattern,
         )
         self.assertEqual(records[0].source_id, "P-2026-01")
         self.assertEqual(records[0].evidence_review, "Reviewed brief")
@@ -184,9 +263,50 @@ class RegistryTests(unittest.TestCase):
             text,
             contract.registry.required_columns,
             contract.registry.sections,
+            contract.registry.source_id_pattern,
         )
         self.assertEqual(len(records), 1)
         self.assertEqual(records[0].source_id, "P-2026-01")
+
+    def test_empty_dataset_section_is_valid(self) -> None:
+        contract = make_dataset_contract()
+        records = parse_source_registry(
+            dataset_registry_text(),
+            contract.registry.required_columns,
+            contract.registry.sections,
+            contract.registry.source_id_pattern,
+        )
+        self.assertEqual(records, ())
+
+    def test_dataset_record_uses_dataset_mapping(self) -> None:
+        contract = make_dataset_contract()
+        records = parse_source_registry(
+            dataset_registry_text("DS-2026-01"),
+            contract.registry.required_columns,
+            contract.registry.sections,
+            contract.registry.source_id_pattern,
+        )
+        self.assertEqual(records[0].source_id, "DS-2026-01")
+        self.assertEqual(records[0].expected_prefix, "DS-")
+        self.assertEqual(records[0].expected_brief_directory, "datasets")
+
+    def test_inactive_source_tables_do_not_satisfy_registry_section(self) -> None:
+        contract = make_contract()
+        table = registry_text().split("## Primary empirical research\n\n", 1)[1]
+        for wrapped in (
+            f"```markdown\n{table}```\n",
+            f"<!--\n{table}-->\n",
+            "\n".join(f"    {line}" for line in table.splitlines()),
+        ):
+            with self.subTest(wrapped=wrapped[:12]):
+                text = f"# Source Registry\n\n## Primary empirical research\n\n{wrapped}"
+                with self.assertRaises(RegistryParseError):
+                    parse_source_registry(
+                        text,
+                        contract.registry.required_columns,
+                        contract.registry.sections,
+                        contract.registry.source_id_pattern,
+                    )
 
 
 class ValidatorTests(unittest.TestCase):
@@ -209,6 +329,27 @@ class ValidatorTests(unittest.TestCase):
             root = Path(directory)
             self._write_fixture(root, registry_text())
             self.assertEqual(RepositoryValidator(root, make_contract()).validate(), ())
+
+    def test_valid_dataset_fixture_passes(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            self._write_fixture(root, dataset_registry_text("DS-2026-01"))
+            self.assertEqual(
+                RepositoryValidator(root, make_dataset_contract()).validate(),
+                (),
+            )
+
+    def test_dataset_source_must_use_dataset_prefix(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            self._write_fixture(root, dataset_registry_text("P-2026-01"))
+            codes = {
+                issue.code
+                for issue in RepositoryValidator(
+                    root, make_dataset_contract()
+                ).validate()
+            }
+            self.assertIn("source-id-section-mismatch", codes)
 
     def test_invalid_status_and_date_are_reported(self) -> None:
         with TemporaryDirectory() as directory:
@@ -248,12 +389,21 @@ class ValidatorTests(unittest.TestCase):
         self.assertIn("Verified", contract.integration_audit_statuses)
         headings = tuple(section.heading for section in contract.registry.sections)
         self.assertIn("Primary empirical research", headings)
+        self.assertIn("Datasets", headings)
         primary = next(
             section
             for section in contract.registry.sections
             if section.id_prefix == "P-"
         )
+        datasets = next(
+            section
+            for section in contract.registry.sections
+            if section.id_prefix == "DS-"
+        )
         self.assertEqual(primary.brief_directory, "primary")
+        self.assertEqual(datasets.brief_directory, "datasets")
+        self.assertEqual(datasets.minimum_rows, 0)
+        self.assertRegex("DS-2026-01", contract.registry.source_id_pattern)
         self.assertIn("LICENSE.md", contract.required_files)
         self.assertIn("evidence/datasets/README.md", contract.required_files)
 
