@@ -10,11 +10,11 @@ allow_squash_merge = true
 require_linear_history = true
 
 [pull_requests]
-required_approving_review_count = 1
-require_code_owner_review = true
+required_approving_review_count = 0
+require_code_owner_review = false
 require_conversation_resolution = true
 dismiss_stale_reviews_on_push = true
-require_last_push_approval = true
+require_last_push_approval = false
 
 [status_checks]
 strict_branch_freshness = true
@@ -28,10 +28,10 @@ require_pull_request = true
 [reviewer_pool]
 team_required = false
 team_slug = ""
-activation_condition = "Set team_required = true and team_slug when an independent reviewer team exists and is granted repository access."
+activation_condition = "When at least one independent reviewer or reviewer team has repository access, set required_approving_review_count = 1, require_code_owner_review = true, require_last_push_approval = true, and configure team_slug when a team is used."
 
 [activation]
 repository_settings_applied = false
 ruleset_applied = false
 codeowners_active_after_merge = true
-note = "Repository settings and organization rulesets are external GitHub state. Apply them after this configuration is merged, then set both applied fields to true in a follow-up audited change."
+note = "This file is the desired-state contract, not proof of live enforcement. Apply repository settings and the branch ruleset after merge, verify them against GitHub, then set both applied fields to true in a follow-up audited change."
