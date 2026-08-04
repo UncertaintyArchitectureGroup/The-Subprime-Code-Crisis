@@ -361,6 +361,24 @@ class ContractInvariantTests(unittest.TestCase):
             write_fixture(root, broken)
             self.assertIn("source-registry-parse", validation_codes(root))
 
+    def test_prefixed_explanatory_prose_after_table_is_allowed(self) -> None:
+        prose_lines = (
+            "P-values are reported in the evidence brief.",
+            "M-theory is discussed separately.",
+            "S-curve effects are out of scope.",
+            "DS-based analysis is not yet available.",
+        )
+        for prose in prose_lines:
+            with self.subTest(prose=prose):
+                with TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    registry = registry_text().rstrip() + f"\n\n{prose}\n"
+                    write_fixture(root, registry)
+                    self.assertNotIn(
+                        "source-registry-parse",
+                        validation_codes(root),
+                    )
+
     def test_required_registry_section_cannot_be_empty(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
@@ -376,6 +394,30 @@ class ContractInvariantTests(unittest.TestCase):
             root = Path(directory)
             write_fixture(root, registry_text(source_id="D-2026-01"))
             self.assertIn("source-id-section-mismatch", validation_codes(root))
+
+    def test_unicode_digits_are_rejected_in_source_ids(self) -> None:
+        for source_id in ("P-２０２６-０１", "P-٢٠٢٦-٠١"):
+            with self.subTest(source_id=source_id):
+                with TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    write_fixture(
+                        root,
+                        registry_text(
+                            source_id=source_id,
+                            evidence="Registered",
+                            integration="Not started",
+                            verified="—",
+                        ),
+                    )
+                    self.assertIn("invalid-source-id", validation_codes(root))
+
+    def test_unicode_digits_are_rejected_in_verification_dates(self) -> None:
+        for verified in ("２０２６-０７-２７", "٢٠٢٦-٠٧-٢٧"):
+            with self.subTest(verified=verified):
+                with TemporaryDirectory() as directory:
+                    root = Path(directory)
+                    write_fixture(root, registry_text(verified=verified))
+                    self.assertIn("verified-date-required", validation_codes(root))
 
     def test_verified_requires_reviewed_brief(self) -> None:
         for evidence_status in ("Registered", "Brief in progress", "Needs re-review"):
@@ -399,7 +441,7 @@ class ContractInvariantTests(unittest.TestCase):
         with TemporaryDirectory() as directory:
             path = write_contract_variant(
                 Path(directory),
-                r"source_id_pattern = '^(?:DS|P|D|S|M)-\d{4}-\d{2}$'",
+                r"source_id_pattern = '^(?:DS|P|D|S|M)-[0-9]{4}-[0-9]{2}$'",
                 "source_id_pattern = '['",
             )
             with self.assertRaises(ContractError):
