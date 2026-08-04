@@ -32,6 +32,7 @@ class DocumentRequirement:
 class RegistrySectionRequirement:
     heading: str
     id_prefix: str
+    brief_directory: str
     minimum_rows: int
 
 
@@ -109,6 +110,14 @@ def _safe_relative_path(value: str, key: str) -> str:
     return path.as_posix()
 
 
+def _safe_directory_name(value: str, key: str) -> str:
+    normalized = _safe_relative_path(value, key)
+    path = Path(normalized)
+    if len(path.parts) != 1 or normalized in {"", "."}:
+        raise ContractError(f"{key} must be one evidence-class directory name")
+    return normalized
+
+
 def _registry_sections(data: dict[str, Any]) -> tuple[RegistrySectionRequirement, ...]:
     raw_sections = data.get("sections")
     if not isinstance(raw_sections, list) or not raw_sections:
@@ -117,22 +126,33 @@ def _registry_sections(data: dict[str, Any]) -> tuple[RegistrySectionRequirement
     sections: list[RegistrySectionRequirement] = []
     headings: set[str] = set()
     prefixes: set[str] = set()
+    brief_directories: set[str] = set()
     for index, item in enumerate(raw_sections):
         if not isinstance(item, dict):
             raise ContractError(f"registry.sections[{index}] must be a table")
         heading = _string(item, "heading")
         id_prefix = _string(item, "id_prefix")
+        brief_directory = _safe_directory_name(
+            _string(item, "brief_directory"),
+            f"registry.sections[{index}].brief_directory",
+        )
         minimum_rows = _positive_int(item, "minimum_rows")
         if heading in headings:
             raise ContractError(f"duplicate registry section heading: {heading}")
         if id_prefix in prefixes:
             raise ContractError(f"duplicate registry section ID prefix: {id_prefix}")
+        if brief_directory in brief_directories:
+            raise ContractError(
+                f"duplicate registry section brief directory: {brief_directory}"
+            )
         headings.add(heading)
         prefixes.add(id_prefix)
+        brief_directories.add(brief_directory)
         sections.append(
             RegistrySectionRequirement(
                 heading=heading,
                 id_prefix=id_prefix,
+                brief_directory=brief_directory,
                 minimum_rows=minimum_rows,
             )
         )
