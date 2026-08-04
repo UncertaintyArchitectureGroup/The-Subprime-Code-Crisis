@@ -6,12 +6,11 @@ independent_review = "Review unavailable"
 
 [changelog]
 decision = "Updated"
-reason = "The change adds repository-wide evidence-state metadata, synchronization, path, and transition enforcement."
+reason = "The change adds repository-wide evidence-state metadata, synchronization, path, transition, and canonical contributor enforcement."
 
 [synchronization]
 assessed_surfaces = ["governance", "contributor-guidance", "evidence", "source-registry", "evidence-indexes", "references", "history"]
 
 [synchronization.non_applicable]
-contributor-guidance = "AGENTS.md already defines the canonical state model and this PR implements the approved executable projection without changing contributor duties."
 evidence-indexes = "Existing index links remain correct; front matter does not change brief identity or navigation."
 references = "Source identities and bibliography entries do not change."
