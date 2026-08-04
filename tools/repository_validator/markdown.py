@@ -13,6 +13,15 @@ _LIST_ITEM_RE = re.compile(
     r"^\s*(?P<marker>[-+*]|\d+[.)])\s+(?P<body>.*?)\s*$"
 )
 _CANONICAL_STATUS_ITEM_RE = re.compile(r"^`([^`]+)`$")
+_FENCE_OPEN_RE = re.compile(r"^ {0,3}(?P<marker>`{3,}|~{3,})")
+_INDENTED_CODE_RE = re.compile(r"^(?:\t| {4,})")
+
+
+@dataclass(frozen=True)
+class MarkdownSourceLine:
+    text: str
+    line: int
+    active: bool
 
 
 @dataclass(frozen=True)
@@ -46,24 +55,86 @@ def first_link_target(value: str) -> str | None:
     return match.group(2).strip() if match else None
 
 
+def _strip_html_comments(line: str, in_comment: bool) -> tuple[str, bool]:
+    visible: list[str] = []
+    cursor = 0
+    while cursor < len(line):
+        if in_comment:
+            end = line.find("-->", cursor)
+            if end == -1:
+                return "".join(visible), True
+            cursor = end + 3
+            in_comment = False
+            continue
+
+        start = line.find("<!--", cursor)
+        if start == -1:
+            visible.append(line[cursor:])
+            break
+        visible.append(line[cursor:start])
+        cursor = start + 4
+        in_comment = True
+
+    return "".join(visible), in_comment
+
+
+def _closes_fence(line: str, fence_character: str, fence_length: int) -> bool:
+    stripped = line.lstrip(" ")
+    if len(line) - len(stripped) > 3 or not stripped.startswith(fence_character):
+        return False
+    marker_length = len(stripped) - len(stripped.lstrip(fence_character))
+    return marker_length >= fence_length and not stripped[marker_length:].strip()
+
+
+def scan_markdown_lines(text: str) -> tuple[MarkdownSourceLine, ...]:
+    """Return source lines with inactive Markdown constructs blanked out."""
+    scanned: list[MarkdownSourceLine] = []
+    in_comment = False
+    in_fence = False
+    fence_character = ""
+    fence_length = 0
+
+    for line_number, original in enumerate(text.splitlines(), start=1):
+        if in_fence:
+            if _closes_fence(original, fence_character, fence_length):
+                in_fence = False
+                fence_character = ""
+                fence_length = 0
+            scanned.append(MarkdownSourceLine("", line_number, False))
+            continue
+
+        without_comments, in_comment = _strip_html_comments(original, in_comment)
+        fence = _FENCE_OPEN_RE.match(without_comments)
+        if fence:
+            marker = fence.group("marker")
+            in_fence = True
+            fence_character = marker[0]
+            fence_length = len(marker)
+            scanned.append(MarkdownSourceLine("", line_number, False))
+            continue
+
+        if without_comments.strip() and _INDENTED_CODE_RE.match(without_comments):
+            scanned.append(MarkdownSourceLine("", line_number, False))
+            continue
+
+        active = bool(without_comments.strip())
+        scanned.append(
+            MarkdownSourceLine(
+                text=without_comments,
+                line=line_number,
+                active=active,
+            )
+        )
+
+    return tuple(scanned)
+
+
 def extract_headings(text: str) -> tuple[str, ...]:
     headings: list[str] = []
-    in_fence = False
-    fence_marker = ""
-    for line in text.splitlines():
-        stripped = line.lstrip()
-        if stripped.startswith(("```", "~~~")):
-            marker = stripped[:3]
-            if not in_fence:
-                in_fence = True
-                fence_marker = marker
-            elif marker == fence_marker:
-                in_fence = False
-                fence_marker = ""
+    for source_line in scan_markdown_lines(text):
+        if not source_line.active:
             continue
-        if in_fence:
-            continue
-        match = _HEADING_RE.match(line)
+        match = _HEADING_RE.match(source_line.text)
         if match:
             headings.append(visible_text(match.group(2)))
     return tuple(headings)
@@ -86,25 +157,13 @@ def is_table_separator_row(cells: tuple[str, ...]) -> bool:
 
 
 def parse_markdown_tables(text: str) -> tuple[MarkdownTable, ...]:
-    lines = text.splitlines()
+    source_lines = scan_markdown_lines(text)
+    lines = [source_line.text if source_line.active else "" for source_line in source_lines]
     tables: list[MarkdownTable] = []
     index = 0
-    in_fence = False
-    fence_marker = ""
 
     while index < len(lines):
-        stripped = lines[index].lstrip()
-        if stripped.startswith(("```", "~~~")):
-            marker = stripped[:3]
-            if not in_fence:
-                in_fence = True
-                fence_marker = marker
-            elif marker == fence_marker:
-                in_fence = False
-                fence_marker = ""
-            index += 1
-            continue
-        if in_fence or "|" not in lines[index] or index + 1 >= len(lines):
+        if "|" not in lines[index] or index + 1 >= len(lines):
             index += 1
             continue
 
@@ -134,7 +193,7 @@ def parse_markdown_tables(text: str) -> tuple[MarkdownTable, ...]:
             MarkdownTable(
                 headers=tuple(visible_text(header) for header in headers),
                 rows=tuple(rows),
-                start_line=index + 1,
+                start_line=source_lines[index].line,
             )
         )
         index = cursor
@@ -143,27 +202,15 @@ def parse_markdown_tables(text: str) -> tuple[MarkdownTable, ...]:
 
 
 def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem, ...]:
-    """Return every Markdown list item in one heading block."""
+    """Return every active Markdown list item in one heading block."""
     collecting = False
     items: list[MarkdownListItem] = []
-    in_fence = False
-    fence_marker = ""
 
-    for line_number, line in enumerate(text.splitlines(), start=1):
-        stripped = line.lstrip()
-        if stripped.startswith(("```", "~~~")):
-            marker = stripped[:3]
-            if not in_fence:
-                in_fence = True
-                fence_marker = marker
-            elif marker == fence_marker:
-                in_fence = False
-                fence_marker = ""
-            continue
-        if in_fence:
+    for source_line in scan_markdown_lines(text):
+        if not source_line.active:
             continue
 
-        heading_match = _HEADING_RE.match(line)
+        heading_match = _HEADING_RE.match(source_line.text)
         if heading_match:
             current = visible_text(heading_match.group(2))
             if collecting:
@@ -174,7 +221,7 @@ def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem,
 
         if not collecting:
             continue
-        bullet = _LIST_ITEM_RE.match(line)
+        bullet = _LIST_ITEM_RE.match(source_line.text)
         if not bullet:
             continue
         marker = bullet.group("marker")
@@ -187,7 +234,7 @@ def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem,
                 value=visible_text(raw),
                 raw=raw,
                 marker=marker,
-                line=line_number,
+                line=source_line.line,
                 canonical_inline_code=canonical,
             )
         )
