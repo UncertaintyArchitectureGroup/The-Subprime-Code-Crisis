@@ -36,33 +36,50 @@ class BriefState:
 def parse_front_matter(text: str, path: str) -> BriefState:
     lines = text.splitlines()
     if not lines or lines[0].strip() != FRONT_MATTER_DELIMITER:
-        raise EvidenceStateError("evidence brief must start with TOML front matter delimited by +++")
+        raise EvidenceStateError(
+            "evidence brief must start with TOML front matter delimited by +++"
+        )
     try:
-        end = next(i for i, line in enumerate(lines[1:], start=1) if line.strip() == FRONT_MATTER_DELIMITER)
+        end = next(
+            i
+            for i, line in enumerate(lines[1:], start=1)
+            if line.strip() == FRONT_MATTER_DELIMITER
+        )
     except StopIteration as exc:
-        raise EvidenceStateError("evidence brief front matter has no closing +++ delimiter") from exc
+        raise EvidenceStateError(
+            "evidence brief front matter has no closing +++ delimiter"
+        ) from exc
     if end == 1:
         raise EvidenceStateError("evidence brief front matter is empty")
     try:
         data = tomllib.loads("\n".join(lines[1:end]))
     except tomllib.TOMLDecodeError as exc:
-        raise EvidenceStateError(f"invalid evidence brief TOML front matter: {exc}") from exc
+        raise EvidenceStateError(
+            f"invalid evidence brief TOML front matter: {exc}"
+        ) from exc
 
     def string(name: str) -> str:
         value = data.get(name)
         if not isinstance(value, str) or not value.strip():
-            raise EvidenceStateError(f"front matter field {name} must be a non-empty string")
+            raise EvidenceStateError(
+                f"front matter field {name} must be a non-empty string"
+            )
         return value.strip()
 
     def strings(name: str, *, allow_empty: bool = False) -> tuple[str, ...]:
         value = data.get(name)
         if not isinstance(value, list) or (not value and not allow_empty):
-            raise EvidenceStateError(f"front matter field {name} must be a non-empty array")
+            qualifier = "an array" if allow_empty else "a non-empty array"
+            raise EvidenceStateError(f"front matter field {name} must be {qualifier}")
         if any(not isinstance(item, str) or not item.strip() for item in value):
-            raise EvidenceStateError(f"front matter field {name} must contain non-empty strings")
+            raise EvidenceStateError(
+                f"front matter field {name} must contain non-empty strings"
+            )
         values = tuple(item.strip() for item in value)
         if len(values) != len(set(values)):
-            raise EvidenceStateError(f"front matter field {name} must not contain duplicates")
+            raise EvidenceStateError(
+                f"front matter field {name} must not contain duplicates"
+            )
         return values
 
     return BriefState(
@@ -77,8 +94,7 @@ def parse_front_matter(text: str, path: str) -> BriefState:
 
 
 def registry_current_use_paths(value: str) -> tuple[str, ...]:
-    paths = tuple(dict.fromkeys(re.findall(r"`([^`]+)`", value)))
-    return paths
+    return tuple(dict.fromkeys(re.findall(r"`([^`]+)`", value)))
 
 
 def validate_repo_path(root: Path, value: str) -> str | None:
@@ -101,11 +117,17 @@ def validate_brief_state(
 ) -> tuple[str, ...]:
     errors: list[str] = []
     if brief.evidence_review not in evidence_statuses:
-        errors.append(f"unsupported front matter evidence_review: {brief.evidence_review}")
+        errors.append(
+            f"unsupported front matter evidence_review: {brief.evidence_review}"
+        )
     if brief.integration_audit not in integration_statuses:
-        errors.append(f"unsupported front matter integration_audit: {brief.integration_audit}")
+        errors.append(
+            f"unsupported front matter integration_audit: {brief.integration_audit}"
+        )
     if brief.independent_review not in REVIEW_OUTCOMES:
-        errors.append(f"unsupported front matter independent_review: {brief.independent_review}")
+        errors.append(
+            f"unsupported front matter independent_review: {brief.independent_review}"
+        )
 
     if brief.integration_audit == "Verified":
         if brief.evidence_review != "Reviewed brief":
@@ -141,7 +163,8 @@ def validate_brief_state(
         )
         if actual != expected:
             errors.append(
-                f"registry and brief state differ for {source_id}: registry={expected}, brief={actual}"
+                f"registry and brief state differ for {source_id}: "
+                f"registry={expected}, brief={actual}"
             )
         registry_paths = set(registry_current_use_paths(record.current_use))
         brief_paths = set(brief.current_use)
@@ -155,6 +178,18 @@ def validate_brief_state(
 
 def validate_transition(old: SourceRecord, new: SourceRecord) -> tuple[str, ...]:
     errors: list[str] = []
+
+    source_identity_changed = old.source != new.source
+    if source_identity_changed:
+        if new.evidence_review != "Needs re-review":
+            errors.append("changed source identity requires Evidence review = Needs re-review")
+        if new.integration_audit != "Needs re-verification":
+            errors.append(
+                "changed source identity requires Integration audit = Needs re-verification"
+            )
+        if new.last_verified != "—":
+            errors.append("changed source identity requires Last verified = —")
+
     if old.evidence_review == "Reviewed brief" and new.evidence_review == "Registered":
         errors.append("Reviewed brief may not transition directly to Registered")
     if old.integration_audit == "Verified" and new.integration_audit not in {
@@ -162,15 +197,23 @@ def validate_transition(old: SourceRecord, new: SourceRecord) -> tuple[str, ...]
         "Needs re-verification",
     }:
         errors.append("Verified may transition only to Verified or Needs re-verification")
-    if old.evidence_review != new.evidence_review and new.evidence_review == "Needs re-review":
-        if new.integration_audit != "Needs re-verification":
-            errors.append("Needs re-review requires integration_audit = Needs re-verification")
+    if (
+        old.evidence_review != new.evidence_review
+        and new.evidence_review == "Needs re-review"
+        and new.integration_audit != "Needs re-verification"
+    ):
+        errors.append(
+            "Needs re-review requires integration_audit = Needs re-verification"
+        )
     if old.integration_audit != "Verified" and new.integration_audit == "Verified":
         if new.evidence_review != "Reviewed brief":
             errors.append("transition to Verified requires Reviewed brief")
         if new.last_verified == old.last_verified or new.last_verified == "—":
             errors.append("transition to Verified requires a new verification date")
-    if old.integration_audit == "Verified" and new.integration_audit == "Needs re-verification":
-        if new.last_verified != "—":
-            errors.append("reset from Verified requires Last verified = —")
+    if (
+        old.integration_audit == "Verified"
+        and new.integration_audit == "Needs re-verification"
+        and new.last_verified != "—"
+    ):
+        errors.append("reset from Verified requires Last verified = —")
     return tuple(errors)
