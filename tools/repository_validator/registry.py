@@ -14,6 +14,7 @@ from .markdown import (
 
 
 _H2_RE = re.compile(r"^##\s+(.+?)\s*#*\s*$")
+_MALFORMED_ID_SUFFIX_RE = re.compile(r"^[A-Z0-9._-]*[A-Z0-9][A-Z0-9._-]*$")
 
 
 class RegistryParseError(ValueError):
@@ -120,9 +121,15 @@ def _source_id_at_row_start(
             return False
         candidate = visible.split(maxsplit=1)[0].rstrip(":;,.—–")
 
-    return re.fullmatch(source_id_pattern, candidate) is not None or candidate.startswith(
-        source_prefixes
-    )
+    if re.fullmatch(source_id_pattern, candidate) is not None:
+        return True
+
+    for prefix in sorted(source_prefixes, key=len, reverse=True):
+        if not candidate.startswith(prefix):
+            continue
+        suffix = candidate[len(prefix) :]
+        return _MALFORMED_ID_SUFFIX_RE.fullmatch(suffix) is not None
+    return False
 
 
 def _parse_source_table(
