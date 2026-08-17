@@ -24,6 +24,7 @@ How AI code assistants can create local productivity gains while shifting cost i
 3. **Evidence-backed inference:** Additional output can shift constraints into downstream verification and delivery stages.
 4. **Repository risk framing:** The risk comes from unmanaged adoption and insufficient verification capacity, not from AI assistance alone.
 5. **Proposed practice:** Redesign the delivery control system rather than reject the technology.
+6. **Proposed practice:** Preserve an independent human recovery path for consequential systems so the organization can still diagnose and stabilize production when the agentic layer is unavailable or wrong.
 
 The repository examines this as a delivery-system problem. It distinguishes source-reported findings and documented facts from repository interpretations, systems inferences, risk scenarios, and warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. The detailed research boundary is defined in [Repository Scope](SCOPE.md).
 
@@ -116,10 +117,10 @@ The repository organizes its practical response as a four-layer control stack:
 
 | Layer | Protocol | Primary question |
 | --- | --- | --- |
-| **Engineer** | [Personal Defense](protocols/01_personal_defense.md) | What generated output may cross into durable code, and under what verification? |
-| **Team** | [Operational Defense](protocols/02_operational_defense.md) | Is local acceleration improving or degrading delivery-system outcomes? |
+| **Engineer** | [Personal Defense](protocols/01_personal_defense.md) | What generated output may cross into durable code, and can I still understand and recover the implementation without depending exclusively on the agentic layer? |
+| **Team** | [Operational Defense](protocols/02_operational_defense.md) | Is local acceleration improving delivery outcomes while preserving recovery independence? |
 | **Public evidence** | [Public Evidence and Disclosure](protocols/03_public_defense.md) | What can be claimed, with what support, limitations, and correction path? |
-| **Organization** | [Systemic Cure](protocols/04_systemic_cure.md) | Who owns adoption policy, capacity, exceptions, escalation, and learning? |
+| **Organization** | [Systemic Cure](protocols/04_systemic_cure.md) | Who owns adoption policy, capacity, exceptions, escalation, learning, and the Human Recovery Reserve? |
 
 These are adaptable operating patterns, not universal thresholds or empirical proof. Teams should adapt them to local risk, architecture, regulation, and delivery constraints, then return measured implementation feedback to the evidence system.
 
