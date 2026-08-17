@@ -5,6 +5,7 @@ import re
 
 from .contract import RegistrySectionRequirement
 from .markdown import (
+    exact_markdown_value,
     first_link_target,
     is_table_separator_row,
     scan_markdown_lines,
@@ -114,12 +115,18 @@ def _source_id_at_row_start(
         cells = split_table_row(line)
         if not cells:
             return False
-        candidate = visible_text(cells[0])
-    else:
-        visible = visible_text(line)
-        if not visible:
-            return False
-        candidate = visible.split(maxsplit=1)[0].rstrip(":;,.—–")
+        candidate = exact_markdown_value(cells[0])
+        if re.fullmatch(source_id_pattern, candidate) is not None:
+            return True
+        return any(
+            candidate.startswith(prefix)
+            for prefix in sorted(source_prefixes, key=len, reverse=True)
+        )
+
+    visible = visible_text(line)
+    if not visible:
+        return False
+    candidate = visible.split(maxsplit=1)[0].rstrip(":;,.—–")
 
     if re.fullmatch(source_id_pattern, candidate) is not None:
         return True
@@ -175,11 +182,11 @@ def _parse_source_table(
         raw = dict(zip(required_columns, cells, strict=True))
         records.append(
             SourceRecord(
-                source_id=visible_text(raw["ID"]),
+                source_id=exact_markdown_value(raw["ID"]),
                 source=visible_text(raw["Source"]),
-                evidence_review=visible_text(raw["Evidence review"]),
-                integration_audit=visible_text(raw["Integration audit"]),
-                last_verified=visible_text(raw["Last verified"]),
+                evidence_review=exact_markdown_value(raw["Evidence review"]),
+                integration_audit=exact_markdown_value(raw["Integration audit"]),
+                last_verified=exact_markdown_value(raw["Last verified"]),
                 can_support=visible_text(raw["Can support"]),
                 current_use=visible_text(raw["Current use"]),
                 brief_link=first_link_target(raw["Evidence review"]),
