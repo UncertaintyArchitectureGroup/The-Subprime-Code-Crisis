@@ -13,7 +13,7 @@ require_linear_history = true
 required_approving_review_count = 0
 require_code_owner_review = false
 require_conversation_resolution = true
-dismiss_stale_reviews_on_push = true
+dismiss_stale_reviews_on_push = false
 require_last_push_approval = false
 
 [status_checks]
@@ -28,7 +28,7 @@ require_pull_request = true
 [reviewer_pool]
 team_required = false
 team_slug = ""
-activation_condition = "When at least one independent reviewer or reviewer team has repository access, set required_approving_review_count = 1, require_code_owner_review = true, require_last_push_approval = true, and configure team_slug when a team is used."
+activation_condition = "When at least one independent reviewer or reviewer team has repository access, set required_approving_review_count = 1, require_code_owner_review = true, dismiss_stale_reviews_on_push = true, require_last_push_approval = true, and configure team_slug when a team is used."
 
 [activation]
 repository_settings_applied = false
