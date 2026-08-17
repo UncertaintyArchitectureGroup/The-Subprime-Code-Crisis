@@ -180,7 +180,54 @@ Reference-bounded work reduces uncontrolled variation. It makes generated change
 
 ---
 
-## 4. The Career Hedge — The "Fixer" Premium
+## 4. Pattern: Independent Human Recovery Path
+
+### Intent
+
+Preserve a recovery capability outside the agentic failure domain.
+
+### Problem
+
+Agents can help maintain tests, living specifications, context files, code-review harnesses, and incident diagnostics. Those controls are useful, but they remain fallible when their interpretation or maintenance depends on the same class of probabilistic system they are meant to constrain.
+
+An agent that can misunderstand implementation can also misunderstand the test harness, update the wrong context record, preserve a false assumption in a living specification, or become trapped in an incorrect incident hypothesis. Automation may move the control point; it does not create independence by itself.
+
+### Pattern
+
+For every production component you own, retain enough direct understanding to inspect and stabilize it when the agentic layer is unavailable, misleading, or stuck.
+
+A responsible engineer should be able to:
+
+1. identify the raw implementation path for the failing behavior;
+2. inspect logs, traces, state, and configuration without relying only on an agent summary;
+3. explain the critical invariants and persistent state involved;
+4. isolate a bounded root-cause hypothesis manually;
+5. apply or coordinate a reversible emergency change without requiring agent-generated code;
+6. verify recovery using independent operational evidence.
+
+This is not a requirement to reject AI assistance during an incident. It is a requirement that AI assistance is not the only path to comprehension and remediation.
+
+### Stateful-system boundary
+
+"Rewrite the service" is not a universal recovery plan. A replaceable code artifact may still participate in persistent databases, queues, distributed transactions, migration history, customer state, idempotency records, and years of encoded operational edge cases.
+
+Regenerating source code does not by itself repair corrupted data, reconcile broken transactions, or reconstruct system history. The more consequential the state, the stronger the requirement for human-understood recovery procedures.
+
+### Failure modes
+
+- engineers can operate the agent workflow but cannot trace the underlying code path;
+- tests and specifications are accepted because an agent says they are synchronized;
+- the same model family generates code, judges the tests, updates the context, and diagnoses the incident without an independent check;
+- a critical incident becomes prompt-and-regenerate experimentation because nobody can reason about the live system directly;
+- staffing removes the last people who understand the implementation and state model.
+
+### Operating principle
+
+> **Agentic engineering is safe only while the team preserves an independent recovery path outside the agentic failure domain.**
+
+---
+
+## 5. The Career Hedge — The "Fixer" Premium
 
 Do not build your career around prompt fluency alone. Build the skills required to detect, explain, and repair system damage.
 
@@ -198,7 +245,7 @@ These skills matter because the professional value of an engineer is not the amo
 
 ---
 
-## 5. The Commitment
+## 6. The Commitment
 
 Adopt this stance:
 
