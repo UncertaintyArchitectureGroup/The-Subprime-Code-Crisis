@@ -120,7 +120,8 @@ For each risk class, define:
 - security checks;
 - observability requirements;
 - rollback or kill mechanism;
-- required decision records.
+- required decision records;
+- recovery-independence requirements for consequential systems.
 
 ### Escalation actions
 
@@ -168,6 +169,7 @@ Before expanding adoption, assess whether constrained functions can absorb the n
 - Are incidents, hotfixes, or rollbacks rising?
 - Is planned product work displaced by cleanup?
 - Is maintenance ownership clear for generated changes?
+- Does each consequential system still have engineers who can debug and stabilize it without relying on the agentic layer?
 
 ### Capacity responses
 
@@ -182,7 +184,25 @@ Possible actions include:
 - redesign team boundaries;
 - delay expansion until queues stabilize.
 
-**Operating rule:** productivity gains are not real if they are financed by invisible downstream overload.
+### Human Recovery Reserve
+
+Do not optimize staffing so aggressively around AI-assisted throughput that the organization loses the people who understand the implementation and state model deeply enough to recover the system manually.
+
+For consequential services, preserve a **Human Recovery Reserve**: sufficient people, access, documentation, practice, and decision authority to diagnose and stabilize the service when agentic tooling is unavailable, misleading, or unable to escape a bad hypothesis.
+
+The reserve is a capability, not necessarily a dedicated team. It may be distributed across service owners, senior engineers, SRE, database specialists, security, and platform staff. What matters is that the capability is real, current, reachable during an incident, and exercised rather than assumed.
+
+At minimum, the organization should know:
+
+- who can trace critical implementation paths;
+- who understands persistent data and transaction boundaries;
+- who can operate production diagnostics directly;
+- who can authorize containment, rollback, or emergency remediation;
+- how those people remain practiced as routine work becomes more automated.
+
+Removing this reserve may look efficient during normal operation while increasing fragility precisely when automation fails.
+
+**Operating rule:** productivity gains are not real if they are financed by invisible downstream overload or by consuming the organization's last independent recovery capability.
 
 ---
 
@@ -209,6 +229,7 @@ Reward outcomes that reflect the whole delivery system:
 - maintainability;
 - quality of decision records;
 - successful containment of incidents;
+- retained recovery capability;
 - learning that improves policy or controls.
 
 ### Anti-Goodhart rule
@@ -251,9 +272,12 @@ Expansion requires evidence across multiple cycles that:
 - downstream queues remain controlled;
 - quality and production outcomes do not materially degrade;
 - engineers can explain and maintain accepted changes;
+- consequential systems retain an independent human recovery path;
 - exceptions are visible and handled;
 - reviewer and operational capacity are sufficient;
 - gains survive beyond code generation.
+
+For High and Critical systems, include the recovery-independence exercise from [Protocol 2](02_operational_defense.md#4-recovery-independence-gate) or an equivalent local demonstration before expanding autonomy.
 
 ### Gate 3 — Bounded expansion
 
@@ -277,6 +301,7 @@ A mature operating model includes:
 - incident learning;
 - model and tool change management;
 - capacity planning;
+- recovery-capability maintenance;
 - scheduled reassessment of assumptions.
 
 ---
@@ -359,6 +384,8 @@ Investigate the full control system:
 - Was the failure observable before production?
 - Did an exception bypass the intended control?
 - Had a model, tool, prompt, or context source changed?
+- Did the same agentic layer generate the implementation, maintain its governing context, and dominate incident diagnosis?
+- Could the team inspect raw implementation and state directly when the agentic path was wrong or unavailable?
 
 ```mermaid
 flowchart LR
@@ -371,7 +398,7 @@ flowchart LR
     E --> F[Update controls and assumptions]
 ```
 
-A useful incident review changes the system that produced the failure.
+A useful incident review changes the system that produced the failure. If the incident exposes loss of recovery independence, corrective action must restore that capability rather than merely adding another agent or prompt layer.
 
 ---
 
@@ -385,9 +412,10 @@ It is not:
 - a dashboard with no decision rights;
 - a static policy written once;
 - a claim that deterministic checks can eliminate all uncertainty;
+- a claim that humans are infallible;
 - a replacement for engineering judgment.
 
-The goal is **bounded autonomy with inspectable control**, not bureaucracy for its own sake.
+The goal is **bounded autonomy with inspectable control and an independent recovery path**, not bureaucracy for its own sake.
 
 ---
 
@@ -423,6 +451,9 @@ Before organization-wide expansion, verify that:
 - [ ] exceptions expire and are reviewed;
 - [ ] incentives do not reward output volume alone;
 - [ ] incidents update policy and controls;
+- [ ] consequential systems retain named human recovery capability;
+- [ ] teams can diagnose and stabilize critical services without depending exclusively on the agentic layer;
+- [ ] stateful recovery procedures cover data, transactions, and operational history rather than only source-code regeneration;
 - [ ] public claims follow Protocol 3 disclosure rules;
 - [ ] expansion is reversible;
 - [ ] model and tool changes trigger reassessment.
@@ -433,9 +464,9 @@ If several of these are missing, the organization is not scaling an operating mo
 
 ## Final Principle
 
-The durable advantage of AI-assisted engineering will not come from maximizing generated code. It will come from building an organization that can increase autonomy while preserving accountability, evidence, and control.
+The durable advantage of AI-assisted engineering will not come from maximizing generated code. It will come from building an organization that can increase autonomy while preserving accountability, evidence, control, and the ability to recover when the automation itself fails.
 
-**Generate less blindly. Verify proportionally. Expand only when the system can absorb it.**
+**Generate less blindly. Verify proportionally. Preserve recovery independence. Expand only when the system can absorb it.**
 
 ---
 

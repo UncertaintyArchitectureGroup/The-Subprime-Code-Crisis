@@ -26,6 +26,28 @@ If you deploy an AI Agent to review code, you haven't removed the burden from yo
 
 The bottleneck didn't disappear; it mutated. The Senior Engineer stops being a "Reviewer of Code" and becomes a "Maintainer of Infrastructure." The cognitive load remains critically high, but now it is hidden behind the illusion of automation.
 
+### The Meta-Control Paradox
+
+The same problem extends beyond code review.
+
+Modern agentic engineering increasingly relies on test harnesses, context files, living specifications, architecture records, policy documents, and automated evaluators. These controls are useful precisely because models are not trusted to operate without constraints.
+
+But if the same class of probabilistic system is also responsible for maintaining those constraints, the uncertainty has not disappeared. It has moved upward into the metadata and control layer.
+
+An agent that can misunderstand production code can also misunderstand a test oracle, preserve a false assumption in a living specification, update the wrong context record, or misdiagnose a production incident. Using agents to govern agents can improve coverage and speed, but it does not create an independent recovery channel by itself.
+
+This leads to a stronger architectural rule:
+
+> **The agentic control layer remains inside the probabilistic failure domain unless an independent recovery capability exists outside it.**
+
+The practical implication is not that every automated control must be human-operated. It is that consequential systems need a path to comprehension and remediation that does not depend exclusively on the same agentic stack that may be failing.
+
+This is especially important for stateful production systems. Source code may be replaceable. Production state often is not. Regenerating a service does not automatically repair corrupted databases, reconcile distributed transactions, reconstruct queue history, restore idempotency guarantees, or recover years of operational edge cases embedded in the running system.
+
+During a critical incident, prompt-and-regenerate may be useful as one tool. It is not a substitute for the ability to inspect raw implementation, understand state transitions, isolate failure mechanisms, and execute a bounded recovery action.
+
+The relevant accountability boundary therefore remains with the organization operating the system unless responsibility has been explicitly transferred through enforceable contractual and legal mechanisms. Tool use does not erase operational ownership.
+
 ### The Challenge of Systemic Rebalancing
 
 This example proves that there is no "correct" solution for a single node of the SDLC in isolation. The crisis we face is not a problem of individual efficiency; it is a problem of **systemic synchronization**.

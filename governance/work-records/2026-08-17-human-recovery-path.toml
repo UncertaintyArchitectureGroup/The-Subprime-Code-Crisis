@@ -1,0 +1,23 @@
+record_version = 1
+title = "Independent human recovery path"
+primary_flow = "Approved substantive report and protocol change"
+human_decision = "Maintainer approved integration of the human recovery-path principle in conversation on 2026-08-17."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "The change adds a material report inference and operational controls for recovery independence across engineer, team, and organizational protocol layers."
+
+[synchronization]
+assessed_surfaces = [
+  "report",
+  "protocols",
+  "reader-navigation",
+  "source-registry",
+  "references",
+  "history",
+]
+
+[synchronization.non_applicable]
+source-registry = "The change is a repository systems inference and proposed practice derived from the existing risk model; it does not add, remove, reclassify, or newly rely on a source."
+references = "No citation identity or bibliography entry changes; the new principle is not presented as a new source-reported empirical finding."

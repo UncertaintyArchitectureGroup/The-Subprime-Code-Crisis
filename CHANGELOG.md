@@ -14,6 +14,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 - Restructured the README around Quick Start, Key Takeaways, and a repository map; reduced duplicate navigation and artifact-flow explanation while preserving the Claim confidence map, Evidence Map, Crisis Map boundaries, operational control stack, and the bounded `P-2026-01` evidence summary.
 - Expanded the Doctrine's map principles so reader summaries and visualizations preserve claim class, scope, uncertainty, attribution, and source boundaries.
+- Added the Meta-Control Paradox to the report and propagated recovery independence through the protocol stack: an Independent Human Recovery Path for engineers, a Recovery Independence Gate and AI-off game day for teams, and a Human Recovery Reserve for organizations operating consequential systems.
 
 ### Governance
 

@@ -120,7 +120,44 @@ A change may move forward only when the required evidence exists for its risk cl
 
 ---
 
-## 4. Escalation Rules
+## 4. Recovery Independence Gate
+
+Agentic tooling can accelerate implementation, testing, review, documentation, and incident analysis, but those layers must not become the team's only path to understanding the system.
+
+For **High** and **Critical** systems, adoption should include a recovery-independence check: can the team diagnose and stabilize a production failure when the agentic layer is unavailable, misleading, or trapped in a bad hypothesis?
+
+### Minimum recovery capability
+
+The team should be able to demonstrate that:
+
+- at least one accountable engineer can trace the critical implementation path directly;
+- persistent state, data ownership, transaction boundaries, and rollback constraints are understood;
+- raw logs, metrics, traces, and configuration are accessible without an agent intermediary;
+- emergency procedures do not require regenerated code as the only remediation path;
+- manual or independently tooled verification can confirm whether stabilization worked.
+
+### AI-off game day
+
+For consequential systems, periodically exercise a bounded incident scenario with AI coding and diagnosis tools intentionally unavailable.
+
+The purpose is not to prove that humans are faster than AI. It is to expose whether the team has lost the cognitive and operational capability to recover without it.
+
+A useful game day asks the team to:
+
+1. detect the simulated failure from ordinary production signals;
+2. locate the affected implementation and state path;
+3. form and test a root-cause hypothesis without agent-generated analysis;
+4. choose a reversible containment or remediation action;
+5. verify recovery from system evidence;
+6. record capability gaps and training or documentation actions.
+
+### Failure signal
+
+If a team cannot explain or stabilize a high-impact service without the agentic layer, treat that as operational dependence, not merely a training inconvenience. Constrain autonomy, restore knowledge, and repeat the exercise before expanding exposure.
+
+---
+
+## 5. Escalation Rules
 
 Define escalation before the pilot begins. Otherwise teams tend to reinterpret negative signals as temporary noise.
 
@@ -147,7 +184,8 @@ Possible responses:
 - require reference-bounded adaptation;
 - add pre-review automated checks;
 - increase reviewer capacity temporarily;
-- stop autonomous or multi-file changes in the affected area.
+- stop autonomous or multi-file changes in the affected area;
+- restore manual recovery capability before expanding autonomy again.
 
 ### Pause
 
@@ -157,7 +195,7 @@ A pause is not a rejection of AI. It is a control action used to prevent an unst
 
 ---
 
-## 5. Weekly Operating Review
+## 6. Weekly Operating Review
 
 Use a short recurring review for the pilot or team.
 
@@ -168,6 +206,7 @@ Use a short recurring review for the pilot or team.
 - escaped defects and rollback events;
 - reviewer capacity and queue age;
 - exceptions to risk-class gates;
+- recovery-independence gaps or game-day findings;
 - qualitative findings from engineers, QA, security, and operations.
 
 ### Decisions
@@ -180,7 +219,8 @@ The review should produce explicit decisions, not only a dashboard:
 4. Add or strengthen a gate.
 5. Reduce work in progress.
 6. Pause a specific use case.
-7. Expand only after stable evidence across multiple cycles.
+7. Restore recovery capability or ownership before increasing autonomy.
+8. Expand only after stable evidence across multiple cycles.
 
 ### Decision record
 
@@ -197,7 +237,7 @@ This creates an inspectable history of why the operating model changed.
 
 ---
 
-## 6. What Not to Claim
+## 7. What Not to Claim
 
 Operational metrics support local decisions. They do not automatically prove universal effects.
 
@@ -215,11 +255,13 @@ Use bounded language:
 
 ---
 
-## 7. Leadership Communication
+## 8. Leadership Communication
 
 When asked why code output has increased without equivalent delivery acceleration, explain the full production hierarchy:
 
 > "The tools have reduced the cost of producing candidate code. We are now measuring whether that acceleration survives review, validation, release, and production use. Where downstream queues or failures rise, we will change the operating model rather than count additional output as productivity."
+
+For critical systems, add the recovery boundary explicitly: increased automation is not a valid efficiency gain if the team can no longer diagnose and stabilize the system when that automation fails.
 
 This keeps the discussion grounded in shipped value and system health rather than hype or fear.
 
@@ -227,7 +269,7 @@ This keeps the discussion grounded in shipped value and system health rather tha
 
 ## Relationship to the protocol stack
 
-[Protocol 1](01_personal_defense.md) defines engineer-level boundaries and verification practices. This protocol turns those boundaries into team-level metrics, gates, and escalation rules. Protocol 3 addresses the wider organizational and public incentives surrounding adoption.
+[Protocol 1](01_personal_defense.md) defines engineer-level boundaries, verification practices, and the independent human recovery path. This protocol turns those boundaries into team-level metrics, gates, escalation rules, and recovery-independence exercises. Protocol 3 addresses the wider organizational and public incentives surrounding adoption.
 
 ---
 
