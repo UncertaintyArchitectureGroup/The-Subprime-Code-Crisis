@@ -62,11 +62,18 @@ class PRGovernanceContractTests(unittest.TestCase):
                 encoding="utf-8"
             )
         )
-        self.assertEqual(policy["pull_requests"]["required_approving_review_count"], 0)
-        self.assertFalse(policy["pull_requests"]["require_code_owner_review"])
-        self.assertFalse(policy["pull_requests"]["require_last_push_approval"])
+        pull_requests = policy["pull_requests"]
+        self.assertEqual(pull_requests["required_approving_review_count"], 0)
+        self.assertFalse(pull_requests["require_code_owner_review"])
+        self.assertFalse(pull_requests["dismiss_stale_reviews_on_push"])
+        self.assertFalse(pull_requests["require_last_push_approval"])
         self.assertFalse(policy["reviewer_pool"]["team_required"])
         self.assertEqual(policy["reviewer_pool"]["team_slug"], "")
+        activation = policy["reviewer_pool"]["activation_condition"]
+        self.assertIn("required_approving_review_count = 1", activation)
+        self.assertIn("require_code_owner_review = true", activation)
+        self.assertIn("dismiss_stale_reviews_on_push = true", activation)
+        self.assertIn("require_last_push_approval = true", activation)
 
     def test_github_enforcement_playbook_headings_are_part_of_contract(self) -> None:
         contract = load_contract(REPO_ROOT / "governance/repository-contract.toml")
