@@ -54,6 +54,7 @@ required_files = [
   "tests/__init__.py",
   "tests/repository_validator/__init__.py",
   "tests/repository_validator/test_contract_invariants.py",
+  "tests/repository_validator/test_exact_semantics.py",
   "tests/repository_validator/test_validator.py",
   ".github/workflows/main-health.yml",
 ]
