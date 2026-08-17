@@ -14,10 +14,10 @@ The four protocols form one control stack:
 
 ```mermaid
 flowchart TD
-    A[Protocol 1: Engineer boundary<br/>Contain, reference, verify]
-    --> B[Protocol 2: Team control loop<br/>Measure, gate, escalate]
+    A[Protocol 1: Engineer boundary<br/>Contain, reference, recover]
+    --> B[Protocol 2: Team control loop<br/>Measure, gate, exercise recovery]
     --> C[Protocol 3: Evidence disclosure<br/>Bound, trace, correct]
-    --> D[Protocol 4: Organizational control model<br/>Own, govern, learn]
+    --> D[Protocol 4: Organizational control model<br/>Own, govern, preserve recovery capacity]
 ```
 
 Each layer addresses a different failure mode. None of them is sufficient alone.
@@ -37,10 +37,11 @@ Each layer addresses a different failure mode. None of them is sufficient alone.
 - Green, Controlled, and Protected work zones;
 - Disposable Boundary Pattern;
 - Reference-Bounded Adaptation;
+- Independent Human Recovery Path;
 - explicit verification before generated output becomes durable code;
 - engineer accountability for every committed change.
 
-**Use this when:** AI-generated output is entering day-to-day implementation work and the team needs clear boundaries for what may be generated, adapted, reviewed, or rejected.
+**Use this when:** AI-generated output is entering day-to-day implementation work and the team needs clear boundaries for what may be generated, adapted, reviewed, rejected, or recovered without depending exclusively on the agentic layer.
 
 ---
 
@@ -55,10 +56,11 @@ Each layer addresses a different failure mode. None of them is sufficient alone.
 - local baselines rather than universal thresholds;
 - flow, review, rework, quality, release, and production signals;
 - change-risk classes and minimum review gates;
+- Recovery Independence Gate and AI-off game days for consequential systems;
 - investigate, constrain, and pause escalation rules;
 - recurring operating review and decision records.
 
-**Use this when:** A team or pilot is adopting AI assistance and needs to determine whether local acceleration survives review, validation, release, and production use.
+**Use this when:** A team or pilot is adopting AI assistance and needs to determine whether local acceleration survives review, validation, release, production use, and loss or failure of the agentic layer.
 
 ---
 
@@ -92,10 +94,11 @@ Each layer addresses a different failure mode. None of them is sufficient alone.
 - named ownership and decision rights;
 - executable policy lifecycle;
 - review, QA, security, architecture, release, and maintenance capacity planning;
+- Human Recovery Reserve for consequential systems;
 - staged adoption gates;
 - exception debt, decision memory, and incident learning.
 
-**Use this when:** AI adoption is expanding beyond a local team and the organization needs consistent policy, capacity, accountability, and feedback loops.
+**Use this when:** AI adoption is expanding beyond a local team and the organization needs consistent policy, capacity, accountability, feedback loops, and retained recovery capability outside the agentic failure domain.
 
 ---
 
@@ -105,12 +108,12 @@ Do not begin with organization-wide policy and assume the lower layers will foll
 
 A practical adoption sequence is:
 
-1. Establish engineer-level boundaries and verification practices.
-2. Pilot a team-level control loop with local baselines and explicit gates.
+1. Establish engineer-level boundaries, verification practices, and a direct recovery path.
+2. Pilot a team-level control loop with local baselines, explicit gates, and recovery-independence exercises.
 3. Communicate results through bounded, traceable disclosures.
-4. Expand only when organizational ownership, capacity, policy, and pause authority exist.
+4. Expand only when organizational ownership, capacity, policy, pause authority, and Human Recovery Reserve exist.
 
-The reverse sequence is a common failure mode: executives announce broad adoption, teams absorb the output, reviewers become the hidden constraint, and governance is added only after defects or maintenance costs appear.
+The reverse sequence is a common failure mode: executives announce broad adoption, teams absorb the output, reviewers become the hidden constraint, deep system knowledge atrophies, and governance is added only after defects or maintenance costs appear.
 
 ---
 
@@ -138,7 +141,7 @@ A protocol may be motivated by one or more sources, but it is not empirical proo
 
 ## Operating principle
 
-> Faster generation is useful only when the surrounding system can still understand, verify, release, operate, and maintain the result.
+> Faster generation is useful only when the surrounding system can still understand, verify, release, operate, maintain, and recover the result when the agentic layer is unavailable or wrong.
 
 ---
 
