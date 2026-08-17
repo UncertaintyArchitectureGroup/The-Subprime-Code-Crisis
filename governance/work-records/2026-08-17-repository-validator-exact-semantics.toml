@@ -1,0 +1,15 @@
+record_version = 1
+title = "Harden exact repository-validator semantics"
+primary_flow = "approved governance procedure"
+human_decision = "Maintainer approved correcting the review blockers discovered after merged PR #37 on 2026-08-17"
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Not required"
+reason = "This corrects implementation defects in the existing executable contract without creating a new workflow, status, gate, contributor obligation, navigation rule, or reader-facing claim."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor instruction changes are required; existing governance already specifies exact status semantics and fail-closed repository validation."
