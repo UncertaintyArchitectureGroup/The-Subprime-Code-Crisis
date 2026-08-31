@@ -1,0 +1,18 @@
+record_version = 1
+title = "Expose README authorship and provenance links"
+primary_flow = "Approved editorial synchronization"
+human_decision = "Maintainer explicitly approved adding the top-level author/project identity line and direct DOU provenance links on 2026-08-31."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Not required"
+reason = "This follow-up only exposes already-established attribution identity and already-reviewed provenance links at the README entry point; it does not change repository claims, source states, citation identity, evidence interpretation, or protocol behavior."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "reader-navigation", "references", "history"]
+
+[synchronization.non_applicable]
+governance = "No workflow, gate, source-state rule, or governance obligation changes; this work record exists only to satisfy the governed PR contract."
+contributor-guidance = "No contributor instruction or obligation changes."
+references = "The underlying DOU and GitHub provenance records are already registered and cited; only direct links from README are added."
+history = "No changelog entry is required because the underlying attribution and provenance record was already merged in PR #44; this is reader-entry-point exposure only."
