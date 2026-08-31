@@ -63,7 +63,7 @@ The **Evidence Map** classifies materials by role. It answers a different questi
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
 | **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: Writing Code vs. Shipping Code](evidence/primary/2026-writing-code-vs-shipping-code.md); METR developer-productivity RCT and long-task measurement; Xu et al. large-scale developer study; Agarwal et al. code-structure analysis; Peng et al. Copilot RCT; GitClear code-change and productivity measurement reports |
-| **Primary documentary sources** | First-party records used for infrastructure, spending, organizational, and terminology-provenance claims | Alphabet, Meta, and Microsoft filings; official product and engineering documentation; published engineering-system descriptions; [terminology provenance records](evidence/documentary/terminology-provenance.md) |
+| **Primary documentary sources** | First-party records used for infrastructure, spending, organizational, and terminology-provenance claims | Alphabet, Meta, and Microsoft filings; official product and engineering documentation; published engineering-system descriptions; [terminology provenance records](evidence/documentary/terminology-provenance.md); [project-analysis provenance](evidence/documentary/project-provenance.md) |
 | **Secondary evidence and industry context** | Reviews, surveys, practitioner analyses, and synthesis used for triangulation or context | DORA reports; McKinsey and Deloitte enterprise surveys; SoftwareSeni review analysis; TechnoDiaries practitioner reporting; Andreas Horn industry commentary |
 | **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | Goldratt's Theory of Constraints; software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
 | **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md); GitHub activity and marketplace datasets documented in cited studies |
@@ -122,6 +122,12 @@ The repository organizes its practical response as a four-layer control stack:
 | **Organization** | [Systemic Cure](protocols/04_systemic_cure.md) | Who owns adoption policy, capacity, exceptions, escalation, and learning? |
 
 These are adaptable operating patterns, not universal thresholds or empirical proof. Teams should adapt them to local risk, architecture, regulation, and delivery constraints, then return measured implementation feedback to the evidence system.
+
+## Project provenance
+
+The public lineage of this repository's own analysis is documented separately from the history of the phrase. A 2026-01-05 DOU article by Vitalii Oborskyi already described the generation/review asymmetry, review bottleneck, technical-debt accumulation, and the divergence between individual output and team delivery. DOU preserves the ensuing discussion; the 2026-02-10 follow-up explicitly says that work on the earlier article and reader discussion led to the deeper investigation. GitHub records this repository as created on 2026-02-06 at `17:16:44Z`, between those two publications.
+
+See the [project provenance brief](evidence/documentary/project-provenance.md) and [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the source record and boundaries. This chronology documents development of this project's delivery-system synthesis; it is **not** a claim that the repository invented the general phrase **Subprime Code Crisis** or that similar work elsewhere was derived from it.
 
 ## Citation, Attribution, and History
 
