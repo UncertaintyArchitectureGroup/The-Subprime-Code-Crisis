@@ -75,6 +75,13 @@ A source appearing here is not automatically peer reviewed, independently valida
 - Richard Ewing. [*The Subprime Code Crisis — Research Spec*](https://www.richardewing.io/concepts/subprime-code-crisis). Current page claims an April 2025 Built In / HackerNoon origin; that origin remains unverified in the repository review.
 - Status: documentary provenance record under re-review and re-verification; see the [terminology provenance brief](evidence/documentary/terminology-provenance.md) for source-specific limitations and the unresolved chronology.
 
+### D-2026-05 to D-2026-07 — Project-analysis provenance
+
+- Vitalii Oborskyi. [*Ілюзія економії: чому заміна розробників на AI — це шлях до технічного дефолту*](https://dou.ua/forums/topic/57244/). DOU, 2026-01-05.
+- GitHub REST repository record for [`UncertaintyArchitectureGroup/The-Subprime-Code-Crisis`](https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis), recording `created_at` as `2026-02-06T17:16:44Z`.
+- Vitalii Oborskyi. [*Субпрайм-криза коду: чому AI-асистенти роблять нас повільнішими — і дані це доводять*](https://dou.ua/forums/topic/57846/). DOU, 2026-02-10.
+- Status: reviewed documentary brief with integration audit in progress; these records establish the public development path of this project's own analysis, not phrase coinage or independent validation. See the [project provenance brief](evidence/documentary/project-provenance.md).
+
 ## Secondary evidence and industry context
 
 ### S-2025-01 — Deloitte enterprise survey
