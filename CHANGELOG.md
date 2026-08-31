@@ -14,6 +14,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 - Restructured the README around Quick Start, Key Takeaways, and a repository map; reduced duplicate navigation and artifact-flow explanation while preserving the Claim confidence map, Evidence Map, Crisis Map boundaries, operational control stack, and the bounded `P-2026-01` evidence summary.
 - Expanded the Doctrine's map principles so reader summaries and visualizations preserve claim class, scope, uncertainty, attribution, and source boundaries.
+- Corrected the terminology-provenance record for Richard Ewing to include a currently accessible 2025-11-12 Ewing-attributed syndication surface, the current April 2025 origin claim, the conflicting March 2026 publications-catalog date, and the previously recorded 2026-05-01 article; the April 2025 origin remains recorded as claimed but not independently verified.
 
 ### Governance
 

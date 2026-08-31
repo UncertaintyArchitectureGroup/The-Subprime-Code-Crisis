@@ -1,0 +1,19 @@
+record_version = 1
+title = "Correct Ewing provenance chronology"
+primary_flow = "Flow C — Changed source"
+human_decision = "Maintainer explicitly approved correcting the provenance record in conversation on 2026-08-31."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "The correction materially changes the reader-facing terminology-provenance record and attribution boundary by adding earlier Ewing-attributed surfaces and unresolved date inconsistencies."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "reader-navigation", "evidence", "source-registry", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor workflow or obligation changes; governance changes are limited to this PR's required work record."
+evidence-indexes = "The documentary index already points to the same terminology-provenance brief and its description remains accurate."
+reader-navigation = "README and CITATION.cff already route readers to the terminology-attribution note and state the same bounded contribution claim; repository identity metadata does not change."
+report = "The report does not rely on Ewing chronology for its delivery-system thesis."
+protocols = "No operational protocol depends on authorship or terminology priority."
