@@ -25,15 +25,18 @@ The following timeline records the earliest public uses located and inspected du
 | Date | Author | Located public wording | What the record supports |
 | --- | --- | --- | --- |
 | 2025-09-16 | Nick Vigier | “Subprime Code” and “subprime coding crisis” | An early located public use of the mortgage-crisis metaphor for AI-assisted coding |
-| 2025-12-16 | Igor Światowski | “The Subprime Code Crisis Has Started” | The earliest located dated record in this review using the full phrase **The Subprime Code Crisis** |
-| 2026-05-01 | Richard Ewing | “The Subprime Code Crisis” | A later public use developing a separate technical-debt analogy and framework |
-| 2026 | This repository | *The Subprime Code Crisis* | Evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, and operational protocols |
+| 2025-11-12 | Richard Ewing | “The Subprime Code Crisis: What Happens When Unverified AI Code Floods the Enterprise” | A dated CareerWin/Beehiiv-attributed page using the full phrase and a hidden-technical-debt analogy |
+| 2025-12-16 | Igor Światowski | “The Subprime Code Crisis Has Started” | Another located 2025 record using the full phrase **The Subprime Code Crisis** |
+| 2026-02-06 | This repository | *The Subprime Code Crisis* repository created | Public repository boundary for this project's inspectable research record |
+| 2026-05-01 | Richard Ewing | “The Subprime Code Crisis” | A later Ewing article developing a separate technical-debt analogy and framework |
+
+Richard Ewing's current canonical concept page additionally claims **“First Introduced April 2025 (Built In / HackerNoon)”** and labels a Built In item as the origin. During the current review, that claimed April 2025 origin could not be independently verified from the linked origin surface. Ewing's own current publications catalog instead lists *The Subprime Code Crisis* under Beehiiv as published in **March 2026**, while the CareerWin syndication page dates a version to **2025-11-12**. These are recorded as provenance inconsistencies, not as evidence that any particular date is false or that another work was derived from this repository.
 
 The source-oriented review is maintained in [`evidence/documentary/terminology-provenance.md`](evidence/documentary/terminology-provenance.md).
 
 The bounded conclusion is that related terminology was in public circulation across multiple independent works. The available inspected record does **not** establish a single originator, a complete lineage, or that this repository derived its analysis from any of the listed works.
 
-“Earliest located” means earliest found and inspected in the current search. Search indexes are incomplete, publication metadata can change, and earlier private, deleted, or unindexed uses may exist.
+“Earliest located” means earliest found and inspected in the current search. Search indexes are incomplete, publication metadata can change, and earlier private, deleted, backdated, syndicated, or unindexed uses may exist.
 
 ## What this repository contributes
 
