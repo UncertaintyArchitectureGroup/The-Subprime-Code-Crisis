@@ -1,0 +1,19 @@
+record_version = 1
+title = "Correct Ewing provenance chronology"
+primary_flow = "Flow C — Changed source"
+human_decision = "Maintainer explicitly approved correcting the provenance record in conversation on 2026-08-31."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Not required"
+reason = "The PR corrects a documentary provenance record and its attribution-facing summary without changing the repository research thesis, protocol set, or release behavior."
+
+[synchronization]
+assessed_surfaces = ["terminology-attribution", "documentary-evidence", "source-registry", "references", "report", "protocols", "readme", "history"]
+
+[synchronization.non_applicable]
+references = "No bibliography entry is used to establish the terminology chronology."
+report = "The report does not rely on Ewing chronology for its delivery-system thesis."
+protocols = "No operational protocol depends on authorship or terminology priority."
+readme = "README thesis and evidence map do not make a priority claim about the phrase."
+history = "CHANGELOG not required because this is a bounded documentary provenance correction, not a thesis or protocol change."
