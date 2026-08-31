@@ -11,20 +11,21 @@ current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "README.md", "REFERENCES.md"]
 
 ## Review scope
 
-This brief records three public documentary records used only to establish the provenance of this project's own inspectable work: a January 2026 precursor article and discussion, the GitHub repository creation timestamp, and the February 2026 Subprime Code publication by Vitalii Oborskyi.
+This brief records three public documentary records used only to establish the provenance of this project's own inspectable work: a January 2026 precursor article and preserved discussion thread, the GitHub repository creation timestamp, and the February 2026 Subprime Code publication by Vitalii Oborskyi.
 
 These records document the development path of the project's delivery-system synthesis. They do **not** establish coinage of the phrase **Subprime Code Crisis**, independent validation of the thesis, or priority over every related idea.
 
 ## Sources reviewed
 
-### D-2026-05 — January DOU precursor
+### D-2026-05 — January DOU precursor article and discussion thread
 
 - **Author:** Vitalii Oborskyi
 - **Title:** *Ілюзія економії: чому заміна розробників на AI — це шлях до технічного дефолту*
 - **Publisher / host:** DOU
 - **Published:** 2026-01-05 15:30, as displayed by DOU
+- **Discussion record:** preserved dated comments on the same DOU page, including author comments from 2026-01-08
 - **Canonical public page:** https://dou.ua/forums/topic/57244/
-- **Publication status:** dated public practitioner/research article authored by the project creator; not an independent validation source.
+- **Publication status:** dated public practitioner/research article and preserved discussion thread authored in part by the project creator; not an independent validation source.
 
 ### D-2026-06 — GitHub repository metadata
 
@@ -67,7 +68,13 @@ The January article therefore provides a public precursor formulation of the rep
 
 ### 2. The January discussion is part of the documented development path
 
-DOU preserves dated author comments under the January article. In those discussions Oborskyi further distinguishes generated volume from Value Stream improvement, describes review and debugging as places where writing-time savings can be lost, and frames AI assistance as a multiplier whose safety depends on expert validation.
+DOU preserves dated author comments under the January article. Representative public author comments include:
+
+- **2026-01-08 10:08:** distinguishes a large individual-level AI boost from industry-level delivery outcomes and discusses increased code generation, churn, and downstream organizational consequences.
+- **2026-01-08 10:33:** argues that generating and filtering substantially more code for the same result is not equivalent to productivity improvement because the **Value Stream** may not accelerate; the same comment points to increasing **Review Cycle Time** as a downstream constraint.
+- **2026-01-08 17:29:** describes the article and discussion as an attempt to improve the profession's information hygiene by challenging the assumption that organizations can simply remove people and replace them with bots, while explicitly framing the work as contribution to a broader public discourse rather than guaranteed industry influence.
+
+These timestamps and summaries are documentary anchors for the discussion record; they do not imply that every later mechanism was fully specified in those comments.
 
 The later 2026-02-10 article explicitly states that both work on the earlier article and discussions with readers caused the author to examine the available evidence more closely, and describes the new article as a logical continuation of that work.
 
@@ -102,7 +109,7 @@ The 2026-02-10 article publicly documents the mature Subprime Code formulation. 
 - presents deferred review, rework, maintainability, and operating cost as the mechanism behind the crisis framing; and
 - explicitly identifies the article as an adaptation of the first chapters of the open GitHub report *The Subprime Code Crisis*.
 
-The article therefore creates a dated externally hosted attribution edge among **Vitalii Oborskyi**, **The Subprime Code Crisis**, the GitHub repository, and **Uncertainty Architecture Group**.
+The article therefore provides a dated externally hosted record linking **Vitalii Oborskyi** to *The Subprime Code Crisis* and to the GitHub repository under the **Uncertainty Architecture Group** namespace.
 
 ## Formulation fingerprint
 
@@ -132,7 +139,7 @@ Together, the records support the following bounded provenance statement:
 
 > The repository's attributable delivery-system synthesis has an inspectable public precursor in Vitalii Oborskyi's 2026-01-05 DOU article and ensuing discussion, followed by creation of the public GitHub repository on 2026-02-06 and explicit publication of the Subprime Code synthesis on DOU on 2026-02-10.
 
-This is deliberately different from a claim of phrase ownership. Earlier third-party uses of **Subprime Code** and **The Subprime Code Crisis** remain visible in the separate terminology-provenance record. Phrase provenance and analytical provenance are different questions.
+This is deliberately different from a claim of phrase ownership. Earlier third-party uses of **Subprime Code** and **The Subprime Code Crisis** remain visible in the separate [terminology-provenance record](terminology-provenance.md). Phrase provenance and analytical provenance are different questions.
 
 ## What these sources do not establish
 
@@ -141,19 +148,20 @@ These sources do **not** establish:
 - that Vitalii Oborskyi coined **Subprime Code**, **Subprime Code Crisis**, or **The Subprime Code Crisis**;
 - that the repository was the first public work to compare AI-generated code with subprime finance or technical debt;
 - that no earlier private, deleted, unindexed, or differently worded delivery-system analysis existed;
-- that the repository influenced Richard Ewing, Nick Vigier, Igor Światowski, or any other author;
-- that later overlapping formulations were derived from this project;
+- that the repository influenced any third-party author or that later overlapping formulations were derived from this project;
 - that similarity proves copying or appropriation;
 - that a GitHub creation date is the first date on which the underlying ideas existed;
 - that DOU independently validated the articles' analytical or empirical claims merely by hosting them;
 - that the complete systems mechanism is a directly measured causal chain; or
 - trademark ownership or legal priority in a product or service name.
 
+The separate [terminology-provenance brief](terminology-provenance.md) records located third-party terminology uses and their source-specific limitations without turning co-occurrence into evidence of influence.
+
 ## Limitations and conflicts
 
 - D-2026-05 and D-2026-07 are authored by the project creator and therefore have a direct authorship interest. They are strong timestamped provenance records but not independent validation.
 - The statement that January discussion contributed to the later work is supported by the February article's retrospective author account. It should be treated as documented author provenance, not independently observed intellectual history.
-- DOU publication metadata is a platform record and may be reformatted or migrated; the currently inspected pages are the operative public surfaces.
+- DOU publication metadata and comment timestamps are platform records and may be reformatted or migrated; the currently inspected pages are the operative public surfaces.
 - D-2026-06 establishes repository-object creation, not private intellectual development or first publication of every component idea.
 - Search indexes and platform records are not complete historical archives.
 
@@ -162,15 +170,15 @@ These sources do **not** establish:
 | Repository statement | Source | Relationship | Boundary |
 | --- | --- | --- | --- |
 | The delivery-system mechanism had a public precursor before the repository | D-2026-05 | Documentary provenance | Establishes January wording and argument, not phrase coinage |
-| Reader discussion contributed to the follow-up investigation | D-2026-07, with the DOU comment record around D-2026-05 | Documentary author account | Does not reconstruct every influence |
+| Reader discussion contributed to the follow-up investigation | D-2026-07, with the dated DOU comment record in D-2026-05 | Documentary author account | Does not reconstruct every influence |
 | Public repository object existed by 2026-02-06T17:16:44Z | D-2026-06 | Platform documentary record | Creation timestamp only |
 | Oborskyi publicly documented the explicit Subprime Code formulation by 2026-02-10 | D-2026-07 | Documentary provenance | Public formulation, not independent validation |
-| The February publication explicitly links the synthesis to the GitHub report | D-2026-07 | Documentary attribution | Establishes the publication-to-repository edge only |
+| The February publication explicitly links the synthesis to the GitHub report | D-2026-07 | Documentary attribution | Establishes the publication-to-repository relationship only |
 
 ## Repository locations using the sources
 
 - `TERMINOLOGY_AND_ATTRIBUTION.md` — project-analysis provenance and chronology boundary.
-- `README.md` — concise reader-facing provenance edge adjacent to citation guidance.
+- `README.md` — concise reader-facing provenance record adjacent to citation guidance.
 - `REFERENCES.md` — human-readable documentary bibliography.
 
 No report chapter or operational protocol currently relies on these sources for empirical support.
@@ -183,7 +191,7 @@ No report chapter or operational protocol currently relies on these sources for 
 - **Numeric claims checked:** Yes — only publication dates and the GitHub creation timestamp are introduced by these documentary records.
 - **README claims and diagrams checked:** Yes — planned use is limited to provenance/citation guidance; Key Takeaways, Claim confidence map, Evidence Map logic, and Crisis Map semantics remain unchanged.
 - **Protocol outcome:** No protocol change.
-- **Corrections made:** Added the precursor → discussion → repository → explicit publication lineage and separated analytical provenance from phrase origin and independent validation.
+- **Corrections made:** Added dated discussion anchors; clarified D-2026-05 source identity; replaced named third-party co-occurrence with a generic influence boundary; tightened documentary wording; separated analytical provenance from phrase origin and independent validation.
 - **Current-use locations confirmed:** `TERMINOLOGY_AND_ATTRIBUTION.md`, `README.md`, `REFERENCES.md`.
 - **Verification date:** —
 
@@ -195,6 +203,6 @@ No report chapter or operational protocol currently relies on these sources for 
 - **Materials independently checked:** unavailable
 - **Outcome:** Review unavailable
 - **Discrepancies found:** no independent assessment
-- **Corrections completed:** primary review only
+- **Corrections completed:** primary review corrections above
 - **Human decision required:** maintainer review and merge decision; no `Verified` status may be claimed without independent confirmation.
 - **Review date:** 2026-08-31
