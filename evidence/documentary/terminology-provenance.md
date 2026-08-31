@@ -1,6 +1,6 @@
 +++
 source_ids = ["D-2025-05", "D-2025-06", "D-2026-04"]
-evidence_review = "Brief in progress"
+evidence_review = "Needs re-review"
 integration_audit = "Needs re-verification"
 last_verified = "—"
 independent_review = "Review unavailable"
