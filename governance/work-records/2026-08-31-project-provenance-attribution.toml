@@ -1,0 +1,16 @@
+record_version = 1
+title = "Harden project provenance and attribution"
+primary_flow = "Flow A — Add source"
+human_decision = "Maintainer explicitly approved the next provenance-hardening PR and added the 2026-01-05 DOU precursor as part of the documented lineage in conversation on 2026-08-31."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "The change materially strengthens reader-facing project provenance and attribution by registering dated precursor, repository-creation, and follow-up publication records while preserving the no-coinage boundary."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "reader-navigation", "evidence", "source-registry", "evidence-indexes", "references", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No workflow, contributor obligation, source-state definition, or evidence-processing rule changes."
+doctrine = "No claim class, evidence principle, mechanism status, or canonical terminology changes; the attribution note is updated only to document project provenance."
