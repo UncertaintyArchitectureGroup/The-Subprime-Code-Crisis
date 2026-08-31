@@ -51,7 +51,7 @@ A source appearing here is not automatically peer reviewed, independently valida
 ### P-2025-05 — GitClear productivity research
 
 - GitClear. [*How Much More Productive Are AI-Powered Developers?*](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025). 2022–2025 study period.
-- Status: original commercial measurement report; methodology and conflict-of-interest brief pending.
+- Status: original commercial productivity measurement report; methodology and conflict-of-interest brief pending.
 
 ## Primary documentary sources
 
@@ -66,6 +66,14 @@ A source appearing here is not automatically peer reviewed, independently valida
 - Meta annual and regulatory filings.
 - Microsoft annual and regulatory filings.
 - Status: first-party documentary sources. Exact filing versions and claim mappings must be recorded in documentary briefs before aggregate spending figures are treated as load-bearing.
+
+### D-2025-05, D-2025-06, D-2026-04 — Terminology provenance
+
+- Nick Vigier. [*“Subprime Code”: How Vibe Coding Could Trigger the Next Great Crash*](https://www.linkedin.com/pulse/subprime-code-how-vibe-coding-could-trigger-next-great-nick-vigier-yu5ve). 2025-09-16.
+- Richard Ewing. [*The Subprime Code Crisis: What Happens When Unverified AI Code Floods the Enterprise*](https://careerwin.ai/research/the-subprime-code-crisis). Current syndication surface displays 2025-11-12; other current Ewing-controlled surfaces display or claim materially different provenance dates.
+- Igor Światowski. *The Subprime Code Crisis Has Started*. Public LinkedIn profile listing dated 2025-12-16.
+- Richard Ewing. [*The Subprime Code Crisis — Research Spec*](https://www.richardewing.io/concepts/subprime-code-crisis). Current page claims an April 2025 Built In / HackerNoon origin; that origin remains unverified in the repository review.
+- Status: documentary provenance record under re-review and re-verification; see the [terminology provenance brief](evidence/documentary/terminology-provenance.md) for source-specific limitations and the unresolved chronology.
 
 ## Secondary evidence and industry context
 
