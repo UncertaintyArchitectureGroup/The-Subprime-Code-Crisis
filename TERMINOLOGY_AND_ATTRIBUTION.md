@@ -40,12 +40,12 @@ The bounded conclusion is that related terminology was in public circulation acr
 
 ## Documented lineage of this project's analysis
 
-Phrase history and analytical provenance are different questions. The public record for this project's own delivery-system formulation begins before the repository itself.
+Phrase history and analytical provenance are different questions. The currently inspected public record includes a documented precursor to this project's delivery-system formulation before the repository itself.
 
 | Date | Public record | What it documents |
 | --- | --- | --- |
 | 2026-01-05 | Vitalii Oborskyi, DOU: *Ілюзія економії: чому заміна розробників на AI — це шлях до технічного дефолту* | A public precursor formulation: cheap syntax generation, generation/review asymmetry, senior-review overload, review as a bottleneck, technical-debt accumulation, and the distinction between individual output and team/value-stream delivery |
-| January 2026 | DOU discussion under the precursor article | Further public refinement around validation capacity, review/debugging cost, generated volume versus Value Stream improvement, and expert verification |
+| 2026-01-08 | Dated author comments in the DOU discussion under the precursor article | Public refinement around individual versus system outcomes, generated volume versus Value Stream improvement, Review Cycle Time, and expert/organizational validation |
 | 2026-02-06 | GitHub repository metadata | `UncertaintyArchitectureGroup/The-Subprime-Code-Crisis` created at `2026-02-06T17:16:44Z` |
 | 2026-02-10 | Vitalii Oborskyi, DOU: *Субпрайм-криза коду: чому AI-асистенти роблять нас повільнішими — і дані це доводять* | Explicit Subprime Code synthesis; states that work on the January article and reader discussion led to the follow-up investigation, and identifies the article as an adaptation of the open GitHub report |
 
@@ -56,7 +56,7 @@ The resulting inspectable development path is:
 ```text
 2026-01-05 DOU precursor
         ↓
-January discussion and refinement
+2026-01-08 dated discussion and refinement
         ↓
 2026-02-06 GitHub repository
         ↓
@@ -86,7 +86,7 @@ When citing the work, attribute the repository rather than implying that the pro
 
 For software and citation managers, use the repository's [`CITATION.cff`](CITATION.cff). A citation may also identify the specific report chapter, evidence brief, diagram, or protocol being reused.
 
-When discussing the development of this repository's delivery-system formulation, the dated January and February DOU publications provide the public provenance trail. They should not be represented as evidence that the project invented the general phrase or as independent empirical validation of the thesis.
+When discussing the development of this repository's delivery-system formulation, the dated January and February DOU publications and the preserved January discussion provide the public provenance trail. They should not be represented as evidence that the project invented the general phrase or as independent empirical validation of the thesis.
 
 Do not describe the repository as having invented the words **subprime**, **subprime code**, or **Subprime Code Crisis** unless a reliable historical record independently establishes that claim. Likewise, the existence of similar terminology elsewhere should not be represented as proof that this repository copied, adopted, or is equivalent to another framework without evidence of derivation.
 
