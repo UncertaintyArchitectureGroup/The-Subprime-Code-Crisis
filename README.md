@@ -5,6 +5,8 @@
 
 How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
 
+**Primary author:** [Vitalii Oborskyi](https://www.linkedin.com/in/vitaliioborskyi) · **Project:** [Uncertainty Architecture Group](https://github.com/UncertaintyArchitectureGroup)
+
 > **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md)
 
 ## Quick Start
@@ -125,7 +127,7 @@ These are adaptable operating patterns, not universal thresholds or empirical pr
 
 ## Project provenance
 
-The public lineage of this repository's own analysis is documented separately from the history of the phrase. A 2026-01-05 DOU article by Vitalii Oborskyi already described the generation/review asymmetry, review bottleneck, technical-debt accumulation, and the divergence between individual output and team delivery. DOU preserves the ensuing discussion; the 2026-02-10 follow-up explicitly says that work on the earlier article and reader discussion led to the deeper investigation. GitHub records this repository as created on 2026-02-06 at `17:16:44Z`, between those two publications.
+The public lineage of this repository's own analysis is documented separately from the history of the phrase. The [2026-01-05 DOU precursor](https://dou.ua/forums/topic/57244/) by Vitalii Oborskyi already described the generation/review asymmetry, review bottleneck, technical-debt accumulation, and the divergence between individual output and team delivery. DOU preserves the ensuing discussion; the [2026-02-10 Subprime Code publication](https://dou.ua/forums/topic/57846/) explicitly says that work on the earlier article and reader discussion led to the deeper investigation. GitHub records this repository as created on 2026-02-06 at `17:16:44Z`, between those two publications.
 
 See the [project provenance brief](evidence/documentary/project-provenance.md) and [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) for the source record and boundaries. This chronology documents development of this project's delivery-system synthesis; it is **not** a claim that the repository invented the general phrase **Subprime Code Crisis** or that similar work elsewhere was derived from it.
 
