@@ -1,10 +1,10 @@
 +++
 source_ids = ["D-2025-05", "D-2025-06", "D-2026-04"]
-evidence_review = "Needs re-review"
+evidence_review = "Brief in progress"
 integration_audit = "Needs re-verification"
 last_verified = "—"
 independent_review = "Review unavailable"
-current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md"]
+current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "REFERENCES.md"]
 +++
 
 # Terminology provenance: early located public records
@@ -96,8 +96,34 @@ The repository's attributable contribution is the evidence-governed delivery-sys
 ## Current repository use
 
 - `TERMINOLOGY_AND_ATTRIBUTION.md` — documented public-record timeline and attribution boundary.
+- `REFERENCES.md` — compact documentary bibliography and unresolved-provenance boundary.
 - `evidence/SOURCES.md` — source identity and status.
 - `evidence/documentary/README.md` — documentary-brief index.
+
+## Repository integration audit
+
+- **Source IDs:** D-2025-05, D-2025-06, D-2026-04.
+- **Trigger:** additional Ewing-attributed surfaces and mutually inconsistent current provenance dates were located after the prior review.
+- **Repository locations inspected:** `TERMINOLOGY_AND_ATTRIBUTION.md`, `REFERENCES.md`, `evidence/SOURCES.md`, `evidence/documentary/README.md`, `README.md`, `CITATION.cff`, report entry points, and protocol entry points.
+- **Argument-fit finding:** the new provenance material changes the chronology record but does not establish copying, coinage, or priority for the repository's delivery-system mechanism.
+- **Protocol outcome:** No protocol change.
+- **Current status:** Needs re-verification. Full integration verification is not claimed because re-review remains open and independent review is unavailable.
+
+### Claim-to-source trace
+
+| Repository claim | Location | Documentary basis | Relationship | Action |
+| --- | --- | --- | --- | --- |
+| Ewing-attributed CareerWin surface displays 2025-11-12 | `TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md` | Current CareerWin page metadata and text | Direct documentary record | Keep with archive limitation |
+| Ewing currently claims an April 2025 Built In / HackerNoon origin | `TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md` | Current Ewing canonical concept page | Direct claim by source author | Keep as claimed, not independently verified |
+| Ewing publications catalog displays March 2026 for the Beehiiv item | `TERMINOLOGY_AND_ATTRIBUTION.md` | Current Ewing publications catalog | Direct documentary record | Keep as provenance inconsistency |
+| No single originator is established by the inspected record | `TERMINOLOGY_AND_ATTRIBUTION.md` | Multiple dated public surfaces plus unresolved Ewing origin claim | Repository synthesis | Keep bounded; do not convert to coinage claim |
+
+## Independent review
+
+- **Outcome:** Review unavailable.
+- **Discrepancies found:** Not independently assessed by a second reviewer.
+- **Human decision:** the maintainer approved correcting the provenance record on 2026-08-31.
+- **Verification consequence:** this brief and its integrations must not be marked `Reviewed brief` / `Verified` until the applicable re-review, integration, and independent-review gates are completed.
 
 ## Evidence boundaries and unresolved uncertainty
 
