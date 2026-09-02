@@ -24,6 +24,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 - Added a non-blocking executable repository contract, standard-library validator and tests, five-class Source Registry parser including the canonical dataset section, inactive-Markdown filtering, and diagnostic Main health workflow.
 - Added the governed PR template, machine-readable work records, changed-path classification and synchronization matrix, critical-deletion protection, and trusted Repository Gate workflow.
 - Added evidence-brief front matter, registry-to-brief synchronization, Current-use path validation, source-state transition checks, and executable Verified/Confirmed/date invariants.
+- Added the tracked GitHub enforcement desired-state contract, CODEOWNERS routing baseline, activation procedure, and conditional reviewer-pool policy. Live repository settings remain pending administrator activation and verification.
 
 ## 2026-08-03
 
