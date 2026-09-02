@@ -6,6 +6,7 @@ import re
 
 _HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
 _LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+_WHOLE_LINK_RE = re.compile(r"^\[([^\]]+)\]\(([^)]+)\)$")
 _HTML_RE = re.compile(r"<[^>]+>")
 _TABLE_SEPARATOR_RE = re.compile(r"^:?-{3,}:?$")
 _INLINE_CODE_RE = re.compile(r"`([^`]+)`")
@@ -48,6 +49,21 @@ def visible_text(value: str) -> str:
     for marker in ("**", "__", "*", "_", "~~"):
         value = value.replace(marker, "")
     return " ".join(value.strip().split())
+
+
+def exact_markdown_value(value: str) -> str:
+    """Unwrap only whole-value Markdown syntax while preserving internal characters."""
+    value = value.strip()
+    link = _WHOLE_LINK_RE.fullmatch(value)
+    if link:
+        return link.group(1).strip()
+    inline_code = _CANONICAL_STATUS_ITEM_RE.fullmatch(value)
+    if inline_code:
+        return inline_code.group(1)
+    for marker in ("**", "__"):
+        if value.startswith(marker) and value.endswith(marker) and len(value) > 4:
+            return value[len(marker) : -len(marker)].strip()
+    return value
 
 
 def first_link_target(value: str) -> str | None:
@@ -238,12 +254,11 @@ def list_items_under_heading(text: str, heading: str) -> tuple[MarkdownListItem,
             continue
         marker = bullet.group("marker")
         raw = bullet.group("body").strip()
-        canonical = (
-            marker == "-" and _CANONICAL_STATUS_ITEM_RE.fullmatch(raw) is not None
-        )
+        status_match = _CANONICAL_STATUS_ITEM_RE.fullmatch(raw)
+        canonical = marker == "-" and status_match is not None
         items.append(
             MarkdownListItem(
-                value=visible_text(raw),
+                value=(status_match.group(1) if status_match else visible_text(raw)),
                 raw=raw,
                 marker=marker,
                 line=source_line.line,
