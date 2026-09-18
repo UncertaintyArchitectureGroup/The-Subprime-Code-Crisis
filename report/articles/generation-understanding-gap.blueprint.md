@@ -34,7 +34,7 @@ Canonical vocabulary constraint: `GLOSSARY.md` already defines Verification capa
 
 Do not collapse the central concept into generic code-review capacity.
 
-1. **Verification capacity** — ability to obtain sufficient acceptance evidence.
+1. **Acceptance-evidence component** — ability to obtain sufficient acceptance evidence.
 2. **System comprehension/intervention capacity** — ability to locate boundaries, reason about consequential interactions and evaluate unfamiliar changes.
 3. **Recovery capacity** — ability to restore acceptable state after unexpected behavior, including persisted or external effects.
 
@@ -79,7 +79,7 @@ R3: What kind of review diversity provides materially independent evidence rathe
 R4: What level of recovery independence is warranted at different consequence and reversibility levels?
 R5: Does removing implementation effort remove incidental comprehension acquisition, or do AI explanations and tooling replace it without a delayed-intervention penalty?
 
-All four remain open. They share this owning pair and decision, so no separate register or parallel evidence-state system is introduced.
+All five remain open. They share this owning pair and decision, so no separate register or parallel evidence-state system is introduced.
 
 ## Publication boundary
 
