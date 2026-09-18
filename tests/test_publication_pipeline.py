@@ -141,6 +141,20 @@ class PublicationBoundaryTests(unittest.TestCase):
         self.source.write_text('# Example\n\n~~~mermaid\nflowchart LR\n A-->B\n~~~\n')
         with self.assertRaises(ValueError): pub.load_manifest(self.root)
 
+    def test_empty_quartz_site_cannot_pass(self):
+        site = self.root / 'site'
+        site.mkdir()
+        with self.assertRaises(RuntimeError): pub.validate_site(site, [])
+
+    def test_missing_selected_article_cannot_pass(self):
+        site = self.root / 'site'
+        site.mkdir()
+        (site / 'index.html').write_text('<article>Index</article>')
+        with self.assertRaises(RuntimeError):
+            pub.validate_site(site, self.data['articles'])
+        (site / 'example.html').write_text('<article>Example</article>')
+        pub.validate_site(site, self.data['articles'])
+
 
 if __name__ == '__main__':
     unittest.main()

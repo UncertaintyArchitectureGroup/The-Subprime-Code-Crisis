@@ -12,6 +12,7 @@ import json
 import re
 import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 from typing import Any
 
@@ -190,12 +191,27 @@ def build(root: Path, include_drafts: bool = False) -> tuple[Path, list[dict[str
         for child in site.rglob('*'):
             if child.is_symlink():
                 raise ValueError(f'Symlink in site output: {child}')
-    run(['node', 'quartz/bootstrap-cli.mjs', 'build', '-d', str(output / 'content'),
-         '-o', str(site)], engine)
+    # Quartz/globby honors ancestor .gitignore files. Render a disposable copy
+    # outside the ignored _build tree; never relax repository ignore rules or
+    # mutate the pinned engine just to expose generated input.
+    with tempfile.TemporaryDirectory(prefix='subprime-quartz-') as temporary:
+        render_input = Path(temporary) / 'content'
+        shutil.copytree(output / 'content', render_input)
+        run(['node', 'quartz/bootstrap-cli.mjs', 'build', '-d', str(render_input),
+             '-o', str(site)], engine)
+    validate_site(site, selected)
     for source, expected in before.items():
         if digest(safe_path(root, source)) != expected:
             raise RuntimeError(f'Canonical manuscript changed during build: {source}')
     return output, selected
+
+
+def validate_site(site: Path, selected: list[dict[str, Any]]) -> None:
+    # A zero-input Quartz build exits successfully. Require every intended page.
+    for slug in ['index', *[item['slug'] for item in selected]]:
+        page = safe_path(site, slug + '.html')
+        if not page.is_file() or '<article' not in page.read_text(encoding='utf-8'):
+            raise RuntimeError(f'Quartz omitted the required article page: {slug}')
 
 
 def pdf(root: Path, include_drafts: bool = False) -> None:
@@ -232,7 +248,7 @@ def main() -> None:
             print(build(ROOT, args.include_drafts)[0])
         else:
             pdf(ROOT, args.include_drafts)
-    except (OSError, ValueError, subprocess.CalledProcessError) as exc:
+    except (OSError, ValueError, RuntimeError, subprocess.CalledProcessError) as exc:
         parser.exit(1, f'Publication error: {exc}\n')
 
 

@@ -53,6 +53,11 @@ jobs:
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: article-renditions-${{ github.sha }}
-          path: tools/publishing/_build/
+          path: |
+            tools/publishing/_build/
+            !tools/publishing/_build/**/*.woff
+            !tools/publishing/_build/**/*.woff2
+            !tools/publishing/_build/**/*.ttf
+            !tools/publishing/_build/**/*.otf
           if-no-files-found: error
           retention-days: 14

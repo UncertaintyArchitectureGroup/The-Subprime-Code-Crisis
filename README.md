@@ -17,6 +17,8 @@ How AI code assistants can create local productivity gains while shifting cost i
 | Inspect sources, evidence briefs, and source status | [Evidence Library](evidence/README.md) and [Source Registry](evidence/SOURCES.md) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |
 | Understand the research and reasoning boundaries | [Scope](SCOPE.md), [Doctrine](DOCTRINE.md), and [Artifact Model](ARTIFACT_MODEL.md) |
+| Read work-in-progress articles or generate review renditions | [Article workspace](report/articles/README.md) and [HTML/PDF publishing guide](tools/publishing/README.md); drafts are not approved report conclusions |
+| Start an agent session with current repository context | [Agent bootstrap](governance/AGENT-BOOTSTRAP.md) and [task-to-owner map](governance/REPOSITORY-MAP.md), subordinate to `AGENTS.md` |
 | Contribute or change the repository | [`AGENTS.md`](AGENTS.md) and [Contributing](CONTRIBUTING.md) |
 
 ## Key Takeaways
