@@ -8,9 +8,11 @@ What has the team acquired?
 
 It has acquired an implementation. It has not necessarily acquired an adequate account of its assumptions, its interactions with existing state, or the conditions under which it can safely be changed. Those may already be available through sound interfaces, specifications, tests and operating knowledge. Or they may not. Correctness of this implementation and the organization's capacity to govern its subsequent life are different questions.
 
-The hypothesis developed here is that **accepted change can increase faster than an organization can maintain the understanding and verification needed to own that change**. This is a conditional systems argument, not an empirical conclusion that every AI-assisted team loses control. It does not require generated code to be uniformly bad. Nor does it establish an inevitable industry collapse.
+The stronger hypothesis developed here is that **AI can increase the rate at which consequential change is admitted into durable software responsibility faster than the organization can preserve the verification, system comprehension, and recovery capability needed to own that change**. Better generation can reduce some of that burden. It does not, by itself, establish that those capacities scale at the same rate.
 
-The issue is not how much text a machine can produce. It is how much consequential change the delivery system can responsibly absorb.
+This is a conditional systems argument, not an empirical conclusion that every AI-assisted team loses control and not a prediction of inevitable industry collapse. It sharpens one mechanism already central to the Subprime Code Crisis framing: when upstream production becomes cheaper, the governing constraint can migrate downstream. The new question is whether that migration reaches not only review throughput, but the organization's ability to understand and intervene in the system later.
+
+The economically relevant boundary is therefore not generation. It is admission.
 
 ## Understanding is not reading every line
 
@@ -34,23 +36,51 @@ This distinction changes the control question. Throttling token production is no
 
 Neither lines of code nor pull-request count is a reliable unit of semantic burden by itself. Size is a diagnostic signal, not a sufficient definition of the thing being controlled.
 
+This connects the argument to the Subprime mechanism without pretending the mechanism has already been measured end to end: **cheaper generation → pressure or opportunity for higher admission → downstream assurance and ownership demand → possible capacity deficit → deferred maintenance or recovery exposure.** The later transitions remain hypotheses unless measured in the relevant population and system.
+
+The question is not whether machines can produce more code than people can read. It is whether organizations can admit more consequential change than their control system can responsibly absorb.
+
+## Three capacities, not one
+
+The phrase “understanding the code” is too vague to carry this argument. At least three capacities matter.
+
+**Verification capacity** is the ability to obtain sufficient evidence that an admitted change satisfies the properties required for acceptance. Tests, static analysis, formal methods, model-assisted review, simulation, and human inspection can all contribute.
+
+**System comprehension and intervention capacity** is the ability to form a sufficiently accurate working model of the system to locate consequential boundaries, reason about assumptions and interactions, evaluate unfamiliar changes, and decide where intervention is safe. This knowledge may be distributed across people, specifications, architecture, observability, tools, and AI assistance. It does not require a human to remember or read every line.
+
+**Recovery capacity** is the ability to diagnose and restore acceptable system state after behavior escapes expectations: reconcile persisted data, reverse or compensate external effects, roll back migrations or configuration, isolate the affected boundary, and verify recovery.
+
+These capacities overlap, but they are not interchangeable. A test suite can verify many properties without giving a team a useful working model for an unfamiliar incident. An architect can understand a system well without manually verifying every implementation property. A system can pass acceptance tests and still have a weak recovery path for state already changed in the world.
+
+Better models can attack these burdens unevenly. They may improve tests, explain code, or assist diagnosis. None of those gains logically proves that verification, comprehension, and recovery capacity have all scaled enough for a higher admission rate.
+
 ## A conditional capacity model
 
 Take a particular team, period and risk standard. Let:
 
-- `A` be the rate at which candidate changes are admitted for acceptance assessment;
-- `E` be the average residual human effort per change needed to reach that standard, after useful automation;
-- `H` be the human capacity available for that work over the same period.
+- `A` be the rate of admitted consequential changes;
+- `E_v` be the residual effort per admitted change needed to obtain required verification evidence;
+- `E_c` be the residual effort needed to preserve sufficient comprehension and intervention capability;
+- `E_r` be the residual effort needed to establish and maintain the required recovery capability;
+- `H_v`, `H_c`, and `H_r` be the effective capacities available for those activities over the same period.
 
-The units matter. If `A` is changes per week and `E` is engineer-hours per change, then `A × E` and `H` are both engineer-hours per week. `E` is a workload parameter, not a universal property of AI-generated code. It depends on coupling, novelty, consequence, existing knowledge, verification tools and the chosen standard.
+The point is not that these quantities are easy to estimate or perfectly separable. The point is to expose what a claim of “10× coding productivity” leaves unspecified.
 
-If `A × E` persistently exceeds `H`, the assumed workflow cannot process all arrivals at that standard without adjustment. Work must queue, arrivals must be limited, capacity must increase, the required effort must fall, or some work will be deferred or omitted. Real systems have variable workloads, parallel stages and priorities; an average balance does not guarantee acceptable waiting times or complete verification.
+For any constrained capacity, persistent workload above available capacity cannot be processed indefinitely at the assumed standard without adaptation. For example, if `A × E_v > H_v`, verification work must queue, admission must be limited, capacity must increase, residual effort must fall, or some verification work will be deferred or omitted. Analogous pressure can exist for comprehension and recovery.
 
-This accounting relationship is not evidence that the inequality currently holds across the industry. The empirical question is whether AI-assisted admission increases faster than effective verification capacity in a defined setting, and whether the resulting deficit damages subsequent change or recovery.
+This is an accounting constraint, not empirical evidence that any inequality currently holds across the industry. Coupling, novelty, consequence, reversibility, architecture familiarity, existing specifications, and tool quality all affect residual effort.
 
-Better models may reduce `E`. Better tests and contracts may also reduce it. Teams may increase `H`, simplify the architecture, admit less complexity, or move a responsibility into a trustworthy component. There is no physical law requiring the verification burden to grow in direct proportion to generated code.
+The important AI-specific possibility is movement of both sides at once. Better models and tooling can drive `E_v`, `E_c`, or `E_r` downward. At the same time, cheap generation can make a much higher `A` economically attractive and operationally possible. Whether control improves or degrades depends on the relative movement, not on generation quality alone.
 
-There is equally no accounting basis for assuming that improved generation automatically makes that burden disappear.
+That is why “models will get better” is relevant but incomplete: better at reducing which residual ownership burden, by how much, while admission changes by how much?
+
+## Why this is more than ordinary capacity planning
+
+Every engineering organization has bottlenecks. If this argument meant only “more work requires more reviewers,” it would add little.
+
+The potentially deeper change is that generative systems alter the production function upstream. Candidate implementation can become cheap enough that the historical coupling between creation effort and admission volume weakens. The human effort previously spent constructing a change also created incidental opportunities to inspect surrounding code, encounter constraints, discuss design, and discover interactions. That friction was never a guarantee of understanding, and manual authorship was never proof of control. But removing construction effort can remove some of those opportunities at the same time that it increases the feasible rate of change.
+
+Tool-assisted generation can also expose architecture, produce explanations, construct tests, and reduce accidental complexity. The hypothesis is narrower: **the old relationship between producing change and acquiring enough context to own it can no longer be assumed.** A delivery system therefore needs an explicit mechanism for preserving ownership capability rather than treating it as a by-product of writing the implementation.
 
 ## Speed and control are not necessarily opposites
 
@@ -76,7 +106,7 @@ If implementation, tests and explanation all inherit the same mistaken requireme
 
 Stronger arrangements can combine separately specified invariants, deterministic checks, adversarial cases, model-assisted exploration, runtime observations and accountable human decisions. Formal verification can be valuable where its assumptions and specification match the property at issue. It does not, by itself, establish that the selected specification captures every consequential requirement.
 
-The goal is not to remove AI from verification. It is to avoid mistaking repeated assertions for independent support.
+The goal is not to remove AI from verification. It is to distinguish additional computation from additional independent evidence. If agentic verification demonstrably reduces residual effort while maintaining or improving delayed intervention and recovery performance, that is evidence against a strong version of the gap hypothesis.
 
 ## The deferred question: can the system still be changed?
 
@@ -94,13 +124,21 @@ Calling a system understood without testing any such capability risks replacing 
 
 The hypothesis needs a defined population and a comparison. A useful study would compare teams or matched tasks under explicit admission and assurance policies, measure the complete initial delivery effort, then introduce delayed maintenance and recovery tasks.
 
-The important outcomes would include time to a safely accepted change, review and rework effort, ability to locate violated assumptions, correctness of an unfamiliar modification, and recovery of state. Code volume and perceived productivity could provide context without standing in for those outcomes.
+The important outcomes would include time to a safely accepted change, verification and rework effort per admitted change, ability to locate violated assumptions and affected boundaries, correctness and time-to-completion of an unfamiliar modification, recovery of required state after a seeded failure, performance after the original implementation context has decayed, and total lifecycle effort. Code volume and perceived productivity could provide context without standing in for those outcomes.
 
-Task difficulty, architecture familiarity, tool generation, reviewer experience, automation quality and time budget would need to be recorded. Faster initial work followed by harder maintenance would support one form of the hypothesis. Sustained acceleration with stable or improved intervention performance would weaken claims that a material understanding penalty is unavoidable in that setting.
+Task difficulty, architecture familiarity, tool generation, reviewer experience, automation quality and time budget would need to be recorded. Faster initial admission followed by verification queues, degraded unfamiliar-change performance, slower diagnosis, or weaker recovery would support versions of the hypothesis. Sustained materially higher admission with stable or improved verification quality, delayed intervention performance, recovery performance, and lifecycle effort would weaken or falsify strong claims that an unavoidable generation–understanding penalty exists in that setting.
 
 Even a positive result would not prove a universal collapse scenario. A negative result would not prove that every domain can scale without limits. The question is which arrangements preserve control, at what cost, and across which responsibilities.
 
 This distinction also prevents a tautology. The capacity identity is not the result to be discovered; whether the relevant workload exceeds capacity, whether control degrades, and whether redesign removes that degradation are the testable questions.
+
+## The Subprime implication
+
+The Subprime Code Crisis argument does not need an inevitable crash to be useful. Its stronger engineering value is as a warning about a mismatch between locally cheap production and the downstream capacity required to absorb what production creates.
+
+The generation–understanding gap sharpens that warning. Review and QA are visible bottlenecks because their queues can often be counted. Comprehension and recovery deficits can remain latent. A system may continue to ship while fewer people can confidently reason about consequential interactions or restore state after an unfamiliar failure.
+
+That latency is what makes the analogy interesting: not because software is literally a mortgage market, but because an apparently productive upstream process can accumulate obligations whose cost is recognized later. Whether that is happening at material scale is an empirical question. The article does not answer it by metaphor.
 
 ## An engineering response, not a prediction of collapse
 
@@ -108,6 +146,8 @@ A proposed response is to manage admission around accountable boundaries. Prefer
 
 Those are proposed practices, not universally validated thresholds. Their success should be demonstrated in the systems where they are applied.
 
-The deeper risk is not that machines can write faster than people can read. Machines can also help people understand, verify and simplify. The risk is **treating production of an implementation as sufficient evidence that an organization can now own its consequences**.
+The deeper risk is not that machines can write faster than people can read. Machines can also help people understand, verify, and simplify. The risk is **allowing the scalable production of consequential change to be mistaken for scalable organizational capacity to own that change**.
 
-Better generation is valuable. It is not, by itself, a delivery-control architecture.
+Better generation can close part of the gap.
+
+It does not prove that the gap is closed.
