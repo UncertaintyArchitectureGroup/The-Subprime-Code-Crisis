@@ -93,7 +93,7 @@ try {
     pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 9pt; }
     table { width: 100%; table-layout: fixed; font-size: 9pt; }
     td, th { overflow-wrap: anywhere; } a { overflow-wrap: anywhere; }
-    .anchor, .clipboard-button { display: none !important; }
+    .anchor, a[role="anchor"], .clipboard-button { display: none !important; }
   ` });
   await page.emulateMedia({ media: 'print' });
   await page.pdf({ path: temporary, format: 'A4', printBackground: true,

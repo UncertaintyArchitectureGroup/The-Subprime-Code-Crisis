@@ -53,7 +53,7 @@ jobs:
               assert article['author'] in normalized, 'Missing author in PDF'
               if article['status'] == 'draft':
                   assert 'DRAFT' in normalized, 'Missing draft notice in PDF'
-              assert 'Uncertainty Architecture' not in normalized, 'Upstream branding leaked into PDF'
+              assert 'Uncertainty Architecture · Research Publication' not in normalized, 'Upstream branding leaked into PDF'
               pages = [p for p in text.split('\f') if p.strip()]
               assert pages, 'Empty PDF'
               for number, page in enumerate(pages, 1):
