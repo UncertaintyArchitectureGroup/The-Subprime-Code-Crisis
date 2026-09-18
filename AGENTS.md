@@ -196,3 +196,23 @@ Before proposing governance change:
 8. Do not treat the new workflow as canonical until merged. If implementation exposes a materially different decision, stop and return to the maintainer.
 
 No supporting playbook may independently change governance behavior. Any playbook change that would alter an obligation, gate, status, transition, completion condition, or contributor duty requires prior discussion, explicit maintainer approval, corresponding canonical `AGENTS.md` treatment where necessary, a reviewable PR, and independent review.
+
+## Live-state agent bootstrap
+
+The copyable [session bootstrap](governance/AGENT-BOOTSTRAP.md) and [task-to-owner map](governance/REPOSITORY-MAP.md) are navigation aids subordinate to this file. They do not replace the mandatory start-of-work gate or make a claim of measured agent comprehension.
+
+For repository-changing work, resolve and record the current target and head commits, inspect the tree for applicable nested `AGENTS.md` files, and read those scoped supplements before editing. Root instructions and the Constitution retain precedence; nested files may specify local execution, not weaken approval or evidence controls. For PR work, inspect the current description, complete changed-file diff, reviews, relevant comments, checks and Draft state rather than relying on a remembered session.
+
+Use the map to locate canonical owners, then inspect those owners and material dependencies directly. Search for equivalent concepts before adding a new artifact. Do not copy UA-specific graph, checkpoint, normative-status or research-register machinery as if it already belonged to this repository.
+
+Before reporting completion, re-read the final diff and relevant feedback, verify required companion updates, and distinguish local checks, remote CI, independent review and maintainer decisions. Report what was inspected, changed, tested, unavailable and still unresolved. Corrective feedback follows the existing governance change procedure; it is not automatic permission to add rules.
+
+## Article and publishing boundaries
+
+Article drafts under `report/articles/` are proposed report synthesis, not a new evidence tier or an automatic change to approved report conclusions. For substantial article work, read the scoped [drafting protocol](report/articles/AGENTS.md), maintain a complete editorial blueprint and a separate reader-facing manuscript, and reconcile both after each material drafting iteration. Preserve provenance, claim types, counterexamples, source needs and unresolved decisions in the blueprint. An AI conversation may motivate a hypothesis but cannot supply verified facts or independent confirmation. Existing source flows apply to every material empirical reliance, including drafts.
+
+For renderer work, read the scoped [publishing protocol](tools/publishing/AGENTS.md) and [publishing guide](tools/publishing/README.md). Canonical Markdown stays in place and remains read-only to rendering. HTML/PDF outputs are derived distribution surfaces, never source-status or conceptual authorities. The publication manifest owns only article selection and rendition metadata; its `draft`/`published` field is not a research, review or verification state.
+
+Default public-mode builds exclude drafts. Explicit preview builds retain visible draft status and separate outputs. A successful build or artifact upload does not authorize publication, alter source states or establish independent review. Publishing an edition requires an explicit maintainer publication decision, the applicable evidence and independent-review gates, and preservation of edition/source identity. No website deployment, release creation or external publication is authorized merely by adding a renderer.
+
+Keep dependencies pinned, candidate-executing CI read-only, and output paths isolated from source. Validate rejection paths as well as normal rendering; unsupported features must fail visibly rather than silently lose meaning. Report offline tests, real engine/browser execution and visual PDF inspection separately. These scoped boundaries extend execution for the requested artifacts without replacing source flows A–E, the existing Repository Gate or any independent-review requirement.

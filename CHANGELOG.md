@@ -8,6 +8,9 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added an adapted [agent session bootstrap](governance/AGENT-BOOTSTRAP.md), [task-to-owner map](governance/REPOSITORY-MAP.md), and scoped article/publishing instructions while preserving the existing Constitution and evidence flows.
+- Added a [Quartz article/PDF adapter](tools/publishing/README.md) with a commit-pinned engine, explicit draft previews, source-digest records, isolated outputs, regression tests and read-only review-artifact CI; no deployment is enabled.
+- Added the [Generation–Understanding Gap draft and editorial blueprint](report/articles/README.md), framed as a conditional systems argument with counterexamples and a future evidence plan, not an empirically established collapse prediction.
 - Added this repository changelog and a dedicated content-synchronization playbook.
 - Added a reviewed documentary project-provenance record covering the 2026-01-05 DOU precursor and discussion, the 2026-02-06 GitHub repository creation timestamp, and the 2026-02-10 explicit Subprime Code publication.
 

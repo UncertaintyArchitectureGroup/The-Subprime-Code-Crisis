@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "engine": {
+    "repository": "https://github.com/UncertaintyArchitectureGroup/uncertainty-architecture.git",
+    "commit": "989fc1398fc221ffca4e1f7a141b2c03bfc7cfb3"
+  },
+  "articles": [
+    {
+      "slug": "generation-understanding-gap",
+      "source": "report/articles/generation-understanding-gap.md",
+      "title": "The Generation–Understanding Gap",
+      "author": "Vitalii Oborskyi",
+      "description": "Why better generated code does not, by itself, establish scalable engineering control.",
+      "status": "draft"
+    }
+  ]
+}

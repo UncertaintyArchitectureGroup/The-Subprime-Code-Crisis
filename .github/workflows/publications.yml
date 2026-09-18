@@ -1,0 +1,58 @@
+name: Publication renditions
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  articles:
+    name: Quartz and PDF smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out candidate without write credentials
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Use Node 22
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Offline adapter tests
+        run: |
+          python3 -m unittest discover -s tests -p 'test_publication_pipeline.py' -v
+          python3 tools/publishing/publish.py check
+          node --check tools/publishing/export-pdf.mjs
+      - name: Install pinned Quartz workspace
+        run: python3 tools/publishing/publish.py setup
+      - name: Public build excludes drafts
+        run: python3 tools/publishing/publish.py build
+      - name: Explicit review preview with PDF
+        run: python3 tools/publishing/publish.py pdf --include-drafts
+      - name: Preserve sources
+        run: git diff --exit-code -- report evidence
+      - name: Render pages for visual review
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+          root = Path('tools/publishing/_build/preview')
+          for pdf in (root / 'pdf').glob('*.pdf'):
+              out = root / 'page-previews' / pdf.stem
+              out.mkdir(parents=True, exist_ok=True)
+              subprocess.run(['pdftoppm', '-scale-to', '1400', '-png', str(pdf), str(out / 'page')], check=True)
+          PY
+      - name: Upload review artifacts, not a deployment
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: article-renditions-${{ github.sha }}
+          path: tools/publishing/_build/
+          if-no-files-found: error
+          retention-days: 14
