@@ -36,15 +36,30 @@ jobs:
         run: python3 tools/publishing/publish.py pdf --include-drafts
       - name: Preserve sources
         run: git diff --exit-code -- report evidence
-      - name: Render pages for visual review
+      - name: Check PDF text and render pages for visual review
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y poppler-utils
           python3 - <<'PY'
           from pathlib import Path
+          import json
           import subprocess
           root = Path('tools/publishing/_build/preview')
-          for pdf in (root / 'pdf').glob('*.pdf'):
+          manifest = json.loads((root / 'manifest.json').read_text())
+          for article in manifest['articles']:
+              pdf = root / 'pdf' / (article['slug'] + '.pdf')
+              text = subprocess.check_output(['pdftotext', '-layout', str(pdf), '-'], text=True)
+              normalized = ' '.join(text.split())
+              assert article['author'] in normalized, 'Missing author in PDF'
+              if article['status'] == 'draft':
+                  assert 'DRAFT' in normalized, 'Missing draft notice in PDF'
+              assert 'Uncertainty Architecture' not in normalized, 'Upstream branding leaked into PDF'
+              pages = [p for p in text.split('\f') if p.strip()]
+              assert pages, 'Empty PDF'
+              for number, page in enumerate(pages, 1):
+                  footer = f'The Subprime Code Crisis · {number} / {len(pages)}'
+                  assert ' '.join(page.split()).count(footer) == 1, 'Missing or duplicate PDF footer'
+              (root / 'pdf' / (article['slug'] + '.txt')).write_text(text)
               out = root / 'page-previews' / pdf.stem
               out.mkdir(parents=True, exist_ok=True)
               subprocess.run(['pdftoppm', '-scale-to', '1400', '-png', str(pdf), str(out / 'page')], check=True)

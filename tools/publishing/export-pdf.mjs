@@ -64,6 +64,11 @@ try {
     document.body.replaceChildren(copy);
     document.body.className = 'publication';
     document.documentElement.setAttribute('saved-theme', 'light');
+    // Quartz's upstream theme includes UA-specific print margin boxes. Use a
+    // self-contained PDF stylesheet so branding and pagination cannot leak.
+    for (const stylesheet of document.querySelectorAll('link[rel="stylesheet"], style')) {
+      stylesheet.remove();
+    }
     for (const link of document.querySelectorAll('a[href]')) {
       // Keep internal heading links meaningful in the PDF.
       if (link.getAttribute('href').startsWith('#')) continue;
@@ -78,6 +83,12 @@ try {
       font: 11pt/1.5 Arial, sans-serif; color: #111 !important; }
     h1 { font-size: 25pt; line-height: 1.15; } h2 { font-size: 16pt; } h3 { font-size: 12pt; }
     h1, h2, h3 { break-after: avoid; color: #111 !important; }
+    h1 { margin: 0 0 14pt; } h2, h3 { margin: 18pt 0 8pt; }
+    p { margin: 0 0 10pt; } li { margin: 0 0 5pt; }
+    blockquote { margin: 12pt 0; padding: 0 0 0 10pt; border-left: 2pt solid #444; }
+    code { font-family: monospace; } table { border-collapse: collapse; }
+    td, th { padding: 5pt; border: 0.5pt solid #888; text-align: left; }
+    a { color: #111; }
     p, li { orphans: 3; widows: 3; } pre, blockquote, tr { break-inside: avoid; }
     pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 9pt; }
     table { width: 100%; table-layout: fixed; font-size: 9pt; }
