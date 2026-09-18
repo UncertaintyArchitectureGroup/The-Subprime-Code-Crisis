@@ -40,9 +40,11 @@ This connects the argument to the Subprime mechanism without pretending the mech
 
 The question is not whether machines can produce more code than people can read. It is whether organizations can admit more consequential change than their control system can responsibly absorb.
 
-## Three capacities, not one
+## Three analytical components of verification capacity
 
-The phrase “understanding the code” is too vague to carry this argument. At least three capacities matter.
+The repository's canonical **Verification capacity** is deliberately broad: it already includes the human, automated, organizational, and infrastructural ability to understand, review, test, secure, integrate, release, operate, and maintain candidate changes. This article does not replace that glossary term or create three competing canonical capacities. It decomposes it analytically because the generation–understanding hypothesis can affect its components differently.
+
+The phrase “understanding the code” is too vague to carry this argument. At least three components matter.
 
 **Verification capacity** is the ability to obtain sufficient evidence that an admitted change satisfies the properties required for acceptance. Tests, static analysis, formal methods, model-assisted review, simulation, and human inspection can all contribute.
 
@@ -50,9 +52,9 @@ The phrase “understanding the code” is too vague to carry this argument. At 
 
 **Recovery capacity** is the ability to diagnose and restore acceptable system state after behavior escapes expectations: reconcile persisted data, reverse or compensate external effects, roll back migrations or configuration, isolate the affected boundary, and verify recovery.
 
-These capacities overlap, but they are not interchangeable. A test suite can verify many properties without giving a team a useful working model for an unfamiliar incident. An architect can understand a system well without manually verifying every implementation property. A system can pass acceptance tests and still have a weak recovery path for state already changed in the world.
+These components overlap, but they are not interchangeable for analysis even though all sit inside the repository's broader verification-capacity concept. A test suite can verify many properties without giving a team a useful working model for an unfamiliar incident. An architect can understand a system well without manually verifying every implementation property. A system can pass acceptance tests and still have a weak recovery path for state already changed in the world.
 
-Better models can attack these burdens unevenly. They may improve tests, explain code, or assist diagnosis. None of those gains logically proves that verification, comprehension, and recovery capacity have all scaled enough for a higher admission rate.
+Better models can attack these burdens unevenly. They may improve tests, explain code, or assist diagnosis. None of those gains logically proves that the relevant components of verification capacity have all scaled enough for a higher admission rate.
 
 ## A conditional capacity model
 
@@ -70,7 +72,7 @@ For any constrained capacity, persistent workload above available capacity canno
 
 This is an accounting constraint, not empirical evidence that any inequality currently holds across the industry. Coupling, novelty, consequence, reversibility, architecture familiarity, existing specifications, and tool quality all affect residual effort.
 
-The important AI-specific possibility is movement of both sides at once. Better models and tooling can drive `E_v`, `E_c`, or `E_r` downward. At the same time, cheap generation can make a much higher `A` economically attractive and operationally possible. Whether control improves or degrades depends on the relative movement, not on generation quality alone.
+The important AI-specific possibility is movement of both sides at once. Better models and tooling can drive `E_v`, `E_c`, or `E_r` downward. At the same time, cheap generation can make a much higher `A` economically attractive and operationally possible. Whether control improves or degrades depends on the relative movement, not on generation quality alone. The subscripts are analytical dimensions of the canonical verification-capacity concept, not new repository status terms.
 
 That is why “models will get better” is relevant but incomplete: better at reducing which residual ownership burden, by how much, while admission changes by how much?
 
