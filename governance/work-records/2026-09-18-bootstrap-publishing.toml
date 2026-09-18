@@ -1,0 +1,21 @@
+record_version = 1
+title = "Adapt agent bootstrap and Quartz article/PDF renditions; draft the generation-understanding argument"
+primary_flow = "Maintainer-requested governance and publication adaptation; conceptual article draft"
+human_decision = "Maintainer request in the 2026-09-18 conversation: adapt UA bootstrap/AGENTS and companion files, article/PDF tooling, and prepare an article on the generation/comprehension asymmetry in a separate PR. Authorization is for this Draft proposal, not merge, source verification, publication, or a literal UA clone. See the PR Human decision section."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "New scoped agent bootstrap, article workflow, rendering tools and contributor/reader navigation."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "reader-navigation", "history"]
+
+[synchronization.non_applicable]
+doctrine = "Existing claim classes, scope and terminology retained; article title is not a new canonical term."
+repository-architecture = "Articles remain proposed synthesis under report; derived renditions are not a new evidence layer. No canonical source moved."
+source-registry = "No source identity, reviewed claim, Current use or state changed. Blueprint entries are future research targets, not source reliance in the conceptual manuscript."
+evidence = "No evidence brief or source interpretation changed; no empirical numbers imported from the pasted AI dialogue."
+evidence-indexes = "No source registered or brief added."
+references = "No new supporting citation or bibliography identity; existing source IDs appear only as research targets."
+protocols = "No operating protocol changed. Related unmerged PR 42 is not imported or treated as current policy."

@@ -2,6 +2,8 @@
 
 [`AGENTS.md`](../AGENTS.md) is the canonical operating specification and has precedence over every file in this directory. Read `AGENTS.md` in full before any repository work. These playbooks are mandatory procedural extensions when the selected flow requires them; they cannot override `AGENTS.md`. Resolve conflicts in favor of `AGENTS.md` and escalate unresolved ambiguity.
 
+For a fresh agent session, use the [copyable bootstrap](AGENT-BOOTSTRAP.md) and [task-to-owner map](REPOSITORY-MAP.md) after the root instruction gate. Article work is routed through the [article workspace](../report/articles/README.md); rendering is documented in the [publishing guide](../tools/publishing/README.md). These are scoped execution/navigation surfaces, not alternative evidence authorities.
+
 The repository also maintains four cross-cutting content references:
 
 - [`DOCTRINE.md`](../DOCTRINE.md) defines research philosophy, evidence and interpretation principles, protocol principles, claim boundaries, and artifact principles.
