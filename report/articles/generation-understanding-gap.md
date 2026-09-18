@@ -8,7 +8,7 @@ What has the team acquired?
 
 It has acquired an implementation. It has not necessarily acquired an adequate account of its assumptions, its interactions with existing state, or the conditions under which it can safely be changed. Those may already be available through sound interfaces, specifications, tests and operating knowledge. Or they may not. Correctness of this implementation and the organization's capacity to govern its subsequent life are different questions.
 
-The stronger hypothesis developed here is that **AI can increase the rate at which consequential change is admitted into durable software responsibility faster than the organization can preserve the verification, system comprehension, and recovery capability needed to own that change**. Better generation can reduce some of that burden. It does not, by itself, establish that those capacities scale at the same rate.
+The stronger hypothesis developed here is that **AI can increase the rate at which consequential change is admitted into durable software responsibility faster than the organization can preserve the acceptance evidence, system comprehension/intervention, and recovery capability needed to own that change**. Better generation can reduce some of that burden. It does not, by itself, establish that those capacities scale at the same rate.
 
 This is a conditional systems argument, not an empirical conclusion that every AI-assisted team loses control and not a prediction of inevitable industry collapse. It sharpens one mechanism already central to the Subprime Code Crisis framing: when upstream production becomes cheaper, the governing constraint can migrate downstream. The new question is whether that migration reaches not only review throughput, but the organization's ability to understand and intervene in the system later.
 
@@ -46,7 +46,7 @@ The repository's canonical **Verification capacity** is deliberately broad: it a
 
 The phrase “understanding the code” is too vague to carry this argument. At least three components matter.
 
-**Verification capacity** is the ability to obtain sufficient evidence that an admitted change satisfies the properties required for acceptance. Tests, static analysis, formal methods, model-assisted review, simulation, and human inspection can all contribute.
+**Acceptance-evidence component** is the ability to obtain sufficient evidence that an admitted change satisfies the properties required for acceptance. Tests, static analysis, formal methods, model-assisted review, simulation, and human inspection can all contribute.
 
 **System comprehension and intervention capacity** is the ability to form a sufficiently accurate working model of the system to locate consequential boundaries, reason about assumptions and interactions, evaluate unfamiliar changes, and decide where intervention is safe. This knowledge may be distributed across people, specifications, architecture, observability, tools, and AI assistance. It does not require a human to remember or read every line.
 
