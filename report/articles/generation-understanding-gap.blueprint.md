@@ -20,7 +20,7 @@ The heading is an editorial label, not a new canonical glossary term. No changes
 
 ## Thesis and alternatives
 
-Working hypothesis: AI-assisted delivery may increase the rate of admitted consequential change faster than an organization can preserve three distinct ownership capacities: verification, system comprehension/intervention, and recovery. Better code-generation quality and agentic verification can reduce residual burden, but do not logically establish that all three capacities scale with admission.
+Working hypothesis: AI-assisted delivery may increase the rate of admitted consequential change faster than an organization can preserve the relevant components of the repository's canonical Verification capacity. For analysis, the article separates verification evidence, system comprehension/intervention, and recovery. Better code-generation quality and agentic verification can reduce residual burden, but do not logically establish that all three capacities scale with admission.
 
 The Subprime connection is explicit but bounded: cheaper generation can create opportunity or pressure for higher admission; higher admission can increase downstream ownership demand; a deficit may create deferred maintenance or recovery exposure. The later links remain hypotheses unless directly measured.
 
@@ -30,13 +30,15 @@ Rejected formulations: inevitable collapse; 100% proof; a universal law of conse
 
 ## Analytical separation
 
-Do not collapse the central concept into generic review capacity.
+Canonical vocabulary constraint: `GLOSSARY.md` already defines Verification capacity broadly enough to include understanding, review, testing, operation and maintenance. The article must not introduce three competing canonical capacity terms. The following are analytical components of that existing concept, used to make the hypothesis testable.
+
+Do not collapse the central concept into generic code-review capacity.
 
 1. **Verification capacity** — ability to obtain sufficient acceptance evidence.
 2. **System comprehension/intervention capacity** — ability to locate boundaries, reason about consequential interactions and evaluate unfamiliar changes.
 3. **Recovery capacity** — ability to restore acceptable state after unexpected behavior, including persisted or external effects.
 
-These can share tools and people but are not interchangeable. The article should make clear which capacity a proposed automation changes.
+These can share tools and people but are not interchangeable analytically. The article should make clear which component a proposed automation changes while preserving the canonical glossary boundary.
 
 ## Argument and section roles
 
