@@ -111,7 +111,8 @@ def scan(root, output):
         for name in sorted(files):
             path = Path(parent) / name
             relative = path.relative_to(root).as_posix()
-            if relative == output or name.endswith((".pyc", ".tmp")):
+            # A worktree has a .git file where a regular checkout has a directory.
+            if name == ".git" or relative == output or name.endswith((".pyc", ".tmp")):
                 continue
             path = safe_path(root, relative)
             if not path.is_file():

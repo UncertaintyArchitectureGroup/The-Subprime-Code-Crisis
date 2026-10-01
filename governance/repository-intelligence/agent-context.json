@@ -14,7 +14,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v1",
-    "digest": "bfb6c5ae193ecf4500e502f68ae04c55e5a84441ac99a9547554f5ddfc13f281",
+    "digest": "1792a2e654ee00b8d4338f2caa4120c98cf3cb3040d329f935703214cea95362",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -271,7 +271,7 @@
       {
         "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
         "identity_mode": "content",
-        "sha256": "4b2ddd99efe5dbbf51515a25b94c9663e3948fbce1d0070fad88ca0a7001c21b"
+        "sha256": "d08c5bf5858d9212a2b269e4491eebdf5dfa4dd9f96c3f7a61408ee8469104d3"
       },
       {
         "path": "governance/work-records/README.md",
@@ -356,7 +356,7 @@
       {
         "path": "tests/test_repository_intelligence.py",
         "identity_mode": "content",
-        "sha256": "40212d2afd569554b645f4f5eeedacc27a6ab354eb313157d3d74f6763de1cd5"
+        "sha256": "6e7fb7644655a7d7f77a91914dbdb3f6113e6cca5cceb3687e4a586135e77cd1"
       },
       {
         "path": "tools/RI-LICENSE.md",
@@ -391,7 +391,7 @@
       {
         "path": "tools/repository_intelligence.py",
         "identity_mode": "content",
-        "sha256": "7905f08fd44b7cf8708f68df609d820f1c12536672bdfe0d5bbe59d1e76865a0"
+        "sha256": "d9cc389b40586783ee1632adbffb2cca62a262a8c89b4bb7b504c47d7822637e"
       },
       {
         "path": "tools/repository_validator/__init__.py",
@@ -432,7 +432,7 @@
   },
   "producer": {
     "path": "tools/repository_intelligence.py",
-    "sha256": "7905f08fd44b7cf8708f68df609d820f1c12536672bdfe0d5bbe59d1e76865a0",
+    "sha256": "d9cc389b40586783ee1632adbffb2cca62a262a8c89b4bb7b504c47d7822637e",
     "config_path": "governance/repository-intelligence-config.json",
     "config_sha256": "3d429885417815b80d5e5c2500b5a3b5f0b54f3b54e1ca86c9079cab3e436396"
   },

@@ -13,6 +13,12 @@ independent_review = "Confirmed"
 # 256c5f6ac501b84ba80d613b6a0170b0eb880bcd against prior local head
 # 672de305b341f9cb87a1dedd0088f3cebb690a9a. No source state changes.
 # This record update and regenerated RI report that actual review outcome.
+# RI checkout/worktree portability correction independently Confirmed on
+# 2026-10-01 by /root/independent_workflow_review: staged tree
+# 849f4db0f2178d6ed4ac78c447e61ffa52909105 against local head
+# 2dccfe6872c460732b0901d872cec79a70e77bb0. The reviewer checked actual
+# ordinary checkouts and Git worktrees, 113 tests and trusted-base gates.
+# This follow-up metadata and its derived RI hash report that scoped outcome.
 
 [changelog]
 decision = "Updated"

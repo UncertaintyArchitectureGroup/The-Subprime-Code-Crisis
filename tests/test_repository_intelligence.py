@@ -77,6 +77,19 @@ class NavigationSafetyTests(unittest.TestCase):
                 if not (self.root / "GLOSSARY.md").exists():
                     self.write("GLOSSARY.md", "# Glossary\n")
 
+    def test_context_is_portable_between_checkout_and_worktree(self):
+        self.write(".git/config", "[core]\nrepositoryformatversion = 0\n")
+        original = self.materialize()
+        (self.root / ".git/config").unlink()
+        (self.root / ".git").rmdir()
+        self.write(".git", "gitdir: /example/repo/.git/worktrees/review\n")
+        self.assertEqual(ri.verify(self.root, self.cfg), original)
+        self.write(".git", "gitdir: /another/repo/.git/worktrees/review\n")
+        self.assertEqual(ri.verify(self.root, self.cfg), original)
+        (self.root / ".git").unlink()
+        self.write(".git/config", "[core]\nrepositoryformatversion = 0\n")
+        self.assertEqual(ri.verify(self.root, self.cfg), original)
+
     def test_config_and_producer_edits_invalidate(self):
         self.materialize()
         self.config["owners"][0]["queries"].append("new alias")
