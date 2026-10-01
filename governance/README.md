@@ -47,6 +47,14 @@ On a pull request, Main health executes the validator version proposed by that p
 | D — Changed repository use | [status model](status-model.md), [integration audit](integration-audit.md), [independent review](independent-review.md), [templates](templates.md), [PR process](pr-process-and-synchronization.md) |
 | E — Evidence discovery | [evidence discovery](evidence-discovery.md), [independent review](independent-review.md), [templates](templates.md), [PR process](pr-process-and-synchronization.md) |
 
+## Task intake and navigation
+
+- [Issue workflow](issue-workflow.md): durable intent, input-impact report,
+  maintainer review, linked PR and issue completion/closure under AGENTS.
+- [Backlog audit](issue-backlog-audit.md): dated open-PR and unresolved-work snapshot.
+- [Repository map](repository-map.md): UA/Subprime/personal owners and migration dependencies.
+- [Repository Intelligence](repository-intelligence.md): verified local navigation subset.
+
 ## Navigation
 
 - [Evidence review](evidence-review.md): registration, source acquisition and assessment, evidence brief, and completion.

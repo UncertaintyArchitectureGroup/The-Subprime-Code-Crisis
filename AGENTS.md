@@ -128,6 +128,55 @@ Select exactly one primary flow before editing. Cross-cutting governance work fo
 - **Flow D:** Keep `Reviewed brief` unless inadequate; reset integration and `Last verified`, audit the affected source against changed repository state, and restore `Verified` only after merge and confirmation.
 - **Flow E:** Discovery is not acceptance. It must not directly change report claims, protocols, source statuses, confidence classifications, or maps. Every accepted new object routes to Flow A; every changed, corrected, peer-reviewed, retracted, or superseding registered object routes to Flow C. Notes, abstracts, summaries, and Candidate Register entries cannot substitute for registration, review, a brief, audit, or verification.
 
+## Issue intake and task lifecycle
+
+Use an issue for every substantive source/research input, publication, repository
+management or tooling task. Reuse contributor input issues and preserve their
+original message. A strictly mechanical fix may use a stated PR exception.
+
+Before implementation, record original intent/trigger, owning paths and Source IDs,
+scope/exclusions/dependencies, observable acceptance and required decisions.
+Append dated scope changes; never rewrite the initial goal to fit the result.
+The [issue-workflow playbook](governance/issue-workflow.md) implements this rule.
+
+The issue records intent; PRs and commits implement it. When asked to create an
+issue, clarify a materially unclear outcome, reason, boundary or acceptance with
+focused maintainer questions before treating it as agreed or starting dependent
+implementation. Preserve the original request, mark open questions and provisional
+assumptions, and continue independent preparation where useful. Do not repeat
+questions about decisions or routine work already authorized. Check execution
+against the issue before editing, during PR review and before closure; correct
+divergence or record the maintainer's dated intent change and remaining acceptance.
+
+For research/source input, first inspect the original version and all relevant
+existing evidence and uses, then submit a methods/limitations/contradictions,
+affected-claim/map/protocol and proposed-treatment report for maintainer review
+before substantive integration. Existing explicit approval of the exact treatment
+may be cited; silence is not approval. Then use the applicable Flow A–E.
+
+Link implementation PRs and independently review under the existing gates. Add
+completion comments to both PR and issue with merged state, acceptance evidence,
+original intent versus outcome, decisions/deviations and surviving work. Close as
+completed only after the accepted result is merged, checked and all applicable
+reviews/decisions are satisfied. An explicit reject/defer/supersede/duplicate
+decision must preserve a reason and surviving links; it is not implementation
+completion. Avoid automatic closing keywords while any acceptance remains.
+
+Issue status does not set Evidence review, Integration audit or Last verified.
+The registry and source flows remain canonical. Cross-repository work follows
+[the owner map](governance/repository-map.md) and each sibling's own instructions.
+
+## Repository Intelligence navigation
+
+After mandatory instruction/source bootstrap, a verified
+[local RI projection](governance/repository-intelligence.md) may help locate
+owners, glossary terms, source IDs and instruction scopes. Read the complete
+relevant inventories and owning sources. Missing, stale, ambiguous or untranslated
+lookup requires direct repository search. A lexical match is a candidate, not
+evidence or an authority decision; registry statuses are reproduced verbatim.
+Live PR/review/check state is fetched separately. The adapter's capabilities are
+bounded; it does not implement UA's full graph or trusted candidate comparison.
+
 ## Required playbooks by flow
 
 Playbooks are normative procedural extensions of this file when listed as mandatory in the flow table or by a cross-cutting requirement:

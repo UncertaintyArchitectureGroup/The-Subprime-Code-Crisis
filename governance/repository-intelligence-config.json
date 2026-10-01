@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "repository": "UncertaintyArchitectureGroup/The-Subprime-Code-Crisis",
+  "output": "governance/repository-intelligence/agent-context.json",
+  "glossaries": [
+    "GLOSSARY.md"
+  ],
+  "registries": [
+    "evidence/SOURCES.md"
+  ],
+  "cross_repository": [
+    {
+      "repository": "UncertaintyArchitectureGroup/uncertainty-architecture",
+      "concern": "UA specification and research owners",
+      "url": "https://github.com/UncertaintyArchitectureGroup/uncertainty-architecture/blob/main/AGENTS.md"
+    },
+    {
+      "repository": "oborskyivitalii/oborskyivitalii",
+      "concern": "Personal publications and migration backlog",
+      "url": "https://github.com/oborskyivitalii/oborskyivitalii/issues"
+    }
+  ],
+  "owners": [
+    {
+      "concern": "canonical operating procedure",
+      "path": "AGENTS.md",
+      "queries": [
+        "agent workflow",
+        "агент",
+        "governance procedure"
+      ]
+    },
+    {
+      "concern": "task intake and closure",
+      "path": "governance/issue-workflow.md",
+      "queries": [
+        "issue workflow",
+        "backlog",
+        "ішью",
+        "беклог"
+      ]
+    },
+    {
+      "concern": "evidence identity and status",
+      "path": "evidence/SOURCES.md",
+      "queries": [
+        "source registry",
+        "evidence review",
+        "integration audit",
+        "джерела"
+      ]
+    },
+    {
+      "concern": "repository terminology",
+      "path": "GLOSSARY.md",
+      "queries": [
+        "glossary",
+        "terminology",
+        "терміни"
+      ]
+    },
+    {
+      "concern": "research scope",
+      "path": "SCOPE.md",
+      "queries": [
+        "research scope",
+        "межі дослідження"
+      ]
+    },
+    {
+      "concern": "claim and interpretation principles",
+      "path": "DOCTRINE.md",
+      "queries": [
+        "doctrine",
+        "claim class",
+        "доктрина"
+      ]
+    },
+    {
+      "concern": "reader introduction and summaries",
+      "path": "README.md",
+      "queries": [
+        "reader navigation",
+        "overview",
+        "crisis map",
+        "evidence map"
+      ]
+    },
+    {
+      "concern": "bibliography",
+      "path": "REFERENCES.md",
+      "queries": [
+        "bibliography",
+        "citation sources",
+        "бібліографія"
+      ]
+    },
+    {
+      "concern": "independent review procedure",
+      "path": "governance/independent-review.md",
+      "queries": [
+        "independent review",
+        "незалежне ревью"
+      ]
+    },
+    {
+      "concern": "governance validation contract",
+      "path": "governance/repository-contract.toml",
+      "queries": [
+        "repository contract",
+        "validation contract",
+        "валідатор"
+      ]
+    },
+    {
+      "concern": "repository navigation adapter",
+      "path": "governance/repository-intelligence.md",
+      "queries": [
+        "repository intelligence",
+        "RI adapter",
+        "навігація репо"
+      ]
+    },
+    {
+      "concern": "publishing migration backlog",
+      "path": "governance/issue-backlog-audit.md",
+      "queries": [
+        "publisher",
+        "quartz",
+        "pdf",
+        "паблішер",
+        "пдф"
+      ]
+    },
+    {
+      "concern": "operational protocol navigation",
+      "path": "protocols/README.md",
+      "queries": [
+        "protocols",
+        "operational response",
+        "протоколи"
+      ]
+    },
+    {
+      "concern": "coordinated repo ownership",
+      "path": "governance/repository-map.md",
+      "queries": [
+        "cross repository",
+        "migration",
+        "міграція"
+      ]
+    }
+  ]
+}
