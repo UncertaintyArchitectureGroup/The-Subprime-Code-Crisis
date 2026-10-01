@@ -20,7 +20,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Governance
 
-- Added canonical issue intake, reviewed research-impact reports, linked PR/issue completion records and cross-repository routing. Added a bounded deterministic Repository Intelligence navigation adapter with source/config/producer freshness; source states and verification rules are unchanged.
+- Added canonical issue intent with focused clarification, PR/commit checks against it, reviewed research-impact reports, linked PR/issue completion records and cross-repository routing. Added a bounded deterministic Repository Intelligence navigation adapter with source/config/producer freshness; source states and verification rules are unchanged.
 
 - Added a mandatory content-synchronization assessment and explicit changelog decision for substantive repository changes.
 - Added a non-blocking executable repository contract, standard-library validator and tests, five-class Source Registry parser including the canonical dataset section, inactive-Markdown filtering, and diagnostic Main health workflow.

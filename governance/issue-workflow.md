@@ -11,6 +11,20 @@ the narrow exception in the PR. Incoming contributor issues may be incomplete:
 triage them with a comment rather than requiring a duplicate or rewriting the
 contributor's original message.
 
+The issue records the intent; PRs and their commits record its execution. When
+asked to create an issue, recover the request and clarify the intended outcome,
+reason, boundaries and acceptance with the maintainer. If a material choice is
+unclear, ask focused questions before presenting an agreed intent or starting
+dependent implementation. An intake issue may preserve the original request with
+clearly marked open questions; assumptions are provisional, not decisions.
+Continue independent inspection or reversible preparation where useful. Do not
+ask again about decisions or routine work already authorized.
+
+Compare each implementation scope with the owning issue before editing, during
+PR review and before closure. Explain which acceptance checks the PR/commits
+satisfy and which remain open. If execution diverges, correct it or record the
+maintainer's dated intent change; do not rewrite the issue to excuse the result.
+
 Before implementation, record:
 
 - **Original intent:** the question/problem, why it matters, initial request and

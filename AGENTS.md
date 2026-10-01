@@ -139,6 +139,15 @@ scope/exclusions/dependencies, observable acceptance and required decisions.
 Append dated scope changes; never rewrite the initial goal to fit the result.
 The [issue-workflow playbook](governance/issue-workflow.md) implements this rule.
 
+The issue records intent; PRs and commits implement it. When asked to create an
+issue, clarify a materially unclear outcome, reason, boundary or acceptance with
+focused maintainer questions before treating it as agreed or starting dependent
+implementation. Preserve the original request, mark open questions and provisional
+assumptions, and continue independent preparation where useful. Do not repeat
+questions about decisions or routine work already authorized. Check execution
+against the issue before editing, during PR review and before closure; correct
+divergence or record the maintainer's dated intent change and remaining acceptance.
+
 For research/source input, first inspect the original version and all relevant
 existing evidence and uses, then submit a methods/limitations/contradictions,
 affected-claim/map/protocol and proposed-treatment report for maintainer review

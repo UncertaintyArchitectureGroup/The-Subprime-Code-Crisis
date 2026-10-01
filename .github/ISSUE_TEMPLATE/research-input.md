@@ -9,6 +9,9 @@ title: ""
 Exact public URL/version/date or authorized bounded summary. Do not paste private
 correspondence without permission. What existing conclusion/question might change?
 
+Clarify the intended question and material scope with the maintainer. Record
+confirmed decisions and open questions; do not treat assumptions as agreed intent.
+
 ## Existing owners
 
 Source/research IDs, relevant research/brief/manuscript/blueprint and issue links.

@@ -14,17 +14,17 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v1",
-    "digest": "f5ad857e2c75fb4124b8d4dce5ba1d3a9d00853a8345f4d590b3073220205e9f",
+    "digest": "bfb6c5ae193ecf4500e502f68ae04c55e5a84441ac99a9547554f5ddfc13f281",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
         "identity_mode": "content",
-        "sha256": "590b9c7c880362a567d846446446221bf8e83e9467947d6682f571a7b3df6e79"
+        "sha256": "e11097914b4abc03399c82e01eecc5074a833fbea4c5e65de23c051159753bfd"
       },
       {
         "path": ".github/ISSUE_TEMPLATE/work-item.md",
         "identity_mode": "content",
-        "sha256": "27f249a761eedde45993444a67bb4bb0f5f59e231b94085125f3d102708b5ef8"
+        "sha256": "644f1eca4b593d50c0f38f3ba0551f1c6fb89989a5744e196afdb05e5b55389c"
       },
       {
         "path": ".github/pull_request_template.md",
@@ -48,7 +48,7 @@
       {
         "path": "AGENTS.md",
         "identity_mode": "content",
-        "sha256": "1c32b2dad2299e0dd5c1c44faf243f23f2704053b36f398bd28f0314d6386762"
+        "sha256": "b96ea19d9f67b3655b98188cf9ac5bd0fc199227ba87290039ffbbd4a52c764d"
       },
       {
         "path": "ARTIFACT_MODEL.md",
@@ -58,7 +58,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "afdbbde30273c170814912de16041aabb972f63ffcbfd4d947d6fa75bb1fa350"
+        "sha256": "7a4a87df273e0daecef9b0e9d8689b4fc2cd2f2ae63cb1bddeca5536dbcf369c"
       },
       {
         "path": "CITATION.cff",
@@ -201,7 +201,7 @@
       {
         "path": "governance/issue-workflow.md",
         "identity_mode": "content",
-        "sha256": "c192a31a5ae11245eef2819e28a0ab256c68f272c6d603378521004d87cf560b"
+        "sha256": "ae81fcd12c35794ea4ef294b6fe1417738a36828082d8e748ad8668ea7e7553f"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -271,7 +271,7 @@
       {
         "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
         "identity_mode": "content",
-        "sha256": "ba89ceda4b897af79ef119e6731239c445983426ede2dd74ac462a65b2a05f92"
+        "sha256": "4b2ddd99efe5dbbf51515a25b94c9663e3948fbce1d0070fad88ca0a7001c21b"
       },
       {
         "path": "governance/work-records/README.md",

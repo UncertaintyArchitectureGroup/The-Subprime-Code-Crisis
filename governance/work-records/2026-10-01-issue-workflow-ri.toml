@@ -1,13 +1,18 @@
 record_version = 1
 title = "Issue workflow and bounded local Repository Intelligence"
 primary_flow = "Approved governance change procedure"
-human_decision = "Maintainer explicitly requested issue workflow in all three repos, backlog/PR linkage, AGENTS adaptation and UA RI adaptation in the active conversation on 2026-10-01. Scope excludes source/research state changes, publishing migrations and deployment."
+human_decision = "Maintainer explicitly requested issue workflow, backlog/PR linkage, AGENTS and local RI adaptation on 2026-10-01, then clarified that issues preserve intent and materially unclear intent requires questions; PRs/commits implement and are checked against it. Issue #47 comments record both requests. Scope excludes source/research state changes, publishing migrations and deployment."
 independent_review = "Confirmed"
 # Primary implementer: /root; independent reviewer: /root/independent_workflow_review.
 # Review date: 2026-10-01. Independently checked implementation remote head:
 # 21ba9c58766bc4f00a3a0c1d9a0332a3d9da7210 (PR #56), with identical reviewed local tree.
 # Corrections were implemented by /root and independently re-tested by the reviewer.
 # This confirmation covers workflow/RI only, not source verification or merge authorization.
+# Additional intent clarification independently Confirmed on 2026-10-01 by
+# /root/independent_workflow_review: candidate tracked tree
+# 256c5f6ac501b84ba80d613b6a0170b0eb880bcd against prior local head
+# 672de305b341f9cb87a1dedd0088f3cebb690a9a. No source state changes.
+# This record update and regenerated RI report that actual review outcome.
 
 [changelog]
 decision = "Updated"

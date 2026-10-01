@@ -8,6 +8,9 @@ title: ""
 
 What do we want to change, why, and where did the idea/request originate?
 
+Confirmed decisions and unresolved questions: clarify material uncertainty with
+the maintainer; label assumptions before treating the scope as agreed intent.
+
 ## Owner and scope
 
 Repository/paths, task type, current ref, exclusions, dependencies and open decisions.
