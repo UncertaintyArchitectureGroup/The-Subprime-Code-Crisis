@@ -14,7 +14,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v1",
-    "digest": "05a7d24534a81d2de88d05f500c309adf08de58dc615c4a1864ae27f6ee15143",
+    "digest": "f5ad857e2c75fb4124b8d4dce5ba1d3a9d00853a8345f4d590b3073220205e9f",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -271,7 +271,7 @@
       {
         "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
         "identity_mode": "content",
-        "sha256": "16f4bb3d4b33d19220d75dfdd10bda3000029a549088133a3e93fd9c4b88a78b"
+        "sha256": "ba89ceda4b897af79ef119e6731239c445983426ede2dd74ac462a65b2a05f92"
       },
       {
         "path": "governance/work-records/README.md",
