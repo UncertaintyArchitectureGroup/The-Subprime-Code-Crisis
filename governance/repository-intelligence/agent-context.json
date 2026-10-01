@@ -1,0 +1,1617 @@
+{
+  "schema_version": 1,
+  "repository": "UncertaintyArchitectureGroup/The-Subprime-Code-Crisis",
+  "capabilities": [
+    "local-owner-candidates",
+    "complete-admitted-inventories",
+    "freshness"
+  ],
+  "limitations": [
+    "Navigation only; read owning sources and current GitHub state.",
+    "No semantic graph, impact traversal or trusted tested-merge comparison.",
+    "Excluded build/cache directories are not represented; binary assets are existence-only.",
+    "Lexical miss or untranslated query does not establish absence."
+  ],
+  "source_identity": {
+    "algorithm": "sha256-path-content-v1",
+    "digest": "05a7d24534a81d2de88d05f500c309adf08de58dc615c4a1864ae27f6ee15143",
+    "inputs": [
+      {
+        "path": ".github/ISSUE_TEMPLATE/research-input.md",
+        "identity_mode": "content",
+        "sha256": "590b9c7c880362a567d846446446221bf8e83e9467947d6682f571a7b3df6e79"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/work-item.md",
+        "identity_mode": "content",
+        "sha256": "27f249a761eedde45993444a67bb4bb0f5f59e231b94085125f3d102708b5ef8"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "identity_mode": "content",
+        "sha256": "8a29aa977d3794c1645d26ae655e86f2bd6c6e712b07ceb794fbee0087497c24"
+      },
+      {
+        "path": ".github/workflows/main-health.yml",
+        "identity_mode": "content",
+        "sha256": "c782f224d7afcbaaf4d6e2efcaf1e8cb2e60985eab1d5af5086970927be29ceb"
+      },
+      {
+        "path": ".github/workflows/repository-gate.yml",
+        "identity_mode": "content",
+        "sha256": "bd26e285c21d30b2fd73881c706e8cca0d245ad6df0fe1ec4f4b8d23a36c8c07"
+      },
+      {
+        "path": ".gitignore",
+        "identity_mode": "existence"
+      },
+      {
+        "path": "AGENTS.md",
+        "identity_mode": "content",
+        "sha256": "1c32b2dad2299e0dd5c1c44faf243f23f2704053b36f398bd28f0314d6386762"
+      },
+      {
+        "path": "ARTIFACT_MODEL.md",
+        "identity_mode": "content",
+        "sha256": "bdaaa11959016973a27c936d462632953b436288031a354a4ed4587530aad46f"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "identity_mode": "content",
+        "sha256": "afdbbde30273c170814912de16041aabb972f63ffcbfd4d947d6fa75bb1fa350"
+      },
+      {
+        "path": "CITATION.cff",
+        "identity_mode": "content",
+        "sha256": "6e8523ed74a51fd5e5f300dcae92bb0aa727f3fadd1d70e839cb73e30f168798"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "identity_mode": "content",
+        "sha256": "325812e5d38b25c213f74f1263e4192a543acee9d8627e346fcd8a05e6fea735"
+      },
+      {
+        "path": "DOCTRINE.md",
+        "identity_mode": "content",
+        "sha256": "e13412316ea65aad6d872d662d4902493205396eb1f58fecc195527e8affdbe4"
+      },
+      {
+        "path": "GLOSSARY.md",
+        "identity_mode": "content",
+        "sha256": "af1e332ef1dd003cbc6c4264f8f5b559650e2b790696057cb29fd7683f0d1a0f"
+      },
+      {
+        "path": "LICENSE.md",
+        "identity_mode": "content",
+        "sha256": "a4c5a19ccb3afc01692c66a17633e51f32db1cf9f676bc64b4672598ed583545"
+      },
+      {
+        "path": "README.md",
+        "identity_mode": "content",
+        "sha256": "98f564759977ce510fcbb048a3d1e3edf8883e136aea3c5e77077cc2dd5abf18"
+      },
+      {
+        "path": "REFERENCES.md",
+        "identity_mode": "content",
+        "sha256": "eae6a3c909d7bb0b23de7cbf383d7ab13cff18651fc720cce3707a2228ef4519"
+      },
+      {
+        "path": "SCOPE.md",
+        "identity_mode": "content",
+        "sha256": "fc36db9fad3c1e3959a8f31d5e44cf2569f7a495a6e5e925e2b8a159beebfc65"
+      },
+      {
+        "path": "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "identity_mode": "content",
+        "sha256": "3fcb343a60b19367b989814d9a04739d30d62c56ed3c56e6bc13fbce4e68b28f"
+      },
+      {
+        "path": "assets/Pasted image 20260209153307.png",
+        "identity_mode": "existence"
+      },
+      {
+        "path": "assets/crisis_cover.png",
+        "identity_mode": "existence"
+      },
+      {
+        "path": "evidence/README.md",
+        "identity_mode": "content",
+        "sha256": "f1b74032bd0a8e963c3197e4139a8e6400de935674c370086a0c9c34f64c0aa5"
+      },
+      {
+        "path": "evidence/SOURCES.md",
+        "identity_mode": "content",
+        "sha256": "3b5f9677cc3c76f5841a541a5e95e4a95529f7c508dbea160b6b3e059033a84f"
+      },
+      {
+        "path": "evidence/datasets/README.md",
+        "identity_mode": "content",
+        "sha256": "ff99829c003ed87b93ca8de93a9c63c6c9f61beeac122f588ca15e167a1a4fea"
+      },
+      {
+        "path": "evidence/documentary/README.md",
+        "identity_mode": "content",
+        "sha256": "9f495aa4ac9da3e2743b38db5d9e5a1ec00a127f701dc86201d691b33497f1b1"
+      },
+      {
+        "path": "evidence/documentary/project-provenance.md",
+        "identity_mode": "content",
+        "sha256": "2b23dcd166bf7db971fb2d6c8498256256c485a9431556ef1a0b33198e1d63aa"
+      },
+      {
+        "path": "evidence/documentary/terminology-provenance.md",
+        "identity_mode": "content",
+        "sha256": "3c877efac5e49703821113dee7fc188a08d6f8d18208ab96c9848a3dcd7dcbce"
+      },
+      {
+        "path": "evidence/methodology/README.md",
+        "identity_mode": "content",
+        "sha256": "c62c0fc7224c243f29729374bc94fc5bd4e1d18fd24412ab8c53934ae66cda9d"
+      },
+      {
+        "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
+        "identity_mode": "content",
+        "sha256": "8e4dcc69f02a8213bf7add1d225628939f70de16cfbabf1b77860a7c0daa99df"
+      },
+      {
+        "path": "evidence/primary/README.md",
+        "identity_mode": "content",
+        "sha256": "423dafd68cf947e6375ffff39e94c9a308c19407854a38e9199cc634633bab5a"
+      },
+      {
+        "path": "evidence/secondary/README.md",
+        "identity_mode": "content",
+        "sha256": "53d5a4b043e7130f269422baff4354dafcf3855a7df1244fc15b05d3301ab9e1"
+      },
+      {
+        "path": "governance/README.md",
+        "identity_mode": "content",
+        "sha256": "36b81cc8269e4d745e7473fceec0eaca7c8f7cd4dac6b063a71d6e7d4e6d3e85"
+      },
+      {
+        "path": "governance/content-synchronization.md",
+        "identity_mode": "content",
+        "sha256": "2da5b6f65466ec39464d5fa3b7ff1aaa0777c7993601cc10bbe6acbf85a2e7c7"
+      },
+      {
+        "path": "governance/evidence-discovery.md",
+        "identity_mode": "content",
+        "sha256": "7c97242c94772355f7488e22e34e59af6a7f8755fbfb8bac741d4058fd1cbd81"
+      },
+      {
+        "path": "governance/evidence-review.md",
+        "identity_mode": "content",
+        "sha256": "5ad54957e9f66bb1542c0c8dc792fe208843f9710ae11153d2329a4269ea95d5"
+      },
+      {
+        "path": "governance/independent-review.md",
+        "identity_mode": "content",
+        "sha256": "43508856f66456db20591a88fed3c65e02d917d014edc7a9bb6fb429a2f47f06"
+      },
+      {
+        "path": "governance/integration-audit.md",
+        "identity_mode": "content",
+        "sha256": "64538973113bd3ada8972be7dc1485e6acc887eff2cc7dc9600ce43100c2716e"
+      },
+      {
+        "path": "governance/issue-backlog-audit.md",
+        "identity_mode": "content",
+        "sha256": "43b5f69f2a555c0df7d91cd0c12a409e4d1d3c8a24086c326f181a69d2c63cdb"
+      },
+      {
+        "path": "governance/issue-workflow.md",
+        "identity_mode": "content",
+        "sha256": "c192a31a5ae11245eef2819e28a0ab256c68f272c6d603378521004d87cf560b"
+      },
+      {
+        "path": "governance/pr-process-and-synchronization.md",
+        "identity_mode": "content",
+        "sha256": "971eb0e8f75232de9776b05b642af06ffa33701b7188e4a38fd262141e341f73"
+      },
+      {
+        "path": "governance/repository-contract.toml",
+        "identity_mode": "content",
+        "sha256": "9ea8405562b4093834660ad721275e5a3b81faf98efaa081fee3d2247fdf9448"
+      },
+      {
+        "path": "governance/repository-intelligence-config.json",
+        "identity_mode": "content",
+        "sha256": "3d429885417815b80d5e5c2500b5a3b5f0b54f3b54e1ca86c9079cab3e436396"
+      },
+      {
+        "path": "governance/repository-intelligence.md",
+        "identity_mode": "content",
+        "sha256": "68a4125411af38ce5c247fbc717cc6b5cb5231b2bf45a0cdc56d28590f3be186"
+      },
+      {
+        "path": "governance/repository-map.md",
+        "identity_mode": "content",
+        "sha256": "3378a096e6fb8857424037323a5d80d1231471a6fb98a5362a7b3401d3af340a"
+      },
+      {
+        "path": "governance/status-model.md",
+        "identity_mode": "content",
+        "sha256": "ad0aeadd7360c7bec6ec76d59a886b9376f50f3fc06d6e7436619d84e5524d90"
+      },
+      {
+        "path": "governance/synchronization-matrix.toml",
+        "identity_mode": "content",
+        "sha256": "4373843a61b839ead805a32c230c015701894b5957a0d99546f2cb5c20480247"
+      },
+      {
+        "path": "governance/templates.md",
+        "identity_mode": "content",
+        "sha256": "af121247a529baad892872354f889c830a74c9fb7ecf3cdf3371b9cac2739210"
+      },
+      {
+        "path": "governance/work-records/2026-08-04-evidence-state-integrity.toml",
+        "identity_mode": "content",
+        "sha256": "725053b1db3cbbc9023e0803eb16b059cdba5c4b7eb3e8bb356a7746b994c8c6"
+      },
+      {
+        "path": "governance/work-records/2026-08-04-pr-process-and-synchronization-v2.toml",
+        "identity_mode": "content",
+        "sha256": "4bf3315cb6c4a8090f752f42413eb79e1f397cc37226521513ca786c0c82f1ee"
+      },
+      {
+        "path": "governance/work-records/2026-08-31-ewing-provenance-chronology.toml",
+        "identity_mode": "content",
+        "sha256": "090060f80098493178a8cebacdc3ca92482b8cb0d506211cccb3acfd47e2e393"
+      },
+      {
+        "path": "governance/work-records/2026-08-31-project-provenance-attribution.toml",
+        "identity_mode": "content",
+        "sha256": "02b71ab8ba4e8271ebc9d80948a30ffa6d6a4064bb1a139f1d60fdde65063daf"
+      },
+      {
+        "path": "governance/work-records/2026-08-31-readme-attribution-links.toml",
+        "identity_mode": "content",
+        "sha256": "cccd538efc905a7d19eac2f0d6bcf99b0cfc09828efd99eeb4ffcf0b8b1c73d1"
+      },
+      {
+        "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
+        "identity_mode": "content",
+        "sha256": "16f4bb3d4b33d19220d75dfdd10bda3000029a549088133a3e93fd9c4b88a78b"
+      },
+      {
+        "path": "governance/work-records/README.md",
+        "identity_mode": "content",
+        "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
+      },
+      {
+        "path": "protocols/01_personal_defense.md",
+        "identity_mode": "content",
+        "sha256": "5a911f819bfff2e8059fd8583302381d927a07794419782b230573710fad828e"
+      },
+      {
+        "path": "protocols/02_operational_defense.md",
+        "identity_mode": "content",
+        "sha256": "9798a952117a562f14298799b097d9324b4b941ca5ce623dc4566df0db3054a6"
+      },
+      {
+        "path": "protocols/03_public_defense.md",
+        "identity_mode": "content",
+        "sha256": "6716f7fed35e8c391b5eba9bfbedb3a08072c855232352fbb8f58bc54c40537c"
+      },
+      {
+        "path": "protocols/04_systemic_cure.md",
+        "identity_mode": "content",
+        "sha256": "3e549ebf5b7001253020f2f28f84762bf3f270693c078f8907ff3c6b745fcdec"
+      },
+      {
+        "path": "protocols/README.md",
+        "identity_mode": "content",
+        "sha256": "112d2a4fecd929a4eeca6efa1ef01353942a9fd242b9143c28cd9cd020b82df4"
+      },
+      {
+        "path": "report/01_the_illusion.md",
+        "identity_mode": "content",
+        "sha256": "4b36342d4794ff11f9dda43c377fbaee9b3c833cb86c75650ca42666cd0402fa"
+      },
+      {
+        "path": "report/02_broken_mechanics.md",
+        "identity_mode": "content",
+        "sha256": "49193618017410694097c68865771a58550b75f5cc8d56290b350f482c0ee95b"
+      },
+      {
+        "path": "report/03_the_aftermath.md",
+        "identity_mode": "content",
+        "sha256": "46ef86dfd4db7a8f691b2bf1e3edaefd6b98c0bede29ded968e830db8f5352cb"
+      },
+      {
+        "path": "tests/__init__.py",
+        "identity_mode": "content",
+        "sha256": "7de89de3c06a319901184f6398687ce8dc2ab57b7c6189084dfd9880d87a6a7e"
+      },
+      {
+        "path": "tests/repository_validator/__init__.py",
+        "identity_mode": "content",
+        "sha256": "c2779fb8622609d73183fa558423d55781b0006f6d5dbe0c60f69bf3552f43e1"
+      },
+      {
+        "path": "tests/repository_validator/test_contract_invariants.py",
+        "identity_mode": "content",
+        "sha256": "5ab90311f2a2171be0c7ea0dcfcd944127765fad29e7241e7c6a6e6a2784084f"
+      },
+      {
+        "path": "tests/repository_validator/test_validator.py",
+        "identity_mode": "content",
+        "sha256": "e153efa7d8798e7d9067d3372e18cb23dea39f1cdd1e291abb7b33500fab99e9"
+      },
+      {
+        "path": "tests/test_evidence_state_integrity.py",
+        "identity_mode": "content",
+        "sha256": "43adb58302f73a3e49fefbf60f16c6ca83b533975d760bdb2472d10cefa62bee"
+      },
+      {
+        "path": "tests/test_pr_governance_contract.py",
+        "identity_mode": "content",
+        "sha256": "3786506e40b1a09a09d1b2a3ae19241a623e62e4e16040209792b2e26d1ef370"
+      },
+      {
+        "path": "tests/test_repository_gate.py",
+        "identity_mode": "content",
+        "sha256": "d8c58b415ea13bb141bfbf0695511c427407b080ef09096b4289ac60bafa1cad"
+      },
+      {
+        "path": "tests/test_repository_intelligence.py",
+        "identity_mode": "content",
+        "sha256": "40212d2afd569554b645f4f5eeedacc27a6ab354eb313157d3d74f6763de1cd5"
+      },
+      {
+        "path": "tools/RI-LICENSE.md",
+        "identity_mode": "content",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      },
+      {
+        "path": "tools/RI-NOTICE.md",
+        "identity_mode": "content",
+        "sha256": "e512235d9027a6bbfa8fa72743f3a40050aef252f579ec5fb6e825115738b2b6"
+      },
+      {
+        "path": "tools/__init__.py",
+        "identity_mode": "content",
+        "sha256": "be5884a1e2e6a9dc2d5199d65efca8a37ca06a609f6b50869830412f15668571"
+      },
+      {
+        "path": "tools/evidence_state_check.py",
+        "identity_mode": "content",
+        "sha256": "c63bc5f4040bc37efed634b072e79f1da67c1286f76a791b15a73d082cb3362b"
+      },
+      {
+        "path": "tools/evidence_transition_gate.py",
+        "identity_mode": "content",
+        "sha256": "2a05ff3503603bc95b630b45a7cc8be2c8fac6c6ce50825aec0493efb8955ffb"
+      },
+      {
+        "path": "tools/repository_gate.py",
+        "identity_mode": "content",
+        "sha256": "7ea9b3a50d4dba628de1c62384610dc09ca764c28dcbf2ad1750c54700ada425"
+      },
+      {
+        "path": "tools/repository_intelligence.py",
+        "identity_mode": "content",
+        "sha256": "7905f08fd44b7cf8708f68df609d820f1c12536672bdfe0d5bbe59d1e76865a0"
+      },
+      {
+        "path": "tools/repository_validator/__init__.py",
+        "identity_mode": "content",
+        "sha256": "208cf34b80d98ad70c82ad78c32040034ac79b5a87d00426cb0368454fd9561d"
+      },
+      {
+        "path": "tools/repository_validator/__main__.py",
+        "identity_mode": "content",
+        "sha256": "2d74bbff7c3ba76f0ff3cae554ce7dbc5c0750bd3a9ef3afbbc54e9f1d5a4824"
+      },
+      {
+        "path": "tools/repository_validator/contract.py",
+        "identity_mode": "content",
+        "sha256": "f562ab51749aa8d757429b522ad0b056f7177d50243719d54fdeb9d1974aed6f"
+      },
+      {
+        "path": "tools/repository_validator/evidence_state.py",
+        "identity_mode": "content",
+        "sha256": "71e5df7dedf05632753fc0db688119d77aa2a09df0f7e5bae2ddd83caf83da08"
+      },
+      {
+        "path": "tools/repository_validator/markdown.py",
+        "identity_mode": "content",
+        "sha256": "30d52b7ad71ad4f2d4c8984eb2f447fc0176bdb636c5cc08b6544164aa37197a"
+      },
+      {
+        "path": "tools/repository_validator/registry.py",
+        "identity_mode": "content",
+        "sha256": "5261fc43638be7b32f053b74b700f3a3518d71c2b41a183d80bc043092f1def9"
+      },
+      {
+        "path": "tools/repository_validator/validator.py",
+        "identity_mode": "content",
+        "sha256": "d3405cc1d5cd5533e459b0ff1c4c8acb0c60169277570df890595f2fc6c0b046"
+      }
+    ]
+  },
+  "producer": {
+    "path": "tools/repository_intelligence.py",
+    "sha256": "7905f08fd44b7cf8708f68df609d820f1c12536672bdfe0d5bbe59d1e76865a0",
+    "config_path": "governance/repository-intelligence-config.json",
+    "config_sha256": "3d429885417815b80d5e5c2500b5a3b5f0b54f3b54e1ca86c9079cab3e436396"
+  },
+  "owners": [
+    {
+      "concern": "canonical operating procedure",
+      "path": "AGENTS.md",
+      "queries": [
+        "agent workflow",
+        "агент",
+        "governance procedure"
+      ]
+    },
+    {
+      "concern": "task intake and closure",
+      "path": "governance/issue-workflow.md",
+      "queries": [
+        "issue workflow",
+        "backlog",
+        "ішью",
+        "беклог"
+      ]
+    },
+    {
+      "concern": "evidence identity and status",
+      "path": "evidence/SOURCES.md",
+      "queries": [
+        "source registry",
+        "evidence review",
+        "integration audit",
+        "джерела"
+      ]
+    },
+    {
+      "concern": "repository terminology",
+      "path": "GLOSSARY.md",
+      "queries": [
+        "glossary",
+        "terminology",
+        "терміни"
+      ]
+    },
+    {
+      "concern": "research scope",
+      "path": "SCOPE.md",
+      "queries": [
+        "research scope",
+        "межі дослідження"
+      ]
+    },
+    {
+      "concern": "claim and interpretation principles",
+      "path": "DOCTRINE.md",
+      "queries": [
+        "doctrine",
+        "claim class",
+        "доктрина"
+      ]
+    },
+    {
+      "concern": "reader introduction and summaries",
+      "path": "README.md",
+      "queries": [
+        "reader navigation",
+        "overview",
+        "crisis map",
+        "evidence map"
+      ]
+    },
+    {
+      "concern": "bibliography",
+      "path": "REFERENCES.md",
+      "queries": [
+        "bibliography",
+        "citation sources",
+        "бібліографія"
+      ]
+    },
+    {
+      "concern": "independent review procedure",
+      "path": "governance/independent-review.md",
+      "queries": [
+        "independent review",
+        "незалежне ревью"
+      ]
+    },
+    {
+      "concern": "governance validation contract",
+      "path": "governance/repository-contract.toml",
+      "queries": [
+        "repository contract",
+        "validation contract",
+        "валідатор"
+      ]
+    },
+    {
+      "concern": "repository navigation adapter",
+      "path": "governance/repository-intelligence.md",
+      "queries": [
+        "repository intelligence",
+        "RI adapter",
+        "навігація репо"
+      ]
+    },
+    {
+      "concern": "publishing migration backlog",
+      "path": "governance/issue-backlog-audit.md",
+      "queries": [
+        "publisher",
+        "quartz",
+        "pdf",
+        "паблішер",
+        "пдф"
+      ]
+    },
+    {
+      "concern": "operational protocol navigation",
+      "path": "protocols/README.md",
+      "queries": [
+        "protocols",
+        "operational response",
+        "протоколи"
+      ]
+    },
+    {
+      "concern": "coordinated repo ownership",
+      "path": "governance/repository-map.md",
+      "queries": [
+        "cross repository",
+        "migration",
+        "міграція"
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "term": "Status and use",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Terms",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Artifact model",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Bottleneck migration",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Claim confidence",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Claim confidence map",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Crisis Map",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Dataset",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Delivery system",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Documented",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Documentary source",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Documented fact",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Derived",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Derived result",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Empirical finding",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Evidence Map",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Evidence-backed inference",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Evidence brief",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Evidence review",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Independent conceptual convergence",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Integration audit",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Local productivity",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Model-calibrated",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Model-calibrated result",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Not established",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Observed",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Primary documentary source",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Primary empirical research",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Primary evidence",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Production attenuation",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Protocol",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Report",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Repository interpretation",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Repository scope",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Repository synthesis",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Risk scenario",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Secondary evidence",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Source-author interpretation",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Source Registry",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Subprime Code Bubble",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Systems inference",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Technical Bankruptcy",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Theory and methodology source",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Throughput",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Verification capacity",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Warning scenario",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Usage rule",
+      "path": "GLOSSARY.md"
+    }
+  ],
+  "sources": [
+    {
+      "id": "P-2026-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*, NBER Working Paper 35275",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-07-27",
+      "can_support": "Measured attenuation from coding activity toward projects, releases, and early marketplace use within the studied setting",
+      "current_use": "`README.md` Crisis Map and evidence boundary; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`",
+      "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
+    },
+    {
+      "id": "P-2025-01",
+      "path": "evidence/SOURCES.md",
+      "source": "METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Randomized evidence about experienced developers completing familiar open-source tasks with early-2025 tools",
+      "current_use": "Report claims about experienced-developer task completion",
+      "brief_path": null
+    },
+    {
+      "id": "P-2025-02",
+      "path": "evidence/SOURCES.md",
+      "source": "METR, *Measuring AI Ability to Complete Long Tasks*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Agent task-completion performance as task duration increases under the study's benchmark design",
+      "current_use": "Agent capability and task-horizon discussion",
+      "brief_path": null
+    },
+    {
+      "id": "P-2025-03",
+      "path": "evidence/SOURCES.md",
+      "source": "Xu et al., *AI-Assisted Programming Decreases the Productivity of Experienced Developers*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Large-scale developer-output and review-load associations reported by the authors",
+      "current_use": "Senior-load and productivity discussion",
+      "brief_path": null
+    },
+    {
+      "id": "P-2026-02",
+      "path": "evidence/SOURCES.md",
+      "source": "Agarwal et al., *AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Reported static-analysis and code-structure differences in the study sample",
+      "current_use": "Complexity and quality-risk discussion",
+      "brief_path": null
+    },
+    {
+      "id": "P-2023-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Peng et al., *The Impact of AI on Developer Productivity*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Controlled evidence of task-completion acceleration in a bounded greenfield task",
+      "current_use": "Positive productivity evidence and boundary conditions",
+      "brief_path": null
+    },
+    {
+      "id": "P-2025-04",
+      "path": "evidence/SOURCES.md",
+      "source": "GitClear, *AI Assistant Code Quality 2025 Research*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Original commercial measurement of code-change patterns, subject to methodology and conflict review",
+      "current_use": "Churn, duplication, and reuse discussion",
+      "brief_path": null
+    },
+    {
+      "id": "P-2025-05",
+      "path": "evidence/SOURCES.md",
+      "source": "GitClear, *How Much More Productive Are AI-Powered Developers?*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Original commercial productivity measurement, subject to methodology and conflict review",
+      "current_use": "Net-output and rework discussion",
+      "brief_path": null
+    },
+    {
+      "id": "D-2019-01",
+      "path": "evidence/SOURCES.md",
+      "source": "*Software Engineering at Google* and associated first-party engineering documentation",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Descriptions of Google's engineering infrastructure and practices",
+      "current_use": "Infrastructure and verification-capacity discussion",
+      "brief_path": null
+    },
+    {
+      "id": "D-2024-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Alphabet annual filings",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Alphabet-reported capital expenditure and business records",
+      "current_use": "AI infrastructure-spending discussion",
+      "brief_path": null
+    },
+    {
+      "id": "D-2024-02",
+      "path": "evidence/SOURCES.md",
+      "source": "Meta annual filings",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Meta-reported capital expenditure and business records",
+      "current_use": "AI infrastructure-spending discussion",
+      "brief_path": null
+    },
+    {
+      "id": "D-2024-03",
+      "path": "evidence/SOURCES.md",
+      "source": "Microsoft annual filings",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Microsoft-reported capital expenditure and business records",
+      "current_use": "AI infrastructure-spending discussion",
+      "brief_path": null
+    },
+    {
+      "id": "D-2025-05",
+      "path": "evidence/SOURCES.md",
+      "source": "Nick Vigier, *“Subprime Code”: How Vibe Coding Could Trigger the Next Great Crash* (2025-09-16)",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "can_support": "The dated public use of “Subprime Code” and “subprime coding crisis” in relation to AI-assisted coding",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md`; terminology provenance brief",
+      "brief_path": "evidence/documentary/terminology-provenance.md"
+    },
+    {
+      "id": "D-2025-06",
+      "path": "evidence/SOURCES.md",
+      "source": "Igor Światowski, *The Subprime Code Crisis Has Started* (public LinkedIn profile listing dated 2025-12-16)",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "can_support": "The dated public listing of an article using the full phrase “The Subprime Code Crisis”",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md`; terminology provenance brief",
+      "brief_path": "evidence/documentary/terminology-provenance.md"
+    },
+    {
+      "id": "D-2026-04",
+      "path": "evidence/SOURCES.md",
+      "source": "Richard Ewing, *The Subprime Code Crisis* — multiple currently accessible provenance surfaces, including a CareerWin page displaying 2025-11-12, a current canonical page claiming an April 2025 origin, a publications catalog displaying March 2026, and a previously reviewed 2026-05-01 article",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "can_support": "The current Ewing-attributed provenance claims, dated public surfaces, and unresolved metadata inconsistencies; not an independently established first origin",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md`; terminology provenance brief",
+      "brief_path": "evidence/documentary/terminology-provenance.md"
+    },
+    {
+      "id": "D-2026-05",
+      "path": "evidence/SOURCES.md",
+      "source": "Vitalii Oborskyi, *Ілюзія економії: чому заміна розробників на AI — це шлях до технічного дефолту* (DOU article and preserved discussion thread, 2026-01-05 onward)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "A dated public precursor to this repository's delivery-system formulation and preserved refinement around generation/review asymmetry, Value Stream outcomes, review bottlenecks, and validation",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `README.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/project-provenance.md"
+    },
+    {
+      "id": "D-2026-06",
+      "path": "evidence/SOURCES.md",
+      "source": "GitHub REST metadata for `UncertaintyArchitectureGroup/The-Subprime-Code-Crisis` (`created_at` 2026-02-06T17:16:44Z)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "The platform-recorded creation timestamp of the public repository object",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `README.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/project-provenance.md"
+    },
+    {
+      "id": "D-2026-07",
+      "path": "evidence/SOURCES.md",
+      "source": "Vitalii Oborskyi, *Субпрайм-криза коду: чому AI-асистенти роблять нас повільнішими — і дані це доводять* (DOU, 2026-02-10)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "The dated public Subprime Code formulation, its stated continuity from the January article/discussion, and its explicit link to the GitHub report",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `README.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/project-provenance.md"
+    },
+    {
+      "id": "S-2025-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Deloitte, *State of Generative AI in the Enterprise*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Surveyed enterprise adoption, expectations, and reported constraints",
+      "current_use": "Adoption and organizational-context discussion",
+      "brief_path": null
+    },
+    {
+      "id": "S-2025-02",
+      "path": "evidence/SOURCES.md",
+      "source": "McKinsey enterprise AI reporting, currently linked through a third-party summary",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Context only until the original McKinsey publication is identified, registered, and reviewed",
+      "current_use": "Market-sentiment discussion",
+      "brief_path": null
+    },
+    {
+      "id": "S-2025-03",
+      "path": "evidence/SOURCES.md",
+      "source": "Artur Markus, *The Inference Cost Paradox*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Practitioner interpretation of enterprise AI spending and Jevons-style effects",
+      "current_use": "Cost-paradox discussion",
+      "brief_path": null
+    },
+    {
+      "id": "S-2026-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Andreas Horn, *The Most Important Chart in AI*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Practitioner framing and visual interpretation",
+      "current_use": "Market and capability narrative context",
+      "brief_path": null
+    },
+    {
+      "id": "S-2025-04",
+      "path": "evidence/SOURCES.md",
+      "source": "SoftwareSeni, *Why AI Coding Speed Gains Disappear in Code Reviews*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Practitioner synthesis about review bottlenecks",
+      "current_use": "Review-bottleneck framing",
+      "brief_path": null
+    },
+    {
+      "id": "S-2025-05",
+      "path": "evidence/SOURCES.md",
+      "source": "TechnoDiaries, *Post-Copilot Burnout*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Practitioner reporting and hypothesis generation",
+      "current_use": "Senior-bottleneck and burnout context",
+      "brief_path": null
+    },
+    {
+      "id": "M-1984-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Eliyahu M. Goldratt, *The Goal: A Process of Ongoing Improvement*",
+      "evidence_review": "Registered",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Theory of Constraints concepts such as bottlenecks, inventory, and local optimization",
+      "current_use": "Delivery-system interpretation throughout the report",
+      "brief_path": null
+    }
+  ],
+  "instructions": [
+    {
+      "path": "AGENTS.md",
+      "scope_root": "."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/research-input.md",
+      "title": ".github/ISSUE_TEMPLATE/research-input.md",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/work-item.md",
+      "title": ".github/ISSUE_TEMPLATE/work-item.md",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "title": ".github/pull_request_template.md",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": ".github/workflows/main-health.yml",
+      "title": ".github/workflows/main-health.yml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": ".github/workflows/repository-gate.yml",
+      "title": ".github/workflows/repository-gate.yml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "title": "AGENTS.md",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "ARTIFACT_MODEL.md",
+      "title": "Repository Artifact Model",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "title": "Changelog",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "CITATION.cff",
+      "title": "CITATION.cff",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "title": "Contributing to the Subprime Code Crisis",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "DOCTRINE.md",
+      "title": "Repository Doctrine",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "GLOSSARY.md",
+      "title": "Glossary",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "LICENSE.md",
+      "title": "LICENSE.md",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "README.md",
+      "title": "The Subprime Code Crisis",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "REFERENCES.md",
+      "title": "Bibliography and Data Sources",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "SCOPE.md",
+      "title": "Repository Scope",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "TERMINOLOGY_AND_ATTRIBUTION.md",
+      "title": "Terminology and attribution",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/README.md",
+      "title": "Evidence Library",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/SOURCES.md",
+      "title": "Source Registry",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/datasets/README.md",
+      "title": "Datasets",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/README.md",
+      "title": "Primary Documentary Sources",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/project-provenance.md",
+      "title": "Project provenance: precursor article, repository creation, and Subprime Code publication",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/terminology-provenance.md",
+      "title": "Terminology provenance: early located public records",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/methodology/README.md",
+      "title": "Theory and Methodology",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
+      "title": "Writing Code vs. Shipping Code",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/README.md",
+      "title": "Primary Empirical Research",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/README.md",
+      "title": "Secondary Evidence",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/README.md",
+      "title": "Governance playbooks",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/content-synchronization.md",
+      "title": "Content synchronization",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/evidence-discovery.md",
+      "title": "Evidence discovery playbook",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/evidence-review.md",
+      "title": "Evidence review playbook",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/independent-review.md",
+      "title": "Independent review playbook",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/integration-audit.md",
+      "title": "Integration audit playbook",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/issue-backlog-audit.md",
+      "title": "Issue backlog audit — 2026-10-01",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/issue-workflow.md",
+      "title": "Issue workflow",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/pr-process-and-synchronization.md",
+      "title": "PR process and synchronization contract",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/repository-contract.toml",
+      "title": "governance/repository-contract.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/repository-intelligence-config.json",
+      "title": "governance/repository-intelligence-config.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/repository-intelligence.md",
+      "title": "Local Repository Intelligence adapter",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/repository-map.md",
+      "title": "Three-repository ownership and agent routing",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/status-model.md",
+      "title": "Source status model",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/synchronization-matrix.toml",
+      "title": "governance/synchronization-matrix.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/templates.md",
+      "title": "Governance record templates",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-08-04-evidence-state-integrity.toml",
+      "title": "governance/work-records/2026-08-04-evidence-state-integrity.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-08-04-pr-process-and-synchronization-v2.toml",
+      "title": "governance/work-records/2026-08-04-pr-process-and-synchronization-v2.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-08-31-ewing-provenance-chronology.toml",
+      "title": "governance/work-records/2026-08-31-ewing-provenance-chronology.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-08-31-project-provenance-attribution.toml",
+      "title": "governance/work-records/2026-08-31-project-provenance-attribution.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-08-31-readme-attribution-links.toml",
+      "title": "governance/work-records/2026-08-31-readme-attribution-links.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
+      "title": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/README.md",
+      "title": "Machine-readable work records",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "protocols/01_personal_defense.md",
+      "title": "Protocol 1: The Personal Defense",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "protocols/02_operational_defense.md",
+      "title": "Protocol 2: The Operational Defense",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "protocols/03_public_defense.md",
+      "title": "Protocol 3: The Public Defense",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "protocols/04_systemic_cure.md",
+      "title": "Protocol 4: The Systemic Cure",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "protocols/README.md",
+      "title": "🛡️ Operational Protocols",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "report/01_the_illusion.md",
+      "title": "Part 1: The Illusion of Speed",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "report/02_broken_mechanics.md",
+      "title": "Part 2: Broken Mechanics",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "report/03_the_aftermath.md",
+      "title": "Part 3: The Aftermath",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/__init__.py",
+      "title": "tests/__init__.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/repository_validator/__init__.py",
+      "title": "tests/repository_validator/__init__.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/repository_validator/test_contract_invariants.py",
+      "title": "tests/repository_validator/test_contract_invariants.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/repository_validator/test_validator.py",
+      "title": "tests/repository_validator/test_validator.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/test_evidence_state_integrity.py",
+      "title": "tests/test_evidence_state_integrity.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/test_pr_governance_contract.py",
+      "title": "tests/test_pr_governance_contract.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/test_repository_gate.py",
+      "title": "tests/test_repository_gate.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/test_repository_intelligence.py",
+      "title": "tests/test_repository_intelligence.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/RI-LICENSE.md",
+      "title": "tools/RI-LICENSE.md",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/RI-NOTICE.md",
+      "title": "Repository Intelligence component notice",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/__init__.py",
+      "title": "tools/__init__.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/evidence_state_check.py",
+      "title": "tools/evidence_state_check.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/evidence_transition_gate.py",
+      "title": "tools/evidence_transition_gate.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_gate.py",
+      "title": "tools/repository_gate.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_intelligence.py",
+      "title": "tools/repository_intelligence.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_validator/__init__.py",
+      "title": "tools/repository_validator/__init__.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_validator/__main__.py",
+      "title": "tools/repository_validator/__main__.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_validator/contract.py",
+      "title": "tools/repository_validator/contract.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_validator/evidence_state.py",
+      "title": "tools/repository_validator/evidence_state.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_validator/markdown.py",
+      "title": "tools/repository_validator/markdown.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_validator/registry.py",
+      "title": "tools/repository_validator/registry.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/repository_validator/validator.py",
+      "title": "tools/repository_validator/validator.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    }
+  ],
+  "cross_repository": [
+    {
+      "repository": "UncertaintyArchitectureGroup/uncertainty-architecture",
+      "concern": "UA specification and research owners",
+      "url": "https://github.com/UncertaintyArchitectureGroup/uncertainty-architecture/blob/main/AGENTS.md"
+    },
+    {
+      "repository": "oborskyivitalii/oborskyivitalii",
+      "concern": "Personal publications and migration backlog",
+      "url": "https://github.com/oborskyivitalii/oborskyivitalii/issues"
+    }
+  ]
+}
