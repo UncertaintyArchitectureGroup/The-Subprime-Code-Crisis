@@ -20,6 +20,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Governance
 
+- Adapted selected author-site controls: stable acceptance IDs with exact-source evidence, bounded dated handoff, RI inventory/task-context routes and asset-byte freshness. Clarified occurrence-level source/number/placement review and neutral, falsifiable criticism; canonical source states and merge/verification gates remain unchanged.
+
 - Added canonical issue intent with focused clarification, PR/commit checks against it, reviewed research-impact reports, linked PR/issue completion records and cross-repository routing. Added a bounded deterministic Repository Intelligence navigation adapter with source/config/producer freshness; source states and verification rules are unchanged.
 
 - Added a mandatory content-synchronization assessment and explicit changelog decision for substantive repository changes.

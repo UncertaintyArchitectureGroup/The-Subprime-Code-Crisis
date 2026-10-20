@@ -8,6 +8,13 @@ no graph view, impact traversal, trusted candidate/tested-merge comparison,
 remote caches or live PR overlay are implemented. No measured productivity or
 comprehension improvement is claimed; UA's evaluation remains its own evidence.
 
+The 2026-10-20 update selectively adapts the author-site implementation at
+[`82b57b8948c6c30143213b846ee2848d06f8d200`](https://github.com/oborskyivitalii/oborskyivitalii/tree/82b57b8948c6c30143213b846ee2848d06f8d200):
+inventory/task-context commands, advisory check routes, dated continuity and
+asset byte identity. It retains this repository's small config and source-state
+parser. The site's full path catalog, acceptance engine, release controllers and
+browser profiles are not transferred. Config records the exact source and scope.
+
 The local config explicitly maps concerns/query aliases to owning files. The
 producer inventories all admitted local text paths, glossary headings, applicable
 AGENTS scopes and configured source-registry rows before lookup. Lexical matches
@@ -29,6 +36,8 @@ From the repository root (Python 3.11+ standard library only):
 python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
 python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
 python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json query 'ішью'
+python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json inventory
+python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json context-for-task P-2026-01
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
@@ -42,13 +51,13 @@ candidates is not proof of absence or authority.
 
 - Admitted text suffixes: Markdown, JSON, TOML, YAML, Python, CFF, TXT. Content
   hashes bind every represented input, including config, producer, docs and tests.
-- Other files are inventory/existence-only; binary changes need separate artifact
-  digest/rights checks. This adapter cannot verify a deck/PDF content edition.
+- All admitted files, including binary assets, have byte hashes. A byte match
+  cannot verify PDF interpretation, rights or publication/edition acceptance.
 - Git/build/cache directories and temporary Python/build files are excluded
   explicitly by the producer; the generated surface excludes itself.
 - Addition/deletion/content changes invalidate the text projection. Config and
   producer changes also invalidate it. Generation is deterministic and atomic.
-- Bounds: 5,000 represented files, 2 MB per text file, 50 MB total text.
+- Bounds: 5,000 represented files, 2 MB per text file, 50 MB per asset and total input.
   Exceeding bounds fails visibly; do not silently truncate inventories.
 - Repository paths reject traversal and symlinks, including inside-root aliases.
   Markdown extraction supports fenced/indented examples and balanced single-line
@@ -70,3 +79,23 @@ Keep the pinned upstream reference and Apache-2.0 notices in
 regression checks; manual synchronized patches are deliberate until a shared
 package is justified. Future publication/migration harnesses remain
 [personal #6](https://github.com/oborskyivitalii/oborskyivitalii/issues/6).
+
+## Check routes and handoff
+
+`inventory` lists every admitted file and source row, with the generated output
+identified separately. `context-for-task` includes matching owners, source brief
+and backticked current-use paths, applicable instructions and configured check
+routes. Missing aliases or narrative-only current-use entries still require
+direct searches. Path routing matches exact paths or directory boundaries.
+
+Commands are suggestions, never executed by RI. The local config points at the
+existing [Main health workflow](../.github/workflows/main-health.yml): repository
+contract, evidence-state integrity, unittest discovery and RI verification.
+When changing a route, inspect that actual workflow and its arguments; this
+adapter checks path existence, not CI reachability or semantic test adequacy.
+The trusted-base [Repository Gate](pr-process-and-synchronization.md#repository-gate)
+and independent review remain separate checks.
+
+[Memory](memory.md) is a dated handoff checked for its five sections and 120-line
+bound. It cannot establish current GitHub state or supersede the owning issues.
+The research audit report is a task artifact, not a reviewed source brief.

@@ -4,27 +4,30 @@
   "capabilities": [
     "local-owner-candidates",
     "complete-admitted-inventories",
-    "freshness"
+    "content-freshness",
+    "advisory-validation-routes",
+    "task-context"
   ],
   "limitations": [
     "Navigation only; read owning sources and current GitHub state.",
     "No semantic graph, impact traversal or trusted tested-merge comparison.",
-    "Excluded build/cache directories are not represented; binary assets are existence-only.",
+    "Excluded build/cache directories and the generated projection are not source inputs.",
+    "Byte identity does not establish source interpretation, rights, review or live state.",
     "Lexical miss or untranslated query does not establish absence."
   ],
   "source_identity": {
-    "algorithm": "sha256-path-content-v1",
-    "digest": "1792a2e654ee00b8d4338f2caa4120c98cf3cb3040d329f935703214cea95362",
+    "algorithm": "sha256-path-content-v2",
+    "digest": "70b5f7a6a300471b09565a8f008c9c95dd0ab09745bea82e99415e5d0eca4987",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
         "identity_mode": "content",
-        "sha256": "e11097914b4abc03399c82e01eecc5074a833fbea4c5e65de23c051159753bfd"
+        "sha256": "39f023206fa179d5a9b379dc31fbcdffffe667345e7d1252a70c01695096c50a"
       },
       {
         "path": ".github/ISSUE_TEMPLATE/work-item.md",
         "identity_mode": "content",
-        "sha256": "644f1eca4b593d50c0f38f3ba0551f1c6fb89989a5744e196afdb05e5b55389c"
+        "sha256": "31af4ab594c048ee45e270046439404a4a36f0d63d237ee85e278afac33057b2"
       },
       {
         "path": ".github/pull_request_template.md",
@@ -43,12 +46,13 @@
       },
       {
         "path": ".gitignore",
-        "identity_mode": "existence"
+        "identity_mode": "content",
+        "sha256": "557fa38167e169d450781791b18c3f34e22bb5b536d26d86326bec8490ae5964"
       },
       {
         "path": "AGENTS.md",
         "identity_mode": "content",
-        "sha256": "b96ea19d9f67b3655b98188cf9ac5bd0fc199227ba87290039ffbbd4a52c764d"
+        "sha256": "38e7a642c2528d156d94d657e33e7e382aa50e04a188385242c44148b9d4bd6d"
       },
       {
         "path": "ARTIFACT_MODEL.md",
@@ -58,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "7a4a87df273e0daecef9b0e9d8689b4fc2cd2f2ae63cb1bddeca5536dbcf369c"
+        "sha256": "ddde1c65172d6cee4f4180021eb363cb8a97fea59bc3ad440fde8d92c59ea690"
       },
       {
         "path": "CITATION.cff",
@@ -68,7 +72,7 @@
       {
         "path": "CONTRIBUTING.md",
         "identity_mode": "content",
-        "sha256": "325812e5d38b25c213f74f1263e4192a543acee9d8627e346fcd8a05e6fea735"
+        "sha256": "0cb65bf36db0215137a6ca7d26a179d94bfb439396cbcddc034872c80814c35a"
       },
       {
         "path": "DOCTRINE.md",
@@ -107,11 +111,13 @@
       },
       {
         "path": "assets/Pasted image 20260209153307.png",
-        "identity_mode": "existence"
+        "identity_mode": "content",
+        "sha256": "1514b7f8ad8f3c2e0ec993fe14b99a97531b79e00c469370ec60539d6a6a2fc0"
       },
       {
         "path": "assets/crisis_cover.png",
-        "identity_mode": "existence"
+        "identity_mode": "content",
+        "sha256": "8de4839abd07cc08ad9d5a58c9676798819a03a2178ce159487b38e2f349972f"
       },
       {
         "path": "evidence/README.md",
@@ -166,7 +172,7 @@
       {
         "path": "governance/README.md",
         "identity_mode": "content",
-        "sha256": "36b81cc8269e4d745e7473fceec0eaca7c8f7cd4dac6b063a71d6e7d4e6d3e85"
+        "sha256": "a1f830a5d8aa407c92b753dc894c86c623efca6f52f68c6e0ac94d31b601890a"
       },
       {
         "path": "governance/content-synchronization.md",
@@ -191,7 +197,7 @@
       {
         "path": "governance/integration-audit.md",
         "identity_mode": "content",
-        "sha256": "64538973113bd3ada8972be7dc1485e6acc887eff2cc7dc9600ce43100c2716e"
+        "sha256": "9a2a4cf4ad5e133e358abd54349a4409728c730e6c2d87cdac5281c8b0916a4c"
       },
       {
         "path": "governance/issue-backlog-audit.md",
@@ -201,7 +207,12 @@
       {
         "path": "governance/issue-workflow.md",
         "identity_mode": "content",
-        "sha256": "ae81fcd12c35794ea4ef294b6fe1417738a36828082d8e748ad8668ea7e7553f"
+        "sha256": "c05d8b4b26fda05ae2056a37a7137f658d20c248d1e40d7a30084f1c798f64d1"
+      },
+      {
+        "path": "governance/memory.md",
+        "identity_mode": "content",
+        "sha256": "ff2c06ebb894020525b99e03df9a1422ae6b654fd575e1368925f2ff9bc17aef"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -216,17 +227,27 @@
       {
         "path": "governance/repository-intelligence-config.json",
         "identity_mode": "content",
-        "sha256": "3d429885417815b80d5e5c2500b5a3b5f0b54f3b54e1ca86c9079cab3e436396"
+        "sha256": "23eb1f5aac284e212d19992daa3d5e54ac7a551042a298100c9efdbb6e2405d3"
       },
       {
         "path": "governance/repository-intelligence.md",
         "identity_mode": "content",
-        "sha256": "68a4125411af38ce5c247fbc717cc6b5cb5231b2bf45a0cdc56d28590f3be186"
+        "sha256": "e9065ecefb4a2865dd84c979890708b849b02b8cfd64752e4c591b77016c2e71"
       },
       {
         "path": "governance/repository-map.md",
         "identity_mode": "content",
         "sha256": "3378a096e6fb8857424037323a5d80d1231471a6fb98a5362a7b3401d3af340a"
+      },
+      {
+        "path": "governance/reviews/issue-52-2026-10-20-ri-review.md",
+        "identity_mode": "content",
+        "sha256": "b8db9f207cec830d6c34e7f703d2ca1c24ea5d9a8d479613468acab7bb113935"
+      },
+      {
+        "path": "governance/reviews/issue-53-2026-10-20-evidence-audit.md",
+        "identity_mode": "content",
+        "sha256": "ded60e5abe9c881643009f07fa22e0eb8d04cb3bae7e5e3ba39a658e2ecfadd9"
       },
       {
         "path": "governance/status-model.md",
@@ -271,7 +292,7 @@
       {
         "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
         "identity_mode": "content",
-        "sha256": "d08c5bf5858d9212a2b269e4491eebdf5dfa4dd9f96c3f7a61408ee8469104d3"
+        "sha256": "70d02c0be90c648d361d7d2bd335fce836b2a70bbf568427ffaf0b253032dbe0"
       },
       {
         "path": "governance/work-records/README.md",
@@ -356,7 +377,7 @@
       {
         "path": "tests/test_repository_intelligence.py",
         "identity_mode": "content",
-        "sha256": "6e7fb7644655a7d7f77a91914dbdb3f6113e6cca5cceb3687e4a586135e77cd1"
+        "sha256": "1f4bc8c38fcb6d4cbfd8d5d9c48f7fca281a69444d02c88808df294cc79980e5"
       },
       {
         "path": "tools/RI-LICENSE.md",
@@ -366,7 +387,7 @@
       {
         "path": "tools/RI-NOTICE.md",
         "identity_mode": "content",
-        "sha256": "e512235d9027a6bbfa8fa72743f3a40050aef252f579ec5fb6e825115738b2b6"
+        "sha256": "d86fcd477d5ebbe7909d80dacec89038d165d01882a5bcdce78b22be17273ac7"
       },
       {
         "path": "tools/__init__.py",
@@ -391,7 +412,7 @@
       {
         "path": "tools/repository_intelligence.py",
         "identity_mode": "content",
-        "sha256": "d9cc389b40586783ee1632adbffb2cca62a262a8c89b4bb7b504c47d7822637e"
+        "sha256": "6544d9790ecd432bf7174a6d18a644a78bb0a3eb7554483e4fe2c7ca2ad8e306"
       },
       {
         "path": "tools/repository_validator/__init__.py",
@@ -432,9 +453,9 @@
   },
   "producer": {
     "path": "tools/repository_intelligence.py",
-    "sha256": "d9cc389b40586783ee1632adbffb2cca62a262a8c89b4bb7b504c47d7822637e",
+    "sha256": "6544d9790ecd432bf7174a6d18a644a78bb0a3eb7554483e4fe2c7ca2ad8e306",
     "config_path": "governance/repository-intelligence-config.json",
-    "config_sha256": "3d429885417815b80d5e5c2500b5a3b5f0b54f3b54e1ca86c9079cab3e436396"
+    "config_sha256": "23eb1f5aac284e212d19992daa3d5e54ac7a551042a298100c9efdbb6e2405d3"
   },
   "owners": [
     {
@@ -564,6 +585,59 @@
         "cross repository",
         "migration",
         "міграція"
+      ]
+    },
+    {
+      "concern": "dated continuity",
+      "path": "governance/memory.md",
+      "queries": [
+        "handoff",
+        "memory",
+        "статус роботи",
+        "передача контексту"
+      ]
+    },
+    {
+      "concern": "source numbers and placement audit",
+      "path": "governance/integration-audit.md",
+      "queries": [
+        "claim audit",
+        "numeric audit",
+        "source placement",
+        "аудит доказів",
+        "цифри",
+        "розміщення джерел"
+      ]
+    },
+    {
+      "concern": "part one empirical claims and costs",
+      "path": "report/01_the_illusion.md",
+      "queries": [
+        "productivity evidence",
+        "TCO",
+        "senior penalty",
+        "illusion",
+        "витрати"
+      ]
+    },
+    {
+      "concern": "part two proposed delivery mechanism",
+      "path": "report/02_broken_mechanics.md",
+      "queries": [
+        "verification bottleneck",
+        "production attenuation",
+        "review overload",
+        "механізм"
+      ]
+    },
+    {
+      "concern": "part three conditional scenarios",
+      "path": "report/03_the_aftermath.md",
+      "queries": [
+        "risk scenarios",
+        "vendor criticism",
+        "гіпотези",
+        "сценарії"
       ]
     }
   ],
@@ -1077,6 +1151,13 @@
       ]
     },
     {
+      "path": ".gitignore",
+      "title": ".gitignore",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "AGENTS.md",
       "title": "AGENTS.md",
       "instructions": [
@@ -1156,6 +1237,20 @@
     {
       "path": "TERMINOLOGY_AND_ATTRIBUTION.md",
       "title": "Terminology and attribution",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "assets/Pasted image 20260209153307.png",
+      "title": "assets/Pasted image 20260209153307.png",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "assets/crisis_cover.png",
+      "title": "assets/crisis_cover.png",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1287,6 +1382,13 @@
       ]
     },
     {
+      "path": "governance/memory.md",
+      "title": "Dated repository handoff",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/pr-process-and-synchronization.md",
       "title": "PR process and synchronization contract",
       "instructions": [
@@ -1317,6 +1419,20 @@
     {
       "path": "governance/repository-map.md",
       "title": "Three-repository ownership and agent routing",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-52-2026-10-20-ri-review.md",
+      "title": "Author-site practice adaptation: independent review",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-53-2026-10-20-evidence-audit.md",
+      "title": "Аудит доказів, розміщення джерел і мови звіту — 2026-10-20",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1613,5 +1729,66 @@
       "concern": "Personal publications and migration backlog",
       "url": "https://github.com/oborskyivitalii/oborskyivitalii/issues"
     }
-  ]
+  ],
+  "validation_routes": [
+    {
+      "id": "research-contract",
+      "paths": [
+        "evidence",
+        "report",
+        "protocols",
+        "README.md",
+        "REFERENCES.md"
+      ],
+      "commands": [
+        "python3 -m tools.repository_validator",
+        "python3 -m tools.evidence_state_check"
+      ],
+      "workflow": ".github/workflows/main-health.yml",
+      "manual": "Read original source and every relying occurrence; structural checks do not validate research."
+    },
+    {
+      "id": "governance-ri",
+      "paths": [
+        "AGENTS.md",
+        "CONTRIBUTING.md",
+        "governance",
+        "tools",
+        "tests",
+        ".github"
+      ],
+      "commands": [
+        "python3 -m unittest discover -s tests -p 'test_*.py'",
+        "python3 -m tools.repository_validator",
+        "python3 -m tools.evidence_state_check",
+        "python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify"
+      ],
+      "workflow": ".github/workflows/main-health.yml",
+      "manual": "Independent review and trusted-base Repository Gate remain separate."
+    }
+  ],
+  "upstream": {
+    "repository": "oborskyivitalii/oborskyivitalii",
+    "revision": "82b57b8948c6c30143213b846ee2848d06f8d200",
+    "paths": [
+      "AGENTS.md",
+      "CONTRIBUTING.md",
+      ".github/REPOSITORY-INTELLIGENCE.md",
+      "tools/repository_intelligence.py"
+    ],
+    "adapted": [
+      "stable acceptance IDs",
+      "dated continuity",
+      "inventory and task context",
+      "advisory validation routes",
+      "asset byte freshness"
+    ],
+    "excluded": [
+      "site release controllers",
+      "full path catalog",
+      "browser profiles",
+      "per-issue acceptance engine",
+      "semantic graph"
+    ]
+  }
 }

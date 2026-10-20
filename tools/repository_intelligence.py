@@ -21,6 +21,7 @@ IGNORED = {".git", "node_modules", "__pycache__", ".venv", "venv", "dist", "publ
 TEXT_SUFFIXES = {".md", ".json", ".toml", ".yml", ".yaml", ".py", ".cff", ".txt"}
 MAX_FILES = 5000
 MAX_FILE_BYTES = 2_000_000
+MAX_ASSET_BYTES = 50_000_000
 MAX_TOTAL_BYTES = 50_000_000
 SCRIPT = "tools/repository_intelligence.py"
 
@@ -102,7 +103,7 @@ def active_markdown(text):
 
 
 def scan(root, output):
-    """Complete admitted text inventory; binary assets are existence-only."""
+    """Inventory admitted files and hash their bytes; never execute inputs."""
     records, texts, size_total = [], {}, 0
     for parent, dirs, files in os.walk(root, followlinks=False):
         dirs[:] = sorted(d for d in dirs if d not in IGNORED)
@@ -119,16 +120,15 @@ def scan(root, output):
                 raise ValueError(f"Unsupported input: {relative}")
             if len(records) >= MAX_FILES:
                 raise ValueError("RI file bound exceeded; use direct repository reading")
-            if path.suffix.lower() in TEXT_SUFFIXES:
-                size = path.stat().st_size
-                size_total += size
-                if size > MAX_FILE_BYTES or size_total > MAX_TOTAL_BYTES:
-                    raise ValueError(f"RI text bound exceeded at {relative}")
-                data = path.read_bytes()
+            is_text = path.suffix.lower() in TEXT_SUFFIXES
+            size = path.stat().st_size
+            size_total += size
+            if size > (MAX_FILE_BYTES if is_text else MAX_ASSET_BYTES) or size_total > MAX_TOTAL_BYTES:
+                raise ValueError(f"RI input bound exceeded at {relative}")
+            data = path.read_bytes()
+            if is_text:
                 texts[relative] = data.decode("utf-8")
-                records.append({"path": relative, "identity_mode": "content", "sha256": digest(data)})
-            else:
-                records.append({"path": relative, "identity_mode": "existence"})
+            records.append({"path": relative, "identity_mode": "content", "sha256": digest(data)})
     return sorted(records, key=lambda x: x["path"]), texts
 
 
@@ -154,6 +154,22 @@ def load_config(root, config_path):
     for link in config.get("cross_repository", []):
         if not link["url"].startswith("https://github.com/"):
             raise ValueError("Cross-repository links must explicitly point to GitHub")
+    route_ids = set()
+    for route in config.get("validation_routes", []):
+        if not route.get("id") or route["id"] in route_ids:
+            raise ValueError("Validation route needs a unique ID")
+        route_ids.add(route["id"])
+        if not route.get("paths") or not route.get("commands"):
+            raise ValueError("Validation route needs paths and advisory commands")
+        for path in route["paths"] + [route["workflow"]]:
+            if not safe_path(root, path).exists():
+                raise ValueError(f"Missing validation route path: {path}")
+        if any(not isinstance(c, str) or not c.strip() for c in route["commands"]):
+            raise ValueError("Invalid advisory command")
+    for path, contract in config.get("continuity", {}).items():
+        safe_path(root, path)
+        if not isinstance(contract.get("max_lines"), int) or contract["max_lines"] < 1:
+            raise ValueError("Invalid continuity line bound")
     return config
 
 
@@ -162,9 +178,16 @@ def build(root, config_path):
     records, texts = scan(root, config["output"])
     required = [config_path, SCRIPT] + config.get("glossaries", []) + config.get("registries", [])
     required += [x["path"] for x in config["owners"]]
+    required += list(config.get("continuity", {}))
     missing = sorted(set(required) - texts.keys())
     if missing:
         raise ValueError("Missing represented owner/input: " + ", ".join(missing))
+    for path, contract in config.get("continuity", {}).items():
+        lines = texts[path].splitlines()
+        if len(lines) > contract["max_lines"]:
+            raise ValueError(f"Continuity line bound exceeded: {path}")
+        if any(heading not in lines for heading in contract.get("headings", [])):
+            raise ValueError(f"Missing continuity section: {path}")
     instructions = [
         {"path": p, "scope_root": PurePosixPath(p).parent.as_posix()}
         for p in texts if PurePosixPath(p).name == "AGENTS.md"
@@ -214,7 +237,8 @@ def build(root, config_path):
     if len({x["id"] for x in sources}) != len(sources):
         raise ValueError("Duplicate source ID in represented registries")
     artifacts = []
-    for path, body in sorted(texts.items()):
+    for path in sorted(r["path"] for r in records):
+        body = texts.get(path, "")
         title = re.search(r"^#\s+(.+)$", active_markdown(body), re.M) if path.endswith(".md") else None
         scopes = [x["path"] for x in instructions if x["scope_root"] == "."
                   or path == x["path"] or path.startswith(x["scope_root"] + "/")]
@@ -222,14 +246,16 @@ def build(root, config_path):
                           "instructions": sorted(scopes)})
     return {
         "schema_version": VERSION, "repository": config["repository"],
-        "capabilities": ["local-owner-candidates", "complete-admitted-inventories", "freshness"],
+        "capabilities": ["local-owner-candidates", "complete-admitted-inventories",
+                         "content-freshness", "advisory-validation-routes", "task-context"],
         "limitations": [
             "Navigation only; read owning sources and current GitHub state.",
             "No semantic graph, impact traversal or trusted tested-merge comparison.",
-            "Excluded build/cache directories are not represented; binary assets are existence-only.",
+            "Excluded build/cache directories and the generated projection are not source inputs.",
+            "Byte identity does not establish source interpretation, rights, review or live state.",
             "Lexical miss or untranslated query does not establish absence.",
         ],
-        "source_identity": {"algorithm": "sha256-path-content-v1",
+        "source_identity": {"algorithm": "sha256-path-content-v2",
                             "digest": digest(canonical(records).encode()), "inputs": records},
         "producer": {"path": SCRIPT, "sha256": digest(safe_path(root, SCRIPT).read_bytes()),
                      "config_path": config_path,
@@ -237,6 +263,8 @@ def build(root, config_path):
         "owners": config["owners"], "terms": terms, "sources": sources,
         "instructions": sorted(instructions, key=lambda x: x["path"]),
         "artifacts": artifacts, "cross_repository": config.get("cross_repository", []),
+        "validation_routes": config.get("validation_routes", []),
+        "upstream": config.get("upstream", {}),
     }
 
 
@@ -274,11 +302,33 @@ def lookup(surface, query):
             "owner_candidates": owners, "terms": terms, "sources": sources, "artifacts": artifacts}
 
 
+def task_context(surface, query):
+    """Route candidate paths to instructions/checks without claiming execution."""
+    result = lookup(surface, query)
+    paths = {x["path"] for x in result["owner_candidates"] + result["artifacts"]}
+    for source in result["sources"]:
+        if source["brief_path"]:
+            paths.add(source["brief_path"])
+        paths.update(re.findall(r"`([^`]+)`", source["current_use"]))
+    represented = {a["path"]: a for a in surface["artifacts"]}
+    result["read_paths"] = sorted(paths & represented.keys())
+    result["instructions"] = sorted({p for path in result["read_paths"]
+                                      for p in represented[path]["instructions"]})
+    result["validation_routes"] = [
+        route for route in surface["validation_routes"]
+        if any(path == prefix or path.startswith(prefix + "/")
+               for path in result["read_paths"] for prefix in route["paths"])
+    ]
+    result["note"] = ("Candidates only. Read owning sources and required playbooks. "
+                      "Commands are suggestions, not executed checks. Fetch live issue/PR state.")
+    return result
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path.cwd())
     parser.add_argument("--config", required=True, help="Repository-relative config path")
-    parser.add_argument("command", choices=("build", "verify", "query"))
+    parser.add_argument("command", choices=("build", "verify", "query", "inventory", "context-for-task"))
     parser.add_argument("query_text", nargs="?")
     args = parser.parse_args(argv)
     try:
@@ -291,13 +341,20 @@ def main(argv=None):
             safe_path(root, temporary.relative_to(root).as_posix())
             temporary.write_text(json.dumps(surface, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             os.replace(temporary, target)
-            print(f"Built {target.relative_to(root)}: {len(surface['artifacts'])} represented texts")
+            print(f"Built {target.relative_to(root)}: {len(surface['artifacts'])} represented files")
         else:
             surface = verify(root, args.config)
-            if args.command == "query":
+            if args.command in {"query", "context-for-task"}:
                 if not args.query_text:
                     raise ValueError("query requires text")
-                print(json.dumps(lookup(surface, args.query_text), ensure_ascii=False, indent=2))
+                result = (task_context(surface, args.query_text) if args.command == "context-for-task"
+                          else lookup(surface, args.query_text))
+                print(json.dumps(result, ensure_ascii=False, indent=2))
+            elif args.command == "inventory":
+                print(json.dumps({"files": surface["artifacts"],
+                                  "sources": surface["sources"],
+                                  "generated_output": load_config(root, args.config)["output"]},
+                                 ensure_ascii=False, indent=2))
             else:
                 print("Repository Intelligence context is fresh.")
     except (ValueError, OSError, UnicodeError, KeyError, TypeError) as exc:

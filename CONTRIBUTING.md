@@ -89,6 +89,10 @@ The [dated backlog audit](governance/issue-backlog-audit.md) records open PRs an
 unprocessed research ideas. [Cross-repository ownership](governance/repository-map.md)
 and [Repository Intelligence](governance/repository-intelligence.md) provide
 navigation, not duplicate research authority or source states.
+Use stable acceptance IDs and exact-source evidence as described in the issue
+workflow. Resume from the dated [handoff](governance/memory.md), rechecking live
+state. Source audits assess numbers, interpretation and placement separately;
+see the [integration-audit procedure](governance/integration-audit.md).
 
 ## Ways to contribute
 

@@ -17,9 +17,12 @@ Repository/paths, task type, current ref, exclusions, dependencies and open deci
 
 ## Acceptance checks
 
-- [ ] Observable outcome:
-- [ ] Required review/decision:
-- [ ] Required validation:
+- [ ] AC-1 — Observable outcome:
+- [ ] AC-2 — Required review/decision:
+- [ ] AC-3 — Required validation:
+
+Map each stable AC ID to a check, result and exact inspected source/run. Partial,
+stale, unavailable or pending evidence stays open; issue status is not source status.
 
 ## Plan, decisions and implementation
 

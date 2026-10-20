@@ -204,13 +204,73 @@ class NavigationSafetyTests(unittest.TestCase):
             with self.subTest(changed=changed), self.assertRaises(ValueError):
                 ri.build(self.root, self.cfg)
 
-    def test_binary_inventory_does_not_claim_content_freshness(self):
+    def test_binary_edit_invalidates_without_claiming_semantic_verification(self):
         (self.root / "deck.pdf").write_bytes(b"version one")
         first = self.materialize()
         (self.root / "deck.pdf").write_bytes(b"version two")
-        self.assertEqual(ri.verify(self.root, self.cfg), first)
+        with self.assertRaisesRegex(ValueError, "Stale or altered"):
+            ri.verify(self.root, self.cfg)
         record = next(x for x in first["source_identity"]["inputs"] if x["path"] == "deck.pdf")
-        self.assertEqual(record, {"path": "deck.pdf", "identity_mode": "existence"})
+        self.assertEqual(record["identity_mode"], "content")
+        self.assertEqual(record["sha256"], ri.digest(b"version one"))
+        self.assertIn("deck.pdf", {a["path"] for a in first["artifacts"]})
+
+    def test_asset_bound_fails_visibly(self):
+        from unittest.mock import patch
+        (self.root / "deck.pdf").write_bytes(b"too large")
+        with patch.object(ri, "MAX_ASSET_BYTES", 3):
+            with self.assertRaisesRegex(ValueError, "bound exceeded"):
+                ri.build(self.root, self.cfg)
+
+    def test_task_context_routes_source_uses_and_scoped_instructions(self):
+        self.write("report/part.md", "# Report\n")
+        self.write("report/AGENTS.md", "# Scoped report rules\n")
+        self.write(".github/workflows/check.yml", "name: Check\n")
+        self.config["validation_routes"] = [{"id": "report", "paths": ["report"],
+            "workflow": ".github/workflows/check.yml", "commands": ["advisory only"]}]
+        self.save_config()
+        original = (self.root / "evidence/SOURCES.md").read_text()
+        self.write("evidence/SOURCES.md", original.replace("| Report |", "| `report/part.md` |"))
+        result = ri.task_context(self.materialize(), "P-2025-01")
+        self.assertIn("report/part.md", result["read_paths"])
+        self.assertIn("report/AGENTS.md", result["instructions"])
+        self.assertEqual([r["id"] for r in result["validation_routes"]], ["report"])
+        self.assertEqual(result["sources"][0]["integration_audit"], "Not started")
+        self.assertIn("not executed", result["note"])
+
+    def test_route_prefix_cannot_match_neighbor_directory(self):
+        self.write("report-old/note.md", "# Legacy unique\n")
+        self.write("report/current.md", "# Current\n")
+        self.write(".github/workflows/check.yml", "name: Check\n")
+        self.config["validation_routes"] = [{"id": "report", "paths": ["report"],
+            "workflow": ".github/workflows/check.yml", "commands": ["not executed"]}]
+        self.save_config()
+        self.assertEqual(ri.task_context(self.materialize(), "Legacy unique")["validation_routes"], [])
+
+    def test_missing_route_owner_and_duplicate_route_fail(self):
+        route = {"id": "evidence", "paths": ["evidence"],
+                 "workflow": ".github/workflows/check.yml", "commands": ["not executed"]}
+        self.config["validation_routes"] = [route]
+        self.save_config()
+        with self.assertRaisesRegex(ValueError, "Missing validation route"):
+            ri.build(self.root, self.cfg)
+        self.write(".github/workflows/check.yml", "name: Check\n")
+        self.config["validation_routes"].append(route.copy())
+        self.save_config()
+        with self.assertRaisesRegex(ValueError, "unique ID"):
+            ri.build(self.root, self.cfg)
+
+    def test_continuity_bound_and_sections_are_checked(self):
+        self.write("governance/memory.md", "# Handoff\n## Snapshot\n")
+        self.config["continuity"] = {"governance/memory.md": {
+            "max_lines": 3, "headings": ["## Snapshot"]}}
+        self.save_config()
+        self.materialize()
+        for content, error in [("# Handoff\n", "Missing continuity"),
+                               ("# Handoff\n## Snapshot\nx\ny\n", "line bound")]:
+            self.write("governance/memory.md", content)
+            with self.subTest(content=content), self.assertRaisesRegex(ValueError, error):
+                ri.build(self.root, self.cfg)
 
     def test_real_adapter_owners_and_cross_repo_isolation(self):
         configs = [REPO / "governance/repository-intelligence-config.json",

@@ -149,6 +149,132 @@
         "migration",
         "міграція"
       ]
+    },
+    {
+      "concern": "dated continuity",
+      "path": "governance/memory.md",
+      "queries": [
+        "handoff",
+        "memory",
+        "статус роботи",
+        "передача контексту"
+      ]
+    },
+    {
+      "concern": "source numbers and placement audit",
+      "path": "governance/integration-audit.md",
+      "queries": [
+        "claim audit",
+        "numeric audit",
+        "source placement",
+        "аудит доказів",
+        "цифри",
+        "розміщення джерел"
+      ]
+    },
+    {
+      "concern": "part one empirical claims and costs",
+      "path": "report/01_the_illusion.md",
+      "queries": [
+        "productivity evidence",
+        "TCO",
+        "senior penalty",
+        "illusion",
+        "витрати"
+      ]
+    },
+    {
+      "concern": "part two proposed delivery mechanism",
+      "path": "report/02_broken_mechanics.md",
+      "queries": [
+        "verification bottleneck",
+        "production attenuation",
+        "review overload",
+        "механізм"
+      ]
+    },
+    {
+      "concern": "part three conditional scenarios",
+      "path": "report/03_the_aftermath.md",
+      "queries": [
+        "risk scenarios",
+        "vendor criticism",
+        "гіпотези",
+        "сценарії"
+      ]
+    }
+  ],
+  "upstream": {
+    "repository": "oborskyivitalii/oborskyivitalii",
+    "revision": "82b57b8948c6c30143213b846ee2848d06f8d200",
+    "paths": [
+      "AGENTS.md",
+      "CONTRIBUTING.md",
+      ".github/REPOSITORY-INTELLIGENCE.md",
+      "tools/repository_intelligence.py"
+    ],
+    "adapted": [
+      "stable acceptance IDs",
+      "dated continuity",
+      "inventory and task context",
+      "advisory validation routes",
+      "asset byte freshness"
+    ],
+    "excluded": [
+      "site release controllers",
+      "full path catalog",
+      "browser profiles",
+      "per-issue acceptance engine",
+      "semantic graph"
+    ]
+  },
+  "continuity": {
+    "governance/memory.md": {
+      "max_lines": 120,
+      "headings": [
+        "## Snapshot",
+        "## Active owners",
+        "## Decisions",
+        "## Evidence",
+        "## Next actions"
+      ]
+    }
+  },
+  "validation_routes": [
+    {
+      "id": "research-contract",
+      "paths": [
+        "evidence",
+        "report",
+        "protocols",
+        "README.md",
+        "REFERENCES.md"
+      ],
+      "commands": [
+        "python3 -m tools.repository_validator",
+        "python3 -m tools.evidence_state_check"
+      ],
+      "workflow": ".github/workflows/main-health.yml",
+      "manual": "Read original source and every relying occurrence; structural checks do not validate research."
+    },
+    {
+      "id": "governance-ri",
+      "paths": [
+        "AGENTS.md",
+        "CONTRIBUTING.md",
+        "governance",
+        "tools",
+        "tests",
+        ".github"
+      ],
+      "commands": [
+        "python3 -m unittest discover -s tests -p 'test_*.py'",
+        "python3 -m tools.repository_validator",
+        "python3 -m tools.evidence_state_check",
+        "python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify"
+      ],
+      "workflow": ".github/workflows/main-health.yml",
+      "manual": "Independent review and trusted-base Repository Gate remain separate."
     }
   ]
 }

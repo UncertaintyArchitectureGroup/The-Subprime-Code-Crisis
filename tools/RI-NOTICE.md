@@ -16,3 +16,10 @@ Modification notice, 2026-10-01: reimplemented the bounded local navigation subs
 with repository-specific config, simple glossary/source tables and lexical
 candidate queries. UA-specific metadata, graph, checkpoint and candidate-merge
 interpretation were not ported. Do not claim capability parity or measured gain.
+
+Modification notice, 2026-10-20: selectively adapted the author-site extension at
+`oborskyivitalii/oborskyivitalii@82b57b8948c6c30143213b846ee2848d06f8d200`,
+`tools/repository_intelligence.py` and `.github/REPOSITORY-INTELLIGENCE.md`:
+asset hashes, inventory/task context, advisory validation routes and continuity.
+Kept the Subprime registry parser; did not copy site release/catalog machinery.
+This remains the Apache-2.0 RI component; no surrounding research license changes.

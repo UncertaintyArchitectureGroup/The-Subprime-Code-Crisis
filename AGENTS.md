@@ -65,6 +65,9 @@ Repository maps and navigation
 Before reading other repository files, editing, reviewing, searching for evidence, or changing source status:
 
 1. Read the current `AGENTS.md` from the target branch in full.
+   Confirm the live repository, base/head refs and working-tree state; read any
+   applicable nested `AGENTS.md`. The dated [handoff](governance/memory.md) is a
+   navigation hint, never current evidence; revalidate its relevant issue/PR/check facts.
 2. State the selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether the content synchronization assessment is required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration). When declaring the content synchronization assessment not required, state the specific reason the work is strictly mechanical and does not alter meaning, status, behavior, navigation structure, or reader understanding.
 3. Read the playbooks marked mandatory for the selected flow in the [flow table](#flow-selection-table), plus any cross-cutting playbook triggered by the declared work.
 4. Read `DOCTRINE.md` and `GLOSSARY.md`, then read `README.md`, `evidence/README.md`, `evidence/SOURCES.md`, the relevant evidence brief when one exists, every relevant file under `report/` and `protocols/`, `REFERENCES.md`, and `CONTRIBUTING.md`.
@@ -97,6 +100,15 @@ Safe editorial or mechanical changes that do not alter meaning, interpretation, 
 - A number in a table, caption, or diagram is a claim. Multi-source diagrams must label source boundaries and must not depict unrelated numbers as one observed causal chain.
 - Workflow correctness governs speed: registration, evidence review, integration audit, synchronization, human escalation, and independent review must not be skipped.
 - Use canonical claim and artifact terms from `GLOSSARY.md`; do not use terminology to strengthen a claim beyond the evidence or the boundaries in `DOCTRINE.md`.
+- Critique technology, application scope, methods, operating models and specific
+  marketing claims. Do not attribute dishonesty, motives or misconduct to vendors
+  or individuals without direct evidence. State unsupported mechanisms as bounded
+  hypotheses with alternatives and observations that could weaken them. A hedge
+  in one paragraph cannot qualify a categorical title, diagram or conclusion.
+- Source audits must distinguish numerical accuracy, inference strength and
+  placement. Record each material use with its exact source locator, metric/unit,
+  current location, recommended action and better destination when relocation is
+  proposed. Missing original access remains unresolved; it is not validation.
 
 ## Canonical source state model
 
@@ -136,6 +148,10 @@ original message. A strictly mechanical fix may use a stated PR exception.
 
 Before implementation, record original intent/trigger, owning paths and Source IDs,
 scope/exclusions/dependencies, observable acceptance and required decisions.
+Give acceptance checks stable IDs. At handoff, review and closure, map each ID to
+the check, result and exact inspected source/run; keep partial, stale, unavailable
+or pending checks open. Update issue checkboxes to match actual whole criteria.
+Link implementation commits with `Refs #N` and refresh evidence after source changes.
 Append dated scope changes; never rewrite the initial goal to fit the result.
 The [issue-workflow playbook](governance/issue-workflow.md) implements this rule.
 
@@ -176,6 +192,16 @@ lookup requires direct repository search. A lexical match is a candidate, not
 evidence or an authority decision; registry statuses are reproduced verbatim.
 Live PR/review/check state is fetched separately. The adapter's capabilities are
 bounded; it does not implement UA's full graph or trusted candidate comparison.
+After represented inputs change, rebuild and verify RI. For RI/flow changes run
+its behavioral tests and inspect the advisory validation routes against the real
+CI workflow. Inventory and task context suggest reading/checks; they do not execute
+them or certify acceptance. Known owners should be read directly.
+
+At meaningful handoff update [governance/memory.md](governance/memory.md) with the
+date/ref, owning issues/PR, decisions, evidence and next actions; keep its five
+sections within 120 lines. Detailed analysis stays in the owning issue/PR's dated
+`governance/reviews/` artifact. Do not duplicate history in agent instructions or
+store secrets/private correspondence. Rebuild RI after handoff changes.
 
 ## Required playbooks by flow
 

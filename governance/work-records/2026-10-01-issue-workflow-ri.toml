@@ -1,7 +1,7 @@
 record_version = 1
 title = "Issue workflow and bounded local Repository Intelligence"
 primary_flow = "Approved governance change procedure"
-human_decision = "Maintainer explicitly requested issue workflow, backlog/PR linkage, AGENTS and local RI adaptation on 2026-10-01, then clarified that issues preserve intent and materially unclear intent requires questions; PRs/commits implement and are checked against it. Issue #47 comments record both requests. Scope excludes source/research state changes, publishing migrations and deployment."
+human_decision = "Maintainer explicitly requested issue workflow, backlog/PR linkage, AGENTS and local RI adaptation on 2026-10-01, then clarified that issues preserve intent and materially unclear intent requires questions; PRs/commits implement and are checked against it. Issue #47 comments record both requests. Scope excludes source/research state changes, publishing migrations and deployment. Continued by the explicit 2026-10-20 request to adapt useful author-site RI/agent rules and prepare an evidence/placement/neutral-tone audit with detailed Sol issues; PR #56 comment records the accepted direction."
 independent_review = "Confirmed"
 # Primary implementer: /root; independent reviewer: /root/independent_workflow_review.
 # Review date: 2026-10-01. Independently checked implementation remote head:
@@ -28,6 +28,17 @@ reason = "Substantive contributor procedure and agent routing change, with bound
 assessed_surfaces = ["governance", "contributor-guidance", "reader-navigation", "references", "source-registry", "evidence-indexes", "history"]
 
 [synchronization.non_applicable]
-references = "No external source, citation identity or bibliography use changes; cross-repository links are process/navigation."
+references = "No canonical bibliography or report citation changes. Dated governance audit links originals as review evidence and remediation inputs; canonical source flows remain open. Cross-repository RI links are process/navigation."
 source-registry = "RI reads current registry as data and reproduces statuses verbatim; issue triage/backlog does not integrate evidence or change a source state."
 evidence-indexes = "No brief, evidence-review result or integration decision changes."
+
+# 2026-10-20 continuation: earlier Confirmed outcomes above remain historical.
+# Current implementation independently Confirmed on 2026-10-20 by
+# /root/independent_governance_review; details/digests in
+# governance/reviews/issue-52-2026-10-20-ri-review.md.
+# Separate audit/remediation plan independently Confirmed by
+# /root/independent_evidence_review; current research integration remains
+# Corrections required. See issue-53-2026-10-20-evidence-audit.md.
+# These reviews do not inherit the prior confirmation or authorize merge.
+# Site reference: 82b57b8948c6c30143213b846ee2848d06f8d200.
+# The audit is pre-integration analysis, not a source-state promotion or report edit.

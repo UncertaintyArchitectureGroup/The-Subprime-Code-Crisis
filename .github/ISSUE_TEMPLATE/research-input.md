@@ -26,12 +26,13 @@ include/exclude/narrow/defer recommendation).
 
 ## Acceptance checks
 
-- [ ] Exact source/version and limitations inspected.
-- [ ] Complete relevant existing uses and conflicting evidence assessed.
-- [ ] Impact report and required maintainer decision recorded.
-- [ ] Accepted changes independently reviewed and validated as required.
-- [ ] Canonical records synchronized through their own procedures.
-- [ ] PR and issue completion summaries include merged state and remaining work.
+- [ ] AC-1 — Exact source/version, metrics, uncertainty and limitations inspected.
+- [ ] AC-2 — Every material use traced; wording, numbers and placement assessed;
+  better destinations and contradictory/positive evidence recorded.
+- [ ] AC-3 — Impact report and required maintainer decision recorded.
+- [ ] AC-4 — Accepted changes independently reviewed and validated as required.
+- [ ] AC-5 — Canonical records synchronized through their own procedures.
+- [ ] AC-6 — PR and issue summaries map AC IDs to exact-source evidence and remaining work.
 
 ## Linked work and decisions
 

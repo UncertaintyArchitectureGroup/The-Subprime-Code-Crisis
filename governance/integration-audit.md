@@ -58,6 +58,11 @@ For every material use, record:
 | Claim or paraphrase | File and section | Finding or record | Direct, derived, synthesis, scenario, or unsupported | Keep, qualify, correct, relocate, or remove |
 
 The trace must be inspectable and its location recorded in the brief.
+For each material occurrence, add a stable claim ID and source page/table/figure
+or exact section. Distinguish four judgments: wording/inference, numbers/units,
+fit at the current location, and a better destination if one is proposed. Include
+uncited repetitions and neighboring conclusions; a source-level row alone cannot
+establish occurrence-level completeness.
 
 ### 5. Verify numbers and units
 
@@ -70,6 +75,12 @@ For every number:
 - reproduce simple derived calculations where practical;
 - do not combine different studies, samples, tools, or periods into one observed sequence without explicit labeling;
 - remove obsolete or untraceable numbers.
+- distinguish participant counts from completer counts, activity counts from
+  elapsed time, repository role from professional seniority, and stock from flow;
+- preserve version and observation dates; a live chart embedded in an old post
+  is not evidence that its current model results existed on the post's date;
+- do not average unrelated metrics into a claimed net-productivity estimate or
+  turn a proxy complexity measure into a measured cognitive-load percentage.
 
 A number in a table, caption, or diagram is a claim.
 
@@ -99,6 +110,10 @@ For every report use:
 - identify neighboring paragraphs and chapter conclusions that may require change.
 
 A corrected citation is insufficient if the surrounding argument remains misleading.
+Critique named claims with evidence and scope, not presumed vendor intent.
+For an unmeasured mechanism, state the conditions, plausible alternatives,
+observable consequences and possible disconfirming evidence. Scenarios need
+explicit uncertainty; do not assign relative probabilities without a method.
 
 Substantive report changes require explicit human approval before implementation.
 

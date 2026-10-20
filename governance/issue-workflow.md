@@ -36,6 +36,15 @@ Before implementation, record:
   decisions.
 - **Plan:** next step and linked PRs; use full issue URLs for other repositories.
 
+Use stable acceptance IDs such as `AC-1`. Record a compact table of
+`AC ID | observable pass condition | check/review | exact source/run | result`.
+Automated checks, source interpretation, independent review and maintainer
+decisions remain distinct. Tick only an entire satisfied criterion; clear a tick
+when its evidence is invalidated. A stale run or unchecked manual condition stays
+open. Link implementation commits with `Refs #N` and refresh links after rebases.
+Keep detailed analysis/review in a dated `governance/reviews/issue-N-YYYY-MM-DD-kind.md`
+owned by the same task; an issue comment supplies the outcome and exact link.
+
 Preserve the original intent. Append scope changes with date, reason and decision
 reference; never silently rewrite the goal to fit the result. An issue is a task
 record, not a replacement for a canonical source registry, research register,
@@ -86,3 +95,14 @@ correspondence boundaries; link public evidence or a bounded authorized summary.
 Draft, merged, reviewed, published and deployed are separate observations.
 An umbrella issue remains open until its required dependencies are complete.
 Issue closure and green CI do not change scientific or source-verification state.
+
+## Handoff and proportional checks
+
+Update [memory](memory.md) at meaningful interruption or handoff, retaining its
+five sections and 120-line bound. It records dated refs, decisions, evidence,
+remaining acceptance and next action, not an alternative source registry.
+Revalidate live state when resuming. Do not copy the site's deployment, browser,
+release-controller or per-task acceptance machinery into this research repository.
+Use existing repository tests/gates, targeted RI regressions when RI changes and
+human source/argument review. Green structural validation cannot prove a number,
+causal conclusion or optimal placement.

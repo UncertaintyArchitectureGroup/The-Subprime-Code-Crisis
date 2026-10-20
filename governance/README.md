@@ -54,6 +54,10 @@ On a pull request, Main health executes the validator version proposed by that p
 - [Backlog audit](issue-backlog-audit.md): dated open-PR and unresolved-work snapshot.
 - [Repository map](repository-map.md): UA/Subprime/personal owners and migration dependencies.
 - [Repository Intelligence](repository-intelligence.md): verified local navigation subset.
+- [Dated handoff](memory.md): active owners and evidence pointers; revalidate live state.
+- [2026-10-20 evidence and tone audit](reviews/issue-53-2026-10-20-evidence-audit.md):
+  issue #53's dated findings, source-placement decisions and remediation plan;
+  not a replacement for canonical source states.
 
 ## Navigation
 
