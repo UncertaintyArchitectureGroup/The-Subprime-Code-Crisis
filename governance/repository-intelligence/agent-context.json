@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "4719483559d8cf8aa9649708fcaa39d3059eaa5c5172d0d74c5dda7840c78ce8",
+    "digest": "1b86028fdb31e58dcdb53f77892290d05898b76c5468a582e65aed2ee57a0e16",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -227,7 +227,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "79499a6c9e915a78bf91ec734256290c2bf91d7df0041d3e6dfab979bf771086"
+        "sha256": "72f9f5a8f89b54c1cc3a0262348fcbbc2a46893273bb73c9c6e7872fb33ebfd4"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -267,7 +267,7 @@
       {
         "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
         "identity_mode": "content",
-        "sha256": "6bc9a5094dd3068bf07a3a23135781615ec03023fe10884eb795917434863f77"
+        "sha256": "5d7498be8b55ef7ee49306363c123b323ad2083b9ce66529643b6f960f1cdf01"
       },
       {
         "path": "governance/status-model.md",
@@ -317,7 +317,7 @@
       {
         "path": "governance/work-records/2026-10-20-issue-57-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "a1466dccca0f908f0a1fcef53fa936901236abe0237a6ecd36b224988f567dd1"
+        "sha256": "e56824367f0105a98bc2d7d36158b067f21f79143cb2ea02c3918b5693c02139"
       },
       {
         "path": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",

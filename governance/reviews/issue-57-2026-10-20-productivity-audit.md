@@ -191,3 +191,14 @@ Integration completion checklist for P-2023-01/P-2025-01/P-2026-03:
 | AC-05 | Separate source/integration review Confirmed; primary merged-state acceptance performed | Separate final-state review pending, then issue proof/closure |
 
 This final-state change does not modify research claims, source identities/current-use sets, protocols or confidence. Its new work record is separate; the merged implementation work record is immutable. Final-state independent review is pending, so this PR is not yet ready for merge or issue closure. These lifecycle values concern only the three scoped source integrations; other source audits and whole-report corrections remain open.
+
+
+## Final-state independent review and primary acceptance — 2026-10-20
+
+Independent reviewer /root/independent_evidence_review returned **Confirmed** for final-state candidate `5e48af1d8d6fa629ee7b38c772c921e549cba75e`, tree `538b0c05d3dc0b6ff4be3c129b6f56dbd928c465`, against checked main `21af254361dbd4f8d158516c1699fec7661e6312`. Remote PR [#67](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/67) head `8147d0cbafb4e6dc21d34e74de6fd616fc2d1157` has identical content. The reviewer did not author or edit the candidate.
+
+The reviewer independently checked live GitHub merge/main/CI, 16 unchanged report/navigation/rule files and the three unchanged research bodies, all completion gates, exactly three status/date transitions, unchanged Current use sets 5/6/5, and immutable existing work records. No material discrepancy, new interpretation or unresolved maintainer decision remains. The transition to Reviewed brief / Verified / 2026-10-20 is permitted for the checked default-branch research content.
+
+Independent checks: main 119 tests, contract, evidence integrity and RI passed; candidate contract, trusted integrity/transitions, RI, diff and trusted Repository Gate passed. Primary acceptance after this outcome confirms AC-01/02/03 on merged main and AC-04/05 for the final-state proposal. Only actual confirmation metadata/handoff and derived RI follow the inspected candidate. Latest exact-head CI, merge and resulting-main verification remain the final publication/closure conditions; they will be linked in #57 and both PR completion comments, not inferred from this record.
+
+Known source limitations, the separately attributed interval difference without reanalysis, and sibling source/tone audits remain explicit. This completes only the three scoped source integrations once the final-state change is published and checked.

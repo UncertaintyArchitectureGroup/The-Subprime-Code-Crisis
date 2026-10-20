@@ -4,7 +4,7 @@
 
 - Observed 2026-10-20; main `21af254361dbd4f8d158516c1699fec7661e6312`.
 - PR #56 merged; #52 and #47 closed with separate acceptance/default-branch evidence.
-- #57 correction PR #66 merged; final-state review on `work/issue-57-verified`.
+- #57 correction PR #66 merged; final-state PR #67 on `work/issue-57-verified`.
 - Author-site reference `82b57b8948c6c30143213b846ee2848d06f8d200`.
 - Revalidate refs, issues and checks live; this file cannot establish current status.
 
@@ -33,7 +33,7 @@
   precision correction resolved. Primary implementation acceptance passed.
 - Merged-main 119 tests/contract/state/RI and CI run 39465753207 passed.
 - Three final source states proposed as Verified/2026-10-20 after checked main;
-  separate final-state review/merge remains pending.
+  separate final-state review Confirmed at tree `538b0c05`; merge/check pending.
 - Governance/RI independently Confirmed: `reviews/issue-52-2026-10-20-ri-review.md`.
 - Fresh #52 review found and corrected a historical Verified test invariant.
   Corrective review Confirmed at tree `047f455eed71f6ce45c96bd48bc113a429a3758d`;
@@ -47,7 +47,7 @@
 
 ## Next actions
 
-- Complete #57 final-state review/merge and default-branch status acceptance.
+- Complete #57 final-state PR #67 merge and default-branch status acceptance.
 - Close only #57 after final source-state synchronization; next is #58 Xu/Agarwal.
 - Execute the source-audit follow-ups in bounded PRs with original-source locators.
 - Retain partial/blocked acceptance and missing source access explicitly.
