@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "3d30421c4b90a510c8ae8e458f1373bf40ef63bdbf7b7e95a425db8faf0cb405",
+    "digest": "8f005372c060a473bc691d3e0e3a107642e78986e0f12cd983f503267efb3fcf",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -162,12 +162,12 @@
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "1ff4b606cbf74af95c2c61466a6c87eaca09b30cbcda922bf4d44627fc893d6b"
+        "sha256": "e43d895aeb1660f5fe8f12d84bdb69cf648f355a7e49b15dc37ab49375cbe677"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "de77d479ca27a7b52d2c3114ba6705c2a868078c2d07468be8667e8b93272d3c"
+        "sha256": "b79b99b693e943a35ddaef7c103db89920da1c2c825fa8c65b0c089dd9b1ff15"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
@@ -267,7 +267,7 @@
       {
         "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
         "identity_mode": "content",
-        "sha256": "06d97bc40f8087bb62e31def961ac83c90654ff17407b65c5735357fd58f75a0"
+        "sha256": "3b2dadba34f4316635f7a1a74c33e7cc682a913ded4277c737ef77ca22bb48cf"
       },
       {
         "path": "governance/status-model.md",

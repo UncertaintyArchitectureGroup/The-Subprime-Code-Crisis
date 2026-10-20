@@ -20,7 +20,7 @@ Joel Becker, Nate Rush, Tom Cunningham, David Rein and Khalid Mahamud. [*We are 
 | Item | Source-reported detail | Exact locator in article |
 | --- | --- | --- |
 | Follow-up | Started August 2025; 57 developers: 10 returning and 47 new; 143 repositories, 800+ tasks | “Details of the productivity study” |
-| Comparator | Randomized AI-allowed/disallowed work; later tools and selected tasks | Same section; opening summary |
+| Comparator and tools | Randomized AI-allowed/disallowed work; later agentic workflows, with Claude Code and Codex named as adoption examples; exact model/build versions not supplied | Study details; “Wider adoption of AI has made it more difficult to measure task-level productivity” |
 | Raw time estimates | Returning: −18%, 95% CI −38 to +9%; new: −4%, CI −15 to +9% | Opening results paragraphs |
 | Selection | Reluctance to work without AI, task withholding and differential participation; lower pay than earlier trial | “Wider adoption of AI tools…”; study details |
 | Measurement | Concurrent agents complicate time attribution | Opening summary; “Wider adoption of AI has made it more difficult to measure task-level productivity”, numbered problem 6 |

@@ -138,3 +138,7 @@ These are candidate checks, not completed issue checkboxes or final source verif
 A supplementary primary check found that the linked early-study code README displays slightly different interval bounds from the 2026 author restatement. Both are explicitly attributed in the METR brief; the report labels its interval as the dated restatement. No cause is inferred and no raw-data reanalysis is claimed. This does not change the bounded positive/negative interpretation; repeat review must check the treatment.
 
 All three integrations were set to Corrections required/— while these findings remained unresolved. Corrections are now implemented but not self-confirmed; repeated independent review is pending. No new substantive maintainer decision was identified by either reviewer for R1–R5.
+
+### Repeated-review precision correction
+
+The repeated review confirmed R1/R2/R4/R5 and the substantive completion/imputation treatment in R3, then caught an imprecise shorthand: G.6 counts two excluded developers affected by paused repository development, not two distinct repositories. The brief now preserves the developer unit. The follow-up brief also explicitly names the article's agentic-tool examples and states that exact model/build versions are not supplied. No result or count is inferred from this additional tool description. Final repeated-review confirmation is still pending; states remain Corrections required/—.
