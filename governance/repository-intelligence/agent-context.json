@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "f48f0b407de9a816adaebd1504d48f0ec6aed5c09f1a77345a9c22062dd109aa",
+    "digest": "c108f8c2f8602dea9a7710d401efef6cca0fe3e55d041f998ddfa9e1508c8de7",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -162,12 +162,12 @@
       {
         "path": "evidence/primary/2025-gitclear-code-quality.md",
         "identity_mode": "content",
-        "sha256": "1711256e744522890efb544836969bd07c2d7efac0cb6da90cd4e00854af0544"
+        "sha256": "2567f2f1c450c3c3f1137640d07cc3413f08137a85fded9a843932196384a93f"
       },
       {
         "path": "evidence/primary/2025-gitclear-developer-output.md",
         "identity_mode": "content",
-        "sha256": "fde58353b7acb32956e00ad61522d0164714cf668376b58d6dd78c560457c07c"
+        "sha256": "aa40582550f0de28ec4b9bda38a13e31d30c65e5ccc3bc118a5c602a0f2bb9a0"
       },
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
@@ -247,7 +247,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "10ea2abf223d15609cdbafc06a8c1822a795b44263751827138716ef7feb6e55"
+        "sha256": "00572735d3ec696bdcc552372e3bc0a478d09c473c09859c948a630b1e300f78"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -297,7 +297,7 @@
       {
         "path": "governance/reviews/issue-59-2026-10-20-gitclear-audit.md",
         "identity_mode": "content",
-        "sha256": "58541d4607145c694420d111ac4213b01de6149ebdb15e48f1892d50fffac96c"
+        "sha256": "7df4a8d87bd30c49ada62f2b312f1d4e3763f700dddab80403f41f1031fe43ab"
       },
       {
         "path": "governance/status-model.md",
@@ -367,7 +367,7 @@
       {
         "path": "governance/work-records/2026-10-20-issue-59-gitclear.toml",
         "identity_mode": "content",
-        "sha256": "db48ccfcc38fc174a00e35208edebfa9b7f14eed2207f08fd586c62a0a2a9ef6"
+        "sha256": "05f7c513cdf87fed948c13ecc8737e81adf65d06e8043becdc2c818da7769f6f"
       },
       {
         "path": "governance/work-records/README.md",

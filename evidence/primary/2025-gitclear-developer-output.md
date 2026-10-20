@@ -3,7 +3,7 @@ source_ids = ["P-2025-05"]
 evidence_review = "Reviewed brief"
 integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/03_the_aftermath.md", "REFERENCES.md"]
 +++
 
@@ -56,4 +56,4 @@ Confounders include survival/high-activity selection, task/project and employmen
 ## Independent review
 
 - Primary agent: /root; flow B; date: 2026-10-20.
-- Separate candidate review pending; outcome: Review unavailable. No readiness, completed review or verification inferred.
+- Independent reviewer /root/review_issue59, 2026-10-20: **Confirmed** at local `f278d6f5be877bd2acb9d3ed91856ecc1f3db92d`, tree `08f98726e8773eba5131e5e99339875c0191831c` (remote PR #70 head `64797cc2182abfcf312f728f3653ef0fcffb0b42`, identical tree). Independently reopened both originals, checked all tables/arithmetic/occurrences/placement/protocols and structural/trusted-base checks. No material correction or additional decision found. Source discrepancies remain explicit limitations. Merge and checked-main acceptance remain required before Verified.

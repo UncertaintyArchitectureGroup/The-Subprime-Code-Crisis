@@ -87,12 +87,24 @@ Updated: two briefs, canonical registry and primary index, R1–R3 dependent use
 
 | Acceptance | Check / current result |
 | --- | --- |
-| AC-01 | Two complete separately identified original-source briefs, distinct datasets/citations/current use; candidate implemented, separate acceptance pending |
-| AC-02 | Original tables plus count/level/percent arithmetic and uncertainty/discrepancy trace above; candidate implemented, independent numerical review pending |
-| AC-03 | Net-output label and universal staffing/maintenance/automation inferences replaced by bounded findings or falsifiable hypotheses at all dependent uses; review pending |
+| AC-01 | Two complete separately identified original-source briefs, distinct datasets/citations/current use; candidate implemented and independently Confirmed; default-branch acceptance pending |
+| AC-02 | Original tables plus count/level/percent arithmetic and uncertainty/discrepancy trace above; candidate implemented, independent numerical review Confirmed; default-branch acceptance pending |
+| AC-03 | Net-output label and universal staffing/maintenance/automation inferences replaced by bounded findings or falsifiable hypotheses at all dependent uses; independent review Confirmed; default-branch acceptance pending |
 | AC-04 | Full public quality PDF and full public output embed inspected; hashes/version/access and unresolved internal source conflicts explicit; no partial-access promotion |
-| AC-05 | Independent all-original/all-occurrence/arithmetic/protocol review pending; candidate is not ready/Verified |
+| AC-05 | Independent all-original/all-occurrence/arithmetic/protocol review Confirmed at f278d6f/tree08f98726; merged-main/final-state acceptance pending |
 
 ## Validation and independent review
 
-Primary author /root; independent reviewer pending. Outcome **Review unavailable** records no completed separate review yet. Both sources remain Reviewed brief / In progress / —. Primary candidate checks: repository contract, evidence-state integrity, RI freshness (101 represented files), all 119 tests and git diff whitespace check passed. Trusted-base gates, review/correction evidence, actual merge/main/CI and final checklist will be appended as observed; none inferred from source availability or a passing validator.
+Initial candidate checkpoint: primary author /root; independent reviewer pending; **Review unavailable** recorded no completed separate review at that time. Subsequent actual review is recorded below. Both sources remain Reviewed brief / In progress / —. Primary candidate checks: repository contract, evidence-state integrity, RI freshness (101 represented files), all 119 tests and git diff whitespace check passed. Trusted-base gates, review/correction evidence, actual merge/main/CI and final checklist will be appended as observed; none inferred from source availability or a passing validator.
+
+
+### Independent correction review — 2026-10-20
+
+- Primary /root; independent /root/review_issue59; Flow B. Outcome **Confirmed**, no material discrepancy or additional human decision.
+- Pinned local `f278d6f5be877bd2acb9d3ed91856ecc1f3db92d`, tree `08f98726e8773eba5131e5e99339875c0191831c`; independently checked remote PR #70 head `64797cc2182abfcf312f728f3653ef0fcffb0b42` has that identical tree.
+- Independently reopened full quality original/read all34pages/rendered pp12/24; reopened output original via publisher iframe including methods/tables/appendix/later updates. Both local byte counts/hashes match the briefs.
+- All eight quality fractions/211,087,305 sum, source-year/selection limits, output component calculations/units/windows, 9.0/10.1 arithmetic and mean discrepancy/composite reproduced. Full report/README/protocol/registry/index/reference/current-use/placement and dependent-summary review found no omission requiring correction.
+- PDF/body/landing differences and mean34.1/7.1 are **documented source limitations**, not adjudicated data repairs or validation of proprietary measurement/causal AI effect. Positive, negative and uncertain findings preserved; No protocol change confirmed.
+- Previously Verified source briefs and empirical report windows compared with b753486 and unchanged; no unwarranted state reset/promotion.
+- Independent contract/state/RI (both contexts, five current-use paths each), all119tests, trusted-base Repository Gate/evidence transitions and whitespace passed. Exact-head PR CI: Repository Gate39482420475/Main health39482420483 success.
+- Primary acceptance agrees with this evidence and AC-01–05 implementation; source states remain Reviewed brief/In progress/—/Confirmed. Resulting review metadata will be checked separately; actual merge/main/CI/final-state/closure are pending observations.

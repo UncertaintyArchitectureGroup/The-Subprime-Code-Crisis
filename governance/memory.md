@@ -37,8 +37,10 @@
 - Quality p12 6.66% is 2024; landing/appendix discrepancies retained. Output three-
   median9.0% is not net productivity; Method1 mean34.1/7.1 remains unresolved,
   withheld with its dependent mean composite. No invented reconciliation.
-- Candidate both sources Reviewed brief/In progress/—; separate review pending.
-  Completion requires actual independent confirmation, merged corrections and checked
+- Both sources Reviewed brief/In progress/—/Confirmed. Reviewer /root/review_issue59
+  Confirmed f278d6f/tree08f98726; remote PR #70 head64797cc same tree;
+  exact-head Repository Gate39482420475 and Main health39482420483 succeeded.
+  Completion requires merged corrections and checked
   main before final source-state update. Registry/brief fields own canonical states.
 
 ## Next actions
