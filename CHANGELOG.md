@@ -20,6 +20,11 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Governance
 
+- Adapted selected author-site controls: stable acceptance IDs with exact-source evidence, bounded dated handoff, RI inventory/task-context routes and asset-byte freshness. Clarified occurrence-level source/number/placement review and neutral, falsifiable criticism; canonical source states and merge/verification gates remain unchanged.
+- Kept RI tests independent of historical research-verification states; a source reset invalidates stale context and is reproduced on rebuild without changing canonical source state rules.
+
+- Added canonical issue intent with focused clarification, PR/commit checks against it, reviewed research-impact reports, linked PR/issue completion records and cross-repository routing. Added a bounded deterministic Repository Intelligence navigation adapter with source/config/producer freshness; source states and verification rules are unchanged.
+
 - Added a mandatory content-synchronization assessment and explicit changelog decision for substantive repository changes.
 - Added a non-blocking executable repository contract, standard-library validator and tests, five-class Source Registry parser including the canonical dataset section, inactive-Markdown filtering, and diagnostic Main health workflow.
 - Added the governed PR template, machine-readable work records, changed-path classification and synchronization matrix, critical-deletion protection, and trusted Repository Gate workflow.

@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "repository": "UncertaintyArchitectureGroup/The-Subprime-Code-Crisis",
+  "output": "governance/repository-intelligence/agent-context.json",
+  "glossaries": [
+    "GLOSSARY.md"
+  ],
+  "registries": [
+    "evidence/SOURCES.md"
+  ],
+  "cross_repository": [
+    {
+      "repository": "UncertaintyArchitectureGroup/uncertainty-architecture",
+      "concern": "UA specification and research owners",
+      "url": "https://github.com/UncertaintyArchitectureGroup/uncertainty-architecture/blob/main/AGENTS.md"
+    },
+    {
+      "repository": "oborskyivitalii/oborskyivitalii",
+      "concern": "Personal publications and migration backlog",
+      "url": "https://github.com/oborskyivitalii/oborskyivitalii/issues"
+    }
+  ],
+  "owners": [
+    {
+      "concern": "canonical operating procedure",
+      "path": "AGENTS.md",
+      "queries": [
+        "agent workflow",
+        "агент",
+        "governance procedure"
+      ]
+    },
+    {
+      "concern": "task intake and closure",
+      "path": "governance/issue-workflow.md",
+      "queries": [
+        "issue workflow",
+        "backlog",
+        "ішью",
+        "беклог"
+      ]
+    },
+    {
+      "concern": "evidence identity and status",
+      "path": "evidence/SOURCES.md",
+      "queries": [
+        "source registry",
+        "evidence review",
+        "integration audit",
+        "джерела"
+      ]
+    },
+    {
+      "concern": "repository terminology",
+      "path": "GLOSSARY.md",
+      "queries": [
+        "glossary",
+        "terminology",
+        "терміни"
+      ]
+    },
+    {
+      "concern": "research scope",
+      "path": "SCOPE.md",
+      "queries": [
+        "research scope",
+        "межі дослідження"
+      ]
+    },
+    {
+      "concern": "claim and interpretation principles",
+      "path": "DOCTRINE.md",
+      "queries": [
+        "doctrine",
+        "claim class",
+        "доктрина"
+      ]
+    },
+    {
+      "concern": "reader introduction and summaries",
+      "path": "README.md",
+      "queries": [
+        "reader navigation",
+        "overview",
+        "crisis map",
+        "evidence map"
+      ]
+    },
+    {
+      "concern": "bibliography",
+      "path": "REFERENCES.md",
+      "queries": [
+        "bibliography",
+        "citation sources",
+        "бібліографія"
+      ]
+    },
+    {
+      "concern": "independent review procedure",
+      "path": "governance/independent-review.md",
+      "queries": [
+        "independent review",
+        "незалежне ревью"
+      ]
+    },
+    {
+      "concern": "governance validation contract",
+      "path": "governance/repository-contract.toml",
+      "queries": [
+        "repository contract",
+        "validation contract",
+        "валідатор"
+      ]
+    },
+    {
+      "concern": "repository navigation adapter",
+      "path": "governance/repository-intelligence.md",
+      "queries": [
+        "repository intelligence",
+        "RI adapter",
+        "навігація репо"
+      ]
+    },
+    {
+      "concern": "publishing migration backlog",
+      "path": "governance/issue-backlog-audit.md",
+      "queries": [
+        "publisher",
+        "quartz",
+        "pdf",
+        "паблішер",
+        "пдф"
+      ]
+    },
+    {
+      "concern": "operational protocol navigation",
+      "path": "protocols/README.md",
+      "queries": [
+        "protocols",
+        "operational response",
+        "протоколи"
+      ]
+    },
+    {
+      "concern": "coordinated repo ownership",
+      "path": "governance/repository-map.md",
+      "queries": [
+        "cross repository",
+        "migration",
+        "міграція"
+      ]
+    },
+    {
+      "concern": "dated continuity",
+      "path": "governance/memory.md",
+      "queries": [
+        "handoff",
+        "memory",
+        "статус роботи",
+        "передача контексту"
+      ]
+    },
+    {
+      "concern": "source numbers and placement audit",
+      "path": "governance/integration-audit.md",
+      "queries": [
+        "claim audit",
+        "numeric audit",
+        "source placement",
+        "аудит доказів",
+        "цифри",
+        "розміщення джерел"
+      ]
+    },
+    {
+      "concern": "part one empirical claims and costs",
+      "path": "report/01_the_illusion.md",
+      "queries": [
+        "productivity evidence",
+        "TCO",
+        "senior penalty",
+        "illusion",
+        "витрати"
+      ]
+    },
+    {
+      "concern": "part two proposed delivery mechanism",
+      "path": "report/02_broken_mechanics.md",
+      "queries": [
+        "verification bottleneck",
+        "production attenuation",
+        "review overload",
+        "механізм"
+      ]
+    },
+    {
+      "concern": "part three conditional scenarios",
+      "path": "report/03_the_aftermath.md",
+      "queries": [
+        "risk scenarios",
+        "vendor criticism",
+        "гіпотези",
+        "сценарії"
+      ]
+    }
+  ],
+  "upstream": {
+    "repository": "oborskyivitalii/oborskyivitalii",
+    "revision": "82b57b8948c6c30143213b846ee2848d06f8d200",
+    "paths": [
+      "AGENTS.md",
+      "CONTRIBUTING.md",
+      ".github/REPOSITORY-INTELLIGENCE.md",
+      "tools/repository_intelligence.py"
+    ],
+    "adapted": [
+      "stable acceptance IDs",
+      "dated continuity",
+      "inventory and task context",
+      "advisory validation routes",
+      "asset byte freshness"
+    ],
+    "excluded": [
+      "site release controllers",
+      "full path catalog",
+      "browser profiles",
+      "per-issue acceptance engine",
+      "semantic graph"
+    ]
+  },
+  "continuity": {
+    "governance/memory.md": {
+      "max_lines": 120,
+      "headings": [
+        "## Snapshot",
+        "## Active owners",
+        "## Decisions",
+        "## Evidence",
+        "## Next actions"
+      ]
+    }
+  },
+  "validation_routes": [
+    {
+      "id": "research-contract",
+      "paths": [
+        "evidence",
+        "report",
+        "protocols",
+        "README.md",
+        "REFERENCES.md"
+      ],
+      "commands": [
+        "python3 -m tools.repository_validator",
+        "python3 -m tools.evidence_state_check"
+      ],
+      "workflow": ".github/workflows/main-health.yml",
+      "manual": "Read original source and every relying occurrence; structural checks do not validate research."
+    },
+    {
+      "id": "governance-ri",
+      "paths": [
+        "AGENTS.md",
+        "CONTRIBUTING.md",
+        "governance",
+        "tools",
+        "tests",
+        ".github"
+      ],
+      "commands": [
+        "python3 -m unittest discover -s tests -p 'test_*.py'",
+        "python3 -m tools.repository_validator",
+        "python3 -m tools.evidence_state_check",
+        "python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify"
+      ],
+      "workflow": ".github/workflows/main-health.yml",
+      "manual": "Independent review and trusted-base Repository Gate remain separate."
+    }
+  ]
+}

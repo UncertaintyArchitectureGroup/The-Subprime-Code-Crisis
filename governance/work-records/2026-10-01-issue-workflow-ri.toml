@@ -1,0 +1,54 @@
+record_version = 1
+title = "Issue workflow and bounded local Repository Intelligence"
+primary_flow = "Approved governance change procedure"
+human_decision = "Maintainer explicitly requested issue workflow, backlog/PR linkage, AGENTS and local RI adaptation on 2026-10-01, then clarified that issues preserve intent and materially unclear intent requires questions; PRs/commits implement and are checked against it. Issue #47 comments record both requests. Scope excludes source/research state changes, publishing migrations and deployment. Continued by the explicit 2026-10-20 request to adapt useful author-site RI/agent rules and prepare an evidence/placement/neutral-tone audit with detailed Sol issues; PR #56 comment records the accepted direction."
+independent_review = "Confirmed"
+# Primary implementer: /root; independent reviewer: /root/independent_workflow_review.
+# Review date: 2026-10-01. Independently checked implementation remote head:
+# 21ba9c58766bc4f00a3a0c1d9a0332a3d9da7210 (PR #56), with identical reviewed local tree.
+# Corrections were implemented by /root and independently re-tested by the reviewer.
+# This confirmation covers workflow/RI only, not source verification or merge authorization.
+# Additional intent clarification independently Confirmed on 2026-10-01 by
+# /root/independent_workflow_review: candidate tracked tree
+# 256c5f6ac501b84ba80d613b6a0170b0eb880bcd against prior local head
+# 672de305b341f9cb87a1dedd0088f3cebb690a9a. No source state changes.
+# This record update and regenerated RI report that actual review outcome.
+# RI checkout/worktree portability correction independently Confirmed on
+# 2026-10-01 by /root/independent_workflow_review: staged tree
+# 849f4db0f2178d6ed4ac78c447e61ffa52909105 against local head
+# 2dccfe6872c460732b0901d872cec79a70e77bb0. The reviewer checked actual
+# ordinary checkouts and Git worktrees, 113 tests and trusted-base gates.
+# This follow-up metadata and its derived RI hash report that scoped outcome.
+
+[changelog]
+decision = "Updated"
+reason = "Substantive contributor procedure and agent routing change, with bounded navigation tooling."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "reader-navigation", "references", "source-registry", "evidence-indexes", "history"]
+
+[synchronization.non_applicable]
+references = "No canonical bibliography or report citation changes. Dated governance audit links originals as review evidence and remediation inputs; canonical source flows remain open. Cross-repository RI links are process/navigation."
+source-registry = "RI reads current registry as data and reproduces statuses verbatim; issue triage/backlog does not integrate evidence or change a source state."
+evidence-indexes = "No brief, evidence-review result or integration decision changes."
+
+# 2026-10-20 continuation: earlier Confirmed outcomes above remain historical.
+# Current implementation independently Confirmed on 2026-10-20 by
+# /root/independent_governance_review; details/digests in
+# governance/reviews/issue-52-2026-10-20-ri-review.md.
+# Separate audit/remediation plan independently Confirmed by
+# /root/independent_evidence_review; current research integration remains
+# Corrections required. See issue-53-2026-10-20-evidence-audit.md.
+# These reviews do not inherit the prior confirmation or authorize merge.
+# Site reference: 82b57b8948c6c30143213b846ee2848d06f8d200.
+# The audit is pre-integration analysis, not a source-state promotion or report edit.
+# Issue #52 completion pass, 2026-10-20: maintainer requests one issue at a time,
+# implementation, independent review, acceptance, merged-state evidence and closure.
+# Fresh review at 8fc0a4877b7036068c058072dd8121ad1663ead1 required removing a
+# historical Verified-state invariant from the RI tests. Runtime projection was
+# correct. The narrow correction and isolated reset regression were independently
+# Confirmed by /root/independent_governance_review at staged tree
+# 047f455eed71f6ce45c96bd48bc113a429a3758d against prior head 8fc0a4877b7036068c058072dd8121ad1663ead1.
+# Reviewer reran 119 tests, RI freshness and the old-failure/new-pass reset case.
+# Only confirmation metadata and derived RI follow that reviewed tree; final
+# committed-head and merged-main acceptance evidence belongs in issue #52/PR #56.

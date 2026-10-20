@@ -35,3 +35,6 @@ jobs:
 
       - name: Validate evidence-state integrity
         run: python3 -m tools.evidence_state_check
+
+      - name: Verify local Repository Intelligence context
+        run: python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify

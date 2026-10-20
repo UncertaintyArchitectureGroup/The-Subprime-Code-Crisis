@@ -76,6 +76,24 @@ For internal case studies:
 - explain how metrics were calculated;
 - avoid presenting one team as representative of the industry.
 
+## Issues, intent and coordinated work
+
+Use the [issue intake and closure procedure](governance/issue-workflow.md)
+under the canonical rule in [AGENTS](AGENTS.md#issue-intake-and-task-lifecycle).
+Repository-management ideas and research/source inputs both belong in the
+backlog. Existing contributor issues remain the owning input; triage with a
+comment. A source/research impact report and required maintainer decision precede
+substantive integration; source flows and independent review still apply.
+
+The [dated backlog audit](governance/issue-backlog-audit.md) records open PRs and
+unprocessed research ideas. [Cross-repository ownership](governance/repository-map.md)
+and [Repository Intelligence](governance/repository-intelligence.md) provide
+navigation, not duplicate research authority or source states.
+Use stable acceptance IDs and exact-source evidence as described in the issue
+workflow. Resume from the dated [handoff](governance/memory.md), rechecking live
+state. Source audits assess numbers, interpretation and placement separately;
+see the [integration-audit procedure](governance/integration-audit.md).
+
 ## Ways to contribute
 
 ### Add, process, or update a source
@@ -123,7 +141,7 @@ Do not add a citation directly to the report without registering the source.
 
 ### Submit a measured case study
 
-Open an issue or PR with:
+Open an owning issue, then link any implementation PR, with:
 
 - context and system boundary;
 - adoption intervention;

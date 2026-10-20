@@ -11,6 +11,11 @@ How AI code assistants can create local productivity gains while shifting cost i
 
 ## Quick Start
 
+Repository/source ideas enter through [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues).
+See the [dated backlog audit](governance/issue-backlog-audit.md),
+[intake and reviewed closure](governance/issue-workflow.md), and
+[cross-repository ownership](governance/repository-map.md).
+
 | Need | Start here |
 | --- | --- |
 | Understand the complete argument | [Read the report](report/01_the_illusion.md) |
