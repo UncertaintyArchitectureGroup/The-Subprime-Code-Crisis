@@ -8,12 +8,14 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added pinned Xu v3 and Agarwal v2 briefs with methods, exact table locators, positive/null findings, uncertainty, publication boundaries and an occurrence/placement trace for #58.
 - Added separate source-oriented briefs for Peng's Copilot experiment, METR's early-2025 productivity experiment and its February 2026 follow-up, with exact versions, outcome definitions and uncertainty.
 - Added this repository changelog and a dedicated content-synchronization playbook.
 - Added a reviewed documentary project-provenance record covering the 2026-01-05 DOU precursor and discussion, the 2026-02-06 GitHub repository creation timestamp, and the 2026-02-10 explicit Subprime Code publication.
 
 ### Changed
 
+- Corrected Xu's OSS sample, activity-quartile and review/rework units; preserved positive project activity and the uncertain core review-count result. Separated Agarwal's AF/IF repository-month effects from per-feature debt, functional correctness and measured cognitive-load claims; replaced the relying cross-study chain with a conditional scenario.
 - Completed the three bounded productivity-source integration audits after independent correction review and checked default-branch integration; each source retains its publication, selection, measurement and generalization limits.
 - Rebuilt Chapter 1's task-time comparison around bounded positive and negative findings; corrected Peng's randomized/completer counts and time unit, retained METR's tool/date limits, separated the later unreliable magnitude estimate, and removed universal slowdown/seniority conclusions from the relying summaries. Broader source and tone audits remain separate work.
 - Restructured the README around Quick Start, Key Takeaways, and a repository map; reduced duplicate navigation and artifact-flow explanation while preserving the Claim confidence map, Evidence Map, Crisis Map boundaries, operational control stack, and the bounded `P-2026-01` evidence summary.
@@ -23,6 +25,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Governance
 
+- Made the existing live issue/PR/main/CI/source-state handoff check explicit and discoverable through RI; local index freshness remains distinct from a dated live-status observation.
 - Adapted selected author-site controls: stable acceptance IDs with exact-source evidence, bounded dated handoff, RI inventory/task-context routes and asset-byte freshness. Clarified occurrence-level source/number/placement review and neutral, falsifiable criticism; canonical source states and merge/verification gates remain unchanged.
 - Kept RI tests independent of historical research-verification states; a source reset invalidates stale context and is reproduced on rebuild without changing canonical source state rules.
 

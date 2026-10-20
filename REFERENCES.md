@@ -33,15 +33,15 @@ A source appearing here is not automatically peer reviewed, independently valida
 - METR. [*Measuring AI Ability to Complete Long Tasks*](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/). March 2025.
 - Status: original measurement report; detailed repository brief pending.
 
-### P-2025-03 — Large-scale developer study
+### P-2025-03 — Copilot availability and OSS activity
 
-- Xu et al. [*AI-Assisted Programming Decreases the Productivity of Experienced Developers*](https://arxiv.org/abs/2510.10165). arXiv, 2025.
-- Status: preprint; detailed repository brief pending.
+- Xu, Medappa, Tunc, Vroegindeweij & Fransoo. [*AI-Assisted Programming Decreases the Productivity of Experienced Developers by Increasing the Technical Debt and Maintenance Burden*](https://arxiv.org/abs/2510.10165v3). arXiv v3, 28 January 2026 (v1: 11 October 2025).
+- Status: preprint edition reviewed; presentations do not establish peer review. [Evidence brief](evidence/primary/2025-xu-copilot-oss-activity.md) records positive project activity, activity-quartile differences, uncertainty and source-internal reporting limits.
 
 ### P-2026-02 — AI IDEs and autonomous agents
 
-- Agarwal et al. [*AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents*](https://arxiv.org/abs/2601.13597). arXiv, 2026.
-- Status: preprint; detailed repository brief pending.
+- Agarwal, He & Vasilescu. [*AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents on Software Development*](https://arxiv.org/abs/2601.13597v2). Reviewed text: arXiv v2, 27 January 2026 (v1: 20 January).
+- Publication: MSR 2026 Mining Challenge, 13–14 April; [ACM DOI](https://doi.org/10.1145/3793302.3793589), [official program](https://conf.researchr.org/track/msr-2026/msr-2026-mining-challenge). Publisher full-text equivalence was not checked. [Evidence brief](evidence/primary/2026-agarwal-agent-adoption.md) separates adoption-mode effects, static metrics and human-load hypotheses.
 
 ### P-2023-01 — Copilot productivity experiment
 

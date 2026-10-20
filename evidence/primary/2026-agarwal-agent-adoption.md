@@ -1,0 +1,61 @@
++++
+source_ids = ["P-2026-02"]
+evidence_review = "Reviewed brief"
+integration_audit = "In progress"
+last_verified = "—"
+independent_review = "Review unavailable"
+current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md"]
++++
+
+# Agarwal: agent adoption, activity and code structure
+
+## Citation, version and acquisition
+
+Shyam Agarwal, Hao He and Bogdan Vasilescu. *AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents on Software Development*. Reviewed text: [arXiv:2601.13597v2](https://arxiv.org/abs/2601.13597v2), 27 January 2026 (v1: 20 January). **P-2026-02; primary empirical research.** MSR 2026 Mining Challenge conference paper, Rio de Janeiro, 13–14 April 2026; [ACM DOI 10.1145/3793302.3793589](https://doi.org/10.1145/3793302.3793589). Title/authors are listed in the [official accepted-paper/program record](https://conf.researchr.org/track/msr-2026/msr-2026-mining-challenge).
+
+Full five-page [v2 PDF](https://arxiv.org/pdf/2601.13597v2), including Table 2/Figure 2, inspected 2026-10-20. SHA-256: `b6a59f6989710c6ed67e4b0bf8c69eac1bed600aa481d246789a426d00c9819a`. Publisher full text returned access denial; byte/content equivalence to the final proceedings edition was not established. The conference record does not upgrade the inspected v2 to an independently checked final edition. No replication code or raw data was rerun.
+
+## Design and measured findings
+
+| Item | Source-reported detail | Locator (PDF) |
+| --- | --- | --- |
+| Population/window | AIDev v3 OSS activity, January 2024–November 2025; ≥10 stars, ≥10 agent-attributed PRs per treated repository | §3.1, pp2–3 |
+| Exposure | First observable agent PR, inferred from branch/login/commit/text signals. Agent-first (AF): no detected AI-IDE configuration traces during collection; IDE-first (IF): traces before first agent PR. Absence of traces is not absence of AI use | §3.1, pp2–3 |
+| Matched samples | AF: 401 treated/606 controls; IF: 117/73. These are separate matched panels, not developer counts | §3.1, p3 |
+| Unit/outcomes | Repository-month commits, lines added and SonarQube warnings, cognitive complexity, duplication/comment density; LOC and other time-varying covariates included | §3.2, p3 |
+| Identification | Propensity/language matching, staggered imputation DiD with later/never-adopter comparisons, repository-clustered SEs and event-study diagnostics; conditional counterfactual-trend assumptions remain | §3.3, p3 |
+
+Table 2 (p3) reports the following log-scale coefficients, SEs and percentage changes. Percentages below are the table's reported values (unrounded inputs unavailable), not a pooled effect or an independently recomputed estimate.
+
+| Repository-month outcome | AF: β (SE); reported change | IF: β (SE); reported change | Table significance |
+| --- | --- | --- | --- |
+| Commits | .309 (.051); +36.25% | .030 (.092); +3.06% | AF p<.001; IF inconclusive |
+| Lines added | .569 (.103); +76.59% | −.066 (.189); −6.34% | AF p<.001; IF inconclusive |
+| Static-analysis warnings | .163 (.048); +17.73% | .174 (.114); +19.00% | AF p<.001; IF inconclusive |
+| Cognitive/code complexity | .299 (.059); +34.85% | .357 (.114); +42.87% | AF p<.001; IF p<.01 |
+| Duplicate-line density | .076 (.044); +7.92% | −.009 (.056); −.94% | Neither p<.05 |
+| Comment-line density | .042 (.028); +4.34% | .201 (.055); +22.30% | IF p<.001; AF inconclusive |
+
+“Inconclusive” means not significant at the table's 5% threshold, not evidence of exactly zero. The abstract's approximate +18%/+39% shorthand hides mode-specific effects and the IF-warning uncertainty; do not use it as one universal or per-feature rate. LOC adjustment does not turn a repository-month aggregate into a per-feature outcome.
+
+## Interpretations, limitations and conflicts
+
+**Source-author interpretation:** Increased structural metrics signal agent-induced complexity debt; prior AI exposure may moderate gains through coordination/review costs. **Repository interpretation:** Positive AF activity and higher complexity can coexist. These estimates motivate a maintainability investigation without measuring its human cost or proving the coordination mechanism.
+
+Selection, imperfect PR/configuration attribution, unknown actual exposure/intensity and time-varying confounding restrict causal/general scope. In Figure 2/§4 (p4), IF complexity is already significantly elevated at t=−2; the authors acknowledge isolated pre-treatment warning/complexity coefficients as a design/data concern. Do not declare the parallel-trends assumption established. Short follow-up cannot settle lifecycle effects. Outcomes are not review hours, cognitive load, defect rates, functional correctness or TCO. No comparison labels entire codebases as purely AI- versus human-authored. Authors are affiliated with Carnegie Mellon University; no study-specific funding/conflict declaration was identified in the inspected text, which does not establish absence of conflicts.
+
+**Not established:** +39% debt per feature, universal harm from agents, a measured senior-review bottleneck, or that AF/IF class membership proves actual first AI use. The study's positive gains and inconclusive outcomes remain central, rather than being dismissed because they do not fit a single crisis narrative.
+
+## Repository use and placement
+
+- `report/01_the_illusion.md`: Ch1 adoption-mode table and limitations, transition/conclusion/references; Ch4 structural-risk hypothesis and bounded cross-reference.
+- `README.md`: Evidence Map brief navigation.
+- `REFERENCES.md`: versioned citation, conference metadata/access boundary and brief link.
+
+Detailed coefficients stay in this brief; the report retains the heterogeneous activity/structure result without repeating a false per-unit rate. The [#58 trace](../../governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md) records all-use and placement checks. **No protocol change:** local complexity/review/quality controls remain diagnostic proposed practices, not validated thresholds from this study.
+
+## Repository integration audit and independent review
+
+- Integration: In progress; Last verified: —. Final state requires separate review, merged corrections and main checks.
+- Primary agent: /root; flow: B. Separate reviewer requested after candidate preparation; outcome: Review unavailable (pending actual review).
+- Search/trace/synchronization: #58 record; final acceptance remains open.

@@ -106,3 +106,21 @@ release-controller or per-task acceptance machinery into this research repositor
 Use existing repository tests/gates, targeted RI regressions when RI changes and
 human source/argument review. Green structural validation cannot prove a number,
 causal conclusion or optimal placement.
+
+### Live-status checkpoint
+
+This checklist makes the existing AGENTS start/handoff/closure checks explicit;
+it does not add a flow, approval or source-state definition. At resumption and
+final acceptance, inspect the live owning issue (state, full ACs, latest evidence),
+linked PRs (head/base, merged SHA and review outcome), default-branch SHA and CI
+runs for that exact SHA. Compare canonical registry/brief fields and dates at
+that ref with the dated handoff. Record inspected URLs, refs, run conclusions,
+unavailable facts and the as-of checkpoint in the issue/review record.
+
+Refresh memory when the checkpoint changes. A merge awaiting verification is not
+completion; an old pending action must not be repeated unconditionally after its
+issue closes. Point to the live owner for subsequent status and use conditional
+next actions where a PR cannot record its own future merge. Rebuild/verify RI
+after memory changes. RI verifies local bytes and reproduces source fields; it
+does not fetch GitHub or decide whether an issue, review or scientific audit is
+complete. Missing live access stays unresolved.

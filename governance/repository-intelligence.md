@@ -99,3 +99,9 @@ and independent review remain separate checks.
 [Memory](memory.md) is a dated handoff checked for its five sections and 120-line
 bound. It cannot establish current GitHub state or supersede the owning issues.
 The research audit report is a task artifact, not a reviewed source brief.
+
+For a status check, query `перевірка статусу` and follow the
+[live-status checkpoint](issue-workflow.md#live-status-checkpoint). Inspect actual
+issue/PR/main/CI and canonical source fields at the checked ref, then refresh the
+dated memory. `verify` only proves the local generated surface matches its
+represented inputs; it cannot validate live task status or research conclusions.

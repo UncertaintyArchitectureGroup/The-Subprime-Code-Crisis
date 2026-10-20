@@ -1,0 +1,15 @@
+record_version = 1
+title = "Issue #58: Xu/Agarwal samples, metric units, uncertainty and bounded integration"
+primary_flow = "Flow B — Legacy sources P-2025-03/P-2026-02"
+human_decision = "Maintainer's 2026-10-20 evidence/numeric/placement/neutral-tone correction request, one-issue lifecycle and explicit instruction to do next planned issue with status checks. Exact #58 treatment and alternatives recorded before editing in issue comment 6297923181 and governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md. No canonical rule, flow, source-state definition, gate, approval, obligation or protocol change."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "Corrects material study population/units/uncertainty and relying conclusions; adds two briefs and an explicit existing live-status checkpoint."
+
+[synchronization]
+assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "report", "reader-navigation", "references", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No new contributor obligation or canonical process: supporting checklist, RI aliases/manual route and memory explain existing AGENTS start/handoff/closure checks. CONTRIBUTING already links these owners."
