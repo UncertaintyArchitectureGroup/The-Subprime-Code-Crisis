@@ -2,7 +2,7 @@
   "model_version": 1,
   "currency": "USD",
   "input_status": "hypothetical_not_empirical_estimates",
-  "notes": "All inputs are invented sensitivity choices, not vendor quotes, benchmarks, probabilities, or observed outcomes. Twelve paid months in each model year. New cash excludes existing staff valued in hours; allocation is memo only.",
+  "notes": "All inputs are invented sensitivity choices, not vendor quotes, benchmarks, probabilities, or observed outcomes. Twelve paid months in each model year. New cash excludes existing staff valued in hours; allocation is memo only. Cash outputs are gross additional outlays assuming zero avoided baseline expenditure; retired licenses/contracts and other cash reductions are excluded.",
   "scenarios": [
     {
       "id": "A_reuse_and_released_capacity",

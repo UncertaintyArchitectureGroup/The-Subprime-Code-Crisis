@@ -1,5 +1,10 @@
 # Issue #60: Astra analytical review and correction handoff
 
+**Later implementation:** [Sol's correction record](issue-60-2026-10-21-sol-corrections.md)
+contains the approved response and repeat-review evidence when available. This
+dated review's findings and original outcome remain historical, not silently
+changed to approve a later candidate.
+
 ## Decision and reviewed candidate
 
 **Outcome: Corrections required.** Review date: **2026-10-21, Europe/Warsaw**.

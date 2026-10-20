@@ -18,7 +18,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
-- Rebuilt the Chapter 2 cost argument around exact fiscal/accounting scope and conditional comparison; withdrew unsupported universal transformation ranges, platform budgets and timing. Astra review under #60 supports the retained source values and bounded illustration, but requires correction of a surviving categorical Chapter 3 conclusion and the quality comparator before analytical acceptance.
+- Rebuilt the Chapter 2 cost argument around exact fiscal/accounting scope and conditional comparison; withdrew unsupported universal transformation ranges, platform budgets and timing. Addressed Astra's #60 findings by making the relying Chapter 3 argument and Part 2/3 cost reprises conditional, correcting the quality comparator and explicitly excluding avoided baseline cash from the optional model. Independent acceptance and final integration state are recorded in the #60 review history.
 
 - Completed the two GitClear integration audits after independently Confirmed correction review and checked PR #70 default-branch integration; retained original-source discrepancies as explicit limits.
 

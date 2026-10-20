@@ -6,7 +6,7 @@
 *   [Chapter 1. What Productivity Studies Measure](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
 *   [Chapter 2. Evaluating the Cost of AI-Assisted Delivery](#chapter-2-evaluating-the-cost-of-ai-assisted-delivery)
-*   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-why-the-board-chooses-a-strategy-of-degradation)
+*   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-when-adoption-budgets-miss-delivery-work)
 *   [Chapter 4. A Review-Capacity Scenario](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
 ---
 
@@ -232,7 +232,7 @@ A decision record should distinguish:
 - additional or released engineering capacity from actual payroll/cash savings;
 - delivered benefits, quality, rework and risk over the same comparison boundary.
 
-This is a proposed measurement practice, not a validated universal operating model. If useful delivery improves at stable or lower comparable total cost and quality, that weakens the adverse cost scenario. If setup, supervision and rework exceed benefits, a deployment may require adjustment or rejection. The source records here do not assign relative probabilities or imply that every positive ROI claim is false.
+This is a proposed measurement practice, not a validated universal operating model. If useful delivery improves at stable or lower comparable total cost, with stable or improved quality, that weakens the adverse cost scenario. If setup, supervision and rework exceed benefits, a deployment may require adjustment or rejection. The source records here do not assign relative probabilities or imply that every positive ROI claim is false.
 
 A rollout could increase candidate work faster than a team can absorb it, so capacity and total cost should be measured alongside tool adoption. GitClear's selected added-line averages do not establish a universal 2x team-input increase, an 18-month maintenance bill or burnout.
 
@@ -249,23 +249,23 @@ A rollout could increase candidate work faster than a team can absorb it, so cap
 
 ---
 
-## Chapter 3. The "Free Lunch" Trap: Why the Board Chooses a Strategy of Degradation
+## Chapter 3. The "Free Lunch" Trap: When Adoption Budgets Miss Delivery Work
 
 Chapter 1 reports different task-time effects in different settings; it does not establish that senior engineers generally slow down. The business question is how adoption decisions account for such variation and for the conditional cost comparison discussed in Chapter 2. The market-pressure explanation below is a proposed mechanism, not a finding of the productivity experiments.
 
-The answer lies not in engineering, but in market pressure. We are witnessing a classic collision between the **Gartner Hype Cycle** and corporate budgeting reality.
+Market pressure is one possible influence on adoption budgets. It does not establish a capability shortfall or a need to redesign every team's operating model.
 
 ---
 
 ### The Mechanics of the "Execution Mandate"
 
-The disaster starts long before a developer installs an AI Code Assistant. It starts with the investors.
+The proposed mechanism begins when adoption expectations are set before the work and capability needed for a defined use case have been assessed.
 
 **Adoption-pressure hypothesis:** Headlines about large coding-task gains could encourage rapid rollout or cost-cutting expectations. The [bounded experiments in Chapter 1](#bounded-experiments-positive-negative-and-temporally-limited-evidence) do not measure investor pressure or establish enterprise savings. Evidence about adoption decisions and resulting delivery outcomes would be needed to test this mechanism.
 
-However, the Board faces a dilemma. They demand AI adoption, but they lack a clear understanding of the ROI or the complexity of the necessary transformation. They view AI as a tool (like a faster IDE), not as a change in the operating model.
+In this scenario, leadership approves adoption without assessing whether existing review, testing, integration and operating capability is sufficient. A license-only budget creates a gap if additional necessary work is identified and left unfunded; it may be adequate when the required capability already exists.
 
-Consequently, they refuse to allocate budget for a deep transformation (new roles, re-architecting processes, training agents). Instead, they issue what we call the **"Execution Mandate"**:
+An illustrative **"Execution Mandate"** might read as follows. This is an invented example, not a recorded board quotation:
 
 > *"Implement AI. Here is the budget for licenses. Here is a small budget for a prompt engineering workshop. Go."*
 
@@ -295,13 +295,13 @@ This gap between executive planning and technical reality is being acknowledged 
 
 This is where the **Subprime Crisis** ignites. Proponents like Horn see a vertical curve of *capability* and predict that the minority of manual coders will be *"smaller than anyone in a boardroom is currently planning for."* But when we intersect this "vertical curve" with **METR's March 2025 data** on *reliability* (a 50% failure rate for tasks requiring 7 hours of expert human work), the danger becomes clear.
 
-Boardrooms are planning for a linear, "horizontal" increase in efficiency. Meanwhile, the technology is delivering a vertical spike in **unverified complexity**. Horn's warning of **"vibe coding"** resulting in a *"patchwork of plausible code that ages badly"* confirms our thesis: without a total overhaul of the SDLC, we aren't accelerating engineering; we are accelerating **entropy**.
+Horn's description of a *"patchwork of plausible code that ages badly"* motivates a **capacity-risk hypothesis**: if admitted changes exceed a team's ability to understand and verify them, extra review and rework could outweigh coding gains. The amount of process change, if any, depends on the measured gap. Adequate existing controls, smaller changes or useful review assistance could preserve quality and delivery. The commentary and task-horizon claims above await their separate source audits (#61/#63).
 
 ---
 
 ### The Startup vs. Enterprise Paradox
 
-This "Execution Mandate" is particularly dangerous because it ignores context.
+This illustrative "Execution Mandate" can mislead when it ignores context.
 
 For an early-stage **Startup**, this strategy might actually work. Startups operate on a **"fail fast"** model. Their goal is to validate a hypothesis before they run out of cash. If the code is messy but the product finds product-market fit, they survive to rewrite it.
 
@@ -327,11 +327,11 @@ Deloitte's 2025 enterprise survey corroborates this shift: organizations are mov
 
 ---
 
-### Conclusion: The Strategy of Degradation
+### Conclusion: Test the Capability Gap Before Prescribing Transformation
 
-The **"Free Lunch"** trap is the belief that you can get the benefits of AI (speed) without paying the price (process transformation).
+The **"Free Lunch"** trap is a conditional budget error: assuming tool-level gains will reach delivery without checking any additional work required for the chosen use case. The absence of a large transformation programme does not establish that error.
 
-The Board has successfully optimized the cheapest part of the SDLC — **typing** — while ignoring the most expensive part — **thinking**. Until leadership understands that AI requires a fundamental shift in *how* we build, not just *what tools* we use, they will continue to fund the degradation of their own assets.
+Where measured review, integration or maintenance needs exceed existing capability, targeted process or capacity changes may be justified. If existing capability is sufficient and useful delivery improves at comparable or lower total cost, with stable or improved quality, that weakens the adverse scenario. No universal ranking of typing and thinking costs, or minimum transformation spend, follows from the sources in Chapter 2.
 
 ---
 

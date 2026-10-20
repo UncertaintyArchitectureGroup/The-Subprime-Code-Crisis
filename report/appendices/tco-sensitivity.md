@@ -16,12 +16,19 @@ active use, contract/usage charges and new work actually needed. A team reusing
 an effective platform may need little new setup; another may incur substantial
 integration or verification work. Neither is established by corporate R&D totals.
 
-This calculator shows **incremental cash** and a separate **capacity-valued
+This calculator shows **gross additional cash** and a separate **capacity-valued
 engineering-time delta**. It does not compute the full baseline TCO, business
 benefit, defects, risk loss or ROI. To assess total economics, combine a compatible
 baseline and measured deltas, then evaluate delivered benefits and quality. Do
 not add a cash-only baseline to a capacity-valued result without reconciling the
 basis.
+
+The cash calculation assumes **zero avoided baseline expenditure**. Retired
+licenses, cancelled contracts and other cash reductions are excluded; subtract
+independently established reductions before interpreting a local net cash change.
+The JSON `cash_increment_*` fields hold these gross additions under that
+assumption. Combining them with capacity value does not account for omitted cash
+reductions or delivered business benefits.
 
 ## Parameters and accounting boundary
 
@@ -51,8 +58,8 @@ the cash cost avoided.
 
 Let annual license cash `L = 12 × N × p`.
 
-- First-year extra cash: `C1 = L + U + O`.
-- Steady-year extra cash: `Cs = L + O`.
+- First-year gross additional cash: `C1 = L + U + O`.
+- Steady-year gross additional cash: `Cs = L + O`.
 - Capacity-valued deltas: `V1 = w × (S + H)`; `Vs = w × H`.
 - Optional cash-plus-capacity comparison: `D1 = C1 + V1`; `Ds = Cs + Vs`.
 - Existing allocated cost memo: `M = B × a`, excluded from C/V/D.
@@ -83,8 +90,8 @@ Replace them with local evidence before using the model for a decision.
 | Conditional output | A | B | C |
 | --- | --- | --- | --- |
 | Annual license cash L | $240,000 | $240,000 | $240,000 |
-| First-year incremental cash C1 | $290,000 | $480,000 | $1,290,000 |
-| Steady-year incremental cash Cs | $270,000 | $330,000 | $490,000 |
+| First-year gross additional cash C1 | $290,000 | $480,000 | $1,290,000 |
+| Steady-year gross additional cash Cs | $270,000 | $330,000 | $490,000 |
 | First-year capacity value V1 | −$375,000 | $225,000 | $1,650,000 |
 | Steady-year capacity value Vs | −$450,000 | $0 | $900,000 |
 | Cash plus capacity D1 | −$85,000 | $705,000 | $2,940,000 |

@@ -4,8 +4,15 @@
 returned **Corrections required**. The retained source figures and bounded model
 are supported, but A60-01 identifies a surviving directly dependent Ch3
 conclusion omitted from this trace; A60-02 corrects the quality comparator.
-The dated Sol confirmations below are historical and remain bounded. Current
-seven-source integration/review state is Corrections required; #60 remains open.
+The dated Sol confirmations below are historical and remain bounded. At that
+checkpoint the seven-source integration/review state became Corrections required;
+the later correction record owns the current disposition. #60 remains open until
+accepted integration and final verification.
+
+**Correction candidate, 2026-10-21:** [Sol disposition and added occurrence trace](issue-60-2026-10-21-sol-corrections.md)
+cover H10–H14 and T06, resolving the omitted title/budget/Horn-inference/conclusion
+uses, quality comparator and cash boundary. Independent repeat outcome is not
+inferred from these edits; consult the later review record and live PR72.
 
 ## Scope, authority and live checkpoint
 

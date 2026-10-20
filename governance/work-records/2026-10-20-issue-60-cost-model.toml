@@ -1,8 +1,8 @@
 record_version = 1
 title = "Issue #60: exact cost sources and a conditional cash/capacity sensitivity candidate"
 primary_flow = "Flow B — legacy cost sources; explicit Flow A registration of two underlying originals"
-human_decision = "Maintainer's evidence/numeric/placement/neutral-tone correction and latest explicit Sol-implementation plus concrete Astra-handoff request. Start comment6299649422; pre-edit findings/treatment/alternatives6299802975. Implement a reversible scoped draft, not a presumed Astra economic/model/placement approval or new governance rule. Detailed trace and decision boundaries in governance/reviews/issue-60-2026-10-20-cost-audit.md."
-independent_review = "Corrections required"
+human_decision = "Maintainer authorized one-issue source/numeric/placement/neutral-tone corrections, separate review and completion/closure after accepted integration. Latest continue instruction follows the concrete Astra findings; correction start6303447479 and downstream-scope record6303602168. A60-01/02/03/04 follow the approved conditional cost treatment. Both independent Astra reviewers Confirmed bounded economics/inference/source placement at local59324326/treeb844181d; no merge or Verified is inferred. Full history: governance/reviews/issue-60-2026-10-21-sol-corrections.md."
+independent_review = "Confirmed"
 
 [changelog]
 decision = "Updated"
@@ -14,7 +14,7 @@ assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "referen
 [synchronization.non_applicable]
 contributor-guidance = "Model appendix documents reproduction/limits; no contributor obligation, required CI tier, source-state definition, canonical workflow or rule changes. Existing unittest discovery runs the new meaningful arithmetic/boundary tests."
 
-# Astra review 2026-10-21: Corrections required; A60-01 dependent economic
+# Historical initial Astra review 2026-10-21: Corrections required; A60-01 dependent economic
 # conclusion and A60-02 quality wording remain unresolved. A60-03 cash-offset
 # clarification is nonblocking. Retain the bounded illustration. See
 # governance/reviews/issue-60-2026-10-21-astra-review.md. Two independent reviewers
@@ -24,3 +24,14 @@ contributor-guidance = "Model appendix documents reproduction/limits; no contrib
 # correction candidate 9c5e12039b6a3895ae78c48157dd053b231faade, tree
 # dca2170547449cd11df55e590dcb9c88b431e6cc, on 2026-10-20 after R1/R2 re-review.
 # Original review/correction history and independent checks are in the audit.
+
+# Sol correction loop 2026-10-21, authorized by the maintainer's latest continue
+# instruction after the concrete Astra report; start comment6303447479.
+# A60-01/02 implemented; nonblocking A60-03 clarified without model/code changes.
+# At candidate514d014 independent_review retained Corrections required pending
+# the first repeat outcome; A60-04 was then found and corrected. Trace: reviews/issue-60-2026-10-21-sol-corrections.md.
+
+# Current repeat review 2026-10-21: both /root/astra_cost_economics and
+# /root/astra_cost_sources returned Confirmed for local59324326c2135860f332a820bf956eb7ec1f7e69
+# / treeb844181d7db07e5b4a35d2d9f37caca2ce3a5e79, bounded to #60.
+# Seven integrations In progress / — until accepted merge and checked main.
