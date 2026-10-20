@@ -63,3 +63,46 @@ earlier worktree digests.
 
 The independent outcome applies to implementation readiness. Canonical adoption
 and issue closure remain pending merge and the owners' acceptance checks.
+
+## Fresh issue #52 completion review
+
+The maintainer requested sequential completion: implementation, independent review,
+acceptance, then an evidence-backed issue report and closure. This pass owns #52;
+#47 and #53 retain their own acceptance and closure decisions.
+
+- Candidate initially inspected: `8fc0a4877b7036068c058072dd8121ad1663ead1`,
+  tree `55771b003e882558c80f3910e84ef6e3bf9f5f5f`.
+- Independent reviewer: `/root/independent_governance_review`.
+- Fresh outcome: **Corrections required**. Four criteria passed; the source-state
+  criterion had a test-contract defect. Runtime projection was correct.
+- Defect: the real-repository test fixed `P-2026-01` to `Verified`, turning a
+  historical research state into an RI invariant. A legitimate verification reset
+  would fail that permanent suite.
+- Reproduction: in an isolated full repository copy, reset the canonical NBER row
+  and brief front matter to `Needs re-verification` / `Last verified = —`.
+  The old real-adapter test failed precisely at the hardcoded assertion.
+- Correction: compare the real projection with the current canonical row; keep
+  fixed-state no-promotion checks in controlled fixtures. Add a fixture regression
+  that rejects stale context after a reset, then reproduces the reset/date on rebuild.
+- Production source states, findings and relying claims are unchanged.
+- Corrective smoke evidence: all 24 RI tests pass. The identical isolated canonical
+  reset that failed the old assertion now passes the corrected real-adapter test.
+- Corrective independent outcome: **Confirmed** by
+  `/root/independent_governance_review` at staged tree
+  `047f455eed71f6ce45c96bd48bc113a429a3758d`, compared with the initial candidate.
+  Reviewer independently reproduced old failure/new pass with evidence-state
+  integrity passing in the reset copy, and ran all **119 tests**, RI freshness
+  and staged diff checks. No material discrepancy remains.
+- Reviewed test blob: `836e0c806f55ee24af3dcaddf9c2bda08a4c6136`;
+  unchanged producer blob: `e09f938fe511cb7bd07452aa18737c37b9dce885`.
+- Only outcome metadata and derived RI follow this correction confirmation.
+  Final committed-head acceptance, merge and main evidence are recorded in issue
+  #52 and PR #56; earlier CI does not certify the corrected candidate.
+
+| Issue #52 acceptance ID | Independent result |
+| --- | --- |
+| AC-RI-01 — deterministic freshness and fallback | Pass |
+| AC-RI-02 — exact source/status reproduction | Pass, including verification reset; no production source change |
+| AC-RI-03 — routing and honest misses/ambiguity | Pass |
+| AC-RI-04 — path, mutation and isolation coverage | Pass |
+| AC-RI-05 — bounded subset and upstream provenance | Pass |

@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "70b5f7a6a300471b09565a8f008c9c95dd0ab09745bea82e99415e5d0eca4987",
+    "digest": "3f1ad19b091b661eb33c6bc55c8d576ef5ef400dadcf26e45490d5f3fe804c9c",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "ddde1c65172d6cee4f4180021eb363cb8a97fea59bc3ad440fde8d92c59ea690"
+        "sha256": "b5bfcb69cc41657824899c2c80ccaa415c09777c2f2688e9bac6b9c702dc8bb2"
       },
       {
         "path": "CITATION.cff",
@@ -212,7 +212,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "ff2c06ebb894020525b99e03df9a1422ae6b654fd575e1368925f2ff9bc17aef"
+        "sha256": "6b379304c08fae629c16e0419b1dfb6b8121530411e85a563bc6131bd505488e"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -242,7 +242,7 @@
       {
         "path": "governance/reviews/issue-52-2026-10-20-ri-review.md",
         "identity_mode": "content",
-        "sha256": "b8db9f207cec830d6c34e7f703d2ca1c24ea5d9a8d479613468acab7bb113935"
+        "sha256": "1dbd76b1eef18b36a9433e9cfb211a9b0691c55c3976f765dd6937a8a56c3ff9"
       },
       {
         "path": "governance/reviews/issue-53-2026-10-20-evidence-audit.md",
@@ -292,7 +292,7 @@
       {
         "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
         "identity_mode": "content",
-        "sha256": "70d02c0be90c648d361d7d2bd335fce836b2a70bbf568427ffaf0b253032dbe0"
+        "sha256": "a44fa5b8d04e0f66c1a638702fdc55c16555f3854f42faa54c097e9f87cf90b6"
       },
       {
         "path": "governance/work-records/README.md",
@@ -377,7 +377,7 @@
       {
         "path": "tests/test_repository_intelligence.py",
         "identity_mode": "content",
-        "sha256": "1f4bc8c38fcb6d4cbfd8d5d9c48f7fca281a69444d02c88808df294cc79980e5"
+        "sha256": "25a83ea4ccb388248f495b920b7bb38feb1d864856e509a79ebd72b41c1208b5"
       },
       {
         "path": "tools/RI-LICENSE.md",

@@ -42,3 +42,13 @@ evidence-indexes = "No brief, evidence-review result or integration decision cha
 # These reviews do not inherit the prior confirmation or authorize merge.
 # Site reference: 82b57b8948c6c30143213b846ee2848d06f8d200.
 # The audit is pre-integration analysis, not a source-state promotion or report edit.
+# Issue #52 completion pass, 2026-10-20: maintainer requests one issue at a time,
+# implementation, independent review, acceptance, merged-state evidence and closure.
+# Fresh review at 8fc0a4877b7036068c058072dd8121ad1663ead1 required removing a
+# historical Verified-state invariant from the RI tests. Runtime projection was
+# correct. The narrow correction and isolated reset regression were independently
+# Confirmed by /root/independent_governance_review at staged tree
+# 047f455eed71f6ce45c96bd48bc113a429a3758d against prior head 8fc0a4877b7036068c058072dd8121ad1663ead1.
+# Reviewer reran 119 tests, RI freshness and the old-failure/new-pass reset case.
+# Only confirmation metadata and derived RI follow that reviewed tree; final
+# committed-head and merged-main acceptance evidence belongs in issue #52/PR #56.

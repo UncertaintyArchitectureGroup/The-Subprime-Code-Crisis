@@ -119,6 +119,22 @@ class NavigationSafetyTests(unittest.TestCase):
         self.assertEqual({s["id"] for s in data["sources"]}, {"P-2025-01", "DS-2026-01"})
         self.assertEqual(ri.lookup(data, "джерела")["owner_candidates"][0]["path"], "evidence/SOURCES.md")
 
+    def test_verification_reset_is_reproduced_after_rebuild(self):
+        original = (self.root / "evidence/SOURCES.md").read_text()
+        verified = original.replace("| Registered | Not started | — |",
+                                    "| Reviewed brief | Verified | 2026-10-20 |", 1)
+        self.write("evidence/SOURCES.md", verified)
+        self.materialize()
+        reset = verified.replace("| Reviewed brief | Verified | 2026-10-20 |",
+                                 "| Reviewed brief | Needs re-verification | — |", 1)
+        self.write("evidence/SOURCES.md", reset)
+        with self.assertRaisesRegex(ValueError, "Stale or altered"):
+            ri.verify(self.root, self.cfg)
+        source = ri.lookup(self.materialize(), "P-2025-01")["sources"][0]
+        self.assertEqual(source["evidence_review"], "Reviewed brief")
+        self.assertEqual(source["integration_audit"], "Needs re-verification")
+        self.assertEqual(source["last_verified"], "—")
+
     def test_miss_and_generic_matches_do_not_invent_owners(self):
         data = self.materialize()
         self.assertEqual(ri.lookup(data, "completely unrelated")["status"], "unresolved-use-direct-search")
@@ -283,7 +299,10 @@ class NavigationSafetyTests(unittest.TestCase):
             self.assertTrue((REPO / item["path"]).is_file())
         if surface["repository"].endswith("The-Subprime-Code-Crisis"):
             s = next(s for s in surface["sources"] if s["id"] == "P-2026-01")
-            self.assertEqual(s["integration_audit"], "Verified")
+            # Current research state is data, not a permanent RI invariant.
+            row = next(line for line in (REPO / "evidence/SOURCES.md").read_text().splitlines()
+                       if line.startswith("| **P-2026-01** |"))
+            self.assertEqual(s["integration_audit"], row.split("|")[4].strip())
             self.assertEqual(ri.lookup(surface, "P-2026-01")["owner_candidates"][0]["path"],
                              "evidence/SOURCES.md")
         else:
