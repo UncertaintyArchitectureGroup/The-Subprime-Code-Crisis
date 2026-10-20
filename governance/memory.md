@@ -45,7 +45,8 @@
 - Correction main sources matched Reviewed brief/In progress/—/Confirmed with
   five actual current-use paths each. This final-state candidate records matching
   Verified/2026-10-20 after the completion checklist; no research changes.
-- Resulting metadata review/merge/main/CI/closure remain later live observations.
+- Final-state review Confirmed at35dc3a8/tree34c73496; PR #71 records it.
+  Resulting final merge/main/CI/closure remain later live observations.
   Canonical source state always belongs to SOURCES and briefs at the inspected ref.
 
 ## Next actions

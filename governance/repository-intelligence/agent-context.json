@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "77d35d9a86041a2583e9c6bd1af0202641e33c6bf3cebcc42b570f064aa9ce0a",
+    "digest": "7151337f07fc4908f69aceb0e6622a00d70a5e63a00d09f51160e2fc0b903d1c",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -247,7 +247,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "732d14a718196d81041c2e075ac37216081bd75bd241fd1ae0f07ce11e103cae"
+        "sha256": "565a11da61961db0233e99c8f33ac2b6c344d6b1bc6185e4348b398a720d5368"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -297,7 +297,7 @@
       {
         "path": "governance/reviews/issue-59-2026-10-20-gitclear-audit.md",
         "identity_mode": "content",
-        "sha256": "624510e935f040835637640ed1cf01c7b437b84c862728d4bb55abc39b2b26b2"
+        "sha256": "f22b61febad050b86a638a3c4e0507af6fd2c39b84da2aeb64014d53d1aaffe3"
       },
       {
         "path": "governance/status-model.md",
@@ -367,7 +367,7 @@
       {
         "path": "governance/work-records/2026-10-20-issue-59-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "9fc2ceb32ced9f3b864910d1767f3762ccf88eeb6510a6e15db3dbae24d7c9a1"
+        "sha256": "55f9ecd3b394b7085f04e41af705f8479309f8dd96c36e12362bee68f58d6ef1"
       },
       {
         "path": "governance/work-records/2026-10-20-issue-59-gitclear.toml",
