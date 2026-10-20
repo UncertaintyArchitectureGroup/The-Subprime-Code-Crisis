@@ -16,6 +16,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
+- Completed the two GitClear integration audits after independently Confirmed correction review and checked PR #70 default-branch integration; retained original-source discrepancies as explicit limits.
+
 - Separated GitClear's historical operation/clone sample from developer-output cohorts; corrected clone year/units and composite arithmetic, retained positive output, and bounded the relying staffing, maintenance, context and review-automation conclusions. Source inconsistencies are disclosed rather than silently reconciled.
 - Completed Xu/Agarwal integration verification after independently Confirmed corrections merged in PR #68 and the exact default branch passed acceptance; source-specific design, edition and reporting uncertainties remain explicit.
 - Corrected Xu's OSS sample, activity-quartile and review/rework units; preserved positive project activity and the uncertain core review-count result. Separated Agarwal's AF/IF repository-month effects from per-feature debt, functional correctness and measured cognitive-load claims; replaced the relying cross-study chain with a conditional scenario.

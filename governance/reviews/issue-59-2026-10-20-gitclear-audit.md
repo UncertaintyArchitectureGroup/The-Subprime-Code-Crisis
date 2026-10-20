@@ -108,3 +108,35 @@ Initial candidate checkpoint: primary author /root; independent reviewer pending
 - Previously Verified source briefs and empirical report windows compared with b753486 and unchanged; no unwarranted state reset/promotion.
 - Independent contract/state/RI (both contexts, five current-use paths each), all119tests, trusted-base Repository Gate/evidence transitions and whitespace passed. Exact-head PR CI: Repository Gate39482420475/Main health39482420483 success.
 - Primary acceptance agrees with this evidence and AC-01–05 implementation; source states remain Reviewed brief/In progress/—/Confirmed. Resulting review metadata will be checked separately; actual merge/main/CI/final-state/closure are pending observations.
+
+
+### Checked correction main and final-state acceptance — 2026-10-20
+
+PR #70 merged at **`69c8a1b20ce2404ab6b2e65f6315669f08975cf7`**, tree **`2d1b471f9d642283c1650644746c8659d4022329`**, identical to separately Confirmed metadata candidate `62c80eafce7992838e2b3a5562633a75c2dc2eef` (review outcome Confirmed, no findings). Research/report/bibliography bytes remain those confirmed at f278d6f. Latest ready-for-review Repository Gate39483174628 and exact-head Main health39483075536 passed before merge. Actual merged-main [Main health39483238001](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39483238001) succeeded at that exact SHA. Local checked-main119tests/contract/evidence-state/RI passed; both sources matched Reviewed brief/In progress/—/Confirmed with five actual current-use paths each. Main-health does not run trusted transitions: those separately passed from b753486 policy/base during correction/review.
+
+This final-state candidate records matching Verified/2026-10-20 fields only after that completed correction state. It does not change research, interpretations, current-use paths, protocols or source identities. Final metadata review, resulting merge/main/CI and issue closure are subsequent live facts, not predicted here.
+
+Integration-audit completion checklist, applied separately to P-2025-04 and P-2025-05:
+
+- [x] Current AGENTS and mandatory playbooks read before work; independent reviewer did likewise.
+- [x] Correct original versions, publication status and ground truth checked; complete originals reopened independently.
+- [x] Two reviewed, indexed briefs exist, not a crossed dataset/citation.
+- [x] Every mention/number/uncited dependent summary/diagram/caption/protocol dependency searched and inspected.
+- [x] Q01–QP23 occurrence trace records wording, units, fit and better destination.
+- [x] Numerators/denominators/units/populations/windows/uncertainty/derived arithmetic checked independently.
+- [x] Claims and nearby conclusions bounded to descriptive samples or explicit testable hypotheses.
+- [x] All report parts and README text/tables/maps/neighbors assessed; broader owners retained.
+- [x] Exactly one protocol outcome: No protocol change, with per-protocol reasons above.
+- [x] Existing explicit maintainer treatment/one-issue authorization recorded before edits, comments6298929074/6299079326.
+- [x] Five actual Current use paths for each source match registry/brief and inspected uses.
+- [x] Briefs/registry/index/REFERENCES/links/versions/removed claims synchronized; historical work records intact.
+- [x] Research and resulting metadata review separately Confirmed by /root/review_issue59.
+- [x] Brief/registry fields and dates match; correction main honestly In progress/—, final-state candidate Verified/2026-10-20 based on checked merged corrections.
+- [x] No outstanding repository correction or human decision; unresolved original reporting conflicts remain disclosed limits and disputed estimates are withheld.
+
+AC-01–05 content implementation and independent review are accepted on checked correction main. The issue stays open pending this final-state candidate's separate review and actual resulting main/CI/state acceptance. Confirmation concerns accurate bounded integration; it cannot establish raw-data validity, industry representativeness, causal AI benefit/harm or whole-report verification. Next owner after completed #59 is #60, not a new cost claim in this PR.
+
+
+### Independent final-state review — 2026-10-20
+
+/root/review_issue59 **Confirmed** final-state `35dc3a8e2acf02ea4aa6c90125da9edfb1aa67ca`, tree `34c734965d13e704d732e02ddaa66bef6a1ed9ef` (independently checked identical remote PR #71 head `b1a26ce7415097edfade1c2811dbc73745d69fff`). Reopened actual PR #70/main69c8a1b/CI39483238001 including successful steps; verified two precise final states/dates, all15completion gates, unchanged source research/identities/current-use/report/protocol/bibliography/index and conditional five-section memory. No material finding or additional decision. Independent119tests/contract/state/RI/whitespace/trusted correction-main Gate/transitions passed; both RI contexts matched final fields; exact initial final-head Repository Gate39483640797 passed. Primary agrees. The new work record now records this actual outcome; final resulting-head gates, merge/main/CI and closure remain subsequent live observations at #59/PR #71, not facts inferred from this review.
