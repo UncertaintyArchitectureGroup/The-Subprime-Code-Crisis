@@ -28,6 +28,9 @@ Each brief should include:
 
 ## Current briefs
 
+- [Google engineering practices (2020)](2020-google-engineering-practices.md) — historical human/tooling context, no platform-cost estimate.
+- [Alphabet CY2024](2024-alphabet-financial-context.md), [Meta CY2024](2024-meta-financial-context.md) and [Microsoft FY2024](2024-microsoft-financial-context.md) — exact company-wide accounting lines, periods and limits.
+
 - [`terminology-provenance.md`](terminology-provenance.md) — early located public uses of **Subprime Code** and **The Subprime Code Crisis**, with explicit limits on claims of coinage, influence, and conceptual identity.
 - [`project-provenance.md`](project-provenance.md) — dated public lineage of this repository's own delivery-system formulation: the 2026-01-05 DOU precursor and discussion, 2026-02-06 GitHub repository creation, and 2026-02-10 Subprime Code publication.
 

@@ -1,0 +1,19 @@
+record_version = 1
+title = "Issue #60: exact cost sources and a conditional cash/capacity sensitivity candidate"
+primary_flow = "Flow B — legacy cost sources; explicit Flow A registration of two underlying originals"
+human_decision = "Maintainer's evidence/numeric/placement/neutral-tone correction and latest explicit Sol-implementation plus concrete Astra-handoff request. Start comment6299649422; pre-edit findings/treatment/alternatives6299802975. Implement a reversible scoped draft, not a presumed Astra economic/model/placement approval or new governance rule. Detailed trace and decision boundaries in governance/reviews/issue-60-2026-10-20-cost-audit.md."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "Corrects historical accounting/source units and relying cost claims; adds separate source briefs and reproducible explicitly hypothetical sensitivity analysis."
+
+[synchronization]
+assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "references", "report", "reader-navigation", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "Model appendix documents reproduction/limits; no contributor obligation, required CI tier, source-state definition, canonical workflow or rule changes. Existing unittest discovery runs the new meaningful arithmetic/boundary tests."
+
+# Astra's economic/model-choice/placement acceptance remains an explicit pending
+# issue-specific handoff. No merge-readiness, completion, Verified or closure is
+# inferred from implementation checks or an independent execution review.

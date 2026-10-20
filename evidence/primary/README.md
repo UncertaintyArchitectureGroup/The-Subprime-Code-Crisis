@@ -26,3 +26,6 @@ Eligible materials include:
 A source's inclusion here does not imply that every claim in the source is correct or that its results generalize universally. Each brief must state publication status, research design, scope, measured findings, model-derived findings, and limitations.
 
 Do not place the repository's own conclusions in this directory unless they are clearly labeled as **repository interpretation**.
+
+- [Menlo 2025 enterprise AI market estimates](2025-menlo-enterprise-ai-spend.md) — revised market boundary, derived growth and estimation limits.
+- [CloudZero 2025 AI budget intentions](2025-cloudzero-ai-budget-intentions.md) — respondent reports/plans and unresolved percentage/threshold discrepancy.

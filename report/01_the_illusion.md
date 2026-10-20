@@ -5,7 +5,7 @@
 **Table of Contents:**
 *   [Chapter 1. What Productivity Studies Measure](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
-*   [Chapter 2. The Missing Price Tag](#chapter-2-the-missing-price-tag-the-true-cost-of-making-ai-work)
+*   [Chapter 2. Evaluating the Cost of AI-Assisted Delivery](#chapter-2-evaluating-the-cost-of-ai-assisted-delivery)
 *   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-why-the-board-chooses-a-strategy-of-degradation)
 *   [Chapter 4. A Review-Capacity Scenario](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
 ---
@@ -197,124 +197,61 @@ The practical implication is to measure the complete delivery boundary while ret
 
 ---
 
-## Chapter 2. The Missing Price Tag: The True Cost of Making AI Work
+## Chapter 2. Evaluating the Cost of AI-Assisted Delivery
 
-*The preceding chapter addressed what the data shows engineers on the ground. This chapter addresses what the data means for the business — specifically, for the executives and financial officers who approve AI budgets without visibility into the full cost of making those budgets productive.*
+A coding-tool invoice is one input to a delivery decision. The relevant comparison is a defined use case with and without assistance, at comparable quality and scope, including benefits and any additional work. Neither corporate spending totals nor faster code production determines the result for another organization.
 
----
+### Historical Engineering Context
 
-Large technology companies often point out that they successfully use these tools internally. There is little reason to doubt this claim. However, what is rarely discussed is the full cost structure behind that success.
+Google’s *Software Engineering at Google* was published in **March 2020**. Chapter 23 describes TAP running **more than four billion individual test cases daily**; Chapters 9/19 describe human review supported by Critique, and Chapter 20 describes static analysis and its tradeoffs. These are historical practice descriptions, not current universal limits or evidence that automation eliminates human judgment. The [documentary brief](../evidence/documentary/2020-google-engineering-practices.md) gives exact sections and boundaries.
 
-Such organizations operate with exceptional engineering maturity. They have invested heavily over many years in internal platforms, architectural governance, and review automation that absorb the additional complexity introduced by AI. This is not a minor operational detail. It is the foundation upon which any "AI productivity gain" is built.
+This example shows a surrounding engineering system, without pricing it or proving that every AI deployment needs a comparable platform. The former exact 4.2-billion count, billion-dollar platform estimates and construction timelines were not established by the inspected source and are withdrawn.
 
----
+Alphabet, Meta and Microsoft report substantial company-wide research expenses and cash investment. Those amounts cover many businesses and assets; they are not budgets for verifying AI-generated code. Their exact 2024 statement lines, Meta’s lease-principal reconciliation and Microsoft’s different fiscal period belong in the [historical cost-context appendix](appendices/cost-context.md#company-wide-2024-records). They do not calibrate a customer’s adoption budget or establish the cause of an internal productivity gain.
 
-### The Invisible Infrastructure
+### Build a Conditional Budget
 
-Consider the engineering infrastructure that existed at Google **before** a single line of AI-assisted code was ever written:
+The former **$7–27M transformation table**, **30–120-times license multiplier** and **1–3% license share** did not have a traceable empirical basis for their scope, timing or incremental allocation. They are withdrawn as benchmarks. Adding one-time programs to recurring labor and comparing the sum with one year of licenses does not establish a universal cost requirement.
 
-- **Blaze/Bazel:** A build system engineered over a decade to handle a monorepo of billions of lines of code.
-- **TAP (Test Automation Platform):** An infrastructure running approximately 4.2 billion test executions per day — a system that took over 15 years and, by reasonable estimates, well over **$1 billion** to build and maintain.
-- **Critique:** An internal code review platform with deep integration into static analysis, style enforcement, and automated checks — replacing any need for a human to catch the kind of "plausible lies" that AI generates.
-- **Tricorder:** A static analysis framework that automatically flags issues before a reviewer ever sees the code.
+The [conditional sensitivity appendix](appendices/tco-sensitivity.md) instead exposes hypothetical paid seats, price, new external setup, annual cash, already-funded staff effort and existing-platform allocation. It separates the first year from a subsequent steady year and allows released capacity as well as added effort. Every input is an explicit assumption; no market price, forecast or typical-enterprise estimate is implied. The examples reproduce arithmetic, not a measured ROI or complete TCO.
 
-These systems are documented extensively in Google's own engineering publications. They represent a cumulative investment of **10–15 years** and, conservatively, **$1–3 billion** in dedicated platform engineering. And this is just one company.
+Some teams may reuse sufficient capability and realize net benefits; others may need additional investment or face more rework. A local baseline and measured change distinguish those cases. An existing platform’s allocated cost should be visible, but relabeling its entire sunk or already-funded cost as a new AI expense would overstate the incremental budget.
 
-Microsoft maintains **1ES (One Engineering System)** and **CodeFlow**. Meta has rebuilt its internal developer platform multiple times. The R&D expenditures that fund these systems are staggering:
+### Market Spending Is Different from Local Economics
 
-| Company | Annual R&D (CY2024) | Annual CapEx (CY2024) | CapEx Plans (2025) |
-|---|---|---|---|
-| Alphabet (Google) | $45.4B | $52.5B | ~$75B |
-| Meta | $44.4B | $39.2B | $60–65B |
-| Microsoft | $29.5B (FY2024) | $44.5B (FY2024) | ~$80B |
+[Menlo’s original 2025 report](../evidence/primary/2025-menlo-enterprise-ai-spend.md) combines a U.S. enterprise survey with market sizing. Its estimated spending growth uses a revised historical boundary, not a sample of software-maintenance bills. [CloudZero’s original survey](../evidence/primary/2025-cloudzero-ai-budget-intentions.md) contrasts retrospective spending reports with future budget intentions, and contains an unresolved percentage/threshold discrepancy. The [context appendix](appendices/cost-context.md) preserves exact figures, methods and limits. Both sources also report positive adoption/value perceptions; spending growth alone is not evidence of waste.
 
-*Sources: Alphabet 10-K (CY2024); Meta 10-K (CY2024); Microsoft 10-K (FY2024, ended June 2024). Note: Microsoft's fiscal year ends June 30; CY2024 run rate CapEx is substantially higher (~$64B annualized based on H1 FY2025 spending). 2025 CapEx plans per company earnings calls and Financial Times reporting.*
+Artur Markus’s [2026 practitioner commentary](../evidence/secondary/2026-inference-cost-commentary.md) proposes a Jevons-style demand rebound. That is a possible interpretation, not proof that cheaper tokens caused code debt or higher verification costs. A matched price, capability, volume and outcome comparison is needed to separate demand expansion from price, mix, new useful applications or rework. The former +320% and same-period 1,000-fold retellings are not adopted.
 
-When Sundar Pichai tells investors that AI provides a "10% productivity gain," that gain is measured **on top of** this multi-billion-dollar foundation. It is not a gain from the AI license alone. It is a gain from the AI license **plus** decades of infrastructure investment that makes safe adoption possible.
+### Measure Costs and Delivered Value Together
 
----
+A decision record should distinguish:
 
-### The Transformation Multiplier
+- new license/usage, setup and recurring cash costs from existing funded capability;
+- one-time work from recurring operations, with paid seat count and period;
+- additional or released engineering capacity from actual payroll/cash savings;
+- delivered benefits, quality, rework and risk over the same comparison boundary.
 
-When the same AI tools are sold externally — to organizations that lack this surrounding operational model — the market creates a dangerous illusion: that comparable results can be achieved primarily through license adoption.
+This is a proposed measurement practice, not a validated universal operating model. If useful delivery improves at stable or lower comparable total cost and quality, that weakens the adverse cost scenario. If setup, supervision and rework exceed benefits, a deployment may require adjustment or rejection. The source records here do not assign relative probabilities or imply that every positive ROI claim is false.
 
-Let us quantify this illusion. The direct cost of AI tooling for a mid-size enterprise (1,000–5,000 engineers) is trivial:
-
-> **GitHub Copilot Business:** $19/user/month ≈ **$228K/year** for 1,000 engineers.
-
-Now consider the actual cost of building the infrastructure required to safely absorb the complexity that AI introduces. The following estimates are based on our analysis of publicly available infrastructure costs, industry benchmarking data, and enterprise transformation case studies. They represent order-of-magnitude ranges, not precise figures:
-
-| Transformation Component | Estimated Cost | Timeline |
-|---|---|---|
-| CI/CD modernization & automated quality gates | $2–10M | 6–18 months |
-| Code quality & security scanning (SonarQube, Semgrep) | $500K–2M | 3–6 months |
-| RAG infrastructure for contextual AI review | $1–5M | 6–12 months |
-| Developer training & process redesign | $1–3M/year | Ongoing |
-| Additional senior engineers for review capacity | $2–5M/year | Ongoing |
-| Architectural governance & compliance frameworks | $500K–2M | 3–6 months |
-| **Total (Year 1)** | **$7–27M** | — |
-
-This produces a ratio that should alarm any CFO:
-
-$$\text{Transformation Multiplier} = \frac{\text{Real Transformation Cost}}{\text{License Cost}} = \frac{\$7\text{–}27M}{\$228K} \approx 30\text{–}120\times$$
-
-**The license is 1–3% of the real cost of making AI work safely.** The remaining 97–99% — the transformation bill — is invisible on every vendor pitch deck.
-
----
-
-### The Jevons Paradox of AI Code
-
-The situation is worse than a one-time bill. Enterprise AI spending data reveals a troubling dynamic: even as the unit cost of AI drops, total spending accelerates.
-
-According to 2025 market data, enterprise generative AI spending surged from **$11.5B (2024)** to **$37B (2025)** — a **320% increase** — despite per-token inference costs dropping by approximately **1,000x** over the same period. The average monthly AI budget per organization rose 36% to **$85,521/month**, with **45%** of organizations now spending over **$100K/month**.
-
-This is a textbook **Jevons Paradox**: cheaper AI per unit → more AI consumed → more infrastructure required to govern it → higher total cost. The "savings" from cheaper tokens are consumed — and then exceeded — by the expanding blast radius of AI-generated complexity across the organization.
-
----
-
-### The License Is Visible. The Transformation Bill Is Not.
-
-This asymmetry is the engine of the crisis. When a Board approves an AI budget, they see a line item:
-
-> ✅ **AI Licenses:** $228K/year — *Approved.*
-
-What they do not see is the operational debt they are implicitly authorizing:
-
-> ❌ **Infrastructure to safely absorb AI output:** $7–27M — *Not requested. Not funded. Not discussed.*
-
-A rollout could increase candidate work faster than a team can absorb it, so capacity and total cost should be measured alongside tool adoption. GitClear's selected added-line averages do not establish a universal 2x team-input increase, an 18-month maintenance bill or burnout. The separate transformation-cost estimates above require their own economic-source review (#60).
-
-Until the industry develops transparent TCO models for AI-assisted development — models that include the full cost of governance, verification, and process transformation — every "AI ROI" calculation presented to a Board is, at best, incomplete, and at worst, a fiction.
-
----
-
-### The Challenge to Vendors
-
-If AI Code Assistants are as mature and universally beneficial as current messaging implies, the path forward should be straightforward.
-
-Instead of investing predominantly in adoption campaigns, we challenge vendors to allocate capital to **independent, objective research**. Fund university or neutral industry groups to study real teams working on real backlogs, measuring concrete indicators such as cycle time, defect rates, rework, and maintenance cost across diverse organizations over an extended period.
-
-The absence of such evidence does not imply malicious intent. However, it leaves the industry operating in a critical evidence gap. Until rigorous, independent data is available, a prudent conclusion remains unavoidable:
-
-**Without corresponding changes to the operating model, AI Code Assistants are unlikely to deliver net positive outcomes at the system level — and may actively increase long-term cost and risk.**
-
----
+A rollout could increase candidate work faster than a team can absorb it, so capacity and total cost should be measured alongside tool adoption. GitClear's selected added-line averages do not establish a universal 2x team-input increase, an 18-month maintenance bill or burnout.
 
 #### References
 
-* **Google Software Engineering (O'Reilly):** [Software Engineering at Google](https://abseil.io/resources/swe-book) — Detailed documentation of Google's internal infrastructure (Blaze, TAP, Critique, Tricorder) built over 15+ years, representing billions in platform investment.
-* **Alphabet 10-K (CY2024):** [SEC Filing, goog-20241231](https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm) — R&D $45.4B, CapEx $52.5B. 2025 CapEx guidance ~$75B.
-* **Meta 10-K (CY2024):** [Investor Relations](https://investor.fb.com/) — R&D $44.4B, CapEx $39.2B. 2025 CapEx guidance $60–65B.
-* **Microsoft 10-K (FY2024):** [Investor Relations](https://www.microsoft.com/en-us/investor) — R&D $29.5B, CapEx $44.5B. FY ends June 30; H1 FY2025 run rate substantially higher. 2025 CapEx guidance ~$80B.
-* **Big Tech 2025 AI Spending:** [Financial Times via delo.ua](https://delo.ua/news/amazon-meta-microsoft-ta-alphabet-vitratyat-300-mlrd-na-si-u-2025-roci-441442) — Amazon, Meta, Microsoft, and Alphabet plan combined CapEx exceeding $320B in 2025, up from $246B in 2024 (+63% YoY from $151B in 2023).
-* **Enterprise AI Spending (2025):** [The Inference Cost Paradox: Why Generative AI Spending Surged 320%](https://www.arturmarkus.com/the-inference-cost-paradox-why-generative-ai-spending-surged-320-in-2025-despite-per-token-costs-dropping-1000x-and-what-it-means-for-your-ai-budget-in-2026/) — Jevons Paradox in action: per-token costs down 1000x, total enterprise spend up from $11.5B to $37B. Average monthly AI budget per org: $85,521.
-* **Enterprise AI TCO (2025):** [Total Cost of Ownership for Enterprise AI](https://xenoss.io/blog/total-cost-of-ownership-for-enterprise-ai) — Framework for hidden costs beyond API bills: data engineering, RAG infrastructure, MLOps, governance, compliance.
-* **Frontier Model Training Costs:** [How Much Does It Cost to Train Frontier AI Models?](https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models) — Training costs growing at 2.4x/year; largest runs projected to exceed $1B by 2027.
+- **Google, March 2020:** [Engineering-practices brief](../evidence/documentary/2020-google-engineering-practices.md), Chapters 9/19/20/23 — historical tooling and human review, not a platform budget.
+- **Alphabet CY2024:** [Exact filing and accounting-line brief](../evidence/documentary/2024-alphabet-financial-context.md).
+- **Meta CY2024:** [Exact filing and lease-principal reconciliation](../evidence/documentary/2024-meta-financial-context.md).
+- **Microsoft FY2024, ended 30 June:** [Exact annual-report lines and fiscal boundary](../evidence/documentary/2024-microsoft-financial-context.md).
+- **Menlo, 9 December 2025:** [Original market-model brief](../evidence/primary/2025-menlo-enterprise-ai-spend.md).
+- **CloudZero, March 2025 survey:** [Original budget-intentions brief](../evidence/primary/2025-cloudzero-ai-budget-intentions.md).
+- **Markus, 2 January 2026:** [Secondary interpretation and original-source corrections](../evidence/secondary/2026-inference-cost-commentary.md).
+- **Repository analysis:** [Hypothetical sensitivity model](appendices/tco-sensitivity.md) — explicit inputs, formulas, outputs and reproduction.
+
 ---
 
 ## Chapter 3. The "Free Lunch" Trap: Why the Board Chooses a Strategy of Degradation
 
-Chapter 1 reports different task-time effects in different settings; it does not establish that senior engineers generally slow down. The business question is how adoption decisions account for such variation and for the transformation costs discussed in Chapter 2. The market-pressure explanation below is a proposed mechanism, not a finding of the productivity experiments.
+Chapter 1 reports different task-time effects in different settings; it does not establish that senior engineers generally slow down. The business question is how adoption decisions account for such variation and for the conditional cost comparison discussed in Chapter 2. The market-pressure explanation below is a proposed mechanism, not a finding of the productivity experiments.
 
 The answer lies not in engineering, but in market pressure. We are witnessing a classic collision between the **Gartner Hype Cycle** and corporate budgeting reality.
 
@@ -332,7 +269,7 @@ Consequently, they refuse to allocate budget for a deep transformation (new role
 
 > *"Implement AI. Here is the budget for licenses. Here is a small budget for a prompt engineering workshop. Go."*
 
-This appears to be the "safe" strategy. It's low cost (CapEx) and easy to implement. But in reality, it is a strategic error of massive proportions. By funding the *generation* of code without funding the *management* of code, the Board has authorized a sustained volume increase that far exceeds their engineering team's processing capacity — with no plan to close the gap.
+A license-only budget can omit additional work needed for a particular rollout. A subscription is not automatically a capital investment, and approving licenses does not itself establish a volume increase or a capacity shortfall. Chapter 2 proposes comparing incremental costs, reused capability and delivered benefits; the governance-risk mechanism here requires separate observations.
 
 ---
 
@@ -344,7 +281,7 @@ McKinsey's 2025 global survey on the state of AI in the enterprise found that **
 
 This is the "Execution Mandate" rendered in aggregate data. Nearly nine out of ten companies have bought the licenses. Fewer than one in fifteen can demonstrate that the investment is paying for itself.
 
-The 82-percentage-point gap between adoption and impact is not a mystery. It is the predictable result of what Chapter 2 quantified: organizations are funding 1–3% of the real cost of making AI productive (the license) while leaving the remaining 97–99% (the transformation) unaddressed.
+The reported adoption/impact difference does not identify a missing-cost share or its cause. Chapter 2 no longer claims that licenses fund only 1–3% of a universal transformation budget. A hypothesis about underfunded integration would need local budgets and outcomes; the survey definitions and figures above remain subject to their separate source audit (#61).
 
 ---
 

@@ -1,0 +1,40 @@
+{
+  "model_version": 1,
+  "currency": "USD",
+  "status": "illustrative_cash_and_capacity_deltas_not_total_tco_or_roi",
+  "results": [
+    {
+      "id": "A_reuse_and_released_capacity",
+      "license_annual_usd": "240000.00",
+      "cash_increment_y1_usd": "290000.00",
+      "cash_increment_steady_year_usd": "270000.00",
+      "capacity_delta_y1_usd": "-375000.00",
+      "capacity_delta_steady_year_usd": "-450000.00",
+      "cash_plus_capacity_delta_y1_usd": "-85000.00",
+      "cash_plus_capacity_delta_steady_year_usd": "-180000.00",
+      "existing_platform_allocation_memo_usd": "150000.00"
+    },
+    {
+      "id": "B_new_setup_flat_recurring_effort",
+      "license_annual_usd": "240000.00",
+      "cash_increment_y1_usd": "480000.00",
+      "cash_increment_steady_year_usd": "330000.00",
+      "capacity_delta_y1_usd": "225000.00",
+      "capacity_delta_steady_year_usd": "0.00",
+      "cash_plus_capacity_delta_y1_usd": "705000.00",
+      "cash_plus_capacity_delta_steady_year_usd": "330000.00",
+      "existing_platform_allocation_memo_usd": "150000.00"
+    },
+    {
+      "id": "C_new_setup_and_added_effort",
+      "license_annual_usd": "240000.00",
+      "cash_increment_y1_usd": "1290000.00",
+      "cash_increment_steady_year_usd": "490000.00",
+      "capacity_delta_y1_usd": "1650000.00",
+      "capacity_delta_steady_year_usd": "900000.00",
+      "cash_plus_capacity_delta_y1_usd": "2940000.00",
+      "cash_plus_capacity_delta_steady_year_usd": "1390000.00",
+      "existing_platform_allocation_memo_usd": "150000.00"
+    }
+  ]
+}

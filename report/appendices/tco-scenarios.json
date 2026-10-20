@@ -1,0 +1,44 @@
+{
+  "model_version": 1,
+  "currency": "USD",
+  "input_status": "hypothetical_not_empirical_estimates",
+  "notes": "All inputs are invented sensitivity choices, not vendor quotes, benchmarks, probabilities, or observed outcomes. Twelve paid months in each model year. New cash excludes existing staff valued in hours; allocation is memo only.",
+  "scenarios": [
+    {
+      "id": "A_reuse_and_released_capacity",
+      "seats": 1000,
+      "license_usd_per_seat_month": "20",
+      "new_external_setup_cash_usd": "20000",
+      "new_annual_cash_usd": "30000",
+      "existing_staff_setup_hours": "1000",
+      "existing_staff_net_annual_hours_delta": "-6000",
+      "capacity_usd_per_hour": "75",
+      "existing_platform_annual_cost_pool_usd": "3000000",
+      "existing_platform_allocation_fraction": "0.05"
+    },
+    {
+      "id": "B_new_setup_flat_recurring_effort",
+      "seats": 1000,
+      "license_usd_per_seat_month": "20",
+      "new_external_setup_cash_usd": "150000",
+      "new_annual_cash_usd": "90000",
+      "existing_staff_setup_hours": "3000",
+      "existing_staff_net_annual_hours_delta": "0",
+      "capacity_usd_per_hour": "75",
+      "existing_platform_annual_cost_pool_usd": "3000000",
+      "existing_platform_allocation_fraction": "0.05"
+    },
+    {
+      "id": "C_new_setup_and_added_effort",
+      "seats": 1000,
+      "license_usd_per_seat_month": "20",
+      "new_external_setup_cash_usd": "800000",
+      "new_annual_cash_usd": "250000",
+      "existing_staff_setup_hours": "10000",
+      "existing_staff_net_annual_hours_delta": "12000",
+      "capacity_usd_per_hour": "75",
+      "existing_platform_annual_cost_pool_usd": "3000000",
+      "existing_platform_allocation_fraction": "0.05"
+    }
+  ]
+}
