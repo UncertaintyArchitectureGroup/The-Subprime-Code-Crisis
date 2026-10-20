@@ -7,7 +7,7 @@
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
 *   [Chapter 2. The Missing Price Tag](#chapter-2-the-missing-price-tag-the-true-cost-of-making-ai-work)
 *   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-why-the-board-chooses-a-strategy-of-degradation)
-*   [Chapter 4. Anatomy of the Break](#chapter-4-anatomy-of-the-break-how-the-safe-scenario-kills-the-sdlc)
+*   [Chapter 4. A Review-Capacity Scenario](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
 ---
 
 ## Chapter 1. What Productivity Studies Measure: Task Time and Delivery Outcomes
@@ -407,50 +407,47 @@ The Board has successfully optimized the cheapest part of the SDLC — **typing*
 
 ---
 
-## Chapter 4. Anatomy of the Break: How the "Safe Scenario" Kills the SDLC
+## Chapter 4. A Review-Capacity Scenario: When Candidate Work Outruns Verification
 
-We have established that the Board has mandated a "high volume" strategy (Chapter 3), funded at 1–3% of the real transformation cost (Chapter 2), into a system already showing signs of quality degradation (Chapter 1). Now, let's look at the precise mechanism by which that strategy breaks the engineering process itself.
+Chapter 1 reports positive and mixed activity findings, plus static-analysis signals with design and uncertainty limits. Xu and Agarwal do not establish a universal decline in quality or a measured review bottleneck. This chapter proposes a conditional systems scenario: additional candidate work could exceed review and validation capacity. Its assumptions and downstream consequences require local evidence.
 
-To understand the catastrophe unfolding in engineering teams, we don't need complex AI theories. We just need basic manufacturing physics — specifically, Eliyahu Goldratt's **Theory of Constraints**.
+Goldratt's **Theory of Constraints** provides a lens for examining capacity limits. It is a framework for this scenario, not empirical identification of the bottleneck in any particular team.
 
 ---
 
 ### The Physics of Software Delivery
 
-Every manufacturing process, including software development, is a chain of events. The total output of the system (Throughput) is determined by exactly one thing: the speed of the slowest link (the **Bottleneck**).
+Consider an illustrative delivery system with coding, review, validation and release stages. Assume coding initially limits the flow and review has spare capacity. Faster candidate production could then expose a downstream constraint; it could also improve delivery if downstream capacity is sufficient.
 
-The classic SDLC (Software Development Life Cycle) was architected for a human-speed world:
-
-1. **Coding (The Constraint):** Writing code was hard, slow, and mentally taxing. It was the natural bottleneck.
-2. **Review & QA (The Capacity):** Because coding was slow, the downstream steps (Review, QA) had enough capacity to handle the flow.
-
-The system was balanced. The "slowness" of writing code acted as a natural **flow control valve**. This is not a flaw to be optimized away — it is a design feature of a stable delivery system.
+These are scenario assumptions, not a measured description of the classic SDLC or a finding that typing was every team's original bottleneck. Local queue, effort and production measures determine whether the model applies.
 
 ---
 
-### Breaking the Valve
+### Candidate Work Meets a Capacity Limit
+
+**Conditional scenario diagram:** arrows describe proposed relationships, not a measured path through Xu or Agarwal data. The constraint may be review, another stage, or absent in a deployment.
 
 ```mermaid
 flowchart TD
     %% Nodes
-    AI[("🌊 AI GENERATION 🌊 (Unlimited Input)")]
+    AI[("AI-assisted candidate work")]
     
-    subgraph Sdlc ["The Jammed System"]
-        Queue[/"⚠️PR Queue (Inventory)⚠️"\]
-        Context("Loss of Context")
+    subgraph Sdlc ["Possible downstream constraint"]
+        Queue[/"PR queue"\]
+        Context("Possible context loss")
     end
 
-    Bottleneck(("⛔ SENIOR ENGINEER ⛔ (The Bottleneck)"))
+    Bottleneck(("Constrained review capacity"))
     
-    Output[("💧 Delivered Value 💧 (Trickle)")]
+    Output[("Delivered changes")]
 
     %% Connections
-    AI == "Firehose of Code" ==> Queue
+    AI == "More candidate changes" ==> Queue
     Queue --> Context
     Context --> Bottleneck
     
     Bottleneck -.->|"Rubber Stamp (Risk)"| Output
-    Bottleneck == "Deep Review (Slow)" ==> Output
+    Bottleneck == "Thorough review" ==> Output
 
     %% Styles
     style AI fill:#aaffaa,stroke:#333,stroke-width:2px
@@ -459,15 +456,11 @@ flowchart TD
     style Output fill:#e1f5fe,stroke:#333,stroke-width:2px
 ```
 
-The introduction of AI Code Assistants removed the flow control valve.
+In this scenario, candidate-production capacity grows faster than the team's ability to verify changes.
 
 In the scenario considered here, candidate-code production accelerates while downstream capacity remains constrained. Chapter 1 reports positive activity effects and structural-risk signals in different samples: Xu has positive project activity, and Agarwal separates AF gains from uncertain IF activity. Neither measures a universal junior speedup or one pipeline whose volume and complexity jointly rise at fixed rates. GitClear's separate volume claims still require their own audit (#59).
 
-But here is the **"Anatomy of the Break"**: We changed the input parameters of the system without changing the architecture of the processing nodes.
-
-We are pumping a firehose of water (**AI-generated code**) into a garden hose (**Human Review**).
-
-According to the Theory of Constraints, when you increase flow upstream of a bottleneck, you do not get more throughput. You get **Inventory**.
+If arrivals persistently exceed a constrained stage's processing capacity, work may accumulate before it. Reducing change size, improving verification or limiting intake are possible responses; the appropriate response depends on which constraint is actually observed.
 
 ---
 
@@ -502,7 +495,7 @@ This is the **Rubber Stamp Trap**: a structural incentive to approve code you ha
 
 ### The Illusion of "Safe" Adoption
 
-This is why the "**Safe Scenario**" — buying licenses without changing the process — is actually the most dangerous strategy available.
+Buying licenses without assessing downstream capacity could leave a team exposed to a new constraint. The studies reviewed here do not rank this strategy as the most dangerous or show that it necessarily causes failure.
 
 If candidate changes grow faster than review and validation capacity, the review stage may become a bottleneck. Xu and Agarwal motivate investigating this possibility; their activity and static-analysis estimates do not demonstrate it in every organization.
 
@@ -518,17 +511,11 @@ This proposed feedback loop would be weakened by stable review effort, shorter p
 
 ---
 
-### Conclusion: The Traffic Jam
+### Conclusion: Test the Constraint
 
-Imagine a highway where we suddenly give every car a **Ferrari engine (AI)**, but we don't add any new lanes and we keep the same single toll booth (Review) at the end.
+A faster upstream stage can improve delivery when downstream stages can absorb the work. If review is already constrained, more candidate changes may instead grow the queue. This conditional distinction is the point of the scenario; it is not a finding that AI only optimizes typing or necessarily worsens delivery.
 
-The cars are faster. The engine noise is louder. But the traffic jam at the toll booth is now miles long.
-
-We haven't built a faster highway. **We've just built a faster way to get to the traffic jam.**
-
-The Theory of Constraints tells us that optimizing any step *other than the bottleneck* is not just useless — it is actively harmful, because it floods the bottleneck with more work than it can process. AI Code Assistants have optimized the one step in the SDLC that didn't need optimization (typing speed), while ignoring the steps that actually constrain delivery (review, integration, verification).
-
-Until organizations invest in expanding the bottleneck — through automated review infrastructure, AI-assisted verification, architectural governance, and senior capacity planning — they are not accelerating delivery. They are accelerating the accumulation of risk.
+Xu's positive project activity and Agarwal's positive AF activity remain compatible with either outcome. Their measures do not establish review hours, production lead time or a universal senior bottleneck. Measure those outcomes before attributing a local traffic jam to the proposed mechanism or selecting a capacity intervention.
 
 ---
 
@@ -537,7 +524,7 @@ Until organizations invest in expanding the bottleneck — through automated rev
 * **Goldratt, E. M. (1984):** *The Goal: A Process of Ongoing Improvement.* North River Press. — The foundational text on Theory of Constraints, establishing that optimizing non-bottleneck steps increases inventory without improving throughput.
 * **Theory of Constraints in Software Development:** [Finding and Fixing the Real Bottleneck](https://www.theagilemindset.co.uk/2025/10/07/the-theory-of-constraints-in-software-development-finding-and-fixing-the-real-bottl) — Applied analysis of how AI shifts the coding bottleneck to human review capacity.
 * **AI Code Review Paradox (2025):** [Why AI Coding Speed Gains Disappear in Code Reviews](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/) — Industry analysis confirming AI code requires 2–3x longer review due to plausible bugs hidden in elegant syntax.
-* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. See Chapter 1 for boundaries; GitClear volume and secondary review-time claims remain separate audits (#59/#61).
+* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear volume and secondary review-time claims remain separate audits (#59/#61).
 
 ---
 

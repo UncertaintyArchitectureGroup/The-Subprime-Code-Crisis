@@ -44,6 +44,9 @@ Locators below identify stable sections/paragraphs rather than line numbers that
 | X14 | REFERENCES P-2025-03 | arXiv v3 metadata | Full title/authors/version/date; preprint boundary and positive/uncertain findings | Keep bibliography; states exclusively registry/front matter |
 | A15 | REFERENCES P-2026-02 | arXiv v2; official program/DOI | Full title/date and conference metadata; no checked publisher-equivalence claim | Keep bibliography; access limitation in brief |
 | XA16 | SOURCES and primary index | Existing IDs, both complete briefs | Preserve existing source identity strings; actual three current-use paths each; Reviewed brief/In progress/— until final gates | Keep canonical states in SOURCES/briefs; index is navigation |
+| XA17 | R1 Ch4 title/TOC, opening and adoption-intro superlative | Neither original identifies a universal quality decline or ranked adoption catastrophe | Replace categorical failure/established mechanism with bounded positive/mixed findings and a conditional capacity scenario | Keep title/intro consistent with findings; full-report tone work remains #64 |
+| XA18 | R1 Ch4 capacity setup, diagram and post-diagram interpretation | Neither original measures a universal senior constraint or unlimited inflow | Identify illustrative assumptions and conditional arrows; remove professional-role and universal typing-only bottleneck labels | Keep uncalibrated scenario diagram; no percentages or empirical-source endorsement |
+| XA19 | R1 Ch4 conclusion | Xu Table 5; Agarwal Table 2 and missing downstream measures | Preserve positive activity, state alternative successful-delivery outcome, require local review/production measures; remove categorical inevitable traffic jam | Keep conditional conclusion aligned with chapter title; source details remain Ch1/briefs |
 
 ### Assessed non-applicable surfaces and remaining owners
 
@@ -63,7 +66,7 @@ Start live observations, 2026-10-20:
 | --- | --- | --- |
 | Previous issue | #57 live state; completion comment 6297061565 | Closed/completed; five ACs satisfied |
 | Previous PR/main | #67 merged; main `384929717ff8d3129b7e90990c11132f161194ba` | Actual merged final-state baseline |
-| Exact-main CI | [39466705409](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39466705409) | Success; 119 tests/contract/state/RI/transitions |
+| Exact-main CI | [39466705409](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39466705409) | Success; 119 tests/contract/state/RI; transitions are a separate Repository Gate check |
 | Source fields at baseline | SOURCES/briefs at that SHA | #57's three sources Verified/2026-10-20; Xu/Agarwal Registered/Not started/— |
 | Active owner | #58 body + dated AC-06 addition; start comment | Open, no implementation PR at start |
 
@@ -73,17 +76,77 @@ Memory now records this dated checkpoint and conditional resumption via the live
 
 | AC | Check/evidence | Result |
 | --- | --- | --- |
-| AC-01 | Both complete versioned briefs; original pages/tables/figure and calculations above | Implemented; independent check pending |
-| AC-02 | X01–XA16; repeated numeric/implicit-use search | Implemented; independent check pending |
-| AC-03 | Ch1 hypotheses/Ch4 scenario and source boundaries | Implemented; independent check pending |
-| AC-04 | Xu project gains and AF/IF table in central Ch1/conclusion | Implemented; independent check pending |
+| AC-01 | Both complete versioned briefs; original pages/tables/figure and calculations above | Passed on independently Confirmed correction candidate; merged-main check pending |
+| AC-02 | X01–XA19; repeated numeric/implicit-use search | Passed on independently Confirmed correction candidate; merged-main check pending |
+| AC-03 | Ch1 hypotheses/Ch4 scenario and source boundaries | Passed on independently Confirmed correction candidate; merged-main check pending |
+| AC-04 | Xu project gains and AF/IF table in central Ch1/conclusion | Passed on independently Confirmed correction candidate; merged-main check pending |
 | AC-05 | Separate reviewer, registry/front matter, main integration | Pending review/merge/final fields |
 | AC-06 | Live-start table, memory, discoverable existing status checklist; final checkpoint | Start passed; final pending |
 
 ## Independent review
 
 - Primary agent: /root; flow B for both sources.
-- Independent reviewer: pending separate agent after pinned candidate.
-- Outcome: Review unavailable — review not yet performed; no readiness/verification claimed.
-- Materials to check: full originals, publication/access boundaries, all occurrence rows, calculations/units/uncertainty, positive/null findings, neighboring arguments, protocol/sync/current-use, authorization, status/handoff and AC-01–06.
+- Independent reviewer: /root/review_issue58; date: 2026-10-20.
+- Initial outcome: Corrections required at `ff1fe9403c08738d0775a9f6b2831ccf73d82b55`, tree `e634bceddcb132b2961148b743017653b2c492fd`. R1–R3 below; no new human decision required.
+- Materials independently checked: full originals, publication/access boundaries, all occurrence rows, calculations/units/uncertainty, positive/null findings, neighboring arguments, protocol/sync/current-use, authorization, status/handoff and AC-01–06.
 - Corrections, validation, merged-main checklist and final acceptance: append actual outcomes below as they occur.
+
+
+## Validation before independent review
+
+At candidate `ff1fe9403c08738d0775a9f6b2831ccf73d82b55`, tree
+`e634bceddcb132b2961148b743017653b2c492fd`: 119 tests, contract, evidence-state,
+RI build/verify, status-query owner and source task-context passed. Trusted-base
+Repository Gate and evidence-transition module passed against base `3849297`.
+An initial direct-script invocation failed on module import path; rerunning the
+trusted module from its policy checkout passed. This was not a source finding.
+Remote PR #68 initial head `abe9410e251ef5ea421636c0b0cbb02b434b55fc` has the same
+tree; Main health run 39474382291 and Repository Gate run 39474382332 passed.
+Those structural passes did not establish independent confirmation or readiness.
+
+### Review correction log
+
+- R1: independent reviewer found an unsupported placebo-test assertion in the Xu
+  brief. Original v3 has a PR-rework event study/lead-lag analysis, CEM and Oster
+  sensitivity; no placebo test was located. Removed the unsupported assertion.
+- R2: independent reviewer found that memory/start table over-attributed transition
+  checks to Main health run 39466705409. Corrected: Main health runs 119 tests,
+  contract/state/RI; trusted transition validation is a separate Repository Gate
+  check. Source/main check conclusions themselves remain as observed.
+- Primary corrections are not self-confirmed; the reviewer must recheck them at
+  the new pinned candidate before an outcome is recorded as Confirmed.
+
+- R3: independent reviewer found the Ch4 opening/title and adoption-intro still
+  asserted established quality degradation/failure despite later qualifications.
+  Narrowed title/TOC and opening; labeled capacity setup/diagram as conditional;
+  removed the “most dangerous” ranking; aligned the chapter conclusion with
+  positive activity and unmeasured downstream outcomes. Added XA17–XA19. This is
+  correction of the relying Xu/Agarwal argument, not a claim to finish #64.
+
+
+The initial reviewer independently reopened both originals (matching PDF hashes),
+checked Xu methods/Tables 5–6/11–14 and Agarwal methods/Table 2/Figure 2,
+publication/access limitations and the full repository use/synchronization scope.
+Their separate-worktree 119 tests, contract/state/RI/status query and trusted-base
+Repository Gate/transitions passed. No additional numerical/material synchronization
+defect was found. Primary implemented R1–R3; source/work-record outcomes remain
+Corrections required until independently rechecked. No readiness or Verified claim.
+
+
+### Repeated independent review — Confirmed
+
+Reviewer /root/review_issue58, 2026-10-20, independently rechecked corrected
+`48f9292881ce9d9df5f7277dfce5a91cb6741eb5`, tree
+`e25e689db69a2f7a675e4e9c84a0602b4ee1538a`: **Confirmed**. R1–R3 resolved;
+full correction diff and relying context checked, including title/TOC, conditional
+diagram/setup/conclusion and the retained METR boundary. No material discrepancy
+or new maintainer decision remains within the approved correction scope.
+Independent 119 tests, contract/state/RI, status query/task context and trusted-base
+Repository Gate/evidence transitions passed in a separate worktree. Reviewer
+also independently fetched initial successful PR runs 39474382291/39474382332.
+
+The subsequent metadata update records this actual outcome, restores both source
+integrations to In progress/— and rebuilds RI; no research text changes after the
+Confirmed candidate. This confirms the corrections, not merged-main verification.
+AC-01–04 pass at correction-candidate scope; AC-05/final AC-06 await actual merge,
+main checks and final state acceptance. The remaining completion steps stay open.

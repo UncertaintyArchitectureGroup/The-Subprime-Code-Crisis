@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "b76729289bbebfc20208bfc1ec9c287b60c915722fa3922eaeafdb806110a8f9",
+    "digest": "853e97f39db26a1e7377eecf077d01cafa39048827604635116e41652b20e396",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -167,12 +167,12 @@
       {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
         "identity_mode": "content",
-        "sha256": "6bf498689bf589918873b861a5b1ba1c0c3519a72266631ada6b119be110a2b0"
+        "sha256": "f431bd24820c176ae5d2b3e0c9375e4e3815873ff8eca90e5782e13ecc742deb"
       },
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "35137f4c86950cf3a5b8062d7e68495030054cfe58ade7492b1a5216b1528c21"
+        "sha256": "131dde5e8b56b800586d3218db918bbcc36cb4b64180aff2d8cab201d372b32f"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
@@ -237,7 +237,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "edcd9e54deed6db10230421b1d35bfd13d20d6370bf65395436f2980c4b70a11"
+        "sha256": "95cf2245c60e469ed724c51ac987e26ebc157ea83bc75b81bf8a93a5e74fa792"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -282,7 +282,7 @@
       {
         "path": "governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md",
         "identity_mode": "content",
-        "sha256": "2c3f620074458fdc784ecb3976d2ec53b6df88be3f4c5a70a841fa893de0006e"
+        "sha256": "e5e67eaf8d7ca15af27bfd7cddef4832ca6d6d92ab8e9d936270a5bd49c21709"
       },
       {
         "path": "governance/status-model.md",
@@ -342,7 +342,7 @@
       {
         "path": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
         "identity_mode": "content",
-        "sha256": "0a23b169cf1b1a5a318bd4c4a85e205d519d25c84c83f0009042d47601c5e8e9"
+        "sha256": "c37d351926ab1d31cd3d82f17a4b64a9ea758737d7bcc0296130612b369b36b9"
       },
       {
         "path": "governance/work-records/README.md",
@@ -377,7 +377,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "480cb811750d98aa671863d4f6eef4ae86ae0e568d905e7bf8db0ba17299f061"
+        "sha256": "68d60dd453068663397eed56dc055dddf027cda76ddc23d806a84b01654c7abc"
       },
       {
         "path": "report/02_broken_mechanics.md",

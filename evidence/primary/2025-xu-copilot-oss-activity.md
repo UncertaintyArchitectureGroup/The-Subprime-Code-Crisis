@@ -3,7 +3,7 @@ source_ids = ["P-2025-03"]
 evidence_review = "Reviewed brief"
 integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md"]
 +++
 
@@ -44,7 +44,7 @@ Table 13's middle quartiles differ (+.1115 and −.0381 coefficients); bottom-qu
 
 **Source-author interpretation:** Activity redistribution and PR rework indicate maintenance burden/technical debt. **Repository interpretation:** The pattern motivates testing displacement of development work by review, while preserving positive project activity. It does not identify review work as the cause of reduced commits or establish net project productivity loss.
 
-Exposure is language availability in a selected OSS setting, not randomized or individually observed use. Language trends, selection, spillovers, proxy validity and early tool vintage limit causal/general scope. Event studies, placebo tests, matching and omitted-variable sensitivity (§5, pp18–20; Appendix pp28–29) address particular concerns without eliminating them. Counts do not measure hours, defects, functional correctness, enterprise throughput or lifecycle cost. Affiliation: Tilburg University. No study-specific funding/conflict declaration was identified in the inspected paper; this is not evidence of no conflicts.
+Exposure is language availability in a selected OSS setting, not randomized or individually observed use. Language trends, selection, spillovers, proxy validity and early tool vintage limit causal/general scope. The PR-rework event study/lead-lag analysis, matching and omitted-variable sensitivity (§5, pp18–20; Appendix pp28–29) address particular concerns without eliminating them. Counts do not measure hours, defects, functional correctness, enterprise throughput or lifecycle cost. Affiliation: Tilburg University. No study-specific funding/conflict declaration was identified in the inspected paper; this is not evidence of no conflicts.
 
 **Source-internal reporting uncertainty:** Table 6 (p18) prints β=.142 with SE=.408 and significance stars that do not agree on their face; §4.2 (p17) describes a −.357 interaction using the positive `exp(.357)-1` calculation. Neither is used as the subgroup estimate. Table 5's 66,120/66,168 observations and Table 6's 51,408 cannot be fully reconciled here with the stated samples/window; footnote 14's contributor-filter wording is also ambiguous. Preserve the reported sample and table-specific estimates without claiming an independently reconstructed panel or silently repairing the original. These limits qualify the study, rather than being resolved by repository validation.
 
@@ -58,6 +58,7 @@ The [#58 occurrence trace](../../governance/reviews/issue-58-2026-10-20-xu-agarw
 
 ## Repository integration audit and independent review
 
-- Integration: In progress; Last verified: —. Candidate corrections require independent review, merge and checked main before final verification.
-- Primary agent: /root; flow: B. Separate reviewer requested after candidate preparation; outcome: Review unavailable (pending actual review, not a completed review).
-- Search/trace/synchronization: #58 record; final acceptance remains open.
+- Integration: In progress; Last verified: —. Independently Confirmed corrections await merge and checked default-branch acceptance before final verification.
+- Primary agent: /root; flow: B; reviewer: /root/review_issue58; date: 2026-10-20.
+- Outcome: Confirmed on corrected candidate `48f9292881ce9d9df5f7277dfce5a91cb6741eb5`, tree `e25e689db69a2f7a675e4e9c84a0602b4ee1538a`. Reviewer independently reopened both full originals, checked methods/tables/uncertainty, every relying occurrence, positive/null findings, synchronization, source states and live-status evidence; ran 119 tests and trusted checks in a separate worktree.
+- Initial review required R1–R3: unsupported Xu placebo assertion, CI-step attribution and missed Ch4 relying framing. All independently rechecked and resolved; no new human decision. The #58 trace preserves the correction loop and later main acceptance.

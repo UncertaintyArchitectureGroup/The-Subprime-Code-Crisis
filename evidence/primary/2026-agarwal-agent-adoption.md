@@ -3,7 +3,7 @@ source_ids = ["P-2026-02"]
 evidence_review = "Reviewed brief"
 integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md"]
 +++
 
@@ -56,6 +56,7 @@ Detailed coefficients stay in this brief; the report retains the heterogeneous a
 
 ## Repository integration audit and independent review
 
-- Integration: In progress; Last verified: —. Final state requires separate review, merged corrections and main checks.
-- Primary agent: /root; flow: B. Separate reviewer requested after candidate preparation; outcome: Review unavailable (pending actual review).
-- Search/trace/synchronization: #58 record; final acceptance remains open.
+- Integration: In progress; Last verified: —. Independently Confirmed corrections await merge and checked default-branch acceptance before final verification.
+- Primary agent: /root; flow: B; reviewer: /root/review_issue58; date: 2026-10-20.
+- Outcome: Confirmed on corrected candidate `48f9292881ce9d9df5f7277dfce5a91cb6741eb5`, tree `e25e689db69a2f7a675e4e9c84a0602b4ee1538a`. Reviewer independently reopened both full originals, checked methods/tables/uncertainty, every relying occurrence, positive/null findings, synchronization, source states and live-status evidence; ran 119 tests and trusted checks in a separate worktree.
+- Initial review required R1–R3: unsupported Xu placebo assertion, CI-step attribution and missed Ch4 relying framing. All independently rechecked and resolved; no new human decision. The #58 trace preserves the correction loop and later main acceptance.
