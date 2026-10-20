@@ -2,8 +2,9 @@
 
 ## Snapshot
 
-- Checked 2026-10-20, starting main `b753486243875bb75ce40464f842681b2b9e1d2e`.
-- #57 and #58 closed/completed; #58 PRs #68/#69 merged. #59 open/active.
+- Checked 2026-10-20, correction main `69c8a1b20ce2404ab6b2e65f6315669f08975cf7`.
+- #57 and #58 closed/completed; #59 open at this checkpoint, PR #70 merged.
+- Final-state candidate follows checked correction main; live #59 owns later closure.
 - #53 remains open; next bounded source ticket after completed #59 is #60.
 - Author-site reference `82b57b8948c6c30143213b846ee2848d06f8d200`.
 - Dated checkpoint only: reopen live issue/PR/main/CI/source owners before reuse.
@@ -37,11 +38,15 @@
 - Quality p12 6.66% is 2024; landing/appendix discrepancies retained. Output three-
   median9.0% is not net productivity; Method1 mean34.1/7.1 remains unresolved,
   withheld with its dependent mean composite. No invented reconciliation.
-- Both sources Reviewed brief/In progress/—/Confirmed. Reviewer /root/review_issue59
-  Confirmed f278d6f/tree08f98726; remote PR #70 head64797cc same tree;
-  exact-head Repository Gate39482420475 and Main health39482420483 succeeded.
-  Completion requires merged corrections and checked
-  main before final source-state update. Registry/brief fields own canonical states.
+- Reviewer /root/review_issue59 Confirmed f278d6f/tree08f98726 and resulting
+  metadata62c80ea/tree2d1b471f. PR #70 merged at checked main69c8a1b/tree2d1b471f.
+- Exact-head Repository Gate39483174628/Main health39483075536 succeeded;
+  actual-main Main health39483238001 and local119tests/contract/state/RI passed.
+- Correction main sources matched Reviewed brief/In progress/—/Confirmed with
+  five actual current-use paths each. This final-state candidate records matching
+  Verified/2026-10-20 after the completion checklist; no research changes.
+- Resulting metadata review/merge/main/CI/closure remain later live observations.
+  Canonical source state always belongs to SOURCES and briefs at the inspected ref.
 
 ## Next actions
 

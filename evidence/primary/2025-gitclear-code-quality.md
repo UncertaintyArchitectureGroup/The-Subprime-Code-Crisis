@@ -1,8 +1,8 @@
 +++
 source_ids = ["P-2025-04"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-20"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/03_the_aftermath.md", "REFERENCES.md"]
 +++
@@ -70,10 +70,10 @@ Limitations include selection, unbalanced/changing samples, proprietary classifi
 
 ## Repository integration audit
 
-- Integration audit: In progress; Last verified: —. All-use search, numeric/placement trace and synchronization are recorded in #59. Corrections require separate confirmation, merge and checked main before final verification.
+- Integration audit: **Verified**; Last verified: **2026-10-20**. All-use corrections and independently Confirmed review metadata merged in PR #70. Checked default branch `69c8a1b20ce2404ab6b2e65f6315669f08975cf7`, tree `2d1b471f9d642283c1650644746c8659d4022329`, identical to Confirmed metadata; exact-main Main health39483238001 and local119tests/contract/state/RI passed. The dated #59 audit records every completion gate. This verifies bounded repository integration, not proprietary-data validity or causal AI effects.
 - Protocol outcome: No protocol change — existing local diagnostic/proposed controls do not derive a validated threshold from this source.
 
 ## Independent review
 
 - Primary agent: /root; flow B; date: 2026-10-20.
-- Independent reviewer /root/review_issue59, 2026-10-20: **Confirmed** at local `f278d6f5be877bd2acb9d3ed91856ecc1f3db92d`, tree `08f98726e8773eba5131e5e99339875c0191831c` (remote PR #70 head `64797cc2182abfcf312f728f3653ef0fcffb0b42`, identical tree). Independently reopened both originals, checked all tables/arithmetic/occurrences/placement/protocols and structural/trusted-base checks. No material correction or additional decision found. Source discrepancies remain explicit limitations. Merge and checked-main acceptance remain required before Verified.
+- Independent reviewer /root/review_issue59, 2026-10-20: **Confirmed** at local `f278d6f5be877bd2acb9d3ed91856ecc1f3db92d`, tree `08f98726e8773eba5131e5e99339875c0191831c` (remote PR #70 head `64797cc2182abfcf312f728f3653ef0fcffb0b42`, identical tree). Independently reopened both originals, checked all tables/arithmetic/occurrences/placement/protocols and structural/trusted-base checks. No material correction or additional decision found. Source discrepancies remain explicit limitations. PR #70 merged and checked-main acceptance passed at `69c8a1b`; final-state fields record that completed correction state. Final metadata review and resulting default-branch acceptance are recorded at the live issue/PR.
