@@ -1,0 +1,70 @@
++++
+source_ids = ["P-2026-03"]
+evidence_review = "Reviewed brief"
+integration_audit = "In progress"
+last_verified = "—"
+independent_review = "Confirmed"
+current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2025-metr-experienced-developer-productivity.md"]
++++
+
+# METR: follow-up selection and measurement limits
+
+## Citation, version and acquisition
+
+Joel Becker, Nate Rush, Tom Cunningham, David Rein and Khalid Mahamud. [*We are Changing our Developer Productivity Experiment Design*](https://metr.org/blog/2026-02-24-uplift-update/). METR, 24 February 2026; accessed 2026-10-20.
+
+**P-2026-03; primary empirical research update.** This is a first-party research blog with original experimental results and design discussion, not an established peer-reviewed paper. The full public article was accessible and links public [early-study](https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs/blob/7ff2d7670235f531dff77eff58355bd77392f396/README.md) and [follow-up data/code](https://github.com/METR/Measuring-Late-2025-AI-on-OSS-Devs/blob/55f007216a26493f0a9b7650ab3191cad7fb9e7f/README.md). No independent raw-data/code reanalysis was performed; no claim of data inaccessibility is made. This review does not establish a reliable current causal magnitude.
+
+## Research question, design and observed findings
+
+| Item | Source-reported detail | Exact locator in article |
+| --- | --- | --- |
+| Follow-up | Started August 2025; 57 developers: 10 returning and 47 new; 143 repositories, 800+ tasks | “Details of the productivity study” |
+| Comparator and tools | Randomized AI-allowed/disallowed work; later agentic workflows, with Claude Code and Codex named as adoption examples; exact model/build versions not supplied | Study details; “Wider adoption of AI has made it more difficult to measure task-level productivity” |
+| Raw time estimates | Returning: −18%, 95% CI −38 to +9%; new: −4%, CI −15 to +9% | Opening results paragraphs |
+| Selection | Reluctance to work without AI, task withholding and differential participation; lower pay than earlier trial | “Wider adoption of AI tools…”; study details |
+| Measurement | Concurrent agents complicate time attribution | Opening summary; “Wider adoption of AI has made it more difficult to measure task-level productivity”, numbered problem 6 |
+
+Both intervals cross zero. Negative signed time changes mean less estimated task time; the article's “speedup” terminology must not be converted into an equally sized throughput gain.
+
+## Calculations and interpretations
+
+**Derived:** No pooled effect, reweighted population effect or current productivity percentage is calculated here. The two cohort estimates are kept separate.
+
+**Source-author interpretation:** AI probably helps more than in early 2025, but selection and measurement problems make this experiment an unreliable measure of the present magnitude (opening summary and design discussion).
+
+**Repository interpretation:** Put this update immediately beside the historical METR result. It prevents a time-stamped +19% finding from becoming a claim about current tools. It also prevents the opposite error: presenting the later raw estimates as proof of a general speedup or a causal reversal of the earlier experiment.
+
+## Limitations, conflicts and claims not established
+
+Selection into participation and submitted tasks, changed compensation ($50/hour versus $150 earlier), task mix and concurrent work limit interpretation (study details). These are substantive identification concerns, not merely wider confidence intervals. The author organization is the same METR research team; the article does not supply a separate funding declaration. Do not infer independence from the original team or unreported vendor sponsorship.
+
+**Not established:** reliable current magnitude, an industry trend, universal acceleration, or invalidity of the original randomized result. The update does not measure end-to-end enterprise delivery or TCO.
+
+## Repository use and placement
+
+- `report/01_the_illusion.md`, Chapter 1: separate dated row next to the 2025 result, interpretation boundary, conclusion and references.
+- `report/03_the_aftermath.md`, Chapter 8 opening: time-bounded summary of the comparison.
+- `README.md`: Evidence Map navigation.
+- `REFERENCES.md`: separate citation, not a replacement for P-2025-01.
+- `evidence/primary/2025-metr-experienced-developer-productivity.md`: author's retrospective interval for the original trial and separate temporal update.
+
+See the [issue #57 trace](../../governance/reviews/issue-57-2026-10-20-productivity-audit.md). The original study and follow-up remain distinct source objects; this entry was registered before adding any report use.
+
+## Repository integration audit
+
+- Integration status: In progress; corrected integration independently Confirmed, default-branch merge and verification pending.
+- Search/report/numeric/README/bibliography/current-use checks: candidate and exact locators in the issue #57 trace.
+- Protocol outcome: No protocol change — none of the four protocols treats these raw estimates as a threshold or validated control.
+- Corrections: add the temporal boundary without substituting an unreliable present-day estimate.
+- Verification date: —.
+
+## Independent review
+
+- Primary agent: /root.
+- Independent reviewer: /root/independent_evidence_review.
+- Flow reviewed: A, alongside Flow B for P-2023-01/P-2025-01.
+- Materials independently checked: full original update, selection/measurement warnings, placement, source separation and AC-01–AC-05.
+- Outcome: Confirmed — repeated independent review on 2026-10-20 at commit `91edb633d2d2f352a43c2333e80d5def9614b9f4`, tree `02fa53f8dfe0c23f1a2c62830d2716916da3aee9`; complete correction history and acceptance results in the issue #57 trace.
+- Corrections completed: R1–R5, G.6 developer-unit precision and the explicit interval/tool-version boundaries independently rechecked. No unresolved correction or new human decision; default-branch verification remains pending.
+- Review date: 2026-10-20.
