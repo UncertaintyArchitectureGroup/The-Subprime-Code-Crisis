@@ -1,8 +1,8 @@
 +++
 source_ids = ["D-2024-02"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-21"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/03_the_aftermath.md", "report/appendices/cost-context.md", "REFERENCES.md"]
 +++
@@ -39,9 +39,9 @@ The exact table belongs in the **cost-context appendix**, not as a budget needed
 
 ## Repository integration audit
 
-- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Sol checkpoint 2026-10-20 was In progress; the initial Astra review required corrections. Current audit owner /root, 2026-10-21: integration **In progress**, Last verified **—**; the corrected argument is independently Confirmed, pending accepted merge and checked default-branch verification.
+- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Sol checkpoint 2026-10-20 was In progress; the initial Astra review required corrections. Current audit owner /root, 2026-10-21: integration **Verified**, Last verified **2026-10-21**; the independently Confirmed correction is merged and its exact default-branch tree/checks verified below.
 - [Occurrence/placement trace and Astra handoff](../../governance/reviews/issue-60-2026-10-20-cost-audit.md) record the Sol occurrence review, arithmetic, nearby conclusions, README and protocols; the subsequent Astra review below identifies an omitted dependent conclusion. Protocol outcome: **No protocol change**; no monetary threshold or validated ROI follows from this source.
-- The bounded economic/model-choice/source-placement correction is independently Confirmed at the latest checkpoint below. Merged corrections and checked main remain required; no Verified promotion.
+- The bounded economic/model-choice/source-placement correction is independently Confirmed at the latest checkpoint below. The correction merged in PR72 and exact main99df797 was checked; final state verification is recorded below.
 
 ## Independent review
 
@@ -54,6 +54,10 @@ At candidate514d014, [the correction trace](../../governance/reviews/issue-60-20
 
 A60-04 correction also covers the R2 sponsor-cost paragraph and R3 budget/resource reprises, now listed in Current use as **indirect synthesis of the shared Chapter2 cost comparison** (trace H15/H16). No new finding or corporate/market calibration is attributed to this source. Other R2/R3 claims remain outside this bounded acceptance.
 
-## Current correction re-review — 2026-10-21
+## Correction re-review before merge — 2026-10-21
 
-Primary /root (Sol); independent /root/astra_cost_economics and /root/astra_cost_sources: **Confirmed**, bounded economics/inference, source integration and placement, for local `59324326c2135860f332a820bf956eb7ec1f7e69`, tree `b844181d7db07e5b4a35d2d9f37caca2ce3a5e79`. A60-01/02/03/04 are resolved. [Actual findings, correction loop and checks](../../governance/reviews/issue-60-2026-10-21-sol-corrections.md) preserve the earlier Corrections required reviews. Broader #61/#63/#64 claims are not accepted. Integration stays In progress / — until accepted corrections are merged and the default branch and final source states are checked.
+Primary /root (Sol); independent /root/astra_cost_economics and /root/astra_cost_sources: **Confirmed**, bounded economics/inference, source integration and placement, for local `59324326c2135860f332a820bf956eb7ec1f7e69`, tree `b844181d7db07e5b4a35d2d9f37caca2ce3a5e79`. A60-01/02/03/04 are resolved. [Actual findings, correction loop and checks](../../governance/reviews/issue-60-2026-10-21-sol-corrections.md) preserve the earlier Corrections required reviews. Broader #61/#63/#64 claims are not accepted. At that checkpoint integration remained In progress / — pending accepted merge and checked default-branch state; the later verification follows below.
+
+## Final default-branch verification — 2026-10-21
+
+[Final verification record](../../governance/reviews/issue-60-2026-10-21-final-verification.md) checks merged PR72 at default-branch `99df79758e29357a40cf862b77b6afe9c5407796`, tree `a67205adc909286f425e041d8dfc352c9293c517`, identical to the independently accepted content/recording. Exact-main Main health39511925110 succeeded. A60-01–04 are resolved; source findings, limits, use paths and protocol outcome are synchronized. Integration **Verified**, Last verified **2026-10-21**, independent_review **Confirmed**. The status-update candidate itself still requires independent recording review and checked integration before #60 closure; see live PR/issue evidence. This verifies this source's bounded uses, not every other assertion in its report files.
