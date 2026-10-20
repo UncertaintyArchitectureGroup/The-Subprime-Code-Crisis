@@ -1,5 +1,12 @@
 # Issue #60: Sol implementation, source trace and Astra handoff
 
+**Subsequent checkpoint, 2026-10-21:** [Astra analytical review](issue-60-2026-10-21-astra-review.md)
+returned **Corrections required**. The retained source figures and bounded model
+are supported, but A60-01 identifies a surviving directly dependent Ch3
+conclusion omitted from this trace; A60-02 corrects the quality comparator.
+The dated Sol confirmations below are historical and remain bounded. Current
+seven-source integration/review state is Corrections required; #60 remains open.
+
 ## Scope, authority and live checkpoint
 
 Date2026-10-20; primary agent /root, Sol implementation. Primary **Flow B** for D-2019-01, D-2024-01/02/03 and S-2025-03. Two explicitly named underlying original reports registered and processed under **Flow A**, P-2025-06 (Menlo) and P-2025-07 (CloudZero), within the same bounded correction. This is acquisition of the known originals, not a landscape/discovery claim. Both evidence review and all-use integration audit are required; synchronization and separate independent review apply.

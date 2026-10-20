@@ -2,18 +2,17 @@
 
 ## Snapshot
 
-- Checked 2026-10-20; starting main `75ab08ca99fb17dadd9930c2502e8d7c96279191`.
-- #57/#58/#59 closed/completed. PRs #70/#71 merged; #59 final main75ab08c.
-- Active #60: Sol implementation independently confirmed; Astra analysis pending.
-- Draft PR #72 holds the reviewable candidate; no merge or #60 closure.
-- #53 remains open; next after completed #60 is #61.
-- Site reference82b57b8948c6c30143213b846ee2848d06f8d200; dated hint only.
-  Reopen live issue/PR/main/CI/source owners before reuse.
+- Checked 2026-10-21, Europe/Warsaw; main75ab08ca99fb17dadd9930c2502e8d7c96279191.
+- #57/#58/#59 completed; #53 remains open. Active #60; next after completion #61.
+- PR #72 open/draft/unmerged. Astra analytical review: Corrections required.
+- Reviewed remote82dc8d15dc3039fc68f47ec4ee37f8f44430fa8a, local6a316cd8143773fcf1900fa7df89ccb66562fbca;
+  identical tree277272243163447422567619f910d0257f86a596.
+- Dated hints only: reopen live issue/PR/main/CI/source owners before reuse.
 
 ## Active owners
 
 - #47/#52 completed rules/RI baseline, PR #56; #53 evidence backlog.
-- #60 cost accounting/source corrections and conditional model; Astra judgment pending.
+- #60 Sol correction of Astra findings; independent re-review and final verification.
 - #61 secondary/orphans; #62 provenance; #63 NBER/horizons/mechanism;
   #64 whole-report tone; #65 final synchronization. #4 skill-formation input.
 - Older PRs #40/#41/#42/#46 remain separate, not adopted here.
@@ -22,39 +21,37 @@
 
 - Maintainer authorizes one-issue source/numeric/placement/neutral-tone correction,
   independent review/acceptance and evidence/closure after completed merged work.
-- Latest request: Sol performs implementation, reports and specifies Astra handoff.
-- #60 treatment/alternatives before edits: issue comment6299802975; start6299649422.
-- Source original authority and canonical states retained; no rule/protocol/CI change.
-- A hypothetical cash/capacity appendix is a reviewable candidate, not an empirical
-  budget/ROI or Astra approval. Keep/remove/economic inference and placement remain open.
+- Sol implementation history remains in reviews/issue-60-2026-10-20-cost-audit.md.
+- Latest Astra review: reviews/issue-60-2026-10-21-astra-review.md.
+- Retain optional hypothetical cash/capacity illustration; it is not empirical
+  TCO/ROI, a budget recommendation or a universal transformation requirement.
+- No new rule, protocol or CI tier; no #61 work or #60 closure during review.
 
 ## Evidence
 
-- #59 completion comment6299540993, main75ab08c/tree6fcd68f9; exact-main Main health
-  39484014751 success, local119tests/contract/state/RI/trusted checks passed.
-- #60 trace/handoff: reviews/issue-60-2026-10-20-cost-audit.md.
-- Seven briefs: Google2020, Alphabet/MetaCY2024, MicrosoftFY2024, Markus2026;
-  newly registered Menlo/CloudZero originals. All seven integrations In progress/—;
-  independent_review Confirmed for the bounded Sol review, no Verified.
-- Meta cashPPE37.256B plusleaseprincipal1.969B=39.225B; whole-company figures
-  are context, not AI verification budgets. Menlo37/11.5 growth221.739%.
-- CloudZero planned2025 versusreported2024 means;45%>100k versus43%≥100k unresolved.
-- New numerical examples are hypothetical; cash/time/one-off/annual/allocation split,
-  released capacity allowed, no measured TCO/ROI or universal multiplier.
-- Independent execution review found R1 Ch3 quantified-cost and R2 index defects.
-  Repeat review Confirmed: local9c5e120/tree dca21705, remote8898ee0a identical tree.
-  Independent126tests/contract/state/RI117/scenario/trusted-base gates passed.
-- Initial PR-head CI39487576827/39487576805 passed at81f4007; fetch current PR-head
-  CI and final metadata-review evidence from PR/#60 comments before further action.
-- Astra model keep/revise/remove, economics/inference/placement, any corrections,
-  merge/exact-main/final-source verification/closure remain pending.
+- Two independent Astra reviewers reopened originals and found the same remaining
+  Ch3 economic inference defect. Retained values and 24 model outputs match.
+- A60-01 required: conditional capability-gap conclusion, no compulsory deep
+  transformation, total-overhaul inference or unsupported SDLC cost ranking.
+- A60-02 required: stable/lower cost with stable/improved quality, not lower quality.
+- A60-03 nonblocking: clarify gross new cash / zero avoided-baseline-cash assumption.
+- Seven briefs/registry: Reviewed brief / Corrections required / —; current
+  independent_review Corrections required. Source accuracy is not the blocker;
+  the shared relying argument is. Eight earlier Verified rows are unchanged.
+- Prior bounded Sol Confirmed reviews remain historical; Astra has not accepted
+  the whole integration. CloudZero threshold and sampling conflicts remain disclosed.
+- Primary126tests/contract/state/RI/scenario/whitespace and separate arithmetic
+  checks passed on the reviewed candidate. Exact reviewed remote-head CI:
+  Main health39489138185 and Repository Gate39489133258 both success.
+- Fetch PR/#60 comments for subsequent recording-head checks; old green runs do
+  not certify a later head. Structural success does not validate the argument.
 
 ## Next actions
 
-- Revalidate live #60 and its linked draft PR/head/CI/canonical source fields:
-  https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/60
-- PR: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/72
-- If open, use the concrete Astra handoff, resolve findings under the same owner and
-  complete remaining acceptance before merge/Verified/closure. Do not start #61 yet.
-- If #60 already completed, proceed to #61; do not repeat closed #57–59 work.
-- Structural checks and issue state do not validate research or complete #53.
+- Revalidate https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/60
+  and https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/72.
+- Sol resolves A60-01/02, records A60-03 disposition, synchronizes trace/TOC/states,
+  and obtains independent re-review of the actual correction candidate.
+- After accepted corrections: merge, exact-main checks and final source-state
+  verification, then attach completion evidence and close #60. Next is #61.
+- Do not repeat closed #57–59 work or treat an open draft as completed integration.

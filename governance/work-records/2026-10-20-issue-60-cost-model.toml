@@ -2,7 +2,7 @@ record_version = 1
 title = "Issue #60: exact cost sources and a conditional cash/capacity sensitivity candidate"
 primary_flow = "Flow B — legacy cost sources; explicit Flow A registration of two underlying originals"
 human_decision = "Maintainer's evidence/numeric/placement/neutral-tone correction and latest explicit Sol-implementation plus concrete Astra-handoff request. Start comment6299649422; pre-edit findings/treatment/alternatives6299802975. Implement a reversible scoped draft, not a presumed Astra economic/model/placement approval or new governance rule. Detailed trace and decision boundaries in governance/reviews/issue-60-2026-10-20-cost-audit.md."
-independent_review = "Confirmed"
+independent_review = "Corrections required"
 
 [changelog]
 decision = "Updated"
@@ -14,9 +14,11 @@ assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "referen
 [synchronization.non_applicable]
 contributor-guidance = "Model appendix documents reproduction/limits; no contributor obligation, required CI tier, source-state definition, canonical workflow or rule changes. Existing unittest discovery runs the new meaningful arithmetic/boundary tests."
 
-# Astra's economic/model-choice/placement acceptance remains an explicit pending
-# issue-specific handoff. No merge-readiness, completion, Verified or closure is
-# inferred from implementation checks or an independent execution review.
+# Astra review 2026-10-21: Corrections required; A60-01 dependent economic
+# conclusion and A60-02 quality wording remain unresolved. A60-03 cash-offset
+# clarification is nonblocking. Retain the bounded illustration. See
+# governance/reviews/issue-60-2026-10-21-astra-review.md. Two independent reviewers
+# corroborated the conclusion defect; no merge-readiness, Verified or closure.
 
 # Independent /root/review_issue60_implementation confirmed the bounded Sol
 # correction candidate 9c5e12039b6a3895ae78c48157dd053b231faade, tree
