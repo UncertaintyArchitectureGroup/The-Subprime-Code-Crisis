@@ -1,0 +1,30 @@
+record_version = 1
+title = "Issue #74: independent Quartz report package for /subprime/"
+primary_flow = "Maintainer-approved publication/tooling procedure; source Flows A–E do not apply because research meaning and states remain unchanged"
+human_decision = "Maintainer chose vitaliioborskyi.ai/subprime/ and requested the acceptance plan in issue #74, independently Confirmed. The subsequent explicit instruction 'Сол починай' authorizes implementation of that plan. Publication/merge authority remains separate; author integration is owned by oborskyivitalii/oborskyivitalii#116."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Adds a new browser publication structure and producer interface, without changing canonical research content or states."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "history", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "report", "protocols", "references", "doctrine", "repository-architecture"]
+
+[synchronization.non_applicable]
+contributor-guidance = "The adapter README documents its existing owner-specific commands and boundary. No canonical agent/contributor obligation, approval flow or status definition changes."
+source-registry = "Registry bytes and every canonical evidence state are read-only inputs. The web projection is not a new research-use claim or status registry."
+evidence = "Evidence bodies, limitations, state fields and Current use remain unchanged; TOML is projected into disposable rendition metadata."
+evidence-indexes = "Indexes are selected without editing their source; links resolve through the publication route map."
+report = "Three complete report parts and current appendices are rendered without changing claims or moving canonical files."
+protocols = "Current protocol text is rendered; no controls, roles, thresholds or logic changes."
+references = "Bibliography is rendered verbatim apart from explicit rendition link destinations; source identity/citation records unchanged."
+doctrine = "Scope, claim boundaries, vocabulary and attribution principles are unchanged."
+repository-architecture = "The approved publication adapter adds a derived view; it does not change the canonical evidence-to-report-to-protocol relationships."
+
+# Initial review: Corrections required, four P2 defects. Separate repeat reviewer
+# /root/review_report_architecture Confirmed corrected producer code/checks at
+# inputs b20c312bbc4a2c7eba4a90382379820889e1da0e52f9df341b0d6eb243208d39.
+# Browser/visual/device/editorial/rights, remote CI and consumer delivery remain
+# open. This bounded code review is not whole-issue or merge acceptance.
+# No merge, production delivery, hosted/device or complete-issue acceptance.

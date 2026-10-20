@@ -204,6 +204,18 @@
         "гіпотези",
         "сценарії"
       ]
+    },
+    {
+      "concern": "browser report publication producer",
+      "path": "tools/report_web/README.md",
+      "queries": [
+        "report website",
+        "Quartz report",
+        "subprime web",
+        "/subprime/",
+        "сайт звіту",
+        "кварц звіт"
+      ]
     }
   ],
   "upstream": {
@@ -277,6 +289,24 @@
       ],
       "workflow": ".github/workflows/main-health.yml",
       "manual": "Independently review and run the trusted-base Repository Gate. At resume/final acceptance follow governance/issue-workflow.md live-status checkpoint: inspect issue/PR/main/CI and canonical source fields at exact refs; refresh dated memory. RI freshness does not verify live status."
+    },
+    {
+      "id": "report-web",
+      "paths": [
+        "tools/report_web",
+        "report",
+        "evidence",
+        "protocols",
+        "assets",
+        "tests/test_report_web.py",
+        ".github/workflows/report-web.yml"
+      ],
+      "commands": [
+        "python3 tools/report_web/report_web.py check",
+        "python3 -m unittest discover -s tests -p 'test_report_web.py' -v"
+      ],
+      "workflow": ".github/workflows/report-web.yml",
+      "manual": "Inspect the real Quartz package and current producer workflow; visual/reader/host/cache/consumer delivery remain separately required under issue #74 and author #116. Producer checks do not verify research or authorize publication."
     }
   ]
 }

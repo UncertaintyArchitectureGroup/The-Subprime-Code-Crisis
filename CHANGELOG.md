@@ -8,6 +8,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added an independently built Quartz browser-report candidate for `/subprime/`, with explicit source/route selection, research-state projection, content-addressed resources and read-only HTML package CI. Author-site delivery and hosted acceptance remain separate work.
+
 - Added seven cost-source briefs, original market/budget sources, a historical accounting appendix and an explicitly hypothetical cash/capacity sensitivity model with reproducible inputs/results and boundary tests.
 
 - Added separate GitClear quality/output briefs from the full original PDF and embedded report, with exact denominators, sampling/windows, access provenance and internal-reporting discrepancies.

@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "repository": "UncertaintyArchitectureGroup/The-Subprime-Code-Crisis",
+  "canonical_base": "https://vitaliioborskyi.ai/subprime/",
+  "mount": "/subprime/",
+  "content_license": "CC-BY-SA-4.0",
+  "engine": {
+    "repository": "https://github.com/UncertaintyArchitectureGroup/uncertainty-architecture.git",
+    "commit": "989fc1398fc221ffca4e1f7a141b2c03bfc7cfb3",
+    "version": "4.5.2"
+  },
+  "external_runtime": [
+    "https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs"
+  ],
+  "pages": [
+    {
+      "source": "tools/report_web/landing.md",
+      "slug": "index",
+      "group": "Start"
+    },
+    {
+      "source": "README.md",
+      "slug": "overview",
+      "group": "Context"
+    },
+    {
+      "source": "report/01_the_illusion.md",
+      "slug": "report/the-illusion",
+      "group": "Report"
+    },
+    {
+      "source": "report/02_broken_mechanics.md",
+      "slug": "report/broken-mechanics",
+      "group": "Report"
+    },
+    {
+      "source": "report/03_the_aftermath.md",
+      "slug": "report/the-aftermath",
+      "group": "Report"
+    },
+    {
+      "source": "SCOPE.md",
+      "slug": "scope",
+      "group": "Context"
+    },
+    {
+      "source": "DOCTRINE.md",
+      "slug": "doctrine",
+      "group": "Context"
+    },
+    {
+      "source": "GLOSSARY.md",
+      "slug": "glossary",
+      "group": "Context"
+    },
+    {
+      "source": "ARTIFACT_MODEL.md",
+      "slug": "artifact-model",
+      "group": "Context"
+    },
+    {
+      "source": "REFERENCES.md",
+      "slug": "references",
+      "group": "Context"
+    },
+    {
+      "source": "TERMINOLOGY_AND_ATTRIBUTION.md",
+      "slug": "attribution",
+      "group": "Context"
+    },
+    {
+      "source": "LICENSE.md",
+      "slug": "license",
+      "group": "Context"
+    },
+    {
+      "source": "report/appendices/cost-context.md",
+      "slug": "report/appendices/cost-context",
+      "group": "Appendix"
+    },
+    {
+      "source": "report/appendices/tco-sensitivity.md",
+      "slug": "report/appendices/tco-sensitivity",
+      "group": "Appendix"
+    },
+    {
+      "source": "evidence/README.md",
+      "slug": "evidence/index",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/SOURCES.md",
+      "slug": "evidence/sources",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/datasets/README.md",
+      "slug": "evidence/datasets/index",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/documentary/2020-google-engineering-practices.md",
+      "slug": "evidence/documentary/2020-google-engineering-practices",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/documentary/2024-alphabet-financial-context.md",
+      "slug": "evidence/documentary/2024-alphabet-financial-context",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/documentary/2024-meta-financial-context.md",
+      "slug": "evidence/documentary/2024-meta-financial-context",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/documentary/2024-microsoft-financial-context.md",
+      "slug": "evidence/documentary/2024-microsoft-financial-context",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/documentary/README.md",
+      "slug": "evidence/documentary/index",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/documentary/project-provenance.md",
+      "slug": "evidence/documentary/project-provenance",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/documentary/terminology-provenance.md",
+      "slug": "evidence/documentary/terminology-provenance",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/methodology/README.md",
+      "slug": "evidence/methodology/index",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2023-copilot-task-productivity.md",
+      "slug": "evidence/primary/2023-copilot-task-productivity",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
+      "slug": "evidence/primary/2025-cloudzero-ai-budget-intentions",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2025-gitclear-code-quality.md",
+      "slug": "evidence/primary/2025-gitclear-code-quality",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2025-gitclear-developer-output.md",
+      "slug": "evidence/primary/2025-gitclear-developer-output",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2025-menlo-enterprise-ai-spend.md",
+      "slug": "evidence/primary/2025-menlo-enterprise-ai-spend",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2025-metr-experienced-developer-productivity.md",
+      "slug": "evidence/primary/2025-metr-experienced-developer-productivity",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2025-xu-copilot-oss-activity.md",
+      "slug": "evidence/primary/2025-xu-copilot-oss-activity",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2026-agarwal-agent-adoption.md",
+      "slug": "evidence/primary/2026-agarwal-agent-adoption",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2026-metr-productivity-design-update.md",
+      "slug": "evidence/primary/2026-metr-productivity-design-update",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/2026-writing-code-vs-shipping-code.md",
+      "slug": "evidence/primary/2026-writing-code-vs-shipping-code",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/primary/README.md",
+      "slug": "evidence/primary/index",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/secondary/2026-inference-cost-commentary.md",
+      "slug": "evidence/secondary/2026-inference-cost-commentary",
+      "group": "Evidence"
+    },
+    {
+      "source": "evidence/secondary/README.md",
+      "slug": "evidence/secondary/index",
+      "group": "Evidence"
+    },
+    {
+      "source": "protocols/01_personal_defense.md",
+      "slug": "protocols/personal-defense",
+      "group": "Protocols"
+    },
+    {
+      "source": "protocols/02_operational_defense.md",
+      "slug": "protocols/operational-defense",
+      "group": "Protocols"
+    },
+    {
+      "source": "protocols/03_public_defense.md",
+      "slug": "protocols/public-defense",
+      "group": "Protocols"
+    },
+    {
+      "source": "protocols/04_systemic_cure.md",
+      "slug": "protocols/systemic-cure",
+      "group": "Protocols"
+    },
+    {
+      "source": "protocols/README.md",
+      "slug": "protocols/index",
+      "group": "Protocols"
+    }
+  ],
+  "assets": [
+    "assets/crisis_cover.png"
+  ]
+}

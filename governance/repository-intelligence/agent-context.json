@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "84a3d92da69e972eaf86b1df4ba6a229548fa07b877f5f8cb6970d312112b3c5",
+    "digest": "605a93b2befe6324a0e815e6669fb50865054c7e06ac9cdce90d2bb1187210d7",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -38,6 +38,11 @@
         "path": ".github/workflows/main-health.yml",
         "identity_mode": "content",
         "sha256": "c782f224d7afcbaaf4d6e2efcaf1e8cb2e60985eab1d5af5086970927be29ceb"
+      },
+      {
+        "path": ".github/workflows/report-web.yml",
+        "identity_mode": "content",
+        "sha256": "02a5f4c474dc5b1cf43a7f2ab315178fbefde2f50313958f116be02bd39c60c8"
       },
       {
         "path": ".github/workflows/repository-gate.yml",
@@ -62,7 +67,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "e11074c362e48cae3aefc679814ff0be7659cdb66dc0857ecd26a6f58228b27f"
+        "sha256": "80e174cdd5dfbae1b36e412762134278e17196189b23d6ce71318517a11c7c45"
       },
       {
         "path": "CITATION.cff",
@@ -282,7 +287,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "b15e68c771fc8e963237d3e6d37ebf65b0bb5c4de84845b5f1703704dd2d25d2"
+        "sha256": "fbed61e52c93d333cae967dec8a717744892237c952daa2aa8ef33d6343079a8"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -297,7 +302,7 @@
       {
         "path": "governance/repository-intelligence-config.json",
         "identity_mode": "content",
-        "sha256": "762b0aaf1f4318b14cd4f7dc9d2c5688aa3686fbbe9910ff067c516819e2c823"
+        "sha256": "db778285af635d6cc317e570ca1d93c87e7d06bdae127ddaccf600e390e4cf83"
       },
       {
         "path": "governance/repository-intelligence.md",
@@ -353,6 +358,11 @@
         "path": "governance/reviews/issue-60-2026-10-21-sol-corrections.md",
         "identity_mode": "content",
         "sha256": "04f20dc7e08365ada25fe7e4407a459d263cbfa8b87ce42282f27f42cce29019"
+      },
+      {
+        "path": "governance/reviews/issue-74-2026-10-21-web-report.md",
+        "identity_mode": "content",
+        "sha256": "0f9dd1e7adb499c05542831dc42a318e0e554b15840e55470866f7f241b1e43a"
       },
       {
         "path": "governance/status-model.md",
@@ -438,6 +448,11 @@
         "path": "governance/work-records/2026-10-21-issue-60-final-verification.toml",
         "identity_mode": "content",
         "sha256": "4a6deacd1cd37f4217652c800c4ac1ba57f50f7c4705636bf84c71bb48c2d039"
+      },
+      {
+        "path": "governance/work-records/2026-10-21-issue-74-web-report.toml",
+        "identity_mode": "content",
+        "sha256": "a47ff1786097e208fd184411c16fe4fea78d30ffe4eb463bd325f420ed772192"
       },
       {
         "path": "governance/work-records/README.md",
@@ -535,6 +550,11 @@
         "sha256": "3786506e40b1a09a09d1b2a3ae19241a623e62e4e16040209792b2e26d1ef370"
       },
       {
+        "path": "tests/test_report_web.py",
+        "identity_mode": "content",
+        "sha256": "c62a16ccc70e5b75feb387b128383e251a1a46265c991845c4ee75135c69e78e"
+      },
+      {
         "path": "tests/test_repository_gate.py",
         "identity_mode": "content",
         "sha256": "d8c58b415ea13bb141bfbf0695511c427407b080ef09096b4289ac60bafa1cad"
@@ -573,6 +593,71 @@
         "path": "tools/evidence_transition_gate.py",
         "identity_mode": "content",
         "sha256": "2a05ff3503603bc95b630b45a7cc8be2c8fac6c6ce50825aec0493efb8955ffb"
+      },
+      {
+        "path": "tools/report_web/.gitignore",
+        "identity_mode": "content",
+        "sha256": "e0d99723c24f58232dfe0ca7a870eb636e7a69f5e9512eeea4e8a4a9cc274d8f"
+      },
+      {
+        "path": "tools/report_web/Quartz-MIT.txt",
+        "identity_mode": "content",
+        "sha256": "3553b1bda6785a2fdb0ccb5f1c93ea0b7969ae1456d0bb734964ae73ef02a1dc"
+      },
+      {
+        "path": "tools/report_web/README.md",
+        "identity_mode": "content",
+        "sha256": "7590e6bf1eb3dabe9d82b85d6da33c88f1719641e7a08e3447ea9309d038222e"
+      },
+      {
+        "path": "tools/report_web/landing.md",
+        "identity_mode": "content",
+        "sha256": "f8de7a4100e22ceee1aa50b907d04d80d26c38003d4d3b894606550f0bf84941"
+      },
+      {
+        "path": "tools/report_web/prepare.mjs",
+        "identity_mode": "content",
+        "sha256": "5b1e54ac22ab0763e3d5bc456cd1a52e9f2d711d2f79ea5f1f78becc9bb4c657"
+      },
+      {
+        "path": "tools/report_web/projection-check.mjs",
+        "identity_mode": "content",
+        "sha256": "7c62a402f419261a85bbb64269d9264fc5bd7cf78ef8ffd211e0cbe61d10a46d"
+      },
+      {
+        "path": "tools/report_web/publication.json",
+        "identity_mode": "content",
+        "sha256": "c2bca1b7960ed184b86c4e7410d296b0c3c845223c97e6947c0a78e184e54dea"
+      },
+      {
+        "path": "tools/report_web/quartz.config.ts",
+        "identity_mode": "content",
+        "sha256": "2fb5ea0b1c5b7eea66ab2ee075adf930635513e7069b2ba87eea91d0660d876a"
+      },
+      {
+        "path": "tools/report_web/quartz.layout.ts",
+        "identity_mode": "content",
+        "sha256": "76b06b91ba4199dae96332b2c976d6ca2a6f4b1beddf85603ea1f5d95e0b5a49"
+      },
+      {
+        "path": "tools/report_web/report-components.tsx",
+        "identity_mode": "content",
+        "sha256": "6dca3b9f8e2f58a595a0cb98c340359ff84d193da5635a7521575ee6b8a769ae"
+      },
+      {
+        "path": "tools/report_web/report-indexes.ts",
+        "identity_mode": "content",
+        "sha256": "86e29d2eb2b8329452d106c4b94d3f422724319e64e95cf4fbf279cedc35e8ca"
+      },
+      {
+        "path": "tools/report_web/report.scss",
+        "identity_mode": "content",
+        "sha256": "d6e6df65e8521220358b1df0cae1edfc0a3f204e6f7c266d6c23c238c590288f"
+      },
+      {
+        "path": "tools/report_web/report_web.py",
+        "identity_mode": "content",
+        "sha256": "9635306b0442251110ff4999b0c917a2f9e647c647d927913ef9f50520ab9787"
       },
       {
         "path": "tools/repository_gate.py",
@@ -630,7 +715,7 @@
     "path": "tools/repository_intelligence.py",
     "sha256": "6544d9790ecd432bf7174a6d18a644a78bb0a3eb7554483e4fe2c7ca2ad8e306",
     "config_path": "governance/repository-intelligence-config.json",
-    "config_sha256": "762b0aaf1f4318b14cd4f7dc9d2c5688aa3686fbbe9910ff067c516819e2c823"
+    "config_sha256": "db778285af635d6cc317e570ca1d93c87e7d06bdae127ddaccf600e390e4cf83"
   },
   "owners": [
     {
@@ -815,6 +900,18 @@
         "vendor criticism",
         "гіпотези",
         "сценарії"
+      ]
+    },
+    {
+      "concern": "browser report publication producer",
+      "path": "tools/report_web/README.md",
+      "queries": [
+        "report website",
+        "Quartz report",
+        "subprime web",
+        "/subprime/",
+        "сайт звіту",
+        "кварц звіт"
       ]
     }
   ],
@@ -1354,6 +1451,13 @@
       ]
     },
     {
+      "path": ".github/workflows/report-web.yml",
+      "title": ".github/workflows/report-web.yml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": ".github/workflows/repository-gate.yml",
       "title": ".github/workflows/repository-gate.yml",
       "instructions": [
@@ -1795,6 +1899,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-74-2026-10-21-web-report.md",
+      "title": "Issue #74 — standalone browser-report producer",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -1909,6 +2020,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-60-final-verification.toml",
       "title": "governance/work-records/2026-10-21-issue-60-final-verification.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-74-web-report.toml",
+      "title": "governance/work-records/2026-10-21-issue-74-web-report.toml",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2047,6 +2165,13 @@
       ]
     },
     {
+      "path": "tests/test_report_web.py",
+      "title": "tests/test_report_web.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "tests/test_repository_gate.py",
       "title": "tests/test_repository_gate.py",
       "instructions": [
@@ -2098,6 +2223,97 @@
     {
       "path": "tools/evidence_transition_gate.py",
       "title": "tools/evidence_transition_gate.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/.gitignore",
+      "title": "tools/report_web/.gitignore",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/Quartz-MIT.txt",
+      "title": "tools/report_web/Quartz-MIT.txt",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/README.md",
+      "title": "Subprime browser report",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/landing.md",
+      "title": "The Subprime Code Crisis",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/prepare.mjs",
+      "title": "tools/report_web/prepare.mjs",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/projection-check.mjs",
+      "title": "tools/report_web/projection-check.mjs",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/publication.json",
+      "title": "tools/report_web/publication.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/quartz.config.ts",
+      "title": "tools/report_web/quartz.config.ts",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/quartz.layout.ts",
+      "title": "tools/report_web/quartz.layout.ts",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/report-components.tsx",
+      "title": "tools/report_web/report-components.tsx",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/report-indexes.ts",
+      "title": "tools/report_web/report-indexes.ts",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/report.scss",
+      "title": "tools/report_web/report.scss",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/report_web/report_web.py",
+      "title": "tools/report_web/report_web.py",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2220,6 +2436,24 @@
       ],
       "workflow": ".github/workflows/main-health.yml",
       "manual": "Independently review and run the trusted-base Repository Gate. At resume/final acceptance follow governance/issue-workflow.md live-status checkpoint: inspect issue/PR/main/CI and canonical source fields at exact refs; refresh dated memory. RI freshness does not verify live status."
+    },
+    {
+      "id": "report-web",
+      "paths": [
+        "tools/report_web",
+        "report",
+        "evidence",
+        "protocols",
+        "assets",
+        "tests/test_report_web.py",
+        ".github/workflows/report-web.yml"
+      ],
+      "commands": [
+        "python3 tools/report_web/report_web.py check",
+        "python3 -m unittest discover -s tests -p 'test_report_web.py' -v"
+      ],
+      "workflow": ".github/workflows/report-web.yml",
+      "manual": "Inspect the real Quartz package and current producer workflow; visual/reader/host/cache/consumer delivery remain separately required under issue #74 and author #116. Producer checks do not verify research or authorize publication."
     }
   ],
   "upstream": {
