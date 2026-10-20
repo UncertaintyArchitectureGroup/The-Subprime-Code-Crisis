@@ -1,0 +1,23 @@
+record_version = 1
+title = "Issue #58: Xu/Agarwal samples, metric units, uncertainty and bounded integration"
+primary_flow = "Flow B — Legacy sources P-2025-03/P-2026-02"
+human_decision = "Maintainer's 2026-10-20 evidence/numeric/placement/neutral-tone correction request, one-issue lifecycle and explicit instruction to do next planned issue with status checks. Exact #58 treatment and alternatives recorded before editing in issue comment 6297923181 and governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md. No canonical rule, flow, source-state definition, gate, approval, obligation or protocol change."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Corrects material study population/units/uncertainty and relying conclusions; adds two briefs and an explicit existing live-status checkpoint."
+
+[synchronization]
+assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "report", "reader-navigation", "references", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No new contributor obligation or canonical process: supporting checklist, RI aliases/manual route and memory explain existing AGENTS start/handoff/closure checks. CONTRIBUTING already links these owners."
+
+# Independently Confirmed by /root/review_issue58 on 2026-10-20,
+# corrected candidate 48f9292881ce9d9df5f7277dfce5a91cb6741eb5,
+# tree e25e689db69a2f7a675e4e9c84a0602b4ee1538a.
+# Initial R1–R3 and relying Ch4 context rechecked; independent 119 tests,
+# contract/state/RI, status query/task context and trusted Gate/transitions passed.
+# This commit records the actual outcome and In progress state; no research
+# change follows review. Verified remains prohibited until checked merged main.

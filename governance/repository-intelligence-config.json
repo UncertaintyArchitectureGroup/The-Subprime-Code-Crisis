@@ -37,7 +37,9 @@
         "issue workflow",
         "backlog",
         "ішью",
-        "беклог"
+        "беклог",
+        "status check",
+        "перевірка статусу"
       ]
     },
     {
@@ -274,7 +276,7 @@
         "python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify"
       ],
       "workflow": ".github/workflows/main-health.yml",
-      "manual": "Independent review and trusted-base Repository Gate remain separate."
+      "manual": "Independently review and run the trusted-base Repository Gate. At resume/final acceptance follow governance/issue-workflow.md live-status checkpoint: inspect issue/PR/main/CI and canonical source fields at exact refs; refresh dated memory. RI freshness does not verify live status."
     }
   ]
 }

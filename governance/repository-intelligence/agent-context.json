@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "1b86028fdb31e58dcdb53f77892290d05898b76c5468a582e65aed2ee57a0e16",
+    "digest": "853e97f39db26a1e7377eecf077d01cafa39048827604635116e41652b20e396",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "39bd265a27480bdc97cbcb0d4b25486fcde63e801df2f555a16bc9543c2581f7"
+        "sha256": "415d5020bc648dcfb9aa60bd685f39d3278461b7cc83b3f41b415b6b99ffd51e"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "f5f22e4e0405af99c46fc23e241a8d34b9e217a57abb6292b58688b659348da7"
+        "sha256": "e46514b090880f3dd6219c274ae1405eabd511a2b1190f9181775fbf93c2ae93"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "c912beca026a339b857c4ae762305da3d81faf550f0def3523002669801f2358"
+        "sha256": "f531a45b663b9ea1cbe5a4ef8f6bcb054c372ca0abb0cd9df98611315caf7eaa"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "083f5930827ea302bf8cf4b85aac6d2d68f6317daebd98d43891a921be466dbb"
+        "sha256": "a143dab0d40830f8988d21b33357eabe68a51f3c20b50530d03e57c0a1af8b14"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -165,6 +165,16 @@
         "sha256": "049b999f86049ad760838ac5f660c3c157c3c32bd6aeb6605f808dc0d2f42120"
       },
       {
+        "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
+        "identity_mode": "content",
+        "sha256": "f431bd24820c176ae5d2b3e0c9375e4e3815873ff8eca90e5782e13ecc742deb"
+      },
+      {
+        "path": "evidence/primary/2026-agarwal-agent-adoption.md",
+        "identity_mode": "content",
+        "sha256": "131dde5e8b56b800586d3218db918bbcc36cb4b64180aff2d8cab201d372b32f"
+      },
+      {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
         "sha256": "2813687c828b4ef02f811260f689eef804172157a70607300f66e774c59de1b7"
@@ -177,7 +187,7 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "6fac64bad5c9a88580fde8694403867ebddbf7c0311a83960e1e8903114bc115"
+        "sha256": "cb8349c0342d3925aadb8aec84f3644930ecaff9e8909be3458cc355272a6013"
       },
       {
         "path": "evidence/secondary/README.md",
@@ -222,12 +232,12 @@
       {
         "path": "governance/issue-workflow.md",
         "identity_mode": "content",
-        "sha256": "c05d8b4b26fda05ae2056a37a7137f658d20c248d1e40d7a30084f1c798f64d1"
+        "sha256": "311218a95555923e64c8d2cced8902693299bc9a1eba442fe82d7283c14a5e89"
       },
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "72f9f5a8f89b54c1cc3a0262348fcbbc2a46893273bb73c9c6e7872fb33ebfd4"
+        "sha256": "95cf2245c60e469ed724c51ac987e26ebc157ea83bc75b81bf8a93a5e74fa792"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -242,12 +252,12 @@
       {
         "path": "governance/repository-intelligence-config.json",
         "identity_mode": "content",
-        "sha256": "23eb1f5aac284e212d19992daa3d5e54ac7a551042a298100c9efdbb6e2405d3"
+        "sha256": "762b0aaf1f4318b14cd4f7dc9d2c5688aa3686fbbe9910ff067c516819e2c823"
       },
       {
         "path": "governance/repository-intelligence.md",
         "identity_mode": "content",
-        "sha256": "e9065ecefb4a2865dd84c979890708b849b02b8cfd64752e4c591b77016c2e71"
+        "sha256": "4855857ea34d8f7b55b1a95318102e80e23f4334ef7111dfd620d47b44f91d28"
       },
       {
         "path": "governance/repository-map.md",
@@ -268,6 +278,11 @@
         "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
         "identity_mode": "content",
         "sha256": "5d7498be8b55ef7ee49306363c123b323ad2083b9ce66529643b6f960f1cdf01"
+      },
+      {
+        "path": "governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md",
+        "identity_mode": "content",
+        "sha256": "e5e67eaf8d7ca15af27bfd7cddef4832ca6d6d92ab8e9d936270a5bd49c21709"
       },
       {
         "path": "governance/status-model.md",
@@ -325,6 +340,11 @@
         "sha256": "8a64ec7d831f42eddd008508ab350882726256e3527488f788a5cdc739bbc85e"
       },
       {
+        "path": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
+        "identity_mode": "content",
+        "sha256": "c37d351926ab1d31cd3d82f17a4b64a9ea758737d7bcc0296130612b369b36b9"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -357,7 +377,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "d7e15275dcaa6fbb7660467a2b49c4edef9e4625e2757a4b0c166cb3c43413b5"
+        "sha256": "68d60dd453068663397eed56dc055dddf027cda76ddc23d806a84b01654c7abc"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -485,7 +505,7 @@
     "path": "tools/repository_intelligence.py",
     "sha256": "6544d9790ecd432bf7174a6d18a644a78bb0a3eb7554483e4fe2c7ca2ad8e306",
     "config_path": "governance/repository-intelligence-config.json",
-    "config_sha256": "23eb1f5aac284e212d19992daa3d5e54ac7a551042a298100c9efdbb6e2405d3"
+    "config_sha256": "762b0aaf1f4318b14cd4f7dc9d2c5688aa3686fbbe9910ff067c516819e2c823"
   },
   "owners": [
     {
@@ -504,7 +524,9 @@
         "issue workflow",
         "backlog",
         "ішью",
-        "беклог"
+        "беклог",
+        "status check",
+        "перевірка статусу"
       ]
     },
     {
@@ -910,23 +932,23 @@
       "id": "P-2025-03",
       "path": "evidence/SOURCES.md",
       "source": "Xu et al., *AI-Assisted Programming Decreases the Productivity of Experienced Developers*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Large-scale developer-output and review-load associations reported by the authors",
-      "current_use": "Senior-load and productivity discussion",
-      "brief_path": null
+      "can_support": "Language-availability DiD estimates of OSS project/contributor activity and rework/review-count proxies; not seniority, review hours or net delivery loss",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-xu-copilot-oss-activity.md"
     },
     {
       "id": "P-2026-02",
       "path": "evidence/SOURCES.md",
       "source": "Agarwal et al., *AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Reported static-analysis and code-structure differences in the study sample",
-      "current_use": "Complexity and quality-risk discussion",
-      "brief_path": null
+      "can_support": "Repository-month activity and static-metric estimates by observable adoption history; not per-feature debt, human cognitive load or functional correctness",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2026-agarwal-agent-adoption.md"
     },
     {
       "id": "P-2023-01",
@@ -1360,6 +1382,20 @@
       ]
     },
     {
+      "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
+      "title": "Xu: Copilot availability and open-source activity",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2026-agarwal-agent-adoption.md",
+      "title": "Agarwal: agent adoption, activity and code structure",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2026-metr-productivity-design-update.md",
       "title": "METR: follow-up selection and measurement limits",
       "instructions": [
@@ -1507,6 +1543,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md",
+      "title": "Issue #58: Xu/Agarwal source, occurrence and placement audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -1579,6 +1622,13 @@
     {
       "path": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
       "title": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
+      "title": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1847,7 +1897,7 @@
         "python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify"
       ],
       "workflow": ".github/workflows/main-health.yml",
-      "manual": "Independent review and trusted-base Repository Gate remain separate."
+      "manual": "Independently review and run the trusted-base Repository Gate. At resume/final acceptance follow governance/issue-workflow.md live-status checkpoint: inspect issue/PR/main/CI and canonical source fields at exact refs; refresh dated memory. RI freshness does not verify live status."
     }
   ],
   "upstream": {

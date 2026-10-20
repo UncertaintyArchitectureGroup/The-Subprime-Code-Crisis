@@ -7,7 +7,7 @@
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
 *   [Chapter 2. The Missing Price Tag](#chapter-2-the-missing-price-tag-the-true-cost-of-making-ai-work)
 *   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-why-the-board-chooses-a-strategy-of-degradation)
-*   [Chapter 4. Anatomy of the Break](#chapter-4-anatomy-of-the-break-how-the-safe-scenario-kills-the-sdlc)
+*   [Chapter 4. A Review-Capacity Scenario](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
 ---
 
 ## Chapter 1. What Productivity Studies Measure: Task Time and Delivery Outcomes
@@ -30,30 +30,39 @@ Original methods and limitations matter alongside the headline result, including
 
 **Repository interpretation:** These are different experiments, not a controlled comparison of juniors and seniors, or of greenfield and brownfield work. Task, participant and tool differences could each contribute to the contrast; their separate causal contributions are not identified here. Time reduction is not an equally sized percentage increase in throughput. Neither the positive nor the negative task result can decide enterprise delivery performance by itself.
 
-### [Observational Developer Activity: A Different Design (Xu et al., 2025)](https://arxiv.org/abs/2510.10165)
+### [Observational Activity and Rework: Xu et al., v3](../evidence/primary/2025-xu-copilot-oss-activity.md)
 
-Xu et al. examines developer activity with a different design and outcome boundary. It should not be described as a replication of METR's randomized task-time experiment. Its population, role definitions and reported activity/review measures require their own source audit; the legacy quantitative claims below remain pending that audit.
-* **Labor Redistribution:** While peripheral contributors (Juniors) exploded their output (**+43.5% commits**), Core Contributors (Seniors) saw their coding output collapse (**-19% commits**).
-* **The Maintenance Trap:** Instead of writing code, seniors were forced to shift to reviewing it, with their review load increasing by **+6.5%**. Crucially, the AI-generated code required **2.4% more rework** per PR to meet quality standards.
+Xu et al. use Copilot's 2021 language availability in Microsoft-owned open-source projects as a quasi-experiment, not a replication of the task-time experiments. The study reports **2,755 repositories and a separately filtered panel of 1,699 contributors**, observed during July 2020–July 2022. Actual individual Copilot use is unobserved; difference-in-differences estimates depend on comparable counterfactual language trends.
+
+* **Positive project activity:** Table 5 reports +17.7% lines added and +4.3% PRs (p<.01), alongside +4.1% commits (only p<.10). These gains do not disappear in the aggregate results.
+* **Activity-quartile differences:** Appendix Table 13 reports approximately **+43.5% commits for the bottom pre-treatment activity quartile** and **−19.3% for the top/core quartile**. Core means commit activity, not professional seniority; the bottom quartile does not represent all peripheral contributors.
+* **Review and rework proxies:** The top quartile's **+6.5% review-count estimate is uncertain** (Table 11: p=.086; derived 95% interval −0.9 to +14.4%). Table 5 reports **+2.4% repository-month follow-up-commit activity with PR volume controlled**, not per-PR defects. Neither measure is review hours or measured displacement of coding time.
+
+The [brief](../evidence/primary/2025-xu-copilot-oss-activity.md) gives coefficients, transformed-count uncertainty and source-internal reporting discrepancies. The subgroup pattern motivates a redistribution hypothesis; it does not establish its cause, net project value or an enterprise-wide senior penalty.
 
 **Mechanism hypothesis:** Additional generated work could increase review effort when verification capacity does not grow with it. The task-time experiments above do not establish that labor redistribution occurred across teams. Tool friction, task mix and changes in scope are alternative explanations; stable review effort and improved production outcomes would weaken a review-bottleneck explanation in a local deployment.
 
 ---
 
-### [The Cognitive Tax: Complexity & Warnings (Agarwal et al., 2026)](https://arxiv.org/abs/2601.13597)
+### [Agent Adoption and Code Structure: Agarwal et al., v2](../evidence/primary/2026-agarwal-agent-adoption.md)
 
-If we are typing faster, what exactly are we producing? **Agarwal et al. (2026)** conducted a deep structural analysis of AI-generated codebases versus human-authored ones. The findings explain *why* the maintenance burden is exploding:
+Agarwal et al. study **repository-month outcomes after the first observable agent-attributed PR**, using matched staggered difference-in-differences. Their January 2024–November 2025 OSS panels distinguish agent-first (AF: 401 treated/606 controls) from IDE-first (IF: 117/73), using detectable IDE configuration traces. These labels approximate exposure histories; missing traces do not establish no prior AI use. This is not a comparison of purely AI-authored and human-authored codebases.
 
-* **Static Analysis Warnings (+18%):** AI agents consistently introduce subtle violations of linting rules and best practices that human seniors typically filter out instinctively.
-* **Cognitive Complexity (+39%):** This is the killer metric. The code generated by AI is functionally correct but structurally convoluted. It lacks the elegance and readability of human-crafted logic.
+| Table 2 outcome | Agent-first | IDE-first |
+| --- | --- | --- |
+| Commits / lines added | **+36.25% / +76.59%**, both p<.001 | +3.06% / −6.34%, both inconclusive at 5% |
+| Cognitive/code complexity | **+34.85%**, p<.001 | **+42.87%**, p<.01 |
+| Static-analysis warnings | **+17.73%**, p<.001 | +19.00%, inconclusive at 5% |
 
-**The Implication:** We are not just generating code; we are generating **technical debt** at a rate of +39% complexity per feature. This explains why Code Reviews are becoming the new bottleneck.
+Positive AF activity gains coexist with higher structural-risk metrics; average IF activity gains are uncertain. Outcomes are aggregated by repository-month, with LOC among the covariates. They do not measure complexity per feature, functional correctness, reviewers' mental effort or lifecycle cost. Figure 2 shows some pre-treatment warning/complexity signals, including IF complexity at t=−2, which the authors acknowledge as a design limitation. A causal interpretation remains conditional on the identification assumptions.
+
+**Repository hypothesis:** More structurally complex changes could increase maintenance or review effort in some deployments. This study does not measure that mechanism. Task mix, repository growth and exposure misclassification are alternatives; direct review-time, defect and production measures are needed. The [brief](../evidence/primary/2026-agarwal-agent-adoption.md) preserves all Table 2 outcomes and the version/publication boundary.
 
 ---
 
 ### [The Data: A Crisis of Quality (GitClear)](https://www.gitclear.com/ai_assistant_code_quality_2025_research)
 
-When we overlay the complexity data (Agarwal) with volume data (GitClear), the picture becomes complete. Analyzing **211 million lines of code** relative to a 2022 baseline:
+GitClear reports a separate code-change dataset. Its figures cannot be multiplied by Agarwal's repository-month estimates or treated as a jointly observed causal sequence. The following legacy GitClear claims await their own source audit (#59), including the stated **211 million lines of code** and comparison baselines:
 
 **The Illusion of Output (Activity Metrics):**
 * **Lines of Code Added: +131.1%**
@@ -165,6 +174,8 @@ The experiments establish a positive effect on conditional completion time in Pe
 
 **Repository hypothesis:** Where additional upstream work exceeds downstream verification and release capacity, local acceleration may increase queues or rework rather than delivered value. A deployment with shorter production lead time and stable or improved quality would limit that hypothesis's applicability. Code quality and maintenance effects require separate evidence; they cannot be read out of these task-time percentages.
 
+Xu likewise reports positive project activity alongside heterogeneous contributor activity; Agarwal reports substantial AF activity gains, uncertain IF activity gains and mode-specific structural metrics. These observational results do not establish disappearing aggregate gains, per-feature debt or measured cognitive load. They belong beside the task experiments as different evidence, not additional stages of one causal estimate.
+
 The practical implication is to measure the complete delivery boundary while retaining local benefits and costs as distinct results.
 
 ---
@@ -173,8 +184,8 @@ The practical implication is to measure the complete delivery boundary while ret
 
 * **METR Study (July 2025):** [Paper v2](https://arxiv.org/abs/2507.09089v2) and [evidence brief](../evidence/primary/2025-metr-experienced-developer-productivity.md) — 16 experienced contributors, 246 completed familiar open-source tasks analyzed, early-2025 tools; AI allowed increased task time by 19% (95% CI +2 to +39%, restated in the February 2026 update). The brief records exclusion/imputation rules; forecast and retrospective perceptions differ from measured time.
 * **METR Follow-up (24 February 2026):** [Author update](https://metr.org/blog/2026-02-24-uplift-update/) and [evidence brief](../evidence/primary/2026-metr-productivity-design-update.md) — later experiment; authors report selection and time-measurement problems that prevent a reliable current magnitude estimate.
-* **Xu et al. (arXiv, 2025):** ["AI-Assisted Programming Decreases the Productivity of Experienced Developers"](https://arxiv.org/abs/2510.10165) — Analysis of 10,000+ developers confirming increased review load (+6.5%) and rework (+2.4%) for seniors, with a 19% drop in original code productivity for core contributors. Also confirms +43.5% output increase for peripheral contributors.
-* **Agarwal et al. (arXiv, 2026):** ["AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents"](https://arxiv.org/abs/2601.13597) — AI-generated code shows +18% static analysis warnings and +39% higher cognitive complexity. Quality degradation persists even when velocity gains fade.
+* **Xu et al. (arXiv v3, 28 January 2026):** [Paper](https://arxiv.org/abs/2510.10165v3) and [evidence brief](../evidence/primary/2025-xu-copilot-oss-activity.md) — 2,755 OSS repositories/1,699 contributors; positive project activity and activity-quartile differences. Core is not seniority; the +6.5% core review-count estimate has p=.086, not an established increase in review hours. Rework is a repository-month proxy with PR count controlled.
+* **Agarwal et al. (arXiv v2; MSR 2026 Mining Challenge):** [Reviewed v2](https://arxiv.org/abs/2601.13597v2) and [evidence brief](../evidence/primary/2026-agarwal-agent-adoption.md) — separate AF/IF repository-month panels, positive AF activity and heterogeneous structure estimates; IF activity/warning estimates are inconclusive. Static metrics do not measure human cognitive load or per-feature debt. Final publisher-edition equivalence was not checked.
 * **Peng et al. (arXiv v1, 2023):** [The Impact of AI on Developer Productivity: Evidence from GitHub Copilot](https://arxiv.org/abs/2302.06590v1) and [evidence brief](../evidence/primary/2023-copilot-task-productivity.md) — 95 randomized (45/50), 70 task-and-survey completers (35/35); 55.8% less completion time among completers on one JavaScript task (95% CI 21–89%). Experience heterogeneity is exploratory, not a universal seniority rule.
 * **GitClear (2025):** [AI Assistant Code Quality 2025 Research](https://www.gitclear.com/ai_assistant_code_quality_2025_research) — 8x increase in duplicated code blocks, code reuse dropped from ~25% to <10%. Dataset: 211 million changed lines.
 * **Demirer, Musolff, and Yang (NBER Working Paper 35275, 2026):** [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](https://www.nber.org/papers/w35275) — Reports substantial attenuation from commits toward projects and releases, and increased application supply without higher early aggregate usage. See the [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) for methodology, limitations, and claim boundaries.
@@ -396,50 +407,47 @@ The Board has successfully optimized the cheapest part of the SDLC — **typing*
 
 ---
 
-## Chapter 4. Anatomy of the Break: How the "Safe Scenario" Kills the SDLC
+## Chapter 4. A Review-Capacity Scenario: When Candidate Work Outruns Verification
 
-We have established that the Board has mandated a "high volume" strategy (Chapter 3), funded at 1–3% of the real transformation cost (Chapter 2), into a system already showing signs of quality degradation (Chapter 1). Now, let's look at the precise mechanism by which that strategy breaks the engineering process itself.
+Chapter 1 reports positive and mixed activity findings, plus static-analysis signals with design and uncertainty limits. Xu and Agarwal do not establish a universal decline in quality or a measured review bottleneck. This chapter proposes a conditional systems scenario: additional candidate work could exceed review and validation capacity. Its assumptions and downstream consequences require local evidence.
 
-To understand the catastrophe unfolding in engineering teams, we don't need complex AI theories. We just need basic manufacturing physics — specifically, Eliyahu Goldratt's **Theory of Constraints**.
+Goldratt's **Theory of Constraints** provides a lens for examining capacity limits. It is a framework for this scenario, not empirical identification of the bottleneck in any particular team.
 
 ---
 
 ### The Physics of Software Delivery
 
-Every manufacturing process, including software development, is a chain of events. The total output of the system (Throughput) is determined by exactly one thing: the speed of the slowest link (the **Bottleneck**).
+Consider an illustrative delivery system with coding, review, validation and release stages. Assume coding initially limits the flow and review has spare capacity. Faster candidate production could then expose a downstream constraint; it could also improve delivery if downstream capacity is sufficient.
 
-The classic SDLC (Software Development Life Cycle) was architected for a human-speed world:
-
-1. **Coding (The Constraint):** Writing code was hard, slow, and mentally taxing. It was the natural bottleneck.
-2. **Review & QA (The Capacity):** Because coding was slow, the downstream steps (Review, QA) had enough capacity to handle the flow.
-
-The system was balanced. The "slowness" of writing code acted as a natural **flow control valve**. This is not a flaw to be optimized away — it is a design feature of a stable delivery system.
+These are scenario assumptions, not a measured description of the classic SDLC or a finding that typing was every team's original bottleneck. Local queue, effort and production measures determine whether the model applies.
 
 ---
 
-### Breaking the Valve
+### Candidate Work Meets a Capacity Limit
+
+**Conditional scenario diagram:** arrows describe proposed relationships, not a measured path through Xu or Agarwal data. The constraint may be review, another stage, or absent in a deployment.
 
 ```mermaid
 flowchart TD
     %% Nodes
-    AI[("🌊 AI GENERATION 🌊 (Unlimited Input)")]
+    AI[("AI-assisted candidate work")]
     
-    subgraph Sdlc ["The Jammed System"]
-        Queue[/"⚠️PR Queue (Inventory)⚠️"\]
-        Context("Loss of Context")
+    subgraph Sdlc ["Possible downstream constraint"]
+        Queue[/"PR queue"\]
+        Context("Possible context loss")
     end
 
-    Bottleneck(("⛔ SENIOR ENGINEER ⛔ (The Bottleneck)"))
+    Bottleneck(("Constrained review capacity"))
     
-    Output[("💧 Delivered Value 💧 (Trickle)")]
+    Output[("Delivered changes")]
 
     %% Connections
-    AI == "Firehose of Code" ==> Queue
+    AI == "More candidate changes" ==> Queue
     Queue --> Context
     Context --> Bottleneck
     
     Bottleneck -.->|"Rubber Stamp (Risk)"| Output
-    Bottleneck == "Deep Review (Slow)" ==> Output
+    Bottleneck == "Thorough review" ==> Output
 
     %% Styles
     style AI fill:#aaffaa,stroke:#333,stroke-width:2px
@@ -448,15 +456,11 @@ flowchart TD
     style Output fill:#e1f5fe,stroke:#333,stroke-width:2px
 ```
 
-The introduction of AI Code Assistants removed the flow control valve.
+In this scenario, candidate-production capacity grows faster than the team's ability to verify changes.
 
-Suddenly, the "Coding" phase is no longer the constraint. A junior developer with an AI Code Assistant can generate code faster than they can read it. As demonstrated in Chapter 1, the volume of code entering the pipeline has more than doubled (+131% lines added), while its structural quality has degraded significantly (+39% cognitive complexity, +18% static analysis warnings).
+In the scenario considered here, candidate-code production accelerates while downstream capacity remains constrained. Chapter 1 reports positive activity effects and structural-risk signals in different samples: Xu has positive project activity, and Agarwal separates AF gains from uncertain IF activity. Neither measures a universal junior speedup or one pipeline whose volume and complexity jointly rise at fixed rates. GitClear's separate volume claims still require their own audit (#59).
 
-But here is the **"Anatomy of the Break"**: We changed the input parameters of the system without changing the architecture of the processing nodes.
-
-We are pumping a firehose of water (**AI-generated code**) into a garden hose (**Human Review**).
-
-According to the Theory of Constraints, when you increase flow upstream of a bottleneck, you do not get more throughput. You get **Inventory**.
+If arrivals persistently exceed a constrained stage's processing capacity, work may accumulate before it. Reducing change size, improving verification or limiting intake are possible responses; the appropriate response depends on which constraint is actually observed.
 
 ---
 
@@ -464,9 +468,9 @@ According to the Theory of Constraints, when you increase flow upstream of a bot
 
 In manufacturing, inventory sitting on the factory floor is a known cost — it takes up space, ties up capital, and degrades over time. In software, the equivalent is even more toxic because it is invisible:
 
-* **WIP (Work In Progress):** Explodes, creating context-switching hell. Xu et al. (2025) quantified this: senior engineers saw their review load increase by +6.5% while their own coding output dropped by -19%. They are no longer building — they are triaging.
+* **WIP (Work In Progress):** A larger queue could increase switching costs. [Xu v3](../evidence/primary/2025-xu-copilot-oss-activity.md) finds fewer commits in the core activity quartile, but its review-count increase is uncertain (p=.086). It measures neither WIP nor review hours and does not prove that senior engineers stopped building to triage.
 * **Merge Conflicts:** Grow exponentially as PRs sit longer in the queue. What was a 10-minute merge becomes a 2-hour archeological expedition.
-* **Cognitive Load:** Reviewers are forced to debug code they didn't write and don't understand. As Agarwal et al. (2026) showed, AI-generated code carries +39% higher cognitive complexity — meaning each review takes disproportionately more mental effort than equivalent human-written code.
+* **Cognitive Load:** More structurally complex changes may be harder to inspect. [Agarwal v2](../evidence/primary/2026-agarwal-agent-adoption.md) reports repository-month complexity estimates of +34.85% (AF) and +42.87% (IF), not human cognitive load or time per review. The proposed link requires direct local measurement.
 * **Stale Context:** By the time a PR reaches the front of the queue, the codebase has moved on. The reviewer must now evaluate code against a state that no longer exists.
 
 This is not a theoretical concern. Industry analysis confirms that AI-generated code requires **2–3x longer review time** due to plausible bugs hidden within syntactically elegant output — what this report terms "plausible lies."
@@ -491,33 +495,27 @@ This is the **Rubber Stamp Trap**: a structural incentive to approve code you ha
 
 ### The Illusion of "Safe" Adoption
 
-This is why the "**Safe Scenario**" — buying licenses without changing the process — is actually the most dangerous strategy available.
+Buying licenses without assessing downstream capacity could leave a team exposed to a new constraint. The studies reviewed here do not rank this strategy as the most dangerous or show that it necessarily causes failure.
 
-By keeping the old process intact (where humans are expected to manually review every line of code) while dramatically increasing the volume and complexity of that code, organizations have turned their senior engineers into the **new bottleneck** without giving them any new tools or capacity to handle the load.
+If candidate changes grow faster than review and validation capacity, the review stage may become a bottleneck. Xu and Agarwal motivate investigating this possibility; their activity and static-analysis estimates do not demonstrate it in every organization.
 
-The "safe" scenario is only safe for the budget line. For the engineering system, it is a slow-motion collapse:
+The following is a conditional systems scenario, not a sequence measured by the cited studies. Its inputs require local measurement; no cross-study percentage calibrates this loop:
 
-1. **Volume doubles** (Chapter 1: +131% lines added)
-2. **Complexity increases** (Chapter 1: +39% cognitive complexity per unit)
+1. **Candidate work increases** relative to downstream capacity
+2. **Changes become harder to inspect**, if complexity or unfamiliarity grows; Agarwal does not estimate a per-unit rate
 3. **Review capacity stays constant** (no new senior hires, no automated review infrastructure)
 4. **Queue grows** → **Context degrades** → **Rubber stamps increase** → **Defects escape**
 5. **Maintenance costs explode** → **Seniors burn out** → **Review capacity shrinks**
 
-This is a **positive feedback loop** — a death spiral where each cycle degrades the system further. The queue gets longer, the reviews get shallower, the bugs get deeper, and the remediation gets more expensive.
+This proposed feedback loop would be weakened by stable review effort, shorter production lead time and stable or improved quality despite increased candidate work. Its later consequences are hypotheses, not outcomes measured by Xu or Agarwal.
 
 ---
 
-### Conclusion: The Traffic Jam
+### Conclusion: Test the Constraint
 
-Imagine a highway where we suddenly give every car a **Ferrari engine (AI)**, but we don't add any new lanes and we keep the same single toll booth (Review) at the end.
+A faster upstream stage can improve delivery when downstream stages can absorb the work. If review is already constrained, more candidate changes may instead grow the queue. This conditional distinction is the point of the scenario; it is not a finding that AI only optimizes typing or necessarily worsens delivery.
 
-The cars are faster. The engine noise is louder. But the traffic jam at the toll booth is now miles long.
-
-We haven't built a faster highway. **We've just built a faster way to get to the traffic jam.**
-
-The Theory of Constraints tells us that optimizing any step *other than the bottleneck* is not just useless — it is actively harmful, because it floods the bottleneck with more work than it can process. AI Code Assistants have optimized the one step in the SDLC that didn't need optimization (typing speed), while ignoring the steps that actually constrain delivery (review, integration, verification).
-
-Until organizations invest in expanding the bottleneck — through automated review infrastructure, AI-assisted verification, architectural governance, and senior capacity planning — they are not accelerating delivery. They are accelerating the accumulation of risk.
+Xu's positive project activity and Agarwal's positive AF activity remain compatible with either outcome. Their measures do not establish review hours, production lead time or a universal senior bottleneck. Measure those outcomes before attributing a local traffic jam to the proposed mechanism or selecting a capacity intervention.
 
 ---
 
@@ -526,7 +524,7 @@ Until organizations invest in expanding the bottleneck — through automated rev
 * **Goldratt, E. M. (1984):** *The Goal: A Process of Ongoing Improvement.* North River Press. — The foundational text on Theory of Constraints, establishing that optimizing non-bottleneck steps increases inventory without improving throughput.
 * **Theory of Constraints in Software Development:** [Finding and Fixing the Real Bottleneck](https://www.theagilemindset.co.uk/2025/10/07/the-theory-of-constraints-in-software-development-finding-and-fixing-the-real-bottl) — Applied analysis of how AI shifts the coding bottleneck to human review capacity.
 * **AI Code Review Paradox (2025):** [Why AI Coding Speed Gains Disappear in Code Reviews](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/) — Industry analysis confirming AI code requires 2–3x longer review due to plausible bugs hidden in elegant syntax.
-* **Cross-references:** This chapter synthesizes data presented in Chapters 1–2. For primary sources on volume (+131%), complexity (+39%), review load (+6.5%), and rework (+2.4%), see Chapter 1 References (Xu et al., Agarwal et al., GitClear). METR's productivity experiment measures task time, not these measures; the legacy quantitative claims from the other sources remain subject to their separate audits.
+* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear volume and secondary review-time claims remain separate audits (#59/#61).
 
 ---
 
