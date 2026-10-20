@@ -20,7 +20,7 @@ All originals were opened as full text on 2026-10-20; methods, results, limitati
 | P-2025-01 | [METR paper v2, 25 July 2025](https://arxiv.org/html/2507.09089v2), [author report, 10 July](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) | §§2.1–2.3, 3, 4.1; Figure 1; Table 2; Appendices C.2.7, D.1–D.3, G.7; the update below explicitly restates the +2 to +39% interval |
 | P-2026-03 | [METR update, 24 February 2026](https://metr.org/blog/2026-02-24-uplift-update/), public body accessed 20 October | Opening results/limitations; “Wider adoption of AI has made it more difficult to measure task-level productivity”, numbered problems 1–6; “Details of the productivity study” |
 
-Full source-oriented reviews are [Peng](../../evidence/primary/2023-copilot-task-productivity.md), [METR 2025](../../evidence/primary/2025-metr-experienced-developer-productivity.md) and [METR 2026](../../evidence/primary/2026-metr-productivity-design-update.md). Their analytical limits and publication status apply to every use below. Inaccessible participant-level validation is an access boundary, not a missing original-text section or a verification claim.
+Full source-oriented reviews are [Peng](../../evidence/primary/2023-copilot-task-productivity.md), [METR 2025](../../evidence/primary/2025-metr-experienced-developer-productivity.md) and [METR 2026](../../evidence/primary/2026-metr-productivity-design-update.md). Their analytical limits and publication status apply to every use below. The update links public early/follow-up datasets and regression code. No independent raw-data/code reanalysis was performed; no inaccessibility is inferred.
 
 ## Search coverage and occurrence trace
 
@@ -32,7 +32,7 @@ The “before” locations refer to the base SHA above. Section names locate the
 | --- | --- | --- | --- | --- |
 | O01 — R1 Ch1 title, TOC and opening | Universal feeling-faster/data-slower claim → heterogeneous task outcomes and open delivery question | Removed unmeasured “10x”; three source scopes above | Correct title and opening so they do not overrule caveats | Keep Ch1 entry |
 | O02 — R1 “Bounded Experiments”, Peng row | Defensive positive aside → positive result in central comparison | 196 → 95 randomized (45/50), 70 completers (35/35); 55.8% speedup → conditional time reduction; 71.17/160.89 min and CI 21–89%; Peng Results/Figure 6 | Correct and relocate; equal visibility with negative finding | Opening comparison rather than later concession |
-| O03 — R1 comparison, METR 2025 row | Generic experienced-developer slowdown → early-tool familiar-OSS task-time finding | 16 developers/246 tasks; +19% time, CI +2 to +39%; 24% forecast/20% retrospective less time; METR §3/Fig1, update opening | Keep with tool/date and uncertainty adjacent | Central comparison |
+| O03 — R1 comparison, METR 2025 row | Generic experienced-developer slowdown → early-tool familiar-OSS task-time finding | 16 developers/246 completed tasks analyzed; +19% time, CI +2 to +39%; 24% forecast/20% retrospective less time; METR §3/Fig1, update opening | Keep with tool/date and uncertainty adjacent | Central comparison |
 | O04 — R1 comparison, METR 2026 row | Missing → separate update with unreliable current magnitude | No raw percentage promoted as a current effect; update opening/problems 1–6 | Add temporal boundary beside historical finding | Central comparison, not replacement citation |
 | O05 — R1 comparison interpretation | “Senior Penalty confirmed at scale” → no identified junior/senior or greenfield/brownfield causal contrast | Peng Table1; METR Table2/§4.1; no cross-study pooled rate | Remove unsupported synthesis; preserve both results | Immediately below comparison |
 | O06 — R1 Xu heading/intro | Xu called METR scale validation → distinct design/outcome requiring own audit | Removed unsupported 10,000-enterprise wording from this joint argument; remaining Xu figures belong to #58 | Separate sources; do not certify Xu | Separate observational subsection |
@@ -40,7 +40,7 @@ The “before” locations refer to the base SHA above. Section names locate the
 | O08 — R1 “From Task Results…” | Repeated n=196/55.8% “speedup”, junior universality and inevitable loss of local gains → refer back to bounded comparison | Remove duplicate wrong count/rate, unsupported 80–90% task mix and asserted Xu aggregate disappearance | Replace dismissal with open delivery question | Keep transition to downstream-outcome study |
 | O09 — R1 “Match Productivity Claims…” | “No vendor data”, “Placebo Analytics”, generalized subjective error and “55% faster development” → outcome-specific measurement criteria | No universal survey or brownfield percentage retained; Peng Fig6, METR Fig1 support narrower points | Qualify nearby synthesis without claiming a completed literature search | Keep measurement boundary |
 | O10 — R1 Ch1 conclusion | Unavoidable engineering slowdown/accelerated debt → bounded task results and conditional queue hypothesis | Does not turn task-time percentages or other proxy metrics into observed lifecycle costs | Correct relying conclusion | Keep Ch1 conclusion |
-| O11 — R1 Ch1 METR reference | “Copilots make experienced developers 19% slower” → tool/date/population/task-time statement, v2 and brief | +19% time, CI +2 to +39%, 16/246; same locators as O03 | Correct duplicate summary | Keep chapter bibliography |
+| O11 — R1 Ch1 METR reference | “Copilots make experienced developers 19% slower” → tool/date/population/task-time statement, v2 and brief | +19% time, CI +2 to +39%, 16/246 completed; same locators as O03 | Correct duplicate summary | Keep chapter bibliography |
 | O12 — R1 Ch1 Peng reference | n=196, 55.8% speedup, universal experience implication → denominators/time/CI and exploratory heterogeneity | Same locators and numbers as O02; Table1 p=0.0629 in brief | Correct duplicate summary | Keep chapter bibliography |
 | O13 — R1 Ch1 follow-up reference | Absent → separate dated update and brief | No present-day effect claimed; update opening | Add separate identity | Alongside 2025 reference |
 | O14 — R1 Ch3 opening | Ch1 generalized as senior slowdown → explicitly reject that extrapolation | No new number; O02–O05 scope | Correct uncited repetition | Keep Ch3 transition |
@@ -54,11 +54,24 @@ The “before” locations refer to the base SHA above. Section names locate the
 | O22 — SOURCES three rows | Legacy Registered; follow-up absent → reviewed briefs, In progress, —; explicit actual paths | Source identities preserved for legacy rows; new object registered before use | Synchronize, no premature Verified | Canonical registry |
 | O23 — primary index three entries | Only NBER brief indexed → three additional bounded descriptions | No stronger result than briefs | Add concise source navigation | Keep primary index |
 | O24 — Peng brief design/results | New source-oriented record | Each table row has Study Design/Results/Fig6/Table1 locator; count versus completion and time versus rate explicit | Keep source findings separate from inference | Primary brief rather than report detail |
-| O25 — Peng brief arithmetic/heterogeneity/conflicts | New calculation and boundaries | Reproduced 55.765…% from means; Table1 p=0.0629; title/ethics statement for interests | Keep inspectable derivation; no new population result | Primary brief |
-| O26 — METR 2025 brief design/results | New source-oriented record | §2.1–2.3/§3/Fig1/G.7; D.1–D.3 for regression/HC3/time convention; update opening for exact interval | Keep estimate, perceptions, outcome boundary and method distinct | Primary brief |
+| O25 — Peng brief arithmetic/heterogeneity/conflicts | New calculation and boundaries | Reproduced 55.7648…% from means; Table1 p=0.0629; title/ethics statement for interests | Keep inspectable derivation; no new population result | Primary brief |
+| O26 — METR 2025 brief design/results | New source-oriented record | §2.1–2.3/§3/Fig1/G.7; C.3.3–C.3.4/G.6 completion, exclusions and imputation; D.1–D.3 regression/HC3/time convention; update opening for interval, data/code README variance explicitly disclosed | Keep estimate, perceptions, outcome boundary and method distinct | Primary brief |
 | O27 — METR 2025 brief limits/interests | New analysis of generalization | §4.1/Table2, C.2.7, acknowledgments, author-report FAQ; no inferred vendor grant | Keep hypotheses separate from measured mechanisms | Primary brief |
 | O28 — METR 2026 brief design/raw estimates | New source-oriented record; raw estimates kept out of headline comparison | Update opening: returning −18% [−38,+9], new −4% [−15,+9]; study details: 57=10+47, 143 repos, 800+ tasks | Both intervals cross zero; no reliable causal reversal asserted | Detail in brief, limits in report |
 | O29 — METR 2026 brief selection/measurement/interests | New source limitations and interpretation | Update problems 1–6 and study details, $50 versus $150/hour; no separate funding disclosure supplied | Identification problem stated alongside results | Primary brief plus immediate report caveat |
+
+
+### Cross-brief material uses (correction R5)
+
+These are synthesis/limitation uses, not merely links, and their destination paths are included in the supplying source's registry/front matter. Each brief's own findings remain in its source-oriented table O24–O29.
+
+| ID / location | Wording and inference | Numbers/locator | Fit/action | Better destination |
+| --- | --- | --- | --- | --- |
+| X01 — METR2025 brief, Repository interpretation | Peng contrast is bounded; does not isolate experience/task/tool causes | Peng Results/Fig6; METR §4.1/Table2; no pooled value | Keep comparison; add path to P-2023-01 Current use | Keep in interpretation, not source findings |
+| X02 — Peng brief, Not established | Historical METR comparison does not invalidate Peng benefit | METR Table2/§4.1; no new metric | Keep boundary and explicit 2025 link; add path to P-2025-01 | Keep source boundary |
+| X03 — METR2026 brief, Repository interpretation | +19% historical finding remains separate from later estimates | METR2025 §3/Fig1 | Keep dated result; add path to P-2025-01 | Keep temporal interpretation |
+| X04 — METR2025 brief, estimate/interval provenance | Exact interval attributed to later author restatement; data/code README output differs slightly | February2026 update opening +2..+39; early data/code README HC3 0.013..0.394, estimate0.188; no reanalysis to adjudicate | Keep both attributed outputs visible; add path to P-2026-03 | Detailed provenance in brief, attributed restatement in report |
+| X05 — METR2025 brief, Not established | Follow-up limits current magnitude without retracting original trial | February2026 update opening/problems1–6 | Keep temporal boundary; add same material-use path to P-2026-03 | Keep next to temporal limit |
 
 ## Exclusions and unchanged evidence
 
@@ -104,3 +117,24 @@ These are candidate checks, not completed issue checkboxes or final source verif
 - Discrepancies/corrections: pending. No new maintainer decision identified beyond the authorized treatment.
 - Review date: —. No readiness or Verified claim is made.
 - Implementation checks, reviewed tree and subsequent default-branch evidence will be appended after they occur.
+
+
+## First independent review and correction loop — 2026-10-20
+
+- Reviewer: /root/independent_evidence_review; did not author the implementation or edit files.
+- Inspected commit `5236936075426eff2084d3ea3c7ee7ac1f894fb4`, content tree `2d8d839ce3ce1532a48c7e77a48644e01ab28f03`, base `86060ebc08bf03a05a974f826792c5a4e6b9126e`. Remote PR #66 head `1ced4dca9a71851bf6e62c0b02281e48302cf57c` has the identical content tree.
+- Originals independently reopened: Peng full v1; METR full v2 and July author report; February2026 full update and public data/code links. Repository uses, source states, synchronization and every AC were independently checked.
+- Outcome: **Corrections required**. AC-01 required R1–R3; AC-02 partial for R3–R4; AC-03 passed within this scope; AC-04 required R5; AC-05 remained open for repeated review.
+- Independently passed:119 tests, contract, evidence-state integrity, RI freshness, diff check, trusted-base Repository Gate and transition/integrity gates using the exact base checkout.
+
+| Finding | Implemented correction | Recheck required |
+| --- | --- | --- |
+| R1 wrong AppendixA tools/time locators | Replace with §§2.2.1–2.3/C.3.4; AppendixA is author contributions | Exact original locators |
+| R2 unsupported inaccessible/unpublished data wording | State public data/code links and no independent reanalysis; no inaccessible subset asserted | Update/data links and all access wording |
+| R3 missing METR completion/imputation rules | 246 completed (136/110);13 unfinished,24 intentionally dropped,3 excluded developers;27 post-review times imputed; retain author sensitivity checks and concise report caveat | §§2.3/C.3.3–4/G.6–7; every new number and report summary |
+| R4 incorrect intermediate decimal | 55.7648…% rounds to55.8%; headline result unchanged; also found independently by implementer | Reproduce arithmetic |
+| R5 cross-brief uses omitted | Add X01–X05 and actual paths to supplying sources' Current use and front matter | Exact registry/brief path sets and interpretation boundaries |
+
+A supplementary primary check found that the linked early-study code README displays slightly different interval bounds from the 2026 author restatement. Both are explicitly attributed in the METR brief; the report labels its interval as the dated restatement. No cause is inferred and no raw-data reanalysis is claimed. This does not change the bounded positive/negative interpretation; repeat review must check the treatment.
+
+All three integrations were set to Corrections required/— while these findings remained unresolved. Corrections are now implemented but not self-confirmed; repeated independent review is pending. No new substantive maintainer decision was identified by either reviewer for R1–R5.

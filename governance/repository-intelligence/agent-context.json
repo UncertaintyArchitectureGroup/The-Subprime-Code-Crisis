@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "263a270984b9842d474270e735b9f1705d5ccce2670a19c01f2c8a347cfa235f",
+    "digest": "3d30421c4b90a510c8ae8e458f1373bf40ef63bdbf7b7e95a425db8faf0cb405",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "1127b0a5d805799937502b594fd15778bdd1aa3f2f76a4c5eee38e5f2e28391c"
+        "sha256": "fd59aaad9083ffa6f7a7e69ef5fa3f53e2ef8ef10a27036db467402ca39bb377"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -157,17 +157,17 @@
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
-        "sha256": "8d7d204e08f6fe9c4c021aa0208d32431167888bfcc1e3ebf048ecedea88b24c"
+        "sha256": "578bbb47f0e864cbe89447be411420c0347620f2842ca411b9b1b7a6c2e08ad6"
       },
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "0be63b3c611cbfcbd29af6d377947d59335783b4bade28c895c0c0d054864415"
+        "sha256": "1ff4b606cbf74af95c2c61466a6c87eaca09b30cbcda922bf4d44627fc893d6b"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "f3068f425183c812942bd029b596fd03a46abf9ef6e31a11ac5fa3f802b62768"
+        "sha256": "de77d479ca27a7b52d2c3114ba6705c2a868078c2d07468be8667e8b93272d3c"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
@@ -227,7 +227,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "a83183b1fb84e0e3082c7aaec9bc4a2e0d0ef47c978ccf95fe8ac5a4691e7294"
+        "sha256": "9436e26a0ea2efb5a304ec7d716b3c0e1f49aaee88364d08251dba5bf097b608"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -267,7 +267,7 @@
       {
         "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
         "identity_mode": "content",
-        "sha256": "8f47cb7f70de564901fc0ffb5f2afb0419f27f95f0a99a74dfe4eea12e44d662"
+        "sha256": "06d97bc40f8087bb62e31def961ac83c90654ff17407b65c5735357fd58f75a0"
       },
       {
         "path": "governance/status-model.md",
@@ -317,7 +317,7 @@
       {
         "path": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
         "identity_mode": "content",
-        "sha256": "c1e4d3dd49924862a45682b037ffb3c9c86b35c340fa76465e2971e4698c6a96"
+        "sha256": "ec34544ed1a09282f318d8a7e693d3c9a89ce5d750220ae5e0af50aebe1d62c8"
       },
       {
         "path": "governance/work-records/README.md",
@@ -352,7 +352,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "312ccf5839b619d9162b92cea85d111956a28d8003d293829493d10c13afe643"
+        "sha256": "d7e15275dcaa6fbb7660467a2b49c4edef9e4625e2757a4b0c166cb3c43413b5"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -873,10 +873,10 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "In progress",
+      "integration_audit": "Corrections required",
       "last_verified": "—",
       "can_support": "Randomized task-time effect for experienced contributors in familiar mature open-source repositories with early-2025 tools; not a universal seniority effect",
-      "current_use": "`README.md` Evidence Map and outcome boundary; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`",
+      "current_use": "`README.md` Evidence Map and outcome boundary; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2023-copilot-task-productivity.md` (comparison boundary); `evidence/primary/2026-metr-productivity-design-update.md` (historical result)",
       "brief_path": "evidence/primary/2025-metr-experienced-developer-productivity.md"
     },
     {
@@ -884,10 +884,10 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *We are Changing our Developer Productivity Experiment Design* (2026-02-24)",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "In progress",
+      "integration_audit": "Corrections required",
       "last_verified": "—",
       "can_support": "Follow-up experiment and first-party account of selection and measurement limits; not a reliable estimate of current productivity magnitude",
-      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (interval restatement and temporal update)",
       "brief_path": "evidence/primary/2026-metr-productivity-design-update.md"
     },
     {
@@ -928,10 +928,10 @@
       "path": "evidence/SOURCES.md",
       "source": "Peng et al., *The Impact of AI on Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "In progress",
+      "integration_audit": "Corrections required",
       "last_verified": "—",
       "can_support": "Reduced completion time conditional on completing a standardized JavaScript task; not enterprise throughput or a universal experience effect",
-      "current_use": "`README.md` task-acceleration claim and Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`",
+      "current_use": "`README.md` task-acceleration claim and Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (cross-study interpretation)",
       "brief_path": "evidence/primary/2023-copilot-task-productivity.md"
     },
     {

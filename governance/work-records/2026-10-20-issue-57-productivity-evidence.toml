@@ -2,7 +2,7 @@ record_version = 1
 title = "Issue #57: bounded Peng/METR task-time evidence and temporal update"
 primary_flow = "Flow B — Legacy source; companion Flow A for P-2026-03"
 human_decision = "Maintainer requested evidence/numeric/placement/neutral-tone correction, one issue at a time with implementation, independent review, acceptance, evidence and closure, then explicitly said Роби for #57. Issue #57 implementation instructions and pre-edit start/impact comment define the bounded treatment; governance/reviews/issue-57-2026-10-20-productivity-audit.md preserves the trigger, alternatives, scope and decision. No workflow or protocol rule changes."
-independent_review = "Review unavailable"
+independent_review = "Corrections required"
 
 [changelog]
 decision = "Updated"

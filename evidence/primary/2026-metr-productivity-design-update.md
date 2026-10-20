@@ -1,10 +1,10 @@
 +++
 source_ids = ["P-2026-03"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
+integration_audit = "Corrections required"
 last_verified = "—"
-independent_review = "Review unavailable"
-current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md"]
+independent_review = "Corrections required"
+current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2025-metr-experienced-developer-productivity.md"]
 +++
 
 # METR: follow-up selection and measurement limits
@@ -13,7 +13,7 @@ current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermat
 
 Joel Becker, Nate Rush, Tom Cunningham, David Rein and Khalid Mahamud. [*We are Changing our Developer Productivity Experiment Design*](https://metr.org/blog/2026-02-24-uplift-update/). METR, 24 February 2026; accessed 2026-10-20.
 
-**P-2026-03; primary empirical research update.** This is a first-party research blog with original experimental results and design discussion, not an established peer-reviewed paper. The full public article was accessible. This review does not analyze unpublished participant/task records or establish a reliable current causal magnitude.
+**P-2026-03; primary empirical research update.** This is a first-party research blog with original experimental results and design discussion, not an established peer-reviewed paper. The full public article was accessible and links public [early-study](https://github.com/METR/Measuring-Early-2025-AI-on-Exp-OSS-Devs/blob/7ff2d7670235f531dff77eff58355bd77392f396/README.md) and [follow-up data/code](https://github.com/METR/Measuring-Late-2025-AI-on-OSS-Devs/blob/55f007216a26493f0a9b7650ab3191cad7fb9e7f/README.md). No independent raw-data/code reanalysis was performed; no claim of data inaccessibility is made. This review does not establish a reliable current causal magnitude.
 
 ## Research question, design and observed findings
 
@@ -47,12 +47,13 @@ Selection into participation and submitted tasks, changed compensation ($50/hour
 - `report/03_the_aftermath.md`, Chapter 8 opening: time-bounded summary of the comparison.
 - `README.md`: Evidence Map navigation.
 - `REFERENCES.md`: separate citation, not a replacement for P-2025-01.
+- `evidence/primary/2025-metr-experienced-developer-productivity.md`: author's retrospective interval for the original trial and separate temporal update.
 
 See the [issue #57 trace](../../governance/reviews/issue-57-2026-10-20-productivity-audit.md). The original study and follow-up remain distinct source objects; this entry was registered before adding any report use.
 
 ## Repository integration audit
 
-- Integration status: In progress; default-branch verification pending.
+- Integration status: Corrections required; first-review corrections implemented, repeat review and default-branch verification pending.
 - Search/report/numeric/README/bibliography/current-use checks: candidate and exact locators in the issue #57 trace.
 - Protocol outcome: No protocol change — none of the four protocols treats these raw estimates as a threshold or validated control.
 - Corrections: add the temporal boundary without substituting an unreliable present-day estimate.
@@ -61,9 +62,9 @@ See the [issue #57 trace](../../governance/reviews/issue-57-2026-10-20-productiv
 ## Independent review
 
 - Primary agent: /root.
-- Independent reviewer: pending separate review.
+- Independent reviewer: /root/independent_evidence_review.
 - Flow reviewed: A, alongside Flow B for P-2023-01/P-2025-01.
 - Materials to check: full original update, selection/measurement warnings, placement, source separation and AC-01–AC-05.
-- Outcome: Review unavailable — interim pending review, not completion.
-- Discrepancies/corrections/human decision: pending review; authorized treatment in issue #57 and its trace.
-- Review date: —.
+- Outcome: Corrections required — first review at tree `2d8d839ce3ce1532a48c7e77a48644e01ab28f03`; findings and dispositions in the issue #57 trace.
+- Corrections implemented: public-data/access wording and cross-brief use paths. Repeat review pending; no new human decision required.
+- Review date: 2026-10-20.
