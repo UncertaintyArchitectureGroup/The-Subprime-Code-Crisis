@@ -1,8 +1,8 @@
 +++
 source_ids = ["P-2026-03"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-20"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2025-metr-experienced-developer-productivity.md"]
 +++
@@ -53,11 +53,11 @@ See the [issue #57 trace](../../governance/reviews/issue-57-2026-10-20-productiv
 
 ## Repository integration audit
 
-- Integration status: In progress; corrected integration independently Confirmed, default-branch merge and verification pending.
+- Integration status: Verified — independently Confirmed corrections merged in PR #66; main `21af254361dbd4f8d158516c1699fec7661e6312` checked on 2026-10-20. See the issue #57 trace for default-branch acceptance and remaining source limitations.
 - Search/report/numeric/README/bibliography/current-use checks: candidate and exact locators in the issue #57 trace.
 - Protocol outcome: No protocol change — none of the four protocols treats these raw estimates as a threshold or validated control.
 - Corrections: add the temporal boundary without substituting an unreliable present-day estimate.
-- Verification date: —.
+- Verification date: 2026-10-20.
 
 ## Independent review
 
@@ -66,5 +66,5 @@ See the [issue #57 trace](../../governance/reviews/issue-57-2026-10-20-productiv
 - Flow reviewed: A, alongside Flow B for P-2023-01/P-2025-01.
 - Materials independently checked: full original update, selection/measurement warnings, placement, source separation and AC-01–AC-05.
 - Outcome: Confirmed — repeated independent review on 2026-10-20 at commit `91edb633d2d2f352a43c2333e80d5def9614b9f4`, tree `02fa53f8dfe0c23f1a2c62830d2716916da3aee9`; complete correction history and acceptance results in the issue #57 trace.
-- Corrections completed: R1–R5, G.6 developer-unit precision and the explicit interval/tool-version boundaries independently rechecked. No unresolved correction or new human decision; default-branch verification remains pending.
+- Corrections completed: R1–R5 and precision/interval/tool boundaries independently rechecked; no unresolved correction or new human decision. Merged-main acceptance and final status review are recorded in the issue #57 trace.
 - Review date: 2026-10-20.

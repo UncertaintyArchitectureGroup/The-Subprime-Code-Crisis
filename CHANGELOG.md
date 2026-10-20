@@ -14,6 +14,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
+- Completed the three bounded productivity-source integration audits after independent correction review and checked default-branch integration; each source retains its publication, selection, measurement and generalization limits.
 - Rebuilt Chapter 1's task-time comparison around bounded positive and negative findings; corrected Peng's randomized/completer counts and time unit, retained METR's tool/date limits, separated the later unreliable magnitude estimate, and removed universal slowdown/seniority conclusions from the relying summaries. Broader source and tone audits remain separate work.
 - Restructured the README around Quick Start, Key Takeaways, and a repository map; reduced duplicate navigation and artifact-flow explanation while preserving the Claim confidence map, Evidence Map, Crisis Map boundaries, operational control stack, and the bounded `P-2026-01` evidence summary.
 - Expanded the Doctrine's map principles so reader summaries and visualizations preserve claim class, scope, uncertainty, attribution, and source boundaries.
