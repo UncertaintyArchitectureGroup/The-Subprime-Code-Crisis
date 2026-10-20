@@ -31,7 +31,7 @@ Compare task and downstream outcomes, including human effort, quality, release p
 ---
 ## Chapter 9. The Macro-Economic End Game: The Trajectory of Crisis
 
-The systemic setup we have analyzed—the collision of market pressure, the "Execution Mandate," and a broken SDLC—is not merely a collection of local management errors. It is a **self-reinforcing degradation mechanism** that is currently driving the entire industry toward a precipice.
+The ["Execution Mandate" in Chapter 3](01_the_illusion.md#chapter-3-the-free-lunch-trap-when-adoption-budgets-miss-delivery-work) is an illustrative budget-risk mechanism, not a measured industry trajectory. The adverse scenarios below explore what could happen where required delivery work remains unfunded. The [cost comparison in Chapter 2](01_the_illusion.md#chapter-2-evaluating-the-cost-of-ai-assisted-delivery) does not establish that every adopter needs a new transformation programme.
 
 We are not asserting that a collapse is inevitable. However, we must recognize the vector of our current movement: **The longer we operate under the "Safe Strategy" of unregulated AI adoption, the higher the probability of a systemic correction.**
 
@@ -64,11 +64,11 @@ This is the more likely outcome. There is no explosion, only a gradual suffocati
 *   **The Process:** Maintenance budgets balloon as teams spend 80-90% of their time fixing the "plausible lies" generated in previous years. Feature delivery grinds to a halt.
 *   **The Consequence:** The industry suffers a **"Productivity Depression."** We end up spending *more* money to build *less* software than we did in 2020. Small and medium businesses, unable to afford the massive refactoring required to clean their codebases, quietly go bankrupt or are acquired for parts.
 
-### The Verdict on the "Safe Strategy"
+### Budget Risk Depends on the Capability Gap
 
-In both scenarios, the irony is tragic. The strategy that Boards currently view as "Safe" (buying licenses without investing in deep operational transformation) turns out to be the **most dangerous position possible**.
+A license-only budget may underfund a deployment if required review, integration or operating work beyond existing capability is left unfunded. The absence of deep operational transformation does not itself establish that gap or rank the strategy as more dangerous than every alternative.
 
-By refusing to pay the upfront cost of rebalancing the SDLC today, leadership is inadvertently betting the company's future on the hope that the bubble won't burst. But as the metrics show, the bubble is already inflating.
+As Chapter 2 proposes, compare added cash, staff capacity, quality and delivered benefits against a local baseline. Sufficient existing capability and useful gains at comparable or lower total cost, with stable or improved quality, would weaken the unfunded-capability scenario. The reviewed cost sources do not establish an industry-wide bubble or the probabilities of the wider scenarios above.
 
 ***
 
@@ -111,12 +111,12 @@ Generating profit today through "AI Speed" is good. But exploding your **Total C
 
 **The Pivot:**
 1.  **Stop the "License Strategy":** Buying AI Code Assistants is not a strategy. It is a procurement decision.
-2.  **Demand a Real AI Strategy:** Calculate the systemic ROI. If you increase coding speed by 50%, what is the cost of the increased Review, QA, and Maintenance?
+2.  **Evaluate Delivered Value and Total Cost:** Compare a defined use case against a credible baseline, including additional or released review, QA and maintenance effort and the resulting quality. Coding speed alone does not establish net ROI.
 3.  **Change the Metrics:** Stop measuring "Adoption Rate." Start measuring **Asset Health**:
     *   *Technical Debt Ratio*
     *   *Defect Escape Rate*
     *   *Maintenance Effort vs. New Feature Delivery*
-4.  **Resource the Transformation:** Acknowledge that AI is a disruptor. You need to fund the re-architecting of your teams and pipelines to handle the "firehose" of code.
+4.  **Resource Identified Gaps:** Fund targeted changes where local evaluation identifies unmet delivery needs. Reuse adequate existing teams, controls and pipelines; a new transformation programme is not a universal prerequisite for beneficial adoption.
 
 ---
 

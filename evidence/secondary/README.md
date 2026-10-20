@@ -13,3 +13,7 @@ Examples include:
 Secondary evidence is useful for triangulation, framing, and identifying operational implications. When an original study is available, link to and evaluate the primary source rather than relying only on a summary.
 
 Each brief should identify the underlying primary sources, disclose commercial or institutional interests where relevant, and separate reported facts from the author's interpretation.
+
+## Current briefs
+
+- [Markus inference-cost commentary (2026)](2026-inference-cost-commentary.md) — bounded interpretation, original-source corrections and unvalidated price/case examples.

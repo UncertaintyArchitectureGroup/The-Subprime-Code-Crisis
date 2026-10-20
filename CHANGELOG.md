@@ -8,6 +8,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added seven cost-source briefs, original market/budget sources, a historical accounting appendix and an explicitly hypothetical cash/capacity sensitivity model with reproducible inputs/results and boundary tests.
+
 - Added separate GitClear quality/output briefs from the full original PDF and embedded report, with exact denominators, sampling/windows, access provenance and internal-reporting discrepancies.
 - Added pinned Xu v3 and Agarwal v2 briefs with methods, exact table locators, positive/null findings, uncertainty, publication boundaries and an occurrence/placement trace for #58.
 - Added separate source-oriented briefs for Peng's Copilot experiment, METR's early-2025 productivity experiment and its February 2026 follow-up, with exact versions, outcome definitions and uncertainty.
@@ -15,6 +17,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 - Added a reviewed documentary project-provenance record covering the 2026-01-05 DOU precursor and discussion, the 2026-02-06 GitHub repository creation timestamp, and the 2026-02-10 explicit Subprime Code publication.
 
 ### Changed
+
+- Rebuilt the Chapter 2 cost argument around exact fiscal/accounting scope and conditional comparison; withdrew unsupported universal transformation ranges, platform budgets and timing. Addressed Astra's #60 findings by making the relying Chapter 3 argument and Part 2/3 cost reprises conditional, correcting the quality comparator and explicitly excluding avoided baseline cash from the optional model. Independent acceptance and final integration state are recorded in the #60 review history.
 
 - Completed the two GitClear integration audits after independently Confirmed correction review and checked PR #70 default-branch integration; retained original-source discrepancies as explicit limits.
 

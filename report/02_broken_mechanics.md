@@ -148,12 +148,12 @@ The evidence does **not** establish that AI-generated code is always lower quali
 
 For the full methodology, findings, limitations, and claim boundaries, see the repository's [NBER evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md).
 
-### 1. The Sponsor-Team Disconnect (The "Zero-Cost" Fallacy)
+### 1. Sponsor-Team Expectations: A Conditional Cost Risk
 
-The first break happens before a project even starts.
-*   **The Shift:** Sponsors and Executives, reading about "AI coding," now perceive software development as "fast, cheap, and nearly instant."
-*   **The Break:** This creates a false expectation of zero-cost delivery. Sponsors exert immense pressure on teams to deliver "yesterday," ignoring the fact that while **typing** is free, **engineering** (security, scalability, integration) is as expensive as ever.
-*   **Result:** The Iron Triangle (Scope, Cost, Time) breaks. Teams are crushed between unrealistic deadlines and the reality of complex system integration.
+An expectations gap could arise before a project starts.
+*   **Possible shift:** A sponsor might treat lower code-generation effort as nearly free end-to-end delivery. This is a hypothesis about expectations, not a measured description of all sponsors.
+*   **Cost boundary:** Lower generation effort establishes neither zero delivery cost nor an unchanged cost of engineering. [Chapter 2's local comparison](01_the_illusion.md#chapter-2-evaluating-the-cost-of-ai-assisted-delivery) includes new cash, additional or released staff capacity, existing capability and delivered benefits at comparable scope and quality.
+*   **Testable consequence:** If necessary work is left unfunded, lead time, rework or quality could worsen. Sufficient existing capability and useful gains at comparable or lower total cost, with stable or improved quality, would weaken this explanation.
 
 ### 2. Product & Analysis (The "Backlog Inflation")
 

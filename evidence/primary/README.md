@@ -13,6 +13,9 @@ This directory contains evidence briefs for original empirical studies.
 - [GitClear: separate developer-output measures](2025-gitclear-developer-output.md) — full original embedded report; positive component results, cohort/window limits and disputed Method 1 mean; no net-delivery composite.
 - [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](2026-writing-code-vs-shipping-code.md) — NBER Working Paper 35275 (May 2026); large-scale matched event study across successive generations of AI coding tools.
 
+- [Menlo 2025 enterprise AI market estimates](2025-menlo-enterprise-ai-spend.md) — revised market boundary, derived growth and estimation limits.
+- [CloudZero 2025 AI budget intentions](2025-cloudzero-ai-budget-intentions.md) — respondent reports/plans and unresolved percentage/threshold discrepancy.
+
 ## Inclusion criteria
 
 Eligible materials include:

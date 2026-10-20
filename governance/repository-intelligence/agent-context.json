@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "7151337f07fc4908f69aceb0e6622a00d70a5e63a00d09f51160e2fc0b903d1c",
+    "digest": "761b34483b1ea822143941ff68e659361d0469ab2c677f7ed8be02db4fcec1b1",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "86ca180dbd8c8023314a55ac2c2c5a0dec57b5550552b52df412f97e3a3dd642"
+        "sha256": "e11074c362e48cae3aefc679814ff0be7659cdb66dc0857ecd26a6f58228b27f"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "a651dffd69df2d430761406d089b805869dd60e02287f9bb684c5cbce5067e8a"
+        "sha256": "354ae2db7eec932375e8e89d254dced49b1a5c25deb204c79e2c5cc873833d7c"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "c0e71a3148d985ee09aee63612be739aa9c556147b236f59d0f3be46636fda92"
+        "sha256": "8265392c123d96ee50660ac82c0afb5ae5796ecc1527cfcb3e55d503eea23eb1"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "3e98828e1e2f967f6039e501cae1d5b066ad9c3284b45e9ed30cb683aed1f8d6"
+        "sha256": "c6b4751bbcb69a728064d29c7186ad7a9ba9b0a23daddb432da362859b4ac5f8"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -135,9 +135,29 @@
         "sha256": "ff99829c003ed87b93ca8de93a9c63c6c9f61beeac122f588ca15e167a1a4fea"
       },
       {
+        "path": "evidence/documentary/2020-google-engineering-practices.md",
+        "identity_mode": "content",
+        "sha256": "58072a2b2a7800f596e66ec950ebdac641cdf8c239b7a8304ce1cfad58d4d9d7"
+      },
+      {
+        "path": "evidence/documentary/2024-alphabet-financial-context.md",
+        "identity_mode": "content",
+        "sha256": "7d95af9abe046de145985aee4695b22b0cbd0f2a80916b31d9c9fc932ac4d93b"
+      },
+      {
+        "path": "evidence/documentary/2024-meta-financial-context.md",
+        "identity_mode": "content",
+        "sha256": "c81a7b57d59789762e6d856e4c8339ce08ae1b676345b9524a1d7d50540d5cbb"
+      },
+      {
+        "path": "evidence/documentary/2024-microsoft-financial-context.md",
+        "identity_mode": "content",
+        "sha256": "12ece8d0ae76b97f5e7d6213be4aadf1026bb6148772050f04ab48412e79c72e"
+      },
+      {
         "path": "evidence/documentary/README.md",
         "identity_mode": "content",
-        "sha256": "9f495aa4ac9da3e2743b38db5d9e5a1ec00a127f701dc86201d691b33497f1b1"
+        "sha256": "a7c6e6388a42eb7ae29aeccffeeb0517ea50802cc2f27e145244faef9e016b6f"
       },
       {
         "path": "evidence/documentary/project-provenance.md",
@@ -160,6 +180,11 @@
         "sha256": "de54c8975283dbb770fff786880bff3e6e7a54af82da21580727fba0ebb301ed"
       },
       {
+        "path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
+        "identity_mode": "content",
+        "sha256": "b12464addc5f062769f2a8355ff642ebdd674690ca80a299f3027ba622fb68d9"
+      },
+      {
         "path": "evidence/primary/2025-gitclear-code-quality.md",
         "identity_mode": "content",
         "sha256": "dcfb508750adf5526ffbfcb763afb69dbe8351ecfe69ed230b18b2fe24a17c89"
@@ -168,6 +193,11 @@
         "path": "evidence/primary/2025-gitclear-developer-output.md",
         "identity_mode": "content",
         "sha256": "f7fb46aa3b73998a9873fd8d966e30f060c4f55b7001483c87c045692aca1518"
+      },
+      {
+        "path": "evidence/primary/2025-menlo-enterprise-ai-spend.md",
+        "identity_mode": "content",
+        "sha256": "0a117c933011531035063393c68c11ad5778ccb7c42eb50a7314e80b36e06c95"
       },
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
@@ -197,12 +227,17 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "17e5e24e08a2e2cdddd35455f3d92293dcea19703534b2bbaaa08926b80be35a"
+        "sha256": "c09a6c74de03d07d659702fd0b37c0a107687ca01a18798813aacf61591c0fc6"
+      },
+      {
+        "path": "evidence/secondary/2026-inference-cost-commentary.md",
+        "identity_mode": "content",
+        "sha256": "01cad050ad1de0e59defa1d2e1bc744540b03277798d0a2475f581d96a447066"
       },
       {
         "path": "evidence/secondary/README.md",
         "identity_mode": "content",
-        "sha256": "53d5a4b043e7130f269422baff4354dafcf3855a7df1244fc15b05d3301ab9e1"
+        "sha256": "04b6846579773a691e920d24c66e7965a36b1cdc6d246632fc52814f864890d0"
       },
       {
         "path": "governance/README.md",
@@ -247,7 +282,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "565a11da61961db0233e99c8f33ac2b6c344d6b1bc6185e4348b398a720d5368"
+        "sha256": "d73c3287a0b1394ed15be484b79cd179a01446b65d7d5ada5ce3611202d46cd6"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -298,6 +333,21 @@
         "path": "governance/reviews/issue-59-2026-10-20-gitclear-audit.md",
         "identity_mode": "content",
         "sha256": "f22b61febad050b86a638a3c4e0507af6fd2c39b84da2aeb64014d53d1aaffe3"
+      },
+      {
+        "path": "governance/reviews/issue-60-2026-10-20-cost-audit.md",
+        "identity_mode": "content",
+        "sha256": "5d99abb6a776c68ae6bc531a82e11470c63818fd0b36311e0650c17502e14e54"
+      },
+      {
+        "path": "governance/reviews/issue-60-2026-10-21-astra-review.md",
+        "identity_mode": "content",
+        "sha256": "5c5db639b5a848fc15d571e762f689b2ee5edee3094b7708dabd15df2a85ef75"
+      },
+      {
+        "path": "governance/reviews/issue-60-2026-10-21-sol-corrections.md",
+        "identity_mode": "content",
+        "sha256": "04f20dc7e08365ada25fe7e4407a459d263cbfa8b87ce42282f27f42cce29019"
       },
       {
         "path": "governance/status-model.md",
@@ -375,6 +425,11 @@
         "sha256": "05f7c513cdf87fed948c13ecc8737e81adf65d06e8043becdc2c818da7769f6f"
       },
       {
+        "path": "governance/work-records/2026-10-20-issue-60-cost-model.toml",
+        "identity_mode": "content",
+        "sha256": "2d25c97c21d76c6484d3bc3578ec790b1ded3f31ab4101aecfc17245eeae3cc4"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -407,17 +462,37 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "90fd30dea1ff63db0ed749df9c094cc34bd3a009780240f993a9a2f2823f98a4"
+        "sha256": "d6d382b3da1b4f05d5316e0c11931aaa101fd19f3181f8f6ee681e2b06e435fc"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "bebbbf3dc9282290127167c095c5abdc8f640512c67f9feefb70cb0d263da3ec"
+        "sha256": "781506f72f4eaab07ebc82cab3e414cfe78fcd2452a07830a9e977dc6949a4a6"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "d2acbdc5f33ad5ca0ce66bf3410169b6be0a27533756e73a51781b5007e79ad1"
+        "sha256": "0c11822af9049eb6415e872db9618b76bfbcb4b764395d2cc8bf31d5682d881e"
+      },
+      {
+        "path": "report/appendices/cost-context.md",
+        "identity_mode": "content",
+        "sha256": "444c154087a1e05872fb75bd85d21adab1788b44df19ec91def9760b596e1116"
+      },
+      {
+        "path": "report/appendices/tco-results.json",
+        "identity_mode": "content",
+        "sha256": "52e6c05f80f46cb57a397b8ec7fba457dbd41d33804c83361087502b192d3a43"
+      },
+      {
+        "path": "report/appendices/tco-scenarios.json",
+        "identity_mode": "content",
+        "sha256": "940c6d0e8e13b95503f109bc7506be9ee8e71801b5b5eea7cf420dd55f0efd74"
+      },
+      {
+        "path": "report/appendices/tco-sensitivity.md",
+        "identity_mode": "content",
+        "sha256": "3f39181bd9c301d0c09667eb63d562c134cea13bace44bfa318f60d5e83b26e7"
       },
       {
         "path": "tests/__init__.py",
@@ -458,6 +533,11 @@
         "path": "tests/test_repository_intelligence.py",
         "identity_mode": "content",
         "sha256": "25a83ea4ccb388248f495b920b7bb38feb1d864856e509a79ebd72b41c1208b5"
+      },
+      {
+        "path": "tests/test_tco_sensitivity.py",
+        "identity_mode": "content",
+        "sha256": "47ad65b8fea4a4781bc501b6b72659a7c0ae34819a8dd235c9a9d1badaecd5a2"
       },
       {
         "path": "tools/RI-LICENSE.md",
@@ -528,6 +608,11 @@
         "path": "tools/repository_validator/validator.py",
         "identity_mode": "content",
         "sha256": "d3405cc1d5cd5533e459b0ff1c4c8acb0c60169277570df890595f2fc6c0b046"
+      },
+      {
+        "path": "tools/tco_sensitivity.py",
+        "identity_mode": "content",
+        "sha256": "e1e6cf734cf5bcb3b992e0f117896556b81c4d2577e8ba1899eec53639b395c4"
       }
     ]
   },
@@ -1014,48 +1099,70 @@
       "brief_path": "evidence/primary/2025-gitclear-developer-output.md"
     },
     {
+      "id": "P-2025-06",
+      "path": "evidence/SOURCES.md",
+      "source": "Menlo Ventures, *2025: The State of Generative AI in the Enterprise*",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Survey-informed 2025 market-size estimates with a revised 2024 boundary; not maintenance costs or causal AI delivery ROI",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `evidence/secondary/2026-inference-cost-commentary.md`; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-menlo-enterprise-ai-spend.md"
+    },
+    {
+      "id": "P-2025-07",
+      "path": "evidence/SOURCES.md",
+      "source": "CloudZero, *The State of AI Costs in 2025*",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "March2025 respondent reports and budget intentions; source-internal threshold discrepancy, not realized spend or causal ROI",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `evidence/secondary/2026-inference-cost-commentary.md`; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md"
+    },
+    {
       "id": "D-2019-01",
       "path": "evidence/SOURCES.md",
       "source": "*Software Engineering at Google* and associated first-party engineering documentation",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Descriptions of Google's engineering infrastructure and practices",
-      "current_use": "Infrastructure and verification-capacity discussion",
-      "brief_path": null
+      "can_support": "Historical 2020 Google practice descriptions; not a platform budget or causal AI-enabling cost",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2020-google-engineering-practices.md"
     },
     {
       "id": "D-2024-01",
       "path": "evidence/SOURCES.md",
       "source": "Alphabet annual filings",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Alphabet-reported capital expenditure and business records",
-      "current_use": "AI infrastructure-spending discussion",
-      "brief_path": null
+      "can_support": "CY2024 company-wide R&D and cash PPE purchases; not AI-coding verification spend",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2024-alphabet-financial-context.md"
     },
     {
       "id": "D-2024-02",
       "path": "evidence/SOURCES.md",
       "source": "Meta annual filings",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Meta-reported capital expenditure and business records",
-      "current_use": "AI infrastructure-spending discussion",
-      "brief_path": null
+      "can_support": "CY2024 company-wide R&D, cash PPE and separate finance-lease principal; not a customer TCO requirement",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2024-meta-financial-context.md"
     },
     {
       "id": "D-2024-03",
       "path": "evidence/SOURCES.md",
       "source": "Microsoft annual filings",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Microsoft-reported capital expenditure and business records",
-      "current_use": "AI infrastructure-spending discussion",
-      "brief_path": null
+      "can_support": "FY2024 company-wide R&D and cash PPE additions, ended June30; not comparable CY or AI-coding allocation",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2024-microsoft-financial-context.md"
     },
     {
       "id": "D-2025-05",
@@ -1149,12 +1256,12 @@
       "id": "S-2025-03",
       "path": "evidence/SOURCES.md",
       "source": "Artur Markus, *The Inference Cost Paradox*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Practitioner interpretation of enterprise AI spending and Jevons-style effects",
-      "current_use": "Cost-paradox discussion",
-      "brief_path": null
+      "can_support": "Practitioner price-volume interpretation; underlying market estimates/intentions require separate original-source boundaries",
+      "current_use": "`report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
+      "brief_path": "evidence/secondary/2026-inference-cost-commentary.md"
     },
     {
       "id": "S-2026-01",
@@ -1370,6 +1477,34 @@
       ]
     },
     {
+      "path": "evidence/documentary/2020-google-engineering-practices.md",
+      "title": "Google engineering practices: historical context, not a cost estimate",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/2024-alphabet-financial-context.md",
+      "title": "Alphabet CY2024: company-wide expenses and cash investment",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/2024-meta-financial-context.md",
+      "title": "Meta CY2024: distinguish PPE purchases from lease-principal capex",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/2024-microsoft-financial-context.md",
+      "title": "Microsoft FY2024: preserve the fiscal-year boundary",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/documentary/README.md",
       "title": "Primary Documentary Sources",
       "instructions": [
@@ -1405,6 +1540,13 @@
       ]
     },
     {
+      "path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
+      "title": "CloudZero 2025: reported budgets and future spending intentions",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2025-gitclear-code-quality.md",
       "title": "GitClear: historical code-change and clone signals",
       "instructions": [
@@ -1414,6 +1556,13 @@
     {
       "path": "evidence/primary/2025-gitclear-developer-output.md",
       "title": "GitClear: separate developer-output measures",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2025-menlo-enterprise-ai-spend.md",
+      "title": "Menlo 2025: survey-informed market estimates, not maintenance costs",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1456,6 +1605,13 @@
     {
       "path": "evidence/primary/README.md",
       "title": "Primary Empirical Research",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/2026-inference-cost-commentary.md",
+      "title": "Markus inference-cost commentary: interpretation and corrected source boundaries",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1601,6 +1757,27 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-60-2026-10-20-cost-audit.md",
+      "title": "Issue #60: Sol implementation, source trace and Astra handoff",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-60-2026-10-21-astra-review.md",
+      "title": "Issue #60: Astra analytical review and correction handoff",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-60-2026-10-21-sol-corrections.md",
+      "title": "Issue #60: Sol correction of the Astra findings",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -1706,6 +1883,13 @@
       ]
     },
     {
+      "path": "governance/work-records/2026-10-20-issue-60-cost-model.toml",
+      "title": "governance/work-records/2026-10-20-issue-60-cost-model.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/work-records/README.md",
       "title": "Machine-readable work records",
       "instructions": [
@@ -1769,6 +1953,34 @@
       ]
     },
     {
+      "path": "report/appendices/cost-context.md",
+      "title": "Cost context: historical records, estimates and intentions",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "report/appendices/tco-results.json",
+      "title": "report/appendices/tco-results.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "report/appendices/tco-scenarios.json",
+      "title": "report/appendices/tco-scenarios.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "report/appendices/tco-sensitivity.md",
+      "title": "Conditional cost sensitivity for an AI-assisted delivery pilot",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "tests/__init__.py",
       "title": "tests/__init__.py",
       "instructions": [
@@ -1820,6 +2032,13 @@
     {
       "path": "tests/test_repository_intelligence.py",
       "title": "tests/test_repository_intelligence.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tests/test_tco_sensitivity.py",
+      "title": "tests/test_tco_sensitivity.py",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1918,6 +2137,13 @@
     {
       "path": "tools/repository_validator/validator.py",
       "title": "tools/repository_validator/validator.py",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "tools/tco_sensitivity.py",
+      "title": "tools/tco_sensitivity.py",
       "instructions": [
         "AGENTS.md"
       ]

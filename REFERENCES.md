@@ -58,19 +58,29 @@ A source appearing here is not automatically peer reviewed, independently valida
 - Bill Harding / GitClear. [*How much more productive are AI-powered developers? Large sample productivity data*](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025). Publisher displays 1 October 2025; [full embedded original](https://public.amplenote.com/embed/w32ZX4GJ7ZwJasUQ1K7kqLqE), inspected 20 October 2026, contains later update text.
 - Self-published commercial measurement report. [Evidence brief](evidence/primary/2025-gitclear-developer-output.md) records the four distinct methods/cohorts, positive/null findings, composite arithmetic and unresolved Method 1 mean discrepancy. It is not the quality study's dataset or a causal net-productivity estimate.
 
+### P-2025-06 — Enterprise AI market estimates
+
+- Tully, Redfern, Das & Xiao / Menlo Ventures. [*2025: The State of Generative AI in the Enterprise*](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/). 9 December 2025; [original PDF](https://menlovc.com/wp-content/uploads/2025/12/menlo_ventures_enterprise_ai_report-2025-123125.pdf).
+- [Evidence brief](evidence/primary/2025-menlo-enterprise-ai-spend.md). Original commercial survey/market model, not audited maintenance cost or an identified causal delivery effect.
+
+### P-2025-07 — AI spending reports and budget intentions
+
+- CloudZero. [*The State of AI Costs in 2025*](https://www.cloudzero.com/state-of-ai-costs/). March 2025 survey; publication day not established; accessed 20 October 2026.
+- [Evidence brief](evidence/primary/2025-cloudzero-ai-budget-intentions.md). Original commercial respondent survey, future plans and internal threshold discrepancy retained; not realized enterprise cost.
+
 ## Primary documentary sources
 
 ### D-2019-01 — Google engineering-system documentation
 
-- Winters, Manshreck & Wright, eds. [*Software Engineering at Google*](https://abseil.io/resources/swe-book). O'Reilly / Google, 2019.
-- Status: first-party engineering documentation; documentary brief pending.
+- Winters, Manshreck & Wright, eds. [*Software Engineering at Google*](https://abseil.io/resources/swe-book). O’Reilly / Google, **March 2020**; stable legacy ID retained.
+- [Evidence brief](evidence/documentary/2020-google-engineering-practices.md), exact Chapters 9/19/20/23. Historical first-party practices, not a platform budget or AI outcome trial.
 
-### D-2024-01 to D-2024-03 — Company filings
+### D-2024-01 to D-2024-03 — Exact historical company filings
 
-- Alphabet annual and regulatory filings.
-- Meta annual and regulatory filings.
-- Microsoft annual and regulatory filings.
-- Status: first-party documentary sources. Exact filing versions and claim mappings must be recorded in documentary briefs before aggregate spending figures are treated as load-bearing.
+- Alphabet. [CY2024 Form 10-K, accession 0001652044-25-000014](https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm); [accounting-line brief](evidence/documentary/2024-alphabet-financial-context.md).
+- Meta. [CY2024 Form 10-K, accession 0001326801-25-000043](https://www.sec.gov/Archives/edgar/data/1326801/000132680125000043/meta-12312024x10kars.htm); [PPE/lease-principal brief](evidence/documentary/2024-meta-financial-context.md).
+- Microsoft. [FY2024 Annual Report, ended 30 June 2024](https://www.microsoft.com/investor/reports/ar24/index.html); [fiscal-boundary brief](evidence/documentary/2024-microsoft-financial-context.md).
+- Company-wide historical statements; neither AI-coding verification allocations nor customer transformation budgets. All accessed 20 October 2026.
 
 ### D-2025-05, D-2025-06, D-2026-04 — Terminology provenance
 
@@ -101,8 +111,8 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### S-2025-03 — Inference-cost commentary
 
-- Artur Markus. [*The Inference Cost Paradox*](https://www.arturmarkus.com/the-inference-cost-paradox-why-generative-ai-spending-surged-320-in-2025-despite-per-token-costs-dropping-1000x-and-what-it-means-for-your-ai-budget-in-2026/).
-- Status: practitioner analysis; brief pending.
+- Artur Markus. [*The Inference Cost Paradox*](https://www.arturmarkus.com/the-inference-cost-paradox-why-generative-ai-spending-surged-320-in-2025-despite-per-token-costs-dropping-1000x-and-what-it-means-for-your-ai-budget-in-2026/). **2 January 2026**; stable legacy ID retained.
+- [Secondary evidence brief](evidence/secondary/2026-inference-cost-commentary.md). Interpretive demand argument; market estimates and survey intentions are checked against separately registered originals; disputed headline/price claims are not adopted.
 
 ### S-2026-01 — Capability-curve commentary
 
