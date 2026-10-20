@@ -70,8 +70,8 @@ These are synthesis/limitation uses, not merely links, and their destination pat
 | X01 — METR2025 brief, Repository interpretation | Peng contrast is bounded; does not isolate experience/task/tool causes | Peng Results/Fig6; METR §4.1/Table2; no pooled value | Keep comparison; add path to P-2023-01 Current use | Keep in interpretation, not source findings |
 | X02 — Peng brief, Not established | Historical METR comparison does not invalidate Peng benefit | METR Table2/§4.1; no new metric | Keep boundary and explicit 2025 link; add path to P-2025-01 | Keep source boundary |
 | X03 — METR2026 brief, Repository interpretation | +19% historical finding remains separate from later estimates | METR2025 §3/Fig1 | Keep dated result; add path to P-2025-01 | Keep temporal interpretation |
-| X04 — METR2025 brief, estimate/interval provenance | Exact interval attributed to later author restatement; data/code README output differs slightly | February2026 update opening +2..+39; early data/code README HC3 0.013..0.394, estimate0.188; no reanalysis to adjudicate | Keep both attributed outputs visible; add path to P-2026-03 | Detailed provenance in brief, attributed restatement in report |
-| X05 — METR2025 brief, Not established | Follow-up limits current magnitude without retracting original trial | February2026 update opening/problems1–6 | Keep temporal boundary; add same material-use path to P-2026-03 | Keep next to temporal limit |
+| X04 — METR2025 brief, estimate/interval provenance | Exact interval attributed to later author restatement; data/code README output differs slightly | February 2026 update opening +2..+39; early data/code README HC3 0.013..0.394, estimate 0.188; no reanalysis to adjudicate | Keep both attributed outputs visible; add path to P-2026-03 | Detailed provenance in brief, attributed restatement in report |
+| X05 — METR2025 brief, Not established | Follow-up limits current magnitude without retracting original trial | February 2026 update opening/problems 1–6 | Keep temporal boundary; add same material-use path to P-2026-03 | Keep next to temporal limit |
 
 ## Exclusions and unchanged evidence
 
@@ -97,7 +97,7 @@ These are synthesis/limitation uses, not merely links, and their destination pat
 | Governance/contributor guidance | Audit/work/handoff records updated; AGENTS, playbooks and contributor obligations unchanged |
 | History/RI | CHANGELOG Updated; projection rebuilt, freshness and trusted gates required |
 
-## Acceptance record
+## Initial candidate acceptance record
 
 These are candidate checks, not completed issue checkboxes or final source verification.
 
@@ -109,7 +109,7 @@ These are candidate checks, not completed issue checkboxes or final source verif
 | AC-04 | Registry/index/bibliography/reader uses synchronized at Reviewed brief + In progress + — | Checks, merge and default-branch verification before final state |
 | AC-05 | Separate reviewer available, not yet performed | Confirmation and primary acceptance; unresolved items stay open |
 
-## Independent review and validation
+## Initial review request (superseded by outcomes below)
 
 - Primary: /root. Independent reviewer: pending.
 - Flow: B plus companion A. Materials: originals, all changes/uses, source lifecycle, synchronization and AC-01–AC-05.
@@ -123,22 +123,41 @@ These are candidate checks, not completed issue checkboxes or final source verif
 
 - Reviewer: /root/independent_evidence_review; did not author the implementation or edit files.
 - Inspected commit `5236936075426eff2084d3ea3c7ee7ac1f894fb4`, content tree `2d8d839ce3ce1532a48c7e77a48644e01ab28f03`, base `86060ebc08bf03a05a974f826792c5a4e6b9126e`. Remote PR #66 head `1ced4dca9a71851bf6e62c0b02281e48302cf57c` has the identical content tree.
-- Originals independently reopened: Peng full v1; METR full v2 and July author report; February2026 full update and public data/code links. Repository uses, source states, synchronization and every AC were independently checked.
+- Originals independently reopened: Peng full v1; METR full v2 and July author report; February 2026 full update and public data/code links. Repository uses, source states, synchronization and every AC were independently checked.
 - Outcome: **Corrections required**. AC-01 required R1–R3; AC-02 partial for R3–R4; AC-03 passed within this scope; AC-04 required R5; AC-05 remained open for repeated review.
-- Independently passed:119 tests, contract, evidence-state integrity, RI freshness, diff check, trusted-base Repository Gate and transition/integrity gates using the exact base checkout.
+- Independently passed: 119 tests, contract, evidence-state integrity, RI freshness, diff check, trusted-base Repository Gate and transition/integrity gates using the exact base checkout.
 
 | Finding | Implemented correction | Recheck required |
 | --- | --- | --- |
 | R1 wrong AppendixA tools/time locators | Replace with §§2.2.1–2.3/C.3.4; AppendixA is author contributions | Exact original locators |
 | R2 unsupported inaccessible/unpublished data wording | State public data/code links and no independent reanalysis; no inaccessible subset asserted | Update/data links and all access wording |
-| R3 missing METR completion/imputation rules | 246 completed (136/110);13 unfinished,24 intentionally dropped,3 excluded developers;27 post-review times imputed; retain author sensitivity checks and concise report caveat | §§2.3/C.3.3–4/G.6–7; every new number and report summary |
-| R4 incorrect intermediate decimal | 55.7648…% rounds to55.8%; headline result unchanged; also found independently by implementer | Reproduce arithmetic |
+| R3 missing METR completion/imputation rules | 246 completed (136/110); 13 unfinished, 24 intentionally dropped, 3 excluded developers; 27 post-review times imputed; retain author sensitivity checks and concise report caveat | §§2.3/C.3.3–4/G.6–7; every new number and report summary |
+| R4 incorrect intermediate decimal | 55.7648…% rounds to 55.8%; headline result unchanged; also found independently by implementer | Reproduce arithmetic |
 | R5 cross-brief uses omitted | Add X01–X05 and actual paths to supplying sources' Current use and front matter | Exact registry/brief path sets and interpretation boundaries |
 
 A supplementary primary check found that the linked early-study code README displays slightly different interval bounds from the 2026 author restatement. Both are explicitly attributed in the METR brief; the report labels its interval as the dated restatement. No cause is inferred and no raw-data reanalysis is claimed. This does not change the bounded positive/negative interpretation; repeat review must check the treatment.
 
-All three integrations were set to Corrections required/— while these findings remained unresolved. Corrections are now implemented but not self-confirmed; repeated independent review is pending. No new substantive maintainer decision was identified by either reviewer for R1–R5.
+All three integrations were set to Corrections required / — while these findings remained unresolved. Corrections are now implemented but not self-confirmed; repeated independent review is pending. No new substantive maintainer decision was identified by either reviewer for R1–R5.
 
 ### Repeated-review precision correction
 
 The repeated review confirmed R1/R2/R4/R5 and the substantive completion/imputation treatment in R3, then caught an imprecise shorthand: G.6 counts two excluded developers affected by paused repository development, not two distinct repositories. The brief now preserves the developer unit. The follow-up brief also explicitly names the article's agentic-tool examples and states that exact model/build versions are not supplied. No result or count is inferred from this additional tool description. Final repeated-review confirmation is still pending; states remain Corrections required/—.
+
+
+## Final implementation review and primary acceptance — 2026-10-20
+
+Independent reviewer /root/independent_evidence_review returned **Confirmed** at commit `91edb633d2d2f352a43c2333e80d5def9614b9f4`, tree `02fa53f8dfe0c23f1a2c62830d2716916da3aee9`; remote head `734856de9b4eebcbaf1196b8ba0688d7495f0ff1` has identical content. R1–R5, the G.6 precision correction and interval/tool-version supplements were independently rechecked. No material discrepancy, unresolved source correction or new human decision remains within #57. The reviewer did not edit files.
+
+Primary acceptance checked actual implementation against the original issue after this independent outcome:
+
+| AC | Observable check and exact evidence | Result |
+| --- | --- | --- |
+| AC-01 | Three full-original briefs, source/version/design/uncertainty/public-data boundaries; independent source checks above | Pass |
+| AC-02 | O01–O29 and X01–X05; corrected n/completer/issue denominators, time units, source-attributed intervals and exact Peng calculation | Pass |
+| AC-03 | Ch1 opening comparison includes Peng first; no unsupported brownfield dismissal or identified universal seniority effect | Pass |
+| AC-04 | Current-use path sets 5/6/5, actual cross-brief uses, bibliography/index/reader synchronization; all three Reviewed brief/In progress/— | Candidate pass; merge/default-branch and final-state synchronization pending |
+| AC-05 | Separate repeated review Confirmed; primary acceptance performed; no unresolved source issue within scope | Implementation pass; lifecycle completion pending |
+
+Independent final checks: contract, trusted evidence integrity/transitions, RI freshness, diff check and trusted Repository Gate passed. 119 tests passed at correction commit `e821c39`; subsequent edits only clarified text/history/RI. CI on exact remote implementation head 734856de passed [Main health 39465305694](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39465305694) and [Repository Gate 39465300432](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39465300432).
+
+Only actual confirmation/acceptance metadata and derived RI follow the reviewed content. Integration remains In progress/— until this confirmed correction set is merged and checked on main. The existing CI/source limitations are retained, not unresolved corrections. This acceptance does not extend to sibling source audits or the whole report.

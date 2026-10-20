@@ -1,9 +1,9 @@
 +++
 source_ids = ["P-2025-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Corrections required"
+integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2023-copilot-task-productivity.md", "evidence/primary/2026-metr-productivity-design-update.md"]
 +++
 
@@ -58,9 +58,9 @@ The [issue #57 trace](../../governance/reviews/issue-57-2026-10-20-productivity-
 
 ## Repository integration audit
 
-- Integration status: Corrections required; first-review corrections implemented, repeated review and default-branch verification pending.
+- Integration status: In progress; corrected integration independently Confirmed, default-branch merge and verification pending.
 - Search: source identity, distinctive percentages, uncited repetitions and adjacent conclusions; see issue #57 trace.
-- Report/numeric/README/map/bibliography/current-use checks: candidate recorded; independent review and merged-state acceptance pending.
+- Report/numeric/README/map/bibliography/current-use checks: independently Confirmed candidate; primary acceptance in issue #57 trace, merged-state verification pending.
 - Protocol outcome: No protocol change — all four protocols retain locally bounded measures and proposed controls; no threshold comes from +19% or the perception estimates.
 - Verification date: —.
 
@@ -69,7 +69,7 @@ The [issue #57 trace](../../governance/reviews/issue-57-2026-10-20-productivity-
 - Primary agent: /root.
 - Independent reviewer: /root/independent_evidence_review.
 - Flow reviewed: B; companion Flow A for P-2026-03.
-- Materials to check: full v2, author report/update, uncertainty, all occurrences, synchronization and AC-01–AC-05.
-- Outcome: Corrections required — first review at tree `2d8d839ce3ce1532a48c7e77a48644e01ab28f03`; exact findings and dispositions in the issue #57 trace.
-- Corrections implemented: locators, completion/exclusion/imputation boundary, public-data wording and cross-brief uses. Repeat review pending; no new human decision required.
+- Materials independently checked: full v2, author report/update, uncertainty, all occurrences, synchronization and AC-01–AC-05.
+- Outcome: Confirmed — repeated independent review on 2026-10-20 at commit `91edb633d2d2f352a43c2333e80d5def9614b9f4`, tree `02fa53f8dfe0c23f1a2c62830d2716916da3aee9`; complete correction history and acceptance results in the issue #57 trace.
+- Corrections completed: R1–R5, G.6 developer-unit precision and the explicit interval/tool-version boundaries independently rechecked. No unresolved correction or new human decision; default-branch verification remains pending.
 - Review date: 2026-10-20.

@@ -1,9 +1,9 @@
 +++
 source_ids = ["P-2023-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Corrections required"
+integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2025-metr-experienced-developer-productivity.md"]
 +++
 
@@ -53,9 +53,9 @@ See the occurrence-level [issue #57 trace](../../governance/reviews/issue-57-202
 
 ## Repository integration audit
 
-- Integration status: Corrections required; first-review corrections implemented, repeat independent review and default-branch verification pending.
+- Integration status: In progress; corrected integration independently Confirmed, default-branch merge and verification pending.
 - Repository search: source IDs, names, titles, URLs, sample/effect figures and uncited summaries across all admitted text; trace records each material reader use.
-- Report, numeric, README/map, bibliography and current-use checks: recorded in the issue #57 trace; final acceptance pending independent review and merge.
+- Report, numeric, README/map, bibliography and current-use checks: complete on the independently Confirmed candidate; primary acceptance recorded in the issue #57 trace; default-branch check pending.
 - Protocol outcome: No protocol change — none of the four protocols derives a role, gate or numerical threshold from this experiment; local outcome measurement remains proposed practice.
 - Verification date: —.
 
@@ -64,7 +64,7 @@ See the occurrence-level [issue #57 trace](../../governance/reviews/issue-57-202
 - Primary agent: /root.
 - Independent reviewer: /root/independent_evidence_review.
 - Flow reviewed: B, alongside Flow A for P-2026-03.
-- Materials to check: original v1, all uses, arithmetic, synchronized artifacts and AC-01–AC-05 in the issue #57 trace.
-- Outcome: Corrections required — first review at tree `2d8d839ce3ce1532a48c7e77a48644e01ab28f03`; see the issue #57 trace for five findings and correction disposition.
-- Corrections implemented: exact intermediate arithmetic and cross-brief dependencies; repeat independent review pending. No new human decision required.
+- Materials independently checked: original v1, all uses, arithmetic, synchronized artifacts and AC-01–AC-05 in the issue #57 trace.
+- Outcome: Confirmed — repeated independent review on 2026-10-20 at commit `91edb633d2d2f352a43c2333e80d5def9614b9f4`, tree `02fa53f8dfe0c23f1a2c62830d2716916da3aee9`; complete correction history and acceptance results in the issue #57 trace.
+- Corrections completed: R1–R5, G.6 developer-unit precision and the explicit interval/tool-version boundaries independently rechecked. No unresolved correction or new human decision; default-branch verification remains pending.
 - Review date: 2026-10-20.

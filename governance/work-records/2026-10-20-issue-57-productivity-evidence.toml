@@ -2,7 +2,7 @@ record_version = 1
 title = "Issue #57: bounded Peng/METR task-time evidence and temporal update"
 primary_flow = "Flow B — Legacy source; companion Flow A for P-2026-03"
 human_decision = "Maintainer requested evidence/numeric/placement/neutral-tone correction, one issue at a time with implementation, independent review, acceptance, evidence and closure, then explicitly said Роби for #57. Issue #57 implementation instructions and pre-edit start/impact comment define the bounded treatment; governance/reviews/issue-57-2026-10-20-productivity-audit.md preserves the trigger, alternatives, scope and decision. No workflow or protocol rule changes."
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 
 [changelog]
 decision = "Updated"
@@ -13,3 +13,10 @@ assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "report"
 
 [synchronization.non_applicable]
 contributor-guidance = "No canonical rule, flow, gate, contributor obligation or procedure changes. Governance edits are task-specific audit, decision and handoff records."
+
+# Independently Confirmed by /root/independent_evidence_review on 2026-10-20
+# at local commit 91edb633d2d2f352a43c2333e80d5def9614b9f4,
+# tree 02fa53f8dfe0c23f1a2c62830d2716916da3aee9 (remote head 734856de9b4eebcbaf1196b8ba0688d7495f0ff1).
+# R1–R5 and precision/interval supplements rechecked; source integration remains
+# In progress until corrections are merged and the default branch is checked.
+# This update records that actual outcome, with no additional research change.
