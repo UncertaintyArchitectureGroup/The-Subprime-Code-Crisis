@@ -11,6 +11,9 @@
 
 ## Active owners
 
+- #74 now owns the maintainer-authorized browser-report producer at `/subprime/`;
+  isolated branch work/issue-74-quartz-report from main2b0f6528. Author #116
+  owns mounted delivery; author PR79 remains Draft/unmerged at283b32f6.
 - #47/#52 completed rules/RI baseline; #53 evidence backlog.
 - #60 final verification; next after completed #60 is #61 secondary/orphans.
 - #62 provenance; #63 NBER/horizons/mechanism; #64 whole-report tone;
@@ -18,6 +21,9 @@
 
 ## Decisions
 
+- Maintainer selected vitaliioborskyi.ai/subprime/, accepted the issue plan and
+  instructed “Сол починай”. Implement independent Quartz rendering and the
+  existing author whole-site consumer. No source-state, merge or prod decision.
 - Maintainer authorizes one issue through implementation, substantive independent
   review, checked integration, evidence and closure; latest continue covers #60.
 - Retain optional hypothetical cash/capacity appendix, not empirical TCO/ROI.
@@ -27,6 +33,12 @@
 
 ## Evidence
 
+- #74: tools/report_web/README.md; governance/reviews/issue-74-2026-10-21-web-report.md.
+  Initial local43-page render/2859links/43search passed;133unit tests passed.
+  Warm HTML3.763s/3.497s are local, not end-to-end delivery. Independent review
+  Confirmed for corrected producer code/checks:43pages/2902links/43search3.677s;
+  browser/visual, rights and hosted/consumer gates pending. Reopen live issue
+  and linked PR for later source-bound outcomes; no completion inferred here.
 - Trace: reviews/issue-60-2026-10-20-cost-audit.md; initial Astra review
   reviews/issue-60-2026-10-21-astra-review.md; correction history
   reviews/issue-60-2026-10-21-sol-corrections.md; final verification
@@ -45,6 +57,10 @@
 
 ## Next actions
 
+- For #74, resume its current Draft PR/branch and review record; finish corrections,
+  current-source CI and real reader/visual acceptance. Coordinate #116 only on an
+  admitted author content-release baseline; do not fork a publisher or merge PR79
+  merely to clear the dependency. Keep both issues open until full acceptance.
 - Reopen https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/60
   and its linked final verification PR. If still open, finish its actual review,
   publication/merge/exact-main checks, tick proven ACs and close with evidence.

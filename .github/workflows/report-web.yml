@@ -1,0 +1,67 @@
+name: Report web package
+
+on:
+  pull_request:
+    paths:
+      - 'tools/report_web/**'
+      - 'tests/test_report_web.py'
+      - 'report/**'
+      - 'evidence/**'
+      - 'protocols/**'
+      - 'assets/**'
+      - '*.md'
+      - '.github/workflows/report-web.yml'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+
+jobs:
+  report-html:
+    name: Quartz report HTML
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out complete source history without write credentials
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Use Node 22 and cache downloads for the immutable engine pin
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+          # This manifest identifies the exact upstream package-lock commit.
+          cache-dependency-path: tools/report_web/publication.json
+      - name: Source, path and package failure cases
+        run: |
+          python3 -m unittest discover -s tests -p 'test_report_web.py' -v
+          python3 tools/report_web/report_web.py check
+          node --check tools/report_web/prepare.mjs
+      - name: Install exact Quartz dependencies without a browser/PDF toolchain
+        run: python3 tools/report_web/report_web.py setup
+      - name: Build review preview and verify the complete package
+        run: |
+          python3 tools/report_web/report_web.py build --mode preview
+          python3 tools/report_web/report_web.py verify --package tools/report_web/public/preview/package
+          node tools/report_web/projection-check.mjs
+          git diff --exit-code
+      - name: Build a clean public candidate on main only
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          python3 tools/report_web/report_web.py build --mode public
+          python3 tools/report_web/report_web.py verify --package tools/report_web/public/public/package
+      - name: Retain source-bound report package for review, not a deployment
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: subprime-web-${{ github.sha }}
+          path: tools/report_web/public/
+          if-no-files-found: error
+          retention-days: 14
