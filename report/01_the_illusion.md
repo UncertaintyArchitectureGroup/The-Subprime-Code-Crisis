@@ -305,10 +305,9 @@ This "Execution Mandate" is particularly dangerous because it ignores context.
 
 For an early-stage **Startup**, this strategy might actually work. Startups operate on a **"fail fast"** model. Their goal is to validate a hypothesis before they run out of cash. If the code is messy but the product finds product-market fit, they survive to rewrite it.
 
-For an **Enterprise**, however, this strategy is **toxic**.
-In a mature organization, the cost of software is not in writing it; it is in **maintaining it**. Industry standards suggest that **80% of the Total Cost of Ownership (TCO)** of software occurs *after* deployment.
+For an enterprise maintaining a durable system, the comparison includes later integration, operation and maintenance as well as initial implementation. No universal post-deployment TCO percentage is established by the sources reviewed in Chapter 2.
 
-When an Enterprise adopts the **"Startup Strategy"** of AI (maximum speed, minimum process), they flood their long-term codebase with **"disposable"** code. But unlike a startup, they cannot throw it away. They have to support it for years. By saving pennies on code generation today, the Board is guaranteeing millions in increased maintenance costs tomorrow.
+**Conditional cost-risk scenario:** Short-term coding savings could be outweighed by extra verification or maintenance if that additional work exceeds delivered benefits. Reusing sufficient capability or sustaining useful gains at stable or lower comparable cost would weaken this scenario. Neither a lifecycle cost share nor a future dollar loss is measured here.
 
 ---
 

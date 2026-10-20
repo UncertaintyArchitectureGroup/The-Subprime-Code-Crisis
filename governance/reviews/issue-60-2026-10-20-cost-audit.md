@@ -57,6 +57,7 @@ R1=report/01_the_illusion.md. Each row distinguishes wording/inference, numeric/
 | H06 Ch3 opening dependent on Ch2 | Changed cost argument, no empirical threshold | Refer to conditional cost comparison, not measured transformation requirement | Keep transition, no change to task-study figures |
 | H07 Ch3 license=CapEx/inevitablecapacity | Cost classification/relying scenario | A subscription is not automatically capital investment; license approval alone does not prove volume/capacity gap | Narrow dependent paragraph, broader mechanism #63/#64 |
 | H08 Ch3 adoption/impact gap cost explanation | No budget measurement identifies1–3% missing-cost causal mechanism | Remove inference that the survey gap is explained by fixed underfunding share | Bound directly relying paragraph; survey figures await #61 |
+| H09 Ch3 Startup vsEnterprise post-deployment share/loss | No original denominator for80%TCO or guaranteedmillions | Independent R1: withdraw both; conditional additional-work-versus-benefit scenario and weakening observations | Required #60 correction, not deferred tone; re-review pending |
 | M01 Ch2 market paragraph/appendix | Menlo p2/FollowtheMoney37B/11.5B | Derived+221.7%,3.21739× versus incorrect+320% | Exact figures in context/brief; qualified Ch2 pointer |
 | M02 source boundary/sample | Menlo p18/footnote4,495U.S.,Nov7–25,model/revisedbase | Distinguish modelled market from company invoices, inference-serving exclusions | Near appendix comparison and source brief |
 | M03 CloudZero means/36% | Section01 monthlybudgets62964/85521 | 2024reports versus2025plans, derived35.825233%; not realized all-enterprise spend | Appendix/brief, not local model input |
@@ -107,3 +108,14 @@ After Astra acceptance, complete required corrections/re-review; inspect actual 
 ## Validation and independent review
 
 Primary /root; separate independent execution reviewer not yet run. Outcome **Review unavailable** at this pre-review checkpoint, not a claim that review is impossible. Seven targeted model tests and direct decimal checks passed; full repository/RI/trusted-base checks and pinned independent review will be recorded after the candidate is complete. Astra acceptance, merge/main and final verification remain pending.
+
+
+### Independent execution review and correction loop — 2026-10-20
+
+Reviewer /root/review_issue60_implementation, primary /root. **Corrections required** at local `11f87dfb734f752511730ac58dd8dada3447d645`, tree `68ab1eb8618a4bf95e008907e03a7b45611b4218`; independently fetched PR #72 remote `81f4007bfbe4d5501e40fa8c41b102306e3d0a3d` has identical tree. All exact financial/book/Menlo/CloudZero/Markus original values and24modeloutputs independently matched. Full original PDF/report/chart checks and scope limits confirmed, including honest Microsoft local403 and matched hashes of available files. Independent126tests/contract/state/RI117/scenario reproduction/whitespace/trustedbaseGate/transitions and initial exact-head Main health39487576827/Repository Gate39487576805 passed. These checks did not override findings.
+
+- **R1 (P2):** Ch3 “Startup vsEnterprise” still asserted untraced80%post-deploymentTCO and guaranteedmillions, contradicting Ch2 and AC01/04. Corrected by withdrawing the share/dollar guarantee and using a conditional cost-risk scenario with possible beneficial alternative; trace H09. This required numeric/nearby-argument correction is within existing authorized scope, not postponed to #64.
+- **R2 (P3):** Menlo/CloudZero bullets under Inclusioncriteria misplaced. Moved both into Evidencebriefs before that heading; RI rebuilt.
+- Candidate corrections require repeated independent review. All seven sources/briefs/workrecord remain **Corrections required / —**, not self-confirmed. No new human decision for these directly authorized fixes.
+
+**Astra remaining exposure made explicit:** R1 Ch3 “The Mechanics of the Execution Mandate” and “The Adoption-Impact Gap” still contain unreviewed survey/board-pressure material; source audits belong #61 and wider causal/rhetorical treatment #64. Ch3’s **Microsoft FY25Q2 revenue reference** is a different source from FY2024 statements D-2024-03 and is not certified by this review. These retained unvalidated neighboring claims must not be presented as #60 verified evidence. Astra should flag any additional directly relying cost blocker for correction under #60, while keeping unrelated source work at its existing owner. R1Ch3’s former80%/guaranteed-dollar claim is corrected here, not included in that deferral.

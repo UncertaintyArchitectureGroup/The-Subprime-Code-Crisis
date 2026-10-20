@@ -1,9 +1,9 @@
 +++
 source_ids = ["D-2024-02"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
+integration_audit = "Corrections required"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Corrections required"
 current_use = ["README.md", "report/01_the_illusion.md", "report/appendices/cost-context.md", "REFERENCES.md"]
 +++
 
@@ -39,11 +39,11 @@ The exact table belongs in the **cost-context appendix**, not as a budget needed
 
 ## Repository integration audit
 
-- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Audit owner /root, 2026-10-20; integration **In progress**, Last verified **—**.
+- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Audit owner /root, 2026-10-20; integration **Corrections required**, Last verified **—**.
 - [Occurrence/placement trace and Astra handoff](../../governance/reviews/issue-60-2026-10-20-cost-audit.md) cover every material use, arithmetic, nearby conclusions, README and all protocols. Protocol outcome: **No protocol change**; no monetary threshold or validated ROI follows from this source.
 - Corrections are a reviewable #60 candidate. Full economic/model-choice acceptance by Astra, merged corrections and checked main remain required; no Verified promotion.
 
 ## Independent review
 
-- Primary agent: /root (Sol implementation). Separate execution/source/arithmetic review pending; outcome **Review unavailable** at this candidate checkpoint.
+- Primary /root; independent /root/review_issue60_implementation, 2026-10-20: **Corrections required** at `11f87dfb734f752511730ac58dd8dada3447d645`, tree `68ab1eb8618a4bf95e008907e03a7b45611b4218` (remote PR #72 head `81f4007bfbe4d5501e40fa8c41b102306e3d0a3d`, identical tree). Originals/source values and all 24 model outputs matched; two repository integration defects identified (Ch3 unsupported quantified adverse costs; index placement). Corrected candidate awaits repeated independent review; full findings/checks in the audit.
 - Astra analytical acceptance remains an explicit separate handoff, not inferred from structural checks or a source brief.

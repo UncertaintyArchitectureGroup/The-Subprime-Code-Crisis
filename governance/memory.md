@@ -33,13 +33,15 @@
   39484014751 success, local119tests/contract/state/RI/trusted checks passed.
 - #60 trace/handoff: reviews/issue-60-2026-10-20-cost-audit.md.
 - Seven briefs: Google2020, Alphabet/MetaCY2024, MicrosoftFY2024, Markus2026;
-  newly registered Menlo/CloudZero originals. IntegrationInprogress/—, noVerified.
+  newly registered Menlo/CloudZero originals. IntegrationCorrections required/— during the separate correction loop, noVerified.
 - Meta cashPPE37.256B plusleaseprincipal1.969B=39.225B; whole-company figures
   are context, not AI verification budgets. Menlo37/11.5 growth221.739%.
 - CloudZero planned2025 versusreported2024 means;45%>100k versus43%≥100k unresolved.
 - New numerical examples are hypothetical; cash/time/one-off/annual/allocation split,
   released capacity allowed, no measured TCO/ROI or universal multiplier.
-- Independent execution review and full checks pending; Astra analytical acceptance,
+- Independent execution review found Ch3 quantified-cost and index-placement defects;
+  corrections implemented, repeat review pending.126tests/contract/state/RI117/gates pass.
+- Astra analytical acceptance,
   corrections/merge/exactmain/finalsourceverification/closure remain pending.
 
 ## Next actions
