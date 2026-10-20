@@ -50,13 +50,13 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### P-2025-04 — GitClear code-change research
 
-- GitClear. [*AI Assistant Code Quality 2025 Research*](https://www.gitclear.com/ai_assistant_code_quality_2025_research). 2025.
-- Status: original commercial measurement report; methodology and conflict-of-interest brief pending.
+- William Harding, Alloy.dev Research / GitClear. *AI Copilot Code Quality: Evaluating 2024's Increased Defect Rate via Code Quality Metrics*. February 2025, footer v2025.2.5; Updates page states 4 February publication.
+- [Full original PDF](https://gitclear-public.s3.us-west-2.amazonaws.com/GitClear-AI-Copilot-Code-Quality-2025.pdf), [publisher landing page](https://www.gitclear.com/ai_assistant_code_quality_2025_research), [evidence brief](evidence/primary/2025-gitclear-code-quality.md). Self-published commercial report; full PDF inspected 20 October 2026, with method/sampling, source-internal and landing/PDF discrepancies retained.
 
-### P-2025-05 — GitClear productivity research
+### P-2025-05 — GitClear developer-output research
 
-- GitClear. [*How Much More Productive Are AI-Powered Developers?*](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025). 2022–2025 study period.
-- Status: original commercial productivity measurement report; methodology and conflict-of-interest brief pending.
+- Bill Harding / GitClear. [*How much more productive are AI-powered developers? Large sample productivity data*](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025). Publisher displays 1 October 2025; [full embedded original](https://public.amplenote.com/embed/w32ZX4GJ7ZwJasUQ1K7kqLqE), inspected 20 October 2026, contains later update text.
+- Self-published commercial measurement report. [Evidence brief](evidence/primary/2025-gitclear-developer-output.md) records the four distinct methods/cohorts, positive/null findings, composite arithmetic and unresolved Method 1 mean discrepancy. It is not the quality study's dataset or a causal net-productivity estimate.
 
 ## Primary documentary sources
 

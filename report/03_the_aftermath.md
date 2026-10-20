@@ -14,41 +14,19 @@
 We began with [different task-time results across experiments](01_the_illusion.md#bounded-experiments-positive-negative-and-temporally-limited-evidence), followed by an update that leaves the current magnitude uncertain. Those results do not establish a universal industry slowdown.
 The report's systems hypothesis is conditional: treating code-generation speed as sufficient evidence of delivery improvement can hide downstream constraints. Its applicability depends on the task, tools, operating model and observed production outcomes.
 
-### The Trap of the "Silver Bullet"
+### Local Automation: A Conditional Tradeoff
 
-In Chapter 5, we explored the hypothetical solution of the **AI Code Review Agent**. To a logical engineer or a desperate manager, this seems like the obvious fix: "If AI created the flood of code, let's use AI to build a dam."
+[Chapter 6](02_broken_mechanics.md#chapter-6-assessing-context-and-automation-tradeoffs) proposes evaluating a review assistant's benefits against setup, supervision and maintenance. It does not demonstrate that automation necessarily adds net work or leaves senior engineers with an equally severe bottleneck.
 
-However, this highlights the central paradox of the current crisis: **A local solution often generates a new, more complex systemic problem.**
-
-If you deploy an AI Agent to review code, you haven't removed the burden from your Senior Engineers; you have simply **shifted the point of tension**.
-*   **Before:** The Senior Engineer was drowning in low-quality Pull Requests.
-*   **After:** The Senior Engineer is now responsible for **maintaining the Agent**. They must audit its decisions, update its context (RAG), debug its hallucinations, and ensure it isn't rejecting valid code or approving subtle security flaws.
-
-The bottleneck didn't disappear; it mutated. The Senior Engineer stops being a "Reviewer of Code" and becomes a "Maintainer of Infrastructure." The cognitive load remains critically high, but now it is hidden behind the illusion of automation.
+GitClear's [historical quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output measures](../evidence/primary/2025-gitclear-developer-output.md) do not measure that intervention's total effort, human cognitive load or production outcome. A local pilot could find useful review savings, added maintenance burden or a mixture. Stable quality and lower total effort would weaken the adverse scenario.
 
 ### The Challenge of Systemic Rebalancing
 
-This example proves that there is no "correct" solution for a single node of the SDLC in isolation. The crisis we face is not a problem of individual efficiency; it is a problem of **systemic synchronization**.
+The proposed mechanism depends on the surrounding delivery system. Faster requirements, code or review can create queues when downstream capacity is constrained; sufficient capacity and effective verification could instead turn local gains into delivered value. Neither a universal failure nor a requirement to redesign every stage follows from the GitClear activity percentages.
 
-The Software Development Life Cycle is a tightly coupled ecosystem. Every intervention creates a ripple effect:
-*   If you use AI to accelerate **Requirements Gathering**, you risk flooding the backlog with unverified ideas that the team cannot digest.
-*   If you use AI to accelerate **Coding**, you crush the Review process.
-*   If you use AI to accelerate **Review**, you shift the bottleneck to QA and Maintenance, potentially automating the deployment of bugs.
+### Conclusion: Measure the Result of the Intervention
 
-The true challenge for Engineering Leadership is not to find the "right tool" to plug a specific hole. It is the immensely difficult task of **rebalancing the entire assembly line** to accommodate this new reality.
-
-### Final Verdict
-
-There is no playbook for this. There is no vendor who can sell you a "Balanced SDLC."
-What works for a startup (accepting high risk for high speed) will destroy an enterprise (where stability is paramount).
-
-AI is the most powerful force multiplier in the history of software engineering. But a multiplier works both ways.
-*   If applied to a chaotic, unbalanced process, it multiplies **Chaos**.
-*   If applied to a disciplined, synchronized system, it multiplies **Value**.
-
-The choice is yours. You can continue to chase local optimizations—buying tools to make specific tasks faster—and watch your overall engineering velocity grind to a halt under the weight of complexity.
-Or you can accept the hard truth: **There is no free lunch.**
-The entire system must be redesigned as a whole, accepting that every gain in speed in one area requires a deliberate investment in stability in another.
+Compare task and downstream outcomes, including human effort, quality, release performance and operating cost. Expand, adjust or constrain a use case according to that evidence. This is a proposed measurement practice; the studies reviewed here do not establish one inevitable outcome for startups, enterprises or review automation.
 
 ---
 ## Chapter 9. The Macro-Economic End Game: The Trajectory of Crisis
