@@ -1,0 +1,26 @@
+record_version = 1
+title = "Issue #58: final Xu/Agarwal source states after checked main"
+primary_flow = "Flow B — final default-branch source verification"
+human_decision = "Existing explicit maintainer one-issue correction/review/acceptance/evidence/closure request. Exact #58 treatment approved before edits in issue comment 6297923181; all independently Confirmed corrections merged in PR #68. Checked default branch bc0e4621d87e28137215573f963ae66b9a78da2b and completion checklist in the dated #58 audit authorize matched final fields, without new research, protocol or governance decisions."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Records completion of these two source integration audits after independent correction review and checked default-branch integration."
+
+[synchronization]
+assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "references", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+evidence-indexes = "Both briefs already indexed on checked main; no source identity, classification, title or finding changes."
+references = "Versioned bibliography, venue/access boundary and brief links already match checked main; final fields do not alter citations."
+contributor-guidance = "Only source-specific verification/acceptance and dated handoff records; no rule, flow, status definition, gate, approval or contributor obligation change."
+
+# Final-state review independently Confirmed by /root/review_issue58,
+# 2026-10-20 at d3487012747e9040a9afa75109a205ab04c74f97,
+# tree 5d309d1f7180e997117d3c83e3c71e154599a967 (remote 9958d209 same tree).
+# Reviewer checked actual PR #68/main/CI, exact research identity, completion
+# gates, precisely two matching final fields/dates and conditional memory;
+# independent 119 tests, contract/state/RI and trusted-base Gate/transitions pass.
+# This metadata update records that actual outcome; resulting main/CI and issue
+# closure remain future live observations, not predicted by this record.

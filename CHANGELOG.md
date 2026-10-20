@@ -15,6 +15,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
+- Completed Xu/Agarwal integration verification after independently Confirmed corrections merged in PR #68 and the exact default branch passed acceptance; source-specific design, edition and reporting uncertainties remain explicit.
 - Corrected Xu's OSS sample, activity-quartile and review/rework units; preserved positive project activity and the uncertain core review-count result. Separated Agarwal's AF/IF repository-month effects from per-feature debt, functional correctness and measured cognitive-load claims; replaced the relying cross-study chain with a conditional scenario.
 - Completed the three bounded productivity-source integration audits after independent correction review and checked default-branch integration; each source retains its publication, selection, measurement and generalization limits.
 - Rebuilt Chapter 1's task-time comparison around bounded positive and negative findings; corrected Peng's randomized/completer counts and time unit, retained METR's tool/date limits, separated the later unreliable magnitude estimate, and removed universal slowdown/seniority conclusions from the relying summaries. Broader source and tone audits remain separate work.

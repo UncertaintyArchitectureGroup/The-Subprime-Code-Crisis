@@ -150,3 +150,73 @@ integrations to In progress/— and rebuilds RI; no research text changes after 
 Confirmed candidate. This confirms the corrections, not merged-main verification.
 AC-01–04 pass at correction-candidate scope; AC-05/final AC-06 await actual merge,
 main checks and final state acceptance. The remaining completion steps stay open.
+
+
+## Checked default-branch acceptance — 2026-10-20
+
+Correction PR [#68](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/68)
+merged at **bc0e4621d87e28137215573f963ae66b9a78da2b**, tree
+**af3c1ce73304e6f2c4e9d8c0e1b65144e8d6b7ff**. Live main matches that merge;
+its entire tree is identical to remote reviewed head d356251c671d4df59bf909641ac6581bb72c1f1e.
+Metadata-only independent check also Confirmed that exact tree at local a5050e1;
+report/empirical brief bodies match the Confirmed correction candidate 48f9292.
+Primary 119 tests, repository contract, state integrity, RI freshness and status
+query passed from a separate checkout of the actual merged main.
+[Main health 39475740670](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39475740670)
+succeeded at the exact merge SHA (tests/contract/state/RI). Before merge, exact-head
+[Main health 39475471984](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39475471984)
+and latest [Repository Gate 39475603480](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39475603480)
+succeeded; trusted Gate/state/transitions also passed locally against base 3849297.
+Source fields on that checked main were Reviewed brief/In progress/—/Confirmed,
+three current-use paths each; no final verification was inferred from the PR/CI.
+
+### Integration completion checklist — both sources
+
+- [x] Current AGENTS and mandatory Flow B/cross-cutting playbooks read first.
+- [x] Exact versions, original ground-truth fields and access/publication bounds checked.
+- [x] Both complete reviewed evidence briefs exist and are indexed.
+- [x] Every named/numeric/uncited/diagram/neighboring/protocol use searched and inspected.
+- [x] X01–XA19 give each material use, exact result/unit, inference and placement decision.
+- [x] Samples, denominators, periods, transformed counts, uncertainty and calculations checked.
+- [x] Claim strength and nearby argument corrected under original design/scope limits.
+- [x] Report, README claims/maps/diagrams and neighboring conclusions assessed.
+- [x] Exactly one protocol outcome: No protocol change, for both sources.
+- [x] Exact substantive treatment approved before implementation; decision links above.
+- [x] Current use is actual README/R1/REFERENCES, three paths per source.
+- [x] Brief/registry/index/bibliography/links/version and removed claims synchronized.
+- [x] Separate review Confirmed; R1–R3 and metadata independently rechecked.
+- [x] Registry/brief fields and dates agree; final candidate uses Verified/2026-10-20.
+- [x] No unresolved correction or new human decision in accepted #58 scope.
+
+This checklist records completed research corrections on the checked default
+branch, not a claim that source-internal uncertainty disappeared. The final-state
+PR changes only matched fields/verification records, changelog, dated memory,
+new append-only work record and derived RI. Final independent review and its
+actual resulting main/CI/closure evidence will be appended to #58/PR completion
+comments after they occur; this candidate does not forecast those future events.
+
+| AC | Default-branch evidence | Status at final-state preparation |
+| --- | --- | --- |
+| AC-01 | Both full pinned briefs, locators and original/render checks on bc0e462 | Passed |
+| AC-02 | X01–XA19; matched checked tree; source/body numeric review | Passed |
+| AC-03 | Conditional Ch1/Ch4 findings/scenario distinction on bc0e462 | Passed |
+| AC-04 | Positive Xu/AF and uncertain IF results central in Ch1/conclusion | Passed |
+| AC-05 | Correction/metadata review Confirmed; all corrections on checked main | Final matched-state review/merge pending |
+| AC-06 | Start/live merged checkpoint, actual main/CI/source fields and conditional memory | Final resulting main/CI/issue checkpoint pending |
+
+
+### Final-state independent review — Confirmed
+
+Reviewer /root/review_issue58, 2026-10-20: **Confirmed** at
+`d3487012747e9040a9afa75109a205ab04c74f97`, tree
+`5d309d1f7180e997117d3c83e3c71e154599a967`; remote PR #69 initial head
+`9958d209700ae20b9d12a72f105ff2f2c52c34f6` has that same tree. Independently
+verified live PR #68/main/CI, complete checked-tree identity, unchanged research
+bodies/current-use/index/bibliography/historical records, all completion gates,
+precisely two matched final source fields/dates and dated conditional memory.
+Independent 119 tests, contract/state/RI/task context and trusted bc0e462
+Gate/state/transitions passed. No discrepancy, unresolved correction or human
+decision remains. This update only records the actual review and regenerated RI.
+Final resulting main/CI/source-field and live issue/PR acceptance will be linked
+in #58 and both PR completion comments after actual final merge. Those final
+observations cannot be known within the commit that precedes that merge.
