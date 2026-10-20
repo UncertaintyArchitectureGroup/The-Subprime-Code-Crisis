@@ -3,8 +3,8 @@
 > **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | **Part 2** | [🔥 Part 3: The Aftermath](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
-*   [Chapter 5. Deep Dive: The Death of Code Review](#chapter-5-deep-dive-the-death-of-code-review)
-*   [Chapter 6. A Case Study in Complexity](#chapter-6-a-case-study-in-complexity-why-there-is-no-simple-fix)
+*   [Chapter 5. Review Capacity Under Higher Intake](#chapter-5-review-capacity-under-higher-intake)
+*   [Chapter 6. Assessing Context and Automation Tradeoffs](#chapter-6-assessing-context-and-automation-tradeoffs)
 *   [Chapter 7. The Chain Reaction](#chapter-7-the-chain-reaction-how-ai-broke-the-entire-value-stream)
     *   [Production Attenuation](#production-attenuation)
     *   [Complementary Human Capital](#complementary-human-capital)
@@ -12,30 +12,21 @@
 
 ---
 
-## Chapter 5. Deep Dive: The Death of Code Review
+## Chapter 5. Review Capacity Under Higher Intake
 
-If the SDLC is a highway and Code Review is the toll booth, let's look at the poor soul sitting inside that booth: the **Senior Engineer**.
+Continue Chapter 4's conditional scenario: candidate work grows faster than a constrained review stage can process it. Reviewer load depends on change size/risk, familiarity, tooling and available capacity. The evidence reviewed here does not establish a universal senior-to-junior staffing ratio or that AI permanently breaks one.
 
-For decades, the software industry has operated on an unwritten ratio: **One Senior Engineer can effectively mentor and review the work of 3 to 5 Juniors.** This math worked because Juniors were naturally limited by their lack of knowledge. They wrote code slowly. They got stuck often. Their output was sporadic, giving the Senior time to review, teach, and maintain their own tasks.
+### Activity Growth Does Not Set Staffing Ratios
 
-**AI has broken this ratio forever.**
+[GitClear's developer-output report](../evidence/primary/2025-gitclear-developer-output.md) reports +131.1% mean and +76.3% median added-line output in selected developer-month records versus 2022. These are different statistics from a changing sample, without observed individual AI exposure. They do not establish that every team doubles its PR intake, or that one reviewer now handles the output of ten developers.
 
-### The Multiplier Effect: The "Super-Junior"
+**Repository hypothesis:** Increased admitted work could grow review queues where capacity is constrained. Smaller changes, better verification or additional capacity could instead preserve flow. Direct local intake, review effort and delivered outcomes are required to distinguish these possibilities.
 
-With an AI Code Assistant, a Junior developer no longer gets stuck on syntax or boilerplate. They can generate code at the speed of a Mid-level or even Senior engineer. 
+### Failure Mode to Test: Plausible but Incorrect Code
 
-Suddenly, that single Senior is not reviewing the output of 3-5 Juniors. **In terms of volume, they are reviewing the output of 10+ developers.** As GitClear data confirmed, the sheer volume of code added has exploded by **131%**. The "flow control" provided by the Junior's lack of experience is gone. The Senior is bombarded by Pull Requests (PRs) at a rate that is physically impossible to process with high quality.
+A plausible implementation could contain a logic, concurrency or security error that is expensive to detect. That possibility concerns generated and human-authored changes; the GitClear operation counts do not measure its prevalence or compare junior/senior error visibility.
 
-### The Trap of "Plausible Lies"
-
-But volume is only half the problem. The *nature* of the code has changed.
-
-When a human Junior makes a mistake, it is usually obvious: a variable is named poorly, a loop is inefficient, or the style is messy. These are easy to spot. 
-**AI, however, generates "Plausible Lies."**
-
-The code looks perfect. The syntax is elegant. The comments are professional. It compiles. But deep inside the business logic, there is a hallucination. A subtle race condition. A security vulnerability that only manifests in edge cases. A misunderstanding of the broader system architecture that the LLM doesn't know about.
-
-This creates an **Asymmetry of Effort**:
+The following **illustrative effort asymmetry** is a scenario, not a GitClear measurement or general review-time ratio:
 *   **Generation time:** 10 seconds (by the Junior).
 *   **Review time:** 30+ minutes (by the Senior).
 
@@ -51,76 +42,62 @@ When an AI agent "vibe codes" a 7-hour architectural task with a 50/50 chance of
 
 The **7-Month Doubling Time** is not a metric of progress; it is the **tempo of code inflation**. We are doubling the volume of unverified complexity every seven months, while the human capacity for systemic understanding remains fixed. We are witnessing a rapid degradation of systemic knowledge as the "Black Boxes" generated by AI grow larger than any human can reasonably audit.
 
-### The Impossible Choice: Block or Rubber Stamp?
+### Possible Responses at a Constrained Review Stage
+
+The secondary review-time claim below requires its own original-source audit (#61); it is not measured by either GitClear dataset.
 
 Reports from the field indicate that review times have already **doubled** for AI-generated code. The Senior cannot just "scan" the code anymore. They have to mentally simulate the execution of code they didn't write, looking for bugs that are actively hiding behind perfect syntax. This spikes the **Cognitive Load** to unsustainable levels.
 
-Faced with this flood of "plausible but dangerous" code, the Senior Engineer is forced into a dilemma where every option is a loss for the company:
+Two adverse responses are illustrated below. They are not an exhaustive or observed distribution of choices; limiting intake, changing scope or improving verification are alternatives:
 
 1.  **The Bottleneck Option:** They do their job properly. They review every line deeply.
     *   **Result:** PRs pile up (the "tidal wave" queues). The Junior sits idle waiting for feedback. Management screams about "velocity." The Senior burns out working nights.
 2.  **The "Rubber Stamp" Option:** They surrender. They glance at the code, see that it looks **"LGTM"** (Looks Good To Me), and click Approve.
     *   **Result:** The feature ships on time. Management is happy. But the codebase is silently poisoned with logic bombs that will explode in production 6 months later.
 
-### Conclusion: The Collapse of Mentorship
+### Conclusion: Measure Review and Mentorship
 
-In the "Safe Scenario" of AI adoption, most Seniors eventually choose Option 2. They have to, to survive. 
-This marks the **death of Code Review as a quality gate**. It becomes a theater of security.
+The GitClear studies do not show that most senior engineers rubber-stamp changes, that code review ceases to function, or that mentorship necessarily collapses. Those would be additional outcomes to investigate, not consequences measured by commit/line proxies.
 
-Worse, it kills mentorship. Since the Senior is just trying to survive the flood, they stop explaining *why* the code is wrong. The Junior stops learning. The organization loses its ability to transfer knowledge. 
-
-**We are left with a fast-moving team where nobody actually understands how the system works.**
+A team could gain useful output while preserving review and learning, or create a queue that displaces them. Track review effort, quality and knowledge transfer alongside delivery to test which outcome occurs. The separate task-horizon and field-report claims above remain subject to their own source audits (#63/#61).
 
 ---
 
 #### References
+*   **GitClear developer output:** [Evidence brief](../evidence/primary/2025-gitclear-developer-output.md) — selected output comparisons and aggregation/window limits; not a staffing or review-time estimate.
 *   **METR (March 19, 2025)**: [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — AI task completion horizons are doubling every 7 months; GPT-5.2 reaches a 7-hour human-equivalent task horizon at 50% reliability.
 
 ---
 
-## Chapter 6. A Case Study in Complexity: Why There Is No Simple Fix
+## Chapter 6. Assessing Context and Automation Tradeoffs
 
-We have diagnosed the bottleneck at the Code Review stage. A logical engineer might say: **"If AI created the flood, let's use AI to build a dam."**
-Let's explore this hypothetical solution—the **AI Code Review Agent**—not as a silver bullet, but as a case study to demonstrate the immense cost and complexity of rebalancing just *one* node of the SDLC.
+An AI review assistant could reduce some inspection work while adding setup and maintenance. This is a proposed evaluation case, not a deployment studied by the GitClear reports or proof that automation necessarily shifts more work onto senior engineers.
 
-### The Theoretical Fix
+### Potential Benefit and Comparator
 
-To protect the Senior Engineer, we could deploy an autonomous agent to pre-screen Pull Requests. It would check for architectural compliance, security, and logic before a human ever sees the code. It sounds perfect: machines checking machines.
+A bounded pilot could test whether an assistant finds defined error classes or relevant project conventions before human review. Compare the same change-risk classes with and without assistance, including false positives, missed defects, human effort, queue time and operating cost. These are evaluation objectives, not guaranteed capabilities.
 
-### The Hidden Cost: The "Context" Tax
+### Context Is a Design Variable
 
-However, implementing this creates a new, invisible layer of technical debt. The problem is not intelligence; the problem is **Context**.
+[GitClear's quality report](../evidence/primary/2025-gitclear-code-quality.md), Appendix A6 pp29–31, gives a rough historical estimate about Copilot context in 2024. Its approximate ten-file statement rests on assumed file sizes/token budgets and informal sources, not a measured general limit for popular models or current tools. It does not establish that a review agent must read the entire system or always require a RAG pipeline.
 
-According to **GitClear’s 2025 analysis**, the most popular AI models in 2024 were effectively limited to a context window of approximately **10 files**.
-This creates a fatal flaw for an "Architectural Review Agent." To judge if a piece of code is correct, the agent needs to understand the *entire* system, not just the 10 files being changed.
+The context needed depends on the change and its risk boundary. Targeted references, retrieval or a narrower automated check are possible designs to evaluate; missing relevant context is a risk to test rather than a universal fatal flaw.
 
-To bypass this limitation, Engineering Teams must build and maintain complex **RAG (Retrieval-Augmented Generation)** pipelines. They must "feed" the agent the right context.
-This transforms the Senior Engineer's job description:
-*   **Old Job:** Reviewing Code.
-*   **New Job:** Managing the Knowledge Graph that allows the AI to Review Code.
+### Reuse and Maintenance Hypotheses
 
-### The Paradox of Maintenance
+The report's Appendix A1 counts imply a moved-line share of **24.65% in 2021 / 9.47% in 2024**. These relocation operations are a proxy, not a direct measure of modularity, indexability or AI-review accuracy. Body/appendix/landing differences and sample limits are recorded in the [brief](../evidence/primary/2025-gitclear-code-quality.md). The result does not prove that every codebase becomes harder to index or that a reviewer gets worse over time.
 
-By deploying this agent, we haven't solved the bottleneck; we have simply **shifted the toil**.
+**Repository hypothesis:** Context/prompt/retrieval maintenance could consume some review savings. Possible alternatives include stable reference selection, a sufficiently narrow scope or improved verification. Measure total human effort and review quality over time; sustained savings with stable quality would weaken a claim of net extra burden.
 
-1.  **Intelligence as Code:** The agent's prompts and context rules must be versioned, tested, and debugged like production code.
-2.  **The "Guardrail" Paradox:** As GitClear data shows, "Moved Code" (Refactoring) has dropped to **<10%**. The codebase is becoming less modular and harder to index. This means the "AI Reviewer" gets *worse* over time as the underlying asset degrades, requiring even *more* tuning.
+### Conclusion: Evaluate the Whole Review Intervention
 
-**We are not gaining velocity. We are trading "Code Review Time" for "Agent Tuning Time."**
-
-### Conclusion: No Easy Answers
-
-The fantasy of **"AI fixes AI problems"** ignores systems thinking. Every solution creates new constraints.
-
-**AI Code Review Agents don't eliminate the human bottleneck—they multiply it.** Now your senior engineers aren't just reviewers; they are AI wranglers, context curators, and RAG architects. The cognitive load doesn't decrease—it transforms into a more complex, opaque shape.
-
-This case study proves a frightening truth: **There is no "plugin" that fixes the SDLC.** Even the most advanced technical solution requires a massive investment in operations and maintenance, potentially negating the savings from the "fast coding."
+The relevant question is whether useful review savings exceed setup, supervision and maintenance costs at the required quality level. Either benefit or net burden is possible. Historical change-operation shares do not decide the answer, and neither GitClear report measures this intervention's net result.
 
 ---
 
 ## Chapter 7. The Chain Reaction: How AI Broke the Entire Value Stream
 
-The failure of Code Review (Chapter 5) and the complexity of fixing it (Chapter 6) are just one localized fracture.
+Chapters 5–6 describe conditional review-capacity and automation risks, not a failure demonstrated by the GitClear metrics. The wider value-stream mechanism below requires its own evidence and interpretation boundaries.
 If we look at the Software Development Life Cycle through the lens of the **Theory of Constraints**, we see that AI has introduced "Local Optima" (local speed) at multiple points, which has paradoxically degraded the "Global Optima" (delivery of value).
 
 AI has intervened in the entire chain, creating points of failure from the Boardroom to QA.

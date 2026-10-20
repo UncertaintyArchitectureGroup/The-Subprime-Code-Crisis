@@ -8,6 +8,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added separate GitClear quality/output briefs from the full original PDF and embedded report, with exact denominators, sampling/windows, access provenance and internal-reporting discrepancies.
 - Added pinned Xu v3 and Agarwal v2 briefs with methods, exact table locators, positive/null findings, uncertainty, publication boundaries and an occurrence/placement trace for #58.
 - Added separate source-oriented briefs for Peng's Copilot experiment, METR's early-2025 productivity experiment and its February 2026 follow-up, with exact versions, outcome definitions and uncertainty.
 - Added this repository changelog and a dedicated content-synchronization playbook.
@@ -15,6 +16,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
+- Separated GitClear's historical operation/clone sample from developer-output cohorts; corrected clone year/units and composite arithmetic, retained positive output, and bounded the relying staffing, maintenance, context and review-automation conclusions. Source inconsistencies are disclosed rather than silently reconciled.
 - Completed Xu/Agarwal integration verification after independently Confirmed corrections merged in PR #68 and the exact default branch passed acceptance; source-specific design, edition and reporting uncertainties remain explicit.
 - Corrected Xu's OSS sample, activity-quartile and review/rework units; preserved positive project activity and the uncertain core review-count result. Separated Agarwal's AF/IF repository-month effects from per-feature debt, functional correctness and measured cognitive-load claims; replaced the relying cross-study chain with a conditional scenario.
 - Completed the three bounded productivity-source integration audits after independent correction review and checked default-branch integration; each source retains its publication, selection, measurement and generalization limits.

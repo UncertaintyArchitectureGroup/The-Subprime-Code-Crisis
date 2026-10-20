@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "b65bd6e76c7973fb5d71942cca44dd32240e297812eb28052be2f411af76b329",
+    "digest": "c108f8c2f8602dea9a7710d401efef6cca0fe3e55d041f998ddfa9e1508c8de7",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "0f40a5fb9bc2d30bb661d50af1092ed6d9f890db80c8ca8c7cb0450ec58c81da"
+        "sha256": "47436ceba6ec766eb9faa42fe82e77277728eb9e74b9c158d737ee6273a78f39"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "e46514b090880f3dd6219c274ae1405eabd511a2b1190f9181775fbf93c2ae93"
+        "sha256": "a651dffd69df2d430761406d089b805869dd60e02287f9bb684c5cbce5067e8a"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "f531a45b663b9ea1cbe5a4ef8f6bcb054c372ca0abb0cd9df98611315caf7eaa"
+        "sha256": "c0e71a3148d985ee09aee63612be739aa9c556147b236f59d0f3be46636fda92"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "fcec2c98433daef5aa88e80cba701d6d0e6ca7beddc2794ae89bae988166f121"
+        "sha256": "7789c4daeb9344c079fad7e74234f717f2be943e1063172003de152285d1ffc2"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -160,6 +160,16 @@
         "sha256": "de54c8975283dbb770fff786880bff3e6e7a54af82da21580727fba0ebb301ed"
       },
       {
+        "path": "evidence/primary/2025-gitclear-code-quality.md",
+        "identity_mode": "content",
+        "sha256": "2567f2f1c450c3c3f1137640d07cc3413f08137a85fded9a843932196384a93f"
+      },
+      {
+        "path": "evidence/primary/2025-gitclear-developer-output.md",
+        "identity_mode": "content",
+        "sha256": "aa40582550f0de28ec4b9bda38a13e31d30c65e5ccc3bc118a5c602a0f2bb9a0"
+      },
+      {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
         "sha256": "049b999f86049ad760838ac5f660c3c157c3c32bd6aeb6605f808dc0d2f42120"
@@ -187,7 +197,7 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "cb8349c0342d3925aadb8aec84f3644930ecaff9e8909be3458cc355272a6013"
+        "sha256": "17e5e24e08a2e2cdddd35455f3d92293dcea19703534b2bbaaa08926b80be35a"
       },
       {
         "path": "evidence/secondary/README.md",
@@ -237,7 +247,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "b46d6b37f70b94acdfc2c0b02348399e3d8298ad76ba8965100594d6ce5c5985"
+        "sha256": "00572735d3ec696bdcc552372e3bc0a478d09c473c09859c948a630b1e300f78"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -283,6 +293,11 @@
         "path": "governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md",
         "identity_mode": "content",
         "sha256": "0e24cd30a60e89347e1f6ea4be9fe21f5cad7db03f993b7d849b51bb0818b21a"
+      },
+      {
+        "path": "governance/reviews/issue-59-2026-10-20-gitclear-audit.md",
+        "identity_mode": "content",
+        "sha256": "7df4a8d87bd30c49ada62f2b312f1d4e3763f700dddab80403f41f1031fe43ab"
       },
       {
         "path": "governance/status-model.md",
@@ -350,6 +365,11 @@
         "sha256": "c37d351926ab1d31cd3d82f17a4b64a9ea758737d7bcc0296130612b369b36b9"
       },
       {
+        "path": "governance/work-records/2026-10-20-issue-59-gitclear.toml",
+        "identity_mode": "content",
+        "sha256": "05f7c513cdf87fed948c13ecc8737e81adf65d06e8043becdc2c818da7769f6f"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -382,17 +402,17 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "68d60dd453068663397eed56dc055dddf027cda76ddc23d806a84b01654c7abc"
+        "sha256": "90fd30dea1ff63db0ed749df9c094cc34bd3a009780240f993a9a2f2823f98a4"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "49193618017410694097c68865771a58550b75f5cc8d56290b350f482c0ee95b"
+        "sha256": "bebbbf3dc9282290127167c095c5abdc8f640512c67f9feefb70cb0d263da3ec"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "0ae818250bf01c2dc47990dfe79aa4bdbec0178f9cb7451be9b7b29603f2f808"
+        "sha256": "d2acbdc5f33ad5ca0ce66bf3410169b6be0a27533756e73a51781b5007e79ad1"
       },
       {
         "path": "tests/__init__.py",
@@ -970,23 +990,23 @@
       "id": "P-2025-04",
       "path": "evidence/SOURCES.md",
       "source": "GitClear, *AI Assistant Code Quality 2025 Research*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Original commercial measurement of code-change patterns, subject to methodology and conflict review",
-      "current_use": "Churn, duplication, and reuse discussion",
-      "brief_path": null
+      "can_support": "Descriptive 2020–24 code-operation and sampled clone-commit signals; not identified AI causation, hard context limits or universal maintainability outcomes",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and relying summaries; `report/02_broken_mechanics.md` Ch6; `report/03_the_aftermath.md` Ch8 boundary; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-gitclear-code-quality.md"
     },
     {
       "id": "P-2025-05",
       "path": "evidence/SOURCES.md",
       "source": "GitClear, *How Much More Productive Are AI-Powered Developers?*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Original commercial productivity measurement, subject to methodology and conflict review",
-      "current_use": "Net-output and rework discussion",
-      "brief_path": null
+      "can_support": "Separate selected-cohort commit, proprietary Diff Delta and monthly added-line comparisons against 2022; not net delivery, universal team doubling or an identified AI effect",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch2/Ch4 and references; `report/02_broken_mechanics.md` Ch5; `report/03_the_aftermath.md` Ch8 boundary; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-gitclear-developer-output.md"
     },
     {
       "id": "D-2019-01",
@@ -1380,6 +1400,20 @@
       ]
     },
     {
+      "path": "evidence/primary/2025-gitclear-code-quality.md",
+      "title": "GitClear: historical code-change and clone signals",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2025-gitclear-developer-output.md",
+      "title": "GitClear: separate developer-output measures",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
       "title": "METR: familiar open-source tasks with early-2025 tools",
       "instructions": [
@@ -1555,6 +1589,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-59-2026-10-20-gitclear-audit.md",
+      "title": "Issue #59: GitClear original-source and integration audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -1641,6 +1682,13 @@
     {
       "path": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
       "title": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-59-gitclear.toml",
+      "title": "governance/work-records/2026-10-20-issue-59-gitclear.toml",
       "instructions": [
         "AGENTS.md"
       ]

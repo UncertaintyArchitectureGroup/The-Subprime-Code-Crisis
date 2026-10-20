@@ -2,58 +2,52 @@
 
 ## Snapshot
 
-- Checked 2026-10-20 after correction merge; main `bc0e4621d87e28137215573f963ae66b9a78da2b`.
-- #57 closed/completed; PRs #66/#67 merged. #58 open at this checkpoint;
-  correction PR #68 merged; final-state acceptance is recorded below/at its live owner.
-- #53 remains open; next bounded source ticket after completed #58 is #59.
+- Checked 2026-10-20, starting main `b753486243875bb75ce40464f842681b2b9e1d2e`.
+- #57 and #58 closed/completed; #58 PRs #68/#69 merged. #59 open/active.
+- #53 remains open; next bounded source ticket after completed #59 is #60.
 - Author-site reference `82b57b8948c6c30143213b846ee2848d06f8d200`.
-- This is a dated observation. Reopen live owners before relying on later status.
+- Dated checkpoint only: reopen live issue/PR/main/CI/source owners before reuse.
 
 ## Active owners
 
-- #47/#52: completed workflow/RI baseline, PR #56.
-- #53: evidence backlog; #4: skill-formation input. Reuse these owners.
-- #58: Xu/Agarwal correction/default-branch/final-state and closure evidence.
-- #59 GitClear; #60 economics; #61 secondary/orphans; #62 provenance;
-  #63 NBER/horizons/mechanism; #64 report tone; #65 final synchronization.
+- #47/#52: completed workflow/RI baseline, PR #56; #53 evidence backlog.
+- #59: GitClear quality/output original review, corrections and final acceptance.
+- #60 economics; #61 secondary/orphans; #62 provenance; #63 NBER/horizons/mechanism;
+  #64 report tone; #65 final synchronization. #4 remains skill-formation input.
 - Older PRs #40/#41/#42/#46 remain separate scope, not adopted here.
 
 ## Decisions
 
-- The 2026-10-20 maintainer request authorizes useful site-rule/RI adaptation and
-  evidence/numeric/placement/neutral-tone corrections, one issue at a time.
-- Preserve original-source authority, canonical states and separate review.
-- #58 exact treatment authorized before edits in issue comment 6297923181;
-  subsequent R1–R3 corrections remain within that approved scope.
-- Status check means live issue/PR/main/CI/source-state inspection plus dated
-  handoff, separately from local RI freshness; no remote RI overlay is implemented.
+- Maintainer authorizes useful site-rule/RI adaptation and evidence/numeric/
+  placement/neutral-tone corrections, one issue through separate review/closure.
+- Preserve original-source authority, canonical states and independent review.
+- #59 pre-edit exact treatment/alternatives: issue comment 6298929074; dependent
+  R1 Ch2/R3 Ch8 retellings included; whole economics/mechanism/tone remain later.
+- Status check means live issue/PR/main/CI/source-state inspection and dated memory,
+  separately from local RI freshness. No remote RI overlay is implemented.
 
 ## Evidence
 
-- #57 completion: issue comment 6297061565; PR #67/main `3849297` and Main health
-  39466705409 succeeded (119 tests/contract/state/RI; transitions run separately).
-- #58 original review/correction loop: reviews/issue-58-2026-10-20-xu-agarwal-audit.md.
-  Reviewer /root/review_issue58 Confirmed corrected `48f9292`, tree `e25e689d`;
-  metadata review Confirmed at `a5050e1`, tree `af3c1ce7`.
-- PR #68 https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/68
-  merged at checked main `bc0e4621d87e28137215573f963ae66b9a78da2b`, tree `af3c1ce7`,
-  identical to the independently Confirmed correction/metadata tree.
-- Main CI https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39475740670
-  succeeded at that SHA; local 119 tests/contract/state/RI also passed there.
-- Exact-head PR Main health 39475471984/Repository Gate 39475603480 passed;
-  trusted transitions/state/Gate were also run locally against base `3849297`.
-- At checked main, Xu/Agarwal were Reviewed brief/In progress/—/Confirmed.
-  This final-state candidate records Verified/2026-10-20 after correction gates.
-- Final-state review Confirmed at `d348701`, tree `5d309d1f`; PR #69 records it.
-  Resulting main/CI/source-field acceptance and closure are subsequent live facts.
-- Canonical status is always SOURCES plus brief fields at the inspected ref.
-  Later final PR/main/CI/closure evidence belongs to the live #58 completion record.
+- #57 completion: issue comment 6297061565, PRs #66/#67, main `3849297`.
+- #58 completion: issue comment 6298448389, PRs #68/#69, main `b753486`;
+  Main health 39476733113 succeeded, 119 tests/contract/state/RI. Trusted transitions
+  ran separately; neither CI nor closure alone verifies scientific findings.
+- #59 trace: reviews/issue-59-2026-10-20-gitclear-audit.md. Public full quality PDF
+  v2025.2.5 and complete developer-output embed inspected; original access gap resolved.
+- Quality p12 6.66% is 2024; landing/appendix discrepancies retained. Output three-
+  median9.0% is not net productivity; Method1 mean34.1/7.1 remains unresolved,
+  withheld with its dependent mean composite. No invented reconciliation.
+- Both sources Reviewed brief/In progress/—/Confirmed. Reviewer /root/review_issue59
+  Confirmed f278d6f/tree08f98726; remote PR #70 head64797cc same tree;
+  exact-head Repository Gate39482420475 and Main health39482420483 succeeded.
+  Completion requires merged corrections and checked
+  main before final source-state update. Registry/brief fields own canonical states.
 
 ## Next actions
 
-- Revalidate live #58, linked PRs, exact main CI and registry before resuming:
-  https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/58
-- If #58 remains open, complete only its still-pending final acceptance/evidence;
-  if already completed, proceed to #59. Do not repeat closed #57 work.
-- Retain partial/blocked acceptance and original-access uncertainty explicitly.
-- Completion of #58 cannot establish whole-report verification or close #53.
+- Reopen live #59, linked PRs, exact main CI and registry before continuing:
+  https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/59
+- If #59 open, complete its remaining review/correction/default-branch acceptance;
+  if completed, proceed to #60. Do not repeat closed #57/#58 work.
+- Keep partial acceptance and source-internal uncertainty explicit. #59 completion
+  cannot establish whole-report verification or close #53.

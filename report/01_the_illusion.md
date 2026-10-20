@@ -60,23 +60,33 @@ Positive AF activity gains coexist with higher structural-risk metrics; average 
 
 ---
 
-### [The Data: A Crisis of Quality (GitClear)](https://www.gitclear.com/ai_assistant_code_quality_2025_research)
+### [GitClear Quality Signals: A Historical Vendor Sample](../evidence/primary/2025-gitclear-code-quality.md)
 
-GitClear reports a separate code-change dataset. Its figures cannot be multiplied by Agarwal's repository-month estimates or treated as a jointly observed causal sequence. The following legacy GitClear claims await their own source audit (#59), including the stated **211 million lines of code** and comparison baselines:
+GitClear's February 2025 quality report examines approximately **211 million meaningful changed lines from January 2020–December 2024** in a selected commercial/OSS sample. It describes historical code-change patterns, without identifying individual AI exposure or an AI/no-AI counterfactual. It is a separate dataset from the developer-output report below.
 
-**The Illusion of Output (Activity Metrics):**
-* **Lines of Code Added: +131.1%**
-    The volume of raw syntax being pushed has more than doubled. We are generating code at an industrial scale.
-* **The Duplication Explosion (~10x Increase):**
-    Commits containing duplicate code surged from 0.70% (2020) to 6.66% (2025). Instead of refactoring, we are copy-pasting via AI.
-* **The Death of Reuse:**
-    Code reuse ("Moved" lines) dropped from ~25% to <10%. AI simply generates new versions of existing functions.
+| Quality signal | Comparison and unit | Original locator |
+| --- | --- | --- |
+| Moved-line operations | **24.65% in 2021 → 9.47% in 2024** of that year's meaningful changed lines | Derived from Appendix A1 p24 counts; relocation is a reuse/refactoring proxy, not all refactoring |
+| Copy/pasted-line operations | **8.86% in 2020 → 12.32% in 2024** of meaningful changed lines | Derived from A1 p24 counts; matching contents across functions/files within a commit |
+| All-line two-week churn | **3.05% in 2020 → 5.67% in 2024** | Derived from A1 p24 counts; overlaps operation categories and does not directly measure defects |
+| Scanned commits containing a clone | **139/19,805 (0.70%) in 2020 → 3,764/56,495 (6.66%) in 2024** | Table p12; at least one detected Type 1 repeated block of ≥5 eligible lines, not the count of duplicated blocks |
 
-**The Reality of Progress (Value Metrics):**
-* **Net Productivity Gain (Blended Median): ~9.0%**
-    By averaging median Commit Counts (+6.1%) and meaningful code changes (Diff Delta +14.1%), we arrive at a net gain of roughly 9-10%.
+These operation shares explicitly use the appendix counts. Some main-table/landing values and multiplier wording differ; the [brief](../evidence/primary/2025-gitclear-code-quality.md) preserves the discrepancies. Clone backfilling prioritized large commits in earlier years (A8 p31), so the scanned sets are not demonstrated to be comparable representative samples. The author's later-year projections are not observations. No interval or causal AI effect is established by these descriptive contrasts.
 
-This aligns with public statements from Google leadership. In late 2025, CEO Sundar Pichai disclosed an internal measurement of engineering velocity: *"Our estimates are that number is now at 10%."* While this is an unaudited executive claim, its modest figure is notable given Google's incentive to report higher gains — and given the billions in internal infrastructure that make even that 10% possible (see Chapter 2).
+The patterns motivate investigating maintainability, while the author also describes useful AI-assisted consistency work and acknowledges that early revision can be beneficial. A declining moved-line share does not prove every codebase loses modularity or that review automation must deteriorate. Direct review, defect and maintenance outcomes are needed to test those hypotheses.
+
+### [GitClear Output Growth: Separate Cohorts and Measures](../evidence/primary/2025-gitclear-developer-output.md)
+
+The separate developer-output report compares selected records with a **2022 baseline**. Methods 1/2 follow the same **17,341 contributors with ≥500 commits in each studied year**; their 2025 count is a trailing 365-day window in September/October 2025. Methods 3/4 use different, changing GitClear samples. Actual individual AI use is not measured.
+
+| Output measure | Reported change | Boundary |
+| --- | --- | --- |
+| Method 1, median annual commit count | **+6.8%** | Ratio of cohort medians; not the median individual change |
+| Method 2, median individual commit-count change | **+6.1%** | Each contributor compared with their own baseline |
+| Method 3, median Diff Delta | **+14.1%** | Proprietary weighted code-change metric; sample 132 in 2022 / 286 in 2025 |
+| Method 4, monthly added-line output | **+131.1% mean / +76.3% median** | Selected developer-month records with ≥50 commits and ≥10 added lines; changing coverage, not a universal team-input multiplier |
+
+These are positive activity results, with different aggregations and populations. The source's **9.0%** composite averages **three** medians: `(6.8 + 6.1 + 14.1) / 3`. Our former two-number formula yields **10.1%**. Neither arithmetic result is a validated net-delivery or causal AI-productivity estimate. Method 1's mean conflicts between the method and summary tables; it and the dependent mean composite are withheld as headline findings. The [brief](../evidence/primary/2025-gitclear-developer-output.md) records the exact conflict, units, selection and window limits. These figures cannot be multiplied by the preceding quality study or other studies into one measured SDLC chain.
 
 ---
 
@@ -124,16 +134,11 @@ For the study's methodology, observed findings, model-calibrated estimate, limit
 
 ---
 
-### The "Fear Factor" in Productivity
+### Unmeasured Work Intensity: A Confounder to Test
 
-There is an even darker interpretation of the modest ~10% net productivity gain seen in some datasets. We must ask: Is this gain technological, or is it psychological?
+Work intensity could confound historical output comparisons. Neither GitClear dataset measures whether participants worked more hours or felt replacement pressure; its activity percentages cannot identify those mechanisms.
 
-The widespread narrative that "AI makes coding free" has reached every project sponsor. This has created a coordinated, implicit pressure on engineering teams to deliver faster.
-
-*We note the following as an unverified hypothesis that warrants dedicated research, not as established fact:*
-
-* **The Reality:** Developers are not just using AI; they are working harder to meet inflated expectations.
-* **The Hidden Variable:** A significant portion of this "gain" may be the result of **increased working hours** and **elevated stress**, driven by the fear of being replaced or seen as "slow" in the age of AI. Early survey data suggests rising anxiety among developers regarding AI displacement (Stack Overflow Developer Survey, 2024), though direct causation with overtime has not been rigorously established. We may be confusing "efficiency" with "exhaustion."
+**Repository hypothesis:** Adoption expectations might increase overtime or change task selection in some teams. A local study would need hours, task mix, perceived pressure and an appropriate comparator. Stable hours with sustained downstream gains would weaken the overtime explanation. Survey and practitioner claims about fear/burnout require their own source review (#61); they are not established by the GitClear results.
 
 ---
 
@@ -147,24 +152,19 @@ For a claim about enterprise value, ask whether the evidence measures review eff
 
 ---
 
-### The "You're Holding It Wrong" Fallacy
+### Governance and Marketing Claims
 
-We anticipate the standard defense from vendors regarding the degradation of code quality: *"If developers are merging bad code, that is a user error, not a tool error. You are using the assistant incorrectly."*
+Claims about faster coding should specify what was measured and the safeguards required in the intended setting. GitClear's selected historical samples do not establish an industry-wide default failure mode or a vendor's responsibility for a particular defect.
 
-We find this defense insufficient.
-
-If the "default mode" of usage across the entire market — driven by the vendors' own marketing promises of "speed" — results in the degradation of codebases, then this is not simply a user error. It is a **systemic design and positioning failure**. When a power tool is sold aggressively to consumers without adequate safety instructions, without protective equipment, and with marketing that emphasizes speed over caution — we do not blame only the user when injuries spike. We hold the manufacturer accountable for selling power without adequate safeguards.
-
-It is the responsibility of platform vendors to pivot their strategy. The primary metrics of AI Code Assistants must shift from **"Acceptance Rate"** (how often you press Tab) to **"Defect Reduction"** and **"Maintainability."**
+**Proposed disclosure practice:** State task/tool scope, comparator, review and production outcomes, and material limitations. Responsibility for tool design, deployment choices and accepted changes should remain inspectable. Criticism should address a specific claim or operating choice with evidence; the code-change metrics do not establish vendor intent or misconduct.
 
 ---
 
-### The Broken Economic Model
+### Economic Hypothesis: Count Downstream Work
 
-The current economic relationship between AI vendors and Engineering organizations is fundamentally misaligned.
+A subscription purchases a capability; its economic result depends on verified benefits and the work required to absorb it. More candidate code could increase downstream cost when review, testing or maintenance capacity is constrained, but neither GitClear study measures lifecycle TCO or inevitable maintenance-budget failure.
 
-* **The Model:** You pay a subscription fee to "accelerate" coding.
-* **The Reality:** You are paying to inject invisible risk into your asset. The vendor extracts value (revenue) today from the *volume* of code generated, while you accumulate "Toxic Assets" (unverified, high-churn code) that will bankrupt your maintenance budget tomorrow.
+Testing this hypothesis requires total engineering effort, quality, release and operating costs alongside delivered value. A deployment with sustained delivery gains and stable or lower total cost would limit the hypothesis's applicability.
 
 ---
 
@@ -175,6 +175,8 @@ The experiments establish a positive effect on conditional completion time in Pe
 **Repository hypothesis:** Where additional upstream work exceeds downstream verification and release capacity, local acceleration may increase queues or rework rather than delivered value. A deployment with shorter production lead time and stable or improved quality would limit that hypothesis's applicability. Code quality and maintenance effects require separate evidence; they cannot be read out of these task-time percentages.
 
 Xu likewise reports positive project activity alongside heterogeneous contributor activity; Agarwal reports substantial AF activity gains, uncertain IF activity gains and mode-specific structural metrics. These observational results do not establish disappearing aggregate gains, per-feature debt or measured cognitive load. They belong beside the task experiments as different evidence, not additional stages of one causal estimate.
+
+GitClear adds positive selected-cohort output trends and historical quality-proxy signals in separate datasets. Its composite is not net delivery, and its clone/reuse measures do not prove a universal maintenance or staffing outcome.
 
 The practical implication is to measure the complete delivery boundary while retaining local benefits and costs as distinct results.
 
@@ -187,7 +189,8 @@ The practical implication is to measure the complete delivery boundary while ret
 * **Xu et al. (arXiv v3, 28 January 2026):** [Paper](https://arxiv.org/abs/2510.10165v3) and [evidence brief](../evidence/primary/2025-xu-copilot-oss-activity.md) — 2,755 OSS repositories/1,699 contributors; positive project activity and activity-quartile differences. Core is not seniority; the +6.5% core review-count estimate has p=.086, not an established increase in review hours. Rework is a repository-month proxy with PR count controlled.
 * **Agarwal et al. (arXiv v2; MSR 2026 Mining Challenge):** [Reviewed v2](https://arxiv.org/abs/2601.13597v2) and [evidence brief](../evidence/primary/2026-agarwal-agent-adoption.md) — separate AF/IF repository-month panels, positive AF activity and heterogeneous structure estimates; IF activity/warning estimates are inconclusive. Static metrics do not measure human cognitive load or per-feature debt. Final publisher-edition equivalence was not checked.
 * **Peng et al. (arXiv v1, 2023):** [The Impact of AI on Developer Productivity: Evidence from GitHub Copilot](https://arxiv.org/abs/2302.06590v1) and [evidence brief](../evidence/primary/2023-copilot-task-productivity.md) — 95 randomized (45/50), 70 task-and-survey completers (35/35); 55.8% less completion time among completers on one JavaScript task (95% CI 21–89%). Experience heterogeneity is exploratory, not a universal seniority rule.
-* **GitClear (2025):** [AI Assistant Code Quality 2025 Research](https://www.gitclear.com/ai_assistant_code_quality_2025_research) — 8x increase in duplicated code blocks, code reuse dropped from ~25% to <10%. Dataset: 211 million changed lines.
+* **GitClear quality (February 2025, v2025.2.5):** [Full original PDF](https://gitclear-public.s3.us-west-2.amazonaws.com/GitClear-AI-Copilot-Code-Quality-2025.pdf) and [brief](../evidence/primary/2025-gitclear-code-quality.md) — 2020–24 operation/clone signals in selected samples; exact fractions, sampling, appendix/body/landing conflicts and projections are distinguished.
+* **GitClear developer output (publisher date 1 October 2025; inspected 20 October 2026):** [Original report](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025) and [brief](../evidence/primary/2025-gitclear-developer-output.md) — separate cohort/aggregation results; positive activity, unobserved AI exposure and internal Method 1 mean discrepancy, not net-delivery productivity.
 * **Demirer, Musolff, and Yang (NBER Working Paper 35275, 2026):** [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](https://www.nber.org/papers/w35275) — Reports substantial attenuation from commits toward projects and releases, and increased application supply without higher early aggregate usage. See the [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) for methodology, limitations, and claim boundaries.
 * **Post-Copilot Burnout (Oct 2025):** [Are AI Assistants Making Senior Developers the New Bottleneck?](https://technodiaries.medium.com/post-copilot-burnout-are-ai-assistants-making-senior-developers-the-new-bottleneck-1689e20364f1) — Senior devs report doubled review time, PR queues described as "tidal wave."
 * **Stack Overflow Developer Survey (2024):** [Developer Survey Results](https://survey.stackoverflow.co/2024/) — Documents rising developer anxiety regarding AI displacement and shifting productivity expectations.
@@ -279,7 +282,7 @@ What they do not see is the operational debt they are implicitly authorizing:
 
 > ❌ **Infrastructure to safely absorb AI output:** $7–27M — *Not requested. Not funded. Not discussed.*
 
-The vendor has no incentive to surface this cost. The CTO may not fully understand it. The CFO has no framework to calculate it. And so the organization deploys a tool that multiplies code volume by 2x into a pipeline that was designed for 1x — and wonders why, 18 months later, the maintenance budget has exploded and the senior engineers are burning out.
+A rollout could increase candidate work faster than a team can absorb it, so capacity and total cost should be measured alongside tool adoption. GitClear's selected added-line averages do not establish a universal 2x team-input increase, an 18-month maintenance bill or burnout. The separate transformation-cost estimates above require their own economic-source review (#60).
 
 Until the industry develops transparent TCO models for AI-assisted development — models that include the full cost of governance, verification, and process transformation — every "AI ROI" calculation presented to a Board is, at best, incomplete, and at worst, a fiction.
 
@@ -458,7 +461,7 @@ flowchart TD
 
 In this scenario, candidate-production capacity grows faster than the team's ability to verify changes.
 
-In the scenario considered here, candidate-code production accelerates while downstream capacity remains constrained. Chapter 1 reports positive activity effects and structural-risk signals in different samples: Xu has positive project activity, and Agarwal separates AF gains from uncertain IF activity. Neither measures a universal junior speedup or one pipeline whose volume and complexity jointly rise at fixed rates. GitClear's separate volume claims still require their own audit (#59).
+In the scenario considered here, candidate-code production accelerates while downstream capacity remains constrained. Chapter 1 reports positive activity effects and structural-risk signals in different samples: Xu has positive project activity, and Agarwal separates AF gains from uncertain IF activity. Neither measures a universal junior speedup or one pipeline whose volume and complexity jointly rise at fixed rates. GitClear's [selected output measures](../evidence/primary/2025-gitclear-developer-output.md) cannot calibrate this scenario as a universal volume multiplier.
 
 If arrivals persistently exceed a constrained stage's processing capacity, work may accumulate before it. Reducing change size, improving verification or limiting intake are possible responses; the appropriate response depends on which constraint is actually observed.
 
@@ -524,7 +527,7 @@ Xu's positive project activity and Agarwal's positive AF activity remain compati
 * **Goldratt, E. M. (1984):** *The Goal: A Process of Ongoing Improvement.* North River Press. — The foundational text on Theory of Constraints, establishing that optimizing non-bottleneck steps increases inventory without improving throughput.
 * **Theory of Constraints in Software Development:** [Finding and Fixing the Real Bottleneck](https://www.theagilemindset.co.uk/2025/10/07/the-theory-of-constraints-in-software-development-finding-and-fixing-the-real-bottl) — Applied analysis of how AI shifts the coding bottleneck to human review capacity.
 * **AI Code Review Paradox (2025):** [Why AI Coding Speed Gains Disappear in Code Reviews](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/) — Industry analysis confirming AI code requires 2–3x longer review due to plausible bugs hidden in elegant syntax.
-* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear volume and secondary review-time claims remain separate audits (#59/#61).
+* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear's [quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output metrics](../evidence/primary/2025-gitclear-developer-output.md) retain separate samples/units; secondary review-time claims remain a separate audit (#61).
 
 ---
 
