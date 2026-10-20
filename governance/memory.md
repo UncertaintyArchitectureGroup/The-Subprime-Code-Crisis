@@ -2,51 +2,48 @@
 
 ## Snapshot
 
-- Checked 2026-10-21, Europe/Warsaw. #57/#58/#59 completed; #53 open.
-- #60 implementation PR72 merged: main99df79758e29357a40cf862b77b6afe9c5407796,
-  accepted treea67205adc909286f425e041d8dfc352c9293c517; exact-main CI passed.
-- Final seven-source status eligibility independently Confirmed at localcc6d53e;
-  final recording/publication/merge/exact-main checks still precede issue closure.
-- This is a dated hint: reopen live #60/linked PR/main/CI before any action.
+- Checked 2026-10-21, Europe/Warsaw. #57–60 completed; #53/#61 open.
+- #60 final PR73 merged at main `2b0f6528f86fc28eaf6d759d283dcd3e098c9127`,
+  tree `578fc8e7e1aa720bc65e2de517e88684b917c129`; Main health 39513240647 success.
+- #60 completion evidence: comment 6303862369. Do not repeat closed cost work.
+- Local #61 branch: work/issue-61-survey-evidence; Sol corrections independently Confirmed; see live #61 for PR/checks.
+  Reopen live issue/PR/main/checks before acting; this is a navigation hint.
 
 ## Active owners
 
-- #47/#52 completed rules/RI baseline; #53 evidence backlog.
-- #60 final verification; next after completed #60 is #61 secondary/orphans.
-- #62 provenance; #63 NBER/horizons/mechanism; #64 whole-report tone;
-  #65 final synchronization. #4 skill formation. Older PRs40/41/42/46 separate.
+- #47/#52 rules/RI baseline completed. #61 is the sole active sibling.
+- #61 Sol source/numeric/synchronization work; Astra analytical acceptance later.
+- #62 provenance; #63 NBER/horizons/mechanism; #64 full-report tone;
+  #65 final synchronization. #4 skill formation. Draft PRs 40/41/42/46 separate.
 
 ## Decisions
 
-- Maintainer authorizes one issue through implementation, substantive independent
-  review, checked integration, evidence and closure; latest continue covers #60.
-- Retain optional hypothetical cash/capacity appendix, not empirical TCO/ROI.
-- A60-01/02/03/04 accepted: conditional transformation, correct quality direction,
-  gross cash/zero avoidance and bounded R2/R3 cost reprises. No new rule/protocol.
-- NBER attachment and wider survey/macro/vendor claims remain #61/#63/#64.
+- Latest maintainer “Сол роби свою частину” continues scoped #61 correction.
+  No inferred Astra acceptance, merge, source verification or issue completion.
+- Start 6303966492; pre-edit treatment 6304096682; protocol clarification 6304218954.
+- Originals separate from derivatives; Deloitte Q4 is an explicit identified
+  replacement, not a recovered Q3 2025 edition. Mixed/positive results stay.
+- No new review multiplier, control threshold, confidence assignment or rule.
+- Member-only Techno remainder and old Deloitte edition remain explicit gaps.
 
 ## Evidence
 
-- Trace: reviews/issue-60-2026-10-20-cost-audit.md; initial Astra review
-  reviews/issue-60-2026-10-21-astra-review.md; correction history
-  reviews/issue-60-2026-10-21-sol-corrections.md; final verification
-  reviews/issue-60-2026-10-21-final-verification.md.
-- Both independent Astra reviewers substantively Confirmed local59324326/treeb844181d;
-  recording Confirmed local5aa6b576/treea67205ad; publishedb6e1a41 and merged99df797
-  have that identical final tree. Historical Corrections required findings preserved.
-- Exact PR-head Main health39511852855 and Repository Gate39511850420 success;
-  exact merged-main Main health39511925110 success. Main contract/state/RI/model pass.
-- Seven current source fields synchronized to Reviewed brief/Verified/2026-10-21
-  based on checked merged corrections; eight prior Verified rows unchanged.
-- Premature closed state after PR72 was corrected; issue reopened, comment6303759034.
-  Closing-keyword cause is an inference; final completion gates still apply.
-- Final status-record review/check evidence belongs in the live #60/PR comments;
-  do not infer issue completion from this prepared update or the earlier CI.
+- Trace: reviews/issue-61-2026-10-21-survey-audit.md; ten source briefs/indexes and one new work record.
+- McKinsey 88/39/about 6 definitions separated; Deloitte 43+31=74 is selected
+  initiative expectations; Stack job-threat No 69.6% has professional n 28,142.
+- Microsoft above $13B is overall AI-business annual run rate, not Copilot.
+- Horn personal posts 6 Feb/ 28 Jan 2026; unsupported 2–3× and plural doubling removed.
+- Independent /root/review_issue61_sol: first Corrections required at `dcf905b`;
+  repeated Confirmed at `0464b4a`/`a2af9a1`; R61-01/02/03 resolved.
+- Legacy 5: Needs re-review/Needs re-verification/—; new 5: Reviewed brief/In progress/—.
+- All 15 prior Verified rows/brief bytes and prior source/model findings checked
+  unchanged; 126 tests and trusted repository/state/transition/RI checks passed.
 
 ## Next actions
 
-- Reopen https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/60
-  and its linked final verification PR. If still open, finish its actual review,
-  publication/merge/exact-main checks, tick proven ACs and close with evidence.
-- If #60 is completed, proceed to #61; do not repeat closed #57–60 work.
-- RI freshness is local-byte validation, not live GitHub or scientific acceptance.
+- Reopen live #61 and linked draft PR/main/checks before continuing. Publication
+  and CI evidence belongs in that live record; do not create a duplicate PR.
+- Astra then judges the whole inference/placement path and outstanding identity/
+  access limits. Accepted merge and checked main precede eligible state updates.
+- Keep #61 ACs open until proven. Next sibling #62 after #61 completion.
+- RI freshness validates local bytes; it is not live GitHub/scientific acceptance.

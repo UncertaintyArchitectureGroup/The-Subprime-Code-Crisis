@@ -1,0 +1,24 @@
+record_version = 1
+title = "Issue #61: original survey boundaries, personal commentary and orphan-source correction"
+primary_flow = "Flow B — legacy context citations; explicit Flow A distinct originals/posts; Flow C identity resets where required"
+human_decision = "Maintainer's original source/numeric/placement/neutral-tone correction request, exact issue61 instructions and latest Sol instruction authorize this bounded draft. Start6303966492; concrete pre-edit treatment6304096682; dependent protocol clarification6304218954; actual independent findings/correction scope6304384783. Initial independent review of localdcf905b/treea9c9a5af returned Corrections required for R61-01 legacy reset states and R61-02 missed Protocol4 capacity inference; nonblocking R61-03 is also implemented. Actual outcome and history: governance/reviews/issue-61-2026-10-21-survey-audit.md. Separate repeat review Confirmed local0464b4a/treea2af9a1 and R61-01/02/03 resolution. Astra analytical acceptance, merge and Verified remain outstanding. No new control, threshold or governance rule."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Corrects survey definitions, revenue/review-time attribution and dependent inference/placement; separates original evidence from retired derivatives, opinion and anecdote; clarifies the dependent protocol scenario and capacity diagram."
+
+[synchronization]
+assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "references", "report", "reader-navigation", "protocols", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor obligation, canonical workflow, source-state definition, required CI tier or governance-rule change. The identity reset follows the existing trusted transition rule."
+
+# Five corrected legacy identities remain Needs re-review/Needs re-verification/—.
+# Five distinct new objects are Reviewed brief/In progress/—. The bounded actual
+# review is recorded separately from canonical eligibility and Astra acceptance.
+
+# Actual repeat review: /root/review_issue61_sol Confirmed correction candidate
+# 0464b4aaa4780d5f3c129419d8ee63ebb47a921e / a2af9a10d9838fb05a2b45259c042555996a61ea.
+# Initial Corrections required outcome remains in the audit/brief history.
+# Final faithful-recording check and exact publication/CI are recorded live.

@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "84a3d92da69e972eaf86b1df4ba6a229548fa07b877f5f8cb6970d312112b3c5",
+    "digest": "f2280cdbe54c966fee97d6da7deaf2b8d6c5b973ccad4ec4ef5f33df1ddba6a9",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "e11074c362e48cae3aefc679814ff0be7659cdb66dc0857ecd26a6f58228b27f"
+        "sha256": "d0fe0fdfe5cca3a7b190c3d4564519d88f9e183b5ccddf0ae43c539d5599e407"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "354ae2db7eec932375e8e89d254dced49b1a5c25deb204c79e2c5cc873833d7c"
+        "sha256": "bb5719732cb140c6a6dee0bf0115d4bdb9ae04f722ffca6558b01e8a68d96c9c"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "8265392c123d96ee50660ac82c0afb5ae5796ecc1527cfcb3e55d503eea23eb1"
+        "sha256": "94c10e97ead45d90512b15b6fc130a17cc7584292bb23e41c0fd181605933f58"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "19b01164328b05d6591370d7b7cf1c1a4e5708970f241ce7117ca403a32e323a"
+        "sha256": "b06e2ae502a96f66229cdda25b3273bc423f4c2aed02220fc0e84ee75f4c0f29"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -155,9 +155,14 @@
         "sha256": "34c14167aee1621bf666e7f3d1dcfc332fb83819bcfe512fe79a4a21450a9af1"
       },
       {
+        "path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
+        "identity_mode": "content",
+        "sha256": "7fc63c7e08ffd67a44f4f4f0132cb20a6f9673f28fe8618a553f7df61391b922"
+      },
+      {
         "path": "evidence/documentary/README.md",
         "identity_mode": "content",
-        "sha256": "a7c6e6388a42eb7ae29aeccffeeb0517ea50802cc2f27e145244faef9e016b6f"
+        "sha256": "5c80f96d089f9d604f8b0734b1b1ca30fd8af53c1ece94b5f64fbf1560e85d38"
       },
       {
         "path": "evidence/documentary/project-provenance.md",
@@ -180,9 +185,19 @@
         "sha256": "de54c8975283dbb770fff786880bff3e6e7a54af82da21580727fba0ebb301ed"
       },
       {
+        "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
+        "identity_mode": "content",
+        "sha256": "3b2af66303b8c83b0363e688d606d04202ff180b3a38649cc6e8334ef267ecad"
+      },
+      {
         "path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
         "identity_mode": "content",
         "sha256": "a85985902998c9295c892e545a5e56986a329730b49fa8fa92a9566776dc5803"
+      },
+      {
+        "path": "evidence/primary/2025-deloitte-genai-q4.md",
+        "identity_mode": "content",
+        "sha256": "415b411d49938d561e61f3461f1144afec0f81305727b648ce6f9ac3f693d794"
       },
       {
         "path": "evidence/primary/2025-gitclear-code-quality.md",
@@ -193,6 +208,11 @@
         "path": "evidence/primary/2025-gitclear-developer-output.md",
         "identity_mode": "content",
         "sha256": "f7fb46aa3b73998a9873fd8d966e30f060c4f55b7001483c87c045692aca1518"
+      },
+      {
+        "path": "evidence/primary/2025-mckinsey-ai-adoption-value.md",
+        "identity_mode": "content",
+        "sha256": "b27c76ba874255206d22533e9104cd88f4940d6ae1a6cb61a1038b9cc8ae9338"
       },
       {
         "path": "evidence/primary/2025-menlo-enterprise-ai-spend.md",
@@ -227,7 +247,37 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "c09a6c74de03d07d659702fd0b37c0a107687ca01a18798813aacf61591c0fc6"
+        "sha256": "84317a1708f816b8ab6c662ab7d8aafb5b4afe128c1a2af64044c2b16d9f4db6"
+      },
+      {
+        "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
+        "identity_mode": "content",
+        "sha256": "b81138a17ad6534168dfb7b2f3fdb80a0b1ae8c7f25ff38ad73408d3fa18758d"
+      },
+      {
+        "path": "evidence/secondary/2025-deloitte-legacy-citation.md",
+        "identity_mode": "content",
+        "sha256": "d7490e9db60a9953e4ccc1c761c52c9bb9968793a747370d18949509f450aa55"
+      },
+      {
+        "path": "evidence/secondary/2025-softwareseni-review-synthesis.md",
+        "identity_mode": "content",
+        "sha256": "1ee0ab032f8fa0601e3759ffd6901612cabf7eda385ca646c0629d268af82af1"
+      },
+      {
+        "path": "evidence/secondary/2025-technodiaries-review-anecdote.md",
+        "identity_mode": "content",
+        "sha256": "b62c7aded6b061e1d6bd919fe24e5f2d6fa1225b74ea644e9aa763b852aee549"
+      },
+      {
+        "path": "evidence/secondary/2026-horn-capability-commentary.md",
+        "identity_mode": "content",
+        "sha256": "8fcc19e9726329ecc630b6b3e28a6aeb7bcdea491943bcb76170341ed52577d4"
+      },
+      {
+        "path": "evidence/secondary/2026-horn-engineering-commentary.md",
+        "identity_mode": "content",
+        "sha256": "fbd174fc79faa3870c5070e53da3ea520709fc2fc48989a2b22efd46f02dfc67"
       },
       {
         "path": "evidence/secondary/2026-inference-cost-commentary.md",
@@ -237,7 +287,7 @@
       {
         "path": "evidence/secondary/README.md",
         "identity_mode": "content",
-        "sha256": "04b6846579773a691e920d24c66e7965a36b1cdc6d246632fc52814f864890d0"
+        "sha256": "24453b33eb8bd7b3ea3d46b82fba1d631ff14c757918e2bb63b671151573be29"
       },
       {
         "path": "governance/README.md",
@@ -282,7 +332,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "b15e68c771fc8e963237d3e6d37ebf65b0bb5c4de84845b5f1703704dd2d25d2"
+        "sha256": "a8778cade030fa55acc1e2fcdf7ab388a0d37fa52a97b4e3d295e99cac5154f0"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -353,6 +403,11 @@
         "path": "governance/reviews/issue-60-2026-10-21-sol-corrections.md",
         "identity_mode": "content",
         "sha256": "04f20dc7e08365ada25fe7e4407a459d263cbfa8b87ce42282f27f42cce29019"
+      },
+      {
+        "path": "governance/reviews/issue-61-2026-10-21-survey-audit.md",
+        "identity_mode": "content",
+        "sha256": "2e97e9b09d0fd3109b185a21e6420ca908d56e31b795fe2bbdf1f114e206e006"
       },
       {
         "path": "governance/status-model.md",
@@ -440,6 +495,11 @@
         "sha256": "4a6deacd1cd37f4217652c800c4ac1ba57f50f7c4705636bf84c71bb48c2d039"
       },
       {
+        "path": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
+        "identity_mode": "content",
+        "sha256": "70ff6f971c9da8b4c1c0ad5703ecfaf4e97abfc29e5dc6cd86244072bfbdbd04"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -462,27 +522,27 @@
       {
         "path": "protocols/04_systemic_cure.md",
         "identity_mode": "content",
-        "sha256": "3e549ebf5b7001253020f2f28f84762bf3f270693c078f8907ff3c6b745fcdec"
+        "sha256": "38fa3ecbd587e9f453bb954d79a8e8e8e7a92d952b749693f29921e104bd758f"
       },
       {
         "path": "protocols/README.md",
         "identity_mode": "content",
-        "sha256": "112d2a4fecd929a4eeca6efa1ef01353942a9fd242b9143c28cd9cd020b82df4"
+        "sha256": "8864cb0faa7e1f9fa479e307cb01d029d582482924b9f6481b9481a1709abafd"
       },
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "d6d382b3da1b4f05d5316e0c11931aaa101fd19f3181f8f6ee681e2b06e435fc"
+        "sha256": "e38c5a4eb31284525c0689a15a8bae038dcd9e7db08e5bfb9443cf804095d11a"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "781506f72f4eaab07ebc82cab3e414cfe78fcd2452a07830a9e977dc6949a4a6"
+        "sha256": "c56c6fadec7df4b24a9a98cba134d302f7561a3b7bf176dacf8b9b7026282348"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "0c11822af9049eb6415e872db9618b76bfbcb4b764395d2cc8bf31d5682d881e"
+        "sha256": "3de6dde8bf50f13d1f62ff034378b8f17c4b9c4521ed9034514597b470736cd8"
       },
       {
         "path": "report/appendices/cost-context.md",
@@ -1131,6 +1191,39 @@
       "brief_path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md"
     },
     {
+      "id": "P-2025-08",
+      "path": "evidence/SOURCES.md",
+      "source": "McKinsey, *The state of AI in 2025: Agents, innovation, and transformation* (2025-11-05)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Original respondent-reported regular use, EBIT attribution and high-performer classification; not causal ROI or license purchasing",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch3; `report/03_the_aftermath.md` Ch10 indirect adoption-pressure boundary; `protocols/README.md` and `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-mckinsey-ai-adoption-value.md"
+    },
+    {
+      "id": "P-2025-09",
+      "path": "evidence/SOURCES.md",
+      "source": "Deloitte AI Institute, *Now decides next: Generating a new future*, Q4 report (January 2025; fieldwork July–September 2024)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Selected AI-active leaders’ reports of their most advanced initiative and near-term scaling expectations; not an enterprise failure rate",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch3; `report/03_the_aftermath.md` Ch10 indirect adoption-pressure boundary; `protocols/README.md` and `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-deloitte-genai-q4.md"
+    },
+    {
+      "id": "P-2024-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Stack Overflow, *2024 Developer Survey*, AI section and methodology",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Self-selected respondents’ answers to identified AI attitude questions; not rising fear, overtime or measured productivity",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch1; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2024-stackoverflow-ai-attitudes.md"
+    },
+    {
       "id": "D-2019-01",
       "path": "evidence/SOURCES.md",
       "source": "*Software Engineering at Google* and associated first-party engineering documentation",
@@ -1241,26 +1334,37 @@
       "brief_path": "evidence/documentary/project-provenance.md"
     },
     {
+      "id": "D-2025-07",
+      "path": "evidence/SOURCES.md",
+      "source": "Microsoft, FY25 Q2 earnings release (2025-01-29; quarter ended 2024-12-31)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Satya Nadella’s statement about overall AI-business annual revenue run rate; not Copilot revenue or customer ROI",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch3; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md"
+    },
+    {
       "id": "S-2025-01",
       "path": "evidence/SOURCES.md",
-      "source": "Deloitte, *State of Generative AI in the Enterprise*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "source": "Deloitte enterprise-survey series, legacy moving URL (retired citation)",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Surveyed enterprise adoption, expectations, and reported constraints",
-      "current_use": "Adoption and organizational-context discussion",
-      "brief_path": null
+      "can_support": "Citation history and unresolved historical edition only; the fixed Q4 original is P-2025-09",
+      "current_use": "`REFERENCES.md` retirement note; `evidence/primary/2025-deloitte-genai-q4.md` citation resolution",
+      "brief_path": "evidence/secondary/2025-deloitte-legacy-citation.md"
     },
     {
       "id": "S-2025-02",
       "path": "evidence/SOURCES.md",
-      "source": "McKinsey enterprise AI reporting, currently linked through a third-party summary",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "source": "Banandre, *McKinsey’s 2025 AI Report: 88% Adoption, 6% Impact, The Enterprise AI Theater Continues* (2025-11-22)",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Context only until the original McKinsey publication is identified, registered, and reviewed",
-      "current_use": "Market-sentiment discussion",
-      "brief_path": null
+      "can_support": "Secondary interpretation/citation history; original survey figures now belong to P-2025-08",
+      "current_use": "`REFERENCES.md` replacement note; `evidence/primary/2025-mckinsey-ai-adoption-value.md` citation history",
+      "brief_path": "evidence/secondary/2025-banandre-mckinsey-summary.md"
     },
     {
       "id": "S-2025-03",
@@ -1276,35 +1380,46 @@
     {
       "id": "S-2026-01",
       "path": "evidence/SOURCES.md",
-      "source": "Andreas Horn, *The Most Important Chart in AI*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "source": "Andreas Horn, *The Most Important Chart in AI* (2026-02-06 personal post)",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Practitioner framing and visual interpretation",
-      "current_use": "Market and capability narrative context",
-      "brief_path": null
+      "can_support": "Personal forecast and adoption narrative; not IBM endorsement or independent METR evidence",
+      "current_use": "`README.md`; `report/01_the_illusion.md` market-commentary box; `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
+      "brief_path": "evidence/secondary/2026-horn-capability-commentary.md"
     },
     {
       "id": "S-2025-04",
       "path": "evidence/SOURCES.md",
-      "source": "SoftwareSeni, *Why AI Coding Speed Gains Disappear in Code Reviews*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "source": "James A. Wondrasek / SoftwareSeni, *Why AI Coding Speed Gains Disappear in Code Reviews* (2025-08-11; current text inspected 2026-10-21)",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Practitioner synthesis about review bottlenecks",
-      "current_use": "Review-bottleneck framing",
-      "brief_path": null
+      "can_support": "Practitioner synthesis and discovery leads; no adopted review-time multiplier",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch4 context reference; `protocols/04_systemic_cure.md` indirect demand-boundary clarification; `REFERENCES.md`",
+      "brief_path": "evidence/secondary/2025-softwareseni-review-synthesis.md"
     },
     {
       "id": "S-2025-05",
       "path": "evidence/SOURCES.md",
-      "source": "TechnoDiaries, *Post-Copilot Burnout*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "source": "Techno Diaries, *Post-Copilot Burnout* (2025-10-29; accessible introduction only)",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Practitioner reporting and hypothesis generation",
-      "current_use": "Senior-bottleneck and burnout context",
-      "brief_path": null
+      "can_support": "One unaudited first-person anecdote and hypothesis generation, with a member-only access gap",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch1; `report/02_broken_mechanics.md` Ch5; `protocols/04_systemic_cure.md` indirect demand-boundary clarification; `REFERENCES.md`",
+      "brief_path": "evidence/secondary/2025-technodiaries-review-anecdote.md"
+    },
+    {
+      "id": "S-2026-02",
+      "path": "evidence/SOURCES.md",
+      "source": "Andreas Horn, *AI writes code faster than teams can keep up with* (2026-01-28 personal post)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Personal engineering-risk commentary; no measured prevalence, effect size or organizational endorsement",
+      "current_use": "`README.md`; `report/01_the_illusion.md` market-commentary box; `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
+      "brief_path": "evidence/secondary/2026-horn-engineering-commentary.md"
     },
     {
       "id": "M-1984-01",
@@ -1515,6 +1630,13 @@
       ]
     },
     {
+      "path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
+      "title": "Microsoft: FY25Q2 AI-business run rate",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/documentary/README.md",
       "title": "Primary Documentary Sources",
       "instructions": [
@@ -1550,8 +1672,22 @@
       ]
     },
     {
+      "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
+      "title": "Stack Overflow: reported AI attitudes in 2024",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
       "title": "CloudZero 2025: reported budgets and future spending intentions",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2025-deloitte-genai-q4.md",
+      "title": "Deloitte: advanced initiatives and scaling expectations",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1566,6 +1702,13 @@
     {
       "path": "evidence/primary/2025-gitclear-developer-output.md",
       "title": "GitClear: separate developer-output measures",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2025-mckinsey-ai-adoption-value.md",
+      "title": "McKinsey: AI use, enterprise EBIT and high performers",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1615,6 +1758,48 @@
     {
       "path": "evidence/primary/README.md",
       "title": "Primary Empirical Research",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
+      "title": "Banandre: retired derivative of the McKinsey survey",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/2025-deloitte-legacy-citation.md",
+      "title": "Deloitte: disposition of the moving legacy citation",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/2025-softwareseni-review-synthesis.md",
+      "title": "SoftwareSeni: review-cost synthesis without an adopted multiplier",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/2025-technodiaries-review-anecdote.md",
+      "title": "Techno Diaries: one accessible review-time anecdote",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/2026-horn-capability-commentary.md",
+      "title": "Horn: capability-curve commentary",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/secondary/2026-horn-engineering-commentary.md",
+      "title": "Horn: engineering-risk commentary",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1795,6 +1980,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-61-2026-10-21-survey-audit.md",
+      "title": "Issue 61: Sol survey, commentary and orphan-source correction",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -1909,6 +2101,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-60-final-verification.toml",
       "title": "governance/work-records/2026-10-21-issue-60-final-verification.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
+      "title": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
       "instructions": [
         "AGENTS.md"
       ]

@@ -15,6 +15,8 @@ The goal is not to slow AI adoption. The goal is to make adoption conditional on
 
 AI-assisted coding can increase the rate at which candidate changes are produced. If downstream capacity and controls remain unchanged, the organization may create more work than it can reliably verify and absorb.
 
+**Conditional repository scenario:** The diagram proposes a feedback mechanism to investigate. The [enterprise surveys and market commentary in Chapter 3](../report/01_the_illusion.md#enterprise-surveys-use-benefits-and-scaling-are-different-outcomes) do not measure this causal loop or its prevalence. Sufficient existing capacity, useful review assistance or intake limits could prevent it; stable quality and improved delivery would weaken the adverse scenario.
+
 ```mermaid
 flowchart LR
     A[Management pressure for visible AI adoption] --> B[More candidate code]
@@ -25,7 +27,7 @@ flowchart LR
     F --> B
 ```
 
-The loop is reinforced when organizations reward activity signals such as generated lines, commits, tool usage, or short-term task completion while the cost appears later in another team, another quarter, or production operations.
+In this hypothesis, rewards for activity signals could reinforce the loop if additional costs fall outside the measured team, period or production boundary. The surveys do not establish those incentive effects.
 
 **Systemic rule:** the unit of optimization is the complete delivery system, not the coding step.
 
@@ -145,19 +147,22 @@ Every policy exception, pilot approval, and elevated permission should have:
 
 ---
 
-## 5. Capacity Must Follow Acceleration
+## 5. Assess Demand Against Available Capacity
 
-An organization cannot safely increase code-production capacity while treating review, testing, security, architecture, and operations as fixed overhead.
+Higher candidate output does not determine the additional review, testing, security, operating or maintenance effort. Demand depends on change size, risk, familiarity and available assistance. Existing spare capacity or useful verification improvements may absorb added work; a fixed resource budget alone does not establish overload.
+
+**Conditional capacity scenario:** Compare observed demand with available capacity and the resulting delivery and quality. The enterprise surveys and practitioner accounts reviewed here do not establish a universal volume-to-burden multiplier or inevitable maintenance inventory.
 
 ```mermaid
-flowchart LR
-    A[More candidate changes] --> B[More review demand]
-    B --> C[More validation demand]
-    C --> D[More release and operational demand]
-    D --> E[More maintenance inventory]
+flowchart TD
+    A["Candidate work and change mix"] --> B{"Demand exceeds available capacity?"}
+    B -->|Yes| C["Possible queues, rework or delay"]
+    B -->|No| D["Useful gains may reach delivery"]
+    C --> E["Compare effort, quality and delivery"]
+    D --> E
 ```
 
-Before expanding adoption, assess whether constrained functions can absorb the new load.
+Before expanding adoption, assess the actual demand and headroom of relevant functions. More work may require a response where a constraint is observed; positive delivery at stable quality and comparable total effort would weaken the overload scenario.
 
 ### Capacity questions
 
@@ -182,7 +187,7 @@ Possible actions include:
 - redesign team boundaries;
 - delay expansion until queues stabilize.
 
-**Operating rule:** productivity gains are not real if they are financed by invisible downstream overload.
+**Measurement practice:** Evaluate delivered benefits together with additional or released downstream effort, at the required quality and against a credible baseline. Extra work could offset some or all local savings; sufficient capacity or useful assistance could preserve a net benefit. Measure that comparison before drawing a productivity conclusion.
 
 ---
 

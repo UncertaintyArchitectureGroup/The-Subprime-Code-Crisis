@@ -8,6 +8,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added distinct original-survey briefs for McKinsey, Deloitte Q4 and Stack Overflow, a Microsoft FY25Q2 documentary record, separate personal Horn posts and bounded legacy/commentary/anecdote dispositions for #61.
+
 - Added seven cost-source briefs, original market/budget sources, a historical accounting appendix and an explicitly hypothetical cash/capacity sensitivity model with reproducible inputs/results and boundary tests.
 
 - Added separate GitClear quality/output briefs from the full original PDF and embedded report, with exact denominators, sampling/windows, access provenance and internal-reporting discrepancies.
@@ -17,6 +19,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 - Added a reviewed documentary project-provenance record covering the 2026-01-05 DOU precursor and discussion, the 2026-02-06 GitHub repository creation timestamp, and the 2026-02-10 explicit Subprime Code publication.
 
 ### Changed
+
+- Corrected adoption/EBIT/high-performer definitions, selected-initiative ROI expectations, supplier run-rate scope and review-time attribution. Preserved positive/mixed survey outcomes, removed unsupported multipliers and bounded the dependent adoption-pressure/review scenarios and the protocol capacity diagram/conclusions. Retired moving/derivative and decorative citations with an occurrence/orphan trace; integration and Astra acceptance remain separate.
 
 - Rebuilt the Chapter 2 cost argument around exact fiscal/accounting scope and conditional comparison; withdrew unsupported universal transformation ranges, platform budgets and timing. Addressed Astra's #60 findings by making the relying Chapter 3 argument and Part 2/3 cost reprises conditional, correcting the quality comparator and explicitly excluding avoided baseline cash from the optional model. Independent acceptance and final integration state are recorded in the #60 review history.
 

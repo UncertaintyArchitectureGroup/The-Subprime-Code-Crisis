@@ -86,7 +86,7 @@ If we analyze the motivations of every player in this crisis, we find that they 
 
 *   **The Vendors:** They have engineered a technological marvel. Their imperative is to monetize it to fund the massive R&D costs for the next generation. They want to capture market share quickly. Are they "evil" for selling their product aggressively? **No.**
 *   **The Investors:** They are deploying capital into the highest-growth sector of the economy. They listen to the vendors' projections and demand exposure to AI. They want returns. Are they "guilty" for demanding growth? **No.**
-*   **The C-Suite:** They are under immense pressure from investors to "not be the next Nokia." They have limited visibility into the granular reality of the codebase. They hear the hype, they fear obsolescence, and they choose the "safest" path: buy the licenses and push for adoption. Are they "incompetent"? **No.**
+*   **The C-Suite:** Market expectations could influence adoption decisions. The [enterprise surveys in Chapter 3](01_the_illusion.md#enterprise-surveys-use-benefits-and-scaling-are-different-outcomes) do not measure investor pressure or executive fear, and preserve reported benefits alongside scaling limits. The proposed decision mechanism requires observations of actual choices and delivery outcomes; it is not an established motive for all executives.
 
 ---
 

@@ -44,22 +44,20 @@ The **7-Month Doubling Time** is not a metric of progress; it is the **tempo of 
 
 ### Possible Responses at a Constrained Review Stage
 
-The secondary review-time claim below requires its own original-source audit (#61); it is not measured by either GitClear dataset.
+The [Techno Diaries public introduction](../evidence/secondary/2025-technodiaries-review-anecdote.md) contains one first-person report of doubled review time compared with the same period a year earlier. The logs, change mix and member-only remainder are unavailable. It also describes useful assistance on small tasks. This is an anecdote, not a measured senior-developer population effect or evidence of universally unsustainable cognitive load.
 
-Reports from the field indicate that review times have already **doubled** for AI-generated code. The Senior cannot just "scan" the code anymore. They have to mentally simulate the execution of code they didn't write, looking for bugs that are actively hiding behind perfect syntax. This spikes the **Cognitive Load** to unsustainable levels.
+Two adverse scenarios are possible if review remains constrained:
 
-Two adverse responses are illustrated below. They are not an exhaustive or observed distribution of choices; limiting intake, changing scope or improving verification are alternatives:
+1. **Keep the verification boundary:** A queue could delay feedback or displace other work if intake remains above capacity. The account does not measure that queue's effect on idle time, overtime or burnout.
+2. **Shorten checks without adequate verification:** Defects might escape into production. No observed frequency or six-month failure horizon is established here.
 
-1.  **The Bottleneck Option:** They do their job properly. They review every line deeply.
-    *   **Result:** PRs pile up (the "tidal wave" queues). The Junior sits idle waiting for feedback. Management screams about "velocity." The Senior burns out working nights.
-2.  **The "Rubber Stamp" Option:** They surrender. They glance at the code, see that it looks **"LGTM"** (Looks Good To Me), and click Approve.
-    *   **Result:** The feature ships on time. Management is happy. But the codebase is silently poisoned with logic bombs that will explode in production 6 months later.
+Other responses include limiting intake, reducing change size, changing scope or improving verification. Useful delivery gains with stable review effort and quality would weaken the adverse scenario.
 
 ### Conclusion: Measure Review and Mentorship
 
 The GitClear studies do not show that most senior engineers rubber-stamp changes, that code review ceases to function, or that mentorship necessarily collapses. Those would be additional outcomes to investigate, not consequences measured by commit/line proxies.
 
-A team could gain useful output while preserving review and learning, or create a queue that displaces them. Track review effort, quality and knowledge transfer alongside delivery to test which outcome occurs. The separate task-horizon and field-report claims above remain subject to their own source audits (#63/#61).
+A team could gain useful output while preserving review and learning, or create a queue that displaces them. Track review effort, quality and knowledge transfer alongside delivery to test which outcome occurs. The task-horizon claim above remains subject to its separate original-source audit (#63); the practitioner account does not calibrate the capacity scenario.
 
 ---
 
