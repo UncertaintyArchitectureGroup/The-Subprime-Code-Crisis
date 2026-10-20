@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "ffd63bb6f2ab0f625c3784c25a4820d518ed42c75a70a13e400cac34361180f3",
+    "digest": "4719483559d8cf8aa9649708fcaa39d3059eaa5c5172d0d74c5dda7840c78ce8",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "ec0974572077b458859955033f013f3e1a03735057f6d322c989de764f6c7ac9"
+        "sha256": "39bd265a27480bdc97cbcb0d4b25486fcde63e801df2f555a16bc9543c2581f7"
       },
       {
         "path": "CITATION.cff",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "a77551b364b01b069085fca99ae4a73f7c161140f236b3820c2460f49849e649"
+        "sha256": "083f5930827ea302bf8cf4b85aac6d2d68f6317daebd98d43891a921be466dbb"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -157,17 +157,17 @@
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
-        "sha256": "1b078dac43f9d786b341219532c74c9da27922f6ad3e3aa2c91ff24b11ebe876"
+        "sha256": "de54c8975283dbb770fff786880bff3e6e7a54af82da21580727fba0ebb301ed"
       },
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "6c94fd7c627f05e7fa2ba365ff2658318c5b21ade956a7501351d4681f293ae3"
+        "sha256": "049b999f86049ad760838ac5f660c3c157c3c32bd6aeb6605f808dc0d2f42120"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "c7d6fa230e26518a46e67ddeab2e22dae8fb548b146bb4a17613418b9a525c67"
+        "sha256": "2813687c828b4ef02f811260f689eef804172157a70607300f66e774c59de1b7"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
@@ -227,7 +227,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "3adcb7fd0e3c7ca97da1b09989b8dfb0de4885ff1ee78ce5918b99e04a532b16"
+        "sha256": "79499a6c9e915a78bf91ec734256290c2bf91d7df0041d3e6dfab979bf771086"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -267,7 +267,7 @@
       {
         "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
         "identity_mode": "content",
-        "sha256": "59a25f2f0b598ca643e2d03eebe9cf3006601e8948865c9f3b771d19ae716cea"
+        "sha256": "6bc9a5094dd3068bf07a3a23135781615ec03023fe10884eb795917434863f77"
       },
       {
         "path": "governance/status-model.md",
@@ -313,6 +313,11 @@
         "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
         "identity_mode": "content",
         "sha256": "a44fa5b8d04e0f66c1a638702fdc55c16555f3854f42faa54c097e9f87cf90b6"
+      },
+      {
+        "path": "governance/work-records/2026-10-20-issue-57-final-verification.toml",
+        "identity_mode": "content",
+        "sha256": "a1466dccca0f908f0a1fcef53fa936901236abe0237a6ecd36b224988f567dd1"
       },
       {
         "path": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
@@ -873,8 +878,8 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "In progress",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
       "can_support": "Randomized task-time effect for experienced contributors in familiar mature open-source repositories with early-2025 tools; not a universal seniority effect",
       "current_use": "`README.md` Evidence Map and outcome boundary; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2023-copilot-task-productivity.md` (comparison boundary); `evidence/primary/2026-metr-productivity-design-update.md` (historical result)",
       "brief_path": "evidence/primary/2025-metr-experienced-developer-productivity.md"
@@ -884,8 +889,8 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *We are Changing our Developer Productivity Experiment Design* (2026-02-24)",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "In progress",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
       "can_support": "Follow-up experiment and first-party account of selection and measurement limits; not a reliable estimate of current productivity magnitude",
       "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (interval restatement and temporal update)",
       "brief_path": "evidence/primary/2026-metr-productivity-design-update.md"
@@ -928,8 +933,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Peng et al., *The Impact of AI on Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "In progress",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
       "can_support": "Reduced completion time conditional on completing a standardized JavaScript task; not enterprise throughput or a universal experience effect",
       "current_use": "`README.md` task-acceleration claim and Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (cross-study interpretation)",
       "brief_path": "evidence/primary/2023-copilot-task-productivity.md"
@@ -1560,6 +1565,13 @@
     {
       "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
       "title": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-57-final-verification.toml",
+      "title": "governance/work-records/2026-10-20-issue-57-final-verification.toml",
       "instructions": [
         "AGENTS.md"
       ]

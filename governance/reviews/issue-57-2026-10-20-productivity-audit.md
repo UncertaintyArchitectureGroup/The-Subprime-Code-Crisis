@@ -161,3 +161,33 @@ Primary acceptance checked actual implementation against the original issue afte
 Independent final checks: contract, trusted evidence integrity/transitions, RI freshness, diff check and trusted Repository Gate passed. 119 tests passed at correction commit `e821c39`; subsequent edits only clarified text/history/RI. CI on exact remote implementation head 734856de passed [Main health 39465305694](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39465305694) and [Repository Gate 39465300432](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39465300432).
 
 Only actual confirmation/acceptance metadata and derived RI follow the reviewed content. Integration remains In progress/— until this confirmed correction set is merged and checked on main. The existing CI/source limitations are retained, not unresolved corrections. This acceptance does not extend to sibling source audits or the whole report.
+
+
+## Default-branch verification and final-state proposal — 2026-10-20
+
+PR [#66](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/66) merged with correction head `897c792ee78999c747ffe353f9fadde2f37cdc97` into main `21af254361dbd4f8d158516c1699fec7661e6312`, tree `b711f3ab97fc35610c146e5e4f4b3cbf1eaa7a05`. Exact-head implementation checks passed: [Main health 39465590241](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39465590241), latest [Repository Gate 39465663351](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39465663351). Merged-main [Main health 39465753207](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39465753207) completed successfully for the push SHA.
+
+Primary merged-state checks on that exact SHA: 119 tests passed; contract, evidence-state integrity/transitions, RI freshness and diff checks passed. Reader-facing report/README/bibliography/index files were byte-compared with independently Confirmed commit `91edb633`; each brief's research body before the integration-audit section was also byte-compared. They are identical; only actual confirmation/acceptance metadata follows the reviewed content. A separate clean worktree pins the merged main for the final trusted-policy checks.
+
+Integration completion checklist for P-2023-01/P-2025-01/P-2026-03:
+
+- [x] Current AGENTS/applicable procedures, exact originals/versions and source-ground-truth fields inspected.
+- [x] Three reviewed indexed briefs; source findings, calculations, author interpretation, repository inference and limitations separated.
+- [x] Every material use searched/traced (O01–O29, X01–X05), including uncited report conclusions and cross-brief uses.
+- [x] Numerical units, denominators, populations, dates and uncertainty checked; published interval outputs separately attributed; no raw-data reanalysis claimed.
+- [x] Argument fit, positive/negative visibility, adjacent summaries, maps and source boundaries checked.
+- [x] Protocol outcome: No protocol change, with all four assessed and rationale recorded.
+- [x] Exact treatment authorized by the maintainer; no new decision unresolved.
+- [x] Current-use paths 5/6/5, source identity, bibliography/index and removed/replaced claims synchronized.
+- [x] Repeated independent source/integration review Confirmed; all required research corrections merged into main and checked.
+- [x] Registry and briefs now propose matching Reviewed brief / Verified / 2026-10-20 for this checked default-branch content.
+
+| AC | Merged evidence | Finalization condition |
+| --- | --- | --- |
+| AC-01 | Original locators and three complete briefs, independent Confirmed review | Satisfied on merged main |
+| AC-02 | O01–O29/X01–X05, exact units/arithmetic/completion and time boundaries | Satisfied on merged main |
+| AC-03 | Positive Peng result central; unsupported dismissal removed | Satisfied on merged main |
+| AC-04 | Uses and metadata synchronized for the checked content; matching final fields proposed here | Final-state PR must be reviewed, merged and checked |
+| AC-05 | Separate source/integration review Confirmed; primary merged-state acceptance performed | Separate final-state review pending, then issue proof/closure |
+
+This final-state change does not modify research claims, source identities/current-use sets, protocols or confidence. Its new work record is separate; the merged implementation work record is immutable. Final-state independent review is pending, so this PR is not yet ready for merge or issue closure. These lifecycle values concern only the three scoped source integrations; other source audits and whole-report corrections remain open.
