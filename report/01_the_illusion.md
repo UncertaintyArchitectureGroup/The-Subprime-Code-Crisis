@@ -3,39 +3,40 @@
 > **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | **Part 1** | [⚙️ Part 2: Broken Mechanics](02_broken_mechanics.md) | [🔥 Part 3: The Aftermath](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
-*   [Chapter 1. The Great Illusion](#chapter-1-the-great-illusion-why-we-feel-faster-but-data-shows-were-slowing-down)
+*   [Chapter 1. What Productivity Studies Measure](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
 *   [Chapter 2. The Missing Price Tag](#chapter-2-the-missing-price-tag-the-true-cost-of-making-ai-work)
 *   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-why-the-board-chooses-a-strategy-of-degradation)
 *   [Chapter 4. Anatomy of the Break](#chapter-4-anatomy-of-the-break-how-the-safe-scenario-kills-the-sdlc)
 ---
 
-## Chapter 1. The Great Illusion: Why We Feel Faster, but Data Shows We're Slowing Down
+## Chapter 1. What Productivity Studies Measure: Task Time and Delivery Outcomes
 
-Ask any developer today how it feels to code with an AI Code Assistant, and you will hear the same word: *empowering*. The "blank page syndrome" is dead. Boilerplate is generated in milliseconds. Subjectively, the friction of typing has vanished, leading to a widespread feeling that we are moving 10x faster.
+AI assistance can reduce time on a coding task, add time on another, or change which tasks developers choose. A credible productivity claim therefore needs a population, task, tool vintage and outcome boundary.
 
-But if you step back from the IDE and look at the delivery metrics, a disturbing paradox emerges. If every individual engineer is "faster," why hasn't our Time-to-Market collapsed? Why are feature releases stalling?
+The experiments below report different task-time effects. Neither directly measures an enterprise's complete delivery system. The question for this report is when local gains reach production, and under what conditions downstream work absorbs them.
 
-To understand this, we must look at the cold, hard data from independent research, not vendor marketing.
+Original methods and limitations matter alongside the headline result, including the funding and affiliations of the research team.
 
 ---
 
-### The "Senior Penalty": Confirmed at Scale (METR & Xu et al.)
+### Bounded Experiments: Positive, Negative and Temporally Limited Evidence
 
-The most damaging myth of the AI era is that it turns junior engineers into seniors, and senior engineers into "10x" architects. The reality is far more complex. We now have evidence from two independent vectors: a controlled trial and a massive longitudinal study.
+| Source and setting | Design and measured outcome | Finding and boundary |
+| --- | --- | --- |
+| [Peng et al., 2023 preprint](../evidence/primary/2023-copilot-task-productivity.md); experiment in May–June 2022 with GitHub Copilot | 95 developers randomized, 45 treatment and 50 control; 70 task-and-survey completers, 35 per arm. One JavaScript HTTP-server task; time to pass the provided tests | Among completers, **55.8% less completion time** (71.17 versus 160.89 minutes; 95% CI 21–89%). This is positive task-level evidence, conditional on completion; it does not measure production delivery or lifecycle quality. |
+| [METR, July 2025 preprint/report](../evidence/primary/2025-metr-experienced-developer-productivity.md); February–June 2025 tools, mainly Cursor Pro with Claude 3.5/3.7 Sonnet | 16 experienced contributors completing 246 prespecified tasks in familiar mature open-source repositories; task-level randomization of AI permission; active implementation time including work after review | AI allowed was associated with **19% longer task time** in the randomized experiment (95% CI +2 to +39%). Developers forecast 24% less time and retrospectively estimated 20% less time. These perceptions are separate from the measured result; this is not a universal seniority effect. |
+| [METR, 24 February 2026 follow-up](../evidence/primary/2026-metr-productivity-design-update.md); experiment begun August 2025 | Later tools and a broader recruited pool; tasks again randomized to allow/disallow AI | Authors consider the current magnitude **unreliably estimated** because participation/task selection and concurrent-agent time measurement changed. They expect more benefit than in early 2025, but describe weak evidence for its size. This update neither establishes a general speedup nor invalidates the historical 2025 result. |
 
-**1. [The Mechanics of Slowdown (METR, July 2025)](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/):**
-In a randomized controlled trial, researchers measured the impact of AI on **experienced open-source developers** working on their own repositories.
-* **The Result:** When using frontier AI Code Assistants (Cursor Pro with Claude 3.5/3.7), developers took **19% longer** to complete tasks compared to working without them.
-* **The Subjective Illusion:** Despite being slower, the developers *believed* the AI made them faster. They forecasted a **24% speedup** and, even after the experiment, estimated they had gained **20%**.
+**Repository interpretation:** These are different experiments, not a controlled comparison of juniors and seniors, or of greenfield and brownfield work. Task, participant and tool differences could each contribute to the contrast; their separate causal contributions are not identified here. Time reduction is not an equally sized percentage increase in throughput. Neither the positive nor the negative task result can decide enterprise delivery performance by itself.
 
-**2. [The Scale Validation (Xu et al., arXiv 2025)](https://arxiv.org/abs/2510.10165):**
-Critics often dismiss controlled trials as "too small." However, **Xu et al. (2025)** analyzed telemetry from over **10,000 developers** across diverse enterprise environments, independently confirming the "Senior Penalty" at scale.
+### [Observational Developer Activity: A Different Design (Xu et al., 2025)](https://arxiv.org/abs/2510.10165)
+
+Xu et al. examines developer activity with a different design and outcome boundary. It should not be described as a replication of METR's randomized task-time experiment. Its population, role definitions and reported activity/review measures require their own source audit; the legacy quantitative claims below remain pending that audit.
 * **Labor Redistribution:** While peripheral contributors (Juniors) exploded their output (**+43.5% commits**), Core Contributors (Seniors) saw their coding output collapse (**-19% commits**).
 * **The Maintenance Trap:** Instead of writing code, seniors were forced to shift to reviewing it, with their review load increasing by **+6.5%**. Crucially, the AI-generated code required **2.4% more rework** per PR to meet quality standards.
 
-**Why the Disconnect?**
-The AI shifted the senior engineer's role from "Author" to "Reviewer/Debugger." Seniors didn't save time writing; they lost time untangling machine-generated complexity.
+**Mechanism hypothesis:** Additional generated work could increase review effort when verification capacity does not grow with it. The task-time experiments above do not establish that labor redistribution occurred across teams. Tool friction, task mix and changes in scope are alternative explanations; stable review effort and improved production outcomes would weaken a review-bottleneck explanation in a local deployment.
 
 ---
 
@@ -70,15 +71,13 @@ This aligns with public statements from Google leadership. In late 2025, CEO Sun
 
 ---
 
-### Acknowledging the Positive Evidence
+### From Task Results to Delivery Questions
 
-Scientific integrity demands that we address findings that appear to contradict our thesis.
+The positive Peng result belongs in the central comparison above. Its bounded scope does not make it irrelevant; it defines what was tested. METR likewise supplies a bounded negative result for early-2025 tools, followed by a later update with substantial identification limits.
 
-We do not dispute that AI accelerates isolated coding tasks, particularly for less-experienced developers. The evidence for this is robust. [**Peng et al. (2023)**](https://arxiv.org/abs/2302.06590) conducted a randomized controlled trial ($n = 196$) showing a **55.8% speedup** on greenfield coding tasks. [**Xu et al. (2025)**](https://arxiv.org/abs/2510.10165) — the same study we cite above — confirms that peripheral contributors saw a **+43.5% increase** in commit volume. Individual developers, particularly juniors, genuinely do produce code faster with AI assistance.
+**Repository inference:** A local time saving may improve delivery, be absorbed by other constraints, or be traded for a larger or different output. Distinguishing these outcomes requires downstream measures and an appropriate comparator. It cannot be settled by assuming an unsupported industry-wide percentage of maintenance work or equating repository role with professional seniority.
 
-Our concern is different: **these local gains do not translate into system-level productivity improvements, and may actively degrade them.** The Peng et al. study measured isolated task completion in a greenfield environment — writing small programs from scratch. This has limited relevance to brownfield enterprise engineering, where 80-90% of work involves maintaining, extending, and debugging existing systems. And as Xu et al. themselves demonstrate, the aggregate productivity increase at the project level disappears once you account for the redistribution of labor onto seniors and the increased rework rate.
-
-The question is not whether AI makes typing faster. It does. The question is whether faster typing makes the *system* faster. The data says it does not.
+The next section examines a separate source that explicitly follows activity toward projects and releases. Its findings must retain their own design and population boundaries.
 
 ---
 
@@ -129,20 +128,13 @@ The widespread narrative that "AI makes coding free" has reached every project s
 
 ---
 
-### The Evidence Gap: When Marketing "Vibes" Replace Operational Data
+### Match Productivity Claims to Their Outcome Boundary
 
-Scientific honesty requires us to pause here. Any senior engineer reading this report should rightly feel a twinge of skepticism: **Is it objective to build a crisis narrative based primarily on these few sources?**
+Peng's measured task-time reduction is an operational result for a standardized task, not merely sentiment. METR's comparison of forecast and measured time shows that perceptions can diverge from performance in a particular setting. It does not establish that every productivity survey is invalid.
 
-In a healthy engineering culture, we would demand a dozen independent data points to triangulate the truth. We would want to compare these negative findings against the longitudinal telemetry from the vendors themselves.
+For a claim about enterprise value, ask whether the evidence measures review effort, release completion, defects, production use and total engineering cost over an adequate period. A task experiment alone establishes neither an improvement nor a deterioration in those outcomes. The absence of those measures in these experiments is not evidence that no relevant vendor or external research exists.
 
-But we are forced to rely on these limited signals for one disturbing reason: **The Vendor data does not exist**.
-
-Three years into the "AI Revolution," the companies selling this future — who sit on the largest dataset of engineering behavior in human history — have yet to publish a single rigorous, independent study demonstrating that AI reduces **Total Cost of Ownership** or **Defect Rates** in a real Enterprise environment.
-
-Instead of operational evidence, the public narrative is dominated by what can only be described as **"Placebo Analytics."**
-
-* **The Survey Pattern:** Vendors frequently cite figures such as *"88% of developers feel more productive."* However, as demonstrated by METR and Xu et al., subjective confidence is a poor proxy for real productivity. These surveys measure **adoption sentiment** ("Do you like the tool?"), not **delivery outcomes** ("Did the system ship value faster?").
-* **The Synthetic Benchmark Pattern:** Claims like *"55% faster development"* originate from Greenfields — writing small code from scratch. As we acknowledged above, these gains are real but narrow. They have limited relevance to Brownfields — maintaining large, legacy codebases, which represents 80-90% of enterprise engineering.
+**Proposed measurement practice:** Publish task definitions, tool dates, population, comparator and uncertainty alongside the outcome. Keep task-time results, self-reported experience, activity counts and delivery measures separate. Apply the same scope requirements to positive and negative findings.
 
 ---
 
@@ -167,22 +159,23 @@ The current economic relationship between AI vendors and Engineering organizatio
 
 ---
 
-### Conclusion: The Conveyor Belt of Disposable Code
+### Conclusion: Separate Task Time from Delivery Performance
 
-The data leads to an unavoidable conclusion: We have confused **Typing Speed** with **Engineering Velocity**.
+The experiments establish a positive effect on conditional completion time in Peng's standardized task and a negative effect on active task time in METR's familiar-repository setting with early-2025 tools. The 2026 follow-up leaves the present magnitude uncertain. They do not establish an industry-wide slowdown or a universal penalty for experienced developers.
 
-We have built a high-speed conveyor belt for disposable code. By lowering the cost of generating syntax to near zero, we have flooded our SDLC with low-quality (+18% warnings), high-complexity (+39%) code. We *feel* faster because we are typing less, but we are delivering slower because we are drowning in the noise we created.
+**Repository hypothesis:** Where additional upstream work exceeds downstream verification and release capacity, local acceleration may increase queues or rework rather than delivered value. A deployment with shorter production lead time and stable or improved quality would limit that hypothesis's applicability. Code quality and maintenance effects require separate evidence; they cannot be read out of these task-time percentages.
 
-> We haven't accelerated software engineering; we've just accelerated the creation of technical debt.
-> 
+The practical implication is to measure the complete delivery boundary while retaining local benefits and costs as distinct results.
+
 ---
 
 #### References
 
-* **METR Study (July 2025):** [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) — AI Copilots make experienced developers 19% slower. RCT with 246 tasks, 16 developers. Developers believe they're 20% faster → perception gap is the killer.
+* **METR Study (July 2025):** [Paper v2](https://arxiv.org/abs/2507.09089v2) and [evidence brief](../evidence/primary/2025-metr-experienced-developer-productivity.md) — 16 experienced contributors, 246 familiar open-source tasks, early-2025 tools; AI allowed increased task time by 19% (95% CI +2 to +39%). Forecast and retrospective perceptions differ from measured time.
+* **METR Follow-up (24 February 2026):** [Author update](https://metr.org/blog/2026-02-24-uplift-update/) and [evidence brief](../evidence/primary/2026-metr-productivity-design-update.md) — later experiment; authors report selection and time-measurement problems that prevent a reliable current magnitude estimate.
 * **Xu et al. (arXiv, 2025):** ["AI-Assisted Programming Decreases the Productivity of Experienced Developers"](https://arxiv.org/abs/2510.10165) — Analysis of 10,000+ developers confirming increased review load (+6.5%) and rework (+2.4%) for seniors, with a 19% drop in original code productivity for core contributors. Also confirms +43.5% output increase for peripheral contributors.
 * **Agarwal et al. (arXiv, 2026):** ["AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents"](https://arxiv.org/abs/2601.13597) — AI-generated code shows +18% static analysis warnings and +39% higher cognitive complexity. Quality degradation persists even when velocity gains fade.
-* **Peng et al. (arXiv, 2023):** ["The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"](https://arxiv.org/abs/2302.06590) — RCT ($n = 196$) showing 55.8% speedup on greenfield coding tasks, primarily benefiting less-experienced developers. Foundational positive evidence for task-level acceleration.
+* **Peng et al. (arXiv v1, 2023):** [The Impact of AI on Developer Productivity: Evidence from GitHub Copilot](https://arxiv.org/abs/2302.06590v1) and [evidence brief](../evidence/primary/2023-copilot-task-productivity.md) — 95 randomized (45/50), 70 task-and-survey completers (35/35); 55.8% less completion time among completers on one JavaScript task (95% CI 21–89%). Experience heterogeneity is exploratory, not a universal seniority rule.
 * **GitClear (2025):** [AI Assistant Code Quality 2025 Research](https://www.gitclear.com/ai_assistant_code_quality_2025_research) — 8x increase in duplicated code blocks, code reuse dropped from ~25% to <10%. Dataset: 211 million changed lines.
 * **Demirer, Musolff, and Yang (NBER Working Paper 35275, 2026):** [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](https://www.nber.org/papers/w35275) — Reports substantial attenuation from commits toward projects and releases, and increased application supply without higher early aggregate usage. See the [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) for methodology, limitations, and claim boundaries.
 * **Post-Copilot Burnout (Oct 2025):** [Are AI Assistants Making Senior Developers the New Bottleneck?](https://technodiaries.medium.com/post-copilot-burnout-are-ai-assistants-making-senior-developers-the-new-bottleneck-1689e20364f1) — Senior devs report doubled review time, PR queues described as "tidal wave."
@@ -307,7 +300,7 @@ The absence of such evidence does not imply malicious intent. However, it leaves
 
 ## Chapter 3. The "Free Lunch" Trap: Why the Board Chooses a Strategy of Degradation
 
-If the data from Chapter 1 is so alarming — if senior engineers are slowing down and code churn is exploding — and if the true cost of transformation is 30–120x the license fee (Chapter 2) — why is the industry doubling down on the exact same strategy? Why are smart C-Level executives making decisions that are actively degrading their products?
+Chapter 1 reports different task-time effects in different settings; it does not establish that senior engineers generally slow down. The business question is how adoption decisions account for such variation and for the transformation costs discussed in Chapter 2. The market-pressure explanation below is a proposed mechanism, not a finding of the productivity experiments.
 
 The answer lies not in engineering, but in market pressure. We are witnessing a classic collision between the **Gartner Hype Cycle** and corporate budgeting reality.
 
@@ -317,7 +310,7 @@ The answer lies not in engineering, but in market pressure. We are witnessing a 
 
 The disaster starts long before a developer installs an AI Code Assistant. It starts with the investors.
 
-Driven by reports promising **"55% productivity gains"** and **"democratized coding,"** investors are pressuring Boards to demonstrate an AI strategy *now*. The message to the CEO is clear: **"Adopt AI or become irrelevant."**
+**Adoption-pressure hypothesis:** Headlines about large coding-task gains could encourage rapid rollout or cost-cutting expectations. The [bounded experiments in Chapter 1](#bounded-experiments-positive-negative-and-temporally-limited-evidence) do not measure investor pressure or establish enterprise savings. Evidence about adoption decisions and resulting delivery outcomes would be needed to test this mechanism.
 
 However, the Board faces a dilemma. They demand AI adoption, but they lack a clear understanding of the ROI or the complexity of the necessary transformation. They view AI as a tool (like a faster IDE), not as a change in the operating model.
 
@@ -533,7 +526,7 @@ Until organizations invest in expanding the bottleneck — through automated rev
 * **Goldratt, E. M. (1984):** *The Goal: A Process of Ongoing Improvement.* North River Press. — The foundational text on Theory of Constraints, establishing that optimizing non-bottleneck steps increases inventory without improving throughput.
 * **Theory of Constraints in Software Development:** [Finding and Fixing the Real Bottleneck](https://www.theagilemindset.co.uk/2025/10/07/the-theory-of-constraints-in-software-development-finding-and-fixing-the-real-bottl) — Applied analysis of how AI shifts the coding bottleneck to human review capacity.
 * **AI Code Review Paradox (2025):** [Why AI Coding Speed Gains Disappear in Code Reviews](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/) — Industry analysis confirming AI code requires 2–3x longer review due to plausible bugs hidden in elegant syntax.
-* **Cross-references:** This chapter synthesizes data presented in Chapters 1–2. For primary sources on volume (+131%), complexity (+39%), review load (+6.5%), and rework (+2.4%), see Chapter 1 References (METR, Xu et al., Agarwal et al., GitClear).
+* **Cross-references:** This chapter synthesizes data presented in Chapters 1–2. For primary sources on volume (+131%), complexity (+39%), review load (+6.5%), and rework (+2.4%), see Chapter 1 References (Xu et al., Agarwal et al., GitClear). METR's productivity experiment measures task time, not these measures; the legacy quantitative claims from the other sources remain subject to their separate audits.
 
 ---
 

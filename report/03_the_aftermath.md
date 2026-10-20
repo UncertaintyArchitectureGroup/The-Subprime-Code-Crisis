@@ -11,8 +11,8 @@
 
 ## Chapter 8. Conclusion: The Paradox of Local Solutions and the Necessity of Balance
 
-We began this article with a paradox: Why does everyone feel faster, while the data shows we are slowing down?
-The answer, as we have explored, is that the industry has fundamentally misunderstood the nature of AI in software engineering. We treated AI as a **Tool**—a faster keyboard—when in reality, it acts as a massive, unregulated **Workforce**.
+We began with [different task-time results across experiments](01_the_illusion.md#bounded-experiments-positive-negative-and-temporally-limited-evidence), followed by an update that leaves the current magnitude uncertain. Those results do not establish a universal industry slowdown.
+The report's systems hypothesis is conditional: treating code-generation speed as sufficient evidence of delivery improvement can hide downstream constraints. Its applicability depends on the task, tools, operating model and observed production outcomes.
 
 ### The Trap of the "Silver Bullet"
 

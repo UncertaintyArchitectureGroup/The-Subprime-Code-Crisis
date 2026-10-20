@@ -2,15 +2,15 @@
 
 ## Snapshot
 
-- Observed 2026-10-20; main `06fdd63b332fd4efe27462dbbd648119c3f96ce8`.
-- Issue #52 completion starts from PR #56 candidate
-  `8fc0a4877b7036068c058072dd8121ad1663ead1`; live acceptance/merge evidence is in #52.
+- Observed 2026-10-20; base main `86060ebc08bf03a05a974f826792c5a4e6b9126e`.
+- PR #56 merged; #52 and #47 closed with separate acceptance/default-branch evidence.
+- #57 is active on `work/issue-57-productivity-evidence`; candidate not yet merged.
 - Author-site reference `82b57b8948c6c30143213b846ee2848d06f8d200`.
 - Revalidate refs, issues and checks live; this file cannot establish current status.
 
 ## Active owners
 
-- #47: issue-led work; #52: local RI; implementation remains PR #56.
+- #47/#52: completed workflow/RI baseline, PR #56.
 - #53: evidence backlog; #4: skill-formation input. Do not duplicate these owners.
 - #57–62: bounded source corrections; #63: mechanism; #64: tone; #65: final sync.
 - Older PRs #40/#41/#42/#46 remain separate scope; this handoff does not adopt them.
@@ -21,13 +21,16 @@
   placement and neutral-tone audit with detailed Sol issues.
 - Keep Subprime's source-state gates, original-source authority and independent review.
 - Do not transplant site hosting/release tooling or treat a report as source verification.
-- Complete one issue at a time: #52 implementation, independent review, acceptance,
+- Complete one issue at a time: #57 implementation, independent review, acceptance,
   merged/main verification, evidence and closure; report the next issue before starting it.
 
 ## Evidence
 
 - Baseline: 113 tests, repository contract, evidence-state check and RI verify passed.
-- Current review/check outcomes belong in PR #56 and its dated review artifact.
+- Main CI run 39452749219 passed at `86060eb`; 119 tests passed.
+- #57 primary trace: `reviews/issue-57-2026-10-20-productivity-audit.md`.
+- #57 adds three briefs; statuses remain In progress until independently confirmed
+  corrections are merged and the default branch is verified.
 - Governance/RI independently Confirmed: `reviews/issue-52-2026-10-20-ri-review.md`.
 - Fresh #52 review found and corrected a historical Verified test invariant.
   Corrective review Confirmed at tree `047f455eed71f6ce45c96bd48bc113a429a3758d`;
@@ -41,8 +44,8 @@
 
 ## Next actions
 
-- Complete #52 corrective review, final acceptance and PR #56 main integration.
-- Close only #52 after merged-state evidence; next assess #47's own acceptance.
+- Complete #57 independent review, acceptance and merged/default-branch checks.
+- Close only #57 after final source-state synchronization; next is #58 Xu/Agarwal.
 - Execute the source-audit follow-ups in bounded PRs with original-source locators.
 - Retain partial/blocked acceptance and missing source access explicitly.
-- Merge/canonical adoption requires its own maintainer decision.
+- Do not claim whole-report verification from completion of one source ticket.

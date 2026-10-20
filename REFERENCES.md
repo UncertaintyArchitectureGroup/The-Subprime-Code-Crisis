@@ -20,8 +20,13 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### P-2025-01 — Experienced open-source developer productivity
 
-- METR. [*Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/). July 2025.
-- Status: original research report; detailed repository brief pending.
+- Becker, Rush, Barnes & Rein. [*Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*](https://arxiv.org/abs/2507.09089v2). arXiv v2, 25 July 2025 (v1: 12 July); [METR author report](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/), 10 July 2025.
+- Status: preprint and first-party research report; peer review not established here. [Evidence brief](evidence/primary/2025-metr-experienced-developer-productivity.md) records design, uncertainty and temporal limits.
+
+### P-2026-03 — METR productivity experiment follow-up
+
+- Becker, Rush, Cunningham, Rein & Mahamud. [*We are Changing our Developer Productivity Experiment Design*](https://metr.org/blog/2026-02-24-uplift-update/). METR, 24 February 2026; accessed 20 October 2026.
+- Status: first-party original research update, separately registered from the 2025 trial; peer review not established. [Evidence brief](evidence/primary/2026-metr-productivity-design-update.md) preserves the authors' selection and measurement warnings.
 
 ### P-2025-02 — Long-task capability measurement
 
@@ -40,8 +45,8 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### P-2023-01 — Copilot productivity experiment
 
-- Peng et al. [*The Impact of AI on Developer Productivity: Evidence from GitHub Copilot*](https://arxiv.org/abs/2302.06590). arXiv, 2023.
-- Status: preprint; detailed repository brief pending.
+- Peng, Kalliamvakou, Cihon & Demirer. [*The Impact of AI on Developer Productivity: Evidence from GitHub Copilot*](https://arxiv.org/abs/2302.06590v1). arXiv v1, 13 February 2023.
+- Status: preprint version reviewed. [Evidence brief](evidence/primary/2023-copilot-task-productivity.md) separates randomized participants, completers and conditional time reduction.
 
 ### P-2025-04 — GitClear code-change research
 

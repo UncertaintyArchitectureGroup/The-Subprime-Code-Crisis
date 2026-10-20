@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "3f1ad19b091b661eb33c6bc55c8d576ef5ef400dadcf26e45490d5f3fe804c9c",
+    "digest": "263a270984b9842d474270e735b9f1705d5ccce2670a19c01f2c8a347cfa235f",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "b5bfcb69cc41657824899c2c80ccaa415c09777c2f2688e9bac6b9c702dc8bb2"
+        "sha256": "ec0974572077b458859955033f013f3e1a03735057f6d322c989de764f6c7ac9"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "98f564759977ce510fcbb048a3d1e3edf8883e136aea3c5e77077cc2dd5abf18"
+        "sha256": "f5f22e4e0405af99c46fc23e241a8d34b9e217a57abb6292b58688b659348da7"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "eae6a3c909d7bb0b23de7cbf383d7ab13cff18651fc720cce3707a2228ef4519"
+        "sha256": "c912beca026a339b857c4ae762305da3d81faf550f0def3523002669801f2358"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "3b5f9677cc3c76f5841a541a5e95e4a95529f7c508dbea160b6b3e059033a84f"
+        "sha256": "1127b0a5d805799937502b594fd15778bdd1aa3f2f76a4c5eee38e5f2e28391c"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -155,6 +155,21 @@
         "sha256": "c62c0fc7224c243f29729374bc94fc5bd4e1d18fd24412ab8c53934ae66cda9d"
       },
       {
+        "path": "evidence/primary/2023-copilot-task-productivity.md",
+        "identity_mode": "content",
+        "sha256": "8d7d204e08f6fe9c4c021aa0208d32431167888bfcc1e3ebf048ecedea88b24c"
+      },
+      {
+        "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
+        "identity_mode": "content",
+        "sha256": "0be63b3c611cbfcbd29af6d377947d59335783b4bade28c895c0c0d054864415"
+      },
+      {
+        "path": "evidence/primary/2026-metr-productivity-design-update.md",
+        "identity_mode": "content",
+        "sha256": "f3068f425183c812942bd029b596fd03a46abf9ef6e31a11ac5fa3f802b62768"
+      },
+      {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
         "sha256": "8e4dcc69f02a8213bf7add1d225628939f70de16cfbabf1b77860a7c0daa99df"
@@ -162,7 +177,7 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "423dafd68cf947e6375ffff39e94c9a308c19407854a38e9199cc634633bab5a"
+        "sha256": "6fac64bad5c9a88580fde8694403867ebddbf7c0311a83960e1e8903114bc115"
       },
       {
         "path": "evidence/secondary/README.md",
@@ -212,7 +227,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "6b379304c08fae629c16e0419b1dfb6b8121530411e85a563bc6131bd505488e"
+        "sha256": "a83183b1fb84e0e3082c7aaec9bc4a2e0d0ef47c978ccf95fe8ac5a4691e7294"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -248,6 +263,11 @@
         "path": "governance/reviews/issue-53-2026-10-20-evidence-audit.md",
         "identity_mode": "content",
         "sha256": "ded60e5abe9c881643009f07fa22e0eb8d04cb3bae7e5e3ba39a658e2ecfadd9"
+      },
+      {
+        "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
+        "identity_mode": "content",
+        "sha256": "8f47cb7f70de564901fc0ffb5f2afb0419f27f95f0a99a74dfe4eea12e44d662"
       },
       {
         "path": "governance/status-model.md",
@@ -295,6 +315,11 @@
         "sha256": "a44fa5b8d04e0f66c1a638702fdc55c16555f3854f42faa54c097e9f87cf90b6"
       },
       {
+        "path": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
+        "identity_mode": "content",
+        "sha256": "c1e4d3dd49924862a45682b037ffb3c9c86b35c340fa76465e2971e4698c6a96"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -327,7 +352,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "4b36342d4794ff11f9dda43c377fbaee9b3c833cb86c75650ca42666cd0402fa"
+        "sha256": "312ccf5839b619d9162b92cea85d111956a28d8003d293829493d10c13afe643"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -337,7 +362,7 @@
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "46ef86dfd4db7a8f691b2bf1e3edaefd6b98c0bede29ded968e830db8f5352cb"
+        "sha256": "0ae818250bf01c2dc47990dfe79aa4bdbec0178f9cb7451be9b7b29603f2f808"
       },
       {
         "path": "tests/__init__.py",
@@ -847,12 +872,23 @@
       "id": "P-2025-01",
       "path": "evidence/SOURCES.md",
       "source": "METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Randomized evidence about experienced developers completing familiar open-source tasks with early-2025 tools",
-      "current_use": "Report claims about experienced-developer task completion",
-      "brief_path": null
+      "can_support": "Randomized task-time effect for experienced contributors in familiar mature open-source repositories with early-2025 tools; not a universal seniority effect",
+      "current_use": "`README.md` Evidence Map and outcome boundary; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-metr-experienced-developer-productivity.md"
+    },
+    {
+      "id": "P-2026-03",
+      "path": "evidence/SOURCES.md",
+      "source": "METR, *We are Changing our Developer Productivity Experiment Design* (2026-02-24)",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Follow-up experiment and first-party account of selection and measurement limits; not a reliable estimate of current productivity magnitude",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2026-metr-productivity-design-update.md"
     },
     {
       "id": "P-2025-02",
@@ -891,12 +927,12 @@
       "id": "P-2023-01",
       "path": "evidence/SOURCES.md",
       "source": "Peng et al., *The Impact of AI on Developer Productivity*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "Controlled evidence of task-completion acceleration in a bounded greenfield task",
-      "current_use": "Positive productivity evidence and boundary conditions",
-      "brief_path": null
+      "can_support": "Reduced completion time conditional on completing a standardized JavaScript task; not enterprise throughput or a universal experience effect",
+      "current_use": "`README.md` task-acceleration claim and Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2023-copilot-task-productivity.md"
     },
     {
       "id": "P-2025-04",
@@ -1305,6 +1341,27 @@
       ]
     },
     {
+      "path": "evidence/primary/2023-copilot-task-productivity.md",
+      "title": "Copilot and a standardized programming task",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
+      "title": "METR: familiar open-source tasks with early-2025 tools",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2026-metr-productivity-design-update.md",
+      "title": "METR: follow-up selection and measurement limits",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
       "title": "Writing Code vs. Shipping Code",
       "instructions": [
@@ -1438,6 +1495,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
+      "title": "Issue #57: bounded productivity experiments",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -1496,6 +1560,13 @@
     {
       "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
       "title": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
+      "title": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
       "instructions": [
         "AGENTS.md"
       ]
