@@ -43,8 +43,9 @@
 - Exact-head PR Main health 39475471984/Repository Gate 39475603480 passed;
   trusted transitions/state/Gate were also run locally against base `3849297`.
 - At checked main, Xu/Agarwal were Reviewed brief/In progress/—/Confirmed.
-  This final-state candidate records Verified/2026-10-20 only after all correction
-  completion gates passed; separate final-state review/merge acceptance is required.
+  This final-state candidate records Verified/2026-10-20 after correction gates.
+- Final-state review Confirmed at `d348701`, tree `5d309d1f`; PR #69 records it.
+  Resulting main/CI/source-field acceptance and closure are subsequent live facts.
 - Canonical status is always SOURCES plus brief fields at the inspected ref.
   Later final PR/main/CI/closure evidence belongs to the live #58 completion record.
 

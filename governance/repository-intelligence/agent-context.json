@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "379689395ade53c23ee5eea37c74a9d7446e1bd0c4e0f72de82d7281f328afcd",
+    "digest": "b65bd6e76c7973fb5d71942cca44dd32240e297812eb28052be2f411af76b329",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -237,7 +237,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "788a854819bceb85493afb602e2d660e829ed6c53de6f56169faeaba1e97614b"
+        "sha256": "b46d6b37f70b94acdfc2c0b02348399e3d8298ad76ba8965100594d6ce5c5985"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -282,7 +282,7 @@
       {
         "path": "governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md",
         "identity_mode": "content",
-        "sha256": "53d0ae047a2036d4756da491acefb6fa832ef312c46c5c0442ed052da5b135d9"
+        "sha256": "0e24cd30a60e89347e1f6ea4be9fe21f5cad7db03f993b7d849b51bb0818b21a"
       },
       {
         "path": "governance/status-model.md",
@@ -342,7 +342,7 @@
       {
         "path": "governance/work-records/2026-10-20-issue-58-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "b5cc399ec0a10498a716a137a2eca42047d6b7ab3dd1648cc742fb795e83c201"
+        "sha256": "a008d26beb0577ff54898b0e9972ddad9d68d5f3ba14eede395d2f5af93848f1"
       },
       {
         "path": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
