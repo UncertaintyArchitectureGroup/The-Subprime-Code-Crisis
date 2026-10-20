@@ -2,7 +2,7 @@ record_version = 1
 title = "Issue #60: exact cost sources and a conditional cash/capacity sensitivity candidate"
 primary_flow = "Flow B — legacy cost sources; explicit Flow A registration of two underlying originals"
 human_decision = "Maintainer's evidence/numeric/placement/neutral-tone correction and latest explicit Sol-implementation plus concrete Astra-handoff request. Start comment6299649422; pre-edit findings/treatment/alternatives6299802975. Implement a reversible scoped draft, not a presumed Astra economic/model/placement approval or new governance rule. Detailed trace and decision boundaries in governance/reviews/issue-60-2026-10-20-cost-audit.md."
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 
 [changelog]
 decision = "Updated"
@@ -17,3 +17,8 @@ contributor-guidance = "Model appendix documents reproduction/limits; no contrib
 # Astra's economic/model-choice/placement acceptance remains an explicit pending
 # issue-specific handoff. No merge-readiness, completion, Verified or closure is
 # inferred from implementation checks or an independent execution review.
+
+# Independent /root/review_issue60_implementation confirmed the bounded Sol
+# correction candidate 9c5e12039b6a3895ae78c48157dd053b231faade, tree
+# dca2170547449cd11df55e590dcb9c88b431e6cc, on 2026-10-20 after R1/R2 re-review.
+# Original review/correction history and independent checks are in the audit.

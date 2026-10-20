@@ -1,9 +1,9 @@
 +++
 source_ids = ["P-2025-06"]
 evidence_review = "Reviewed brief"
-integration_audit = "Corrections required"
+integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/appendices/cost-context.md", "evidence/secondary/2026-inference-cost-commentary.md", "REFERENCES.md"]
 +++
 
@@ -35,11 +35,11 @@ Ch2 provides a short qualified market-context pointer. The appendix holds the ex
 
 ## Repository integration audit
 
-- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Audit owner /root, 2026-10-20; integration **Corrections required**, Last verified **—**.
+- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Audit owner /root, 2026-10-20; integration **In progress**, Last verified **—**.
 - [Occurrence/placement trace and Astra handoff](../../governance/reviews/issue-60-2026-10-20-cost-audit.md) cover every material use, arithmetic, nearby conclusions, README and all protocols. Protocol outcome: **No protocol change**; no monetary threshold or validated ROI follows from this source.
 - Corrections are a reviewable #60 candidate. Full economic/model-choice acceptance by Astra, merged corrections and checked main remain required; no Verified promotion.
 
 ## Independent review
 
-- Primary /root; independent /root/review_issue60_implementation, 2026-10-20: **Corrections required** at `11f87dfb734f752511730ac58dd8dada3447d645`, tree `68ab1eb8618a4bf95e008907e03a7b45611b4218` (remote PR #72 head `81f4007bfbe4d5501e40fa8c41b102306e3d0a3d`, identical tree). Originals/source values and all 24 model outputs matched; two repository integration defects identified (Ch3 unsupported quantified adverse costs; index placement). Corrected candidate awaits repeated independent review; full findings/checks in the audit.
+- Primary /root; independent /root/review_issue60_implementation, 2026-10-20: **Confirmed**, bounded Sol implementation/source/arithmetic review of `9c5e12039b6a3895ae78c48157dd053b231faade`, tree `dca2170547449cd11df55e590dcb9c88b431e6cc` (remote PR #72 commit `8898ee0a9430079ba9a2c55f7c32cd5bf382aca4`, identical tree). Initial findings R1 (unsupported Ch3 quantified adverse costs) and R2 (index placement) independently confirmed resolved. Original-source values, all 24 model outputs, 126 tests and repository/RI/trusted-base checks passed. Full correction history and review limits are in the audit; this outcome does not approve the economic model, merge, Verified or closure.
 - Astra analytical acceptance remains an explicit separate handoff, not inferred from structural checks or a source brief.

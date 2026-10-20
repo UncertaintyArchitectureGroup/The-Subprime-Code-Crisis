@@ -57,7 +57,7 @@ R1=report/01_the_illusion.md. Each row distinguishes wording/inference, numeric/
 | H06 Ch3 opening dependent on Ch2 | Changed cost argument, no empirical threshold | Refer to conditional cost comparison, not measured transformation requirement | Keep transition, no change to task-study figures |
 | H07 Ch3 license=CapEx/inevitablecapacity | Cost classification/relying scenario | A subscription is not automatically capital investment; license approval alone does not prove volume/capacity gap | Narrow dependent paragraph, broader mechanism #63/#64 |
 | H08 Ch3 adoption/impact gap cost explanation | No budget measurement identifies1–3% missing-cost causal mechanism | Remove inference that the survey gap is explained by fixed underfunding share | Bound directly relying paragraph; survey figures await #61 |
-| H09 Ch3 Startup vsEnterprise post-deployment share/loss | No original denominator for80%TCO or guaranteedmillions | Independent R1: withdraw both; conditional additional-work-versus-benefit scenario and weakening observations | Required #60 correction, not deferred tone; re-review pending |
+| H09 Ch3 Startup vsEnterprise post-deployment share/loss | No original denominator for80%TCO or guaranteedmillions | Independent R1: withdraw both; conditional additional-work-versus-benefit scenario and weakening observations | Required #60 correction; independently confirmed resolved at the candidate pinned below |
 | M01 Ch2 market paragraph/appendix | Menlo p2/FollowtheMoney37B/11.5B | Derived+221.7%,3.21739× versus incorrect+320% | Exact figures in context/brief; qualified Ch2 pointer |
 | M02 source boundary/sample | Menlo p18/footnote4,495U.S.,Nov7–25,model/revisedbase | Distinguish modelled market from company invoices, inference-serving exclusions | Near appendix comparison and source brief |
 | M03 CloudZero means/36% | Section01 monthlybudgets62964/85521 | 2024reports versus2025plans, derived35.825233%; not realized all-enterprise spend | Appendix/brief, not local model input |
@@ -85,11 +85,11 @@ Updated: source briefs/registry/class indexes, bibliography, R1 Ch2/direct Ch3 d
 
 | AC | Observable implementation/check | Current result |
 | --- | --- | --- |
-| AC-01 | Each retained moneyvalue traced to exact original line/modelinput; unit/period/formula/uncertainty visible | Implemented; separate execution review pending; final economic acceptance/merge not claimed |
-| AC-02 | Corporate totals confined tocontext, not scenario inputs or attributed AI budgets | Implemented; source/argument review pending |
-| AC-03 | Reproducible conditional model, incremental versusallocated, cash versuscapacity, first versussteadyyear, uncertainties explicit | Arithmetic implemented, seven targetedtests pass; Astra must decide keep/remove and economic boundary |
-| AC-04 | Unsupportedplatformcosts/timelines/pricebenchmark/guidance/1000× withdrawn; CloudZero conflict retained | Implemented; source/occurrence review pending |
-| AC-05 | Separate source/arithmetic/implementation review plus Astra economics/placement; matchednavigation/state | Executionreview pending; Astra analyticalreview pending; no closure/Verified |
+| AC-01 | Each retained money value traced to an exact original line or model input; unit, period, formula and uncertainty visible | Sol implementation/source/arithmetic review Confirmed; Astra economic acceptance and merged result pending |
+| AC-02 | Corporate totals confined to context, excluded from model inputs and attributed AI budgets | Bounded source/implementation review Confirmed; Astra inference and placement acceptance pending |
+| AC-03 | Reproducible conditional model; incremental/allocated, cash/capacity and first/steady year separated | All 24 outputs and seven targeted tests independently checked; Astra must decide keep/revise/remove and economic boundary |
+| AC-04 | Unsupported costs, timelines, price benchmark, guidance and matched 1000× withdrawn; CloudZero conflict retained | Bounded source/occurrence review Confirmed after R1/R2 corrections; Astra analytical acceptance and merged result pending |
+| AC-05 | Separate source/arithmetic/implementation and economic/placement reviews; navigation/state synchronized | Sol review Confirmed; Astra analytical review pending; no closure or Verified |
 
 All issue checkboxes remain open until their entire accepted result is satisfied. All seven source integration fields remain Inprogress/—. Passing tests/RI/Gate cannot establish economic truth or issue completion.
 
@@ -105,9 +105,9 @@ Review **only #60**, using current AGENTS, actual linked draft PR head/base and 
 
 After Astra acceptance, complete required corrections/re-review; inspect actual latestPRhead/base/CI, merge only accepted scope, verify exactmain/reproduction/sourcefields, and use a separate final-state update before Verified. Add completion evidence to PR and issue, tick only wholeACs and close #60 only after accepted merged/checked work. If Astra rejects/defersthemodel, preserve the reason and implement the accepted narrower result. Next planned issue after completed #60 is #61.
 
-## Validation and independent review
+## Validation and independent review — historical pre-review checkpoint
 
-Primary /root; separate independent execution reviewer not yet run. Outcome **Review unavailable** at this pre-review checkpoint, not a claim that review is impossible. Seven targeted model tests and direct decimal checks passed; full repository/RI/trusted-base checks and pinned independent review will be recorded after the candidate is complete. Astra acceptance, merge/main and final verification remain pending.
+At the initial pre-review checkpoint, separate independent execution review had not yet run: **Review unavailable**. This paragraph preserves that checkpoint; the actual review and correction outcome follows below. Astra acceptance, merge/main and final verification remain pending.
 
 
 ### Independent execution review and correction loop — 2026-10-20
@@ -116,6 +116,18 @@ Reviewer /root/review_issue60_implementation, primary /root. **Corrections requi
 
 - **R1 (P2):** Ch3 “Startup vsEnterprise” still asserted untraced80%post-deploymentTCO and guaranteedmillions, contradicting Ch2 and AC01/04. Corrected by withdrawing the share/dollar guarantee and using a conditional cost-risk scenario with possible beneficial alternative; trace H09. This required numeric/nearby-argument correction is within existing authorized scope, not postponed to #64.
 - **R2 (P3):** Menlo/CloudZero bullets under Inclusioncriteria misplaced. Moved both into Evidencebriefs before that heading; RI rebuilt.
-- Candidate corrections require repeated independent review. All seven sources/briefs/workrecord remain **Corrections required / —**, not self-confirmed. No new human decision for these directly authorized fixes.
+- Before repeated review returned, all seven sources/briefs and the work record retained **Corrections required**, with Last verified **—**. No self-confirmation or new human decision was used for these directly authorized fixes.
 
 **Astra remaining exposure made explicit:** R1 Ch3 “The Mechanics of the Execution Mandate” and “The Adoption-Impact Gap” still contain unreviewed survey/board-pressure material; source audits belong #61 and wider causal/rhetorical treatment #64. Ch3’s **Microsoft FY25Q2 revenue reference** is a different source from FY2024 statements D-2024-03 and is not certified by this review. These retained unvalidated neighboring claims must not be presented as #60 verified evidence. Astra should flag any additional directly relying cost blocker for correction under #60, while keeping unrelated source work at its existing owner. R1Ch3’s former80%/guaranteed-dollar claim is corrected here, not included in that deferral.
+
+### Repeated independent review — Sol result ready for Astra
+
+On 2026-10-20, independent reviewer **/root/review_issue60_implementation** returned **Confirmed — bounded Sol implementation/source/arithmetic review** for local candidate `9c5e12039b6a3895ae78c48157dd053b231faade`, tree `dca2170547449cd11df55e590dcb9c88b431e6cc`, trusted base `75ab08ca99fb17dadd9930c2502e8d7c96279191`. Published correction commit `8898ee0a9430079ba9a2c55f7c32cd5bf382aca4` has that identical tree in [draft PR #72](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/72).
+
+The reviewer independently read correction disposition comment6300223311, surrounding Ch3 argument, H09, source-state/body records and the remaining-exposure handoff. R1 and R2 were confirmed resolved with no new implementation finding. Original financial/book/report/chart values, all 24 model outputs, calculator, inputs/results and tests remained unchanged from the substantive initial review. The repeat independently passed **126 tests**, repository contract, evidence-state integrity, fresh RI with **117 inputs**, scenario reproduction, whitespace, trusted-base Repository Gate and evidence transitions. All eight previously Verified registry rows, R2/R3 and protocols remained unchanged.
+
+This actual result is now recorded as independent_review **Confirmed** in the seven briefs and work record. Their integration state is **In progress**, Last verified **—**: Astra economic/model-choice/inference/placement acceptance, any resulting corrections, accepted merge and exact-main/final-state verification are still outstanding. The initial correction outcome is preserved above. Technical/source confirmation does not settle those decisions or permit #60 closure.
+
+The final metadata descendant records this review, handoff and RI; it does not change the reviewed source findings, report argument, model, inputs, outputs or tests. Its exact published head/tree and latest CI evidence are recorded in the PR/#60 handoff comments after publication, avoiding a self-referential commit claim. Initial PR-head CI runs39487576827 and39487576805 passed for `81f4007bfbe4d5501e40fa8c41b102306e3d0a3d`; those runs are not evidence for later heads.
+
+**Copy-ready task for Astra:** independently review #60 and draft PR #72 at its fetched current head/base, starting with the five concrete decisions above. Reopen the exact originals; assess cash/capacity and counterfactual economics, the usefulness or removal of arbitrary scenarios, inference strength and source placement, and remaining directly relying cost claims. Return an allowed outcome with date, full candidate SHA/tree, stable finding IDs, exact paths/source locators, required corrections and AC-01–05 disposition. Do not infer acceptance from Sol's checks, promote sources to Verified, merge/close #60, or start #61 during this review. Return actionable findings to Sol under the same issue.
