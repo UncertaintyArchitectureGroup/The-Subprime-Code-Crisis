@@ -34,4 +34,6 @@ Each brief should include:
 - [`terminology-provenance.md`](terminology-provenance.md) — early located public uses of **Subprime Code** and **The Subprime Code Crisis**, with explicit limits on claims of coinage, influence, and conceptual identity.
 - [`project-provenance.md`](project-provenance.md) — dated public lineage of this repository's own delivery-system formulation: the 2026-01-05 DOU precursor and discussion, 2026-02-06 GitHub repository creation, and 2026-02-10 Subprime Code publication.
 
+- [Microsoft FY25Q2 AI-business run rate](2025-microsoft-fy25q2-ai-run-rate.md) —29 January 2025 issuer statement; overall AI business, not Copilot revenue or customer ROI.
+
 The canonical source identities and statuses are maintained in [`../SOURCES.md`](../SOURCES.md).

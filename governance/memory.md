@@ -2,51 +2,50 @@
 
 ## Snapshot
 
-- Checked 2026-10-21, Europe/Warsaw. #57/#58/#59 completed; #53 open.
-- #60 implementation PR72 merged: main99df79758e29357a40cf862b77b6afe9c5407796,
-  accepted treea67205adc909286f425e041d8dfc352c9293c517; exact-main CI passed.
-- Final seven-source status eligibility independently Confirmed at localcc6d53e;
-  final recording/publication/merge/exact-main checks still precede issue closure.
-- This is a dated hint: reopen live #60/linked PR/main/CI before any action.
+- Checked 2026-10-21, Europe/Warsaw. #57–60 completed; #53/#61 open.
+- Main `2b0f6528f86fc28eaf6d759d283dcd3e098c9127`; #60 PR73 merged and checked.
+- #61 PR76 draft/open: published head `ff1718f6278606b0dba6cea9e97100a00e664413`,
+  tree `0d5dc25a8c82e0801e8c44eae3803308cc2c64f8`; both exact-head CI runs passed.
+- Astra corrections independently Confirmed at `0c7a813` / tree `66713e3f`;
+  faithful recording/publication pending. Reopen live issue/PR/main/checks before acting.
 
 ## Active owners
 
-- #47/#52 completed rules/RI baseline; #53 evidence backlog.
-- #60 final verification; next after completed #60 is #61 secondary/orphans.
-- #62 provenance; #63 NBER/horizons/mechanism; #64 whole-report tone;
-  #65 final synchronization. #4 skill formation. Older PRs40/41/42/46 separate.
+- #47/#52 rules/RI baseline completed. #61 remains the sole active sibling.
+- #61: Astra analytical review; Sol implements/records corrections.
+- #62 provenance; #63 NBER/horizons/mechanism; #64 full-report tone;
+  #65 final synchronization. #4 skill formation; drafts 40/41/42/46 separate.
 
 ## Decisions
 
-- Maintainer authorizes one issue through implementation, substantive independent
-  review, checked integration, evidence and closure; latest continue covers #60.
-- Retain optional hypothetical cash/capacity appendix, not empirical TCO/ROI.
-- A60-01/02/03/04 accepted: conditional transformation, correct quality direction,
-  gross cash/zero avoidance and bounded R2/R3 cost reprises. No new rule/protocol.
-- NBER attachment and wider survey/macro/vendor claims remain #61/#63/#64.
+- Latest maintainer “Астра підхопи” continues one-issue review/verification.
+- Astra start6308011365; findings and exact pre-edit treatment6308071172.
+- Accept identified Deloitte January 2025/Q4 replacement; old edition remains
+  unidentified. S-2025-01 stays unverified even after citation withdrawal.
+- Keep the bounded Horn pair. SoftwareSeni moves to discovery/correction records,
+  without report/protocol Current use. No new empirical result or control.
+- Techno scope is accessible introduction only: no whole-article or doubling
+  validation. Member-only remainder/logs remain unavailable.
 
 ## Evidence
 
-- Trace: reviews/issue-60-2026-10-20-cost-audit.md; initial Astra review
-  reviews/issue-60-2026-10-21-astra-review.md; correction history
-  reviews/issue-60-2026-10-21-sol-corrections.md; final verification
-  reviews/issue-60-2026-10-21-final-verification.md.
-- Both independent Astra reviewers substantively Confirmed local59324326/treeb844181d;
-  recording Confirmed local5aa6b576/treea67205ad; publishedb6e1a41 and merged99df797
-  have that identical final tree. Historical Corrections required findings preserved.
-- Exact PR-head Main health39511852855 and Repository Gate39511850420 success;
-  exact merged-main Main health39511925110 success. Main contract/state/RI/model pass.
-- Seven current source fields synchronized to Reviewed brief/Verified/2026-10-21
-  based on checked merged corrections; eight prior Verified rows unchanged.
-- Premature closed state after PR72 was corrected; issue reopened, comment6303759034.
-  Closing-keyword cause is an inference; final completion gates still apply.
-- Final status-record review/check evidence belongs in the live #60/PR comments;
-  do not infer issue completion from this prepared update or the earlier CI.
+- Source/occurrence trace: reviews/issue-61-2026-10-21-survey-audit.md.
+- Astra findings/decisions: reviews/issue-61-2026-10-21-astra-review.md.
+- /root/astra_review_issue61 returned Corrections required at `1a51ecb`:
+  R61-A01 paired adoption/outcome metrics; R61-A02 conditional prototype example.
+  R61-A03 placement and R61-A04 post-schema label resolved; repeated Confirmed
+  at `32f41ef`, residual-reference delta Confirmed at `0c7a813`.
+- McKinsey/Deloitte distinctions and positive/mixed findings supported; Horn,
+  Microsoft, Stack, Banandre, SoftwareSeni and public Techno originals inspected.
+- Legacy 5 retain reset states; no new Verified. Prior 15 Verified rows/briefs
+  unchanged. Original Sol 126-test/CI evidence remains at its actual old ref.
 
 ## Next actions
 
-- Reopen https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/60
-  and its linked final verification PR. If still open, finish its actual review,
-  publication/merge/exact-main checks, tick proven ACs and close with evidence.
-- If #60 is completed, proceed to #61; do not repeat closed #57–60 work.
-- RI freshness is local-byte validation, not live GitHub or scientific acceptance.
+- Confirm faithful recording of the actual review, then publish/check PR76
+  exact head and integrate the accepted scope. Do not infer new CI from old runs.
+- Check merged main before eligible final source-state updates; nine may qualify,
+  S-2025-01 does not. Independently review the final state record too.
+- Close #61 only after actual acceptance/integration checks and evidence updates.
+  Next sibling #62 after #61 completion; supplied NBER PDF remains #63.
+- RI validates local bytes and reproduces source states; it is not live acceptance.

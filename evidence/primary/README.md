@@ -16,6 +16,10 @@ This directory contains evidence briefs for original empirical studies.
 - [Menlo 2025 enterprise AI market estimates](2025-menlo-enterprise-ai-spend.md) — revised market boundary, derived growth and estimation limits.
 - [CloudZero 2025 AI budget intentions](2025-cloudzero-ai-budget-intentions.md) — respondent reports/plans and unresolved percentage/threshold discrepancy.
 
+- [McKinsey 2025 adoption and value](2025-mckinsey-ai-adoption-value.md) — regular use, EBIT attribution and joint high-performer classification; original self-report survey, not causal ROI.
+- [Deloitte January 2025 Q4 report](2025-deloitte-genai-q4.md) — AI-active leaders, selected advanced initiatives and near-term expectations; positive returns alongside scaling limits.
+- [Stack Overflow 2024 AI attitudes](2024-stackoverflow-ai-attitudes.md) — exact questions/subsamples; not measured productivity, rising fear or overtime.
+
 ## Inclusion criteria
 
 Eligible materials include:

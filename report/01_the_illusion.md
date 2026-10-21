@@ -138,7 +138,12 @@ For the study's methodology, observed findings, model-calibrated estimate, limit
 
 Work intensity could confound historical output comparisons. Neither GitClear dataset measures whether participants worked more hours or felt replacement pressure; its activity percentages cannot identify those mechanisms.
 
-**Repository hypothesis:** Adoption expectations might increase overtime or change task selection in some teams. A local study would need hours, task mix, perceived pressure and an appropriate comparator. Stable hours with sustained downstream gains would weaken the overtime explanation. Survey and practitioner claims about fear/burnout require their own source review (#61); they are not established by the GitClear results.
+**Repository hypothesis:** Adoption expectations might increase overtime or change task selection in some teams. A local study would need hours, task mix, perceived pressure and an appropriate comparator. Stable hours with sustained downstream gains would weaken the overtime explanation. Neither respondent attitudes nor an individual burnout account identifies that causal pathway; they are different evidence from the GitClear results.
+
+
+**Attitudes and practitioner context:** In the [2024 Stack Overflow survey](../evidence/primary/2024-stackoverflow-ai-attitudes.md), 69.6% of 28,142 professional-developer respondents answered No to whether AI threatened their current job (the publisher rounds to 70%). Overall AI favorability was also mostly positive, while other questions recorded trust and context concerns. These self-selected, question-specific responses do not establish rising fear, overtime or measured productivity.
+
+A [Techno Diaries introduction](../evidence/secondary/2025-technodiaries-review-anecdote.md) contains one first-person claim that review time doubled compared with the same period a year earlier, alongside useful assistance on small tasks. The logs and member-only remainder are unavailable. This motivates measurement; it is not a representative senior-developer estimate or a finding that burnout caused the activity changes above.
 
 ---
 
@@ -146,7 +151,7 @@ Work intensity could confound historical output comparisons. Neither GitClear da
 
 Peng's measured task-time reduction is an operational result for a standardized task, not merely sentiment. METR's comparison of forecast and measured time shows that perceptions can diverge from performance in a particular setting. It does not establish that every productivity survey is invalid.
 
-For a claim about enterprise value, ask whether the evidence measures review effort, release completion, defects, production use and total engineering cost over an adequate period. A task experiment alone establishes neither an improvement nor a deterioration in those outcomes. The absence of those measures in these experiments is not evidence that no relevant vendor or external research exists.
+For a claim about enterprise value, ask whether the evidence measures review effort, release completion, defects, production use and total engineering cost over an adequate period. A task experiment alone establishes neither an improvement nor a deterioration in those outcomes. The absence of those measures in these experiments is not evidence that no relevant vendor or external research exists. This is a comparison of the identified sources reviewed here, not a comprehensive search of vendor or enterprise evaluations; task experiments, surveys and documentary revenue statements answer different questions.
 
 **Proposed measurement practice:** Publish task definitions, tool dates, population, comparator and uncertainty alongside the outcome. Keep task-time results, self-reported experience, activity counts and delivery measures separate. Apply the same scope requirements to positive and negative findings.
 
@@ -192,8 +197,8 @@ The practical implication is to measure the complete delivery boundary while ret
 * **GitClear quality (February 2025, v2025.2.5):** [Full original PDF](https://gitclear-public.s3.us-west-2.amazonaws.com/GitClear-AI-Copilot-Code-Quality-2025.pdf) and [brief](../evidence/primary/2025-gitclear-code-quality.md) — 2020–24 operation/clone signals in selected samples; exact fractions, sampling, appendix/body/landing conflicts and projections are distinguished.
 * **GitClear developer output (publisher date 1 October 2025; inspected 20 October 2026):** [Original report](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025) and [brief](../evidence/primary/2025-gitclear-developer-output.md) — separate cohort/aggregation results; positive activity, unobserved AI exposure and internal Method 1 mean discrepancy, not net-delivery productivity.
 * **Demirer, Musolff, and Yang (NBER Working Paper 35275, 2026):** [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](https://www.nber.org/papers/w35275) — Reports substantial attenuation from commits toward projects and releases, and increased application supply without higher early aggregate usage. See the [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) for methodology, limitations, and claim boundaries.
-* **Post-Copilot Burnout (Oct 2025):** [Are AI Assistants Making Senior Developers the New Bottleneck?](https://technodiaries.medium.com/post-copilot-burnout-are-ai-assistants-making-senior-developers-the-new-bottleneck-1689e20364f1) — Senior devs report doubled review time, PR queues described as "tidal wave."
-* **Stack Overflow Developer Survey (2024):** [Developer Survey Results](https://survey.stackoverflow.co/2024/) — Documents rising developer anxiety regarding AI displacement and shifting productivity expectations.
+* **Techno Diaries (29 October 2025):** [Public introduction and source brief](../evidence/secondary/2025-technodiaries-review-anecdote.md) — one unaudited first-person review-time account; member-only remainder unavailable. Practitioner context, not a population estimate.
+* **Stack Overflow Developer Survey (2024):** [AI results](https://survey.stackoverflow.co/2024/ai) and [source brief](../evidence/primary/2024-stackoverflow-ai-attitudes.md) — question-specific attitudes, including mostly favorable sentiment and a majority reporting no current-job threat; not a fear/overtime trend.
 
 ---
 
@@ -273,57 +278,51 @@ A license-only budget can omit additional work needed for a particular rollout. 
 
 ---
 
-### The Adoption-Impact Gap: 88% In, 6% Out
+### Enterprise Surveys: Use, Benefits and Scaling Are Different Outcomes
 
-The scale of this disconnect is not theoretical. It is already measurable at the macro level.
+[McKinsey's November 2025 survey](../evidence/primary/2025-mckinsey-ai-adoption-value.md) collected 1,993 responses in 105 countries between 25 June and 29 July 2025. These are respondent reports about organizations, not a census of companies or an experiment on coding-tool ROI.
 
-McKinsey's 2025 global survey on the state of AI in the enterprise found that **88% of organizations** have adopted AI in some form. Yet only **6% report meaningful impact on EBIT** — the metric that actually reflects whether AI is creating business value, not just activity.
+| Reported measure | Meaning |
+| --- | --- |
+| **88%** | Regular AI use in at least one business function; not necessarily coding-tool licenses or enterprise-wide deployment |
+| **39%** | Any enterprise EBIT impact attributed to AI; most of these respondents attributed less than 5% of EBIT to AI |
+| **About 6%** | Joint high-performer classification: at least 5% of EBIT attributed to AI **and** significant value, following the narrative definition; the brief records the exhibit's slightly different threshold wording |
 
-This is the "Execution Mandate" rendered in aggregate data. Nearly nine out of ten companies have bought the licenses. Fewer than one in fifteen can demonstrate that the investment is paying for itself.
+The report also describes positive use-case cost/revenue benefits and improved innovation, while most organizations remain short of enterprise-wide scaling. The 6% group is not everyone deriving value, and subtracting it from 88% does not estimate unprofitable adoption, a missing-budget share or its cause. Neither regular use nor an EBIT attribution establishes a return after all investment costs.
 
-The reported adoption/impact difference does not identify a missing-cost share or its cause. Chapter 2 no longer claims that licenses fund only 1–3% of a universal transformation budget. A hypothesis about underfunded integration would need local budgets and outcomes; the survey definitions and figures above remain subject to their separate source audit (#61).
+[Deloitte's identified January 2025 quarter-four report](../evidence/primary/2025-deloitte-genai-q4.md) surveyed 2,773 AI-active senior leaders in 14 countries during July–September 2024. For **one selected most advanced/scaled initiative**, 74% reported meeting or exceeding ROI expectations (43% meeting plus 31% exceeding). At the same time, over two-thirds expected 30% or fewer of their current experiments to be fully scaled within 3–6 months. The latter is a near-term expectation, not an observed failure rate.
 
----
-
-### The Blindness of Scale: Vertical Curves vs. Horizontal Planning
-
-This gap between executive planning and technical reality is being acknowledged even by those leading the AI "Renaissance."
-
-**Andreas Horn, Head of AIOps at IBM**, recently noted that software development has crossed a line it cannot uncross. While he advocates for the power of these tools, he highlights a staggering disconnect in leadership planning. While this is social media commentary rather than peer-reviewed analysis, the observation from a senior AI practitioner at a major vendor is notable precisely because it comes from inside the industry:
-
-> *"The curve is going vertical. Most planning is still horizontal."*
-
-This is where the **Subprime Crisis** ignites. Proponents like Horn see a vertical curve of *capability* and predict that the minority of manual coders will be *"smaller than anyone in a boardroom is currently planning for."* But when we intersect this "vertical curve" with **METR's March 2025 data** on *reliability* (a 50% failure rate for tasks requiring 7 hours of expert human work), the danger becomes clear.
-
-Horn's description of a *"patchwork of plausible code that ages badly"* motivates a **capacity-risk hypothesis**: if admitted changes exceed a team's ability to understand and verify them, extra review and rework could outweigh coding gains. The amount of process change, if any, depends on the measured gap. Adequate existing controls, smaller changes or useful review assistance could preserve quality and delivery. The commentary and task-horizon claims above await their separate source audits (#61/#63).
+The surveys have different populations, questions, dates and outcome boundaries. They provide mixed enterprise context, not a common causal estimate or an admission that AI adoption failed. Their findings are compatible with useful gains, scaling challenges and uncertainty about total returns.
 
 ---
 
-### The Startup vs. Enterprise Paradox
+### Market Commentary and Supplier Revenue
+
+> **Context, separate from measured effects:** In personal posts dated 6 February 2026 and 28 January 2026, Andreas Horn respectively [describes favorable agent experience and forecasts rapid capability/employment change](../evidence/secondary/2026-horn-capability-commentary.md), and [argues for engineering constraints around generated code](../evidence/secondary/2026-horn-engineering-commentary.md). These are one author's interpretations, not IBM endorsement, measured boardroom behavior or independent validation of METR. Neither post calibrates this report's delivery-risk scenario.
+
+Supplier revenue answers another question. [Microsoft's 29 January 2025 FY25Q2 release](../evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md) attributes to chairman and CEO Satya Nadella an **annual revenue run rate above $13 billion for the overall AI business**. That is not disclosed Copilot revenue, a full year's recognized revenue or a measure of customer ROI. It cannot identify why customers adopted the tools.
+
+**Repository hypothesis:** Market expectations could influence adoption budgets. Testing the proposed execution-mandate mechanism requires actual decisions, local budgets, capability and delivery outcomes. The surveys, personal commentary and revenue statement do not by themselves show investor coercion, vendor intent or underfunding. Existing controls, smaller changes or useful review assistance could preserve gains without a large transformation programme.
+
+---
+
+### An Illustrative Boundary: Disposable Prototypes and Durable Systems
 
 This illustrative "Execution Mandate" can mislead when it ignores context.
 
-For an early-stage **Startup**, this strategy might actually work. Startups operate on a **"fail fast"** model. Their goal is to validate a hypothesis before they run out of cash. If the code is messy but the product finds product-market fit, they survive to rewrite it.
+Consider a time-limited prototype used to test a product hypothesis, with an explicit decision that its code can be discarded and does not yet carry durable production obligations. Under those assumptions, rapid iteration with bounded verification may be useful. This is an illustrative case, not a description of startups as a class or a guarantee of survival or a later rewrite.
 
-For an enterprise maintaining a durable system, the comparison includes later integration, operation and maintenance as well as initial implementation. No universal post-deployment TCO percentage is established by the sources reviewed in Chapter 2.
+For a startup or an established enterprise maintaining a durable system, the comparison includes later integration, operation and maintenance as well as initial implementation. Organizational age does not remove those obligations. No universal post-deployment TCO percentage is established by the sources reviewed in Chapter 2.
 
 **Conditional cost-risk scenario:** Short-term coding savings could be outweighed by extra verification or maintenance if that additional work exceeds delivered benefits. Reusing sufficient capability or sustaining useful gains at stable or lower comparable cost would weaken this scenario. Neither a lifecycle cost share nor a future dollar loss is measured here.
 
 ---
 
-### The Dashboard Blind Spot
+### Measure Adoption and Delivered Outcomes Together
 
-Why doesn't the C-Suite see this looming crisis? Because they are looking at the wrong dashboard.
+An adoption dashboard can answer whether tools are used. It cannot by itself show whether a defined deployment improved delivery, quality or comparable total cost. The surveys above also record benefits; their scaling limits do not imply that every executive dashboard hides deteriorating code.
 
-Most executive dashboards measure **Activity**, not **Health**.
-* They see: *Number of Commits (Up), Features Released (Steady), AI Adoption Rate (100%).*
-* They do not see: *Code Complexity (Skyrocketing), Technical Debt Ratio (Critical), Maintainability Index (Plummeting).*
-
-McKinsey's data reinforces this: the dashboard shows **88% adoption**. It does not show that only **6% are deriving real value**. The ship is taking on water, but the Captain is only looking at the speedometer.
-
-With **METR's 2025 data** showing that even the best agents reach only **50% reliability** on substantive projects, the "Activity" shown on dashboards is increasingly decoupled from value. Half of that "speed" is simply the rapid accumulation of toxic assets.
-
-Deloitte's 2025 enterprise survey corroborates this shift: organizations are moving from experimentation to demanding measurable ROI — an implicit acknowledgment that the initial "adopt first, measure later" strategy has not delivered as expected.
+**Proposed measurement practice:** Track adoption alongside lead time, completed releases, review effort, quality and operating cost, preserving the population and period for each measure. A local comparison might reveal gains, new constraints or both. A benchmark completion probability is not the share of enterprise changes that become defective assets.
 
 ---
 
@@ -337,12 +336,10 @@ Where measured review, integration or maintenance needs exceed existing capabili
 
 #### References
 
-* **McKinsey & Company (2025):** [The state of AI in early 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) — Global survey: 88% of organizations report AI adoption; only 6% report meaningful EBIT impact. Highlights the gap between deployment activity and business value creation.
-* **METR (March 19, 2025):** [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — AI task horizons are doubling every 7 months; GPT-5.2 handles 7-hour tasks at 50% reliability.
-* **Andreas Horn, IBM (Feb 2026):** ["The most important chart in AI" (Vertical Curves)](https://www.linkedin.com/posts/andreashorn1_𝗧𝗵𝗲-𝗺𝗼𝘀𝘁-𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁-𝗰𝗵𝗮𝗿𝘁-activity-7425435461994635264-IW2S/) — Social media commentary from a senior AI practitioner at IBM on the disconnect between vertical AI capability curves and horizontal boardroom planning.
-* **Andreas Horn, IBM (Feb 2026):** ["AI writes code faster than teams can keep up with" (Vibe Coding)](https://www.linkedin.com/posts/andreashorn1_%F0%9D%97%94%F0%9D%97%9C-%F0%9D%98%84%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%81%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%B1%F0%9D%97%B2-%F0%9D%97%B3%F0%9D%97%AE%F0%9D%98%80%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF-%F0%9D%98%81%F0%9D%97%B5%F0%9D%97%AE%F0%9D%97%BB-activity-7422178629528330240-Z4Bc) — Analysis of "patchwork of plausible code" and entropy acceleration in enterprise codebases.
-* **Deloitte (2025):** [Now decides next: Insights from the leading edge of generative AI adoption](https://www2.deloitte.com/us/en/pages/consulting/articles/state-of-generative-ai-in-enterprise.html) — Enterprise survey documenting the shift from AI experimentation toward ROI accountability, with observations on failure rates in scaling initiatives.
-* **Microsoft (2025):** [FY25 Q2 Financial Results](https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast) — Record Copilot revenue highlights the market-wide "Execution Mandate" and vendor-side incentive structure.
+* **McKinsey (5 November 2025):** [Original survey and pinned PDF in the brief](../evidence/primary/2025-mckinsey-ai-adoption-value.md) — regular use, EBIT attribution and joint high-performer definition remain separate; positive functional benefits and selection limits are retained.
+* **Deloitte AI Institute (January 2025):** [Identified Q4 original and source brief](../evidence/primary/2025-deloitte-genai-q4.md) — July–September 2024 sample; most advanced initiative's ROI expectations and near-term experiment-scaling expectations. Explicit replacement for an unpinned series citation, not a recovered Q3 2025 edition.
+* **Andreas Horn (6 February 2026 / 28 January 2026):** [Capability commentary](../evidence/secondary/2026-horn-capability-commentary.md) and [engineering-risk commentary](../evidence/secondary/2026-horn-engineering-commentary.md) — two personal posts, not organizational endorsement or independent empirical evidence.
+* **Microsoft (29 January 2025):** [FY25Q2 original release and documentary brief](../evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md) — management's overall AI-business annual run rate, not Copilot revenue or customer return.
 
 ---
 
@@ -405,30 +402,26 @@ If arrivals persistently exceed a constrained stage's processing capacity, work 
 
 ### The Inventory Problem
 
-In manufacturing, inventory sitting on the factory floor is a known cost — it takes up space, ties up capital, and degrades over time. In software, the equivalent is even more toxic because it is invisible:
+Queued software work can carry coordination and context costs. The following are possible relationships in this scenario, not measured rates:
 
 * **WIP (Work In Progress):** A larger queue could increase switching costs. [Xu v3](../evidence/primary/2025-xu-copilot-oss-activity.md) finds fewer commits in the core activity quartile, but its review-count increase is uncertain (p=.086). It measures neither WIP nor review hours and does not prove that senior engineers stopped building to triage.
-* **Merge Conflicts:** Grow exponentially as PRs sit longer in the queue. What was a 10-minute merge becomes a 2-hour archeological expedition.
+* **Merge Conflicts:** Longer waits could create extra reconciliation work when overlapping changes continue. The rate depends on the repository and change mix; no exponential multiplier is established here.
 * **Cognitive Load:** More structurally complex changes may be harder to inspect. [Agarwal v2](../evidence/primary/2026-agarwal-agent-adoption.md) reports repository-month complexity estimates of +34.85% (AF) and +42.87% (IF), not human cognitive load or time per review. The proposed link requires direct local measurement.
-* **Stale Context:** By the time a PR reaches the front of the queue, the codebase has moved on. The reviewer must now evaluate code against a state that no longer exists.
+* **Stale Context:** A queued change may need reevaluation against a newer codebase; this depends on intervening changes and available context.
 
-This is not a theoretical concern. Industry analysis confirms that AI-generated code requires **2–3x longer review time** due to plausible bugs hidden within syntactically elegant output — what this report terms "plausible lies."
+**Repository hypothesis:** More or less review effort is possible depending on change size, familiarity, risk and available assistance. Measure review hours and quality directly; no general 2–3× multiplier is established by the retained source set.
 
 ---
 
-### The Binary Choice at the Bottleneck
+### Possible Responses at a Constrained Review Stage
 
-When a senior engineer faces a queue of 30 AI-generated PRs and a sprint deadline, they have exactly two options:
+If review demand exceeds capacity, a team might experience longer queues or pressure to shorten checks. These are adverse possibilities, not the only choices or an observed response distribution.
 
-**Option A: Deep Review (Slow, Safe)**
-Read every line. Understand the logic. Verify edge cases. Reject what doesn't meet standards. This is the correct engineering practice — but at AI-generated volume, it creates a delivery bottleneck that makes the team appear "slow" to management.
+- **Maintain the review boundary:** Intake may have to wait or shrink if review capacity cannot grow. That need not imply burnout or poor delivery management.
+- **Reduce scrutiny without adequate verification:** Some defects could escape. The frequency and consequences require observation; no source here establishes that this is the inevitable or individually rational choice.
+- **Adapt the workflow:** Smaller changes, intake limits, targeted checks or useful review assistance could preserve quality and improve flow.
 
-**Option B: Rubber Stamp (Fast, Dangerous)**
-Skim the PR. Check that tests pass. Trust the AI. Approve. This keeps the dashboard green and the sprint velocity high — but it is the mechanism by which unverified complexity enters production.
-
-Under the pressure of the "Execution Mandate" described in Chapter 3, Option B becomes the rational individual choice even though it is the catastrophic systemic choice. The senior engineer is not lazy or negligent — they are responding to a system that punishes thoroughness and rewards speed.
-
-This is the **Rubber Stamp Trap**: a structural incentive to approve code you haven't fully verified, created not by individual failure but by a system that generates code faster than humans can evaluate it.
+The report's **Rubber Stamp Trap** names the second risk scenario. It does not establish that senior engineers generally approve unverified changes or that adoption necessarily rewards this behavior.
 
 ---
 
@@ -461,9 +454,7 @@ Xu's positive project activity and Agarwal's positive AF activity remain compati
 #### References
 
 * **Goldratt, E. M. (1984):** *The Goal: A Process of Ongoing Improvement.* North River Press. — The foundational text on Theory of Constraints, establishing that optimizing non-bottleneck steps increases inventory without improving throughput.
-* **Theory of Constraints in Software Development:** [Finding and Fixing the Real Bottleneck](https://www.theagilemindset.co.uk/2025/10/07/the-theory-of-constraints-in-software-development-finding-and-fixing-the-real-bottl) — Applied analysis of how AI shifts the coding bottleneck to human review capacity.
-* **AI Code Review Paradox (2025):** [Why AI Coding Speed Gains Disappear in Code Reviews](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/) — Industry analysis confirming AI code requires 2–3x longer review due to plausible bugs hidden in elegant syntax.
-* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear's [quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output metrics](../evidence/primary/2025-gitclear-developer-output.md) retain separate samples/units; secondary review-time claims remain a separate audit (#61).
+* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear's [quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output metrics](../evidence/primary/2025-gitclear-developer-output.md) retain separate samples/units.
 
 ---
 

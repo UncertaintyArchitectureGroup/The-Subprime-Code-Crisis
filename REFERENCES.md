@@ -68,6 +68,21 @@ A source appearing here is not automatically peer reviewed, independently valida
 - CloudZero. [*The State of AI Costs in 2025*](https://www.cloudzero.com/state-of-ai-costs/). March 2025 survey; publication day not established; accessed 20 October 2026.
 - [Evidence brief](evidence/primary/2025-cloudzero-ai-budget-intentions.md). Original commercial respondent survey, future plans and internal threshold discrepancy retained; not realized enterprise cost.
 
+### P-2025-08 — AI use, benefits and enterprise EBIT
+
+- McKinsey / QuantumBlack. [*The state of AI in 2025: Agents, innovation, and transformation*](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2025), 5 November 2025.
+- [Primary survey brief and pinned original PDF](evidence/primary/2025-mckinsey-ai-adoption-value.md). Regular use 88%, any enterprise EBIT impact 39% and approximately 6% joint high-performer classification are different constructs; no causal 82-point gap.
+
+### P-2025-09 — Advanced GenAI initiatives and scaling expectations
+
+- Deloitte AI Institute. [*Now decides next: Generating a new future*, quarter-four report](https://www.deloitte.com/content/dam/assets-zone1/nz/en/docs/services/consulting/2025/state-of-gen-ai-q4.pdf), January 2025; July–September 2024 fieldwork.
+- [Primary survey brief](evidence/primary/2025-deloitte-genai-q4.md). Selected most advanced initiatives' ROI expectations and near-term scaling forecasts; positive outcomes and selection limits remain visible. Explicit replacement for an unpinned moving-series reference.
+
+### P-2024-01 — AI attitudes and current-job threat
+
+- Stack Overflow. [2024 Developer Survey: AI](https://survey.stackoverflow.co/2024/ai) and [methods](https://survey.stackoverflow.co/2024/methodology); fielded 19 May–20 June 2024.
+- [Primary survey brief](evidence/primary/2024-stackoverflow-ai-attitudes.md). Question-specific self-reports; 69.6% of 28,142 professional-developer answers report no current-job threat, not a rising fear/overtime effect.
+
 ## Primary documentary sources
 
 ### D-2019-01 — Google engineering-system documentation
@@ -97,17 +112,22 @@ A source appearing here is not automatically peer reviewed, independently valida
 - Vitalii Oborskyi. [*Субпрайм-криза коду: чому AI-асистенти роблять нас повільнішими — і дані це доводять*](https://dou.ua/forums/topic/57846/). DOU, 2026-02-10.
 - Status: reviewed documentary brief with integration audit in progress; these records establish the public development path of this project's own analysis, not phrase coinage or independent validation. See the [project provenance brief](evidence/documentary/project-provenance.md).
 
+### D-2025-07 — FY25Q2 overall AI-business run rate
+
+- Microsoft. [FY25Q2 earnings release](https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast), 29 January 2025; quarter ended 31 December 2024.
+- [Documentary brief](evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md). Satya Nadella's overall AI-business annual run rate above$13 billion; not Copilot revenue, annual recognized receipts or customer ROI.
+
 ## Secondary evidence and industry context
 
-### S-2025-01 — Deloitte enterprise survey
+### S-2025-01 — Retired moving Deloitte series citation
 
-- Deloitte. [*State of Generative AI in the Enterprise*](https://www2.deloitte.com/us/en/pages/consulting/articles/state-of-generative-ai-in-enterprise.html). Q3 2025 edition cited by the report.
-- Status: industry survey and analysis; brief pending.
+- Legacy [generic series URL](https://www2.deloitte.com/us/en/pages/consulting/articles/state-of-generative-ai-in-enterprise.html), now a 2026 overview; historical Q3 2025 edition not established.
+- [Citation-resolution brief](evidence/secondary/2025-deloitte-legacy-citation.md). Retained only for correction history; P-2025-09 supplies the explicitly identified replacement, not a reconstructed original intent.
 
-### S-2025-02 — McKinsey adoption and impact reporting
+### S-2025-02 — Retired Banandre derivative
 
-- Current repository link: [third-party summary of a McKinsey 2025 report](https://www.banandre.com/blog/mckinsey-2025-ai-report-widespread-adoption-limited-impact).
-- Status: secondary link only. Replace with and review the original McKinsey publication before using the figures as load-bearing evidence.
+- Banandre. [*McKinsey’s 2025 AI Report:88% Adoption, 6% Impact, The Enterprise AI Theater Continues*](https://www.banandre.com/blog/mckinsey-2025-ai-report-widespread-adoption-limited-impact), 22 November 2025.
+- [Secondary brief](evidence/secondary/2025-banandre-mckinsey-summary.md). Replaced as numerical support by original P-2025-08; no independent corroboration is counted.
 
 ### S-2025-03 — Inference-cost commentary
 
@@ -116,18 +136,23 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### S-2026-01 — Capability-curve commentary
 
-- Andreas Horn. [*The Most Important Chart in AI*](https://www.linkedin.com/posts/andreashorn1_𝗧𝗵𝗲-𝗺𝗼𝘀𝘁-𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁-𝗰𝗵𝗮𝗿𝘁-activity-7425435461994635264-IW2S/).
-- Status: practitioner commentary; use for framing, not primary empirical support.
+- Andreas Horn. [*The Most Important Chart in AI*: personal post dated 6 February 2026](evidence/secondary/2026-horn-capability-commentary.md).
+- [Original activity 7425435461994635264](https://www.linkedin.com/posts/andreashorn1_%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%BA%F0%9D%97%BC%F0%9D%98%80%F0%9D%98%81-%F0%9D%97%B6%F0%9D%97%BA%F0%9D%97%BD%F0%9D%97%BC%F0%9D%97%BF%F0%9D%98%81%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%81-%F0%9D%97%B0%F0%9D%97%B5%F0%9D%97%AE%F0%9D%97%BF%F0%9D%98%81-activity-7425435461994635264-IW2S/). Personal forecast, not IBM endorsement or independent METR evidence.
+
+### S-2026-02 — Engineering-risk commentary
+
+- Andreas Horn. [*AI writes code faster than teams can keep up with*: personal post dated 28 January 2026](evidence/secondary/2026-horn-engineering-commentary.md).
+- [Original activity 7422178629528330240](https://www.linkedin.com/posts/andreashorn1_%F0%9D%97%94%F0%9D%97%9C-%F0%9D%98%84%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%81%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%B1%F0%9D%97%B2-%F0%9D%97%B3%F0%9D%97%AE%F0%9D%98%80%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF-%F0%9D%98%81%F0%9D%97%B5%F0%9D%97%AE%F0%9D%97%BB-activity-7422178629528330240-Z4Bc). Personal interpretation, not a measured review-time or maintenance effect.
 
 ### S-2025-04 — Code-review bottleneck synthesis
 
-- SoftwareSeni. [*Why AI Coding Speed Gains Disappear in Code Reviews*](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/).
-- Status: practitioner synthesis; brief pending.
+- James A. Wondrasek / SoftwareSeni. [*Why AI Coding Speed Gains Disappear in Code Reviews*](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/), 11 August 2025; unversioned current article inspected 2026.
+- [Secondary brief](evidence/secondary/2025-softwareseni-review-synthesis.md). Discovery/correction record; the reference-only report citation is withdrawn. No 2–3× review multiplier or unreviewed Faros/Harness/DORA quantitative result is adopted.
 
-### S-2025-05 — Senior-developer bottleneck commentary
+### S-2025-05 — One accessible practitioner account
 
-- TechnoDiaries. [*Post-Copilot Burnout: Are AI Assistants Making Senior Developers the New Bottleneck?*](https://technodiaries.medium.com/post-copilot-burnout-are-ai-assistants-making-senior-developers-the-new-bottleneck-1689e20364f1).
-- Status: practitioner reporting; use for context and hypothesis generation.
+- Techno Diaries. [*Post-Copilot Burnout: Are AI Assistants Making Senior Developers the New Bottleneck?*](https://technodiaries.medium.com/post-copilot-burnout-are-ai-assistants-making-senior-developers-the-new-bottleneck-1689e20364f1), 29 October 2025.
+- [Secondary brief](evidence/secondary/2025-technodiaries-review-anecdote.md). Public introduction's single first-person account; member-only remainder unavailable. No population estimate or independently checked logs.
 
 ## Theory and methodology
 

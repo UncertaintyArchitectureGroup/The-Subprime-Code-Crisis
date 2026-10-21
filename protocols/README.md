@@ -110,7 +110,7 @@ A practical adoption sequence is:
 3. Communicate results through bounded, traceable disclosures.
 4. Expand only when organizational ownership, capacity, policy, and pause authority exist.
 
-The reverse sequence is a common failure mode: executives announce broad adoption, teams absorb the output, reviewers become the hidden constraint, and governance is added only after defects or maintenance costs appear.
+A conditional failure scenario is that executives announce broad adoption, review capacity becomes constrained as intake grows, and governance arrives after defects or maintenance costs. The enterprise surveys discussed in [Chapter 3](../report/01_the_illusion.md#enterprise-surveys-use-benefits-and-scaling-are-different-outcomes) do not establish its frequency or causal sequence. Adequate existing capacity and useful downstream gains would limit its applicability.
 
 ---
 
