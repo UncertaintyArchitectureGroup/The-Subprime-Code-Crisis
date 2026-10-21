@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "ef024a524986b5269e9ce4322c41267d67e80f239d33801a7cea6022ec26df5f",
+    "digest": "0c88c002bfcde0cba18b4928ce4440e71b9a2f4dd14dbbd0d9fc00a90ee6cc47",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -342,7 +342,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "9e189df441537715e4701ca5c5788a86a7630a473473cc7d28303a1c6a0a64c1"
+        "sha256": "8171f59726f51e3e71ca90fc535292ef235dbb3d8e38f7eb91555c09db3989b9"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -442,7 +442,7 @@
       {
         "path": "governance/reviews/issue-63-2026-10-21-mechanism-audit.md",
         "identity_mode": "content",
-        "sha256": "9727b5b962dedcc7015e8d5c0294bab8c4fff09659959aeb7f31bf767ccaa374"
+        "sha256": "3a8adb19e27bbfe041520dd8b3249dd98e23bcb3fbd3bfb862680434b4bec727"
       },
       {
         "path": "governance/status-model.md",
