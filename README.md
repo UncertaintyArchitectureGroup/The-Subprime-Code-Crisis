@@ -28,7 +28,7 @@ See the [dated backlog audit](governance/issue-backlog-audit.md),
 
 1. **Empirical finding:** AI tools can accelerate isolated coding work.
 2. **Systems inference:** Local code-generation speed does not guarantee end-to-end software-delivery throughput.
-3. **Evidence-backed inference:** Additional output can shift constraints into downstream verification and delivery stages.
+3. **Systems hypothesis:** Additional admitted work may strain a downstream stage when effective capacity and work policies cannot absorb it; successful adaptation can preserve useful gains.
 4. **Repository risk framing:** The risk comes from unmanaged adoption and insufficient verification capacity, not from AI assistance alone.
 5. **Proposed practice:** Redesign the delivery control system rather than reject the technology.
 
@@ -57,9 +57,9 @@ The **Claim confidence map** evaluates selected repository conclusions: what kin
 | ---------------------------------------------------------------------------------------------- | ------------------------- | ----------- |
 | AI tools can accelerate isolated coding tasks                                                  | Empirical finding         | High        |
 | Local code generation speed does not guarantee SDLC throughput                                 | Systems inference         | High        |
-| AI-assisted coding can shift bottlenecks into review, QA, security, and maintenance            | Evidence-backed inference | Medium-High |
+| Additional admitted work may strain downstream verification under the stated conditions | Systems inference | Conditional; stage and prevalence not established |
 | Unmanaged adoption may inflate technical debt                                                  | Risk scenario             | Medium      |
-| Industry-wide “technical bankruptcy” is possible under aggressive cost-cutting adoption models | Warning scenario          | Medium-Low  |
+| Industry-wide “technical bankruptcy” under aggressive cost-cutting adoption models | Warning scenario | Not estimated; no calibrated probability |
 
 Canonical definitions for these claim types are maintained in the [Glossary](GLOSSARY.md); their use is governed by the [Repository Doctrine](DOCTRINE.md#claim-boundaries).
 
@@ -69,7 +69,7 @@ The **Evidence Map** classifies materials by role. It answers a different questi
 
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
-| **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: supplied May version; September re-review pending](evidence/primary/2026-writing-code-vs-shipping-code.md); [Peng bounded Copilot experiment](evidence/primary/2023-copilot-task-productivity.md); [METR early-2025 task-time RCT](evidence/primary/2025-metr-experienced-developer-productivity.md) and [2026 follow-up with identification limits](evidence/primary/2026-metr-productivity-design-update.md); [METR long-task definition; full review pending](evidence/primary/2025-metr-task-horizon.md); [Xu OSS activity/rework with proxy and uncertainty limits](evidence/primary/2025-xu-copilot-oss-activity.md); [Agarwal adoption-mode activity/structure estimates](evidence/primary/2026-agarwal-agent-adoption.md); [GitClear historical code-change/clone signals](evidence/primary/2025-gitclear-code-quality.md) and [separate developer-output measures](evidence/primary/2025-gitclear-developer-output.md); [Menlo market-size estimates](evidence/primary/2025-menlo-enterprise-ai-spend.md) and [CloudZero budget intentions](evidence/primary/2025-cloudzero-ai-budget-intentions.md), distinct from delivery outcomes; [McKinsey 2025 adoption/value](evidence/primary/2025-mckinsey-ai-adoption-value.md), [Deloitte Q4 reported ROI/scaling expectations](evidence/primary/2025-deloitte-genai-q4.md) and [Stack Overflow 2024 attitudes](evidence/primary/2024-stackoverflow-ai-attitudes.md), distinct respondent-reported outcomes |
+| **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: September revision, positive releases and bounded attenuation](evidence/primary/2026-writing-code-vs-shipping-code.md); [Peng bounded Copilot experiment](evidence/primary/2023-copilot-task-productivity.md); [METR early-2025 task-time RCT](evidence/primary/2025-metr-experienced-developer-productivity.md) and [2026 follow-up with identification limits](evidence/primary/2026-metr-productivity-design-update.md); [METR v1 long-task methods and verification limits](evidence/primary/2025-metr-task-horizon.md); [Xu OSS activity/rework with proxy and uncertainty limits](evidence/primary/2025-xu-copilot-oss-activity.md); [Agarwal adoption-mode activity/structure estimates](evidence/primary/2026-agarwal-agent-adoption.md); [GitClear historical code-change/clone signals](evidence/primary/2025-gitclear-code-quality.md) and [separate developer-output measures](evidence/primary/2025-gitclear-developer-output.md); [Menlo market-size estimates](evidence/primary/2025-menlo-enterprise-ai-spend.md) and [CloudZero budget intentions](evidence/primary/2025-cloudzero-ai-budget-intentions.md), distinct from delivery outcomes; [McKinsey 2025 adoption/value](evidence/primary/2025-mckinsey-ai-adoption-value.md), [Deloitte Q4 reported ROI/scaling expectations](evidence/primary/2025-deloitte-genai-q4.md) and [Stack Overflow 2024 attitudes](evidence/primary/2024-stackoverflow-ai-attitudes.md), distinct respondent-reported outcomes |
 | **Primary documentary sources** | First-party records used for infrastructure, spending, organizational, and terminology-provenance claims | [Alphabet CY2024](evidence/documentary/2024-alphabet-financial-context.md), [Meta CY2024](evidence/documentary/2024-meta-financial-context.md) and [Microsoft FY2024](evidence/documentary/2024-microsoft-financial-context.md) company-wide filings; [Google historical engineering practices](evidence/documentary/2020-google-engineering-practices.md); [Microsoft FY25Q2 AI-business run rate](evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md), distinct from Copilot revenue/customer ROI; official product documentation; [terminology provenance records](evidence/documentary/terminology-provenance.md); [project-analysis provenance](evidence/documentary/project-provenance.md) |
 | **Secondary evidence and industry context** | Reviews, practitioner analyses, and synthesis used for context without treating them as independent measurements | [Techno Diaries single accessible anecdote](evidence/secondary/2025-technodiaries-review-anecdote.md); Horn’s personal [capability forecast](evidence/secondary/2026-horn-capability-commentary.md) and [engineering commentary](evidence/secondary/2026-horn-engineering-commentary.md); [Markus cost commentary](evidence/secondary/2026-inference-cost-commentary.md); [SoftwareSeni discovery/correction record](evidence/secondary/2025-softwareseni-review-synthesis.md), without live report/protocol use |
 | **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | [Goldratt/Cox methodology and original-access gap](evidence/methodology/1984-the-goal.md); software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
@@ -91,7 +91,7 @@ flowchart TD
 
     A["AI-assisted generation: synthesis starting condition"]
     B["Lower cost of candidate output: repository synthesis"]
-    C["Higher upstream activity: empirical May estimates, P-2026-01"]
+    C["Higher upstream activity: September estimates, P-2026-01"]
     D["Capacity may not scale proportionally: repository synthesis"]
     E["Review, QA, security or architecture constraint: risk hypothesis"]
     F["Rework and maintenance exposure: conditional risk synthesis"]
@@ -102,7 +102,9 @@ flowchart TD
     B --> D
     C -->|empirical support for upstream-growth premise| D
     D -->|If admitted demand strains effective capacity| E
-    E --> F --> G
+    E -->|"If context loss or inadequate checks add work or defects"| F
+    F -->|"If costs persist beyond recovery and adaptation"| G
+    E -->|"Effective adaptation"| I
     D -->|Headroom, controlled intake or useful assistance| I["Useful gains with stable quality: alternative synthesis outcome"]
     G -. possible scenario, not an observed outcome .-> H
 
@@ -113,10 +115,10 @@ flowchart TD
 
 ### Evidence boundary for the map
 
-- **P-2026-01, supplied May 2026 version:** public GitHub activity for more than 100,000 developers plus AI-use telemetry; observational matched event studies and a separate four-marketplace analysis. Coding and release estimates are positive, with attenuation across outcome-specific samples. Early usage proxies cover three platforms; SourceForge supplies a separate entry comparison. The [evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md) pins the May PDF and records the unreviewed September revision; the canonical source is no longer marked Verified.
-- The capacity branch depends on admitted work/risk mix, effective capacity, utilization/variation and WIP/release policy. Headroom and successful adaptation may produce useful gains. The [claim graph and proposed tests](report/appendices/mechanism-hypotheses.md) are repository synthesis pending analytical acceptance; they assign no scenario probabilities.
+- **P-2026-01, September 2026 revision:** selected public GitHub tool cohorts, matched event studies and agent-authored interrupted time series. Coding and release estimates are positive, with outcome-specific populations, uncertainty and magnitude sensitivity. Separate marketplace series use three early-usage proxies, including modest Android growth; SourceForge contributes only an entry comparison. The [brief](evidence/primary/2026-writing-code-vs-shipping-code.md) pins the original and keeps older versions as history. These data support bounded attenuation, not identification of a particular verification stage.
+- The capacity branch depends on admitted work/risk mix, effective capacity, utilization/variation and WIP/release policy. Headroom and successful adaptation may produce useful gains. The [claim graph and proposed tests](report/appendices/mechanism-hypotheses.md) are repository synthesis with separate trigger, endpoint and net-benefit tests; they assign no scenario probabilities.
 - The arrows after the empirical node are **repository synthesis, not one measured causal chain**. P-2026-01 does not establish general code-quality decline, review as the only bottleneck, technical debt, security effects, or Technical Bankruptcy.
-- **Technical Bankruptcy** remains a warning scenario and repository hypothesis, not an empirically measured outcome. The map's final synthesis outcome is **Accumulated delivery-system risk**.
+- **Technical Bankruptcy** remains a warning scenario and repository hypothesis, not an empirically measured outcome. The adverse branch ends in **Accumulated delivery-system risk**; useful gains and recovery remain possible.
 
 The Doctrine defines why these maps remain bounded views rather than substitutes for evidence, report argument, or source status.
 

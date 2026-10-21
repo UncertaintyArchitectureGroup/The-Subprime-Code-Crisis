@@ -36,7 +36,9 @@ A valid comparison also needs manual implementation/review effort and quality; t
 
 The paper reports historical capability progress with a doubling estimate of about **seven months**; that is neither measured code-volume inflation nor exponential liability. Results depend on task distribution, scaffolding, baselining and success level. The March-dated blog now embeds later benchmark data, so later model points cannot be attributed to the original publication date. This report withdraws the unpinned GPT-5.2/6–7-hour threshold instead of treating it as current evidence.
 
-**Hypothesis to test:** More autonomous task scope could increase verification demand, reduce it through better output/tools, or change the task mix. Measure total human effort, quality and delivered outcomes against a comparator. Benchmark horizon alone decides none of those outcomes; [H3 in the claim graph](appendices/mechanism-hypotheses.md) states the missing test.
+**Bounded counterevidence:** In the paper's small internal-PR experiment, scoring each issue took less time than completing it. This is manual benchmark assessment, not comprehensive production verification, but it contradicts equating task duration with required review time.
+
+**Hypothesis to test:** More autonomous task scope could increase verification demand, reduce it through better output/tools, or change the task mix. Measure verification/rework effort separately from total human effort, quality and delivered outcomes against a comparator. Implementation savings can yield net benefit even while verification demand rises. Benchmark horizon alone decides none of those outcomes; [H3 in the claim graph](appendices/mechanism-hypotheses.md) states the missing test.
 
 ### Possible Responses at a Constrained Review Stage
 
@@ -59,7 +61,7 @@ A team could gain useful output while preserving review and learning, or create 
 
 #### References
 *   **GitClear developer output:** [Evidence brief](../evidence/primary/2025-gitclear-developer-output.md) — selected output comparisons and aggregation/window limits; not a staffing or review-time estimate.
-* **METR (March 2025):** [Pinned v1 definition and review boundary](../evidence/primary/2025-metr-task-horizon.md) — benchmark capability measurement; current model thresholds and the full source review remain pending.
+* **METR (March 2025):** [Pinned v1 definition and review boundary](../evidence/primary/2025-metr-task-horizon.md) — historical benchmark methods, limitations and bounded scoring evidence; no current-model threshold adopted.
 
 ---
 
@@ -91,20 +93,15 @@ The relevant question is whether useful review savings exceed setup, supervision
 
 ## Chapter 7. Testing the Delivery Mechanism
 
-The central empirical NBER synthesis belongs in [Chapter 1](01_the_illusion.md#writing-code-vs-shipping-code). It preserves the supplied May version's positive release estimates, cumulative/incremental distinction, selected samples, model calibration and separate descriptive marketplace limits. Attenuation does not establish overall decline, a universal review constraint or the full mechanism below. The [brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) also flags the unreviewed September revision.
+The central empirical NBER synthesis belongs in [Chapter1](01_the_illusion.md#writing-code-vs-shipping-code). It preserves the September revision's positive releases, cumulative/incremental distinction, selected samples, estimation uncertainty and sensitivity, model assumptions and separate marketplace design. Attenuation does not establish overall decline, a universal review constraint or the full mechanism below. The [brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) retains the supplied May version as history.
 
 ### Necessary Conditions and Alternatives
 
 [Chapter 4](01_the_illusion.md#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification) defines the proposed capacity mechanism. It needs **admitted service demand**, effective capacity at required quality, utilization/variation and WIP/release policies. Higher generated volume alone is insufficient. No study reviewed here establishes one causal chain from AI generation through requirements, code review, QA and customer value.
 
-| Proposed hypothesis | Condition and competing explanation | Observation that would weaken it |
-| --- | --- | --- |
-| Additional admitted work grows a downstream queue | Demand/variation exceed effective capacity; release batching, staff absence or changing risk mix could also explain waits | More useful releases, stable/falling WIP and review effort, stable quality under comparable work |
-| Requirements assistance admits low-value work | Selection/acceptance checks do not improve with cheaper drafts; clearer requirements or better task selection could instead reduce waste | Better acceptance outcomes and less rework at comparable total effort |
-| Generated tests miss errors shared with an implementation | Test oracles share an incorrect assumption; independent specifications, review or different tests may detect it | Lower escaped-defect rates and total validation effort against a comparable baseline |
-| Review automation adds net burden | Setup, false positives, missed defects and upkeep outweigh saved inspection effort; narrow automation could instead save work | Sustained net human-effort savings with stable/improved quality and comparable scope |
+The [claim graph and proposed measurements](appendices/mechanism-hypotheses.md) is the single detailed home for H1–H5: demand and waits, context and rework, autonomous scope and verification, net review-automation burden, and requirements/test-oracle risks. Each has an endpoint, trigger, alternatives and observations capable of weakening the local relationship.
 
-These are repository hypotheses, not source-reported population effects. The [claim graph and proposed measurements](appendices/mechanism-hypotheses.md) distinguish findings, model assumptions, hypotheses and scenarios, including null and beneficial outcomes.
+Distinguish **nonactivation/adaptation**, **disconfirmation when the trigger is present**, and **net delivery benefit**. A smaller queue after admission limits does not refute an overload mechanism; it shows a successful response. Lower total effort does not establish lower review effort. Conversely, independently measured exposure with no predicted endpoint change, estimated precisely enough to exclude a meaningful effect, weakens that proposed local link. These are repository hypotheses, not source-reported population effects.
 
 ### Adaptation and Budget Boundaries
 
@@ -114,13 +111,13 @@ Pull/WIP limits, smaller changes, risk-based task selection, useful tests/review
 
 The proposed design in [#54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54) should distinguish beneficial, neutral/mixed and adverse outcomes using a defined comparator, task/risk mix, review/rework effort, queue time, useful releases and quality. No pilot has been run for this chapter. Agree scope, outcome definitions and observation window before collection; resource and data-collection decisions remain with that issue's owner/maintainer.
 
-If coding time falls and useful delivery improves at comparable or lower total effort with stable/improved quality, the overload account is weakened in that setting. If queues or defects rise, compare alternative explanations before attributing them to AI or a particular stage. No probability or industry prevalence is assigned to these scenarios. The broader warning rhetoric in Part 3 remains subject to the separate full-report audit (#64).
+If coding time falls and useful delivery improves at comparable or lower total effort with stable/improved quality, that supports benefit in that setting. It does not by itself refute a simultaneous increase in review demand; check the relevant endpoint and whether the proposed trigger occurred. If queues or defects rise, compare alternative explanations before attributing them to AI or a particular stage. No probability or industry prevalence is assigned to these scenarios. The broader warning rhetoric in Part 3 remains subject to the separate full-report audit (#64).
 
 ---
 
 #### References
 
-- **NBER supplied May 2026 version:** [Chapter 1 synthesis](01_the_illusion.md#writing-code-vs-shipping-code) and [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md); September re-review pending.
+- **NBER September 2026 revision:** [Chapter 1 synthesis](01_the_illusion.md#writing-code-vs-shipping-code) and [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md); original, uncertainty and historical versions pinned in the brief.
 - **Goldratt and Cox:** [Methodology/access-gap record](../evidence/methodology/1984-the-goal.md); interpretive lens, not an empirically identified AI bottleneck or an edition-verified theorem.
 - **Repository synthesis:** [Claim graph, alternatives and proposed tests](appendices/mechanism-hypotheses.md), coordinated with #54; no empirical results inferred from a diagram or protocol.
 

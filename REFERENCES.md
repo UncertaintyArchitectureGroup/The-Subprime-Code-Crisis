@@ -14,9 +14,9 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### P-2026-01 — Writing Code vs. Shipping Code
 
-- Demirer, Musolff & Yang. [*Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*](https://www.nber.org/papers/w35275). NBER Working Paper 35275, **supplied May 2026 version**; publisher lists a September revision not yet integrated.
-- Status: working paper; not peer reviewed.
-- [Version-pinned brief and historical review](evidence/primary/2026-writing-code-vs-shipping-code.md); Flow C re-review/re-verification open.
+- Demirer, Musolff & Yang. [*Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*](https://www.nber.org/papers/w35275). NBER Working Paper 35275, May 2026, **revised September 2026**; exact original and older versions identified in the brief.
+- Status: working paper; authors list QJE revise-and-resubmit, not accepted publication.
+- [Version-pinned brief and preserved history](evidence/primary/2026-writing-code-vs-shipping-code.md); source and integration states are maintained in the registry.
 
 ### P-2025-01 — Experienced open-source developer productivity
 
@@ -31,7 +31,7 @@ A source appearing here is not automatically peer reviewed, independently valida
 ### P-2025-02 — Long-task capability measurement
 
 - METR. [*Measuring AI Ability to Complete Long Tasks*](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/). March 2025.
-- [Pinned arXiv v1 and bounded definition brief](evidence/primary/2025-metr-task-horizon.md), 18 March 2025. Preprint/original measurement report; full review remains in progress. Later embedded chart values are not dated to the March post.
+- [Pinned arXiv v1 methods, findings and limitations](evidence/primary/2025-metr-task-horizon.md), 18 March 2025. Preprint/original measurement report; no current frontier threshold adopted. Later embedded chart values are not dated to the March post.
 
 ### P-2025-03 — Copilot availability and OSS activity
 

@@ -73,9 +73,9 @@ Do not rely on one metric. Pair flow measures with quality and production outcom
 
 | Signal | What it helps detect | Important boundary |
 | --- | --- | --- |
-| **PR cycle time** | Bottleneck migration into review or validation | Segment by change size and risk class |
-| **Review wait time** | Reviewer capacity saturation | Separate waiting from active review effort |
-| **Review effort** | Hidden senior-engineer load | Estimate through review time, comments, rework, or sampled studies |
+| **PR cycle time** | Possible delay requiring stage-level investigation | Separate active work, dependencies and scheduled waits; segment by size/risk |
+| **Review wait time** | Possible mismatch between admitted demand and service | Capacity, risk mix and release policy need independent measurement; waiting alone does not prove saturation |
+| **Review effort** | Verification/rework labor by role | Prefer measured or sampled hours; comments and review counts are proxies, not hours without calibration |
 | **Code churn / early rework** | Changes that fail to stabilize after merge | Define the observation window locally |
 | **Defect escape rate** | Failures discovered after development or review | Normalize by release or change volume |
 | **Change failure rate** | Production changes requiring rollback, hotfix, or remediation | Use a consistent operational definition |
@@ -83,7 +83,7 @@ Do not rely on one metric. Pair flow measures with quality and production outcom
 | **Release completion** | Whether local code output becomes shipped value | Distinguish commits, merged work, releases, and production use |
 | **Work in progress** | Inventory accumulating before constrained stages | Inspect queues by review, QA, security, and release stage |
 
-For a capacity explanation, distinguish generated candidates from admitted/completed/withdrawn work. Compare required verification effort with available time, skills and tooling at the required quality; headcount alone is not effective capacity. Inspect bursts/long-tail waits, task/risk mix, WIP limits and release batching before attributing delay to overload. These clarify the existing measures; they set no new threshold. The [proposed tests](../report/appendices/mechanism-hypotheses.md) coordinate with #54 and contain no collected pilot results.
+For a capacity explanation, distinguish generated candidates from admitted/completed/withdrawn work. Compare required verification effort with available time, skills and tooling at the required quality; headcount alone is not effective capacity. Inspect bursts/long-tail waits, task/risk mix, WIP limits and release batching before attributing delay to overload. Account for opening WIP and withdrawals/transfers. Lower total effort can coexist with greater review effort; an absent trigger or successful adaptation differs from disconfirming a link under that trigger. These clarify the existing measures; they set no new threshold. The [proposed tests](../report/appendices/mechanism-hypotheses.md) coordinate with #54 and contain no collected pilot results.
 
 ### Step 3 — Compare deltas, not isolated numbers
 

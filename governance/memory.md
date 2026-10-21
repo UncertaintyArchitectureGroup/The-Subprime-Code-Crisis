@@ -2,61 +2,48 @@
 
 ## Snapshot
 
-- Checked 2026-10-21, Europe/Warsaw. Live #62 closed/completed; #63 open.
-- Live main ada19312045fd859631bc6e8f230f25582eec084,
-  tree433c034ae15f334a02892adefb849ce49a700e74, exact-main health39549672929 passed.
-- #63 draft PR80 open, not merged: initial head29e1db0ca871e55ae589b737abf823a847fd258e,
-  accepted preparation tree785eb1c91dacf7d5a42224d0cf908f6654004556.
-- Initial exact-head Main health39556773902 / Repository Gate39556773933 passed.
-- This checkpoint records that observed head; later metadata head/CI must be
-  fetched live from PR80/issue63. RI/memory do not certify live or research state.
+- Checked 2026-10-21 UTC. #62 closed, #63 sole active audit issue.
+- Main ada19312045fd859631bc6e8f230f25582eec084, tree433c034ae15f334a02892adefb849ce49a700e74.
+- Observed PR80 draft/unmerged, headeb780074d38d27d036d192b996d2afeac2a5bd78,
+  tree809141fef16fb2723616f274a9b4499836c1ba19; exact health39557228617/gate39557226512 success.
+- Astra edits follow that observation. Fetch live head/CI before claiming current status.
+- RI/memory are navigation/checkpoints, not research or live-state certification.
 
 ## Active owners
 
-- #47/#52 rules/RI and #57–62 completed; #63 sole active sibling.
-- #63 Sol preparation independently Confirmed; Astra analytical/current-version
-  review and final accepted integration remain separate. All whole ACs open.
-- #54 owns proposed pilot design/collection decision, no data collected here.
-- #64 wider report/vendor/macro rhetoric; #65 final synchronization follow #63.
+- #47/#52 rules/RI and #57–62 completed; #63 in Astra correction/review phase.
+- #54 owns future study design/resources/collection, no pilot run here.
+- #64 broader report/vendor/macro rhetoric follows #63; #65 final synchronization.
 - #4 skill formation and publication/site work remain separate.
 
 ## Decisions
 
-- Latest maintainer: Сол підхопи, report/status and concrete Astra handoff.
-- #63 start6309339562, version discovery6309440882,
-  pre-edit treatment6309465344. Bounded treatment already authorized.
-- May supplied NBER remains explicitly historical; September revised original
-  not read/integrated. Primary C and dependent legacy B/C identity resets.
-- Admit/risk/service demand, effective capacity, variation and WIP/release policy
-  condition the queue hypothesis; positive/neutral/adverse outcomes retained.
-- One Ch1 NBER synthesis; Ch7 short link, hypotheses instead of duplicate data.
-- Protocol clarification only: existing metrics/examples, no new controls.
-- Three scoped sources reset/unverified; no Verified promotion or AC closure.
+- Latest maintainer: Астра підхопи. Authorized numeric/source/placement/hypothesis work.
+- Start6309978345 and pre-edit treatment6310154890; primary FlowC and dependent reviews.
+- September NBER original now integrated; May/July bodies retained verbatim as history.
+- H1–5 separate exposure/trigger, verification endpoint and total effort; no probability.
+- One Ch1 NBER synthesis, Ch7 link, detailed cells in brief and tests in appendix.
+- Protocol clarification only; no control, rule, threshold or collection permission added.
+- Three identities stay reset in PR80. Eligible promotion requires separate final verification.
+- Goldratt original inaccessible: non-load-bearing lens; remains incomplete/unverified.
 
 ## Evidence
 
-- reviews/issue-63-2026-10-21-mechanism-audit.md: exact source/number/placement
-  trace N63/H63/M63/Q63, sync, accepted scope and six-step Astra handoff.
-- Supplied May PDF SHA256edf1a41a6e4e4cf562571b5fac79eac07693281f88d460a81ee9f8ce1a1c65bb;
-  Figure1/Table5 independently checked; no marginal async release estimate.
-- Positive releases, sample/proxy and calibrated .25 boundaries preserved;
-  source20.2 prose/20.3 table discrepancy explicit. July body kept verbatim.
-- METR v1 fitted horizon is not global50% error rate or volume doubling.
-  Full review pending; Goldratt original-book access unresolved.
-- report/appendices/mechanism-hypotheses.md: A1–3, H1–5 falsifiers, S1–3
-  outcomes and proposed #54 measures; no pilot results/probabilities.
-- Independent Confirmed1c0d338 source/implementation; Confirmedd5f7b77 faithful
-  recording/tree785eb1c. Trusted gates, RI145 and126tests passed.
-- Other26 Verified rows/24unique briefs and19old work records unchanged.
+- reviews/issue-63-2026-10-21-astra-review.md: original hashes, A63 occurrence/placement
+  trace, independent initial findings, synchronization, criterion mapping and residuals.
+- NBER134-page September original hash a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711.
+- METR45-page v1 hash a630a66414b2e7651c7c7473de0aecf2c2161fca88c7d7d2f16e92c5ae0864c5.
+- Positive releases/Android usage, sample/specification sensitivity and scoring counterexample
+  retained; no raw-data replication or current-model threshold claimed.
+- Independent /root/astra_review_issue63: initial Corrections required at ef5b228/tree809141fe.
+  Corrected source/argument/all-use candidate317bc1a/treeb45614fc Confirmed independently.
+- Sol preparation confirmations preserved; they do not confirm later analytical changes.
 
 ## Next actions
 
-- Revalidate PR80 live exacthead/tree/CI and actual checkpoint-review evidence.
-  Do not repeat accepted Sol implementation or publish a duplicate PR.
-- Astra: acquire/hash/review September NBER under FlowC; decide historical/current
-  treatment; test graph/conditions/falsifiers/map/protocol implications and
-  complete or explicitly resolve METR/Goldratt gaps. No original-access invention.
-- Keep PR80 draft until analytical acceptance. If corrections are needed, implement
-  approved changes and repeat independent review/checks at the new exact head.
-- Accepted merge and exact-main verification precede eligible source promotion
-  and whole AC/issue closure; only then #64, followed by #65.
+- Complete faithful-recording review, trusted final gates and remote exact-head CI.
+- Accepted merge and exact-main verification precede eligible NBER/METR promotion in a
+  separate final-verification PR. Goldratt stays unresolved; do not invent book access.
+- Update ACs with actual evidence and close #63 only after completion; next #64.
+- #64 residuals: Part3 toxic-infrastructure/80–90%/vendor intent/fiduciary/inevitability
+  rhetoric and remaining categorical protocol language; #65 navigation/stack consistency.

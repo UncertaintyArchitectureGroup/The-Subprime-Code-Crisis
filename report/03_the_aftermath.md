@@ -4,7 +4,7 @@
 
 **Table of Contents:**
 *   [Chapter 8. The Paradox of Local Solutions](#chapter-8-conclusion-the-paradox-of-local-solutions-and-the-necessity-of-balance)
-*   [Chapter 9. The Macro-Economic End Game](#chapter-9-the-macro-economic-end-game-the-trajectory-of-crisis)
+*   [Chapter 9. Conditional Industry Scenarios](#chapter-9-conditional-industry-scenarios)
 *   [Chapter 10. The Architecture of Unintended Consequences](#chapter-10-the-architecture-of-unintended-consequences-who-is-actually-to-blame)
 
 ---
@@ -29,27 +29,26 @@ The proposed mechanism depends on the surrounding delivery system. Faster requir
 Compare task and downstream outcomes, including human effort, quality, release performance and operating cost. Expand, adjust or constrain a use case according to that evidence. This is a proposed measurement practice; the studies reviewed here do not establish one inevitable outcome for startups, enterprises or review automation.
 
 ---
-## Chapter 9. The Macro-Economic End Game: The Trajectory of Crisis
+## Chapter 9. Conditional Industry Scenarios
 
 The ["Execution Mandate" in Chapter 3](01_the_illusion.md#chapter-3-the-free-lunch-trap-when-adoption-budgets-miss-delivery-work) is an illustrative budget-risk mechanism, not a measured industry trajectory. The adverse scenarios below explore what could happen where required delivery work remains unfunded. The [cost comparison in Chapter 2](01_the_illusion.md#chapter-2-evaluating-the-cost-of-ai-assisted-delivery) does not establish that every adopter needs a new transformation programme.
 
-We are not asserting that a collapse is inevitable. However, we must recognize the vector of our current movement: **The longer we operate under the "Safe Strategy" of unregulated AI adoption, the higher the probability of a systemic correction.**
-
-Every day that an enterprise prioritizes "Typing Speed" over "Systemic Balance," it adds compound interest to a debt that will eventually come due. If this trajectory remains unchecked, we foresee two potential end games for the industry.
+These are non-exhaustive warning scenarios, not a measured current industry trajectory or forecasts. No calibrated probability, ordering of likelihood or time to failure is established. Persistent costs would require evidence that added work is admitted, capacity or checks are inadequate, harms occur and adaptation fails. Beneficial and mixed outcomes remain possible.
 
 ```mermaid
-graph TD
-    Current[Current Trajectory:\nUnregulated AI Adoption] --> Fork{THE CROSSROADS}
-    
-    Fork -->|Scenario 1: Systemic Shock| Crash[The 'Lehman Moment'\nTrust Collapse & AI Winter 2.0]
-    Fork -->|Scenario 2: The Slow Rot| Rot[Productivity Depression\nRising TCO & Innovation Stagnation]
-    
-    style Crash fill:#ffcccc,stroke:#333,stroke-width:2px
-    style Rot fill:#fff4e6,stroke:#333,stroke-width:2px
-    style Current fill:#e1f5fe,stroke:#333,stroke-width:2px
+flowchart TD
+    A["AI-assisted delivery in a defined setting"] -->|"Useful capability and effective controls"| B["Beneficial delivery outcomes"]
+    A -->|"Gains and costs offset or differ by outcome"| C["Mixed or uncertain outcomes"]
+    A -->|"Persistent uncorrected harm; additional propagation assumptions"| D["Adverse warning scenarios"]
+    D --> E["Abrupt disruption"]
+    D --> F["Prolonged maintenance burden"]
+    D -->|"Successful adaptation"| B
 ```
+
+The wider language and unsupported industry quantities in the scenario descriptions below remain assigned to the full-report audit (#64); #63 does not validate them as empirical claims.
+
 ### Scenario 1: The "Lehman Moment" of AI (Systemic Shock)
-*Low Probability, High Impact*
+*Uncalibrated adverse scenario: abrupt disruption*
 
 In this scenario, the accumulation of "Subprime Code" reaches a critical mass, leading to a sudden, visible collapse of trust.
 *   **The Mechanism:** Just as subprime mortgages were bundled into "safe" assets, toxic AI-generated code is currently being bundled into critical infrastructure (Banking, Logistics, Healthcare).
@@ -57,9 +56,9 @@ In this scenario, the accumulation of "Subprime Code" reaches a critical mass, l
 *   **The Consequence:** The market realizes that the "assets" (codebases) are toxic. Investor trust evaporates. Boards issue panic-driven bans on AI tools. We enter **AI Winter 2.0**, not because the technology failed, but because our *management* of it failed.
 
 ### Scenario 2: The Slow Rot (Productivity Depression)
-*High Probability, High Friction*
+*Uncalibrated adverse scenario: prolonged burden*
 
-This is the more likely outcome. There is no explosion, only a gradual suffocation of innovation.
+This scenario supposes a prolonged burden instead of an abrupt disruption. Its relative likelihood is not established.
 *   **The Mechanism:** The degradation of the SDLC slowly eats away at the engineering capacity of thousands of companies.
 *   **The Process:** Maintenance budgets balloon as teams spend 80-90% of their time fixing the "plausible lies" generated in previous years. Feature delivery grinds to a halt.
 *   **The Consequence:** The industry suffers a **"Productivity Depression."** We end up spending *more* money to build *less* software than we did in 2020. Small and medium businesses, unable to afford the massive refactoring required to clean their codebases, quietly go bankrupt or are acquired for parts.

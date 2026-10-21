@@ -25,6 +25,10 @@ This record supports no measured AI-review multiplier, fixed human capacity, ine
 
 M63-01–04 in the [dated trace](../../governance/reviews/issue-63-2026-10-21-mechanism-audit.md) cover README, R1 Chapter 4, R2 Chapter 7 and bibliography. Removed the categorical source-reference claim that any non-bottleneck optimization necessarily increases inventory without throughput. Protocols use repository proposals rather than a direct book citation. The clarified author/edition identity requires **Needs re-review / Needs re-verification**; the original-access/edition gap remains unresolved. Narrowing the argument does not complete source review.
 
+## Astra disposition
+
+For #63 this source is **non-load-bearing context only**. Original edition/access remains unresolved; the constraint assumptions and tests stand as explicitly authored repository hypotheses. Independent analytical review accepts this bounded disposition, not a completed book review. Neither source state is eligible for promotion without identified original access and its own review/integration work. See the [Astra audit](../../governance/reviews/issue-63-2026-10-21-astra-review.md).
+
 ## Independent review
 
 Independent reviewer `/root/sol_review_issue63` (separate Sol agent) returned **Confirmed** on 21 October 2026 at `1c0d33806824add200e5b215dd1f8194955ec441`, tree `1a8aa6b26b24b9e0901cbb8684443c3c7abd60a7`, for the bounded definition/limitation-disposition and implementation check. See the [dated audit](../../governance/reviews/issue-63-2026-10-21-mechanism-audit.md). This does not complete the full source review, establish original-book access, accept current model results, or replace Astra analytical acceptance. Both canonical source dimensions remain reset and no verification date is proposed.

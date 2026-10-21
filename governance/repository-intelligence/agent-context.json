@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "0c88c002bfcde0cba18b4928ce4440e71b9a2f4dd14dbbd0d9fc00a90ee6cc47",
+    "digest": "194107cbe6e1f002970e6188295de3a0044377e28124d2c512b5cda7696e3922",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "0a7a4275f15e493edd52e025f374b9d6f0696980bec4e72b05c83fa908a09bc2"
+        "sha256": "ed10b1688fb424559e792c5a97a2d98abffd9c11f8419e35050fa00b57ebf003"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "db61c8469d3555d1bae099b11c1a6be11ad714d938810db287f118a0a3eb31bf"
+        "sha256": "e67946930f0470fb9e277f2d98be35253280f4bb25bb282f57d1da6873095264"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "a3ef613a1bfbb1cc7cc004e321a11a73316bdde7f88bcd5907ec3a17d47c5c88"
+        "sha256": "5f45632165c8de874c5d70761bf832a648c5052f86ac3088b14e159eaaae43e3"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "967ecc04a82b623e31fc7c06caf6864592ccd5e98c4a7c34f75c4dc7703da5c2"
+        "sha256": "b9319b16756d1e9ea07b3fd9cc72d5907b71bb3c829d5288421836ac1c004164"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -177,7 +177,7 @@
       {
         "path": "evidence/methodology/1984-the-goal.md",
         "identity_mode": "content",
-        "sha256": "680a97108e3529dca90b4cc7ff82cc8ac52b70a32749deba4c08b670cf2877db"
+        "sha256": "557e6713d41a14fa5e12e65562a5dd168b1b9713cf86f1493bb6b01e5de7a895"
       },
       {
         "path": "evidence/methodology/README.md",
@@ -232,7 +232,7 @@
       {
         "path": "evidence/primary/2025-metr-task-horizon.md",
         "identity_mode": "content",
-        "sha256": "22b5ab872a928e74c6c4f275b98155761b06ef02eb13fc5a11a648428138b5bb"
+        "sha256": "83d6688f38ed6476e3c1376b750413419b30d5a27281afcd32fd132fcd4feea6"
       },
       {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
@@ -252,12 +252,12 @@
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "46ce09cde0b87932c1b7e9e246d4c529923b679399455604d48fb0d25b72a51e"
+        "sha256": "52f1314bfdc94e1715d32457e72d05ed0a1ac6ba8db27483f908ca491fa10b5f"
       },
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "25f47db77247cdeec902d98871fc6d2b4f5f6ed77067b10d87076a49b65f9a0c"
+        "sha256": "96d12bbec4c96b63e51306c3039284e0d57f11263aa89b74c42789791b8ff620"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -342,7 +342,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "8171f59726f51e3e71ca90fc535292ef235dbb3d8e38f7eb91555c09db3989b9"
+        "sha256": "44888f115dec7725a21bca0d7455d18f8dd6e0da2625ea416da2aee2c896d5a4"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -438,6 +438,11 @@
         "path": "governance/reviews/issue-62-2026-10-21-provenance-audit.md",
         "identity_mode": "content",
         "sha256": "bc907a20f164b3de6ffa1a042ca94970fba8afbb26dd0a2386913d306d2fb21f"
+      },
+      {
+        "path": "governance/reviews/issue-63-2026-10-21-astra-review.md",
+        "identity_mode": "content",
+        "sha256": "b8c9828819474d243eb885eb488b15692aaf4354a8745b619a228c5811aa43ed"
       },
       {
         "path": "governance/reviews/issue-63-2026-10-21-mechanism-audit.md",
@@ -552,7 +557,7 @@
       {
         "path": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
         "identity_mode": "content",
-        "sha256": "2d430dd02f60cf206b5371c7aba384dae44443cc78bf3b951ff15b626a3b9c52"
+        "sha256": "34617a7bf48224b759a898e2af185e1166e555cf38fc733929b10866ee6703fd"
       },
       {
         "path": "governance/work-records/README.md",
@@ -567,7 +572,7 @@
       {
         "path": "protocols/02_operational_defense.md",
         "identity_mode": "content",
-        "sha256": "2e96ed133cf51b85794b917ac58b0a9c4b69d7b1b569e996387ddeb68ce2b0f0"
+        "sha256": "8f7173b7d76f90280237c9dec2be78289b22b322bd0f16bd2331b21b606cb296"
       },
       {
         "path": "protocols/03_public_defense.md",
@@ -577,7 +582,7 @@
       {
         "path": "protocols/04_systemic_cure.md",
         "identity_mode": "content",
-        "sha256": "38fa3ecbd587e9f453bb954d79a8e8e8e7a92d952b749693f29921e104bd758f"
+        "sha256": "89ef5b52a4af2b8f99ce13940a35d84e03f82ff27df910b2e5694a9499fa62b2"
       },
       {
         "path": "protocols/README.md",
@@ -587,17 +592,17 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "fe293262f12f0a25a0fb8cd90333248b4adea78bace6b42ece4f6cb0421b0034"
+        "sha256": "c849a35880ef72446ce6d7f83857b012f101b0115062adea85f4aeed16d7c4f2"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "7c3d4bf8ac040f7176940dc0b83551172fccccab16f7729c0cbf7d84a7e89e95"
+        "sha256": "5ecc80e6db62aa2c05f37a728a6eb53b1b4162b7739c2e1c38c2ad9fd5ea40bc"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "f2314cc205142767954b7adf4cb9758fd620c48fdc6263ffd5eac4225f922a33"
+        "sha256": "42140df1b9121c658ddd7c95ee1a535b3f8e4f6121312d1d8132863007ec55e7"
       },
       {
         "path": "report/appendices/cost-context.md",
@@ -607,7 +612,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "e16d9212f834de4937593e059f42350c16f467fc085aa8d9d3cc424b316011e3"
+        "sha256": "2961ff101c0d3c2e92a5bfa06b98f89adf2c01f0d64e2e194b25678ec7550003"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -1132,11 +1137,11 @@
     {
       "id": "P-2026-01",
       "path": "evidence/SOURCES.md",
-      "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275: supplied May 2026 version audited; September revision discovered, not yet reviewed",
+      "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275, May 2026 revised September 2026; original PDF pinned, May history retained",
       "evidence_review": "Needs re-review",
       "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Historical May observational outcome estimates, calibrated model and separate early marketplace proxies; not current-version acceptance or a universal bottleneck",
+      "can_support": "September observational outcome estimates, positive releases, calibrated model and separate marketplace proxies; no identified universal bottleneck",
       "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
     },
@@ -1169,7 +1174,7 @@
       "evidence_review": "Needs re-review",
       "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Fitted benchmark task-horizon definition and bounded historical trend; not current-model thresholds, global reliability or review demand",
+      "can_support": "Historical v1 benchmark methods/trend and bounded internal-PR scoring evidence; not current-model thresholds, global reliability or production review demand",
       "current_use": "`README.md`; `report/02_broken_mechanics.md` Ch5; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2025-metr-task-horizon.md"
     },
@@ -1796,7 +1801,7 @@
     },
     {
       "path": "evidence/primary/2025-metr-task-horizon.md",
-      "title": "METR: task horizon is a benchmark definition",
+      "title": "METR: long-task capability, measurement and verification boundaries",
       "instructions": [
         "AGENTS.md"
       ]
@@ -1824,7 +1829,7 @@
     },
     {
       "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
-      "title": "Writing Code vs. Shipping Code — pinned May audit; revision pending",
+      "title": "Writing Code vs. Shipping Code — September 2026 revision",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2084,6 +2089,13 @@
     {
       "path": "governance/reviews/issue-62-2026-10-21-provenance-audit.md",
       "title": "Issue #62: documentary provenance and occurrence audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-63-2026-10-21-astra-review.md",
+      "title": "Issue #63: Astra source and mechanism review, 21 October 2026",
       "instructions": [
         "AGENTS.md"
       ]
