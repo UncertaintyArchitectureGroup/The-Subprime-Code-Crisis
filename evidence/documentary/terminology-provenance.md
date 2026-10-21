@@ -3,9 +3,111 @@ source_ids = ["D-2025-05", "D-2025-06", "D-2026-04"]
 evidence_review = "Needs re-review"
 integration_audit = "Needs re-verification"
 last_verified = "—"
-independent_review = "Review unavailable"
-current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "REFERENCES.md"]
+independent_review = "Confirmed"
+current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "GLOSSARY.md", "README.md", "REFERENCES.md"]
 +++
+
+# Terminology provenance: dated records and current access
+
+## Current review — 2026-10-21
+
+Primary Flow B with Flow C requirements for changed surfaces. Scope: D-2025-05,
+D-2025-06 and D-2026-04. This is documentary provenance, not an empirical study,
+a definitive etymology or a priority decision. Earlier observations are preserved
+verbatim in the historical section below; they are not silently re-certified.
+
+The source unit is the identified page/listing or attributed publication surface.
+There is no sampled population, treatment, comparator or measured delivery effect.
+Current title/date labels establish what is displayed now, not an immutable
+publication history. No dates are averaged or combined into an origin estimate.
+
+## Current source-access ledger
+
+| ID / surface | Exact URL inspected | Result and locator on 2026-10-21 | Boundary |
+| --- | --- | --- | --- |
+| D-2025-05, Nick Vigier original | https://www.linkedin.com/pulse/subprime-code-how-vibe-coding-could-trigger-next-great-nick-vigier-yu5ve | Readable article; title/author and Published Sep 16, 2025; opening and Subprime Code and the Illusion of Velocity section contain the relevant wording | Supports this dated public-page record, not definitive first use or influence |
+| D-2025-06, registered profile listing | https://uk.linkedin.com/in/igorswiatowski | Fetch returns 999; no original page body read | Earlier title/date listing retained as historical, not freshly verified |
+| D-2025-06, alternate public profile | https://www.linkedin.com/in/igorswiatowski | Retrieval unavailable (DisabledError) | Does not resolve the original access gap |
+| D-2026-04, historical CareerWin URL | https://careerwin.ai/research/the-subprime-code-crisis | Redirects to https://careerwin.ai/research/the-negative-carry-code-crisis ; heading is *The Bad AI Code & Technical Debt Crisis: What Happens When Unverified AI Code Floods the Enterprise*, by Richard Ewing; displayed date 2025-11-12 | Current renamed surface, not an archived November 2025 title/content |
+| D-2026-04, historical concept URL | https://www.richardewing.io/concepts/subprime-code-crisis | 404 | Earlier observation preserved; old page not currently read |
+| D-2026-04, current linked concept | https://www.richardewing.io/concepts/negative-carry-code-crisis | *The Negative-Carry Code Crisis - Research Spec*; Canonical Specification Origin still claims April 2025 (Built In / HackerNoon) | Author's origin claim, not independently established publication date |
+| D-2026-04, concept Origin link | https://builtin.com/ | Origin/Inspect link resolves to the publisher home page, not a dated origin article | Does not verify the April 2025 claim |
+| D-2026-04, publications catalog | https://www.richardewing.io/research/publications | Negative-Carry item has March 2026 / Beehiiv label and links the old-slug Beehiiv page | Catalog metadata, not independent dating of the linked text |
+| D-2026-04, linked Beehiiv page | https://theaieconomist.beehiiv.com/p/the-subprime-code-crisis | Heading *The Subprime Code Crisis*; current page points readers to the blog; no visible publication date in the retrieved page | Current visible use of the old phrase; cannot establish an April, November or March publication date |
+| D-2026-04, historical blog URL | https://www.richardewing.io/blog/the-subprime-code-crisis | Heading *The Negative-Carry Code Crisis*, by Richard Ewing, displayed May 1, 2026 | Current title/date observation; preserve earlier title separately |
+
+Search-index retrieval on this date repeated Światowski's article title
+*The Subprime Code Crisis Has Started* and December 16, 2025 in a cached profile
+extract. The extract was marked crawled five months earlier. It is a discovery/
+historical corroboration lead, not a substitute for reading the registered
+original. No exact dated original or contemporaneous archive was obtained.
+
+The bounded retrieval queried the exact Światowski title/name, LinkedIn article
+paths, indexed archive hits for the old phrase slug, and Ewing's claimed April
+origin. Exact queries and returned limitations are in the owning
+[occurrence/access audit](../../governance/reviews/issue-62-2026-10-21-provenance-audit.md).
+This was targeted source reacquisition, not a systematic first-use search;
+no claim that an archive or earlier publication does not exist follows.
+
+## Findings, author claims and repository interpretation
+
+- **Documented current observations:** readable Vigier wording/date; changed
+  Ewing titles/redirect/access results; catalog label and undated Beehiiv heading.
+- **Historical observations:** the earlier CareerWin/blog titles, old concept
+  account and Światowski listing remain dated repository records below.
+- **Source-author claim:** Ewing's April 2025 origin remains attributed and
+  independently unverified. A current self-labelled canonical or verified page
+  does not independently validate its origin or empirical assertions.
+- **Repository interpretation:** related wording occurs in separately published
+  works; development relationships are unestablished. Independent convergence is
+  one possibility, not an inference established by missing influence evidence.
+- **Naming account:** this project's account of how it selected the name is
+  attributed to its author, not presented as independently reconstructed history.
+
+The old/new surfaces may reflect editing, retitling, syndication, migration or
+other processes. This review does not determine which explanation applies, when
+a change occurred, or anyone's intent. It establishes neither fabrication,
+copying, derivation, ownership nor a single originator. The article arguments
+and quantitative claims are not adopted as empirical support.
+
+## Repository integration audit
+
+- Source IDs/version: the distinguished Ewing surface roles plus identified Vigier article
+  and unresolved Światowski listing, as distinguished above.
+- Owner: Sol; primary Flow B with changed-surface Flow C requirements.
+- Complete source/occurrence trace:
+  [issue #62 audit](../../governance/reviews/issue-62-2026-10-21-provenance-audit.md).
+- Current use: `TERMINOLOGY_AND_ATTRIBUTION.md`, `GLOSSARY.md`,
+  `README.md` Evidence Map navigation, `REFERENCES.md`. Registry/index/history are bookkeeping, not extra empirical
+  corroboration.
+- Numbers checked: page/listing dates and date-label units only; no effect-size
+  claim, elapsed-time estimate or origin-date calculation.
+- Report/maps: no relying empirical finding, confidence or diagram change.
+- **Protocol outcome: No protocol change.**
+- Corrections: separate historical/current observations; replace the assumed
+  independence default; preserve exact source titles and explicit access limits.
+- Canonical state remains **Needs re-review / Needs re-verification / —** for
+  the three IDs sharing this inherited brief. A missing exact dated original and
+  unresolved historical surfaces prevent collective source-flow completion;
+  bounded disposition review does not verify unseen originals.
+
+## Independent review
+
+Actual first review returned **Corrections required** at1a2bfb7. R62-01/02 were
+implemented and independently **Confirmed** atbf8df0f/treeb02dcfbe. The owning
+[dated audit](../../governance/reviews/issue-62-2026-10-21-provenance-audit.md)
+preserves materials, outcomes, exact refs and corrections. This outcome confirms
+the bounded current integration/disposition; it does not verify missing originals
+or infer final source state before accepted merge and exact-main checks.
+
+## Historical review preserved — 2026-08-31 record
+
+The following is the previous brief body, preserved verbatim. Its present-tense
+wording and old Review unavailable outcome describe that earlier review, not
+current source availability or the current completion decision.
+
+<details>
+<summary>Earlier terminology review and source observations</summary>
 
 # Terminology provenance: early located public records
 
@@ -133,3 +235,5 @@ The repository's attributable contribution is the evidence-governed delivery-sys
 - Current publication metadata is not equivalent to an immutable contemporaneous archive record.
 - The Ewing April 2025 origin claim remains unresolved pending an independently inspectable contemporaneous or archived source.
 - Independent review is unavailable for this correction; integration must not be marked `Verified` until the repository's review gate is satisfied.
+
+</details>

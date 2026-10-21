@@ -3,9 +3,103 @@ source_ids = ["D-2026-05", "D-2026-06", "D-2026-07"]
 evidence_review = "Reviewed brief"
 integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Confirmed"
 current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "README.md", "REFERENCES.md"]
 +++
+
+# Project provenance: documentary continuity and creation boundary
+
+## Current review — 2026-10-21
+
+Source IDs D-2026-05/06/07; primary Flow B integration completion. The records
+document the project's author and published formulation. They are not independent
+empirical validation or a complete reconstruction of intellectual history.
+The previous review body and outcome are preserved in the historical section.
+
+## Current source-access ledger
+
+| ID | Exact URL / record | Current result and exact locator | What is not established |
+| --- | --- | --- | --- |
+| D-2026-05 | https://dou.ua/forums/topic/57244/ | Readable article by Vitalii Oborskyi bearing January 5, 15:30; historical record dates it 2026-01-05. Current article discusses generation/verification and delivery constraints. Author comment anchors display 08.01.2026 10:08, 10:33 and 17:29. | Unchanged text since publication, independent validation of its numerical/causal assertions, phrase coinage or all prior influences |
+| D-2026-06 | https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis | Fresh REST response: `created_at = 2026-02-06T17:16:44Z`; `private = false`, `visibility = public` at this inspection | Public visibility at creation or on any other historical date; a release date; earliest private development |
+| D-2026-07 | https://dou.ua/forums/topic/57846/ | Readable article by Vitalii Oborskyi bearing February 10, 08:40; historical record dates it 2026-02-10. Opening refers to January work and reader discussion; current concluding repository invitation links the GitHub report. | When the link was inserted, the repository's historical public opening, independently observed causation or every development influence |
+
+Dates and the GitHub timestamp are the only quantitative provenance claims here.
+The displayed DOU header times have no asserted timezone conversion. The GitHub
+timestamp is explicitly UTC. No date difference is used as a priority measure.
+
+## Documentary findings and interpretation
+
+The current January-dated text contains a precursor to the project's
+generation/verification argument. The inspected January 8 author comments
+distinguish local acceleration from delivery-system outcomes (10:08), discuss
+Value Stream and Review Cycle Time (10:33), and describe participation in public
+discussion without guaranteed influence (17:29). These are records of what the
+author argued; their empirical claims are not revalidated or reused by this audit.
+
+The February opening reports that work on the precursor and discussion led to
+further investigation. **This is an author-reported continuity account.**
+The currently visible link establishes a present publication-to-repository
+connection. It does not independently date the link's insertion.
+
+GitHub independently records repository-object creation, not historical
+public visibility. The creation date falls between the recorded article dates,
+but the combined records do not establish that the repository was public on
+February 6 or February 10. No inspected contemporaneous archive establishes
+the public-opening time in this bounded review.
+
+The reader-facing provenance note therefore says **repository object created**.
+The optional `date-released` in `CITATION.cff` was removed rather than treating
+creation metadata as release evidence. Citation title, author, organization,
+repository URL, license and living-repository version remain unchanged.
+
+## Scope, limits and conflicts
+
+These are first-party documentary records, with no experimental population,
+treatment, comparator or delivery-effect estimate. DOU hosts the author's work;
+hosting is not independent validation. Articles/comments have direct authorship
+interest and mutable current contents. GitHub metadata is authoritative for
+the reported creation field, but its current visibility field is not a history.
+
+The record supports dated author attribution and reported continuity. It does
+not establish exclusive originality, a complete lineage, independent development,
+influence on other authors, copying, legal priority, or empirical truth of the
+delivery-system mechanism. External article titles are preserved exactly.
+
+## Repository integration audit
+
+- Owner: Sol; primary Flow B, affected-source integration audit.
+- Every material occurrence, numeric/date boundary and placement is in the
+  [issue #62 occurrence trace](../../governance/reviews/issue-62-2026-10-21-provenance-audit.md).
+- Current use: `TERMINOLOGY_AND_ATTRIBUTION.md`, `README.md`,
+  `REFERENCES.md`; registry/index and the removed citation date assessed.
+- Corrected: public-object/creation conflation, an overstrong chronology arrow,
+  unsupported citation release date and insufficiently attributed development
+  account. Older observations are preserved below, explicitly superseded.
+- Report finding, confidence maps and operational controls: no change.
+- **Protocol outcome: No protocol change.**
+- Evidence review remains **Reviewed brief**; integration remains **In progress**,
+  date **—**, through correction integration. These bounded records can qualify
+  after actual independent confirmation, accepted merge and exact-main checks;
+  no historical public-opening date is part of their verification scope.
+
+## Independent review
+
+Actual first review returned **Corrections required** at1a2bfb7. R62-01/02 were
+implemented and independently **Confirmed** atbf8df0f/treeb02dcfbe. The owning
+[dated audit](../../governance/reviews/issue-62-2026-10-21-provenance-audit.md)
+preserves materials, outcomes, exact refs and corrections. This outcome confirms
+the bounded current integration/disposition; it does not verify missing originals
+or infer final source state before accepted merge and exact-main checks.
+
+## Historical review preserved — 2026-08-31 record
+
+The following previous brief body is preserved verbatim. Its former public-
+repository wording and chronology are superseded by the explicit creation/
+visibility and current-content limits above. They are not current assertions.
+
+<details>
+<summary>Earlier project provenance review and observations</summary>
 
 # Project provenance: precursor article, repository creation, and Subprime Code publication
 
@@ -206,3 +300,5 @@ No report chapter or operational protocol currently relies on these sources for 
 - **Corrections completed:** primary review corrections above
 - **Human decision required:** maintainer review and merge decision; no `Verified` status may be claimed without independent confirmation.
 - **Review date:** 2026-08-31
+
+</details>

@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "35a4e4474cfb5627d12c22a0a68cbed1b1c51b2554543f16c4042fd5daba49b1",
+    "digest": "5a5dfcf3b3f668afac4fe81ffcda2e79f97534a6feefa2a69b14f0fa651cb1fc",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,12 +62,12 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "de1b5193e4246c564a97ac3151d502fb1f70c2f949584adeeac6c0935329da12"
+        "sha256": "1bb4dff38620d14aedd8fa4957e497efa6d08baedd168084e8697c978c2529d8"
       },
       {
         "path": "CITATION.cff",
         "identity_mode": "content",
-        "sha256": "6e8523ed74a51fd5e5f300dcae92bb0aa727f3fadd1d70e839cb73e30f168798"
+        "sha256": "a3492a01ea794eba777b3c3c1412780ff070c1390474097831495da898ebfcb5"
       },
       {
         "path": "CONTRIBUTING.md",
@@ -82,7 +82,7 @@
       {
         "path": "GLOSSARY.md",
         "identity_mode": "content",
-        "sha256": "af1e332ef1dd003cbc6c4264f8f5b559650e2b790696057cb29fd7683f0d1a0f"
+        "sha256": "2b7ce42499f4de7fcd02b3e37535dde695542467c041fde8bf53e81ab8539761"
       },
       {
         "path": "LICENSE.md",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "cee568555c952e05a3a4f9291d00eda553b2df179812c7a0a88e3557dba8219b"
+        "sha256": "814db4ab8a7f00c906a6a16063f13cff308986498ed0b31ae64deb63c7de137c"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "55912a810c836ce9e1e8d19d9fc1a953d6345f51b31ab2c5d0bc1e251a6bd523"
+        "sha256": "d479b2c73e4b83aa78472c571d6c92808f08ab8f927985fd4922dc0ede9565af"
       },
       {
         "path": "SCOPE.md",
@@ -107,7 +107,7 @@
       {
         "path": "TERMINOLOGY_AND_ATTRIBUTION.md",
         "identity_mode": "content",
-        "sha256": "3fcb343a60b19367b989814d9a04739d30d62c56ed3c56e6bc13fbce4e68b28f"
+        "sha256": "09dbe41609c2399c64fbccdf092a25f1517d8dd8e5d879a491d08a1a640ef290"
       },
       {
         "path": "assets/Pasted image 20260209153307.png",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "5de7064e41a1d229b50c50bca7295527c5245a63d34a5e293d4529f6c03289a0"
+        "sha256": "022e507f42ecdd3e608ee728b3fffcf0956995f45666ff261cf046c18a445212"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -162,17 +162,17 @@
       {
         "path": "evidence/documentary/README.md",
         "identity_mode": "content",
-        "sha256": "5c80f96d089f9d604f8b0734b1b1ca30fd8af53c1ece94b5f64fbf1560e85d38"
+        "sha256": "d764bd2f8cdeded1db156953bc31495c90d977fcd2afaa7b7cf62434e1c727be"
       },
       {
         "path": "evidence/documentary/project-provenance.md",
         "identity_mode": "content",
-        "sha256": "2b23dcd166bf7db971fb2d6c8498256256c485a9431556ef1a0b33198e1d63aa"
+        "sha256": "7d6cd36a106e300442d31480796aac055688f4382df6d7cf340bce9b95f44d31"
       },
       {
         "path": "evidence/documentary/terminology-provenance.md",
         "identity_mode": "content",
-        "sha256": "3c877efac5e49703821113dee7fc188a08d6f8d18208ab96c9848a3dcd7dcbce"
+        "sha256": "04a72cb7a182213f82c7a32badafef1c78fe5fbc2809ddede30f380b7dc79fe3"
       },
       {
         "path": "evidence/methodology/README.md",
@@ -332,7 +332,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "aba178b6c6e994367ab492c864de280a6c24b57358c12e01273bb2d02898dc9c"
+        "sha256": "bd6187d475b735443a024bf351f36d8233e3c714a7ae3ad0767693bba66bd0d4"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -418,6 +418,11 @@
         "path": "governance/reviews/issue-61-2026-10-21-survey-audit.md",
         "identity_mode": "content",
         "sha256": "30c0f161a3788c39892687629973e33f5c1b4776ab20e5910a935e99162ec037"
+      },
+      {
+        "path": "governance/reviews/issue-62-2026-10-21-provenance-audit.md",
+        "identity_mode": "content",
+        "sha256": "bc907a20f164b3de6ffa1a042ca94970fba8afbb26dd0a2386913d306d2fb21f"
       },
       {
         "path": "governance/status-model.md",
@@ -513,6 +518,11 @@
         "path": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
         "identity_mode": "content",
         "sha256": "0645900cf0cbfb6e5aa62acee90a5b9f6d4b9156967fd302bff4b42dd17bcb9f"
+      },
+      {
+        "path": "governance/work-records/2026-10-21-issue-62-provenance.toml",
+        "identity_mode": "content",
+        "sha256": "12527cdf3980f02ba03de9181abd184890e7ae8e63342db3f82cb643a5fe9d7f"
       },
       {
         "path": "governance/work-records/README.md",
@@ -1289,30 +1299,30 @@
       "evidence_review": "Needs re-review",
       "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "The dated public use of “Subprime Code” and “subprime coding crisis” in relation to AI-assisted coding",
-      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md`; terminology provenance brief",
+      "can_support": "Current original-page wording/date; not definitive first use or independent development",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `GLOSSARY.md` provenance boundary; `README.md` Evidence Map navigation; `REFERENCES.md`",
       "brief_path": "evidence/documentary/terminology-provenance.md"
     },
     {
       "id": "D-2025-06",
       "path": "evidence/SOURCES.md",
-      "source": "Igor Światowski, *The Subprime Code Crisis Has Started* (public LinkedIn profile listing dated 2025-12-16)",
+      "source": "Igor Światowski, *The Subprime Code Crisis Has Started* (historical public-profile listing dated 2025-12-16; original access unresolved)",
       "evidence_review": "Needs re-review",
       "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "The dated public listing of an article using the full phrase “The Subprime Code Crisis”",
-      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md`; terminology provenance brief",
+      "can_support": "Previously recorded listing and explicit current access gap; no newly read dated original or independent-development finding",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `GLOSSARY.md` provenance boundary; `README.md` Evidence Map navigation; `REFERENCES.md`",
       "brief_path": "evidence/documentary/terminology-provenance.md"
     },
     {
       "id": "D-2026-04",
       "path": "evidence/SOURCES.md",
-      "source": "Richard Ewing, *The Subprime Code Crisis* — multiple currently accessible provenance surfaces, including a CareerWin page displaying 2025-11-12, a current canonical page claiming an April 2025 origin, a publications catalog displaying March 2026, and a previously reviewed 2026-05-01 article",
+      "source": "Richard Ewing terminology-provenance collection: historical Subprime titles/date claims and separately observed retitled/redirected/current surfaces (2026-10-21)",
       "evidence_review": "Needs re-review",
       "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "The current Ewing-attributed provenance claims, dated public surfaces, and unresolved metadata inconsistencies; not an independently established first origin",
-      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `REFERENCES.md`; terminology provenance brief",
+      "can_support": "Historical observations and current page/author claims; origin dates, revision history and development relationships remain unresolved",
+      "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `GLOSSARY.md` provenance boundary; `README.md` Evidence Map navigation; `REFERENCES.md`",
       "brief_path": "evidence/documentary/terminology-provenance.md"
     },
     {
@@ -1322,7 +1332,7 @@
       "evidence_review": "Reviewed brief",
       "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "A dated public precursor to this repository's delivery-system formulation and preserved refinement around generation/review asymmetry, Value Stream outcomes, review bottlenecks, and validation",
+      "can_support": "Dated author-authored precursor and January 8 discussion; current contents, not independent empirical validation or immutable text history",
       "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `README.md`; `REFERENCES.md`",
       "brief_path": "evidence/documentary/project-provenance.md"
     },
@@ -1333,7 +1343,7 @@
       "evidence_review": "Reviewed brief",
       "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "The platform-recorded creation timestamp of the public repository object",
+      "can_support": "Repository-object creation timestamp and current public visibility only; no historical public-opening or release date",
       "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `README.md`; `REFERENCES.md`",
       "brief_path": "evidence/documentary/project-provenance.md"
     },
@@ -1344,7 +1354,7 @@
       "evidence_review": "Reviewed brief",
       "integration_audit": "In progress",
       "last_verified": "—",
-      "can_support": "The dated public Subprime Code formulation, its stated continuity from the January article/discussion, and its explicit link to the GitHub report",
+      "can_support": "Author-reported continuity and current article-to-repository link; no established link-insertion/public-opening time or independent validation",
       "current_use": "`TERMINOLOGY_AND_ATTRIBUTION.md`; `README.md`; `REFERENCES.md`",
       "brief_path": "evidence/documentary/project-provenance.md"
     },
@@ -1660,14 +1670,14 @@
     },
     {
       "path": "evidence/documentary/project-provenance.md",
-      "title": "Project provenance: precursor article, repository creation, and Subprime Code publication",
+      "title": "Project provenance: documentary continuity and creation boundary",
       "instructions": [
         "AGENTS.md"
       ]
     },
     {
       "path": "evidence/documentary/terminology-provenance.md",
-      "title": "Terminology provenance: early located public records",
+      "title": "Terminology provenance: dated records and current access",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2016,6 +2026,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-62-2026-10-21-provenance-audit.md",
+      "title": "Issue #62: documentary provenance and occurrence audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2144,6 +2161,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
       "title": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-62-provenance.toml",
+      "title": "governance/work-records/2026-10-21-issue-62-provenance.toml",
       "instructions": [
         "AGENTS.md"
       ]

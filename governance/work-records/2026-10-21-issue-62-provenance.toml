@@ -1,0 +1,21 @@
+record_version = 1
+title = "Issue #62: dated documentary provenance and bounded attribution"
+primary_flow = "Flow B — legacy documentary integration; existing Flow C requirements for changed source surfaces and clarified historical identity"
+human_decision = "Maintainer's latest Роби follows the presented #62 plan. Start6308426288 and pre-edit treatment6308477442 record exact current/historical/author-account/independence/creation boundaries. Actual independent Corrections required at1a2bfb7/treee6c209dd; findings and bounded R62-01/02 correction treatment6308619225 precede edits. R62-01 removes remaining immutable-January-content assertion; R62-02 records existing README navigation in terminology Current use. Audit: governance/reviews/issue-62-2026-10-21-provenance-audit.md. No new workflow, control, state definition or empirical finding. No Verified promotion; three grouped terminology records remain unresolved, project records await accepted integration/final gates."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Corrects reader-facing attribution/current-history and creation/public-visibility boundaries; preserves prior observations and records current title/access drift; removes unsupported optional citation release date."
+
+[synchronization]
+assessed_surfaces = ["doctrine", "reader-navigation", "evidence", "source-registry", "evidence-indexes", "references", "report", "protocols", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+report = "No empirical report claim, confidence assessment, mechanism or map meaning relies on these six documentary provenance records."
+protocols = "No protocol change: no control, threshold, role, gate or operating rule depends on the corrected provenance."
+contributor-guidance = "Existing source/claim/approval/review obligations are sufficient; no workflow or contributor-duty change."
+
+# Actual repeated independent review Confirmed atbf8df0fb9396044619a12931b5e2169b2befda26,
+# treeb02dcfbe69de9b223513e6354f4ae68ed3b1abf9. R62-01/02 resolved;
+# faithful recording, publication, accepted merge and exact-main checks follow.

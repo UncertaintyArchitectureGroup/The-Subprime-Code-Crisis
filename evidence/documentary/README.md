@@ -31,8 +31,8 @@ Each brief should include:
 - [Google engineering practices (2020)](2020-google-engineering-practices.md) — historical human/tooling context, no platform-cost estimate.
 - [Alphabet CY2024](2024-alphabet-financial-context.md), [Meta CY2024](2024-meta-financial-context.md) and [Microsoft FY2024](2024-microsoft-financial-context.md) — exact company-wide accounting lines, periods and limits.
 
-- [`terminology-provenance.md`](terminology-provenance.md) — early located public uses of **Subprime Code** and **The Subprime Code Crisis**, with explicit limits on claims of coinage, influence, and conceptual identity.
-- [`project-provenance.md`](project-provenance.md) — dated public lineage of this repository's own delivery-system formulation: the 2026-01-05 DOU precursor and discussion, 2026-02-06 GitHub repository creation, and 2026-02-10 Subprime Code publication.
+- [`terminology-provenance.md`](terminology-provenance.md) — preserved earlier observations and a separate 2026-10-21 access/version record; no established coinage or independent-development finding. Exact inaccessible historical records remain unresolved.
+- [`project-provenance.md`](project-provenance.md) — author-reported continuity across the January/February DOU records and the GitHub object-creation timestamp; historical public opening and repository-link insertion remain unestablished.
 
 - [Microsoft FY25Q2 AI-business run rate](2025-microsoft-fy25q2-ai-run-rate.md) —29 January 2025 issuer statement; overall AI business, not Copilot revenue or customer ROI.
 
