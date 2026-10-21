@@ -1,8 +1,8 @@
 +++
 source_ids = ["S-2025-04"]
-evidence_review = "Needs re-review"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+evidence_review = "Reviewed brief"
+integration_audit = "Verified"
+last_verified = "2026-10-21"
 independent_review = "Confirmed"
 current_use = ["README.md", "REFERENCES.md"]
 +++
@@ -120,3 +120,14 @@ placement/synchronization are resolved. The [Astra record](../../governance/revi
 preserves exact checks, actual prior source access and eligibility limits.
 This confirmation precedes accepted integration and exact-main verification;
 canonical identity-reset/In progress states remain, with no verification date.
+
+## Final integration verification — 2026-10-21
+
+Canonical state: **Reviewed brief / Verified / 2026-10-21**; actual substantive
+independent outcome **Confirmed**. Accepted corrections merged in PR76 at
+`3f9d24993c18d3f25e43e3f4baf6cb1fccb43541`, tree
+`1725d28e747efa57d6efad19ddbe5ffc8067473c`, identical to the independently checked
+candidate. Exact-main CI, contract/state/RI and the complete occurrence/placement
+and source-scope gates were checked. The [final verification record](../../governance/reviews/issue-61-2026-10-21-final-verification.md)
+records eligibility, actual final-state review and publication evidence. Earlier
+pending states above are historical checkpoints, not the current canonical state.
