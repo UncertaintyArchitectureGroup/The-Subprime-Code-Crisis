@@ -306,13 +306,13 @@ Supplier revenue answers another question. [Microsoft's 29 January 2025 FY25Q2 r
 
 ---
 
-### The Startup vs. Enterprise Paradox
+### An Illustrative Boundary: Disposable Prototypes and Durable Systems
 
 This illustrative "Execution Mandate" can mislead when it ignores context.
 
-For an early-stage **Startup**, this strategy might actually work. Startups operate on a **"fail fast"** model. Their goal is to validate a hypothesis before they run out of cash. If the code is messy but the product finds product-market fit, they survive to rewrite it.
+Consider a time-limited prototype used to test a product hypothesis, with an explicit decision that its code can be discarded and does not yet carry durable production obligations. Under those assumptions, rapid iteration with bounded verification may be useful. This is an illustrative case, not a description of startups as a class or a guarantee of survival or a later rewrite.
 
-For an enterprise maintaining a durable system, the comparison includes later integration, operation and maintenance as well as initial implementation. No universal post-deployment TCO percentage is established by the sources reviewed in Chapter 2.
+For a startup or an established enterprise maintaining a durable system, the comparison includes later integration, operation and maintenance as well as initial implementation. Organizational age does not remove those obligations. No universal post-deployment TCO percentage is established by the sources reviewed in Chapter 2.
 
 **Conditional cost-risk scenario:** Short-term coding savings could be outweighed by extra verification or maintenance if that additional work exceeds delivered benefits. Reusing sufficient capability or sustaining useful gains at stable or lower comparable cost would weaken this scenario. Neither a lifecycle cost share nor a future dollar loss is measured here.
 
@@ -454,8 +454,7 @@ Xu's positive project activity and Agarwal's positive AF activity remain compati
 #### References
 
 * **Goldratt, E. M. (1984):** *The Goal: A Process of Ongoing Improvement.* North River Press. — The foundational text on Theory of Constraints, establishing that optimizing non-bottleneck steps increases inventory without improving throughput.
-* **SoftwareSeni / Wondrasek (11 August 2025; current text inspected 2026):** [Practitioner synthesis brief](../evidence/secondary/2025-softwareseni-review-synthesis.md) — context/discovery only; its underlying reports are not adopted as a measured review-time multiplier.
-* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear's [quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output metrics](../evidence/primary/2025-gitclear-developer-output.md) retain separate samples/units; no quantitative review-time estimate from the secondary synthesis calibrates this scenario.
+* **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear's [quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output metrics](../evidence/primary/2025-gitclear-developer-output.md) retain separate samples/units.
 
 ---
 

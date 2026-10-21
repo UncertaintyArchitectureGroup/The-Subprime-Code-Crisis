@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "f2280cdbe54c966fee97d6da7deaf2b8d6c5b973ccad4ec4ef5f33df1ddba6a9",
+    "digest": "779d68a86b2e887c75bb997833057a057b6b61aa037e586825c8bebfc26c9d89",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "d0fe0fdfe5cca3a7b190c3d4564519d88f9e183b5ccddf0ae43c539d5599e407"
+        "sha256": "de1b5193e4246c564a97ac3151d502fb1f70c2f949584adeeac6c0935329da12"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "bb5719732cb140c6a6dee0bf0115d4bdb9ae04f722ffca6558b01e8a68d96c9c"
+        "sha256": "cee568555c952e05a3a4f9291d00eda553b2df179812c7a0a88e3557dba8219b"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "94c10e97ead45d90512b15b6fc130a17cc7584292bb23e41c0fd181605933f58"
+        "sha256": "55912a810c836ce9e1e8d19d9fc1a953d6345f51b31ab2c5d0bc1e251a6bd523"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "b06e2ae502a96f66229cdda25b3273bc423f4c2aed02220fc0e84ee75f4c0f29"
+        "sha256": "8f6c87837117421cf7d9d2a9bc4292fee0882139b88f1f289fb814710ca89b10"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -157,7 +157,7 @@
       {
         "path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
         "identity_mode": "content",
-        "sha256": "7fc63c7e08ffd67a44f4f4f0132cb20a6f9673f28fe8618a553f7df61391b922"
+        "sha256": "0a36961648ad55da3a03cb98642f7b94881508b54299eb8b51b662bff95d3270"
       },
       {
         "path": "evidence/documentary/README.md",
@@ -187,7 +187,7 @@
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
         "identity_mode": "content",
-        "sha256": "3b2af66303b8c83b0363e688d606d04202ff180b3a38649cc6e8334ef267ecad"
+        "sha256": "aa275972b3aabd5608fad68243fd3888b91eab2dd590beead7202ebab73d311f"
       },
       {
         "path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
@@ -197,7 +197,7 @@
       {
         "path": "evidence/primary/2025-deloitte-genai-q4.md",
         "identity_mode": "content",
-        "sha256": "415b411d49938d561e61f3461f1144afec0f81305727b648ce6f9ac3f693d794"
+        "sha256": "43d37648f2bd8546baa4219cdc3798edfb37afd226d81d5a2a042c6bd0e112f8"
       },
       {
         "path": "evidence/primary/2025-gitclear-code-quality.md",
@@ -212,7 +212,7 @@
       {
         "path": "evidence/primary/2025-mckinsey-ai-adoption-value.md",
         "identity_mode": "content",
-        "sha256": "b27c76ba874255206d22533e9104cd88f4940d6ae1a6cb61a1038b9cc8ae9338"
+        "sha256": "926d80bb8c34e319f5857f43364c116a677de75b9ec439f840e2f94dc72311d0"
       },
       {
         "path": "evidence/primary/2025-menlo-enterprise-ai-spend.md",
@@ -252,32 +252,32 @@
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
         "identity_mode": "content",
-        "sha256": "b81138a17ad6534168dfb7b2f3fdb80a0b1ae8c7f25ff38ad73408d3fa18758d"
+        "sha256": "4625a46349150a1ee4734bf1b8ded16d1dd31c2a7ec3938b71d3425d5aefe599"
       },
       {
         "path": "evidence/secondary/2025-deloitte-legacy-citation.md",
         "identity_mode": "content",
-        "sha256": "d7490e9db60a9953e4ccc1c761c52c9bb9968793a747370d18949509f450aa55"
+        "sha256": "7493e4397f3531c48337b6d2bfb1ed182f0d9c64cb5f83a69305abb6469848cc"
       },
       {
         "path": "evidence/secondary/2025-softwareseni-review-synthesis.md",
         "identity_mode": "content",
-        "sha256": "1ee0ab032f8fa0601e3759ffd6901612cabf7eda385ca646c0629d268af82af1"
+        "sha256": "2272c49d866861d20da18449bd98bcf7c8d907108d1ec31afec0de0bfe541f56"
       },
       {
         "path": "evidence/secondary/2025-technodiaries-review-anecdote.md",
         "identity_mode": "content",
-        "sha256": "b62c7aded6b061e1d6bd919fe24e5f2d6fa1225b74ea644e9aa763b852aee549"
+        "sha256": "773fce653dfc7c50455f0f619600e0494ac6ceaffe38a48cbe99a8a138cb2b81"
       },
       {
         "path": "evidence/secondary/2026-horn-capability-commentary.md",
         "identity_mode": "content",
-        "sha256": "8fcc19e9726329ecc630b6b3e28a6aeb7bcdea491943bcb76170341ed52577d4"
+        "sha256": "4873e08797fe8cc91be57f8e8442c00f4ab82d74bd3e192587114cd9a739ac8e"
       },
       {
         "path": "evidence/secondary/2026-horn-engineering-commentary.md",
         "identity_mode": "content",
-        "sha256": "fbd174fc79faa3870c5070e53da3ea520709fc2fc48989a2b22efd46f02dfc67"
+        "sha256": "f3e1c9c8c6b5979311dcc229a09946d6bfead3ddebce17c05419c658c0a77c0e"
       },
       {
         "path": "evidence/secondary/2026-inference-cost-commentary.md",
@@ -287,7 +287,7 @@
       {
         "path": "evidence/secondary/README.md",
         "identity_mode": "content",
-        "sha256": "24453b33eb8bd7b3ea3d46b82fba1d631ff14c757918e2bb63b671151573be29"
+        "sha256": "f25f867b5002a27b480f0139b4ece7aa51cc19b4a3c81cfa934bbd0bde7d4bfc"
       },
       {
         "path": "governance/README.md",
@@ -332,7 +332,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "a8778cade030fa55acc1e2fcdf7ab388a0d37fa52a97b4e3d295e99cac5154f0"
+        "sha256": "f4d9018d51e30ed572ead30a717a715151bd373a7f61b60f1e45a72dc744e954"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -405,9 +405,14 @@
         "sha256": "04f20dc7e08365ada25fe7e4407a459d263cbfa8b87ce42282f27f42cce29019"
       },
       {
+        "path": "governance/reviews/issue-61-2026-10-21-astra-review.md",
+        "identity_mode": "content",
+        "sha256": "3a81c4fb4396334ee58523abf80c18c3abd8814d959f71bb914dd7a6ee29a031"
+      },
+      {
         "path": "governance/reviews/issue-61-2026-10-21-survey-audit.md",
         "identity_mode": "content",
-        "sha256": "2e97e9b09d0fd3109b185a21e6420ca908d56e31b795fe2bbdf1f114e206e006"
+        "sha256": "30c0f161a3788c39892687629973e33f5c1b4776ab20e5910a935e99162ec037"
       },
       {
         "path": "governance/status-model.md",
@@ -497,7 +502,7 @@
       {
         "path": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
         "identity_mode": "content",
-        "sha256": "70ff6f971c9da8b4c1c0ad5703ecfaf4e97abfc29e5dc6cd86244072bfbdbd04"
+        "sha256": "0645900cf0cbfb6e5aa62acee90a5b9f6d4b9156967fd302bff4b42dd17bcb9f"
       },
       {
         "path": "governance/work-records/README.md",
@@ -532,7 +537,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "e38c5a4eb31284525c0689a15a8bae038dcd9e7db08e5bfb9443cf804095d11a"
+        "sha256": "aee389d55c56e7428aa57ad029cd3c89acf369738496e7041a6c87817d3cc5f4"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -542,7 +547,7 @@
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "3de6dde8bf50f13d1f62ff034378b8f17c4b9c4521ed9034514597b470736cd8"
+        "sha256": "f2314cc205142767954b7adf4cb9758fd620c48fdc6263ffd5eac4225f922a33"
       },
       {
         "path": "report/appendices/cost-context.md",
@@ -1198,7 +1203,7 @@
       "integration_audit": "In progress",
       "last_verified": "—",
       "can_support": "Original respondent-reported regular use, EBIT attribution and high-performer classification; not causal ROI or license purchasing",
-      "current_use": "`README.md`; `report/01_the_illusion.md` Ch3; `report/03_the_aftermath.md` Ch10 indirect adoption-pressure boundary; `protocols/README.md` and `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch3; `report/03_the_aftermath.md` Ch10 indirect adoption-pressure and paired-measurement boundaries; `protocols/README.md` and `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
       "brief_path": "evidence/primary/2025-mckinsey-ai-adoption-value.md"
     },
     {
@@ -1209,7 +1214,7 @@
       "integration_audit": "In progress",
       "last_verified": "—",
       "can_support": "Selected AI-active leaders’ reports of their most advanced initiative and near-term scaling expectations; not an enterprise failure rate",
-      "current_use": "`README.md`; `report/01_the_illusion.md` Ch3; `report/03_the_aftermath.md` Ch10 indirect adoption-pressure boundary; `protocols/README.md` and `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch3; `report/03_the_aftermath.md` Ch10 indirect adoption-pressure and paired-measurement boundaries; `protocols/README.md` and `protocols/04_systemic_cure.md` indirect scenario-boundary clarification; `REFERENCES.md`",
       "brief_path": "evidence/primary/2025-deloitte-genai-q4.md"
     },
     {
@@ -1396,7 +1401,7 @@
       "integration_audit": "Needs re-verification",
       "last_verified": "—",
       "can_support": "Practitioner synthesis and discovery leads; no adopted review-time multiplier",
-      "current_use": "`README.md`; `report/01_the_illusion.md` Ch4 context reference; `protocols/04_systemic_cure.md` indirect demand-boundary clarification; `REFERENCES.md`",
+      "current_use": "`README.md` discovery-record navigation; `REFERENCES.md` discovery/correction note",
       "brief_path": "evidence/secondary/2025-softwareseni-review-synthesis.md"
     },
     {
@@ -1975,6 +1980,13 @@
     {
       "path": "governance/reviews/issue-60-2026-10-21-sol-corrections.md",
       "title": "Issue #60: Sol correction of the Astra findings",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-61-2026-10-21-astra-review.md",
+      "title": "Issue #61: Astra analytical review and correction",
       "instructions": [
         "AGENTS.md"
       ]

@@ -112,7 +112,7 @@ Generating profit today through "AI Speed" is good. But exploding your **Total C
 **The Pivot:**
 1.  **Stop the "License Strategy":** Buying AI Code Assistants is not a strategy. It is a procurement decision.
 2.  **Evaluate Delivered Value and Total Cost:** Compare a defined use case against a credible baseline, including additional or released review, QA and maintenance effort and the resulting quality. Coding speed alone does not establish net ROI.
-3.  **Change the Metrics:** Stop measuring "Adoption Rate." Start measuring **Asset Health**:
+3.  **Measure Adoption Alongside Outcomes:** Track use together with delivery, quality and comparable total cost; adoption alone does not establish success. Useful **Asset Health** diagnostics include:
     *   *Technical Debt Ratio*
     *   *Defect Escape Rate*
     *   *Maintenance Effort vs. New Feature Delivery*

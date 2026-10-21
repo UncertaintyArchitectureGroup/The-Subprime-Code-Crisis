@@ -36,8 +36,8 @@ adds no independent corroboration and supports no empirical conclusion.
 The stable legacy ID is kept for inspectable history, with a retirement note
 in REFERENCES. It is not counted as a retained survey result or duplicated in
 the README's empirical coverage. Historical governance records are not rewritten.
-Astra must assess whether the explicit replacement and retirement adequately
-resolve the ambiguous original reference. No claim of a failed adoption strategy
+Astra recommends accepting the explicit replacement and retirement as the
+issue disposition while preserving the unresolved historical source state. No claim of a failed adoption strategy
 or implicit vendor admission survives from this citation.
 
 ## Repository integration audit
@@ -50,12 +50,12 @@ clarification**, with indirect demand/scenario uses distinguished from empirical
 control validation; no new threshold or gate. Machine-readable Current use in the front matter
 matches the registry and does not assert support for entire listed files.
 
-Canonical state: **Needs re-review / Needs re-verification / —**. The Source
+Sol checkpoint state: **Needs re-review / Needs re-verification / —**. The Source
 label is clarified relative to the trusted base; the existing transition rule
 requires this reset in the identity-changing PR. The cited public URL and redirect were actually inspected; the unresolved
 historical edition was not read. Bounded independent review was performed.
-That work does not bypass reset eligibility or Astra's acceptance. A later checked
-state pass, after accepted identity integration, must complete the lifecycle.
+That work does not bypass reset eligibility or Astra's acceptance. The historical identity/access gap still prevents final source promotion;
+accepted citation withdrawal does not complete that source lifecycle.
 
 ## Independent review
 
@@ -98,3 +98,25 @@ analytical/placement acceptance, accepted merge and checked default-branch/sourc
 verification remain outstanding. The [audit](../../governance/reviews/issue-61-2026-10-21-survey-audit.md)
 preserves the actual first Corrections required result and remaining decisions.
 Exact publication/tree/CI evidence belongs in the live PR/issue after it exists.
+
+## First Astra analytical correction checkpoint
+
+The [Astra review record](../../governance/reviews/issue-61-2026-10-21-astra-review.md)
+records the actual **Corrections required** outcome at local `1a51ecb`, the
+R61-A01/A02 dependent corrections, chosen SoftwareSeni relocation and R61-A04
+metadata correction. Implementation awaits repeated independent review. Prior
+Sol review history remains above; no final integration verification is inferred.
+
+S-2025-01 remains **Needs re-review / Needs re-verification / —** even after
+accepted citation withdrawal. The unidentified historical original was not read.
+
+## Astra repeated analytical review — Confirmed
+
+Independent `/root/astra_review_issue61` confirmed the correction at
+`32f41effe16f15951336fee66d676dce9448b306` and separately confirmed the residual-
+reference cleanup at `0c7a81345a89aad7861e61a9dae1091435a4f4cf`, tree
+`66713e3f1adbc64806b02dc0393e7fb3c92267b0`, on 2026-10-21. R61-A01–A04 and
+placement/synchronization are resolved. The [Astra record](../../governance/reviews/issue-61-2026-10-21-astra-review.md)
+preserves exact checks, actual prior source access and eligibility limits.
+This confirmation precedes accepted integration and exact-main verification;
+canonical identity-reset/In progress states remain, with no verification date.

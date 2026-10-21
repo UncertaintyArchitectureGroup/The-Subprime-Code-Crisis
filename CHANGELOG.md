@@ -20,7 +20,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
-- Corrected adoption/EBIT/high-performer definitions, selected-initiative ROI expectations, supplier run-rate scope and review-time attribution. Preserved positive/mixed survey outcomes, removed unsupported multipliers and bounded the dependent adoption-pressure/review scenarios and the protocol capacity diagram/conclusions. Retired moving/derivative and decorative citations with an occurrence/orphan trace; integration and Astra acceptance remain separate.
+- Corrected adoption/EBIT/high-performer definitions, selected-initiative ROI expectations, supplier run-rate scope and review-time attribution. Preserved positive/mixed survey outcomes, removed unsupported multipliers and bounded the dependent adoption-pressure/review scenarios and the protocol capacity diagram/conclusions. Astra review additionally aligned the concluding adoption/outcome measurement advice, bounded the disposable-prototype example and moved SoftwareSeni to discovery/correction records. Retired moving/derivative and decorative citations with an occurrence/orphan trace; source verification remains separate from issue disposition.
 
 - Rebuilt the Chapter 2 cost argument around exact fiscal/accounting scope and conditional comparison; withdrew unsupported universal transformation ranges, platform budgets and timing. Addressed Astra's #60 findings by making the relying Chapter 3 argument and Part 2/3 cost reprises conditional, correcting the quality comparator and explicitly excluding avoided baseline cash from the optional model. Independent acceptance and final integration state are recorded in the #60 review history.
 

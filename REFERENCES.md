@@ -147,7 +147,7 @@ A source appearing here is not automatically peer reviewed, independently valida
 ### S-2025-04 — Code-review bottleneck synthesis
 
 - James A. Wondrasek / SoftwareSeni. [*Why AI Coding Speed Gains Disappear in Code Reviews*](https://www.softwareseni.com/why-ai-coding-speed-gains-disappear-in-code-reviews/), 11 August 2025; unversioned current article inspected 2026.
-- [Secondary brief](evidence/secondary/2025-softwareseni-review-synthesis.md). Context/discovery only; no 2–3× review multiplier or unreviewed Faros/Harness/DORA quantitative result is adopted.
+- [Secondary brief](evidence/secondary/2025-softwareseni-review-synthesis.md). Discovery/correction record; the reference-only report citation is withdrawn. No 2–3× review multiplier or unreviewed Faros/Harness/DORA quantitative result is adopted.
 
 ### S-2025-05 — One accessible practitioner account
 

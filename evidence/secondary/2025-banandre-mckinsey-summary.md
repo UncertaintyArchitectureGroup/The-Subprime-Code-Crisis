@@ -42,7 +42,7 @@ clarification**, with indirect demand/scenario uses distinguished from empirical
 control validation; no new threshold or gate. Machine-readable Current use in the front matter
 matches the registry and does not assert support for entire listed files.
 
-Canonical state: **Needs re-review / Needs re-verification / —**. The Source
+Sol checkpoint state: **Needs re-review / Needs re-verification / —**. The Source
 label is clarified relative to the trusted base; the existing transition rule
 requires this reset in the identity-changing PR. The original was actually read
 within the stated access limits and bounded independent review was performed.
@@ -90,3 +90,22 @@ analytical/placement acceptance, accepted merge and checked default-branch/sourc
 verification remain outstanding. The [audit](../../governance/reviews/issue-61-2026-10-21-survey-audit.md)
 preserves the actual first Corrections required result and remaining decisions.
 Exact publication/tree/CI evidence belongs in the live PR/issue after it exists.
+
+## First Astra analytical correction checkpoint
+
+The [Astra review record](../../governance/reviews/issue-61-2026-10-21-astra-review.md)
+records the actual **Corrections required** outcome at local `1a51ecb`, the
+R61-A01/A02 dependent corrections, chosen SoftwareSeni relocation and R61-A04
+metadata correction. Implementation awaits repeated independent review. Prior
+Sol review history remains above; no final integration verification is inferred.
+
+## Astra repeated analytical review — Confirmed
+
+Independent `/root/astra_review_issue61` confirmed the correction at
+`32f41effe16f15951336fee66d676dce9448b306` and separately confirmed the residual-
+reference cleanup at `0c7a81345a89aad7861e61a9dae1091435a4f4cf`, tree
+`66713e3f1adbc64806b02dc0393e7fb3c92267b0`, on 2026-10-21. R61-A01–A04 and
+placement/synchronization are resolved. The [Astra record](../../governance/reviews/issue-61-2026-10-21-astra-review.md)
+preserves exact checks, actual prior source access and eligibility limits.
+This confirmation precedes accepted integration and exact-main verification;
+canonical identity-reset/In progress states remain, with no verification date.
