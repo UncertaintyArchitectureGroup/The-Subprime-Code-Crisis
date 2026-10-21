@@ -120,3 +120,12 @@ placement/synchronization are resolved. The [Astra record](../../governance/revi
 preserves exact checks, actual prior source access and eligibility limits.
 This confirmation precedes accepted integration and exact-main verification;
 canonical identity-reset/In progress states remain, with no verification date.
+
+## Accepted withdrawal; historical source remains unresolved
+
+PR76's accepted corrections are present on checked main
+`3f9d24993c18d3f25e43e3f4baf6cb1fccb43541`. The [final #61 record](../../governance/reviews/issue-61-2026-10-21-final-verification.md)
+accepts withdrawal/replacement as the task disposition, not source verification.
+Canonical state remains **Needs re-review / Needs re-verification / —**. No
+historical edition, population or findings were recovered. Independent Confirmed
+refers to accurate disposition and boundaries; this source flow is not complete.
