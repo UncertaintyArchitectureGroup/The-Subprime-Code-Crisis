@@ -1,0 +1,19 @@
+record_version = 1
+title = "Issue #62: bounded documentary project integrations verified after accepted corrections"
+primary_flow = "Flow B completion with existing changed-source/use requirements preserved"
+human_decision = "Maintainer's one-issue completion instruction and latest Роби authorize final verification after accepted PR78 merge3b8b7f1. Start6308693374 follows exact-main successful checks. Actual independent final-state Confirmed at6987ea0/tree58cfefe1; governance/reviews/issue-62-2026-10-21-final-verification.md records exact eligibility/gates/bounds. Three project records become Reviewed brief/Verified/2026-10-21 for current documentary records and attributed statements only. Three grouped terminology IDs remain reset/unverified. No identity, finding, Current use, reader claim, control, rule or source-state definition change; final recording/publication/main checks remain separate."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Not required"
+reason = "Exact final source-state and verification-record synchronization after accepted reader-facing correction; no changed identity, findings, Current use, state definitions or report/protocol meaning."
+
+[synchronization]
+assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "references", "report", "reader-navigation", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+evidence-indexes = "Source classes and brief links unchanged."
+references = "Citation identities, URLs and bounded bibliography descriptions unchanged."
+report = "No empirical finding, interpretation, confidence or report content change."
+reader-navigation = "Accepted reader content, source-use paths and navigation unchanged."
+contributor-guidance = "No workflow, obligation, status definition or governance change."

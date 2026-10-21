@@ -1,8 +1,8 @@
 +++
 source_ids = ["D-2026-05", "D-2026-06", "D-2026-07"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-21"
 independent_review = "Confirmed"
 current_use = ["TERMINOLOGY_AND_ATTRIBUTION.md", "README.md", "REFERENCES.md"]
 +++
@@ -78,10 +78,12 @@ delivery-system mechanism. External article titles are preserved exactly.
   account. Older observations are preserved below, explicitly superseded.
 - Report finding, confidence maps and operational controls: no change.
 - **Protocol outcome: No protocol change.**
-- Evidence review remains **Reviewed brief**; integration remains **In progress**,
-  date **—**, through correction integration. These bounded records can qualify
-  after actual independent confirmation, accepted merge and exact-main checks;
-  no historical public-opening date is part of their verification scope.
+- Evidence review **Reviewed brief**; integration **Verified**, date
+  **2026-10-21**, for the bounded current documentary records after accepted
+  correction merge3b8b7f1 and exact-main checks. No frozen article text, empirical
+  truth, link-insertion or historical public-opening date is certified. The
+  [final verification record](../../governance/reviews/issue-62-2026-10-21-final-verification.md)
+  records eligibility and the separate final-state review/publication gates.
 
 ## Independent review
 
