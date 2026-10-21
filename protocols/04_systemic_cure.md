@@ -1,17 +1,17 @@
-# Protocol 4: The Systemic Cure
+# Protocol 4: Organizational Control Model
 ## Build an Organizational Control System for AI-Assisted Delivery
 
 > **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 3](03_public_defense.md) | **Protocol 4** | [📚 References](../REFERENCES.md)
 
-The Subprime Code Crisis cannot be solved by asking individual engineers to be more careful. Personal discipline and team-level gates matter, but they operate inside a larger system of incentives, budgets, deadlines, ownership, and executive expectations.
+Individual verification and team gates operate within budgets, incentives, ownership and deadlines. Where those conditions contribute to a measured delivery problem, organizational changes may be needed alongside local engineering work.
 
-A systemic cure changes that system.
+This is a proposed control model to adapt and evaluate, not an empirically validated remedy. Existing effective capability may be reused; the report does not prescribe a transformation programme for every organization.
 
 The goal is not to slow AI adoption. The goal is to make adoption conditional on evidence that the organization can absorb the additional code-production capacity without overloading review, testing, architecture, security, release, and maintenance.
 
 ---
 
-## 1. The Systemic Failure Mechanism
+## 1. A Conditional Failure Mechanism
 
 AI-assisted coding can increase the rate at which candidate changes are produced. If downstream capacity and controls remain unchanged, the organization may create more work than it can reliably verify and absorb.
 
@@ -196,7 +196,7 @@ Possible actions include:
 
 ## 6. Incentives and Performance Management
 
-The system will reproduce the behavior it rewards.
+**Incentive hypothesis:** Rewards tied mainly to activity could encourage behavior that misses delivery outcomes. Assess actual targets and decisions; this is not a measured law of organizational behavior.
 
 Do not reward individuals or teams primarily for:
 
@@ -273,7 +273,7 @@ Expand one dimension at a time:
 - greater autonomy;
 - additional tools or models.
 
-Do not expand all dimensions simultaneously. Otherwise the organization cannot identify which change caused a new failure mode.
+Do not expand all dimensions simultaneously. Separating changes can make investigation more interpretable, but causal attribution still requires an appropriate comparison and attention to concurrent changes.
 
 ### Gate 4 — Institutionalization
 
@@ -291,7 +291,7 @@ A mature operating model includes:
 
 ## 8. Exception and Override Management
 
-Exceptions are inevitable. Invisible exceptions are dangerous.
+Plan how exceptions will be handled if they arise. Undocumented exceptions can make accepted exposure and accountability harder to inspect.
 
 Every exception should record:
 
@@ -311,13 +311,13 @@ Emergency use may reduce process, but it must not erase accountability. Record t
 
 ### Exception debt
 
-Repeated exceptions indicate one of three problems:
+Repeated exceptions warrant investigation. Possible explanations include:
 
 1. the policy does not fit reality;
 2. incentives encourage bypassing controls;
 3. the organization lacks required capacity.
 
-Treat exception volume as a system signal, not only a compliance issue.
+This list is non-exhaustive. Examine the context before attributing exceptions to a particular cause; treat their volume as a diagnostic signal.
 
 ---
 
@@ -349,7 +349,7 @@ Review date:
 Reversal condition:
 ```
 
-Decision memory prevents organizations from copying yesterday's workflow after the assumptions that justified it have changed.
+Decision memory is intended to expose when the assumptions behind an earlier workflow have changed. It supports reassessment; it does not guarantee that the organization will act on the record.
 
 ---
 
@@ -370,20 +370,20 @@ Investigate the full control system:
 
 ```mermaid
 flowchart LR
-    A[Incident] --> B[Technical cause]
-    A --> C[Workflow cause]
-    A --> D[Policy or incentive cause]
-    B --> E[Corrective actions]
+    A[Incident] --> B[Assess technical factors]
+    A --> C[Assess workflow factors]
+    A --> D[Assess policy or incentive factors]
+    B --> E[Select actions supported by findings]
     C --> E
     D --> E
     E --> F[Update controls and assumptions]
 ```
 
-A useful incident review changes the system that produced the failure.
+Use the review to select corrective actions supported by the findings, then evaluate whether they reduce recurrence or improve detection. A review alone does not demonstrate effectiveness.
 
 ---
 
-## 11. What the Systemic Cure Is Not
+## 11. Boundaries of This Control Model
 
 It is not:
 
@@ -409,11 +409,11 @@ The relationship is:
 
 ```mermaid
 flowchart TD
-    A[Subprime Code Crisis report<br/>Diagnosis and evidence] --> B[Protocols 1–4<br/>Engineering and organizational response]
-    B --> C[Uncertainty Architecture<br/>General control framework for behavioral systems]
+    A["Report: evidence and conditional scenarios"] --> B["Protocols 1–4: proposed operating practices"]
+    B -. "Related methodological reference" .-> C["Uncertainty Architecture: broader control framework"]
 ```
 
-This repository should remain useful without requiring readers to adopt another framework. The UA repository is a deeper reference for teams that want to formalize or extend the control model.
+This repository should remain useful without requiring readers to adopt another framework. The UA repository is a deeper reference for teams that want to formalize or extend the control model. It is a related methodological project, not independent empirical validation of this report or of protocol effectiveness.
 
 ---
 
@@ -435,13 +435,13 @@ Before organization-wide expansion, verify that:
 - [ ] expansion is reversible;
 - [ ] model and tool changes trigger reassessment.
 
-If several of these are missing, the organization is not scaling an operating model. It is scaling exposure.
+Missing items identify questions to resolve before expansion. Assess their significance against the use case and existing controls; the checklist is not a validated readiness score.
 
 ---
 
 ## Final Principle
 
-The durable advantage of AI-assisted engineering will not come from maximizing generated code. It will come from building an organization that can increase autonomy while preserving accountability, evidence, and control.
+**Proposed operating principle:** Evaluate useful delivery gains together with accountability, evidence and control as autonomy increases. This is a design objective, not a forecast of competitive advantage or guaranteed adoption success.
 
 **Generate less blindly. Verify proportionally. Expand only when the system can absorb it.**
 

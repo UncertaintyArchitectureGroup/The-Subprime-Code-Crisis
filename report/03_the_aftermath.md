@@ -1,22 +1,23 @@
-# Part 3: The Aftermath
+# Part 3: Scenarios and Adoption Decisions
 
-> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | [⚙️ Part 2: Broken Mechanics](02_broken_mechanics.md) | **Part 3** | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: Evidence and Delivery Outcomes](01_the_illusion.md) | [⚙️ Part 2: Verification and Delivery Mechanisms](02_broken_mechanics.md) | **Part 3** | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
-*   [Chapter 8. The Paradox of Local Solutions](#chapter-8-conclusion-the-paradox-of-local-solutions-and-the-necessity-of-balance)
-*   [Chapter 9. Conditional Industry Scenarios](#chapter-9-conditional-industry-scenarios)
-*   [Chapter 10. The Architecture of Unintended Consequences](#chapter-10-the-architecture-of-unintended-consequences-who-is-actually-to-blame)
+
+* [Chapter 8. When Local Improvements Improve Delivery](#chapter-8-when-local-improvements-improve-delivery)
+* [Chapter 9. Conditional Scenarios and Observable Signals](#chapter-9-conditional-scenarios-and-observable-signals)
+* [Chapter 10. Responsibilities for Measurement and Adoption](#chapter-10-responsibilities-for-measurement-and-adoption)
 
 ---
 
-## Chapter 8. Conclusion: The Paradox of Local Solutions and the Necessity of Balance
+## Chapter 8. When Local Improvements Improve Delivery
 
 We began with [different task-time results across experiments](01_the_illusion.md#bounded-experiments-positive-negative-and-temporally-limited-evidence), followed by an update that leaves the current magnitude uncertain. Those results do not establish a universal industry slowdown.
 The report's systems hypothesis is conditional: treating code-generation speed as sufficient evidence of delivery improvement can hide downstream constraints. Its applicability depends on the task, tools, operating model and observed production outcomes.
 
 ### Local Automation: A Conditional Tradeoff
 
-[Chapter 6](02_broken_mechanics.md#chapter-6-assessing-context-and-automation-tradeoffs) proposes evaluating a review assistant's benefits against setup, supervision and maintenance. It does not demonstrate that automation necessarily adds net work or leaves senior engineers with an equally severe bottleneck.
+[Chapter 6](02_broken_mechanics.md#chapter-6-a-thought-experiment-operating-an-ai-review-system) proposes evaluating a review assistant's benefits against setup, supervision and maintenance. It does not demonstrate that automation necessarily adds net work or leaves senior engineers with an equally severe bottleneck.
 
 GitClear's [historical quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output measures](../evidence/primary/2025-gitclear-developer-output.md) do not measure that intervention's total effort, human cognitive load or production outcome. A local pilot could find useful review savings, added maintenance burden or a mixture. Stable quality and lower total effort would weaken the adverse scenario.
 
@@ -29,39 +30,55 @@ The proposed mechanism depends on the surrounding delivery system. Faster requir
 Compare task and downstream outcomes, including human effort, quality, release performance and operating cost. Expand, adjust or constrain a use case according to that evidence. This is a proposed measurement practice; the studies reviewed here do not establish one inevitable outcome for startups, enterprises or review automation.
 
 ---
-## Chapter 9. Conditional Industry Scenarios
+## Chapter 9. Conditional Scenarios and Observable Signals
 
-The ["Execution Mandate" in Chapter 3](01_the_illusion.md#chapter-3-the-free-lunch-trap-when-adoption-budgets-miss-delivery-work) is an illustrative budget-risk mechanism, not a measured industry trajectory. The adverse scenarios below explore what could happen where required delivery work remains unfunded. The [cost comparison in Chapter 2](01_the_illusion.md#chapter-2-evaluating-the-cost-of-ai-assisted-delivery) does not establish that every adopter needs a new transformation programme.
+The [illustrative adoption mandate in Chapter 3](01_the_illusion.md#chapter-3-adoption-budgets-and-delivery-capability) describes one possible budget error, not a measured industry trajectory. The [cost comparison in Chapter 2](01_the_illusion.md#chapter-2-evaluating-the-cost-of-ai-assisted-delivery) does not establish that every adopter needs a new transformation programme.
 
-These are non-exhaustive warning scenarios, not a measured current industry trajectory or forecasts. No calibrated probability, ordering of likelihood or time to failure is established. Persistent costs would require evidence that added work is admitted, capacity or checks are inadequate, harms occur and adaptation fails. Beneficial and mixed outcomes remain possible.
+The following are **repository scenarios**, not observations or forecasts. They are non-exhaustive and have no calibrated probability, ordering of likelihood or time to failure. Define the population, workload, quality boundary and follow-up before interpreting local observations.
 
 ```mermaid
 flowchart TD
     A["AI-assisted delivery in a defined setting"] -->|"Useful capability and effective controls"| B["Beneficial delivery outcomes"]
     A -->|"Gains and costs offset or differ by outcome"| C["Mixed or uncertain outcomes"]
-    A -->|"Persistent uncorrected harm; additional propagation assumptions"| D["Adverse warning scenarios"]
-    D --> E["Abrupt disruption"]
-    D --> F["Prolonged maintenance burden"]
-    D -->|"Successful adaptation"| B
+    A -->|"Persistent uncorrected harm"| D["Local delivery deterioration"]
+    D -->|"Successful adaptation or containment"| R["Recovery; reassess benefit, cost and quality"]
+    D -. "Only with exposure, transmission and failed recovery" .-> E["Cross-deployment propagation: warning scenario"]
 ```
 
-The wider language and unsupported industry quantities in the scenario descriptions below remain assigned to the full-report audit (#64); #63 does not validate them as empirical claims.
+Containment can prevent further harm without producing a net gain. Recovery therefore leads to a new comparison of outcomes, not an automatic beneficial result.
 
-### Scenario 1: The "Lehman Moment" of AI (Systemic Shock)
-*Uncalibrated adverse scenario: abrupt disruption*
+### Beneficial Adaptation
 
-In this scenario, the accumulation of "Subprime Code" reaches a critical mass, leading to a sudden, visible collapse of trust.
-*   **The Mechanism:** Just as subprime mortgages were bundled into "safe" assets, toxic AI-generated code is currently being bundled into critical infrastructure (Banking, Logistics, Healthcare).
-*   **The Trigger:** A series of catastrophic failures in non-tech enterprises—perhaps a massive security breach caused by hallucinated vulnerabilities, or a total paralysis of a core banking system due to unmaintainable complexity.
-*   **The Consequence:** The market realizes that the "assets" (codebases) are toxic. Investor trust evaporates. Boards issue panic-driven bans on AI tools. We enter **AI Winter 2.0**, not because the technology failed, but because our *management* of it failed.
+If assistance saves effort or enables useful work and the delivery system can absorb it, more useful output or lower total effort at comparable quality is a possible result. Existing headroom, better task selection, smaller changes or effective verification could contribute. No new transformation programme is assumed necessary.
 
-### Scenario 2: The Slow Rot (Productivity Depression)
-*Uncalibrated adverse scenario: prolonged burden*
+Observe accepted outcomes, implementation and verification/rework effort separately, defects, release performance and operating cost. Record sustained benefit as a result in that setting. To test an adverse link, also check its proposed trigger and endpoint: implementation savings can exceed increased verification effort, so net benefit alone does not refute rising verification demand.
 
-This scenario supposes a prolonged burden instead of an abrupt disruption. Its relative likelihood is not established.
-*   **The Mechanism:** The degradation of the SDLC slowly eats away at the engineering capacity of thousands of companies.
-*   **The Process:** Maintenance budgets balloon as teams spend 80-90% of their time fixing the "plausible lies" generated in previous years. Feature delivery grinds to a halt.
-*   **The Consequence:** The industry suffers a **"Productivity Depression."** We end up spending *more* money to build *less* software than we did in 2020. Small and medium businesses, unable to afford the massive refactoring required to clean their codebases, quietly go bankrupt or are acquired for parts.
+### Mixed or Uncertain Outcomes
+
+Local coding gains could coexist with unchanged release completion, different task scope, greater review effort or offsetting costs. Short follow-up, changing task mix and imprecise estimates can also prevent a conclusion.
+
+Report those outcomes separately. A nonsignificant difference is not evidence of equivalence; a larger task or more valuable release is not comparable to the old workload without accounting for scope. Longer observation or a better comparator may resolve uncertainty. Mixed results do not establish either a net loss or universal success.
+
+### Local Delivery Deterioration
+
+The capacity-mediated mechanism considered here starts with admitted work and service demand that strains independently assessed effective capacity. Waiting, context loss or inadequate checks could then add rework or defects. Whether costs persist or useful delivery deteriorates is an outcome to test, not a condition that makes the hypothesis true by definition. This is one proposed adverse mechanism, not an exhaustive account of AI-related failures.
+
+Inspect stage demand/capacity, task risk, active effort versus waiting, WIP, quality and useful completion against a credible baseline. Staffing changes, release batching, dependencies and changed scope remain alternatives. If an independently measured trigger is present but the predicted endpoint is absent or reversed, with precision sufficient to exclude a predefined meaningful effect, that weakens the particular local link. An absent trigger or successful adaptation limits applicability; net benefit answers a separate question. The [H1–H5 tests](appendices/mechanism-hypotheses.md) specify these distinctions.
+
+### Cross-Deployment Propagation as a Warning Scenario
+
+A local problem does not establish an industry crisis. The propagation variant considered here additionally requires exposed dependencies, a mechanism that transmits failures beyond the originating deployment, and insufficient containment or recovery. Correlated failures could instead reflect a common cause; correlation alone does not demonstrate transmission. Loss of trust, restrictions on use or sustained maintenance burden are possible consequences to investigate, not a predicted AI winter, insolvency rate or industry-wide productivity decline.
+
+Evidence would need a defined exposed population, longitudinal outcomes and traced transmission, alongside competing explanations. Specify detection coverage, follow-up and a meaningful propagation endpoint before testing. Observed originating failures and actual downstream exposure through the hypothesized path, followed by no predicted downstream propagation under adequate observation, would weaken that transmission prediction. No initiating event or unrealized exposure path means the trigger was absent. Successful containment tests the response; unrelated causes challenge attribution. These distinctions do not rule out every possible systemic risk. No such population-level test is supplied here.
+
+| Scenario | Signals to compare | What would limit the interpretation |
+| --- | --- | --- |
+| Beneficial | Useful delivery and total effort/cost at comparable quality | Changed scope, selected successes or incomplete quality follow-up |
+| Mixed/uncertain | Coding, review, release and quality outcomes reported separately | Better measurement may reveal benefit or harm; do not force a single result |
+| Local adverse | Independently measured demand, waits, rework, quality and completion | Missing predicted endpoint under the trigger; separately, absent trigger, adaptation or competing cause |
+| Propagation warning | Originating failures, actual downstream exposure, traced transmission, sustained effects and recovery | Missing predicted propagation after the trigger; separately, no initiating event/path, containment or another cause |
+
+These are proposed observation categories, not a collected dataset or a requirement that a pilot validate the adverse mechanism. [Issue #54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54) owns any later study-design and collection decision.
 
 ### Budget Risk Depends on the Capability Gap
 
@@ -69,47 +86,27 @@ A license-only budget may underfund a deployment if required review, integration
 
 As Chapter 2 proposes, compare added cash, staff capacity, quality and delivered benefits against a local baseline. Sufficient existing capability and useful gains at comparable or lower total cost, with stable or improved quality, would weaken the unfunded-capability scenario. The reviewed cost sources do not establish an industry-wide bubble or the probabilities of the wider scenarios above.
 
-***
-
-## Chapter 10. The Architecture of Unintended Consequences: Who Is Actually to Blame?
-
-We live and work in an ecosystem of extreme complexity, bordering on chaos. In such systems, the human brain craves simple answers. We want a villain. We want a name, a company logo, or a job title to point at and say: *"This is your fault."*
-
-But if we are intellectually honest, we must admit a difficult truth: **There is no villain in this story.**
-
 ---
 
-### The Tragedy of Rational Actors
+## Chapter 10. Responsibilities for Measurement and Adoption
 
-If we analyze the motivations of every player in this crisis, we find that they are acting completely rationally within their own paradigms.
+Evaluate specific product behavior, published claims and adoption decisions against their evidence. The studies reviewed here do not establish participants' motives, dishonesty or innocence, or a legal breach. Named companies and researchers belong beside attributed findings and disclosures, not in an unsupported account of who caused a crisis.
 
-*   **The Vendors:** They have engineered a technological marvel. Their imperative is to monetize it to fund the massive R&D costs for the next generation. They want to capture market share quickly. Are they "evil" for selling their product aggressively? **No.**
-*   **The Investors:** They are deploying capital into the highest-growth sector of the economy. They listen to the vendors' projections and demand exposure to AI. They want returns. Are they "guilty" for demanding growth? **No.**
+### Incentives as a Hypothesis to Test
+
+Targets based on activation or output could favor expansion before downstream outcomes are understood. This is a **repository hypothesis**, not a finding about every vendor, investor or executive. Testing it requires actual targets, contracts, product defaults, decision records and subsequent delivery outcomes. Outcome-based decisions, effective checks and successful adjustment are plausible alternatives.
+
+Compare expansion timing, scope and use of downstream acceptance evidence in otherwise comparable settings with different target exposure. Task opportunities, staffing and commercial deadlines are competing explanations. With activity targets present, no earlier or wider expansion and no reduced reliance on downstream evidence, estimated precisely enough to exclude a predefined meaningful change, would weaken the proposed decision link. Later net benefit or successful recovery alone would not test that earlier choice.
+
 *   **The C-Suite:** Market expectations could influence adoption decisions. The [enterprise surveys in Chapter 3](01_the_illusion.md#enterprise-surveys-use-benefits-and-scaling-are-different-outcomes) do not measure investor pressure or executive fear, and preserve reported benefits alongside scaling limits. The proposed decision mechanism requires observations of actual choices and delivery outcomes; it is not an established motive for all executives.
 
----
+Responsibility can be discussed without inferring intent: identify who defines the use case, accepts a change, supplies evaluation information and can intervene when results differ from expectations. Existing capability may be sufficient; proportionate controls should address an observed gap rather than assume the whole organization needs redesign.
 
-### The Design of Disaster
+### Decisions for Engineering and Executive Leaders
 
-The profound tragedy of the "Subprime Code Crisis" is that it lacks a **Point of Architecture**.
+The recommendations below are proposed practices, not a legal opinion or a demonstrated universal adoption programme.
 
-No one sat down and planned to flood the industry with unmaintainable code. No one architected a collapse.
-The crisis is emerging because every actor is optimizing for their **Local Best Interest**, but the vector sum of these rational efforts is driving the **Global System** toward a cliff.
-
-This is the most dangerous type of catastrophe. When everyone is "doing the right thing" from their perspective, there is no obvious error to correct. There is only the silent accumulation of systemic risk. We are collectively sleepwalking into a disaster, driven by the best of intentions.
-
----
-
-### A Plea to the "Stewards of Capital" (Investors & C-Level)
-
-To the Boards and Executives: We do not ask you to stop innovation. We ask you to stop listening to the echo chamber of hype and remember the fundamentals of your business.
-
-**Your Codebase Is Your Asset.**
-It is not a cost center to be minimized; it is the machinery that generates your revenue.
-Generating profit today through "AI Speed" is good. But exploding your **Total Cost of Ownership (TCO)** in a way that kills your agility tomorrow is a violation of your fiduciary duty.
-
-**The Pivot:**
-1.  **Stop the "License Strategy":** Buying AI Code Assistants is not a strategy. It is a procurement decision.
+1.  **Specify the Use Case and Acceptance Boundary:** Identify the intended work, risk, existing capability and accountable decision owner. A license-only purchase may be adequate where the necessary delivery capability already exists.
 2.  **Evaluate Delivered Value and Total Cost:** Compare a defined use case against a credible baseline, including additional or released review, QA and maintenance effort and the resulting quality. Coding speed alone does not establish net ROI.
 3.  **Measure Adoption Alongside Outcomes:** Track use together with delivery, quality and comparable total cost; adoption alone does not establish success. Useful **Asset Health** diagnostics include:
     *   *Technical Debt Ratio*
@@ -117,27 +114,27 @@ Generating profit today through "AI Speed" is good. But exploding your **Total C
     *   *Maintenance Effort vs. New Feature Delivery*
 4.  **Resource Identified Gaps:** Fund targeted changes where local evaluation identifies unmet delivery needs. Reuse adequate existing teams, controls and pipelines; a new transformation programme is not a universal prerequisite for beneficial adoption.
 
+
+Define each diagnostic locally and report its denominator and limits. A technical-debt ratio or activity metric alone does not establish asset value, causality or a legal duty violation.
+
+### Product and Evaluation Disclosures
+
+For a specific capability or marketing claim, ask suppliers and evaluators to provide:
+
+- the task, model/tool version, operating scope and comparator;
+- whether the result measures activity, task time, quality or production outcomes;
+- required human review, known failure modes and material evaluation limits;
+- the basis for any enterprise-wide generalization;
+- a correction path when later evidence changes the conclusion.
+
+Product defaults, autonomy settings and integration choices can then be assessed against the customer's risk and verification boundary. A narrow benchmark can still demonstrate useful capability; the question is whether its scope supports the proposed use. No particular vendor's intent, contract or misconduct is established by these recommendations.
+
+### Conclusion: Keep Benefits, Costs and Uncertainty Visible
+
+The [evidence comparison in Chapter 1](01_the_illusion.md#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes) preserves positive, negative, null and uncertain findings with their different outcome boundaries. The conditional mechanism in Chapters 4–7 does not turn them into a universal failure path.
+
+A justified decision may continue a useful deployment, adjust a specific constraint, pause an unverified use case or seek better evidence. Compare delivered value, total effort/cost and required quality; preserve both successful adaptation and adverse observations. The protocols offer practices to evaluate in that setting, rather than proof of effectiveness or a reason to reject beneficial assistance.
+
 ---
 
-### A Plea to the Vendors
-
-To Microsoft, OpenAI, Google, Anthropic, and others:
-We have immense respect for the technology you have built. It is a breakthrough.
-
-But profit today cannot be your only metric.
-If this technology "kills the host"—if it floods your clients' ecosystems with unmanageable debt until they collapse or reject the tool—you lose too.
-
-**The "Parasitic Model" Risk:**
-In biology, a relationship that exhausts the host eventually leads to the demise of the guest. If the market strategy for AI tools remains purely **extractive**—prioritizing short-term revenue from code volume over the long-term survival of the client's codebase—it becomes a **parasitic model**.
-
-And as every biologist knows: a parasite that kills its host does not survive for long. If the industry loses faith in AI because it caused a "Subprime Crash," or if your enterprise clients become paralyzed by the complexity your tools generated, your revenue streams will evaporate.
-
-**The Pivot:**
-1.  **Restrain the PR:** Stop selling "magic." Start selling "power tools that require safety protocols."
-2.  **Focus on Survival:** Your goal should shift from "User Adoption" to **"Client Survival."** Help us build the governance layers, the testing frameworks, and the educational programs needed to manage this power.
-3.  **Balance the Narrative:** Be realistic. Acknowledge the risks. Be a partner in engineering integrity, not just a supplier of raw speed.
-
-We are all in this ecosystem together. If it crashes, it crashes for everyone.
-
----
-**Next:** [🛡️ Activate Defense Protocols](../protocols/README.md)
+**Next:** [🛡️ Operational Protocols](../protocols/README.md)

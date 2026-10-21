@@ -1,0 +1,21 @@
+record_version = 1
+title = "Issue #64: bounded criticism, conditional scenarios and Astra analytical corrections"
+primary_flow = "Flow D — repository synthesis and source-dependency assessment; source identities/findings/uses unchanged"
+human_decision = "Maintainer authorized bounded professional criticism, hypothesis treatment, one-issue independent review/verification/closure, now Astra takeover. Sol start/treatment6310712571/6310789444/6310863996; Astra start6311365156 and pre-edit treatments6311448077/6311474112/6311489780. Sol's bounded Confirmed checkpoints remain historical. Fresh distinct /root/independent_issue64_final found six substantive issues at5ed21bc/tree8ace36f; actual initial outcome Corrections required. A64-01–07 narrow unsupported confidence, separate trigger/endpoint/recovery/benefit, scope propagation, correct causal disclosure and investigatory diagrams, and test the incentive endpoint. Source meanings/attribution/units/Current use and all28 Verified rows preserved; no new source verification. Normative protocol controls/roles/gates/thresholds unchanged. See governance/reviews/issue-64-2026-10-21-astra-review.md and Sol audit. Second independent Corrections required atd9c1983/tree136ecd3: all original findings resolved; propagation falsifier needed observed originating failure and actual downstream exposure, refined under6311695148. Independent no-reset/control-preservation judgment supported. Actual final whole-issue analytical independent Confirmed by /root/independent_issue64_final at32ef80823ffa42648390ddb599802f7addc740bb/tree9887cc29c9906b49de6cb447328641f8a88f1ab3; primary Astra approves. All six initial findings and propagation follow-up resolved; all AC analytical requirements accepted. Faithful recording, exact-head CI, merge/default-branch checks and closure remain separate observations. No collection, publication or governance change. Refs #64."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Material reader-facing correction of unsupported allegations, scenario quantities and guarantees, neutral headings, proportionate recommendations and clarified protocol rationale."
+
+[synchronization]
+assessed_surfaces = ["doctrine", "repository-architecture", "reader-navigation", "evidence", "source-registry", "evidence-indexes", "references", "report", "protocols", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+doctrine = "Existing finding/hypothesis/scenario/practice boundaries apply; no new canonical term or interpretation rule."
+repository-architecture = "Subject boundary, artifact relationships and existing four-layer stack unchanged; display caption restores existing architecture."
+evidence = "Source finding, design, version, uncertainty, attribution and interpretation boundaries unchanged; no new source-oriented result."
+source-registry = "Actual Current use, source identities, support boundaries and states unchanged; independent exact-delta assessment supports no source reset."
+evidence-indexes = "Source class, link and scope unchanged; no symmetry edit needed."
+references = "Exact external publication titles, citations, history and source boundaries unchanged."
+contributor-guidance = "No governance obligation, workflow, approval, source-status definition or contributor duty changes."

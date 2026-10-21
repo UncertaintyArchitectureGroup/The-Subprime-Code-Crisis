@@ -1,5 +1,5 @@
 # Protocol 2: The Operational Defense
-## Measure Delivery Health, Not Output Volume
+## Evaluate Delivery Health Alongside Output
 
 > **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 1](01_personal_defense.md) | **Protocol 2** | [Protocol 3: Public Defense](03_public_defense.md) | [📚 References](../REFERENCES.md)
 
@@ -9,7 +9,7 @@ The operational response is not a single productivity metric. It is a control lo
 
 ---
 
-## 1. The Vanity Metric Trap
+## 1. Activity Measures and Delivery Outcomes
 
 Do not treat generated code volume, prompt count, acceptance rate, or raw commit count as proof of delivery improvement.
 
@@ -124,7 +124,7 @@ A change may move forward only when the required evidence exists for its risk cl
 
 ## 4. Escalation Rules
 
-Define escalation before the pilot begins. Otherwise teams tend to reinterpret negative signals as temporary noise.
+Define escalation before the pilot begins so that an inconvenient result has an agreed review path. Treat changes as signals to investigate, rather than assume either degradation or temporary noise.
 
 ### Investigate
 
@@ -155,7 +155,7 @@ Possible responses:
 
 Pause the affected adoption path when critical controls fail, production risk rises materially, or the team cannot verify what the generated changes do.
 
-A pause is not a rejection of AI. It is a control action used to prevent an unstable workflow from producing additional inventory and downstream cost.
+A pause is a control action intended to contain exposure while the cause and response are assessed. Its benefits and interruption costs should be evaluated locally.
 
 ---
 
@@ -213,7 +213,7 @@ Avoid claims such as:
 
 Use bounded language:
 
-> In this team, for this class of work, under this operating model, AI assistance improved or degraded these measured outcomes during this observation period.
+> In this team, for this class of work and observation period, these measured outcomes were higher, lower or unchanged relative to the stated comparator under AI-assisted delivery. Attributing the difference to AI requires a credible design and checks for concurrent changes.
 
 ---
 
@@ -221,7 +221,9 @@ Use bounded language:
 
 When asked why code output has increased without equivalent delivery acceleration, explain the full production hierarchy:
 
-> "The tools have reduced the cost of producing candidate code. We are now measuring whether that acceleration survives review, validation, release, and production use. Where downstream queues or failures rise, we will change the operating model rather than count additional output as productivity."
+Illustrative communication, to use only if the local result has been measured:
+
+> "Candidate-code production was faster in this comparison. We are measuring whether the gain reaches release and production use. Where queues or failures rise, we will investigate the cause and adjust the affected workflow rather than infer delivery improvement from output alone."
 
 This keeps the discussion grounded in shipped value and system health rather than hype or fear.
 
@@ -229,7 +231,7 @@ This keeps the discussion grounded in shipped value and system health rather tha
 
 ## Relationship to the protocol stack
 
-[Protocol 1](01_personal_defense.md) defines engineer-level boundaries and verification practices. This protocol turns those boundaries into team-level metrics, gates, and escalation rules. Protocol 3 addresses the wider organizational and public incentives surrounding adoption.
+[Protocol 1](01_personal_defense.md) defines engineer-level boundaries and verification practices. This protocol turns those boundaries into team-level metrics, gates and escalation rules. [Protocol 3](03_public_defense.md) addresses evidence disclosure; [Protocol 4](04_systemic_cure.md) addresses organizational decision rights and incentives.
 
 ---
 

@@ -1,9 +1,9 @@
 # Protocol 3: The Public Defense
 ## Publish Evidence, Bound Claims, Correct the Record
 
-> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 2](02_operational_defense.md) | **Protocol 3** | [Protocol 4: Systemic Cure](04_systemic_cure.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 2](02_operational_defense.md) | **Protocol 3** | [Protocol 4: Organizational Control Model](04_systemic_cure.md) | [📚 References](../REFERENCES.md)
 
-Protocols 1 and 2 protect the engineer and the team. Protocol 3 protects the wider decision environment in which AI adoption is justified, funded, expanded, and judged.
+Protocols 1 and 2 address engineer and team decisions. Protocol 3 proposes disclosure practices for the wider environment in which AI adoption is justified, funded, expanded and judged.
 
 The goal is not to flood the market with a counter-narrative. It is to make claims about AI-assisted software delivery inspectable, bounded, and correctable.
 
@@ -11,7 +11,7 @@ The goal is not to flood the market with a counter-narrative. It is to make clai
 
 ## 1. The Public Evidence Problem
 
-AI adoption is often communicated through activity measures:
+When an adoption claim relies on activity measures, examples to distinguish from delivery outcomes include:
 
 - generated lines of code;
 - acceptance rates;
@@ -21,7 +21,7 @@ AI adoption is often communicated through activity measures:
 - number of enabled users;
 - isolated success stories.
 
-These signals may describe tool use, but they do not by themselves establish better delivery outcomes.
+These signals describe different constructs, including activity, perception and demonstrations. They do not by themselves establish better delivery outcomes.
 
 A credible public statement should distinguish among:
 
@@ -34,11 +34,13 @@ A credible public statement should distinguish among:
 flowchart LR
     A[Tool activity] --> B[Workflow effect]
     B --> C[Production outcome]
-    C --> D[Causal claim]
+    C -->|"Separate design and confounder assessment"| D[Assess causal attribution]
 
     A -. does not prove .-> C
     B -. does not automatically prove .-> D
 ```
+
+This is a measurement and assessment sequence, not a measured causal chain. Observing an outcome does not by itself establish its cause.
 
 **Public rule:** never collapse these levels into one productivity claim.
 
@@ -57,7 +59,7 @@ Before publishing a statement, classify it.
 | **Generalization** | "AI coding tools reduce software quality." | Multiple relevant studies and explicit scope |
 | **Recommendation** | "High-risk changes should require independent review." | Risk rationale, operational experience, or cited evidence |
 
-Use the weakest claim that the evidence can honestly support.
+Make the most specific claim justified by the evidence, retaining its uncertainty and scope. A bounded positive finding deserves the same visibility as a bounded negative one.
 
 Prefer:
 
@@ -160,7 +162,7 @@ A short public communication should still include the essentials. The card and r
 > **Intervention:** AI coding assistant used for implementation and test scaffolding.  
 > **Comparator:** Previous eight weeks, segmented by change size.  
 > **Observed result:** Time to first PR decreased, while active review effort and early rework increased. Release completion did not materially change.  
-> **Interpretation:** The team accelerated candidate-code production but did not yet improve end-to-end throughput.  
+> **Interpretation:** Candidate-code production was faster in this comparison; an end-to-end throughput gain was not established. Stable or imprecise release counts alone do not establish equivalence.
 > **Limitations:** Small sample, changing task mix, no randomized assignment.  
 > **Action:** Continue for low- and moderate-risk work with smaller PRs and stronger reference-bounded review.
 
@@ -168,7 +170,7 @@ This is more useful than an unqualified percentage improvement because it tells 
 
 ---
 
-## 5. Anti-Hype Rules
+## 5. Avoid Unsupported Claim Substitutions
 
 Do not publish or repeat claims that rely on the following substitutions.
 
@@ -230,7 +232,7 @@ Do not cite a source for a stronger claim than the source itself supports.
 
 ### Pattern B — External case-study statement
 
-> During a limited pilot, AI assistance reduced time to first implementation for selected tasks. End-to-end delivery results were mixed: review effort increased and production throughput remained broadly stable. The team is continuing the pilot with smaller changes, clearer references, and risk-based controls.
+> During a limited pilot, time to first implementation was lower for selected AI-assisted tasks than for the stated comparator. Review effort increased; no clear production-throughput gain was established. Changing task mix and concurrent changes limit attribution. The team is continuing the pilot with smaller changes, clearer references, and risk-based controls.
 
 ### Pattern C — Response to an inflated claim
 
@@ -309,4 +311,4 @@ If these questions cannot be answered, narrow the claim.
 
 ---
 
-**Next:** [🏗️ Protocol 4: The Systemic Cure](04_systemic_cure.md)
+**Next:** [🏗️ Protocol 4: Organizational Control Model](04_systemic_cure.md)
