@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "7df151e092048830a3c767f27d4b46784baa027f50d000b4c11875b1fb0a68c9",
+    "digest": "117e3ff4745ddafb8cfd879cf0d03cf71f97cfebffb045a1445551aac010e0c4",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -342,7 +342,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "265c161e6ff0b5521017bcc07ccf4d776ca32c3ce8555b5e929ce0f8504aea9d"
+        "sha256": "1c6ce3bedd7c50dd32c9795c29042386ecb42f8866c5ba440ec25463305b1081"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -457,7 +457,7 @@
       {
         "path": "governance/reviews/issue-64-2026-10-21-sol-editorial-audit.md",
         "identity_mode": "content",
-        "sha256": "882370d1dac1e8c9fe566d26bb042c54352c2ed9237e14b5194e4281ea95cde6"
+        "sha256": "7bcc6327210dac44f46e29b5ec03037c3d93ad4513024cb68d750aefbbdb3cd5"
       },
       {
         "path": "governance/status-model.md",

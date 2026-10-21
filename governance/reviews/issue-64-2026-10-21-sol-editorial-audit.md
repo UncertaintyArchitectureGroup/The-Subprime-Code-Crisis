@@ -115,7 +115,7 @@ Source locators below distinguish an actual finding from an unsupported statemen
 
 ## Independent review and validation
 
-Pending actual exact-candidate review/check outputs. No future Confirmed outcome or final analytical acceptance is predeclared.
+The dated checkpoints below distinguish pre-review checks, actual bounded review and publication. None establishes Astra's final analytical acceptance.
 
 
 ### Author pre-review checks
@@ -139,3 +139,11 @@ At the first implementation checkpoint, before actual independent acceptance:
 - Independently compared all137 unchanged baseline paths byte-for-byte;28 Verified rows,26 R1/8 R2 evidence-linked paragraphs, R3 survey/budget boundaries and README maps unchanged. May/September hashes independently matched.
 - Independent126tests, contract, trusted state/transition checks, RI freshness, whitespace and275 local links/anchors passed. Generated Python cache is outside tracked content and removed before the recording commit.
 - This actual confirmation is bounded Sol preparation. It does **not** establish Astra's final analytical acceptance, ready-for-merge status, new source verification or whole #64 completion. Work record/final Repository Gate and faithful recording are checked after they exist; remote exact-head CI remains separate.
+
+### Faithful recording and initial publication checkpoint
+
+- The same distinct reviewer **Confirmed** the four-file outcome/work-record recording at local `573ecd308a96a302b4c1aeafab4817bff371bf7d`, tree `36602bd147372b3b519b1bb2e2237951a3e157e3`. Exactly one new work record; source/report/protocol bytes unchanged. Trusted Repository Gate, state/transition, RI, whitespace and preservation checks passed. RI now represents150 files.
+- Published as draft [PR82](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/82); observed initial remote head `1343eafc9a756afc66a5e4724d51d1f34a19be52` has the identical reviewed tree `36602bd147372b3b519b1bb2e2237951a3e157e3`.
+- Exact initial-head [Main health39566436661](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39566436661) and [Repository Gate39566436849](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39566436849) completed success. Inspected jobs119109730460/119109733117 and required steps; no skipped required check substituted for success.
+- [Issue64 checkpoint6311145649](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/64#issuecomment-6311145649) maps Sol's contribution against every AC and the remaining Astra work. All whole AC01–05 remain open; PR is draft/unmerged and main remains3dca4e3.
+- This audit/memory/RI publication-only checkpoint changes the branch head. Its exact published head, faithful-recording review and new CI must be checked and recorded in PR/issue comments; the initial-head runs above cannot certify that later commit. No further content/source/control or work-record change is part of this checkpoint.
