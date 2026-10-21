@@ -1,0 +1,22 @@
+record_version = 1
+title = "Issue #64: accepted integration verification and next-owner handoff"
+primary_flow = "Flow D synthesis completion and observed-status synchronization; no source-state change"
+human_decision = "Maintainer authorized one-issue implementation, independent review, verification and evidenced closure; final checkpoint6311846253 continues accepted #64/PR82. Actual main94e7b81a01ac9c6d40e2d64b7fa862527d27c08a/treec13c6631e96485fc8cc1baf16442183e02e76ed4 matches independently accepted publication. Distinct /root/independent_issue64_final Confirmed final status candidate103d04d36366c5735c603990f38ef4696bf6f5aa/tree479d8a812d5a7f5c1eaf03626197c9f561e6f881 after independently checking live main/PR/head/tree/CI and every required step. Audit governance/reviews/issue-64-2026-10-21-final-verification.md records AC evidence, actual integration, bounded source preservation and #65 Sol/Astra handoff. All28 Verified states/dates preserved; no source finding/use, reader/control/governance change. Exactly one new work record; all earlier merged records immutable. Faithful recording, final publication/main checks and closure remain subsequent observations. Refs #64."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Not required"
+reason = "Observed accepted-integration/status/handoff record only; PR82 already records substantive reader-facing corrections. No new finding, control, source state or rule."
+
+[synchronization]
+assessed_surfaces = ["reader-navigation", "evidence", "source-registry", "evidence-indexes", "references", "report", "protocols", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+reader-navigation = "Current reader labels, links, maps and entry points already accepted; only dated governance handoff changes."
+evidence = "All evidence brief meanings and metadata preserved; no new evidence review or date renewal."
+source-registry = "All source identities, actual uses, states and dates unchanged, including28 preserved Verified rows."
+evidence-indexes = "Source classes, brief links and summaries unchanged."
+references = "Citation identities, versions, URLs and bibliography boundaries unchanged."
+report = "Accepted report findings, hypotheses and scenarios unchanged."
+protocols = "No practice, threshold, role, gate, sequence or interpretation change in this metadata step."
+contributor-guidance = "No workflow, obligation, status definition or governance-rule change."

@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "ef233430a369887c2fdd9a16042965e0cb5a1d582c5429b3d91830e85d9e5e9b",
+    "digest": "c43d44f7b1969e645c9cdc966d880fdba4fdc377345bec85c702fa435c57fcda",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -342,7 +342,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "913405e82ae73309041a3c2fe3d228537f0799ecf02a1306113880e789d43422"
+        "sha256": "2fde1d6d0ba14fb18c1c58b1f7d7392cab9590bd836e55f03cdbf0b09b81ce80"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -458,6 +458,11 @@
         "path": "governance/reviews/issue-64-2026-10-21-astra-review.md",
         "identity_mode": "content",
         "sha256": "714188a922b68d5f47b131b329a5f727bb816943aac8603a0ac44d7738752741"
+      },
+      {
+        "path": "governance/reviews/issue-64-2026-10-21-final-verification.md",
+        "identity_mode": "content",
+        "sha256": "b2e5a62cd0cff74ea78e1524dd765b94ef8ec169e53ad829352bca3b5112899b"
       },
       {
         "path": "governance/reviews/issue-64-2026-10-21-sol-editorial-audit.md",
@@ -578,6 +583,11 @@
         "path": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
         "identity_mode": "content",
         "sha256": "34617a7bf48224b759a898e2af185e1166e555cf38fc733929b10866ee6703fd"
+      },
+      {
+        "path": "governance/work-records/2026-10-21-issue-64-final-verification.toml",
+        "identity_mode": "content",
+        "sha256": "9216c40c0b548a32f493c39d2bfa9ffafd88e5d1ea13d90cb7bd314e4f4dfbc6"
       },
       {
         "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
@@ -2147,6 +2157,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-64-2026-10-21-final-verification.md",
+      "title": "Issue #64: final integration and handoff verification",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-64-2026-10-21-sol-editorial-audit.md",
       "title": "Issue #64: bounded criticism — Sol implementation audit",
       "instructions": [
@@ -2310,6 +2327,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
       "title": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-64-final-verification.toml",
+      "title": "governance/work-records/2026-10-21-issue-64-final-verification.toml",
       "instructions": [
         "AGENTS.md"
       ]

@@ -2,57 +2,51 @@
 
 ## Snapshot
 
-- Checked 2026-10-21 UTC. Main3dca4e389ec549c712e1346b07f8cda7f2e6cfdd,
-  treef2798456843dc39079e3b7be910e90768915b813; #63 completed via PR80/81.
-- #64 open/all whole ACs pending. PR82 open/draft/unmerged; observed head
-  0dbc69f9bc4d9e3b01a468f931ff731522bce71d, tree8ace36f98050dd0d999c8765672a554f75a14b33.
-- That exact head passed Main health39567187626 and Repository Gate39567183803,
-  required job steps inspected. These runs do not certify Astra's later corrections.
-- Fetch live issue64/PR82/main/head/CI before acting; memory/RI are dated navigation.
+- Checked2026-10-21 UTC. PR82 merged; live main94e7b81a01ac9c6d40e2d64b7fa862527d27c08a,
+  treec13c6631e96485fc8cc1baf16442183e02e76ed4 equals the independently accepted tree.
+- Exact-main health39571374976/job119126117416 passed every required step.
+- #64 analytical/content acceptance is complete; status-record review/integration and
+  final completion comments/closure remain pending at this dated checkpoint.
+- Fetch live issue64/PR82/main/CI before acting; memory/RI do not fetch current status.
 
 ## Active owners
 
-- #47/#52 and #57–63 completed. #64 is current; final analytical acceptance achieved locally.
-- Separate /root/independent_issue64_final owns the distinct final challenge.
-- #54 owns pilot design/resources/collection; no data collected here.
-- #65 comprehensive synchronization follows accepted #64. Parent #53 remains open.
-- Site/publishing PR75 and other tooling/publishing PRs remain separate owners.
+- #47/#52 and #57–63 completed. #64 final status/handoff synchronization is current.
+- #65 is next: all-source/claim occurrence reconciliation, protocol/nav and final AC table.
+- #53 stays open until its remaining dependencies/dispositions are complete.
+- #54 owns pilot design/resources/collection. Publishing#48/release#55/site PR75 separate.
 
 ## Decisions
 
-- Latest maintainer: Astra take over, retaining one-issue review/verification/closure.
-- FlowD synthesis/dependency assessment; Astra start6311365156, pre-edit treatments
-  6311448077/6311474112/6311489780. No new source identity or empirical result.
-- Preserve benefits and defensible risks; remove unsupported confidence/causality.
-- Containment is not measured benefit; triggers and endpoints are separate;
-  propagation/incentive variants need meaningful tests, not guaranteed outcomes.
-- Protocol clarification only; roles, gates, risk classes and thresholds unchanged.
-- No source reset: the distinct final review confirms unchanged accepted source
-  meanings/Current use for the exact delta; all28 Verified states/dates preserved.
+- Maintainer authorized one issue at a time through review, checks and evidenced closure;
+  latest Astra takeover. Final checkpoint6311846253 continues that same #64 scope.
+- FlowD synthesis completion; no source finding/identity/use/date or control change.
+- Final full argument and faithful recording independently Confirmed; primary Astra approves.
+- Preserve all28 Verified states/dates; no new source reset/promotion or resolved access gap.
+- Final metadata changes only audit/memory/RI/one new work record; Changelog not required.
 
 ## Evidence
 
-- reviews/issue-64-2026-10-21-sol-editorial-audit.md records Sol's bounded preparation,
-  actual Confirmed checkpoints, occurrence/numeric/placement trace and handoff.
-- reviews/issue-64-2026-10-21-astra-review.md records initial Corrections required,
-  A64-01–07 dispositions, targeted original/hash checks and source-dependency reasoning.
-- Independent initial review at5ed21bc43d5a777271dc1805ef5100b3a58900a7/tree8ace36f:
-  six substantive findings; source preservation/no-reset accepted for the initial delta.
-- Original May/September NBER identities remain distinct; Xu/Agarwal/GitClear proxies
-  do not independently establish persistent debt. No new full-source/raw-data review.
-- Source estimates, limitations, all28 Verified rows and operational controls preserved.
-- Exactly one new PR82 work record, updated before merge for final scope/outcome.
+- reviews/issue-64-2026-10-21-sol-editorial-audit.md: full occurrence/numeric/placement trace.
+- reviews/issue-64-2026-10-21-astra-review.md: six initial findings plus propagation follow-up;
+  corrected whole-scope Confirmed at32ef808/tree9887cc29, faithful recording at3962b1c/treec13c6631.
+- reviews/issue-64-2026-10-21-final-verification.md: actual accepted main/CI, AC mapping,
+  source preservation, remaining gaps and Sol/Astra handoff.
+- Published095096f treec13c6631 passed health39571147507 and final Gate39571274669,
+  all required steps; PR82 merge94e7b81 preserves exactly that tree.
+-126tests/277local links passed;117baseline files/15complete control blocks independently
+  preserved. Clean exact-main contract/state/RI151 passed;37evidence/reference files and
+  all28 Verified rows unchanged. No full-original/raw-data review newly claimed.
+- Original-book, provenance and retired-citation gaps remain in canonical registry/briefs.
 
-- Final distinct whole-#64 analytical Confirmed at32ef80823ffa42648390ddb599802f7addc740bb,
-  tree9887cc29c9906b49de6cb447328641f8a88f1ab3. Primary Astra approves; no remaining
-  material discrepancy. Actual source no-reset and control preservation confirmed.
-- Final independent contract/trusted state/transition/Gate/RI/whitespace passed.
+- Distinct final-status Confirmed at103d04d/tree479d8a81: actual live main/PR/CI and
+  required job steps independently verified; no new source/control change.
 
 ## Next actions
 
-- Confirm faithful outcome recording, publish accepted tree to existing PR82 and inspect
-  exact-head CI. Prior runs cannot certify a later publication head.
-- Then merge, verify actual main, record complete AC evidence and close #64.
-- If the live owner already records completion, do not repeat these pending actions;
-  continue with #65. Refresh this dated checkpoint after integration.
-- Source access/provenance discrepancies remain bounded; #54 stays design-only.
+- If #64 is still open, check its final status PR, actual main/CI and complete evidence;
+  finish only missing verification/closure steps. Do not assume a future merge from this file.
+- If #64 is completed, start #65 with a fresh live-status check and its full ACs.
+- Sol executes #65 reconciliation, scoped protocol/navigation fixes and closing evidence table;
+  Astra independently challenges final content/source implications and parent-closure readiness.
+- No pilot collection or site publication is part of this handoff.
