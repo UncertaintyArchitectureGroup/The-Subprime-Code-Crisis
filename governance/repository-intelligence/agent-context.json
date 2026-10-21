@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "abf2ae9d330dfb8be12ffbf684b81ab5796f5493a1bde8c455fdc06d2dbf1a7f",
+    "digest": "194107cbe6e1f002970e6188295de3a0044377e28124d2c512b5cda7696e3922",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "1bb4dff38620d14aedd8fa4957e497efa6d08baedd168084e8697c978c2529d8"
+        "sha256": "ed10b1688fb424559e792c5a97a2d98abffd9c11f8419e35050fa00b57ebf003"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "814db4ab8a7f00c906a6a16063f13cff308986498ed0b31ae64deb63c7de137c"
+        "sha256": "e67946930f0470fb9e277f2d98be35253280f4bb25bb282f57d1da6873095264"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "d479b2c73e4b83aa78472c571d6c92808f08ab8f927985fd4922dc0ede9565af"
+        "sha256": "5f45632165c8de874c5d70761bf832a648c5052f86ac3088b14e159eaaae43e3"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "4a8564169295f5b2275e0761f09d99073e04881d014d908fe9da09d00f19138e"
+        "sha256": "b9319b16756d1e9ea07b3fd9cc72d5907b71bb3c829d5288421836ac1c004164"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -175,9 +175,14 @@
         "sha256": "04a72cb7a182213f82c7a32badafef1c78fe5fbc2809ddede30f380b7dc79fe3"
       },
       {
+        "path": "evidence/methodology/1984-the-goal.md",
+        "identity_mode": "content",
+        "sha256": "557e6713d41a14fa5e12e65562a5dd168b1b9713cf86f1493bb6b01e5de7a895"
+      },
+      {
         "path": "evidence/methodology/README.md",
         "identity_mode": "content",
-        "sha256": "c62c0fc7224c243f29729374bc94fc5bd4e1d18fd24412ab8c53934ae66cda9d"
+        "sha256": "d1a736a961441475cc6e98e8fb25b2c9cd4e0ec59d7432a8ee72d32ea6098c9f"
       },
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
@@ -225,6 +230,11 @@
         "sha256": "049b999f86049ad760838ac5f660c3c157c3c32bd6aeb6605f808dc0d2f42120"
       },
       {
+        "path": "evidence/primary/2025-metr-task-horizon.md",
+        "identity_mode": "content",
+        "sha256": "83d6688f38ed6476e3c1376b750413419b30d5a27281afcd32fd132fcd4feea6"
+      },
+      {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
         "identity_mode": "content",
         "sha256": "3146babd8b1a5e306c886d869b5920ba6020fb07c51a2a4b982c49b98a301848"
@@ -242,12 +252,12 @@
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "8e4dcc69f02a8213bf7add1d225628939f70de16cfbabf1b77860a7c0daa99df"
+        "sha256": "52f1314bfdc94e1715d32457e72d05ed0a1ac6ba8db27483f908ca491fa10b5f"
       },
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "84317a1708f816b8ab6c662ab7d8aafb5b4afe128c1a2af64044c2b16d9f4db6"
+        "sha256": "96d12bbec4c96b63e51306c3039284e0d57f11263aa89b74c42789791b8ff620"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -332,7 +342,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "244185ff19d4218de466153ac9b6660c8fe618787b67a5fc1b6c0111db7660f2"
+        "sha256": "44888f115dec7725a21bca0d7455d18f8dd6e0da2625ea416da2aee2c896d5a4"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -428,6 +438,16 @@
         "path": "governance/reviews/issue-62-2026-10-21-provenance-audit.md",
         "identity_mode": "content",
         "sha256": "bc907a20f164b3de6ffa1a042ca94970fba8afbb26dd0a2386913d306d2fb21f"
+      },
+      {
+        "path": "governance/reviews/issue-63-2026-10-21-astra-review.md",
+        "identity_mode": "content",
+        "sha256": "b8c9828819474d243eb885eb488b15692aaf4354a8745b619a228c5811aa43ed"
+      },
+      {
+        "path": "governance/reviews/issue-63-2026-10-21-mechanism-audit.md",
+        "identity_mode": "content",
+        "sha256": "3a8adb19e27bbfe041520dd8b3249dd98e23bcb3fbd3bfb862680434b4bec727"
       },
       {
         "path": "governance/status-model.md",
@@ -535,6 +555,11 @@
         "sha256": "12527cdf3980f02ba03de9181abd184890e7ae8e63342db3f82cb643a5fe9d7f"
       },
       {
+        "path": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
+        "identity_mode": "content",
+        "sha256": "34617a7bf48224b759a898e2af185e1166e555cf38fc733929b10866ee6703fd"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -547,17 +572,17 @@
       {
         "path": "protocols/02_operational_defense.md",
         "identity_mode": "content",
-        "sha256": "9798a952117a562f14298799b097d9324b4b941ca5ce623dc4566df0db3054a6"
+        "sha256": "8f7173b7d76f90280237c9dec2be78289b22b322bd0f16bd2331b21b606cb296"
       },
       {
         "path": "protocols/03_public_defense.md",
         "identity_mode": "content",
-        "sha256": "6716f7fed35e8c391b5eba9bfbedb3a08072c855232352fbb8f58bc54c40537c"
+        "sha256": "25830895b5a2d674632377ae1fbfc8b9f971c59a921edada67a016501eb8a1bb"
       },
       {
         "path": "protocols/04_systemic_cure.md",
         "identity_mode": "content",
-        "sha256": "38fa3ecbd587e9f453bb954d79a8e8e8e7a92d952b749693f29921e104bd758f"
+        "sha256": "89ef5b52a4af2b8f99ce13940a35d84e03f82ff27df910b2e5694a9499fa62b2"
       },
       {
         "path": "protocols/README.md",
@@ -567,22 +592,27 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "aee389d55c56e7428aa57ad029cd3c89acf369738496e7041a6c87817d3cc5f4"
+        "sha256": "c849a35880ef72446ce6d7f83857b012f101b0115062adea85f4aeed16d7c4f2"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "c56c6fadec7df4b24a9a98cba134d302f7561a3b7bf176dacf8b9b7026282348"
+        "sha256": "5ecc80e6db62aa2c05f37a728a6eb53b1b4162b7739c2e1c38c2ad9fd5ea40bc"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "f2314cc205142767954b7adf4cb9758fd620c48fdc6263ffd5eac4225f922a33"
+        "sha256": "42140df1b9121c658ddd7c95ee1a535b3f8e4f6121312d1d8132863007ec55e7"
       },
       {
         "path": "report/appendices/cost-context.md",
         "identity_mode": "content",
         "sha256": "444c154087a1e05872fb75bd85d21adab1788b44df19ec91def9760b596e1116"
+      },
+      {
+        "path": "report/appendices/mechanism-hypotheses.md",
+        "identity_mode": "content",
+        "sha256": "2961ff101c0d3c2e92a5bfa06b98f89adf2c01f0d64e2e194b25678ec7550003"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -1107,12 +1137,12 @@
     {
       "id": "P-2026-01",
       "path": "evidence/SOURCES.md",
-      "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*, NBER Working Paper 35275",
-      "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-07-27",
-      "can_support": "Measured attenuation from coding activity toward projects, releases, and early marketplace use within the studied setting",
-      "current_use": "`README.md` Crisis Map and evidence boundary; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`",
+      "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275, May 2026 revised September 2026; original PDF pinned, May history retained",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "can_support": "September observational outcome estimates, positive releases, calibrated model and separate marketplace proxies; no identified universal bottleneck",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
     },
     {
@@ -1140,13 +1170,13 @@
     {
       "id": "P-2025-02",
       "path": "evidence/SOURCES.md",
-      "source": "METR, *Measuring AI Ability to Complete Long Tasks*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "source": "METR, *Measuring AI Ability to Complete Long Tasks*, arXiv v1 (18 March 2025); author post 19 March with later live-chart data",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Agent task-completion performance as task duration increases under the study's benchmark design",
-      "current_use": "Agent capability and task-horizon discussion",
-      "brief_path": null
+      "can_support": "Historical v1 benchmark methods/trend and bounded internal-PR scoring evidence; not current-model thresholds, global reliability or production review demand",
+      "current_use": "`README.md`; `report/02_broken_mechanics.md` Ch5; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2025-metr-task-horizon.md"
     },
     {
       "id": "P-2025-03",
@@ -1459,13 +1489,13 @@
     {
       "id": "M-1984-01",
       "path": "evidence/SOURCES.md",
-      "source": "Eliyahu M. Goldratt, *The Goal: A Process of Ongoing Improvement*",
-      "evidence_review": "Registered",
-      "integration_audit": "Not started",
+      "source": "Eliyahu M. Goldratt and Jeff Cox, *The Goal: A Process of Ongoing Improvement*, first published 1984; exact original edition/access unresolved",
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
       "last_verified": "—",
-      "can_support": "Theory of Constraints concepts such as bottlenecks, inventory, and local optimization",
-      "current_use": "Delivery-system interpretation throughout the report",
-      "brief_path": null
+      "can_support": "Bibliographic identity and provisional constraint/inventory lens; no complete original-book review, theorem or empirical AI effect",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch4; `report/02_broken_mechanics.md` Ch7; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/methodology/1984-the-goal.md"
     }
   ],
   "instructions": [
@@ -1693,6 +1723,13 @@
       ]
     },
     {
+      "path": "evidence/methodology/1984-the-goal.md",
+      "title": "The Goal: methodology record with an original-access gap",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/methodology/README.md",
       "title": "Theory and Methodology",
       "instructions": [
@@ -1763,6 +1800,13 @@
       ]
     },
     {
+      "path": "evidence/primary/2025-metr-task-horizon.md",
+      "title": "METR: long-task capability, measurement and verification boundaries",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
       "title": "Xu: Copilot availability and open-source activity",
       "instructions": [
@@ -1785,7 +1829,7 @@
     },
     {
       "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
-      "title": "Writing Code vs. Shipping Code",
+      "title": "Writing Code vs. Shipping Code — September 2026 revision",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2050,6 +2094,20 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-63-2026-10-21-astra-review.md",
+      "title": "Issue #63: Astra source and mechanism review, 21 October 2026",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-63-2026-10-21-mechanism-audit.md",
+      "title": "Issue #63 — Sol source checks, implementation and Astra handoff",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2197,6 +2255,13 @@
       ]
     },
     {
+      "path": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
+      "title": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/work-records/README.md",
       "title": "Machine-readable work records",
       "instructions": [
@@ -2262,6 +2327,13 @@
     {
       "path": "report/appendices/cost-context.md",
       "title": "Cost context: historical records, estimates and intentions",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "report/appendices/mechanism-hypotheses.md",
+      "title": "Delivery mechanism: claim graph and proposed tests",
       "instructions": [
         "AGENTS.md"
       ]

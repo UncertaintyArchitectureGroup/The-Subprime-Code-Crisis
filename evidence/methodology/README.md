@@ -26,4 +26,4 @@ Each brief should include:
 
 ## Current status
 
-The methodology sources currently used by the repository are registered in [`../SOURCES.md`](../SOURCES.md). Detailed briefs are pending.
+[The Goal: original-access gap and provisional application](1984-the-goal.md) records M-1984-01. The original book edition has not been fully reviewed; the software mechanism is repository interpretation with explicit assumptions, not a book-verified theorem. Current source states remain in [`../SOURCES.md`](../SOURCES.md).

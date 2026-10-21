@@ -18,14 +18,17 @@ AI-assisted coding can increase the rate at which candidate changes are produced
 **Conditional repository scenario:** The diagram proposes a feedback mechanism to investigate. The [enterprise surveys and market commentary in Chapter 3](../report/01_the_illusion.md#enterprise-surveys-use-benefits-and-scaling-are-different-outcomes) do not measure this causal loop or its prevalence. Sufficient existing capacity, useful review assistance or intake limits could prevent it; stable quality and improved delivery would weaken the adverse scenario.
 
 ```mermaid
-flowchart LR
-    A[Management pressure for visible AI adoption] --> B[More candidate code]
-    B --> C[Review and validation queues]
-    C --> D[Rework, defects, and maintenance inventory]
-    D --> E[Higher delivery cost and lower trust]
-    E --> F[Pressure for more visible output]
-    F --> B
+flowchart TD
+    A["Pressure for visible adoption"] -->|"If incentives favor candidate volume"| B["More candidate code"]
+    B -->|"If admitted demand and variation strain capacity"| C["Review or validation waits"]
+    C -->|"If context loss or inadequate checks add harm"| D["Extra rework or escaped defects"]
+    D -->|"If costs persist without recovery"| E["Higher delivery cost or lower trust"]
+    E -->|"If the response again rewards volume"| A
+    B -->|"Headroom or controlled intake"| F["Useful gains possible"]
+    C -->|"Effective adaptation"| F
 ```
+
+The [mechanism tests](../report/appendices/mechanism-hypotheses.md) require independently assessed demand/capacity, work boundaries and quality outcomes. Absent triggers and successful recovery are alternatives to this loop; a diagram does not estimate effects or probabilities.
 
 In this hypothesis, rewards for activity signals could reinforce the loop if additional costs fall outside the measured team, period or production boundary. The surveys do not establish those incentive effects.
 

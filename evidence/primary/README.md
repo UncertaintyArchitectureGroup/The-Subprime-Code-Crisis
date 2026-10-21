@@ -11,7 +11,8 @@ This directory contains evidence briefs for original empirical studies.
 - [Agarwal: agent adoption, activity and structure](2026-agarwal-agent-adoption.md) — v2 (January 2026), MSR 2026 Mining Challenge listing; repository-month effects differ by observable adoption history, with positive AF activity and explicit uncertainty.
 - [GitClear: historical code-change/clone signals](2025-gitclear-code-quality.md) — full v2025.2.5 PDF; distinct line/commit denominators, selected samples, projections and internal-reporting limits.
 - [GitClear: separate developer-output measures](2025-gitclear-developer-output.md) — full original embedded report; positive component results, cohort/window limits and disputed Method 1 mean; no net-delivery composite.
-- [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](2026-writing-code-vs-shipping-code.md) — NBER Working Paper 35275 (May 2026); large-scale matched event study across successive generations of AI coding tools.
+- [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](2026-writing-code-vs-shipping-code.md) — September 2026 original, positive releases, estimation/sample sensitivity and model/marketplace boundaries; May and July history preserved.
+- [METR task-horizon definition](2025-metr-task-horizon.md) — pinned March 2025 v1 methods/trend, internal count discrepancies, context/scaffold limits and bounded scoring counterevidence; no current-model or review-duration inference.
 
 - [Menlo 2025 enterprise AI market estimates](2025-menlo-enterprise-ai-spend.md) — revised market boundary, derived growth and estimation limits.
 - [CloudZero 2025 AI budget intentions](2025-cloudzero-ai-budget-intentions.md) — respondent reports/plans and unresolved percentage/threshold discrepancy.

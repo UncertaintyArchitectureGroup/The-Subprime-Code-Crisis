@@ -1,0 +1,19 @@
+record_version = 1
+title = "Issue #63: September source review and conditional delivery mechanism"
+primary_flow = "Flow C — NBER revision discovery and clarified legacy identities; required changed-use audit and legacy-source review under B/D"
+human_decision = "Maintainer authorized source/numeric/placement corrections, hypotheses, independent review and Astra handoff. Start6309978345 and pre-edit treatment6310154890 precede Astra integration. September NBER original and METRv1 assessed, Goldratt original gap non-load-bearing/unresolved. Initial independent analytical review by /root/astra_review_issue63 found Corrections required on ef5b228/tree809141fe; corrected-candidate review Confirmed at317bc1a3103840866f7d353c29b55ec001cfebd0/treeb45614fcee03100bc58d643c5626229250755d43 for source/analytical/all-use scope, with no remaining material discrepancy. Actual prior bounded Sol confirmations remain in the preserved audit. No governance/control/collection change. Three source states reset in PR80; eligible promotion requires accepted merge and separate final verification. Audits: issue-63-2026-10-21-astra-review.md and preserved mechanism-audit.md; Refs #63."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Material reader-facing mechanism/version corrections, cumulative and positive NBER boundaries, benchmark definition, conditional map and protocol example clarifications."
+
+[synchronization]
+assessed_surfaces = ["doctrine", "repository-architecture", "reader-navigation", "evidence", "source-registry", "evidence-indexes", "references", "report", "protocols", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+doctrine = "Existing finding/inference/scenario/protocol principles apply; no new canonical term or interpretation rule."
+repository-architecture = "Source, brief, report, protocol and map relationships remain unchanged; no scope or artifact-model edit."
+contributor-guidance = "Existing approvals/source/issue/review obligations suffice; no contributor-duty or workflow change."
+
+# Corrected-candidate confirmation is actual; final recording, remote-head CI and merge remain separate observations.

@@ -102,35 +102,17 @@ The next section examines a separate source that explicitly follows activity tow
 
 ### Writing Code vs. Shipping Code
 
-NBER Working Paper 35275, *Writing Code vs. Shipping Code*, provides direct evidence for the distinction between local coding activity and downstream software outcomes. The authors examine successive generations of AI coding tools and follow their measured effects across a production hierarchy rather than stopping at lines of code or commits.
+The **September 2026 revision** of Demirer, Musolff and Yang's NBER Working Paper 35275 follows coding activity toward repository outcomes. The authors describe more than 500,000 developers across tool samples, with repeat adopters and much smaller outcome-specific regression samples. Matched observational event studies use earlier-year controls; agent-authored async outcomes instead use interrupted time series. The [version-pinned brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) records methods, uncertainty, sensitivity and the preserved May history.
 
-For the cumulative generation that includes asynchronous agents, the reported effect falls from approximately:
+Figure1 reports cumulative adoption-generation estimates of about **30%, 180% and 240% more commits** for autocomplete, +sync and +async. The final display reaches roughly **80% more distinct repositories touched and 30% more releases**. These are positive downstream results; smaller proportional gains toward releases do not mean zero benefit or overall productivity decline.
 
-- **180%** for commits;
-- to **50%** for distinct projects or repositories touched;
-- to **30%** for releases.
+They do not track a fixed batch of commits through one funnel. Releases count recently contributed-to repositories with a GitHub release, not the developer's own deployed features, quality or customer value. Table6 gives incremental release estimates of **9.0% (SE5.0)** for autocomplete and **19.8% (SE2.9)** for pooled sync; the former is uncertain at conventional levels. There is **no separate async release estimate**. The cumulative headline must not be relabeled as an additional async effect. Samples and specifications materially affect magnitudes; exact comparisons belong in the brief.
 
-The exact percentages come from specific samples and event-study specifications. They should not be treated as universal productivity constants. The robust insight is the attenuation pattern: the further measurement moves from writing code toward shipping and adoption, the smaller the observed gain becomes.
+**Model result:** The revision calibrates a substitution elasticity of approximately **0.23** to autocomplete outcomes in an assumed hierarchical production model. The authors' complementarity interpretation is model-dependent, not a directly measured review burden, fixed capacity or replacement ratio. Experiments, selection and changed scope can also contribute to the observed activity pattern; abandoned alternatives are not necessarily defective work.
 
-```text
-Generated code
-      ↓
-Commits
-      ↓
-Pull requests and review
-      ↓
-Projects and releases
-      ↓
-Usage and customer value
-```
+**Separate descriptive marketplace analysis:** Entry rises or reverses a decline on iOS, Android and Chrome, although Chrome growth predates the agentic period; SourceForge shows a slight entry increase. Three-month new-cohort usage has different proxies: iOS ratings are roughly stable, Android downloads rise modestly, and Chrome's proxy declines on an earlier trend. Chrome uses maxima of observed current-user counts, not directly measured cumulative installs. SourceForge has insufficient usage data for an equivalent comparison. These series are not causal follow-ups of the matched developers or measures of all consumer value. Discovery, demand, selection and adoption lag remain alternatives to a production constraint.
 
-The paper also reports that new application supply increased across four marketplaces beginning around mid-2025, while total application usage did not increase during the first three months after launch. This does not mean that no AI-assisted application creates value. It means that producing more software artifacts is not the same as producing more adopted software.
-
-> **Architecture insight:** The productivity bottleneck has shifted. AI can scale code generation faster than organizations can scale verification, integration, release, and adoption capacity. Once downstream capacity becomes the constraint, additional upstream output increases inventory more readily than delivered value.
-
-This evidence strengthens the report's central distinction between **activity metrics** and **system-level productivity**. It does not, by itself, establish that AI-generated code is generally lower quality, that all additional commits are waste, or that every organization experiences the same effects. Those claims require separate evidence.
-
-For the study's methodology, observed findings, model-calibrated estimate, limitations, and explicit claim boundaries, see the repository's [NBER evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md).
+**Repository hypothesis:** Additional admitted verification demand could increase waits when effective capacity, variation and work policies make the stage constrained. Headroom, controlled intake, useful selection or effective assistance could preserve quality and improve delivery. Neither attenuation nor the marketplace series identifies review as the constraint in most organizations. [Chapter4](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification) and the [claim graph and tests](appendices/mechanism-hypotheses.md) separate evidence, assumptions and proposed consequences.
 
 ---
 
@@ -196,7 +178,7 @@ The practical implication is to measure the complete delivery boundary while ret
 * **Peng et al. (arXiv v1, 2023):** [The Impact of AI on Developer Productivity: Evidence from GitHub Copilot](https://arxiv.org/abs/2302.06590v1) and [evidence brief](../evidence/primary/2023-copilot-task-productivity.md) — 95 randomized (45/50), 70 task-and-survey completers (35/35); 55.8% less completion time among completers on one JavaScript task (95% CI 21–89%). Experience heterogeneity is exploratory, not a universal seniority rule.
 * **GitClear quality (February 2025, v2025.2.5):** [Full original PDF](https://gitclear-public.s3.us-west-2.amazonaws.com/GitClear-AI-Copilot-Code-Quality-2025.pdf) and [brief](../evidence/primary/2025-gitclear-code-quality.md) — 2020–24 operation/clone signals in selected samples; exact fractions, sampling, appendix/body/landing conflicts and projections are distinguished.
 * **GitClear developer output (publisher date 1 October 2025; inspected 20 October 2026):** [Original report](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025) and [brief](../evidence/primary/2025-gitclear-developer-output.md) — separate cohort/aggregation results; positive activity, unobserved AI exposure and internal Method 1 mean discrepancy, not net-delivery productivity.
-* **Demirer, Musolff, and Yang (NBER Working Paper 35275, 2026):** [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](https://www.nber.org/papers/w35275) — Reports substantial attenuation from commits toward projects and releases, and increased application supply without higher early aggregate usage. See the [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) for methodology, limitations, and claim boundaries.
+* **Demirer, Musolff and Yang (NBER Working Paper 35275, September 2026 revision):** [Evidence brief and version boundary](../evidence/primary/2026-writing-code-vs-shipping-code.md) — positive coding/release estimates with attenuation, a calibrated model and separate descriptive marketplace series. Exact revised original and historical versions are identified in the brief.
 * **Techno Diaries (29 October 2025):** [Public introduction and source brief](../evidence/secondary/2025-technodiaries-review-anecdote.md) — one unaudited first-person review-time account; member-only remainder unavailable. Practitioner context, not a population estimate.
 * **Stack Overflow Developer Survey (2024):** [AI results](https://survey.stackoverflow.co/2024/ai) and [source brief](../evidence/primary/2024-stackoverflow-ai-attitudes.md) — question-specific attitudes, including mostly favorable sentiment and a majority reporting no current-job threat; not a fear/overtime trend.
 
@@ -347,56 +329,40 @@ Where measured review, integration or maintenance needs exceed existing capabili
 
 Chapter 1 reports positive and mixed activity findings, plus static-analysis signals with design and uncertainty limits. Xu and Agarwal do not establish a universal decline in quality or a measured review bottleneck. This chapter proposes a conditional systems scenario: additional candidate work could exceed review and validation capacity. Its assumptions and downstream consequences require local evidence.
 
-Goldratt's **Theory of Constraints** provides a lens for examining capacity limits. It is a framework for this scenario, not empirical identification of the bottleneck in any particular team.
+Goldratt and Cox's **Theory of Constraints** is a methodological lens, not evidence identifying a team's constraint or an AI effect. The [methodology record](../evidence/methodology/1984-the-goal.md) explicitly retains an unresolved original-book edition/access gap. The assumptions below are repository proposals; they are not a theorem quoted from that edition.
 
 ---
 
-### The Physics of Software Delivery
+### Which Stage Constrains This Use Case?
 
-Consider an illustrative delivery system with coding, review, validation and release stages. Assume coding initially limits the flow and review has spare capacity. Faster candidate production could then expose a downstream constraint; it could also improve delivery if downstream capacity is sufficient.
+Consider coding, review, validation and release stages. If coding initially limits delivery and later stages have headroom, faster implementation can increase useful releases. If review already limits delivery, extra candidate output need not increase throughput; faster coding can still save effort or enable better task selection. Neither case establishes that coding speed is useless or that every team must encounter a new bottleneck.
 
-These are scenario assumptions, not a measured description of the classic SDLC or a finding that typing was every team's original bottleneck. Local queue, effort and production measures determine whether the model applies.
+A constraint can move, be shared across stages or be a release policy rather than a person. Compare production outcomes before selecting a response.
 
 ---
 
-### Candidate Work Meets a Capacity Limit
+### Admitted Work Meets Effective Capacity
 
-**Conditional scenario diagram:** arrows describe proposed relationships, not a measured path through Xu or Agarwal data. The constraint may be review, another stage, or absent in a deployment.
+**Conditional repository mechanism:** generated candidates are not automatically admitted work. A queue hypothesis needs the following measured conditions, with comparable units and observation windows:
+
+- **Admission and risk mix:** Which candidates enter review, and how much verification does each require? PR/line counts alone omit size, risk, familiarity and rejected work.
+- **Effective service capacity:** Available reviewer/validator time, skills, context, tools and required quality determine processing capacity. Constant headcount or budget does not imply fixed effective capacity.
+- **Utilization and variation:** Average demand below capacity does not rule out burst-related waits, uneven skills or long-tail tasks. Persistently greater admitted demand suggests an accumulating backlog only while work cannot be completed, redirected or withdrawn; no waiting-time multiplier is calibrated here.
+- **WIP and release policies:** Pull limits, smaller changes, batching and release calendars can prevent or relocate a queue. A deliberate scheduled wait is different from evidence of overload.
 
 ```mermaid
 flowchart TD
-    %% Nodes
-    AI[("AI-assisted candidate work")]
-    
-    subgraph Sdlc ["Possible downstream constraint"]
-        Queue[/"PR queue"\]
-        Context("Possible context loss")
-    end
-
-    Bottleneck(("Constrained review capacity"))
-    
-    Output[("Delivered changes")]
-
-    %% Connections
-    AI == "More candidate changes" ==> Queue
-    Queue --> Context
-    Context --> Bottleneck
-    
-    Bottleneck -.->|"Rubber Stamp (Risk)"| Output
-    Bottleneck == "Thorough review" ==> Output
-
-    %% Styles
-    style AI fill:#aaffaa,stroke:#333,stroke-width:2px
-    style Queue fill:#ffaaaa,stroke:#333,stroke-width:2px
-    style Bottleneck fill:#ff0000,color:white,stroke:#333,stroke-width:4px
-    style Output fill:#e1f5fe,stroke:#333,stroke-width:2px
+    A["Generated candidates"] --> B["Admission, scope and WIP policy"]
+    B --> C{"Demand, variation and effective capacity"}
+    C -->|"Headroom or successful adaptation"| D["Useful delivery gain possible"]
+    C -->|"Persistent excess demand"| E["Queue or delay hypothesis"]
+    E --> F["Adjust intake, verification or capacity"]
+    F --> C
+    D --> G["Compare effort, quality and useful releases"]
+    E --> G
 ```
 
-In this scenario, candidate-production capacity grows faster than the team's ability to verify changes.
-
-In the scenario considered here, candidate-code production accelerates while downstream capacity remains constrained. Chapter 1 reports positive activity effects and structural-risk signals in different samples: Xu has positive project activity, and Agarwal separates AF gains from uncertain IF activity. Neither measures a universal junior speedup or one pipeline whose volume and complexity jointly rise at fixed rates. GitClear's [selected output measures](../evidence/primary/2025-gitclear-developer-output.md) cannot calibrate this scenario as a universal volume multiplier.
-
-If arrivals persistently exceed a constrained stage's processing capacity, work may accumulate before it. Reducing change size, improving verification or limiting intake are possible responses; the appropriate response depends on which constraint is actually observed.
+Demand and service capacity must be estimated independently of observing a queue, over a defined stage and window. Record opening WIP, admissions, completions, withdrawals and transfers; backlog accounting itself is not an empirical discovery about AI. The arrows describe assumptions and proposed relationships, not a path measured in one source. Xu's positive project activity, Agarwal's mode-specific activity and structural estimates, and GitClear's [selected output measures](../evidence/primary/2025-gitclear-developer-output.md) do not jointly calibrate arrival rates, review service time or a universal volume multiplier.
 
 ---
 
@@ -425,21 +391,16 @@ The report's **Rubber Stamp Trap** names the second risk scenario. It does not e
 
 ---
 
-### The Illusion of "Safe" Adoption
+### A Feedback Hypothesis With Conditions
 
-Buying licenses without assessing downstream capacity could leave a team exposed to a new constraint. The studies reviewed here do not rank this strategy as the most dangerous or show that it necessarily causes failure.
+License procurement alone does not identify a capacity gap. A possible adverse loop requires additional conditions at each edge:
 
-If candidate changes grow faster than review and validation capacity, the review stage may become a bottleneck. Xu and Agarwal motivate investigating this possibility; their activity and static-analysis estimates do not demonstrate it in every organization.
+1. **More admitted service demand:** Extra candidates enter the pipeline without sufficient rejection, smaller changes or offsetting effort savings.
+2. **Longer waits:** Demand and variation exceed effective capacity under the chosen WIP/release policy.
+3. **Additional verification or rework:** Waiting/intervening changes or unfamiliarity actually increase effort; context tools may prevent this.
+4. **Quality or capacity consequences:** Inadequate checks could permit defects, or rework could displace planned work. These require measured defects and role-hours, not an assumption of rubber stamping or burnout.
 
-The following is a conditional systems scenario, not a sequence measured by the cited studies. Its inputs require local measurement; no cross-study percentage calibrates this loop:
-
-1. **Candidate work increases** relative to downstream capacity
-2. **Changes become harder to inspect**, if complexity or unfamiliarity grows; Agarwal does not estimate a per-unit rate
-3. **Review capacity stays constant** (no new senior hires, no automated review infrastructure)
-4. **Queue grows** → **Context degrades** → **Rubber stamps increase** → **Defects escape**
-5. **Maintenance costs explode** → **Seniors burn out** → **Review capacity shrinks**
-
-This proposed feedback loop would be weakened by stable review effort, shorter production lead time and stable or improved quality despite increased candidate work. Its later consequences are hypotheses, not outcomes measured by Xu or Agarwal.
+Stable or falling WIP/review effort with useful delivery gains would weaken an inevitable-harm account. If intake controls or new capacity prevented the trigger, this is nonactivation or adaptation, not disconfirmation of harm under that trigger. Lower total effort can coexist with more review effort; test those endpoints separately. Growing queues could instead reflect changing task mix, staff absence, release batching or a non-review constraint. [Hypotheses H1–H4 and their tests](appendices/mechanism-hypotheses.md) preserve these alternatives and beneficial/null outcomes; no probability is assigned to the scenarios.
 
 ---
 
@@ -453,7 +414,7 @@ Xu's positive project activity and Agarwal's positive AF activity remain compati
 
 #### References
 
-* **Goldratt, E. M. (1984):** *The Goal: A Process of Ongoing Improvement.* North River Press. — The foundational text on Theory of Constraints, establishing that optimizing non-bottleneck steps increases inventory without improving throughput.
+* **Goldratt and Cox, *The Goal* (first published 1984):** [Methodology record and original-access limitation](../evidence/methodology/1984-the-goal.md). Interpretive lens; the repository does not claim an edition/page-verified universal inventory theorem or an empirical AI effect.
 * **Cross-references:** [Xu](../evidence/primary/2025-xu-copilot-oss-activity.md) measures activity and follow-up-commit/review-count proxies; [Agarwal](../evidence/primary/2026-agarwal-agent-adoption.md) measures repository-month activity and static metrics by exposure history. Their positive, null and uncertain estimates remain distinct from a measured review bottleneck. METR's productivity experiment measures task time, not these measures; see Chapter 1 for boundaries. GitClear's [quality proxies](../evidence/primary/2025-gitclear-code-quality.md) and [selected output metrics](../evidence/primary/2025-gitclear-developer-output.md) retain separate samples/units.
 
 ---

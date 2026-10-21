@@ -14,9 +14,9 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### P-2026-01 — Writing Code vs. Shipping Code
 
-- Demirer, Musolff & Yang. [*Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*](https://www.nber.org/papers/w35275). NBER Working Paper 35275, 2026.
-- Status: working paper; not peer reviewed.
-- [Reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
+- Demirer, Musolff & Yang. [*Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*](https://www.nber.org/papers/w35275). NBER Working Paper 35275, May 2026, **revised September 2026**; exact original and older versions identified in the brief.
+- Status: working paper; authors list QJE revise-and-resubmit, not accepted publication.
+- [Version-pinned brief and preserved history](evidence/primary/2026-writing-code-vs-shipping-code.md); source and integration states are maintained in the registry.
 
 ### P-2025-01 — Experienced open-source developer productivity
 
@@ -31,7 +31,7 @@ A source appearing here is not automatically peer reviewed, independently valida
 ### P-2025-02 — Long-task capability measurement
 
 - METR. [*Measuring AI Ability to Complete Long Tasks*](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/). March 2025.
-- Status: original measurement report; detailed repository brief pending.
+- [Pinned arXiv v1 methods, findings and limitations](evidence/primary/2025-metr-task-horizon.md), 18 March 2025. Preprint/original measurement report; no current frontier threshold adopted. Later embedded chart values are not dated to the March post.
 
 ### P-2025-03 — Copilot availability and OSS activity
 
@@ -159,8 +159,8 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### M-1984-01 — Theory of Constraints
 
-- Goldratt, Eliyahu M. *The Goal: A Process of Ongoing Improvement.* 1984.
-- Status: methodology source used to interpret bottleneck migration, local optimization, and inventory. It is not direct evidence of AI-tool effects.
+- Goldratt, Eliyahu M. and Jeff Cox. *The Goal: A Process of Ongoing Improvement.* North River Press, first published 1984.
+- [Methodology record and original-edition/access gap](evidence/methodology/1984-the-goal.md). Provisional interpretive lens; not a complete original-book review, universal queue theorem or direct evidence of AI-tool effects.
 
 ## Maintenance rule
 

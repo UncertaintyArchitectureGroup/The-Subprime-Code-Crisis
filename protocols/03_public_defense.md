@@ -154,7 +154,7 @@ Link or point to what can be inspected:
 
 ## 4. Minimum Disclosure Card
 
-A short public communication should still include the essentials.
+A short public communication should still include the essentials. The card and response patterns below are fictional disclosure templates, not collected results or evidence from a repository pilot.
 
 > **Context:** One product team, ordinary feature work, eight-week pilot.  
 > **Intervention:** AI coding assistant used for implementation and test scaffolding.  
