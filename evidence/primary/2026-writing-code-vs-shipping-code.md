@@ -1,11 +1,80 @@
 +++
 source_ids = ["P-2026-01"]
-evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-07-27"
+evidence_review = "Needs re-review"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
-current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md"]
+current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
+
+# Writing Code vs. Shipping Code — pinned May audit; revision pending
+
+## Identity, version and publication status
+
+Mert Demirer, Leon Musolff and Liyuan Yang, *Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*, NBER Working Paper 35275, **May 2026**. [Official page](https://www.nber.org/papers/w35275); [publisher PDF URL](https://www.nber.org/system/files/working_papers/w35275/w35275.pdf). Working paper, not peer reviewed according to the supplied cover.
+
+**Version boundary (21 October 2026):** the maintainer supplied a 97-page May PDF, SHA256 `edf1a41a6e4e4cf562571b5fac79eac07693281f88d460a81ee9f8ce1a1c65bb`. All findings below refer to those bytes. Page locators give printed page, then physical PDF page where useful. The live publisher page now lists a **September 2026 revision** with a changed abstract. It is not reviewed or integrated here. The current PDF URL must not be assumed to return the supplied May bytes. Exact-version acquisition/full re-review of September remains open under Flow C; the old July verification is historical, not current.
+
+The May cover credits Mack Institute for Innovation Management at Wharton and Chicago AI Incubator funding. The official page inspected on 21 October 2026 discloses Demirer and Musolff’s prior Microsoft postdocs and current paid consulting. These are dated disclosures to consider with tool/data support; their exact May wording is not established here, and they imply no misconduct.
+
+## Scope, design and measurement
+
+The May abstract describes more than 100,000 GitHub developers combined with AI-use telemetry. §§5–6 use public adoption/activity traces, Microsoft Copilot telemetry and matched observational event studies, with controls' outcomes measured one calendar year earlier. Matching, pre-trends, placebos and limited private-usage checks address some confounding; adoption is not randomized. Public trace selection, cohort/tool differences, changing models and residual adoption/calendar confounding limit causal and enterprise generalization.
+
+Table 5 reports **weeks 21–30**, 1% winsorized outcome coefficients normalized by each developer's pre-period mean; these are average individual proportional changes, not the ratio of aggregate output totals (§6.1, pp23–25 / PDF25–27). Standard errors are clustered by developer. Outcome samples differ: developers with no pre-period releases are excluded, removing most developers from that regression. Table 3 gives outcome-specific treated counts; this is not one identical sample tracked through every layer.
+
+Releases are a proxy: Appendix B.4.7, OA12–13 / PDF63–64, counts recently touched repositories with at least one release in a week, using a trailing twelve-week touched-repository set. It is not the developer's own deployed value, customer benefit or a full quality/cost measure.
+
+## Direct May findings and numeric checks
+
+Figure 1 (p3 / PDF5) explicitly combines adoption up to each generation. The abstract/introduction's rounded **40%, 140%, 180% commit increases** are cumulative autocomplete, +sync, +async stacks. The final headline is approximately **180% commits / 50% distinct repositories touched / 30% releases**. These are positive downstream gains, not evidence of zero benefit or global delivery decline.
+
+Table 5 (p33 / PDF35), inspected visually as well as in extracted text, gives incremental generation estimates. Parentheses below reproduce the table's standard errors, in the same percentage units:
+
+| Incremental row | Lines changed | Commits | PRs created | Distinct repos | Releases |
+| --- | --- | --- | --- | --- | --- |
+| Autocomplete | 228.2 (17.6) | 35.9 (2.9) | 11.0 (2.7) | 13.6 (1.7) | 10.2 (4.1) |
+| Pooled sync | 741.3 (19.2) | 109.1 (2.7) | 65.5 (2.3) | 25.5 (1.0) | 20.3 (2.6) |
+| Pooled async | 658.3 (74.7) | 33.6 (2.1) | 71.8 (5.6) | 13.8 (0.4) | **Not reported** |
+
+- The §7.1 prose says **20.2%** sync releases; Table 5 says **20.3%**. Preserve that internal discrepancy; reader synthesis uses **about 20%**.
+- For a transcription check, incremental commit values sum to `35.9 + 109.1 + 33.6 = 178.6%`; repos sum to `13.6 + 25.5 + 13.8 = 52.9%`, consistent with rounded Figure 1 headlines. The reported autocomplete/sync release values sum to `10.2 + 20.3 = 30.5%`. **No async release cell exists**: the cumulative release headline must not be described as a separately measured marginal async release effect. The table note and nearby prose give attribution/direct-release-construction reasons for omission; missing is not an estimated zero effect on real-world releases.
+- This is an attenuation pattern across outcome estimates. Not every incremental row is monotone: async PR growth exceeds its commit growth. It does not measure a percent of commits lost at each stage or an equal-size production cohort with fixed human input.
+
+## Model-calibrated result versus interpretation
+
+§7.2, Figure 9 (p36 / PDF38) fits a hierarchical production model to the autocomplete pattern, assuming layer-constant parameters: approximately `theta = 0.75`, substitution elasticity `sigma = 0.25`. Figure 10 applies those parameters to sync/async predictions. **0.25 is calibrated**, not a measured review-hours coefficient, a replacement ratio or a productivity loss. The calibration and empirical outcome estimates are different claim classes.
+
+The authors interpret attenuation as weak links/complementarity and discuss downstream human/distribution constraints. Repository interpretation is narrower: study the capacity hypothesis in Chapters 4–7; these data do not identify which stage constrains most organizations or establish review as the universal cause.
+
+## Marketplace findings and competing explanations
+
+§8.2 / PDF42–46 and Appendix B.6 study four marketplace catalogs. Figure 12's three-month usage series cover **iOS ratings, Android installs and Chrome installs** for new non-incumbent cohorts; SourceForge contributes an entry comparison, not an equivalent usage series. Three platforms show entry acceleration or reversal of a decline; SourceForge shows no acceleration. Early cohort usage is flat or declining, with the low-usage share increasing. Do not describe all four as an identical positive-entry/flat-usage result.
+
+These descriptive series are not linked causal outcomes of the matched GitHub adopters. §8.2.4 explicitly allows scarce discovery/attention, entry selection, slow adoption/learning and AI-related demand. Ratings/downloads imperfectly proxy consumer value; the analysis does not measure all enterprise software, quality or total consumer surplus. Both increased releases and these limiting usage observations remain visible.
+
+## What the source does not establish
+
+No general quality decline, review-time multiplier, fixed verification capacity, universal bottleneck, inevitable technical debt, security effect, enterprise TCO loss, vendor motive or macroeconomic crisis. Production improvements, effective review automation and successful capacity/intake adaptation remain compatible with the May findings.
+
+## Repository integration audit
+
+Primary flow **C** after discovering September revision; the supplied-May use audit also satisfies the required changed-use checks. Before changed uses, both dimensions were reset and the verification date cleared. [Pre-edit treatment](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/63#issuecomment-6309465344) and [version note](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/63#issuecomment-6309440882) precede substantive edits.
+
+The [N63 occurrence trace](../../governance/reviews/issue-63-2026-10-21-mechanism-audit.md) checks exact numbers, inference, neighboring conclusions and placement across README, R1, R2, bibliography and indexes. Main empirical synthesis is in R1 Chapter 1; R2 Chapter 7 links there and develops hypotheses instead of repeating the numbers. The [mechanism appendix](../../report/appendices/mechanism-hypotheses.md) separates findings, assumptions, hypotheses and scenarios. Protocol outcome: **Protocol clarification**, without new controls. Full current-version integration/analytical acceptance remain incomplete; no verification date.
+
+## Independent review
+
+- Primary reviewer: Sol; independent reviewer: `/root/sol_review_issue63` (separate Sol agent, did not implement).
+- **Confirmed**, 21 October 2026, at candidate `1c0d33806824add200e5b215dd1f8194955ec441`, tree `1a8aa6b26b24b9e0901cbb8684443c3c7abd60a7`, within the **Sol preparation/source-transcription and limitation-disposition scope**. Original May PDF/table/figure, methods, calibration, marketplace limits and every current use independently checked; no material discrepancy found. Exact review/check record is in the [dated audit](../../governance/reviews/issue-63-2026-10-21-mechanism-audit.md).
+- This outcome confirms neither the September original nor Astra's analytical acceptance, merge or source verification. The two reset status dimensions remain unchanged. The actual July review is preserved separately below. Faithful final recording/publication checks follow this scoped review.
+
+## Preserved review history
+
+The following prior brief body is retained verbatim from main `ada19312045fd859631bc6e8f230f25582eec084`. Its Verified/date/completion statements describe the earlier July state and are superseded for current status by the front matter and version boundary above.
+
+<details>
+<summary>Historical July 2026 brief and review, not current verification</summary>
 
 # Writing Code vs. Shipping Code
 
@@ -200,3 +269,5 @@ It should be paired with separate research when making claims about code quality
 The source is fully processed for the repository state verified on 2026-07-27:
 `Evidence review = Reviewed brief`, `Integration audit = Verified`, and
 `Last verified = 2026-07-27`.
+
+</details>

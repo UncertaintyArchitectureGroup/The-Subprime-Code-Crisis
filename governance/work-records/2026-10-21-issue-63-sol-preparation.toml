@@ -1,0 +1,21 @@
+record_version = 1
+title = "Issue #63: Sol preparation of conditional mechanism and pinned-source checks"
+primary_flow = "Flow C — NBER revision discovery and clarified legacy identities; required changed-use audit and legacy-source review under B/D"
+human_decision = "Maintainer's original source/number/placement/hypothesis corrections, #63 instructions and latest Сол підхопи authorize bounded Sol preparation and explicit Astra handoff. Start6309339562, version scope6309440882 and pre-edit treatment6309465344 precede changed uses. Three sources reset; September NBER, full METR review, Goldratt original-access gap, Astra graph/map/protocol acceptance and final integration remain pending. No governance or control change. Actual independent Sol source/implementation review Confirmed at1c0d33806824add200e5b215dd1f8194955ec441/tree1a8aa6b26b24b9e0901cbb8684443c3c7abd60a7; no material discrepancy, bounded scope only. Audit: governance/reviews/issue-63-2026-10-21-mechanism-audit.md. PR stays draft; Refs #63, no closure or Verified promotion."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Material reader-facing mechanism/version corrections, cumulative and positive NBER boundaries, benchmark definition, conditional map and protocol example clarifications."
+
+[synchronization]
+assessed_surfaces = ["doctrine", "repository-architecture", "reader-navigation", "evidence", "source-registry", "evidence-indexes", "references", "report", "protocols", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+doctrine = "Existing finding/inference/scenario/protocol principles apply; no new canonical term or interpretation rule."
+repository-architecture = "Source, brief, report, protocol and map relationships remain unchanged; no scope or artifact-model edit."
+contributor-guidance = "Existing approvals/source/issue/review obligations suffice; no contributor-duty or workflow change."
+
+# Confirmed describes the actual bounded Sol preparation review only.
+# All whole #63 ACs and Astra/current-version/full-source acceptance remain open.
+# A green gate cannot establish analytical acceptance, merge or source verification.

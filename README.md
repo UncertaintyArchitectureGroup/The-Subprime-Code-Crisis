@@ -69,10 +69,10 @@ The **Evidence Map** classifies materials by role. It answers a different questi
 
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
-| **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: Writing Code vs. Shipping Code](evidence/primary/2026-writing-code-vs-shipping-code.md); [Peng bounded Copilot experiment](evidence/primary/2023-copilot-task-productivity.md); [METR early-2025 task-time RCT](evidence/primary/2025-metr-experienced-developer-productivity.md) and [2026 follow-up with identification limits](evidence/primary/2026-metr-productivity-design-update.md); separate METR long-task measurement; [Xu OSS activity/rework with proxy and uncertainty limits](evidence/primary/2025-xu-copilot-oss-activity.md); [Agarwal adoption-mode activity/structure estimates](evidence/primary/2026-agarwal-agent-adoption.md); [GitClear historical code-change/clone signals](evidence/primary/2025-gitclear-code-quality.md) and [separate developer-output measures](evidence/primary/2025-gitclear-developer-output.md); [Menlo market-size estimates](evidence/primary/2025-menlo-enterprise-ai-spend.md) and [CloudZero budget intentions](evidence/primary/2025-cloudzero-ai-budget-intentions.md), distinct from delivery outcomes; [McKinsey 2025 adoption/value](evidence/primary/2025-mckinsey-ai-adoption-value.md), [Deloitte Q4 reported ROI/scaling expectations](evidence/primary/2025-deloitte-genai-q4.md) and [Stack Overflow 2024 attitudes](evidence/primary/2024-stackoverflow-ai-attitudes.md), distinct respondent-reported outcomes |
+| **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: supplied May version; September re-review pending](evidence/primary/2026-writing-code-vs-shipping-code.md); [Peng bounded Copilot experiment](evidence/primary/2023-copilot-task-productivity.md); [METR early-2025 task-time RCT](evidence/primary/2025-metr-experienced-developer-productivity.md) and [2026 follow-up with identification limits](evidence/primary/2026-metr-productivity-design-update.md); [METR long-task definition; full review pending](evidence/primary/2025-metr-task-horizon.md); [Xu OSS activity/rework with proxy and uncertainty limits](evidence/primary/2025-xu-copilot-oss-activity.md); [Agarwal adoption-mode activity/structure estimates](evidence/primary/2026-agarwal-agent-adoption.md); [GitClear historical code-change/clone signals](evidence/primary/2025-gitclear-code-quality.md) and [separate developer-output measures](evidence/primary/2025-gitclear-developer-output.md); [Menlo market-size estimates](evidence/primary/2025-menlo-enterprise-ai-spend.md) and [CloudZero budget intentions](evidence/primary/2025-cloudzero-ai-budget-intentions.md), distinct from delivery outcomes; [McKinsey 2025 adoption/value](evidence/primary/2025-mckinsey-ai-adoption-value.md), [Deloitte Q4 reported ROI/scaling expectations](evidence/primary/2025-deloitte-genai-q4.md) and [Stack Overflow 2024 attitudes](evidence/primary/2024-stackoverflow-ai-attitudes.md), distinct respondent-reported outcomes |
 | **Primary documentary sources** | First-party records used for infrastructure, spending, organizational, and terminology-provenance claims | [Alphabet CY2024](evidence/documentary/2024-alphabet-financial-context.md), [Meta CY2024](evidence/documentary/2024-meta-financial-context.md) and [Microsoft FY2024](evidence/documentary/2024-microsoft-financial-context.md) company-wide filings; [Google historical engineering practices](evidence/documentary/2020-google-engineering-practices.md); [Microsoft FY25Q2 AI-business run rate](evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md), distinct from Copilot revenue/customer ROI; official product documentation; [terminology provenance records](evidence/documentary/terminology-provenance.md); [project-analysis provenance](evidence/documentary/project-provenance.md) |
 | **Secondary evidence and industry context** | Reviews, practitioner analyses, and synthesis used for context without treating them as independent measurements | [Techno Diaries single accessible anecdote](evidence/secondary/2025-technodiaries-review-anecdote.md); Horn’s personal [capability forecast](evidence/secondary/2026-horn-capability-commentary.md) and [engineering commentary](evidence/secondary/2026-horn-engineering-commentary.md); [Markus cost commentary](evidence/secondary/2026-inference-cost-commentary.md); [SoftwareSeni discovery/correction record](evidence/secondary/2025-softwareseni-review-synthesis.md), without live report/protocol use |
-| **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | Goldratt's Theory of Constraints; software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
+| **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | [Goldratt/Cox methodology and original-access gap](evidence/methodology/1984-the-goal.md); software-engineering productivity frameworks; weak-link and production-hierarchy reasoning |
 | **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md); GitHub activity and marketplace datasets documented in cited studies |
 | **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), Claim confidence map, and Crisis Map |
 | **Protocols** | Practical responses, controls, metrics, and decision rules derived from the risk analysis | [Operational Protocols](protocols/README.md) |
@@ -89,29 +89,32 @@ flowchart TD
     classDef synthesis fill:#eeeeee,stroke:#555,stroke-width:2px;
     classDef scenario fill:#f2dede,stroke:#a94442,stroke-width:2px,stroke-dasharray: 5 5;
 
-    A[AI-assisted generation<br/><b>Repository synthesis: starting condition</b>]
-    B[Lower cost of producing code-like output<br/><b>Repository synthesis</b>]
-    C[Higher upstream coding activity in studied settings<br/><b>Empirical finding: P-2026-01</b>]
-    D[Verification capacity may not scale proportionally<br/><b>Repository synthesis</b>]
-    E[Review / QA / security / architecture bottlenecks<br/><b>Repository synthesis: risk mechanism</b>]
-    F[More rework, uncertainty, and maintenance exposure<br/><b>Repository synthesis: conditional risk</b>]
-    G[Accumulated delivery-system risk<br/><b>Repository synthesis</b>]
-    H[Technical Bankruptcy<br/><b>Warning scenario / repository hypothesis</b>]
+    A["AI-assisted generation: synthesis starting condition"]
+    B["Lower cost of candidate output: repository synthesis"]
+    C["Higher upstream activity: empirical May estimates, P-2026-01"]
+    D["Capacity may not scale proportionally: repository synthesis"]
+    E["Review, QA, security or architecture constraint: risk hypothesis"]
+    F["Rework and maintenance exposure: conditional risk synthesis"]
+    G["Accumulated delivery-system risk: repository synthesis"]
+    H["Technical Bankruptcy: warning scenario and repository hypothesis"]
 
     A --> B
     B --> D
     C -->|empirical support for upstream-growth premise| D
-    D --> E --> F --> G
+    D -->|If admitted demand strains effective capacity| E
+    E --> F --> G
+    D -->|Headroom, controlled intake or useful assistance| I["Useful gains with stable quality: alternative synthesis outcome"]
     G -. possible scenario, not an observed outcome .-> H
 
     class C empirical;
-    class A,B,D,E,F,G synthesis;
+    class A,B,D,E,F,G,I synthesis;
     class H scenario;
 ```
 
 ### Evidence boundary for the map
 
-- **P-2026-01** combines public GitHub activity for more than 100,000 developers, Microsoft Copilot telemetry, and data from four application marketplaces. Its developer-level analysis uses an observational matched event-study design covering adoption observed from 2022 through 2026 and reports increased upstream activity, with attenuation toward projects and releases; see the [reviewed evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md).
+- **P-2026-01, supplied May 2026 version:** public GitHub activity for more than 100,000 developers plus AI-use telemetry; observational matched event studies and a separate four-marketplace analysis. Coding and release estimates are positive, with attenuation across outcome-specific samples. Early usage proxies cover three platforms; SourceForge supplies a separate entry comparison. The [evidence brief](evidence/primary/2026-writing-code-vs-shipping-code.md) pins the May PDF and records the unreviewed September revision; the canonical source is no longer marked Verified.
+- The capacity branch depends on admitted work/risk mix, effective capacity, utilization/variation and WIP/release policy. Headroom and successful adaptation may produce useful gains. The [claim graph and proposed tests](report/appendices/mechanism-hypotheses.md) are repository synthesis pending analytical acceptance; they assign no scenario probabilities.
 - The arrows after the empirical node are **repository synthesis, not one measured causal chain**. P-2026-01 does not establish general code-quality decline, review as the only bottleneck, technical debt, security effects, or Technical Bankruptcy.
 - **Technical Bankruptcy** remains a warning scenario and repository hypothesis, not an empirically measured outcome. The map's final synthesis outcome is **Accumulated delivery-system risk**.
 

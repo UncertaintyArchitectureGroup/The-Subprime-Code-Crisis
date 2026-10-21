@@ -8,6 +8,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added a bounded claim graph with assumptions, alternative outcomes, falsifiers and proposed #54 measurements; separate METR task-horizon and methodology/access-gap records remain incomplete source reviews.
+
 - Added distinct original-survey briefs for McKinsey, Deloitte Q4 and Stack Overflow, a Microsoft FY25Q2 documentary record, separate personal Horn posts and bounded legacy/commentary/anecdote dispositions for #61.
 
 - Added seven cost-source briefs, original market/budget sources, a historical accounting appendix and an explicitly hypothetical cash/capacity sensitivity model with reproducible inputs/results and boundary tests.
@@ -19,6 +21,8 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 - Added a reviewed documentary project-provenance record covering the 2026-01-05 DOU precursor and discussion, the 2026-02-06 GitHub repository creation timestamp, and the 2026-02-10 explicit Subprime Code publication.
 
 ### Changed
+
+- Reconstructed the delivery mechanism as a conditional hypothesis using admitted work, effective capacity, variation and work/release policies. Consolidated the supplied May NBER synthesis in Chapter 1, retained positive releases and exact cumulative/incremental limits, and reset the source after discovering the unreviewed September revision. Replaced the horizon/liability conflation, labeled the AI-review thought experiment and protocol templates, and corrected the throughput example. Analytical acceptance and integration remain open in #63.
 
 - Refreshed terminology/project provenance with separately dated current access results and preserved historical observations. Replaced assumed independent convergence with unresolved development relationships; separated GitHub creation from historical public visibility and removed the unsupported citation release date. External titles and unresolved originals remain explicit.
 

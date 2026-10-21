@@ -2,51 +2,57 @@
 
 ## Snapshot
 
-- Checked 2026-10-21, Europe/Warsaw. #61 completed; #53/#62 open.
-- #62 PR78 merged atmain3b8b7f1b72ddf23c43b361313b630f27ee6e08a8,
-  treec0b9ab629a4802b6356ca91044a5cf6e9ef03974.
-- Exact-main Main health39548871548 success; contract/state/RI138 clean.
-- Active work/issue-62-final-verification; final-state review Confirmed6987ea0,
-  tree58cfefe1. Faithful recording/publication pending; no closure inferred.
-- Reopen live issue/PR/main/checks before acting; dated navigation hint only.
+- Checked 2026-10-21, Europe/Warsaw. Live #62 closed/completed; #63 open.
+- Live main ada19312045fd859631bc6e8f230f25582eec084,
+  tree433c034ae15f334a02892adefb849ce49a700e74, checked via GitHub.
+- Active work/issue-63-mechanism: Sol source/implementation review Confirmed
+  1c0d338/tree1a8aa6; final recording/publication pending, no merge inferred.
+- Read issue/PR/main/CI again before acting; this file and RI are navigation.
 
 ## Active owners
 
-- #47/#52 rules/RI and #57–61 completed; #62 sole active sibling.
-- #62 final documentary state/acceptance after corrected independent review.
-- #63 NBER/horizons/mechanism; #64 full-report tone; #65 synchronization.
+- #47/#52 rules/RI and #57–62 completed; #63 sole active sibling.
+- #63 Sol preparation + independent source/implementation review; Astra analytical
+  acceptance/current-version audit and final integration remain separate.
+- #54 owns proposed pilot design/collection decision, no data collected here.
+- #64 wider report/vendor/macro rhetoric; #65 final synchronization follow #63.
 - #4 skill formation and publication/site work remain separate.
 
 ## Decisions
 
-- Maintainer Роби continues one-issue implementation/review/verification/closure.
-- #62 start6308426288, treatment6308477442, corrections6308619225.
-- Preserve both prior brief bodies; date current access observations.
-- Separate publication does not prove independent development.
-- GitHub creation/current public status does not date historical public opening.
-- DOU continuity is author-reported; no frozen text or dated link insertion.
-- No protocol change. Citation release date removed, other identity preserved.
-- Three project records qualify only within their current documentary scope.
-- Three grouped terminology records stay reset/unverified; missing originals
-  are not completed by accepting their bounded citation disposition.
+- Latest maintainer: Сол підхопи, report/status and concrete Astra handoff.
+- #63 start6309339562, version discovery6309440882,
+  pre-edit treatment6309465344. Bounded treatment already authorized.
+- May supplied NBER remains explicitly historical; September revised original
+  not read/integrated. Primary C and dependent legacy B/C identity resets.
+- Admit/risk/service demand, effective capacity, variation and WIP/release policy
+  condition the queue hypothesis; positive/neutral/adverse outcomes retained.
+- One Ch1 NBER synthesis; Ch7 short link, hypotheses instead of duplicate data.
+- Protocol clarification only: existing metrics/examples, no new controls.
+- Three scoped sources reset/unverified; no Verified promotion or AC closure.
 
 ## Evidence
 
-- reviews/issue-62-2026-10-21-provenance-audit.md: six-ID source/access and
-  T62-01–30 trace; first Corrections required1a2bfb7; R62-01/02 resolved.
-- Repeated Confirmedbf8df0f; faithful recording Confirmed1fea656.
-- Publishedf33a475 and merged3b8b7f1 have the same accepted tree.
-- Exact-head Main health39548798621 / Repository Gate39548799082 passed.
-- reviews/issue-62-2026-10-21-final-verification.md: eligibility/gates/bounds.
-- All24 prior Verified rows/brief bytes unchanged; final candidate proposes
-  three matching project promotions. No empirical/public-opening claim added.
+- reviews/issue-63-2026-10-21-mechanism-audit.md: source/page/number/placement
+  trace N63/H63/M63/Q63, decisions, sync and six-step Astra handoff.
+- Supplied May PDF SHA256edf1a41a6e4e4cf562571b5fac79eac07693281f88d460a81ee9f8ce1a1c65bb;
+  Figure1/Table5 visually checked; no marginal async release estimate.
+- Ch1/brief preserve positive releases, selected samples and calibrated .25;
+  source20.2 prose/20.3 table discrepancy explicit. July body kept verbatim.
+- METR pinned v1 defines fitted task horizon, no global50% error rate or volume
+  doubling. Full review pending; Goldratt original-book access unresolved.
+- report/appendices/mechanism-hypotheses.md: classes/edges, H1–5 falsifiers,
+  S1–3 outcomes and proposed #54 measures; no pilot result/probabilities.
+- Other26 Verified rows/24unique brief bytes and19old work records independently
+  unchanged. Base exact-main Main health39549672929 passed; not candidate CI.
 
 ## Next actions
 
-- Check faithful actual-outcome recording and publication. Exactly one new final
-  work record records the actual Confirmed final-state review.
-- Check exact final PR head and merged main; update all whole AC evidence and
-  close #62 only after gates pass. PR78 integration is already accepted.
-- Next sibling #63 after #62. Supplied project_sources/01-w35275.pdf belongs there.
-- If live #62 already has completion evidence, continue #63 instead of repeating
-  accepted integration/status work. RI is not live or scientific acceptance.
+- Independent Sol preparation review Confirmed1c0d338/tree1a8aa6; actual result
+  recorded in exactly one new work record. Final recording review/checks follow.
+- Publish bounded draft PR, run exact-head CI, attach evidence to #63; keep open.
+- Astra: acquire/hash/review September NBER under FlowC, decide historical/current
+  treatment, test graph/assumptions/falsifiers/map/protocol implications and
+  complete or explicitly resolve METR/Goldratt gaps. No original-access invention.
+- Accepted analytical result needs independent review, merge and exact-main
+  verification before source promotion/whole AC closure; then #64, then #65.

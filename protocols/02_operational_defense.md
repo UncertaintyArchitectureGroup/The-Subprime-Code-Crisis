@@ -83,6 +83,8 @@ Do not rely on one metric. Pair flow measures with quality and production outcom
 | **Release completion** | Whether local code output becomes shipped value | Distinguish commits, merged work, releases, and production use |
 | **Work in progress** | Inventory accumulating before constrained stages | Inspect queues by review, QA, security, and release stage |
 
+For a capacity explanation, distinguish generated candidates from admitted/completed/withdrawn work. Compare required verification effort with available time, skills and tooling at the required quality; headcount alone is not effective capacity. Inspect bursts/long-tail waits, task/risk mix, WIP limits and release batching before attributing delay to overload. These clarify the existing measures; they set no new threshold. The [proposed tests](../report/appendices/mechanism-hypotheses.md) coordinate with #54 and contain no collected pilot results.
+
 ### Step 3 — Compare deltas, not isolated numbers
 
 A metric becomes useful when it is compared against something meaningful:
@@ -93,11 +95,11 @@ A metric becomes useful when it is compared against something meaningful:
 - an agreed service-level expectation;
 - a locally defined control limit.
 
-Example:
+Illustrative example, not a measured pilot:
 
-> AI-assisted tasks open pull requests faster, but median review wait time, rework, and change failure rate all increase. The team has accelerated code production while reducing system throughput.
+> Comparable AI-assisted tasks reach first PR sooner, while review wait, rework and change failure rise. Useful release completion per observation window also falls against the defined baseline. This is a local deterioration in the measured delivery outcomes; causal attribution still needs task-mix and concurrent-change checks.
 
-This is a stronger operational conclusion than either "developers are faster" or "AI code is worse" in isolation.
+Wait/rework/failure measures alone do not establish that throughput fell. Report the actual completion rate and quality alongside effort, including beneficial, unchanged or mixed results.
 
 ---
 
