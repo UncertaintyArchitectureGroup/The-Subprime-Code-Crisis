@@ -1,9 +1,9 @@
 # Protocol 3: The Public Defense
 ## Publish Evidence, Bound Claims, Correct the Record
 
-> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 2](02_operational_defense.md) | **Protocol 3** | [Protocol 4: Systemic Cure](04_systemic_cure.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | [🔙 Protocol 2](02_operational_defense.md) | **Protocol 3** | [Protocol 4: Organizational Control Model](04_systemic_cure.md) | [📚 References](../REFERENCES.md)
 
-Protocols 1 and 2 protect the engineer and the team. Protocol 3 protects the wider decision environment in which AI adoption is justified, funded, expanded, and judged.
+Protocols 1 and 2 address engineer and team decisions. Protocol 3 proposes disclosure practices for the wider environment in which AI adoption is justified, funded, expanded and judged.
 
 The goal is not to flood the market with a counter-narrative. It is to make claims about AI-assisted software delivery inspectable, bounded, and correctable.
 
@@ -11,7 +11,7 @@ The goal is not to flood the market with a counter-narrative. It is to make clai
 
 ## 1. The Public Evidence Problem
 
-AI adoption is often communicated through activity measures:
+When an adoption claim relies on activity measures, examples to distinguish from delivery outcomes include:
 
 - generated lines of code;
 - acceptance rates;
@@ -21,7 +21,7 @@ AI adoption is often communicated through activity measures:
 - number of enabled users;
 - isolated success stories.
 
-These signals may describe tool use, but they do not by themselves establish better delivery outcomes.
+These signals describe different constructs, including activity, perception and demonstrations. They do not by themselves establish better delivery outcomes.
 
 A credible public statement should distinguish among:
 
@@ -168,7 +168,7 @@ This is more useful than an unqualified percentage improvement because it tells 
 
 ---
 
-## 5. Anti-Hype Rules
+## 5. Avoid Unsupported Claim Substitutions
 
 Do not publish or repeat claims that rely on the following substitutions.
 
@@ -309,4 +309,4 @@ If these questions cannot be answered, narrow the claim.
 
 ---
 
-**Next:** [🏗️ Protocol 4: The Systemic Cure](04_systemic_cure.md)
+**Next:** [🏗️ Protocol 4: Organizational Control Model](04_systemic_cure.md)

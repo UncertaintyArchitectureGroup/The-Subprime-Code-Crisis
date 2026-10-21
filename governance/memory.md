@@ -2,47 +2,52 @@
 
 ## Snapshot
 
-- Checked 2026-10-21 UTC. PR80 merged at1233ea3663f3166d20918565565a3e970ab9afb8,
-  accepted treed4e1a707b4406526dc82dd711abd960ea41ce16b; clean exact-main checkout checked.
-- Exact-head health39561432508/gate39561430306 passed atdf0f821.
-- Exact-main health39561596796 passed with all required steps; local contract/state/RI146 passed.
-- #63 still open pending final metadata PR, review, checks and evidence-backed closure.
-- Fetch live state before continuing; RI/memory are checkpoints, not certification.
+- Checked 2026-10-21 UTC. Live main3dca4e389ec549c712e1346b07f8cda7f2e6cfdd,
+  treef2798456843dc39079e3b7be910e90768915b813; exact-main health39562583730 success.
+- #63 closed/completed via PR80/81; five ACs supported by issue comment6310617771.
+- #64 is the active Sol implementation on work/issue-64-bounded-criticism.
+- This checkpoint precedes #64 publication. Fetch live issue/PR/head/CI before continuing;
+  dated memory and RI are navigation, not research or live-state certification.
 
 ## Active owners
 
-- #47/#52 and #57–62 completed. #63 final verification is sole active audit work.
-- #54 future study design/resources/collection; no pilot run here.
-- #64 broader report/vendor/macro rhetoric next; #65 final synchronization follows.
-- Parent #53 remains open; #4 and publication/site work are separate.
+- #47/#52 and #57–63 completed; #64 professional bounded synthesis is current.
+- Sol implements and obtains a distinct implementation review; Astra analytical acceptance
+  and final independent challenge remain separate whole-issue gates.
+- #54 owns proposed pilot design/resources/collection, no data collected here.
+- #65 comprehensive final synchronization follows accepted #64; publishing/site PR75
+  and other open tooling/publishing PRs are separate work. Parent #53 remains open.
 
 ## Decisions
 
-- Maintainer authorized Astra handoff and one-issue completion lifecycle.
-- Pre-edit treatment6310154890; final-verification start6310475306 after accepted main.
-- P-2026-01 September NBER and P-2025-02 historical METRv1 eligible for
-  Reviewed brief/Verified/2026-10-21 after actual original/all-use review and PR80 integration.
-- M-1984-01 remains reset/unverified: original-book access unresolved, non-load-bearing only.
-- Final step changes status/records only; findings, identities, Current use and controls unchanged.
-- Changelog Not required for final metadata; substantive change already recorded in PR80.
+- Latest maintainer: Sol's part, final report and concrete Astra handoff.
+- Start6310712571, pre-edit treatment6310789444 and display/caption sync6310863996.
+- Primary FlowD/synthesis assessment. Remove unsupported motives/legal verdicts,
+  industry quantities and guaranteed outcomes; preserve original findings and limits.
+- Neutral report headings and Protocol4 display title; filenames/project name unchanged.
+- Protocol clarification only: roles, gates, risk classes, thresholds and sequences unchanged.
+- Source-relying meanings/Current use remain unchanged in the proposed Sol delta;
+  no reset/promotion by filename alone. Independent review must challenge this result.
+- PR must remain draft and #64 ACs open pending Astra/final accepted integration.
 
 ## Evidence
 
-- reviews/issue-63-2026-10-21-astra-review.md: originals/hashes, A63 occurrence trace,
-  numeric/placement audit, independent findings/corrections and synchronization.
-- Source/analytical/all-use Confirmed317bc1a/treeb45614fc; faithful recording
-  Confirmed6c38e03/treed4e1a707. Published df0f821 and merged main have identical tree.
--126tests and352links passed; trusted gates/state/transitions/RI passed.
-- reviews/issue-63-2026-10-21-final-verification.md records actual accepted main,
-  scope exclusions and final state. Independent final-state Confirmed4b31038/tree6d246a7d.
-- Positive releases/Android growth/scoring evidence, source discrepancies and May/July
-  history retained. No raw-data reproduction or current-model threshold certified.
+- reviews/issue-64-2026-10-21-sol-editorial-audit.md: occurrence/numeric disposition,
+  source-dependency assessment, synchronization, AC mapping and six-step Astra handoff.
+- R3 includes beneficial/mixed/local-adverse/broader-warning scenarios; propagation
+  requires additional exposure/transmission/recovery assumptions, no probability.
+- Source data, positive/null findings, #63 map/tests and survey/cost boundaries retained.
+- Removed unsupported80–90% maintenance, vendor intent/exoneration, biology metaphor,
+  fiduciary verdict and future competitive-advantage claims; no fresh empirical result.
+- Separate /root/sol_review_issue64 Confirmed implementation at a16e373214eb64d39b451ead2a38975e8aa5c79b,
+  treef5d4ee7dae5195e9071c6bc9d7cf6b4e7dd7c7ed; no material discrepancy.
+- Independent126tests,275links, contract/state/transition/RI and source/control preservation passed.
 
 ## Next actions
 
-- Review faithful final recording/work record; check/publish final PR, then exact main.
-- Check exact final main and update ACs with actual artifacts/reviews/CI before closing #63.
-- Pass #54 assigned-task/verification-vs-total-effort/trigger/quality-margin design inputs.
-- Pass #64 unsupported80–90%, toxic-infrastructure, vendor-intent, fiduciary-duty and
-  inevitable-disaster rhetoric, plus categorical protocol claims; do not reapprove these via #63.
-- #65 checks headings/TOCs/links/old control-stack numbering after #64.
+- Complete faithful outcome/work-record review and final Repository Gate.
+- Publish/update one draft #64 PR with actual exact-head CI and scope evidence.
+- Astra: challenge final argument, scenario tests/propagation, retained debt-risk confidence,
+  protocol practice-vs-efficacy distinction and source no-reset decision.
+- Any material source-use change triggers proper resets/audit; no early Verified restoration.
+- Only accepted integration and complete AC evidence allow #64 closure; then #65.

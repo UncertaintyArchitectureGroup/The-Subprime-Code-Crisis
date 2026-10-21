@@ -20,7 +20,7 @@ flowchart TD
     --> D[Protocol 4: Organizational control model<br/>Own, govern, learn]
 ```
 
-Each layer addresses a different failure mode. None of them is sufficient alone.
+Each layer addresses a different decision boundary. Choose and evaluate a combination appropriate to the deployment; this stack is not evidence that every layer is always needed or sufficient.
 
 ---
 
@@ -80,7 +80,7 @@ Each layer addresses a different failure mode. None of them is sufficient alone.
 
 ---
 
-### [Protocol 4: Systemic Cure](04_systemic_cure.md)
+### [Protocol 4: Organizational Control Model](04_systemic_cure.md)
 
 **Primary users:** CTOs, engineering executives, architects, platform leaders, security and governance owners.
 

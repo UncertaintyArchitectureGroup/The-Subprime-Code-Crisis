@@ -1,15 +1,15 @@
-# Part 2: Broken Mechanics
+# Part 2: Verification and Delivery Mechanisms
 
-> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: The Illusion](01_the_illusion.md) | **Part 2** | [🔥 Part 3: The Aftermath](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: Evidence and Delivery Outcomes](01_the_illusion.md) | **Part 2** | [🔥 Part 3: Scenarios and Adoption Decisions](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
-*   [Chapter 5. Review Capacity Under Higher Intake](#chapter-5-review-capacity-under-higher-intake)
-*   [Chapter 6. Assessing Context and Automation Tradeoffs](#chapter-6-assessing-context-and-automation-tradeoffs)
+*   [Chapter 5. Review Capacity and Verification Risk](#chapter-5-review-capacity-and-verification-risk)
+*   [Chapter 6. A Thought Experiment: Operating an AI Review System](#chapter-6-a-thought-experiment-operating-an-ai-review-system)
 *   [Chapter 7. Testing the Delivery Mechanism](#chapter-7-testing-the-delivery-mechanism)
 
 ---
 
-## Chapter 5. Review Capacity Under Higher Intake
+## Chapter 5. Review Capacity and Verification Risk
 
 Continue Chapter 4's conditional scenario: candidate work grows faster than a constrained review stage can process it. Reviewer load depends on change size/risk, familiarity, tooling and available capacity. The evidence reviewed here does not establish a universal senior-to-junior staffing ratio or that AI permanently breaks one.
 
@@ -65,9 +65,9 @@ A team could gain useful output while preserving review and learning, or create 
 
 ---
 
-## Chapter 6. Assessing Context and Automation Tradeoffs
+## Chapter 6. A Thought Experiment: Operating an AI Review System
 
-An AI review assistant could reduce some inspection work while adding setup and maintenance. This is a **thought experiment and proposed comparison**, not an observed deployment, collected pilot result or proof that automation necessarily shifts more work onto senior engineers. [Issue #54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54) owns pilot design and any later decision to collect data; [Chapter 5](#chapter-5-review-capacity-under-higher-intake) states the capacity question.
+An AI review assistant could reduce some inspection work while adding setup and maintenance. This is a **thought experiment and proposed comparison**, not an observed deployment, collected pilot result or proof that automation necessarily shifts more work onto senior engineers. [Issue #54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54) owns pilot design and any later decision to collect data; [Chapter 5](#chapter-5-review-capacity-and-verification-risk) states the capacity question.
 
 ### Potential Benefit and Comparator
 
@@ -111,7 +111,7 @@ Pull/WIP limits, smaller changes, risk-based task selection, useful tests/review
 
 The proposed design in [#54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54) should distinguish beneficial, neutral/mixed and adverse outcomes using a defined comparator, task/risk mix, review/rework effort, queue time, useful releases and quality. No pilot has been run for this chapter. Agree scope, outcome definitions and observation window before collection; resource and data-collection decisions remain with that issue's owner/maintainer.
 
-If coding time falls and useful delivery improves at comparable or lower total effort with stable/improved quality, that supports benefit in that setting. It does not by itself refute a simultaneous increase in review demand; check the relevant endpoint and whether the proposed trigger occurred. If queues or defects rise, compare alternative explanations before attributing them to AI or a particular stage. No probability or industry prevalence is assigned to these scenarios. The broader warning rhetoric in Part 3 remains subject to the separate full-report audit (#64).
+If coding time falls and useful delivery improves at comparable or lower total effort with stable/improved quality, that supports benefit in that setting. It does not by itself refute a simultaneous increase in review demand; check the relevant endpoint and whether the proposed trigger occurred. If queues or defects rise, compare alternative explanations before attributing them to AI or a particular stage. No probability or industry prevalence is assigned to these scenarios. [Part 3](03_the_aftermath.md) develops conditional scenarios and decision responsibilities; these are repository interpretations, not further empirical results.
 
 ---
 
@@ -123,4 +123,4 @@ If coding time falls and useful delivery improves at comparable or lower total e
 
 ---
 
-**Next:** [🔥 Part 3: The Aftermath](03_the_aftermath.md)
+**Next:** [🔥 Part 3: Scenarios and Adoption Decisions](03_the_aftermath.md)

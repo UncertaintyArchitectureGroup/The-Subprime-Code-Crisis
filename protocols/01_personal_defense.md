@@ -1,11 +1,11 @@
 # Protocol 1: The Personal Defense
-## Master the Tool, Don't Serve It (The "No Vibe Coding" Standard)
+## Verify Generated Changes Before Acceptance
 
 > **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [🛡️ Protocols Index](README.md) | **Protocol 1** | [Protocol 2: Operational Defense](02_operational_defense.md)
 
-**"Vibe Coding"** is the practice of accepting AI-generated code because it *looks* right, without verifying whether it *is* right. It is one mechanism that can contribute to the Subprime Code Crisis.
+Here, **"vibe coding"** refers to accepting plausible generated output without adequate verification. This protocol addresses that risk; it does not estimate its prevalence or treat all AI-assisted work as equivalent.
 
-Before we change the industry, we must discipline our own workflow. We are the architects of logic, not consumers of syntax.
+The practices below propose boundaries for accepting changes. Adapt them to the work's risk and check their effectiveness in the local workflow.
 
 ---
 
@@ -113,7 +113,7 @@ A model generates a script that converts historical CSV exports into a new forma
 
 ### Why this matters for the Subprime Code Crisis
 
-The crisis mechanism depends on cheap code-like output becoming long-lived inventory. A disposable boundary interrupts that flow. It prevents provisional syntax from automatically becoming maintenance debt.
+The proposed risk mechanism includes provisional output entering durable code without adequate acceptance. A disposable boundary is intended to interrupt that path. Whether it reduces later rework or maintenance burden requires local evidence; the boundary does not guarantee correctness or prevent all debt.
 
 ---
 
@@ -176,13 +176,13 @@ A team needs a new outbound API client. Instead of asking the model to "build a 
 
 ### Why this matters for the Subprime Code Crisis
 
-Reference-bounded work reduces uncontrolled variation. It makes generated changes easier to compare, review, and reject, lowering the probability that every AI-assisted task creates a new local style or maintenance burden.
+Reference-bounded work is intended to make variation easier to compare, review and reject. A flawed reference or poor fit can preserve errors. Evaluate review effort, deviations and quality rather than assume the practice reduces defects or maintenance cost.
 
 ---
 
-## 4. The Career Hedge — The "Fixer" Premium
+## 4. Skills for Verification and Maintenance
 
-Do not build your career around prompt fluency alone. Build the skills required to detect, explain, and repair system damage.
+Develop the skills needed to evaluate, explain and maintain accepted changes alongside prompt fluency. This is professional-development advice, not a forecast of salaries or demand.
 
 Focus on:
 
@@ -204,7 +204,7 @@ Adopt this stance:
 
 > **"If I didn't read it, I didn't write it. If I don't understand it, I won't commit it. If I cannot verify it, it does not cross the boundary."**
 
-You are the signatory of the code. The `git blame` points to you, not the model. Act accordingly.
+Keep the accountable owner and acceptance evidence visible. A repository author field records attribution; it does not determine legal liability.
 
 ---
 
@@ -212,12 +212,13 @@ You are the signatory of the code. The `git blame` points to you, not the model.
 
 ```mermaid
 flowchart TD
-    A[Protocol 1: Personal Defense<br/>Engineer-level boundaries and verification]
-    --> B[Protocol 2: Operational Defense<br/>Team-level flow, review, and capacity controls]
-    --> C[Protocol 3: Systemic Cure<br/>Organization-level incentives and control loops]
+    A["Protocol 1: Engineer boundaries"]
+    --> B["Protocol 2: Team controls"]
+    --> C["Protocol 3: Evidence disclosure"]
+    --> D["Protocol 4: Organizational control model"]
 ```
 
-This protocol protects the individual engineer's decision boundary. [Protocol 2](02_operational_defense.md) addresses team-level operating controls. The systemic layer addresses organizational incentives, governance, and feedback loops.
+This protocol addresses the individual engineer's decision boundary. [Protocol 2](02_operational_defense.md) covers team controls, [Protocol 3](03_public_defense.md) evidence disclosure, and [Protocol 4](04_systemic_cure.md) organizational ownership and feedback.
 
 ---
 

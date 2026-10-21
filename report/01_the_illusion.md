@@ -1,12 +1,12 @@
-# Part 1: The Illusion of Speed
+# Part 1: Evidence and Delivery Outcomes
 
-> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | **Part 1** | [⚙️ Part 2: Broken Mechanics](02_broken_mechanics.md) | [🔥 Part 3: The Aftermath](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | **Part 1** | [⚙️ Part 2: Verification and Delivery Mechanisms](02_broken_mechanics.md) | [🔥 Part 3: Scenarios and Adoption Decisions](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
 *   [Chapter 1. What Productivity Studies Measure](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
 *   [Chapter 2. Evaluating the Cost of AI-Assisted Delivery](#chapter-2-evaluating-the-cost-of-ai-assisted-delivery)
-*   [Chapter 3. The "Free Lunch" Trap](#chapter-3-the-free-lunch-trap-when-adoption-budgets-miss-delivery-work)
+*   [Chapter 3. Adoption Budgets and Delivery Capability](#chapter-3-adoption-budgets-and-delivery-capability)
 *   [Chapter 4. A Review-Capacity Scenario](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
 ---
 
@@ -236,7 +236,7 @@ A rollout could increase candidate work faster than a team can absorb it, so cap
 
 ---
 
-## Chapter 3. The "Free Lunch" Trap: When Adoption Budgets Miss Delivery Work
+## Chapter 3. Adoption Budgets and Delivery Capability
 
 Chapter 1 reports different task-time effects in different settings; it does not establish that senior engineers generally slow down. The business question is how adoption decisions account for such variation and for the conditional cost comparison discussed in Chapter 2. The market-pressure explanation below is a proposed mechanism, not a finding of the productivity experiments.
 
@@ -310,7 +310,7 @@ An adoption dashboard can answer whether tools are used. It cannot by itself sho
 
 ### Conclusion: Test the Capability Gap Before Prescribing Transformation
 
-The **"Free Lunch"** trap is a conditional budget error: assuming tool-level gains will reach delivery without checking any additional work required for the chosen use case. The absence of a large transformation programme does not establish that error.
+The budget error examined here is conditional: assuming tool-level gains will reach delivery without checking any additional work required for the chosen use case. The absence of a large transformation programme does not establish that error.
 
 Where measured review, integration or maintenance needs exceed existing capability, targeted process or capacity changes may be justified. If existing capability is sufficient and useful delivery improves at comparable or lower total cost, with stable or improved quality, that weakens the adverse scenario. No universal ranking of typing and thinking costs, or minimum transformation spend, follows from the sources in Chapter 2.
 
@@ -419,4 +419,4 @@ Xu's positive project activity and Agarwal's positive AF activity remain compati
 
 ---
 
-**Next:** [⚙️ Part 2: Broken Mechanics](02_broken_mechanics.md)
+**Next:** [⚙️ Part 2: Verification and Delivery Mechanisms](02_broken_mechanics.md)

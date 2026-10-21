@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "1ddc3a4cc894cdab159dd99150427287d45c3e94a6c780dab3772230421500ef",
+    "digest": "7df151e092048830a3c767f27d4b46784baa027f50d000b4c11875b1fb0a68c9",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "ed10b1688fb424559e792c5a97a2d98abffd9c11f8419e35050fa00b57ebf003"
+        "sha256": "3be496ec07ee7df7aca60b92013586257334c4c4fdc007bac217e14e05b3f8cb"
       },
       {
         "path": "CITATION.cff",
@@ -92,7 +92,7 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "e67946930f0470fb9e277f2d98be35253280f4bb25bb282f57d1da6873095264"
+        "sha256": "d63b7707b5788cced695b67b4e2417906f80e0baa76924e1aa8682e6fe07f1f4"
       },
       {
         "path": "REFERENCES.md",
@@ -342,7 +342,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "92b258a51de3254fa6b4b85835eb791d52511bfb4aa7e76244f360b9adf58067"
+        "sha256": "265c161e6ff0b5521017bcc07ccf4d776ca32c3ce8555b5e929ce0f8504aea9d"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -453,6 +453,11 @@
         "path": "governance/reviews/issue-63-2026-10-21-mechanism-audit.md",
         "identity_mode": "content",
         "sha256": "3a8adb19e27bbfe041520dd8b3249dd98e23bcb3fbd3bfb862680434b4bec727"
+      },
+      {
+        "path": "governance/reviews/issue-64-2026-10-21-sol-editorial-audit.md",
+        "identity_mode": "content",
+        "sha256": "882370d1dac1e8c9fe566d26bb042c54352c2ed9237e14b5194e4281ea95cde6"
       },
       {
         "path": "governance/status-model.md",
@@ -570,6 +575,11 @@
         "sha256": "34617a7bf48224b759a898e2af185e1166e555cf38fc733929b10866ee6703fd"
       },
       {
+        "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+        "identity_mode": "content",
+        "sha256": "dc9164eff2247b4a51a2af6e9fa0f4e62dd8ce566c27b282229ecb9cd892e785"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -577,42 +587,42 @@
       {
         "path": "protocols/01_personal_defense.md",
         "identity_mode": "content",
-        "sha256": "5a911f819bfff2e8059fd8583302381d927a07794419782b230573710fad828e"
+        "sha256": "0a18fe293ba7cf287b1c2c14e369a2942b964c7201fb092919344a93b49367c4"
       },
       {
         "path": "protocols/02_operational_defense.md",
         "identity_mode": "content",
-        "sha256": "8f7173b7d76f90280237c9dec2be78289b22b322bd0f16bd2331b21b606cb296"
+        "sha256": "74e89eab91934bd3b6beefaa7dbe4b8d11c5a2016a930b4fec47fea89e799e29"
       },
       {
         "path": "protocols/03_public_defense.md",
         "identity_mode": "content",
-        "sha256": "25830895b5a2d674632377ae1fbfc8b9f971c59a921edada67a016501eb8a1bb"
+        "sha256": "94a2f4dc4bcb163de1e437a973504d6231151b31256f6afc025c7fbf36588025"
       },
       {
         "path": "protocols/04_systemic_cure.md",
         "identity_mode": "content",
-        "sha256": "89ef5b52a4af2b8f99ce13940a35d84e03f82ff27df910b2e5694a9499fa62b2"
+        "sha256": "6d9cc3e8b2739c9590e0f97dd00edcfee19d38c4b673c89e7fe545ff7707c1a7"
       },
       {
         "path": "protocols/README.md",
         "identity_mode": "content",
-        "sha256": "8864cb0faa7e1f9fa479e307cb01d029d582482924b9f6481b9481a1709abafd"
+        "sha256": "30705acb73b5138ed2bf98f3a3be6aa228bbacbbe1d2bd9d5466ae95fc5f3cf8"
       },
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "c849a35880ef72446ce6d7f83857b012f101b0115062adea85f4aeed16d7c4f2"
+        "sha256": "dc27a699ddd1c0ecadc29c6958b944619a6af699ba473ccc7e2c1da0f7bbb34f"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "5ecc80e6db62aa2c05f37a728a6eb53b1b4162b7739c2e1c38c2ad9fd5ea40bc"
+        "sha256": "c7272da6a58b90b5105ca47dc08443d562f6f6e02806409566646642b43c7f0b"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "42140df1b9121c658ddd7c95ee1a535b3f8e4f6121312d1d8132863007ec55e7"
+        "sha256": "446e00042780a80c579665fd90f8d56910d66082029cbffbf9afeb0f5cc7d3fc"
       },
       {
         "path": "report/appendices/cost-context.md",
@@ -2125,6 +2135,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-64-2026-10-21-sol-editorial-audit.md",
+      "title": "Issue #64: bounded criticism — Sol implementation audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2286,6 +2303,13 @@
       ]
     },
     {
+      "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "title": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/work-records/README.md",
       "title": "Machine-readable work records",
       "instructions": [
@@ -2315,7 +2339,7 @@
     },
     {
       "path": "protocols/04_systemic_cure.md",
-      "title": "Protocol 4: The Systemic Cure",
+      "title": "Protocol 4: Organizational Control Model",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2329,21 +2353,21 @@
     },
     {
       "path": "report/01_the_illusion.md",
-      "title": "Part 1: The Illusion of Speed",
+      "title": "Part 1: Evidence and Delivery Outcomes",
       "instructions": [
         "AGENTS.md"
       ]
     },
     {
       "path": "report/02_broken_mechanics.md",
-      "title": "Part 2: Broken Mechanics",
+      "title": "Part 2: Verification and Delivery Mechanisms",
       "instructions": [
         "AGENTS.md"
       ]
     },
     {
       "path": "report/03_the_aftermath.md",
-      "title": "Part 3: The Aftermath",
+      "title": "Part 3: Scenarios and Adoption Decisions",
       "instructions": [
         "AGENTS.md"
       ]

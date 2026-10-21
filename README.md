@@ -3,7 +3,7 @@
 
 **An independent research synthesis on AI-assisted software delivery risk**
 
-How AI code assistants can create local productivity gains while shifting cost into review, QA, security, architecture, maintenance, and production stability.
+When local coding gains improve delivery, and when review, QA, security, architecture, maintenance or operating work may absorb them.
 
 **Primary author:** [Vitalii Oborskyi](https://www.linkedin.com/in/vitaliioborskyi) · **Project:** [Uncertainty Architecture Group](https://github.com/UncertaintyArchitectureGroup)
 
@@ -29,8 +29,8 @@ See the [dated backlog audit](governance/issue-backlog-audit.md),
 1. **Empirical finding:** AI tools can accelerate isolated coding work.
 2. **Systems inference:** Local code-generation speed does not guarantee end-to-end software-delivery throughput.
 3. **Systems hypothesis:** Additional admitted work may strain a downstream stage when effective capacity and work policies cannot absorb it; successful adaptation can preserve useful gains.
-4. **Repository risk framing:** The risk comes from unmanaged adoption and insufficient verification capacity, not from AI assistance alone.
-5. **Proposed practice:** Redesign the delivery control system rather than reject the technology.
+4. **Repository risk framing:** Delivery risk depends on task selection, tool behavior, verification capacity and deployment choices.
+5. **Proposed practice:** Assess the delivery system and adjust controls where evidence identifies a gap; reuse adequate existing capability.
 
 The repository examines this as a delivery-system problem. It distinguishes source-reported findings and documented facts from repository interpretations, systems inferences, risk scenarios, and warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. The detailed research boundary is defined in [Repository Scope](SCOPE.md).
 
@@ -38,7 +38,7 @@ The repository examines this as a delivery-system problem. It distinguishes sour
 
 | Area | Purpose | Start here |
 | --- | --- | --- |
-| **Report** | Complete argument about local acceleration, downstream constraints, and accumulated delivery-system risk | [Part 1: The Illusion](report/01_the_illusion.md) |
+| **Report** | Evidence, conditional delivery mechanisms, alternative scenarios and adoption decisions | [Part 1: Evidence and Delivery Outcomes](report/01_the_illusion.md) |
 | **Evidence** | Source registry, evidence taxonomy, source-oriented briefs, limitations, and integration status | [Evidence Library](evidence/README.md) |
 | **Protocols** | Adaptable controls for engineers, teams, public evidence, and organizations | [Operational Protocols](protocols/README.md) |
 | **Scope and Doctrine** | Subject boundaries, evidence principles, claim boundaries, and reasoning rules | [Scope](SCOPE.md) and [Doctrine](DOCTRINE.md) |
@@ -131,7 +131,7 @@ The repository organizes its practical response as a four-layer control stack:
 | **Engineer** | [Personal Defense](protocols/01_personal_defense.md) | What generated output may cross into durable code, and under what verification? |
 | **Team** | [Operational Defense](protocols/02_operational_defense.md) | Is local acceleration improving or degrading delivery-system outcomes? |
 | **Public evidence** | [Public Evidence and Disclosure](protocols/03_public_defense.md) | What can be claimed, with what support, limitations, and correction path? |
-| **Organization** | [Systemic Cure](protocols/04_systemic_cure.md) | Who owns adoption policy, capacity, exceptions, escalation, and learning? |
+| **Organization** | [Organizational Control Model](protocols/04_systemic_cure.md) | Who owns adoption policy, capacity, exceptions, escalation, and learning? |
 
 These are adaptable operating patterns, not universal thresholds or empirical proof. Teams should adapt them to local risk, architecture, regulation, and delivery constraints, then return measured implementation feedback to the evidence system.
 
