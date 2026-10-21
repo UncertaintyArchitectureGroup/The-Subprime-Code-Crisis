@@ -1,8 +1,8 @@
 +++
 source_ids = ["P-2026-01"]
-evidence_review = "Needs re-review"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+evidence_review = "Reviewed brief"
+integration_audit = "Verified"
+last_verified = "2026-10-21"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
@@ -77,7 +77,7 @@ The source does not establish universal review overload, fixed verification capa
 
 Flow C, with pre-edit treatment [6310154890](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/63#issuecomment-6310154890), following the maintainer's authorized correction/hypothesis scope. Primary Astra; independent reviewer `/root/astra_review_issue63` inspected originals and all dependent surfaces without implementing. Initial outcome **Corrections required** on Sol candidate ef5b228/tree809141fe. Corrected-candidate outcome **Confirmed**, 21 October 2026, on `317bc1a3103840866f7d353c29b55ec001cfebd0`, tree `b45614fcee03100bc58d643c5626229250755d43`, for source, argument and all-use integration scope. The dated audit preserves the correction trail. Acceptance does not establish merge or final source verification.
 
-Both source dimensions remain reset in identity-changing PR80. Eligible Reviewed/Verified promotion requires actual accepted integration and separate final verification; the historical confirmations below do not provide it. Protocol disposition: **Protocol clarification**, no new control or threshold.
+Identity-changing PR80 retained both reset states. Following its accepted merge at `1233ea3663f3166d20918565565a3e970ab9afb8`, exact-main checks and actual independent source/all-use confirmation, the [final verification record](../../governance/reviews/issue-63-2026-10-21-final-verification.md) records **Reviewed brief / Verified / 2026-10-21** for this bounded September integration. This does not validate raw data, universal causal claims or later revisions. Protocol disposition: **Protocol clarification**, no new control or threshold.
 
 ## Preserved May and July review history
 
