@@ -1,8 +1,8 @@
 +++
 source_ids = ["P-2025-02"]
-evidence_review = "Needs re-review"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+evidence_review = "Reviewed brief"
+integration_audit = "Verified"
+last_verified = "2026-10-21"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
@@ -45,7 +45,7 @@ The paper's affiliation notes include Daniel Ziegler (Anthropic) and Luke Harold
 
 R2 Chapter5 uses the definition and bounded scoring counterexample beside the proposed verification-demand test; it does not use the paper to support exponential liability. [H3](../../report/appendices/mechanism-hypotheses.md) measures verification/rework separately from total human effort. Implementation savings can yield net benefit even when review demand grows. README, bibliography and the primary index route to this bounded source assessment.
 
-The [Astra audit](../../governance/reviews/issue-63-2026-10-21-astra-review.md) supersedes the earlier pending-full-review disposition. Initial independent analytical outcome **Corrections required** on ef5b228/tree809141fe; corrected-candidate review **Confirmed**, 21 October 2026, at `317bc1a3103840866f7d353c29b55ec001cfebd0`, tree `b45614fcee03100bc58d643c5626229250755d43`, for source/argument/all-use scope. The two precise locator/disclosure corrections and actual outcome are recorded there. Identity-changing PR80 keeps **Needs re-review / Needs re-verification / —**; no date or promotion is inferred from source reading alone. Published cells/calculations were inspected, not raw benchmark reruns.
+The [Astra audit](../../governance/reviews/issue-63-2026-10-21-astra-review.md) supersedes the earlier pending-full-review disposition. Initial independent analytical outcome **Corrections required** on ef5b228/tree809141fe; corrected-candidate review **Confirmed**, 21 October 2026, at `317bc1a3103840866f7d353c29b55ec001cfebd0`, tree `b45614fcee03100bc58d643c5626229250755d43`, for source/argument/all-use scope. The two precise locator/disclosure corrections and actual outcome are recorded there. PR80 retained both reset states during identity correction. Following accepted merge `1233ea3663f3166d20918565565a3e970ab9afb8`, exact-main checks and actual independent source/all-use confirmation, the [final verification record](../../governance/reviews/issue-63-2026-10-21-final-verification.md) records **Reviewed brief / Verified / 2026-10-21** for this historical v1 integration. Internal reporting and project-funding gaps remain explicit; no current-model threshold or raw benchmark replication is certified.
 
 ## Preserved Sol review history
 

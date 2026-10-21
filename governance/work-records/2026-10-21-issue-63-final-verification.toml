@@ -1,0 +1,20 @@
+record_version = 1
+title = "Issue #63: verify accepted September NBER and historical METR integrations"
+primary_flow = "Flow C/B completion with every-use integration and accepted default-branch verification"
+human_decision = "Maintainer's one-issue completion lifecycle and Astra handoff authorize final verification after accepted PR80 merge1233ea3. Start6310475306 follows exact-main successful checks. Actual independent final-state Confirmed at4b310389f71b8ff74c08802deffacf327b8d0b55/tree6d246a7d9fb3b633fa82b0a66abf719278fc84f2; governance/reviews/issue-63-2026-10-21-final-verification.md records original/all-use acceptance, merged-main evidence and eligibility. P-2026-01 and P-2025-02 become Reviewed brief/Verified/2026-10-21 within their explicit source/version/measurement limits. M-1984-01 remains reset/unverified with original-book gap. No identity, finding, Current use, reader claim, control, rule or status-definition change. Faithful recording, publication/main checks and issue closure remain separate observations. Refs #63."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Not required"
+reason = "Final source-state and verification-record synchronization after accepted reader-facing corrections; identities, findings, uses, state definitions and report/protocol meaning unchanged."
+
+[synchronization]
+assessed_surfaces = ["evidence", "source-registry", "evidence-indexes", "references", "report", "reader-navigation", "protocols", "governance", "contributor-guidance", "history"]
+
+[synchronization.non_applicable]
+evidence-indexes = "Source classes, brief links and bounded descriptions unchanged."
+references = "Citation identities, versions, URLs and bibliography boundaries unchanged."
+report = "No source finding, hypothesis, scenario or report-content change."
+reader-navigation = "Accepted README maps, confidence, navigation and source-use paths unchanged."
+protocols = "No operating control, interpretation, threshold or role change in this final metadata step."
+contributor-guidance = "No workflow, obligation, status definition or governance-rule change."
