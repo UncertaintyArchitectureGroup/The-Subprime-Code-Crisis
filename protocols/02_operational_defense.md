@@ -213,7 +213,7 @@ Avoid claims such as:
 
 Use bounded language:
 
-> In this team, for this class of work, under this operating model, AI assistance improved or degraded these measured outcomes during this observation period.
+> In this team, for this class of work and observation period, these measured outcomes were higher, lower or unchanged relative to the stated comparator under AI-assisted delivery. Attributing the difference to AI requires a credible design and checks for concurrent changes.
 
 ---
 

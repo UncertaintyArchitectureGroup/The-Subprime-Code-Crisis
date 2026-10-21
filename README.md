@@ -58,10 +58,12 @@ The **Claim confidence map** evaluates selected repository conclusions: what kin
 | AI tools can accelerate isolated coding tasks                                                  | Empirical finding         | High        |
 | Local code generation speed does not guarantee SDLC throughput                                 | Systems inference         | High        |
 | Additional admitted work may strain downstream verification under the stated conditions | Systems inference | Conditional; stage and prevalence not established |
-| Unmanaged adoption may inflate technical debt                                                  | Risk scenario             | Medium      |
+| Unresolved verification or maintenance work may accumulate under the stated conditions | Risk scenario | Conditional; magnitude and prevalence not established |
 | Industry-wide “technical bankruptcy” under aggressive cost-cutting adoption models | Warning scenario | Not estimated; no calibrated probability |
 
 Canonical definitions for these claim types are maintained in the [Glossary](GLOSSARY.md); their use is governed by the [Repository Doctrine](DOCTRINE.md#claim-boundaries).
+
+The debt-risk row describes a [conditional local scenario](report/03_the_aftermath.md#local-delivery-deterioration), not a measured debt balance or probability. Rework and structural metrics motivate investigation; they do not alone establish persistent maintenance burden. Test accumulation and recovery over a defined period alongside useful delivery, total effort and quality.
 
 ## 🧾 Evidence Map
 

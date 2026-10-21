@@ -41,15 +41,17 @@ flowchart TD
     A["AI-assisted delivery in a defined setting"] -->|"Useful capability and effective controls"| B["Beneficial delivery outcomes"]
     A -->|"Gains and costs offset or differ by outcome"| C["Mixed or uncertain outcomes"]
     A -->|"Persistent uncorrected harm"| D["Local delivery deterioration"]
-    D -->|"Successful adaptation or containment"| B
-    D -. "Only with exposure, transmission and failed recovery" .-> E["Broader disruption: warning scenario"]
+    D -->|"Successful adaptation or containment"| R["Recovery; reassess benefit, cost and quality"]
+    D -. "Only with exposure, transmission and failed recovery" .-> E["Cross-deployment propagation: warning scenario"]
 ```
+
+Containment can prevent further harm without producing a net gain. Recovery therefore leads to a new comparison of outcomes, not an automatic beneficial result.
 
 ### Beneficial Adaptation
 
 If assistance saves effort or enables useful work and the delivery system can absorb it, more useful output or lower total effort at comparable quality is a possible result. Existing headroom, better task selection, smaller changes or effective verification could contribute. No new transformation programme is assumed necessary.
 
-Observe accepted outcomes, implementation and verification/rework effort separately, defects, release performance and operating cost. Sustained benefit would weaken an inevitable-harm claim. It would not by itself refute an increase in verification demand if implementation savings were larger.
+Observe accepted outcomes, implementation and verification/rework effort separately, defects, release performance and operating cost. Record sustained benefit as a result in that setting. To test an adverse link, also check its proposed trigger and endpoint: implementation savings can exceed increased verification effort, so net benefit alone does not refute rising verification demand.
 
 ### Mixed or Uncertain Outcomes
 
@@ -59,22 +61,22 @@ Report those outcomes separately. A nonsignificant difference is not evidence of
 
 ### Local Delivery Deterioration
 
-An adverse mechanism requires additional conditions: generated work is admitted, service demand strains effective capacity, checks or context are inadequate, and the resulting costs persist without sufficient adaptation. Possible outcomes include longer waits, rework, escaped defects or reduced delivery capacity. None is assumed to occur in every AI-assisted change.
+The capacity-mediated mechanism considered here starts with admitted work and service demand that strains independently assessed effective capacity. Waiting, context loss or inadequate checks could then add rework or defects. Whether costs persist or useful delivery deteriorates is an outcome to test, not a condition that makes the hypothesis true by definition. This is one proposed adverse mechanism, not an exhaustive account of AI-related failures.
 
-Inspect stage demand/capacity, task risk, active effort versus waiting, WIP, quality and useful completion against a credible baseline. Staffing changes, release batching, dependencies and changed scope remain alternatives. Successful containment or useful gains at comparable quality would limit this scenario's applicability. The [H1–H5 tests](appendices/mechanism-hypotheses.md) distinguish absent triggers, disconfirmation under the trigger and net benefit.
+Inspect stage demand/capacity, task risk, active effort versus waiting, WIP, quality and useful completion against a credible baseline. Staffing changes, release batching, dependencies and changed scope remain alternatives. If an independently measured trigger is present but the predicted endpoint is absent or reversed, with precision sufficient to exclude a predefined meaningful effect, that weakens the particular local link. An absent trigger or successful adaptation limits applicability; net benefit answers a separate question. The [H1–H5 tests](appendices/mechanism-hypotheses.md) specify these distinctions.
 
-### Broader Disruption as a Warning Scenario
+### Cross-Deployment Propagation as a Warning Scenario
 
-A local problem does not establish an industry crisis. A broader scenario additionally requires shared dependencies or correlated exposure, a mechanism that transmits failures beyond the originating deployment, and insufficient containment or recovery. Loss of trust, restrictions on use or sustained maintenance burden are possible consequences to investigate, not a predicted AI winter, insolvency rate or industry-wide productivity decline.
+A local problem does not establish an industry crisis. The propagation variant considered here additionally requires exposed dependencies, a mechanism that transmits failures beyond the originating deployment, and insufficient containment or recovery. Correlated failures could instead reflect a common cause; correlation alone does not demonstrate transmission. Loss of trust, restrictions on use or sustained maintenance burden are possible consequences to investigate, not a predicted AI winter, insolvency rate or industry-wide productivity decline.
 
-Evidence would need a defined population, longitudinal outcomes, correlated exposure and traced transmission, alongside competing explanations. Isolated incidents, independent causes, successful recovery or an absence of linked failures in the defined exposed population would weaken an inference of systemic propagation. No such population-level test is supplied here.
+Evidence would need a defined exposed population, longitudinal outcomes and traced transmission, alongside competing explanations. Specify detection coverage, follow-up and a meaningful propagation endpoint before testing. Observed originating failures and actual downstream exposure through the hypothesized path, followed by no predicted downstream propagation under adequate observation, would weaken that transmission prediction. No initiating event or unrealized exposure path means the trigger was absent. Successful containment tests the response; unrelated causes challenge attribution. These distinctions do not rule out every possible systemic risk. No such population-level test is supplied here.
 
 | Scenario | Signals to compare | What would limit the interpretation |
 | --- | --- | --- |
 | Beneficial | Useful delivery and total effort/cost at comparable quality | Changed scope, selected successes or incomplete quality follow-up |
 | Mixed/uncertain | Coding, review, release and quality outcomes reported separately | Better measurement may reveal benefit or harm; do not force a single result |
-| Local adverse | Independently measured demand, waits, rework, quality and completion | Absent trigger, effective adaptation or a competing cause |
-| Broader warning | Shared exposure, transmission, sustained effects and failed recovery | Local containment, uncorrelated causes, successful recovery or no propagation |
+| Local adverse | Independently measured demand, waits, rework, quality and completion | Missing predicted endpoint under the trigger; separately, absent trigger, adaptation or competing cause |
+| Propagation warning | Originating failures, actual downstream exposure, traced transmission, sustained effects and recovery | Missing predicted propagation after the trigger; separately, no initiating event/path, containment or another cause |
 
 These are proposed observation categories, not a collected dataset or a requirement that a pilot validate the adverse mechanism. [Issue #54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54) owns any later study-design and collection decision.
 
@@ -93,6 +95,8 @@ Evaluate specific product behavior, published claims and adoption decisions agai
 ### Incentives as a Hypothesis to Test
 
 Targets based on activation or output could favor expansion before downstream outcomes are understood. This is a **repository hypothesis**, not a finding about every vendor, investor or executive. Testing it requires actual targets, contracts, product defaults, decision records and subsequent delivery outcomes. Outcome-based decisions, effective checks and successful adjustment are plausible alternatives.
+
+Compare expansion timing, scope and use of downstream acceptance evidence in otherwise comparable settings with different target exposure. Task opportunities, staffing and commercial deadlines are competing explanations. With activity targets present, no earlier or wider expansion and no reduced reliance on downstream evidence, estimated precisely enough to exclude a predefined meaningful change, would weaken the proposed decision link. Later net benefit or successful recovery alone would not test that earlier choice.
 
 *   **The C-Suite:** Market expectations could influence adoption decisions. The [enterprise surveys in Chapter 3](01_the_illusion.md#enterprise-surveys-use-benefits-and-scaling-are-different-outcomes) do not measure investor pressure or executive fear, and preserve reported benefits alongside scaling limits. The proposed decision mechanism requires observations of actual choices and delivery outcomes; it is not an established motive for all executives.
 

@@ -370,10 +370,10 @@ Investigate the full control system:
 
 ```mermaid
 flowchart LR
-    A[Incident] --> B[Technical cause]
-    A --> C[Workflow cause]
-    A --> D[Policy or incentive cause]
-    B --> E[Corrective actions]
+    A[Incident] --> B[Assess technical factors]
+    A --> C[Assess workflow factors]
+    A --> D[Assess policy or incentive factors]
+    B --> E[Select actions supported by findings]
     C --> E
     D --> E
     E --> F[Update controls and assumptions]

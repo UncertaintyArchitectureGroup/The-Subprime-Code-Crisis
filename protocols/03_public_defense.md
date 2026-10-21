@@ -34,11 +34,13 @@ A credible public statement should distinguish among:
 flowchart LR
     A[Tool activity] --> B[Workflow effect]
     B --> C[Production outcome]
-    C --> D[Causal claim]
+    C -->|"Separate design and confounder assessment"| D[Assess causal attribution]
 
     A -. does not prove .-> C
     B -. does not automatically prove .-> D
 ```
+
+This is a measurement and assessment sequence, not a measured causal chain. Observing an outcome does not by itself establish its cause.
 
 **Public rule:** never collapse these levels into one productivity claim.
 
@@ -57,7 +59,7 @@ Before publishing a statement, classify it.
 | **Generalization** | "AI coding tools reduce software quality." | Multiple relevant studies and explicit scope |
 | **Recommendation** | "High-risk changes should require independent review." | Risk rationale, operational experience, or cited evidence |
 
-Use the weakest claim that the evidence can honestly support.
+Make the most specific claim justified by the evidence, retaining its uncertainty and scope. A bounded positive finding deserves the same visibility as a bounded negative one.
 
 Prefer:
 
@@ -160,7 +162,7 @@ A short public communication should still include the essentials. The card and r
 > **Intervention:** AI coding assistant used for implementation and test scaffolding.  
 > **Comparator:** Previous eight weeks, segmented by change size.  
 > **Observed result:** Time to first PR decreased, while active review effort and early rework increased. Release completion did not materially change.  
-> **Interpretation:** The team accelerated candidate-code production but did not yet improve end-to-end throughput.  
+> **Interpretation:** Candidate-code production was faster in this comparison; an end-to-end throughput gain was not established. Stable or imprecise release counts alone do not establish equivalence.
 > **Limitations:** Small sample, changing task mix, no randomized assignment.  
 > **Action:** Continue for low- and moderate-risk work with smaller PRs and stronger reference-bounded review.
 
@@ -230,7 +232,7 @@ Do not cite a source for a stronger claim than the source itself supports.
 
 ### Pattern B — External case-study statement
 
-> During a limited pilot, AI assistance reduced time to first implementation for selected tasks. End-to-end delivery results were mixed: review effort increased and production throughput remained broadly stable. The team is continuing the pilot with smaller changes, clearer references, and risk-based controls.
+> During a limited pilot, time to first implementation was lower for selected AI-assisted tasks than for the stated comparator. Review effort increased; no clear production-throughput gain was established. Changing task mix and concurrent changes limit attribution. The team is continuing the pilot with smaller changes, clearer references, and risk-based controls.
 
 ### Pattern C — Response to an inflated claim
 
