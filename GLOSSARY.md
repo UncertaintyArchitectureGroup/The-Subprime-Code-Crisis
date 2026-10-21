@@ -121,7 +121,7 @@ A completed evidence review may produce a **Reviewed brief**. It remains separat
 
 The possibility that different authors independently develop similar terminology, metaphors, or conclusions while examining related conditions, without documented derivation from one another.
 
-In this repository, the term is used for provenance framing, not as proof that influence was impossible. See [`TERMINOLOGY_AND_ATTRIBUTION.md`](TERMINOLOGY_AND_ATTRIBUTION.md).
+This is a possible explanation, not an established provenance finding for this project. Separately published works and an absence of documented influence do not establish independent development. See [`TERMINOLOGY_AND_ATTRIBUTION.md`](TERMINOLOGY_AND_ATTRIBUTION.md) for the dated records and unresolved relationships.
 
 ### Integration audit
 

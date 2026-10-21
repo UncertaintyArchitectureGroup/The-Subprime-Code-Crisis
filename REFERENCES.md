@@ -99,18 +99,19 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ### D-2025-05, D-2025-06, D-2026-04 — Terminology provenance
 
-- Nick Vigier. [*“Subprime Code”: How Vibe Coding Could Trigger the Next Great Crash*](https://www.linkedin.com/pulse/subprime-code-how-vibe-coding-could-trigger-next-great-nick-vigier-yu5ve). 2025-09-16.
-- Richard Ewing. [*The Subprime Code Crisis: What Happens When Unverified AI Code Floods the Enterprise*](https://careerwin.ai/research/the-subprime-code-crisis). Current syndication surface displays 2025-11-12; other current Ewing-controlled surfaces display or claim materially different provenance dates.
-- Igor Światowski. *The Subprime Code Crisis Has Started*. Public LinkedIn profile listing dated 2025-12-16.
-- Richard Ewing. [*The Subprime Code Crisis — Research Spec*](https://www.richardewing.io/concepts/subprime-code-crisis). Current page claims an April 2025 Built In / HackerNoon origin; that origin remains unverified in the repository review.
-- Status: documentary provenance record under re-review and re-verification; see the [terminology provenance brief](evidence/documentary/terminology-provenance.md) for source-specific limitations and the unresolved chronology.
+- Nick Vigier. [*“Subprime Code”: How Vibe Coding Could Trigger the Next Great Crash*](https://www.linkedin.com/pulse/subprime-code-how-vibe-coding-could-trigger-next-great-nick-vigier-yu5ve). Original page displays 2025-09-16; readable 2026-10-21.
+- Igor Światowski. *The Subprime Code Crisis Has Started*. Earlier [profile listing](https://uk.linkedin.com/in/igorswiatowski) recorded 2025-12-16; current original retrieval returns 999. A cached search extract is not a freshly reviewed dated original.
+- Richard Ewing. Previously recorded *The Subprime Code Crisis: What Happens When Unverified AI Code Floods the Enterprise*, CareerWin displayed 2025-11-12. The [old URL](https://careerwin.ai/research/the-subprime-code-crisis) now redirects to a differently titled article retaining that displayed date.
+- Ewing's earlier *The Subprime Code Crisis — Research Spec* URL now returns 404. The [current Negative-Carry concept](https://www.richardewing.io/concepts/negative-carry-code-crisis) retains the author-claimed April 2025 origin; its Origin link does not identify a dated original.
+- The [current catalog](https://www.richardewing.io/research/publications) labels a Negative-Carry item March 2026. Its linked [Beehiiv page](https://theaieconomist.beehiiv.com/p/the-subprime-code-crisis) still displays *The Subprime Code Crisis*, without a visible publication date. The [previously reviewed blog URL](https://www.richardewing.io/blog/the-subprime-code-crisis) now displays *The Negative-Carry Code Crisis* and May 1, 2026.
+- [Dated terminology brief](evidence/documentary/terminology-provenance.md): exact old/current titles and access outcomes, preserved historical review, unresolved originals and no established independent-development/priority claim. Source states remain in [SOURCES](evidence/SOURCES.md).
 
 ### D-2026-05 to D-2026-07 — Project-analysis provenance
 
-- Vitalii Oborskyi. [*Ілюзія економії: чому заміна розробників на AI — це шлях до технічного дефолту*](https://dou.ua/forums/topic/57244/). DOU, 2026-01-05.
-- GitHub REST repository record for [`UncertaintyArchitectureGroup/The-Subprime-Code-Crisis`](https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis), recording `created_at` as `2026-02-06T17:16:44Z`.
-- Vitalii Oborskyi. [*Субпрайм-криза коду: чому AI-асистенти роблять нас повільнішими — і дані це доводять*](https://dou.ua/forums/topic/57846/). DOU, 2026-02-10.
-- Status: reviewed documentary brief with integration audit in progress; these records establish the public development path of this project's own analysis, not phrase coinage or independent validation. See the [project provenance brief](evidence/documentary/project-provenance.md).
+- Vitalii Oborskyi. [*Ілюзія економії: чому заміна розробників на AI — це шлях до технічного дефолту*](https://dou.ua/forums/topic/57244/). DOU, recorded 2026-01-05; current page and January 8 author-comment anchors inspected 2026-10-21.
+- [GitHub REST repository record](https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis): `created_at = 2026-02-06T17:16:44Z`; currently public. This does not establish historical public visibility or release time.
+- Vitalii Oborskyi. [*Субпрайм-криза коду: чому AI-асистенти роблять нас повільнішими — і дані це доводять*](https://dou.ua/forums/topic/57846/). DOU, recorded 2026-02-10; current opening reports continuity with January work/discussion and the current page links the repository.
+- [Project provenance brief](evidence/documentary/project-provenance.md): author-reported development account, not phrase coinage or independent empirical validation. Link-insertion time and historical public opening remain unestablished; canonical source states are in [SOURCES](evidence/SOURCES.md).
 
 ### D-2025-07 — FY25Q2 overall AI-business run rate
 
