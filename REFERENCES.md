@@ -15,7 +15,7 @@ A source appearing here is not automatically peer reviewed, independently valida
 ### P-2026-05 — Learning with AI assistance
 
 - Judy Hanwen Shen & Alex Tamkin. [*How AI Impacts Skill Formation*](https://arxiv.org/abs/2601.20245v2). arXiv v2, **1 February 2026**; v1 28 January.
-- Reviewed object: preprint; accepted venue/peer-review status and equivalence to the inaccessible OpenReview version are not independently confirmed. The [source assessment](evidence/primary/2026-ai-impacts-skill-formation.md) records the original and access/reporting limits. Proposed substantive inclusion remains a decision under #4; source-processing states remain in the registry.
+- Reviewed object: preprint; accepted venue/peer-review status and equivalence to the inaccessible OpenReview version are not independently confirmed. The [source assessment](evidence/primary/2026-ai-impacts-skill-formation.md) records the original and access/reporting limits. Accepted #4 inclusion concerns immediate individual learning, with durable/shared capability and remedy questions retained; source-processing states remain in the registry.
 
 ### P-2026-04 — Firm software production and review
 

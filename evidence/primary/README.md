@@ -4,7 +4,7 @@ This directory contains evidence briefs for original empirical studies.
 
 ## Evidence briefs
 
-- [Shen–Tamkin: AI assistance and learning a new library](2026-ai-impacts-skill-formation.md) — arXiv v2 (February 2026); source assessment and proposed treatment under #4, with immediate learning, completion and reporting limits distinguished. Substantive synthesis awaits a maintainer decision.
+- [Shen–Tamkin: AI assistance and learning a new library](2026-ai-impacts-skill-formation.md) — arXiv v2 (February 2026); lower immediate independent assessment scores alongside higher observed second-task completion and an inconclusive mean time comparison. Accepted #4 treatment keeps durable retention, team ownership and remedy efficacy separate; processing state is in the registry.
 - [Copilot and a standardized programming task](2023-copilot-task-productivity.md) — Peng et al., arXiv v1 (2023); randomized positive time result conditional on task completion, with assignment and completer denominators separated.
 - [METR: familiar open-source tasks with early-2025 tools](2025-metr-experienced-developer-productivity.md) — July 2025 paper v2 and author report; randomized increase in active task time in a bounded setting.
 - [METR: follow-up selection and measurement limits](2026-metr-productivity-design-update.md) — February 2026 original research update; later experiment whose present-day magnitude the authors consider unreliable.

@@ -1,10 +1,10 @@
 +++
 source_ids = ["P-2026-05"]
 evidence_review = "Reviewed brief"
-integration_audit = "Not started"
+integration_audit = "In progress"
 last_verified = "—"
 independent_review = "Confirmed"
-current_use = ["REFERENCES.md"]
+current_use = ["README.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Shen–Tamkin: AI assistance and learning a new programming library
@@ -13,10 +13,12 @@ current_use = ["REFERENCES.md"]
 
 This is the source assessment for [#4](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4).
 The [impact and treatment proposal](../../governance/reviews/issue-4-2026-10-22-source-impact.md)
-contains the exact proposed report, hypothesis-register and README additions.
-Those substantive additions await the maintainer's treatment decision. The
-source review, proposed interpretation, accepted synthesis and verified
-integration are separate observations. No main-branch verification is claimed.
+contains the exact report, hypothesis-register and README treatment, approved
+by the maintainer on 2026-10-22 ([decision receipt](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339806018)).
+The accepted additions are implemented on the issue branch; the
+[integration audit](../../governance/reviews/issue-4-2026-10-22-integration.md)
+records their actual uses. Source review, accepted synthesis and verified
+default-branch integration remain separate. No main-branch verification is claimed.
 
 ## Identity, exact version and access
 
@@ -95,7 +97,7 @@ the control mean. The inputs themselves cannot be reconciled from the published
 text and inspected public files. The [numeric/access record](../../governance/reviews/issue-4-2026-10-22-numeric-checks.json)
 preserves this discrepancy without silently choosing which input is wrong.
 
-Use the reported direction, standardized effect and p-value for the proposed
+Use the reported direction, standardized effect and p-value for the accepted
 headline. Do not substitute the arithmetic result as a newly verified observed
 effect, or present any quiz percentage as a percentage loss of general skill.
 The reporting discrepancy limits precision; it does not by itself demonstrate
@@ -156,9 +158,9 @@ does not randomize error exposure, engagement, prompting pattern or an agentic
 tool, and it does not identify a causal mediator. Its support for an overall
 immediate quiz difference is stronger than its support for those explanations.
 
-## Proposed repository interpretation and complete outcomes
+## Repository interpretation and complete outcomes
 
-**Proposed, not yet accepted:** completing a task and acquiring the capability to
+**Accepted treatment, 2026-10-22:** completing a task and acquiring the capability to
 understand it independently are separate outputs of Code. A favorable completion
 observation can coexist with weaker immediate learning. This directly motivates
 including human capability in an improvement assessment; it does not establish
@@ -173,11 +175,11 @@ learning evidence adjacent to the Review learning function; it contains no actua
 team code-review intervention. Individual quiz scores cannot stand in for
 competent shared ownership.
 
-The proposed HUM-1 successor is **Provisional support for the immediate
+The accepted HUM-1 successor is **Provisional support for the immediate
 individual-learning component**, with the specified displacement mechanism,
 durable learning, collective ownership and remedy still **Open**. Existing
-COD-1/COD-2 and REV-1/REV-2 verdicts would not change merely because coverage
-improves. One study may support its scoped result without establishing all
+COD-1/COD-2 and REV-1/REV-2 verdicts are unchanged; added coverage does not
+establish their separate mechanisms or remedies. One study may support its scoped result without establishing all
 downstream links. Macro output and micro learning observations cannot be joined
 into one measured causal chain by counting citations.
 
@@ -225,11 +227,11 @@ TCO increase, competitive advantage or ROI follows from this quiz result alone.
 - Tool capability, UI, task pressure and engagement may change results. This
   experiment cannot establish what every current or future coding agent does.
 
-## Known and proposed repository uses
+## Known repository uses
 
-Current preparation: this brief, the primary index, the bibliographic entry in
-`REFERENCES.md`, canonical registration, and dated proposal/calculation records.
-Proposed substantive uses, all awaiting a treatment decision:
+The source is used in this brief, the primary index, the bibliographic entry in
+`REFERENCES.md`, canonical registration and dated review/calculation records.
+Accepted substantive uses implemented for #4:
 
 - `report/02_broken_mechanics.md`: Chapter 5 learning/understanding subsection,
   bounded conclusion addition and reference.
@@ -239,20 +241,24 @@ Proposed substantive uses, all awaiting a treatment decision:
 - `README.md`: a compact skill/understanding evidence row with source, brief and
   register routes, preserving the already accepted entry-point structure.
 
-**No protocol change recommended.** Existing professional-development and
+**No protocol change.** Existing professional-development and
 independent-understanding practices remain proposals with local cost/benefit
 requirements. This paper tests neither the protocol stack nor a universal gate.
-No AGENTS/workflow, causal diagram or global confidence change is proposed.
+No AGENTS/workflow, causal diagram or global confidence change is implemented
+by this source treatment. The maintainer's later competing-hypothesis direction
+is separately owned planning work under #84.
 
 ## Repository integration audit
 
-**Not started; Last verified —.** The pre-integration impact inventory is in the
-dated proposal. Current main has no use of this source. A source-oriented review
-does not audit hypothetical future uses. After a treatment decision, inspect
-every actual source use, all numeric/causal boundaries, full-node coverage,
-indexes/bibliography/README, source states and protocol implications; repeat
-independent review and required checks, merge, and inspect actual main before
-any final `Verified` metadata.
+**In progress; Last verified —.** The [occurrence-level audit](../../governance/reviews/issue-4-2026-10-22-integration.md)
+records every material source use, exact original locators, numeric/inference
+boundaries, placement and neighboring argument; full Code/Review/HUM-1 coverage;
+README/maps and all four protocols; and synchronized registry/index/bibliography.
+The approved treatment preserves favorable completion, inconclusive mean time,
+the percentage-reporting discrepancy and unmeasured durable/shared capability.
+Independent implementation review is Confirmed for the exact candidate recorded
+in the audit. Published-head checks, merge and accepted actual-main inspection
+still precede any final `Verified` metadata.
 
 ## Independent review
 
@@ -263,4 +269,13 @@ who did not author or edit them. The [review receipt](../../governance/reviews/i
 records exact inspected hashes, originals, corrections I4-01/I4-02 and scope.
 No material discrepancy remains in this preparation. Source reporting/access
 limitations remain unresolved and correctly represented. This outcome does not
-confirm the pending maintainer decision, later integration, merge or actual main.
+confirm later integration, merge or actual main.
+
+**Implementation review: Confirmed**, 2026-10-22, by the same independent reviewer
+for local `ecd53d3670aaa115c2722c7db9bd035929dbfea6`, tree
+`9456a9a6d48fae44bf1fd0a88954b4d4bc43fa74`. The
+[integration receipt](../../governance/reviews/issue-4-2026-10-22-integration.md#completed-candidate-review--2026-10-22)
+records actual P1–P5 uses, complete outcomes, I4-03 locator correction, source
+states, synchronization and approval checks. No material implementation correction
+remains; source limitations are preserved. This confirms the pre-merge candidate,
+not its future published head, merge or accepted main.

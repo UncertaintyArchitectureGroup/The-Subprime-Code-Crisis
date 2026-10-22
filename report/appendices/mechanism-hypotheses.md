@@ -92,7 +92,9 @@ they avoid duplicating the method in each row.
 
 **Assessment history:** the starting #86 assessment on 2026-10-22 mapped existing
 reviewed evidence; #87 adds the reviewed Chen–Stratton firm study and the explicitly
-dated successor assessments below. Neither is a systematic search of every node.
+dated successor assessments below; #4 adds the reviewed Shen–Tamkin skill-formation
+study and a bounded immediate individual-learning assessment. These are not
+systematic searches of every node.
 No full-chain **Plausible — triangulated** verdict
 is assigned. Independent macro/micro evidence can justify that verdict when it
 fits the same scoped proposition, methods and contrary evidence have been assessed,
@@ -235,7 +237,7 @@ only if a specific feasible empirical question warrants collection.
 
 ## Existing evidence and its exact coverage
 
-These are eight reviewed source entries, not eight independent confirmations of H0.
+These are nine reviewed source entries, not nine independent confirmations of H0.
 Each linked brief owns its methods, calculations, disclosures and limitations.
 Original locators below identify the inspected edition. The
 [Source Registry](../../evidence/SOURCES.md) owns current processing state; a
@@ -345,6 +347,30 @@ complete production assurance or ownership. The historical version, scaffold/tim
 limits and internal count discrepancies remain explicit. It constrains REV-1/2
 and legacy H3/H4 without validating a remedy.
 
+### E-SHEN-TAMKIN
+
+[P-2026-05 — arXiv v2, 1 February 2026](../../evidence/primary/2026-ai-impacts-skill-formation.md),
+§§4.1–4.3, 5.2.1–5.2.2, Figures 6/11, §6 and Appendix D/Figure 23. The randomized comparison
+analyzes 52 developers, 26 per arm, learning unfamiliar Trio tasks with GPT-4o
+chat assistance or instructions/examples and web resources. All were Trio
+novices; 48 reported at least four years of coding experience. Recruitment,
+completion and analysis counts differ and are recorded in the brief.
+
+The AI arm scored lower on the immediate unassisted 14-question, 27-point quiz
+(reported d = .738, p = .010; adjusted d = .725, p = .016). The mean task-time
+comparison is inconclusive (p = .391). All 26 AI-arm participants and 22 of 26
+controls completed Task 2 within the study's 35-minute programming limit. Median encountered task errors
+were 1 versus 3; these are not production defects. The brief retains the raw
+4.15-point/27-point-scale versus 17% reporting discrepancy rather than treating
+17% as a verified skill-loss percentage.
+
+This adds a direct immediate individual-learning endpoint relevant to Code's
+learning function and HUM-1. The six interaction patterns and subarea analyses
+are exploratory; they do not identify a learning-preserving remedy. Durable
+retention, expert system understanding, knowledge transfer, collective ownership,
+burnout, user benefit and lifecycle ROI were not measured. Versions, summaries
+and within-study patterns are not independent replications.
+
 ### Independence and missing links
 
 Chen–Stratton's firm-month Jellyfish data/design and NBER's selected individual
@@ -368,6 +394,10 @@ the complete intent, shared-ownership, burnout, user-task-benefit or lifecycle-R
 propositions below. That is a gap in this assessed packet, not a finding that no
 such evidence exists. The linked research owners must search positive, negative,
 null and successful-adaptation evidence before revising those verdicts.
+
+The skill-formation source adds immediate individual-learning coverage. It does
+not fill the durable or collective-capability gaps, and its versions, summaries
+and exploratory interaction patterns do not supply independent replications.
 
 ## Node index
 
@@ -480,6 +510,14 @@ uncertain positive completion is preserved. COD-2 remains **Open**. Next owner:
 [#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92),
 with #4 for skill formation.
 
+**Coverage after #4, 2026-10-22:** [Shen–Tamkin](#e-shen-tamkin) adds an immediate
+individual-learning measure alongside task completion and an inconclusive mean
+time comparison. This informs Code's learning function; it does not measure the
+candidate-to-useful-delivery relationship or test task selection and constrained
+change size. COD-1 retains its existing **Provisional support**; COD-2 remains
+**Open**. Durable understanding and maintainable team handoff remain separate
+gaps. #92 continues to own the full Code-node assessment.
+
 ### Review — REV-1 and REV-2
 
 **Boundary and comparison:** an admitted change receives a quality decision and a knowledgeable team takes responsibility for it. Compare similar risk/scope and reviewer familiarity under actual review practice, including existing automation. Measure admitted service demand and quality-preserving capacity independently of queue length. Follow through review, a delayed capability check and a defined post-release defect/recovery window.
@@ -511,6 +549,14 @@ descriptive adoption of AI review tools does not evaluate the proposed remedy.
 The existing [METR scoring counterexample](#e-metr-horizon) remains relevant to
 effort claims. Next owner: [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93),
 with #4 for skill formation and #49 for recovery evidence.
+
+**Coverage after #4, 2026-10-22:** [Shen–Tamkin](#e-shen-tamkin) provides adjacent
+individual-learning evidence for the knowledge-transfer question. It does not
+test production review, shared ownership or the proposed review intervention.
+REV-1 retains **Provisional support for its observed review-process component;
+Open for the specified demand/capacity mechanism and quality/ownership
+consequences**. REV-2 remains **Open**. #93 retains the full quality and ownership
+assessment; no review practice is validated by the new learning result.
 
 ### Test — TST-1 and TST-2
 
@@ -688,11 +734,24 @@ precision. **Remedy:** predefine the learning/substitution practice and compare 
 with the actual workflow; no durable capability gain sufficient to justify total
 effort weakens it. Relevant quality/recovery floors and employee learning needs must
 remain visible to the engineering owner. E-Agarwal's static metric is not human
-understanding; E-METR-Productivity's task time is not a learning outcome. Existing input
+understanding; E-METR-Productivity's task time is not a learning outcome. The
 [#4](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4)
-is still unprocessed, with [Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92)
+assessment below adds immediate individual-learning evidence;
+[Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92)
 and [Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93)
-owning their distinct node outcomes.
+retain their distinct node outcomes.
+
+**Assessment after #4, 2026-10-22:** **Provisional support for the immediate
+individual-learning component** from [Shen–Tamkin](#e-shen-tamkin). Randomized
+access to GPT-4o during unfamiliar-library tasks was followed by lower immediate
+unassisted assessment performance in the analyzed sample, alongside higher
+observed Task 2 completion and an inconclusive mean time comparison. This is
+reduced acquisition in that setting, not demonstrated loss of previously held
+skills. The practice-displacement mediator, durable retention, expert system
+understanding and collective ownership remain **Open**; the proposed learning
+substitution remedy also remains **Open**. The exploratory interaction patterns
+suggest tests rather than establish effectiveness. Code #92 and Review #93 keep
+their distinct node outcomes and later evidence needs.
 
 ### HUM-2 — Sustained workload and exhaustion
 
@@ -716,7 +775,7 @@ independently observed exposure weakens this adverse prediction. **Remedy:** com
 a named load/control intervention with the actual baseline; no sustained human
 benefit, or shifting overload to another group, weakens it. The people/delivery
 owners must assess human outcomes directly alongside justified service/cost
-tradeoffs. No direct human-outcome study is assessed in this register. Owners:
+tradeoffs. No direct study of sustained workload or exhaustion is assessed in this register. Owners:
 [Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93)
 and [Operation #97](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/97).
 

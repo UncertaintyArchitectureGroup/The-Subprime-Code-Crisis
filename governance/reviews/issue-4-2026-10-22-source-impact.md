@@ -1,12 +1,16 @@
 # #4 — skill-formation assessment and proposed treatment
 
-**Date:** 2026-10-22. **Decision state: concrete treatment proposed; substantive
-report, register and README integration awaits the maintainer's decision.**
+**Date:** 2026-10-22. **Decision state: P1–P5 approved; implementation and
+integration review in progress.** The maintainer answered **“Погоджую”** to this
+exact treatment; the [decision receipt](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339806018)
+records approval of implementation, corrections, review, checks, merge and actual-main
+acceptance. The proposal and alternatives below preserve the pre-decision record.
 This is the research-input report required by
 [AGENTS](../../AGENTS.md#human-approval-and-substantive-change-gate) and the
 [issue workflow](../issue-workflow.md#research-input-report-before-integration).
-The proposed text below is not an accepted hypothesis assessment or evidence of
-completed integration. The [canonical register](../../report/appendices/mechanism-hypotheses.md)
+Approval does not by itself establish completed integration. The
+[integration audit](issue-4-2026-10-22-integration.md) records the implemented
+occurrences and remaining completion gates. The [canonical register](../../report/appendices/mechanism-hypotheses.md)
 and [live plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
 retain their respective research and sequencing authority.
 
@@ -250,7 +254,7 @@ the explicit absence of a full-chain triangulated verdict.
 ### E-SHEN-TAMKIN
 
 [P-2026-05 — arXiv v2, 1 February 2026](../../evidence/primary/2026-ai-impacts-skill-formation.md),
-§§4.2–4.3, 5.2.1–5.2.2, Figure 6 and §§6.1–6.2. The randomized comparison
+§§4.1–4.3, 5.2.1–5.2.2, Figures 6/11, §6 and Appendix D/Figure 23. The randomized comparison
 analyzes 52 developers, 26 per arm, learning unfamiliar Trio tasks with GPT-4o
 chat assistance or instructions/examples and web resources. All were Trio
 novices; 48 reported at least four years of coding experience. Recruitment,

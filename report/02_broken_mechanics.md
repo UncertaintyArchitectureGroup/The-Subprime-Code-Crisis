@@ -53,16 +53,48 @@ Two adverse scenarios are possible if review remains constrained:
 
 Other responses include limiting intake, reducing change size, changing scope or improving verification. Useful delivery gains with stable review effort and quality would weaken the adverse scenario.
 
+### Skill Formation Is a Separate Outcome
+
+Completing a task and learning enough to work independently afterward are
+different outcomes. In [Shen and Tamkin's randomized study](../evidence/primary/2026-ai-impacts-skill-formation.md),
+52 analyzed developers learned the unfamiliar Python library Trio, with GPT-4o
+chat assistance or a comparison workflow using instructions, examples and web
+resources. Most had substantial coding experience: 48 reported at least four
+years. All were new to this library.
+
+The AI arm scored lower on an immediate unassisted 14-question assessment
+(reported Cohen's d = .738, p = .010; adjusted analysis retained the result).
+The mean completion-time comparison was inconclusive (p = .391), while all 26
+AI-arm participants and 22 of 26 controls finished the second task within the
+study's 35-minute programming limit. This preserves a useful completion result alongside the
+learning difference. The brief documents exclusions, the paper's inconsistent
+percentage summary and the limits of its exploratory interaction patterns.
+
+**Repository inference:** learning is part of what the coding workflow supplies,
+so a completion metric can miss a consequential outcome. This study measures
+immediate individual performance; it does not establish durable skill loss,
+expert system understanding or collective ownership. Its six observed prompting
+patterns do not prove a remedy. [HUM-1](appendices/mechanism-hypotheses.md#hum-1--practice-understanding-and-collective-ownership)
+keeps those questions separate, and the [Review inventory](appendices/mechanism-hypotheses.md#review--rev-1-and-rev-2)
+retains both quality and competent ownership as outcomes to evaluate.
+
 ### Conclusion: Measure Review and Mentorship
 
 The GitClear studies do not show that most senior engineers rubber-stamp changes, that code review ceases to function, or that mentorship necessarily collapses. Those would be additional outcomes to investigate, not consequences measured by commit/line proxies.
 
 A team could gain useful output while preserving review and learning, or create a queue that displaces them. Track review effort, quality and knowledge transfer alongside delivery to test which outcome occurs. The task-horizon definition above does not calibrate review demand, and the practitioner account does not supply that missing comparison.
 
+The skill-formation experiment adds a measured immediate individual-learning
+outcome to that investigation. It makes learning an explicit part of the
+comparison without establishing that team mentorship or ownership deteriorated.
+Test whether the proposed workflow supplies the understanding needed for later
+change and recovery, alongside completion, quality and total effort.
+
 ---
 
 #### References
 
+* **Shen and Tamkin (arXiv v2, 1 February 2026):** [How AI Impacts Skill Formation](https://arxiv.org/abs/2601.20245v2) and [source brief](../evidence/primary/2026-ai-impacts-skill-formation.md) — randomized unfamiliar-library tasks and immediate individual assessment; no delayed retention or collective-ownership result.
 * **Chen and Stratton (August 2026):** [Firm evidence in Chapter 1](01_the_illusion.md#firm-evidence-the-work-around-code-changes-too) and [source brief](../evidence/primary/2026-chen-stratton-firm-production.md) — observed review-process measures, with identification and outcome limits; not measured review capacity or lost ownership.
 *   **GitClear developer output:** [Evidence brief](../evidence/primary/2025-gitclear-developer-output.md) — selected output comparisons and aggregation/window limits; not a staffing or review-time estimate.
 * **METR (March 2025):** [Pinned v1 definition and review boundary](../evidence/primary/2025-metr-task-horizon.md) — historical benchmark methods, limitations and bounded scoring evidence; no current-model threshold adopted.

@@ -2,78 +2,74 @@
 
 ## Snapshot
 
-- Checked 2026-10-22 UTC; live accepted main
+- Checked 2026-10-22 UTC; accepted main remains
   `c645aa8054ee683e5b295467e27aa5562da58d76`, after PR #107.
-- #85, #65, #86 and #87 are completed. #87 was reread live as closed; its
-  accepted result includes firm evidence and README entry/navigation.
-- #4 is the approved active issue on `issue-4-skill-formation`.
-  This is a source-assessment/treatment-proposal handoff, not issue completion.
-- [Draft PR #108](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/108)
-  publishes the reviewed preparation; the concrete treatment decision is pending.
-- Revalidate live #4/#84, branch/PR/main and checks on resumption. This dated
-  navigation note and generated RI cannot substitute for actual state.
+- #85, #65, #86 and #87 are complete. #4 is the approved active issue on
+  `issue-4-skill-formation`, [PR #108](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/108).
+- P1–P5 is explicitly approved and implemented. Independent candidate review
+  is Confirmed; published-head checks, merge and actual-main verification remain.
+- Revalidate live #4/#84, branch/PR/main and exact checks on resumption. This
+  dated note and generated RI are navigation, not current-state certification.
 
 ## Active owners
 
 - [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
-  owns the sequence; header, current table and dated active-cycle entry now agree
-  that #4 is approved and active.
-- #4 owns P-2026-05 original review, full Code/Review/HUM-1 outcome fit, concrete
-  treatment decision, accepted integration and final source verification.
-- Next queued: #100, then #88 with #1. No next issue is approved or started here.
-  Full node studies, publication/tooling, #53 acquisition, #49 recovery and #54
-  pilot retain their existing separately selected scopes.
+  owns the live sequence and the new competing-hypothesis planning amendment.
+- #4 owns P-2026-05 original review, full Code/Review/HUM-1 fit, accepted
+  treatment, every-use integration and final source verification.
+- New planning owners: #109 explicit rival explanations and comparison method;
+  #110 comparative assessment of nine entries; #111 bounded diagnostic search.
+  Creation/plan revision is authorized and complete; implementation is not started.
+- Proposed queue after completed #4: #109 → #110 → #111 → #100 → #88/#1.
+  Revalidate ordering in #84; no next issue is approved here.
+- #89–99 retain node research; #53 acquisition residue, #49 recovery, #54 pilot
+  and #74 publication retain their separately selected scopes.
 
 ## Decisions
 
-- Maintainer answered “Починай” to the post-#87 #4 scope/acceptance proposal.
-  [Start record](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339234956)
-  and [registration](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339245693)
-  preserve authorization and registration before original review.
-- Concrete treatment is proposed, not yet approved: bounded Chapter 5 addition;
-  HUM-1 provisional immediate-learning component with mediator/durable/shared
-  capability and remedy Open; Code/Review coverage and README evidence row.
-- Actual report/register/README/protocol files are unchanged in this preparation.
-  No AGENTS or workflow change is proposed.
-- Existing scope approval covers routine implementation/review/correction/merge
-  within an accepted treatment. The now-concrete content decision is still
-  required under AGENTS and #4 AC-3.
+- Original #4 start approval: “Починай”,
+  [record](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339234956).
+- Exact P1–P5 approval: “Погоджую”, 2026-10-22,
+  [decision receipt](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339806018).
+  This covers implementation, routine corrections/review/checks/merge and
+  actual-main completion; do not ask again for those authorized steps.
+- Accepted: Chapter 5 learning subsection/conclusion/reference; new source card;
+  Code/Review coverage; HUM-1 provisional immediate-learning component; README
+  evidence row. Mediator, durable/shared capability and remedy remain Open.
+- No protocol or global-confidence change. The new rival-hypothesis direction
+  does not silently change AGENTS or the current method inside #4.
 
 ## Evidence
 
 - P-2026-05: Shen–Tamkin, arXiv 2601.20245v2, submitted 1 February 2026.
-  Complete indexed source brief: Reviewed brief; integration: Not started;
-  Last verified —. The registry remains the live state authority.
-- Original PDF/HTML inspected, no local checksum. OSF returned 403; OpenReview
-  challenged access. Registration compliance, accepted venue and alternate-text
-  equivalence are not independently certified. Pinned public transcripts lack
-  quiz outcomes and exclusion linkage; no raw-outcome replication.
-- Immediate unassisted quiz: lower AI, reported d = .738, p = .010; mean time
-  inconclusive, p = .391; second-task completion 26/26 AI versus 22/26 control.
-  Trio novices are mostly experienced coders, not programming beginners.
-- Raw 4.15/27 does not match the stated 17%; numeric/access record preserves the
-  discrepancy. No canonical percentage-of-skill-loss claim.
-- Prompting patterns are exploratory. No delayed retention, shared ownership,
-  production review, burnout, user benefit, economics or tested remedy.
+  Registry/brief: Reviewed brief; integration In progress; Last verified —.
+- Immediate unassisted quiz lower with AI, reported d = .738, p = .010; mean
+  time inconclusive, p = .391; Task 2 completion 26/26 AI versus 22/26 control.
+  The participants were unfamiliar with Trio, predominantly experienced coders.
+- Raw 4.15/27 does not match the stated 17%; the discrepancy stays visible.
+  No percentage-of-general-skill loss or raw quiz-data replication is claimed.
+- OSF/alternate-publication access and supplementary sample/count limits remain
+  disclosed. Exploratory prompting patterns do not validate a learning remedy.
+- No delayed retention, collective ownership, production review, burnout, user
+  benefit or lifecycle-economics endpoint is measured by this experiment.
 - Source: `evidence/primary/2026-ai-impacts-skill-formation.md`.
-  Unapplied P1-P5/full outcome inventory:
-  `reviews/issue-4-2026-10-22-source-impact.md`.
+  Approved proposal/full outcomes: `reviews/issue-4-2026-10-22-source-impact.md`.
+  Occurrence trace/synchronization: `reviews/issue-4-2026-10-22-integration.md`.
   Arithmetic/access: `reviews/issue-4-2026-10-22-numeric-checks.json`.
-- Separate reviewer /root/issue4_independent_review: Confirmed source/impact
-  preparation. Exact file hashes and corrected locators/live-plan header are in
-  `reviews/issue-4-2026-10-22-review.md`; no integration or future-main endorsement.
-- Faithful recording independently Confirmed at local `745bdc0`, tree
-  `c6ff15f6ae8f461e1cf02130fef1324fc7d04a90`; published `6c920634` has that exact
-  tree. All 126 tests and trusted local gates passed; hosted Repository Gate and
-  Repository contract both succeeded for that published head.
-- NBER attachment: exact May historical duplicate already in P-2026-01's brief.
-  Identity-only check triggers no reset; September remains the accepted edition.
+- Preparation receipt: `reviews/issue-4-2026-10-22-review.md`. Implementation
+  reviewer /root/issue4_independent_review Confirmed local `ecd53d3`, tree
+  `9456a9a6d48fae44bf1fd0a88954b4d4bc43fa74`; I4-03 locator correction verified.
+  The audit records complete uses and 126 passing tests plus trusted local gates.
+  Old hosted results are not applied to the new candidate or future main.
+- NBER attachment remains the exact historical May duplicate; accepted September
+  is unchanged. It is not a new corroboration or a changed-source trigger.
 
 ## Next actions
 
-- Present precise reviewed P1-P5 inclusion/HUM-1 treatment in draft #108 for the
-  required maintainer decision. #4 remains active across this handoff; AC-1/AC-2
-  have checked evidence, AC-3 awaits the decision and AC-4/AC-5 remain open.
-- After approval, implement accepted scope, audit every actual use, independently
-  review, run required checks, merge and inspect main; final verification only
-  when eligible. Then complete #4, reread #84 and propose #100.
+- Check faithful review recording, publish #108, validate its exact head/checks,
+  merge, then independently inspect actual main.
+- Only after eligibility, synchronize final verification in a separate PR;
+  check accepted main again. AC-1–AC-3 are satisfied; AC-4/AC-5 remain open.
+- Complete issue/PR evidence, reread #84 and confirm the new rival-hypothesis
+  issues/plan, then present #109's concrete scope for approval.
+  Do not start its substantive implementation automatically.
