@@ -1,13 +1,33 @@
 +++
 source_ids = ["P-2026-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-21"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Writing Code vs. Shipping Code — September 2026 revision
+
+## Current integration checkpoint — 2026-10-22, #86
+
+The full SDLC register adds or materially reframes this source's bounded evidence
+coverage. Flow D retains **Reviewed brief** and resets integration to
+**Needs re-verification / —** until the changed use is independently confirmed,
+merged and checked on main. The source findings/version below are unchanged.
+The earlier review and verification records remain historical. A separate
+reviewer **Confirmed** the corrected #86 content on 2026-10-22, after I86-01’s
+Design-test correction. The current review field records that actual outcome;
+correction merge, actual-main acceptance and final integration verification
+remain separate gates. See the dated audit for the exact reviewed commit/tree.
+
+Current use includes `report/appendices/mechanism-hypotheses.md`, in addition to
+the prior paths. The [#86 audit and occurrence trace](../../governance/reviews/issue-86-2026-10-22-register-audit.md)
+record original locators, scope, outcome omissions, all-use checks and placement.
+**Protocol outcome for #86: No protocol change.** Existing controls do not acquire
+empirical efficacy from a new hypothesis map. This checkpoint supersedes earlier
+integration-state prose for the new use; it does not rewrite prior acceptance.
+
 
 ## Identity, access and disclosures
 

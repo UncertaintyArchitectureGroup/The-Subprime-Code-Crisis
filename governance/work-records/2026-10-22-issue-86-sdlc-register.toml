@@ -1,0 +1,26 @@
+record_version = 1
+title = "Restore the explicit SDLC rebalancing thesis and full function/outcome register"
+primary_flow = "Flow D — changed use of seven unchanged reviewed sources within the approved issue86 register expansion"
+human_decision = "Maintainer approved #86 with Роби on 2026-10-22 after accepted #65, repeated during execution. Start https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/86#issuecomment-6336459981 and master #84 record the single canonical register, all node functions including competent Review ownership, H0/node/cross-cutting tests, bounded evidence fit, necessary navigation/terms and full review/merge/main cycle. No next issue is authorized."
+independent_review = "Confirmed"
+# Actual corrected-content outcome, 2026-10-22, /root/issue86_independent_review:
+# e2ec97c9f03bf27f45123c76bb86880469fd596c, tree
+# 78e32a22e2ee083081047ad2273b4be3ef5fa18f; GitHub equivalent commit
+# 272a19d85505326048fe35e7cef6eeb56c3a8f46 has that identical tree.
+# I86-01 resolved. The initial Corrections required outcome is preserved in the
+# dated register audit. This field does not certify unseen recording changes,
+# future merge, actual-main acceptance or final source verification.
+
+[changelog]
+decision = "Updated"
+reason = "Expands the existing mechanism appendix into the explicit thesis/full SDLC function-outcome and hypothesis register, preserves H1-H5, adds bounded source coverage, reader navigation and two terms."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "AGENTS and workflows from accepted #85 already implement the approved method and one-issue cycle; no rule or contributor obligation changes."
+repository-architecture = "The existing appendix remains the single canonical register within the existing report layer; no new competing owner, layer or live plan is introduced."
+evidence-indexes = "All seven existing exact-version briefs remain at their original paths; indexes retain correct identities and limitations, with no new source or renamed brief."
+references = "Bibliographic identities, versions and permitted use remain accurate; no new source is adopted and author-context continuity adds no external empirical or priority claim."
+protocols = "All four protocols and their index were assessed against each reused source and full node outcomes. No protocol change: the register proposes tests, with no new production control, threshold or claim of remedy efficacy."

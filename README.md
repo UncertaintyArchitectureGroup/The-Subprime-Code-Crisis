@@ -20,6 +20,7 @@ See the [live master work plan](https://github.com/UncertaintyArchitectureGroup/
 | Need | Start here |
 | --- | --- |
 | Understand the complete argument | [Read the report](report/01_the_illusion.md) |
+| Inspect the SDLC rebalancing thesis, every node's outcomes and testable hypotheses | [Canonical hypothesis register](report/appendices/mechanism-hypotheses.md) |
 | Inspect sources, evidence briefs, and source status | [Evidence Library](evidence/README.md) and [Source Registry](evidence/SOURCES.md) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |
 | Understand the research and reasoning boundaries | [Scope](SCOPE.md), [Doctrine](DOCTRINE.md), and [Artifact Model](ARTIFACT_MODEL.md) |
@@ -119,7 +120,7 @@ flowchart TD
 ### Evidence boundary for the map
 
 - **P-2026-01, September 2026 revision:** selected public GitHub tool cohorts, matched event studies and agent-authored interrupted time series. Coding and release estimates are positive, with outcome-specific populations, uncertainty and magnitude sensitivity. Separate marketplace series use three early-usage proxies, including modest Android growth; SourceForge contributes only an entry comparison. The [brief](evidence/primary/2026-writing-code-vs-shipping-code.md) pins the original and keeps older versions as history. These data support bounded attenuation, not identification of a particular verification stage.
-- The capacity branch depends on admitted work/risk mix, effective capacity, utilization/variation and WIP/release policy. Headroom and successful adaptation may produce useful gains. The [claim graph and proposed tests](report/appendices/mechanism-hypotheses.md) are repository synthesis with separate trigger, endpoint and net-benefit tests; they assign no scenario probabilities.
+- The capacity branch depends on admitted work/risk mix, effective capacity, utilization/variation and WIP/release policy. Headroom and successful adaptation may produce useful gains. The [SDLC hypothesis register](report/appendices/mechanism-hypotheses.md) contains the full function/outcome inventory and retains the [earlier claim graph and tests](report/appendices/mechanism-hypotheses.md#claim-classes-and-permitted-edges). These are repository synthesis with separate trigger, endpoint and net-benefit tests; they assign no scenario probabilities.
 - The arrows after the empirical node are **repository synthesis, not one measured causal chain**. P-2026-01 does not establish general code-quality decline, review as the only bottleneck, technical debt, security effects, or Technical Bankruptcy.
 - **Technical Bankruptcy** remains a warning scenario and repository hypothesis, not an empirically measured outcome. The adverse branch ends in **Accumulated delivery-system risk**; useful gains and recovery remain possible.
 

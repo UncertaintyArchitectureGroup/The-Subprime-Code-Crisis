@@ -236,6 +236,18 @@ The project's synthesis, application, systems inference, or bounded extrapolatio
 
 A repository interpretation is authored by the project and must remain distinguishable from an empirical finding, documented fact, or source-author interpretation.
 
+### Rebalancing
+
+A deliberate change to task selection, work admission, capability, coordination
+or functional allocation across the delivery system, aimed at useful outcomes
+at justified total cost and risk.
+
+Rebalancing may preserve a function through a new tool or practice, remove
+unnecessary work or retain an adequate existing process. It does not mean equal
+staffing at every node or restoration of every manual activity. The
+[hypothesis register](report/appendices/mechanism-hypotheses.md) tests each proposed
+intervention separately from the adverse mechanism that motivates it.
+
 ### Repository scope
 
 The subject boundary that defines which questions, adjacent topics, audiences, and artifact types the repository is intended to address.
@@ -253,6 +265,18 @@ Repository synthesis is not an additional evidence class and must not be present
 A plausible adverse trajectory used to explore what may happen under specified conditions and to motivate monitoring, controls, or contingency planning.
 
 A risk scenario is not a prediction or an observed industry-wide outcome.
+
+### SDLC imbalance
+
+A mismatch among admitted work, the capability to perform complementary delivery
+functions, and the outcomes needed by users and the business. Its proposed effects
+include queues, transferred effort or unmet quality, understanding and ownership
+needs; each effect requires its own evidence.
+
+The term names the repository's central research hypothesis, not a measured
+industry-wide condition or a claim that the previous process was balanced.
+Diagnosis concerns functions and outcomes across the complete lifecycle, not
+equality of stage staffing or raw activity counts.
 
 ### Secondary evidence
 

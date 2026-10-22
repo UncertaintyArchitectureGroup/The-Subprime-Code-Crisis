@@ -22,6 +22,15 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
+- Expanded the existing mechanism appendix into the canonical full-SDLC hypothesis
+  register: explicit H0, eleven function/outcome inventories, separate adverse and
+  remedy tests, user outcomes and lifecycle economics, and preserved H1–H5 history.
+  Review includes quality and competent shared ownership. Existing evidence is
+  mapped with scoped starting verdicts and unmeasured outcomes; changed uses follow
+  Flow D reset and separate accepted-main verification. Added direct navigation and
+  clarified the terms SDLC imbalance and rebalancing. The full readable rewrite and
+  further source studies retain their own issues under the live plan.
+
 - Reconciled the original C01–C33 audit against accepted corrections and retained
   explicit source-access gaps. Clarified that disposable code can have durable
   data/operational effects requiring the existing risk and ownership boundary;

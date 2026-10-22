@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "c4d72485294d442c9b8bbc1affd94bc6a94424b5708a73ce10039f34612d46fc",
+    "digest": "3ae9e3da8b847d4102f33fb69636b1fb8c7ade1ec0bdbdb82dfa1b470838cb75",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "b2cc6f75298cd99daae59b16c37bdd092e99aefb256ec93b45d46b673410e4e8"
+        "sha256": "90b21c4d7f60ef67b6c4bd59dd9d308dce780ef80a3fd40b71c44cdf49bc204e"
       },
       {
         "path": "CITATION.cff",
@@ -82,7 +82,7 @@
       {
         "path": "GLOSSARY.md",
         "identity_mode": "content",
-        "sha256": "b2cddda9b841c6ccd7cae5a98e846e52e76bbe508a909f757888fe7e53147bc2"
+        "sha256": "8dbba1b1cfd8551cd83b86b386f0137c9349ae9a514e463aeb4d7c8e612b9b46"
       },
       {
         "path": "LICENSE.md",
@@ -92,7 +92,7 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "c329fba240f9e686d02a6fb5adb818edd41f5eea1b99eaf18c3a2ba8315a37b5"
+        "sha256": "c7321301cad1e3890c12c2f1beb89ca6920fa52e2ac3612232934b64d176bef3"
       },
       {
         "path": "REFERENCES.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "c8e3b3a3cd712c069ad7b14a63503a72d5daae082bc012aac230f5e37e5c490a"
+        "sha256": "02a30d28661ad7041d51883a2ee51c21f147f847da1b9203b827e7bdb7140bcb"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -187,7 +187,7 @@
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
-        "sha256": "de54c8975283dbb770fff786880bff3e6e7a54af82da21580727fba0ebb301ed"
+        "sha256": "28b37f296796e3d7cd4b4a07edcd8fc7b59702029c94571113841052a1f027b2"
       },
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
@@ -227,32 +227,32 @@
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "049b999f86049ad760838ac5f660c3c157c3c32bd6aeb6605f808dc0d2f42120"
+        "sha256": "84f62a145ffd591c202d1ae4438d12e897720db5aab8207116085f8074161b9a"
       },
       {
         "path": "evidence/primary/2025-metr-task-horizon.md",
         "identity_mode": "content",
-        "sha256": "804967219d7327e2788848ab6f1f7517202a059133ff1f49befe998717052f63"
+        "sha256": "370d6032d793a6a663d583b1aecf423819e2a1a7301f66861068f738e4a10da0"
       },
       {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
         "identity_mode": "content",
-        "sha256": "3146babd8b1a5e306c886d869b5920ba6020fb07c51a2a4b982c49b98a301848"
+        "sha256": "afae5bdf6e7253a002cac8b68cc3876b6f93fdcc5177937792d969a67b2c6db5"
       },
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "e53d1e5d896067f46c07b1917f50a1f162d80e0322121ef422b1803395c4c667"
+        "sha256": "c13175accfa9326053bc9cd678d5484254fe40f2163fe9529017767360d63fcc"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "2813687c828b4ef02f811260f689eef804172157a70607300f66e774c59de1b7"
+        "sha256": "40451bc5a0cd128c06b49d4f178ec4defa4d1c5448a34270bf103f80f5556731"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "ca326ca6b8aed8781b00b2cf546493cc275ef7bdb66f70e348895b3694dd1f43"
+        "sha256": "b80fadd99c475674740d6e9cc063a5e852d58ade6982ad5a6d9b9a3bce1443e9"
       },
       {
         "path": "evidence/primary/README.md",
@@ -347,7 +347,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "53182789f3e9351fb8f129cfbe1382a3f94ae4130e721db88e041c92586d896c"
+        "sha256": "16ee34c0fc86a1d39eeec27fa9b4feafd5ff132136f2c8b84c4256f1aa82788d"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -495,6 +495,16 @@
         "sha256": "dc55e0bf4f060236d28304bc5a9b99fbca7aace57cb669a32f6110d1119e21e2"
       },
       {
+        "path": "governance/reviews/issue-86-2026-10-22-evidence-occurrences.json",
+        "identity_mode": "content",
+        "sha256": "c2398ed764600956824a8aebf810227a12cfcd7102e7d0cf1864cbf19df5e165"
+      },
+      {
+        "path": "governance/reviews/issue-86-2026-10-22-register-audit.md",
+        "identity_mode": "content",
+        "sha256": "bd7f06af4cf73e38ba7b8f44960e87ffb97a1a31dcd05ffadaf8b76f748da65a"
+      },
+      {
         "path": "governance/status-model.md",
         "identity_mode": "content",
         "sha256": "ad0aeadd7360c7bec6ec76d59a886b9376f50f3fc06d6e7436619d84e5524d90"
@@ -635,6 +645,11 @@
         "sha256": "3bfe51777fa6e9bf19f1875c1d53b99412796c8db6e0088c3f10ed257b681628"
       },
       {
+        "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+        "identity_mode": "content",
+        "sha256": "84739a05b2077c7ff41a43ebb8e1ebd1804a368a388f225ea3229662bbbfab75"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -667,17 +682,17 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "dc27a699ddd1c0ecadc29c6958b944619a6af699ba473ccc7e2c1da0f7bbb34f"
+        "sha256": "97e4bdfdad4fe8946e2279ef0ae36375fb86c512d89901cd91a91ffd436c289d"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "c7272da6a58b90b5105ca47dc08443d562f6f6e02806409566646642b43c7f0b"
+        "sha256": "a40b93f0b9e791b9b15b0b76a1f5b95a15b9c0bd73d6a063742a9db353273172"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "4f2d4298656de0d945b0bb6b3f243c7f6c9388d8d018c0d81b14121855c9aae0"
+        "sha256": "bf356dd9a3ce579ee5acf1fd3c20cb623f75e5bea7c933e083cc89cb50f224eb"
       },
       {
         "path": "report/appendices/cost-context.md",
@@ -687,7 +702,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "2961ff101c0d3c2e92a5bfa06b98f89adf2c01f0d64e2e194b25678ec7550003"
+        "sha256": "fa61949caa5b28e95348e9d1ee97627ab97bd25139f79b4afa02f91c46bca780"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -1180,6 +1195,10 @@
       "path": "GLOSSARY.md"
     },
     {
+      "term": "Rebalancing",
+      "path": "GLOSSARY.md"
+    },
+    {
       "term": "Repository scope",
       "path": "GLOSSARY.md"
     },
@@ -1189,6 +1208,10 @@
     },
     {
       "term": "Risk scenario",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "SDLC imbalance",
       "path": "GLOSSARY.md"
     },
     {
@@ -1242,8 +1265,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275, May 2026 revised September 2026; original PDF pinned, May history retained",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-21",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "September observational outcome estimates, positive releases, calibrated model and separate marketplace proxies; no identified universal bottleneck",
       "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
@@ -1253,10 +1276,10 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-20",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Randomized task-time effect for experienced contributors in familiar mature open-source repositories with early-2025 tools; not a universal seniority effect",
-      "current_use": "`README.md` Evidence Map and outcome boundary; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2023-copilot-task-productivity.md` (comparison boundary); `evidence/primary/2026-metr-productivity-design-update.md` (historical result)",
+      "current_use": "`README.md` Evidence Map and outcome boundary; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2023-copilot-task-productivity.md` (comparison boundary); `evidence/primary/2026-metr-productivity-design-update.md` (historical result); `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2025-metr-experienced-developer-productivity.md"
     },
     {
@@ -1264,10 +1287,10 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *We are Changing our Developer Productivity Experiment Design* (2026-02-24)",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-20",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Follow-up experiment and first-party account of selection and measurement limits; not a reliable estimate of current productivity magnitude",
-      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (interval restatement and temporal update)",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (interval restatement and temporal update); `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2026-metr-productivity-design-update.md"
     },
     {
@@ -1275,8 +1298,8 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *Measuring AI Ability to Complete Long Tasks*, arXiv v1 (18 March 2025); author post 19 March with later live-chart data",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-21",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Historical v1 benchmark methods/trend and bounded internal-PR scoring evidence; not current-model thresholds, global reliability or production review demand",
       "current_use": "`README.md`; `report/02_broken_mechanics.md` Ch5; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2025-metr-task-horizon.md"
@@ -1286,10 +1309,10 @@
       "path": "evidence/SOURCES.md",
       "source": "Xu et al., *AI-Assisted Programming Decreases the Productivity of Experienced Developers*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-20",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Language-availability DiD estimates of OSS project/contributor activity and rework/review-count proxies; not seniority, review hours or net delivery loss",
-      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2025-xu-copilot-oss-activity.md"
     },
     {
@@ -1297,10 +1320,10 @@
       "path": "evidence/SOURCES.md",
       "source": "Agarwal et al., *AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-20",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Repository-month activity and static-metric estimates by observable adoption history; not per-feature debt, human cognitive load or functional correctness",
-      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2026-agarwal-agent-adoption.md"
     },
     {
@@ -1308,10 +1331,10 @@
       "path": "evidence/SOURCES.md",
       "source": "Peng et al., *The Impact of AI on Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-20",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Reduced completion time conditional on completing a standardized JavaScript task; not enterprise throughput or a universal experience effect",
-      "current_use": "`README.md` task-acceleration claim and Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (cross-study interpretation)",
+      "current_use": "`README.md` task-acceleration claim and Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (cross-study interpretation); `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2023-copilot-task-productivity.md"
     },
     {
@@ -2274,6 +2297,20 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-86-2026-10-22-evidence-occurrences.json",
+      "title": "governance/reviews/issue-86-2026-10-22-evidence-occurrences.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-86-2026-10-22-register-audit.md",
+      "title": "Issue #86 — full SDLC function/outcome and hypothesis register",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2470,6 +2507,13 @@
       ]
     },
     {
+      "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+      "title": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/work-records/README.md",
       "title": "Machine-readable work records",
       "instructions": [
@@ -2541,7 +2585,7 @@
     },
     {
       "path": "report/appendices/mechanism-hypotheses.md",
-      "title": "Delivery mechanism: claim graph and proposed tests",
+      "title": "SDLC rebalancing: functions, outcomes and testable hypotheses",
       "instructions": [
         "AGENTS.md"
       ]

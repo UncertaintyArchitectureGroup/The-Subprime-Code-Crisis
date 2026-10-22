@@ -1,6 +1,6 @@
 # Part 2: Verification and Delivery Mechanisms
 
-> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: Evidence and Delivery Outcomes](01_the_illusion.md) | **Part 2** | [🔥 Part 3: Scenarios and Adoption Decisions](03_the_aftermath.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
+> **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | [📉 Part 1: Evidence and Delivery Outcomes](01_the_illusion.md) | **Part 2** | [🔥 Part 3: Scenarios and Adoption Decisions](03_the_aftermath.md) | [SDLC hypothesis register](appendices/mechanism-hypotheses.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
 *   [Chapter 5. Review Capacity and Verification Risk](#chapter-5-review-capacity-and-verification-risk)
@@ -99,7 +99,7 @@ The central empirical NBER synthesis belongs in [Chapter1](01_the_illusion.md#wr
 
 [Chapter 4](01_the_illusion.md#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification) defines the proposed capacity mechanism. It needs **admitted service demand**, effective capacity at required quality, utilization/variation and WIP/release policies. Higher generated volume alone is insufficient. No study reviewed here establishes one causal chain from AI generation through requirements, code review, QA and customer value.
 
-The [claim graph and proposed measurements](appendices/mechanism-hypotheses.md) is the single detailed home for H1–H5: demand and waits, context and rework, autonomous scope and verification, net review-automation burden, and requirements/test-oracle risks. Each has an endpoint, trigger, alternatives and observations capable of weakening the local relationship.
+The [SDLC hypothesis register](appendices/mechanism-hypotheses.md) is the single detailed home for the full function/outcome inventory, H0, node and cross-cutting hypotheses. Its [retained H1–H5 tests](appendices/mechanism-hypotheses.md#hypotheses-and-distinguishing-observations) cover demand and waits, context and rework, autonomous scope and verification, net review-automation burden, and requirements/test-oracle risks. Each has an endpoint, trigger, alternatives and observations capable of weakening the local relationship.
 
 Distinguish **nonactivation/adaptation**, **disconfirmation when the trigger is present**, and **net delivery benefit**. A smaller queue after admission limits does not refute an overload mechanism; it shows a successful response. Lower total effort does not establish lower review effort. Conversely, independently measured exposure with no predicted endpoint change, estimated precisely enough to exclude a meaningful effect, weakens that proposed local link. These are repository hypotheses, not source-reported population effects.
 
