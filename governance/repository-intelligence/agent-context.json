@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "c2360a893d368cf6914968c6b7a30ccdc048c9f401b74401d84b3838d27ca097",
+    "digest": "ea8efd12aa27247ab4ea41932809c898f66a90df45a46189794eee28a39d1ff4",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "af7498caf3a6b3b41837001b0c7ab9d76c37da183d683e34c7c600d0c6a2eaa8"
+        "sha256": "0c92152df3b9f0e59ff5540823f71d8ff1afa271a5be5ab1b67d1d06d0e4232e"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",

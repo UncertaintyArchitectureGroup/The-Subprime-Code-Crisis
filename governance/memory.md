@@ -8,6 +8,8 @@
   accepted result includes firm evidence and README entry/navigation.
 - #4 is the approved active issue on `issue-4-skill-formation`.
   This is a source-assessment/treatment-proposal handoff, not issue completion.
+- [Draft PR #108](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/108)
+  publishes the reviewed preparation; the concrete treatment decision is pending.
 - Revalidate live #4/#84, branch/PR/main and checks on resumption. This dated
   navigation note and generated RI cannot substitute for actual state.
 
@@ -60,15 +62,18 @@
 - Separate reviewer /root/issue4_independent_review: Confirmed source/impact
   preparation. Exact file hashes and corrected locators/live-plan header are in
   `reviews/issue-4-2026-10-22-review.md`; no integration or future-main endorsement.
+- Faithful recording independently Confirmed at local `745bdc0`, tree
+  `c6ff15f6ae8f461e1cf02130fef1324fc7d04a90`; published `6c920634` has that exact
+  tree. All 126 tests and trusted local gates passed; hosted Repository Gate and
+  Repository contract both succeeded for that published head.
 - NBER attachment: exact May historical duplicate already in P-2026-01's brief.
   Identity-only check triggers no reset; September remains the accepted edition.
 
 ## Next actions
 
-- Complete faithful review recording, bounded checks and publication of this
-  preparation as a draft. Do not merge substantive treatment before its decision.
-- Present precise P1-P5 inclusion/HUM-1 treatment for the required maintainer
-  decision. #4 remains active across this handoff.
+- Present precise reviewed P1-P5 inclusion/HUM-1 treatment in draft #108 for the
+  required maintainer decision. #4 remains active across this handoff; AC-1/AC-2
+  have checked evidence, AC-3 awaits the decision and AC-4/AC-5 remain open.
 - After approval, implement accepted scope, audit every actual use, independently
   review, run required checks, merge and inspect main; final verification only
   when eligible. Then complete #4, reread #84 and propose #100.
