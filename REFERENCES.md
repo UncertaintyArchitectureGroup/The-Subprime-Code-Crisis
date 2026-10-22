@@ -12,6 +12,11 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ## Primary empirical research
 
+### P-2026-05 — Learning with AI assistance
+
+- Judy Hanwen Shen & Alex Tamkin. [*How AI Impacts Skill Formation*](https://arxiv.org/abs/2601.20245v2). arXiv v2, **1 February 2026**; v1 28 January.
+- Reviewed object: preprint; accepted venue/peer-review status and equivalence to the inaccessible OpenReview version are not independently confirmed. The [source assessment](evidence/primary/2026-ai-impacts-skill-formation.md) records the original and access/reporting limits. Proposed substantive inclusion remains a decision under #4; source-processing states remain in the registry.
+
 ### P-2026-04 — Firm software production and review
 
 - Fiona Chen & James Stratton. [*Artificial Intelligence in the Firm: Bottlenecks in Software Production*](https://fion.ac/jellyfish.pdf). Job Market Paper, **4 August 2026**; first version 7 January 2026.

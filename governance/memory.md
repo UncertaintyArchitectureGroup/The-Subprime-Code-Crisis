@@ -2,67 +2,73 @@
 
 ## Snapshot
 
-- Checked 2026-10-22 UTC; accepted main
-  `72a0b83798df53199341c4c3e96a2313e36c9398`, tree
-  `32c435ae00593075be60bf26cb1e988656a08a06` (PR #106).
-- #85, #65 and #86 are completed. #87 is the approved active issue; PR #106
-  merged the approved firm-evidence integration and README entry/navigation work.
-- Fetch live #87/#84/PR/main on resumption. This implementation candidate does not
-  record a future final-metadata merge or issue completion. Correction-main
-  acceptance and verification eligibility are independently Confirmed.
+- Checked 2026-10-22 UTC; live accepted main
+  `c645aa8054ee683e5b295467e27aa5562da58d76`, after PR #107.
+- #85, #65, #86 and #87 are completed. #87 was reread live as closed; its
+  accepted result includes firm evidence and README entry/navigation.
+- #4 is the approved active issue on `issue-4-skill-formation`.
+  This is a source-assessment/treatment-proposal handoff, not issue completion.
+- Revalidate live #4/#84, branch/PR/main and checks on resumption. This dated
+  navigation note and generated RI cannot substitute for actual state.
 
 ## Active owners
 
 - [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
-  owns the current sequence; #87 owns the full current implementation cycle.
-- #4 follows only after #87 completion and explicit next-issue approval; then
-  #100, #88 with #1, and separately selected publication/tooling/node research.
-- #53 remains open for deferred original acquisition, non-blocking for the first
-  readable edition. #89–99, #49 and #54 keep their research/pilot scopes.
+  owns the sequence; header, current table and dated active-cycle entry now agree
+  that #4 is approved and active.
+- #4 owns P-2026-05 original review, full Code/Review/HUM-1 outcome fit, concrete
+  treatment decision, accepted integration and final source verification.
+- Next queued: #100, then #88 with #1. No next issue is approved or started here.
+  Full node studies, publication/tooling, #53 acquisition, #49 recovery and #54
+  pilot retain their existing separately selected scopes.
 
 ## Decisions
 
-- Maintainer approved #87 with “Починай”; start comment6337750973 and source
-  registration comment6337779455 preserve the initial authorization/state history.
-- The independently Confirmed concrete treatment is in comment6338190401.
-  Explicit “Так” approves it and expands README to a clear entry point with all
-  main routes: [decision](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933).
-- Implement bounded activity/completion and review-process findings; split REV-1
-  process support from open causal-capacity, quality and ownership propositions.
-- No AGENTS/workflow/protocol change or new production control; #85 already
-  implements the process. No next issue has started.
+- Maintainer answered “Починай” to the post-#87 #4 scope/acceptance proposal.
+  [Start record](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339234956)
+  and [registration](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339245693)
+  preserve authorization and registration before original review.
+- Concrete treatment is proposed, not yet approved: bounded Chapter 5 addition;
+  HUM-1 provisional immediate-learning component with mediator/durable/shared
+  capability and remedy Open; Code/Review coverage and README evidence row.
+- Actual report/register/README/protocol files are unchanged in this preparation.
+  No AGENTS or workflow change is proposed.
+- Existing scope approval covers routine implementation/review/correction/merge
+  within an accepted treatment. The now-concrete content decision is still
+  required under AGENTS and #4 AC-3.
 
 ## Evidence
 
-- P-2026-04: Chen–Stratton Job Market Paper, 4 August 2026, 78 pages;
-  SHA256 `27f8d1fe0a2c145e700ae8835c997533fb4483e21a11f9c2385186bdb9f7c096`.
-  Reviewed brief/indexed; eligible Verified / 2026-10-22 in final metadata
-  for the already accepted correction state; final metadata merge is pending.
-- P-2026-01: unchanged accepted September original. Flow D reset/date cleared for
-  new comparison and audit complete; eligible Verified / 2026-10-22 in final
-  metadata. Current use includes the Chen–Stratton brief. Its May
-  attachment is history, not an additional study or a source re-review trigger.
-- `reviews/issue-87-2026-10-22-source-impact.md` preserves the proposal, original
-  review and approval. The numeric JSON records published-value arithmetic;
-  `reviews/issue-87-2026-10-22-integration-audit.md` owns all-use review/acceptance.
-- Elapsed merge days are not active review hours; formal change requests/comments
-  are not measured defects; reviewer participation is not competent ownership.
-  Positive coding and uncertain positive completion remain explicit.
-- Observational adoption, pre-period movements, coverage and auxiliary reporting
-  ambiguities constrain interpretation. No burnout, debt, TCO or remedy effect.
-- Separate reviewer /root/issue87_independent_review Confirmed the source
-  assessment and integration commit `1bf92575b4804ef4834660fa24566a2e4692cfb8`,
-  tree `82218a60766d19846aabac25c71fd7b1620bbea1`; I87-01 is resolved.
-- Required checks passed, including 126 existing tests. Navigation QA found no
-  broken local paths/anchors across 107 Markdown files; details are in the audit.
-- Final metadata candidate `12b265f660d92ecfc3fa4642469e0f65aa9dc479` is independently
-  Confirmed; final-metadata checks passed. Its navigation scan covers 108 Markdown
-  files and 1,001 local links with no missing path/anchor.
+- P-2026-05: Shen–Tamkin, arXiv 2601.20245v2, submitted 1 February 2026.
+  Complete indexed source brief: Reviewed brief; integration: Not started;
+  Last verified —. The registry remains the live state authority.
+- Original PDF/HTML inspected, no local checksum. OSF returned 403; OpenReview
+  challenged access. Registration compliance, accepted venue and alternate-text
+  equivalence are not independently certified. Pinned public transcripts lack
+  quiz outcomes and exclusion linkage; no raw-outcome replication.
+- Immediate unassisted quiz: lower AI, reported d = .738, p = .010; mean time
+  inconclusive, p = .391; second-task completion 26/26 AI versus 22/26 control.
+  Trio novices are mostly experienced coders, not programming beginners.
+- Raw 4.15/27 does not match the stated 17%; numeric/access record preserves the
+  discrepancy. No canonical percentage-of-skill-loss claim.
+- Prompting patterns are exploratory. No delayed retention, shared ownership,
+  production review, burnout, user benefit, economics or tested remedy.
+- Source: `evidence/primary/2026-ai-impacts-skill-formation.md`.
+  Unapplied P1-P5/full outcome inventory:
+  `reviews/issue-4-2026-10-22-source-impact.md`.
+  Arithmetic/access: `reviews/issue-4-2026-10-22-numeric-checks.json`.
+- Separate reviewer /root/issue4_independent_review: Confirmed source/impact
+  preparation. Exact file hashes and corrected locators/live-plan header are in
+  `reviews/issue-4-2026-10-22-review.md`; no integration or future-main endorsement.
+- NBER attachment: exact May historical duplicate already in P-2026-01's brief.
+  Identity-only check triggers no reset; September remains the accepted edition.
 
 ## Next actions
 
-- Confirm faithful review recording, publish/merge the final verification PR,
-  and inspect its actual main. The final-verification record
-  preserves accepted correction main, check URLs and independent eligibility.
-- Finish #87 acceptance, reread/revise #84, show the current plan and propose #4
-  for approval. Continue #87 across interruptions; do not start #4/#100/#88 here.
+- Complete faithful review recording, bounded checks and publication of this
+  preparation as a draft. Do not merge substantive treatment before its decision.
+- Present precise P1-P5 inclusion/HUM-1 treatment for the required maintainer
+  decision. #4 remains active across this handoff.
+- After approval, implement accepted scope, audit every actual use, independently
+  review, run required checks, merge and inspect main; final verification only
+  when eligible. Then complete #4, reread #84 and propose #100.

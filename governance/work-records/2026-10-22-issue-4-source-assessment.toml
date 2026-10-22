@@ -1,0 +1,23 @@
+record_version = 1
+title = "Prepare skill-formation source assessment and concrete treatment for issue4"
+primary_flow = "Flow A preparation for new P-2026-05: original review, provisional source interpretation, impact proposal and maintainer decision; substantive integration is pending"
+human_decision = "Maintainer approved the proposed #4 cycle with Починай on 2026-10-22, recorded at https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339234956. This preparation makes the original, outcome inventory, alternatives and exact P1-P5 treatment reviewable before the decision required by AGENTS. It does not implement the new report/register/README treatment, approve a protocol, complete Flow A or start the next issue."
+independent_review = "Confirmed"
+# Actual 2026-10-22 source/impact review by /root/issue4_independent_review.
+# Exact reviewed hashes and I4-01/I4-02 corrections are preserved in
+# governance/reviews/issue-4-2026-10-22-review.md. Scope is preparation only,
+# not implemented synthesis, maintainer treatment approval or future main.
+
+[changelog]
+decision = "Not required"
+reason = "Preparation-only draft: registers and assesses a source, adds bibliographic navigation and records an unapplied treatment proposal. Accepted report arguments, hypothesis verdicts, maps, protocols and contributor rules are unchanged. Substantive integration will require its own changelog decision."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor obligation or governance rule changes; the existing original-input report and one-issue cycle govern this preparation."
+doctrine = "Existing source/inference, full-outcome and hypothesis boundaries cover the proposed treatment; no new term or claim class."
+repository-architecture = "Uses existing source brief and dated review/work-record layers. The canonical hypothesis register and master84 retain ownership."
+report = "Exact P1-P4 report/register changes are contained only as unapplied proposal text. Canonical report and hypothesis verdicts remain unchanged pending the concrete treatment decision."
+protocols = "All four protocols were assessed; no change recommended because the source does not test controls, thresholds or remedy efficacy."

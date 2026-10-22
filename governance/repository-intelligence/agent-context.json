@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "261d5512f46cbb2f75757126283eee26a546877dd587ae6809f4aac86e745630",
+    "digest": "c2360a893d368cf6914968c6b7a30ccdc048c9f401b74401d84b3838d27ca097",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -97,7 +97,7 @@
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "c245947aeda48fbe5aa757f9a1ee43cb6339573f544a407000508d588ade25ef"
+        "sha256": "19cf6aa10f13681bc6c4387080ee0cafad5cfddf9fc3d17a600ecc1b6f93fff6"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "dd5eb45062caf3c9a72b6054b0c99bd4ae1c176c6dd3e18fa792f20c0800f024"
+        "sha256": "d566ee7f89e3a9fdd17cd0efbdd3fa6423e5399812b54f7ee61df5de4a73b8a6"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -245,6 +245,11 @@
         "sha256": "fc57ece23a64291dd39756308ade71a3d16db5b150863e1e13a3ec058106edb7"
       },
       {
+        "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
+        "identity_mode": "content",
+        "sha256": "b67db8755eff123935260ce0e6a995b5417f205a64e02999fd9620be240791ff"
+      },
+      {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
         "sha256": "8e2af35feeda06ba31eca97e4285951a515f557b6204ecf33acfab1dd217afcb"
@@ -262,7 +267,7 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "0833c05a4a962ecef3f2e1de7c213250e740c6040efea3de5d6c787392b1ff21"
+        "sha256": "342e4847d2e34de7ec260b16009a5eddb30cf91d3202309e66d51da3deb8e0f2"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -352,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "c5d7248060af7bb7b6d7eb68acd8e0e3b3e028feb07708a902be5835a390b3c2"
+        "sha256": "af7498caf3a6b3b41837001b0c7ab9d76c37da183d683e34c7c600d0c6a2eaa8"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -378,6 +383,21 @@
         "path": "governance/repository-map.md",
         "identity_mode": "content",
         "sha256": "3378a096e6fb8857424037323a5d80d1231471a6fb98a5362a7b3401d3af340a"
+      },
+      {
+        "path": "governance/reviews/issue-4-2026-10-22-numeric-checks.json",
+        "identity_mode": "content",
+        "sha256": "bf4481ed37995a6c92afdb4fbf50f9f6999b365afb3da5f9d2acfbda06081d34"
+      },
+      {
+        "path": "governance/reviews/issue-4-2026-10-22-review.md",
+        "identity_mode": "content",
+        "sha256": "3f46e87cee56b6decea9783a635400c1b36206c0cde511eb1898498320e77e1f"
+      },
+      {
+        "path": "governance/reviews/issue-4-2026-10-22-source-impact.md",
+        "identity_mode": "content",
+        "sha256": "e3a31075dc655346b355f91785cb67998fce8354311c1149b774be55c5deb06a"
       },
       {
         "path": "governance/reviews/issue-52-2026-10-20-ri-review.md",
@@ -658,6 +678,11 @@
         "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
         "identity_mode": "content",
         "sha256": "6c74e708bf256f460be24c9c0dd2014a6a13fe5e3e6a1d4c9d0e921bd9728aa7"
+      },
+      {
+        "path": "governance/work-records/2026-10-22-issue-4-source-assessment.toml",
+        "identity_mode": "content",
+        "sha256": "9aa0122fe73569cd5cb5d7cbf1dade9918f419a6524dc0a4dee058f7a69ba2ee"
       },
       {
         "path": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
@@ -1305,6 +1330,17 @@
     }
   ],
   "sources": [
+    {
+      "id": "P-2026-05",
+      "path": "evidence/SOURCES.md",
+      "source": "Shen & Tamkin, [*How AI Impacts Skill Formation*](https://arxiv.org/abs/2601.20245v2), arXiv v2, submitted 1 February 2026; v1 28 January 2026; reviewed object is a preprint",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Immediate individual learning and task-completion observations in a randomized unfamiliar-library task; percentage/sample-reporting limits; no measured durable skill or shared ownership",
+      "current_use": "`REFERENCES.md`; no report use yet; proposed treatment under #4",
+      "brief_path": "evidence/primary/2026-ai-impacts-skill-formation.md"
+    },
     {
       "id": "P-2026-04",
       "path": "evidence/SOURCES.md",
@@ -2003,6 +2039,13 @@
       ]
     },
     {
+      "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
+      "title": "Shen–Tamkin: AI assistance and learning a new programming library",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2026-chen-stratton-firm-production.md",
       "title": "Chen–Stratton: AI adoption and firm software production",
       "instructions": [
@@ -2187,6 +2230,27 @@
     {
       "path": "governance/repository-map.md",
       "title": "Three-repository ownership and agent routing",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-4-2026-10-22-numeric-checks.json",
+      "title": "governance/reviews/issue-4-2026-10-22-numeric-checks.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-4-2026-10-22-review.md",
+      "title": "#4 — independent preparation review",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-4-2026-10-22-source-impact.md",
+      "title": "#4 — skill-formation assessment and proposed treatment",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2579,6 +2643,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
       "title": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-4-source-assessment.toml",
+      "title": "governance/work-records/2026-10-22-issue-4-source-assessment.toml",
       "instructions": [
         "AGENTS.md"
       ]
