@@ -2,70 +2,66 @@
 
 ## Snapshot
 
-- Checked 2026-10-22 UTC; accepted correction main
-  `c67eb5787838735ab670a3788db4714d5ae45ff2` (PR #104), tree
-  `9d42506380605c70dca3c11db8ef49bb7918bc70`.
-- #86 remains the approved active issue. The full register is merged and accepted;
-  this candidate records final verification of its seven changed-use sources.
-  Final-state candidate 5b30b4e / tree fc804bbb is independently Confirmed.
-- This candidate cannot record its own future merge. Fetch live #86/PR/main and
-  actual-main checks before deciding whether full acceptance is complete.
+- Checked 2026-10-22 UTC; accepted main
+  `00d2b65c27d18b78d8f6cbe597a3a6dfe762409a`, tree
+  `ff22402a86c527d9ef4202ec188830b654865cc9` (PR #105).
+- #86 is completed; its final source verification and actual-main acceptance are
+  recorded in issue86 comment6337549134. Main was re-fetched before this draft.
+- #87 is the approved active issue. This branch prepares its original-source
+  assessment and exact treatment proposal; no report/register/protocol edits yet.
+- Fetch live #87/#84/PR/main on resumption. This candidate does not record a future
+  treatment approval, integration, merge or issue completion.
 
 ## Active owners
 
 - [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
-  owns the single live master sequence; #85 governance and #65 closeout are done.
-- #86 owns final metadata review/checks/merge, actual-main acceptance and the plan
-  checkpoint. The register implementation and correction-main acceptance are done.
-- #53 remains open for deferred terminology/Goldratt original acquisition; retired
-  Deloitte remains historical. The five unresolved source records stay unresolved.
-- #87 firm evidence, #4 skill input, #100 marketing, #88 readable edition with #1,
-  and separately selected publication/tooling/node research remain queued.
-- #89–99 own later node assessments; #49 recovery and #54 pilot retain their scopes.
-  Issue creation or a dependency link is not implementation approval.
+  owns the current sequence. #85 governance, #65 closeout and #86 register are done.
+- [#87](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87)
+  owns Chen–Stratton assessment, required treatment decision and the full remaining
+  review/integration/merge/main/verification cycle.
+- #4 follows only after87 completion and explicit next-issue approval; then #100,
+  #88 with #1, and separately selected publication/tooling/node research.
+- #53 remains open for deferred original acquisition, non-blocking for the first
+  readable edition. #89–99, #49 and #54 retain their separate research/pilot scopes.
 
 ## Decisions
 
-- Maintainer approved #86 with “Роби” on 2026-10-22, repeated during execution.
-  Start record: #86 comment 6336459981. Final source verification belongs to that
-  authorized cycle; no fresh issue selection is needed for this completion.
-- One canonical register now holds the thesis, 32 hypotheses and 44 function rows.
-  Review includes competent shared ownership and understanding as well as quality.
-- I86-01 corrected the Design weakening test: lower later effort counts jointly
-  with preserved/improved demonstrated capability, never lower capability.
-- Source states and hypothesis verdicts remain distinct. The source verification
-  below does not establish a whole causal chain or efficacy of proposed remedies.
-- Complete final #86 acceptance, reread #84, show the current plan and next concrete
-  scope, then wait for explicit next-issue approval. #87 has not started.
+- Maintainer approved87 with “Починай” on 2026-10-22 after86's completion handoff.
+  Start record: issue87 comment6337750973; registration: comment6337779455.
+- AC4 requires a concrete source-impact/treatment report before substantive
+  integration. Proposed wording and alternatives are now in the87 impact artifact.
+- Exact proposed treatment is awaiting maintainer decision. This is the existing
+  substantive-treatment gate, not permission to repeat routine authorized work.
+- Recommended: visible firm-level activity/completion and review-process evidence;
+  split REV-1 process support from open causal capacity/quality/ownership questions.
+- No AGENTS/workflow/protocol change is proposed. No next issue has started.
 
 ## Evidence
 
-- reviews/issue-86-2026-10-22-register-audit.md and its occurrence JSON record
-  approved scope, all-node outcomes, seven original/all-use checks and synchronization.
-  Independent review reproduced the 162-file baseline, 652 hits and 14 manual uses.
-- Corrected content e2ec97c / tree 78e32a22 and recording 143af105 / tree 9d425063
-  received actual independent Confirmed outcomes; I86-01 is resolved. Their remote
-  equivalents and exact full hashes are recorded in the audits and PR #104.
-- PR checks and actual-main Main health 39753429113 passed all required steps.
-  The reviewer independently Confirmed actual-main eligibility, compared all 165
-  tracked files with the reviewed tree, and repeated local contract/state/RI checks.
-- reviews/issue-86-2026-10-22-final-verification.md owns the seven-source eligible
-  restoration to Reviewed brief / Verified / 2026-10-22. The other 26 rows remain
-  unchanged; the candidate has 28 Verified and the same five unresolved records.
-- NBER publisher access was denied; decisive September passages were inspected
-  in the 133-page author original. The accepted 134-page publisher original/hash
-  remains pinned, with no whole-document/byte-equivalence claim or version adoption.
-- H0-A, H0-B's attenuation premise and the narrower COD-1 activity-release premise
-  have provisional support. Other full mechanisms/outcomes/remedies remain Open.
-  R23 stays unpublished author-review context, not an empirical replication.
-- RI verifies represented local bytes; live source/issue/review truth is separate.
+- P-2026-04: Chen–Stratton Job Market Paper, August4,2026;78pages;
+  SHA256 `27f8d1fe0a2c145e700ae8835c997533fb4483e21a11f9c2385186bdb9f7c096`.
+  Candidate source state: Brief in progress / Not started / —.
+- `evidence/primary/2026-chen-stratton-firm-production.md` owns the candidate source
+  review; `reviews/issue-87-2026-10-22-source-impact.md` owns scope and proposal;
+  its numeric-checks JSON preserves published coefficients and transformations.
+- Key boundaries: elapsed merge days are not active review hours; comments/change
+  requests are not measured defects; participation is not competent ownership.
+  Positive coding and uncertain positive completion remain visible.
+- Observational adoption, visible pre-period movements, incomplete coverage and
+  auxiliary size/interview reporting discrepancies constrain interpretation.
+- Accepted September P-2026-01 is the comparator. Its May attachment is history;
+  no NBER re-review/version adoption is needed. New comparative use will require
+  Flow D after approval; accepted source states remain unchanged in this draft.
+- Separate reviewer /root/issue87_independent_review Confirmed the corrected
+  assessment/proposal on 2026-10-22; I87-01 neutral-wording correction is resolved.
+  Exact hashes/history are in the impact report; accepted integration is pending.
 
 ## Next actions
 
-- Obtain faithful-recording review of the actual final-state Confirmed receipt;
-  finish trusted/local/live checks, merge and check resulting main.
-- Complete #86's AC/result records, reread/update #84's sequence and rationale,
-  show the current plan and propose #87's concrete firm-evidence scope.
-- **Do not start #87 or another queued issue without that approval.**
-- Deferred acquisition and all node research are not hidden prerequisites for the
-  first readable edition or later publication selection.
+- Publish the independently Confirmed assessment draft and concrete treatment
+  decision request in87 and the live plan.
+- After exact treatment approval, implement it, complete the all-use source audit,
+  independent integration review and required checks, merge and verify actual main.
+- Restore eligible source verification only after correction acceptance; finish
+  all87 acceptance and reread84 before proposing4 for approval.
+- Continue87 across interruptions; do not start4/100/88 during this checkpoint.

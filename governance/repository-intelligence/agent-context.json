@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "f1200b95a4c664c4dee14b9f6b468c809c366fcc3721dab88bf6dfaf2a71c2f4",
+    "digest": "1d5940ef0f248d1862c1a0658c67b678e9bc0a986c891b7e9233cf6fc0923096",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "0dddfa1f66e7fabcb50ca7b3821db1e2489923bcb51c30fd40639c784e886f2d"
+        "sha256": "2c8071ceff29b7d40ea2463184bf5924853b7bb49523ba3972c71a38b056c93c"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -245,6 +245,11 @@
         "sha256": "fc57ece23a64291dd39756308ade71a3d16db5b150863e1e13a3ec058106edb7"
       },
       {
+        "path": "evidence/primary/2026-chen-stratton-firm-production.md",
+        "identity_mode": "content",
+        "sha256": "b39655ea675194c39bb0c6c48ac1465822c9ffc85a0c2d5194b511d64bb11400"
+      },
+      {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
         "sha256": "457dba78a4dd7a873673a04b00f9e290dba4b4e44358a8ac588afabd86563468"
@@ -257,7 +262,7 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "96d12bbec4c96b63e51306c3039284e0d57f11263aa89b74c42789791b8ff620"
+        "sha256": "205daaa1f29ab30a26b281a60e43d12ca592ccdb6bcfe6fbef4a42fdfd455557"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -347,7 +352,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "9d396f39a2fe033be3f8e8a58a241ac792f725d854b92237bcafc3948648fa64"
+        "sha256": "78ad8981021460a8ab7d3c04e5b910fdc191f09ec285cc34c773d75b798e6a84"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -510,6 +515,16 @@
         "sha256": "9f80be6ba3e3884bde4f1fd65571d9071acbda4015e6e698dc906c7d02288ee5"
       },
       {
+        "path": "governance/reviews/issue-87-2026-10-22-numeric-checks.json",
+        "identity_mode": "content",
+        "sha256": "470f519507a56c606e8802a99c152091fe1eee459d2603f0d3a51e626a23d0ac"
+      },
+      {
+        "path": "governance/reviews/issue-87-2026-10-22-source-impact.md",
+        "identity_mode": "content",
+        "sha256": "2aaaf102c03370f083a81e4f9a8e9e8e11796ef9f03bcf3341547def3a7a5bbf"
+      },
+      {
         "path": "governance/status-model.md",
         "identity_mode": "content",
         "sha256": "ad0aeadd7360c7bec6ec76d59a886b9376f50f3fc06d6e7436619d84e5524d90"
@@ -658,6 +673,11 @@
         "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
         "identity_mode": "content",
         "sha256": "84739a05b2077c7ff41a43ebb8e1ebd1804a368a388f225ea3229662bbbfab75"
+      },
+      {
+        "path": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
+        "identity_mode": "content",
+        "sha256": "9c9846c30ec28f61e8fc3ab1745b8d39c21062cc669894827344ad93d004e350"
       },
       {
         "path": "governance/work-records/README.md",
@@ -1270,6 +1290,17 @@
     }
   ],
   "sources": [
+    {
+      "id": "P-2026-04",
+      "path": "evidence/SOURCES.md",
+      "source": "Chen & Stratton, [*Artificial Intelligence in the Firm: Bottlenecks in Software Production*](https://fion.ac/jellyfish.pdf), Job Market Paper, 4 August 2026; first version 7 January 2026",
+      "evidence_review": "Brief in progress",
+      "integration_audit": "Not started",
+      "last_verified": "—",
+      "can_support": "Candidate firm-level activity, tracked completion and review-process evidence; exact treatment awaits #87 decision",
+      "current_use": "None — provisional brief and treatment proposal; no accepted report integration",
+      "brief_path": null
+    },
     {
       "id": "P-2026-01",
       "path": "evidence/SOURCES.md",
@@ -1957,6 +1988,13 @@
       ]
     },
     {
+      "path": "evidence/primary/2026-chen-stratton-firm-production.md",
+      "title": "Chen–Stratton: AI adoption and firm software production",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2026-metr-productivity-design-update.md",
       "title": "METR: follow-up selection and measurement limits",
       "instructions": [
@@ -2328,6 +2366,20 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-87-2026-10-22-numeric-checks.json",
+      "title": "governance/reviews/issue-87-2026-10-22-numeric-checks.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-87-2026-10-22-source-impact.md",
+      "title": "#87 — Chen–Stratton assessment and proposed treatment",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2533,6 +2585,13 @@
     {
       "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
       "title": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
+      "title": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
       "instructions": [
         "AGENTS.md"
       ]

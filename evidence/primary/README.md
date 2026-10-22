@@ -21,6 +21,10 @@ This directory contains evidence briefs for original empirical studies.
 - [Deloitte January 2025 Q4 report](2025-deloitte-genai-q4.md) — AI-active leaders, selected advanced initiatives and near-term expectations; positive returns alongside scaling limits.
 - [Stack Overflow 2024 AI attitudes](2024-stackoverflow-ai-attitudes.md) — exact questions/subsamples; not measured productivity, rising fear or overtime.
 
+## Assessment candidates
+
+- [Chen–Stratton: firm software production](2026-chen-stratton-firm-production.md) — pinned August 2026 original; #87 assessment and proposed treatment, **Brief in progress / Not started**. Substantive integration awaits the maintainer's decision.
+
 ## Inclusion criteria
 
 Eligible materials include:

@@ -1,0 +1,26 @@
+record_version = 1
+title = "Assess Chen–Stratton firm evidence and present a bounded integration proposal"
+primary_flow = "Flow A — new P-2026-04, acquisition and provisional assessment; substantive integration pending treatment decision"
+human_decision = "Maintainer approved issue87 assessment/cycle with Починай on 2026-10-22; start https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6337750973. This draft prepares the methods/impact/treatment report required by issue87 AC4 and AGENTS; exact new synthesis is awaiting decision. No report, hypothesis verdict or protocol is changed. Routine completion after approved treatment remains inside87; no next issue is authorized."
+independent_review = "Confirmed"
+# Actual corrected-assessment outcome from /root/issue87_independent_review,
+# 2026-10-22: I87-01 resolved. Exact reviewed file hashes and initial correction
+# history are preserved in the87 impact report. This reviews the assessment and
+# proposal, not maintainer approval, accepted integration or source verification.
+
+[changelog]
+decision = "Not required"
+reason = "This decision-stage draft records source acquisition, provisional review and a proposed treatment; it does not change the accepted reader-facing position. A substantive integration entry remains required if the treatment is approved and implemented."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No new rule or obligation. Accepted85 governance already covers full-node outcomes and the one-issue cycle."
+doctrine = "No doctrine or terminology change; the candidate distinguishes measurements, author model and proposed repository inference."
+repository-architecture = "Uses the existing source-brief and dated-review layers; the canonical register and live master plan remain their existing owners."
+reader-navigation = "Main README/report reading order remains unchanged. Only the primary evidence index exposes an explicitly labeled assessment candidate."
+references = "Bibliographic integration is pending the treatment decision; the candidate brief and registry already pin source identity."
+report = "All report layers and relying NBER/review claims were assessed for impact; proposed wording is in the dated report, with no substantive report/register changes before decision."
+protocols = "No protocol change recommended: existing controls distinguish elapsed time, active effort, ownership, headroom and total cost; the paper tests no control efficacy."
+history = "No accepted finding, verification or completion is added to CHANGELOG. The dated review and this new work record preserve the preparation checkpoint."
