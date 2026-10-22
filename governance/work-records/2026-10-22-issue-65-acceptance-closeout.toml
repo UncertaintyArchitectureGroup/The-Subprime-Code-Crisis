@@ -1,0 +1,25 @@
+record_version = 1
+title = "Reconcile evidence closeout and clarify durable-effect protocol boundaries"
+primary_flow = "Flow D — affected existing-use integration and approved #65 synchronization closeout"
+human_decision = "Maintainer approved #65 with Так on 2026-10-22 after accepted #85. Start declaration https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/65#issuecomment-6335594608 and active master plan #84 record bounded C01-C33 reconciliation, protocol/diagram/use-record corrections, separate final review, merge/main acceptance and truthful partial #53 disposition. #86 requires later approval."
+independent_review = "Confirmed"
+# Independently Confirmed 2026-10-22 by /root/issue65_independent_review at
+# 246ade3b1636a5c683d1c5ef5e9d6159863ffa83, tree
+# 8ac56591544f6144242e56f5d49c5b8e24388ae7. I65-01 corrected/rechecked.
+# No future merge or final source verification is asserted. Full scope in
+# governance/reviews/issue-65-2026-10-22-acceptance-closeout.md.
+
+[changelog]
+decision = "Updated"
+reason = "Clarifies durable code/data/operational effect acceptance, admitted-stage demand and reader/source-use coverage; records bounded legacy-audit reconciliation."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "AGENTS, contributor duties and issue/PR workflows already implement the approved #85 method and cycle; this task follows them without a rule change."
+doctrine = "Existing claim classes, evidence boundaries and complete-node assessment remain unchanged; protocol clarification makes no empirical efficacy assertion."
+repository-architecture = "No new research layer or register; #86 owns thesis/register architecture after approval."
+evidence-indexes = "No new or renamed brief; secondary index already describes Markus as bounded commentary and remains accurate during integration reset."
+references = "Existing Markus date/title/class and original-versus-secondary placement are accurate; README coverage phrases removed no legitimate citation or bibliographic identity."
+report = "All C01-C33 report uses checked against accepted child work; no remaining report correction in this bounded closeout. Broader thesis rewrite remains #86/#88."

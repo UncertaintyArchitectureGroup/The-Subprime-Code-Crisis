@@ -152,13 +152,13 @@ Every policy exception, pilot approval, and elevated permission should have:
 
 ## 5. Assess Demand Against Available Capacity
 
-Higher candidate output does not determine the additional review, testing, security, operating or maintenance effort. Demand depends on change size, risk, familiarity and available assistance. Existing spare capacity or useful verification improvements may absorb added work; a fixed resource budget alone does not establish overload.
+Higher candidate output does not determine the additional review, testing, security, operating or maintenance effort. Demand at a downstream stage depends on the work admitted to that stage, its size and risk, familiarity, and available assistance. Existing spare capacity or useful verification improvements may absorb added work; a fixed resource budget alone does not establish overload.
 
 **Conditional capacity scenario:** Compare observed demand with available capacity and the resulting delivery and quality. The enterprise surveys and practitioner accounts reviewed here do not establish a universal volume-to-burden multiplier or inevitable maintenance inventory.
 
 ```mermaid
 flowchart TD
-    A["Candidate work and change mix"] --> B{"Demand exceeds available capacity?"}
+    A["Admitted work and change mix"] --> B{"Demand exceeds available capacity?"}
     B -->|Yes| C["Possible queues, rework or delay"]
     B -->|No| D["Useful gains may reach delivery"]
     C --> E["Compare effort, quality and delivery"]

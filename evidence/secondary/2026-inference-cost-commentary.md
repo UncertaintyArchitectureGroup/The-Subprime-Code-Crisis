@@ -1,13 +1,33 @@
 +++
 source_ids = ["S-2025-03"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-21"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
-current_use = ["report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/03_the_aftermath.md", "report/appendices/cost-context.md", "REFERENCES.md"]
+current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/03_the_aftermath.md", "report/appendices/cost-context.md", "REFERENCES.md"]
 +++
 
 # Markus inference-cost commentary: interpretation and corrected source boundaries
+
+## Current integration checkpoint — 2026-10-22, #65
+
+The #65 occurrence sweep found an existing README Evidence Map link missing from
+both Current use records. Flow D resets the previous integration acceptance and
+clears its date. The correction PR retains the required reset state
+**Needs re-verification / —** while the all-use audit is recorded below. Evidence review
+remains **Reviewed brief**: the original HTML was reopened on 2026-10-22 and the
+used source content and boundaries remain consistent with the reviewed brief.
+The prior #60 confirmations below remain historical. On 2026-10-22, separate
+reviewer `/root/issue65_independent_review` **Confirmed** the #65 content/all-use
+candidate `246ade3b1636a5c683d1c5ef5e9d6159863ffa83`, tree
+`8ac56591544f6144242e56f5d49c5b8e24388ae7`. Merge and actual-main acceptance remain
+required before final source verification.
+
+[The #65 closeout record](../../governance/reviews/issue-65-2026-10-22-acceptance-closeout.md)
+traces all six use paths, the original sections rechecked, and the reset and
+verification sequence. Restore Verified only after the correction is independently
+Confirmed, merged and checked on actual main. This adds no new cost finding or
+protocol claim.
 
 ## Citation, publication and access
 
@@ -32,11 +52,11 @@ Unattributed deployment examples, scenario ranges and timing forecasts are not a
 
 ## Repository use and placement
 
-Ch2 retains an attributed interpretive link; exact quantitative context belongs to separately reviewed originals and the cost-context appendix. REFERENCES corrects the publication date. The hypothetical sensitivity model is authored by the repository and does not inherit Markus’s forecast multiples or anonymous cases.
+README links this secondary-commentary brief from the Evidence Map. Ch2 retains an attributed interpretive link; exact quantitative context belongs to separately reviewed originals and the cost-context appendix. REFERENCES corrects the publication date. The hypothetical sensitivity model is authored by the repository and does not inherit Markus’s forecast multiples or anonymous cases.
 
-## Repository integration audit
+## Repository integration audit — historical #60 acceptance
 
-- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Sol checkpoint 2026-10-20 was In progress; the initial Astra review required corrections. Current audit owner /root, 2026-10-21: integration **Verified**, Last verified **2026-10-21**; the independently Confirmed correction is merged and its exact default-branch tree/checks verified below.
+- Flow B for existing records; Flow A for the two explicitly registered original surveys/models. Sol checkpoint 2026-10-20 was In progress; the initial Astra review required corrections. Historical audit owner /root, 2026-10-21: integration **Verified**, Last verified **2026-10-21**; the independently Confirmed correction was merged and its exact default-branch tree/checks verified below. The current #65 checkpoint above supersedes that integration state without erasing its review history.
 - [Occurrence/placement trace and Astra handoff](../../governance/reviews/issue-60-2026-10-20-cost-audit.md) record the Sol occurrence review, arithmetic, nearby conclusions, README and protocols; the subsequent Astra review below identifies an omitted dependent conclusion. Protocol outcome: **No protocol change**; no monetary threshold or validated ROI follows from this source.
 - The bounded economic/model-choice/source-placement correction is independently Confirmed at the latest checkpoint below. The correction merged in PR72 and exact main99df797 was checked; final state verification is recorded below.
 

@@ -15,9 +15,9 @@ Restrict AI-generated code according to the cost of failure, durability of the a
 
 ### 🟢 Green Zone — low-cost and disposable
 
-Use AI more freely where output is easy to inspect, replace, or discard:
+Use AI more freely where execution and outputs are isolated, easy to inspect, and inexpensive to discard. These examples assume effects are confined to disposable copies and isolated outputs:
 
-- **Disposable scripts:** one-off parsing, migration, or local automation scripts.
+- **Disposable scripts:** one-off parsing or local automation on disposable copies, with isolated outputs.
 - **Data transformation:** converting JSON to SQL, mapping types, reshaping fixtures.
 - **Boilerplate:** standard structures that already follow an accepted local pattern.
 - **Unit-test scaffolding:** test structure and cases, with assertions reviewed manually.
@@ -53,11 +53,11 @@ Keep model-generated output outside the durable system until it has been verifie
 
 ### Problem
 
-AI lowers the cost of producing plausible code. That makes it easy for provisional output to cross into the permanent codebase before anyone has established whether it fits the architecture, preserves invariants, or is worth maintaining.
+AI lowers the cost of producing plausible code. That makes it easy for provisional output to enter the permanent codebase or alter persistent state before anyone has established whether it fits the architecture, preserves invariants, or is worth maintaining.
 
 ### Pattern
 
-Create an explicit boundary between **generated artifacts** and **stable system code**.
+Create an explicit boundary between **generated artifacts** and **accepted changes to durable code, data, or operational state**.
 
 ```mermaid
 flowchart LR
@@ -68,7 +68,7 @@ flowchart LR
     C -->|fails| F[Discard or regenerate]
 ```
 
-Treat everything before the boundary as replaceable. Treat everything after the boundary as owned.
+Treat the artifact before the boundary as replaceable and keep its effects isolated. Applying its outputs or running it against persistent or shared state crosses the acceptance boundary, even if the script will be discarded afterward. Accepted effects remain owned.
 
 ### Suitable disposable zones
 
@@ -95,13 +95,13 @@ Treat everything before the boundary as replaceable. Treat everything after the 
 1. The engineer can explain what the code does and why it exists.
 2. Tests validate the relevant behavior, not merely line coverage.
 3. The implementation fits an accepted local pattern or has an explicit reason not to.
-4. Security, failure handling, and rollback implications are understood.
+4. Security, data integrity, failure handling, and recovery limits are understood. Stopping execution does not undo completed irreversible effects.
 5. Duplicated functionality and unnecessary abstractions have been removed.
 6. The code is small enough to review meaningfully.
 
 ### Example
 
-A model generates a script that converts historical CSV exports into a new format. The script is run against copied data, checked for edge cases, and discarded after the migration. If part of that logic must become a permanent import service, it is rewritten or adapted to the production architecture, covered by tests, and reviewed as durable code.
+A model generates a script that converts historical CSV exports into a new format. A rehearsal uses disposable copies and isolated outputs, with the transformation checked for edge cases. Before the script or its output changes persistent data, the responsible engineer applies the data-change risk class, validates the intended transformation, and accepts the recovery limits. Discarding the script afterward does not make those effects disposable. If the logic becomes a permanent import service, it also needs adaptation to the production architecture, tests, and review as durable code.
 
 ### Failure modes
 
@@ -113,7 +113,7 @@ A model generates a script that converts historical CSV exports into a new forma
 
 ### Why this matters for the Subprime Code Crisis
 
-The proposed risk mechanism includes provisional output entering durable code without adequate acceptance. A disposable boundary is intended to interrupt that path. Whether it reduces later rework or maintenance burden requires local evidence; the boundary does not guarantee correctness or prevent all debt.
+The proposed risk mechanism includes provisional output affecting durable code, data, or operations without adequate acceptance. A disposable boundary is intended to interrupt that path. Whether it reduces later rework or maintenance burden requires local evidence; the boundary does not guarantee correctness or prevent all debt.
 
 ---
 
