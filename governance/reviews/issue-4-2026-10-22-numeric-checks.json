@@ -1,0 +1,185 @@
+{
+  "source_id": "P-2026-05",
+  "source_url": "https://arxiv.org/abs/2601.20245v2",
+  "source_version": "arXiv v2, submitted 2026-02-01; v1 2026-01-28",
+  "analysis_date": "2026-10-22",
+  "author": "Primary reviewer /root; independently checked separately",
+  "type": "Published-value arithmetic and supplementary-file inventory; not raw-outcome replication",
+  "pdf_sha256": null,
+  "pdf_checksum_limitation": "Original read through web PDF/HTML; local download failed at unavailable browser proxy. No local bytes/hash claimed.",
+  "checks": [
+    {
+      "key": "main_participant_flow",
+      "locator": "Sections 4.3 and 5.2.1; Table 1",
+      "invited": 58,
+      "completed_three_stages": 53,
+      "excluded": 1,
+      "analyzed": 52,
+      "ai": 26,
+      "no_ai": 26,
+      "limitation": "Exclusion is described as preregistered by authors; OSF registration not independently accessible."
+    },
+    {
+      "key": "coding_experience",
+      "locator": "Corrected v2 Table 1",
+      "one_to_three_years": [
+        2,
+        2
+      ],
+      "four_to_six_years": [
+        10,
+        9
+      ],
+      "seven_or_more_years": [
+        14,
+        15
+      ],
+      "at_least_four_years": 48,
+      "analyzed_denominator": 52,
+      "derived_share_pct": 92.3076923076923,
+      "meaning": "Trio novices, mostly experienced coders by years; not a study of mostly novice programmers."
+    },
+    {
+      "key": "immediate_quiz",
+      "locator": "Section 5.2.2; Figure 6",
+      "question_count": 14,
+      "maximum_score": 27,
+      "direction": "AI group lower",
+      "reported_cohens_d": 0.738,
+      "reported_p": 0.01,
+      "adjusted_cohens_d": 0.725,
+      "adjusted_p": 0.016,
+      "adjustment": "Warm-up task time",
+      "raw_scores_replicated": false,
+      "limitation": "No independently reconstructed CI or domain-specific significance."
+    },
+    {
+      "key": "score_arithmetic_discrepancy",
+      "locator": "Section 5.2.2",
+      "reported_raw_difference": 4.15,
+      "maximum_score": 27,
+      "source_stated_percentage": 17,
+      "formula": "100 * 4.15 / 27",
+      "derived_full_scale_percentage_points": 15.370370370370372,
+      "derived_difference_from_stated_percentage_points": 1.629629629629628,
+      "disposition": "Unresolved source-internal mismatch. Do not promote either 17% or the derived 15.37 pp to a verified measured skill effect; use reported d/p and bounded direction."
+    },
+    {
+      "key": "main_task_time",
+      "locator": "Figure 6",
+      "reported_p": 0.391,
+      "meaning": "No statistically significant mean difference; not equivalence or zero benefit."
+    },
+    {
+      "key": "second_task_completion",
+      "locator": "Section 5.2.2",
+      "cap_minutes": 35,
+      "ai_completed": 26,
+      "ai_denominator": 26,
+      "control_not_completed": 4,
+      "control_completed": 22,
+      "control_denominator": 26,
+      "ai_completion_pct": 100,
+      "control_completion_pct": 84.61538461538461,
+      "derived_difference_percentage_points": 15.384615384615385,
+      "inferential_test_reported": false,
+      "meaning": "Favorable descriptive completion outcome, not accepted production output."
+    },
+    {
+      "key": "encountered_errors",
+      "locator": "Section 6.2 Table 4",
+      "ai_median": 1,
+      "ai_iqr": [
+        0,
+        3
+      ],
+      "control_median": 3,
+      "control_iqr": [
+        2,
+        5
+      ],
+      "meaning": "Observed runtime errors during exercise; not escaped defects or a production quality effect."
+    },
+    {
+      "key": "pilot_d",
+      "locator": "Section 5.1; Table 2; Figure 5",
+      "participants": 20,
+      "time_d": 1.11,
+      "time_p": 0.03,
+      "quiz_d": 1.7,
+      "quiz_p": 0.003,
+      "meaning": "AI faster and lower quiz in developmental pilot. Main design changed; not independent replication."
+    },
+    {
+      "key": "qualitative_pattern_counts",
+      "locator": "Section 6 six pattern descriptions",
+      "reported_counts": [
+        4,
+        4,
+        4,
+        2,
+        3,
+        7
+      ],
+      "derived_sum": 24,
+      "reported_available_ai_recordings": 25,
+      "disposition": "Unresolved smaller classification total; do not impute remaining case."
+    },
+    {
+      "key": "copying_group_counts",
+      "locator": "Section 6.1 Adopting AI Advice",
+      "reported_counts": [
+        9,
+        9,
+        4,
+        4
+      ],
+      "derived_sum": 26,
+      "reported_available_ai_recordings": 25,
+      "disposition": "Unresolved denominator; exploratory comparison does not validate forced typing."
+    }
+  ],
+  "supplementary_inventory": {
+    "url": "https://github.com/safety-research/how-ai-impacts-skill-formation/tree/bae6eab7b80ab652d612ff9a9ee2d72dddd754aa",
+    "commit": "bae6eab7b80ab652d612ff9a9ee2d72dddd754aa",
+    "transcripts_retrieved": 52,
+    "condition_counts": {
+      "AI": 25,
+      "No-AI": 27
+    },
+    "top_level_keys": [
+      "condition",
+      "main_task_minutes",
+      "main_task_observations",
+      "pid",
+      "summary",
+      "warmup_task_minutes"
+    ],
+    "quiz_score_or_exclusion_key_paths": [],
+    "notebook": "final_task/post-survey.ipynb",
+    "notebook_role": "Question/task examples; no participant-level quiz outcomes or exclusion mapping acquired.",
+    "published_recording_counts": {
+      "section_6": 51,
+      "appendix_b1_total": 51,
+      "appendix_b1_ai": 25,
+      "appendix_b1_no_ai": 25
+    },
+    "disposition": "Public file count/labels differ from analyzed 26+26 and reported recordings. Missing linkage prevents reconstructing analysis sample or headline quiz effect."
+  },
+  "access_limits": [
+    {
+      "url": "https://osf.io/w49e7",
+      "result": "HTTP 403 in both primary and independent source review; registration not independently authenticated."
+    },
+    {
+      "url": "https://openreview.net/forum?id=WpL9rAd0K7",
+      "result": "Browser-verification challenge; no accepted publication/peer-review decision or text equivalence confirmed. Reviewed edition remains arXiv v2."
+    }
+  ],
+  "claims_not_established": [
+    "Long-term retention or loss of previously acquired skill",
+    "Competent shared ownership or a team review mechanism",
+    "Efficacy of prompting/learning remedies",
+    "Production defects, burnout, technical debt, TCO, user benefit or ROI"
+  ]
+}

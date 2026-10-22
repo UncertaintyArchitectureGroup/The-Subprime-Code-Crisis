@@ -8,6 +8,13 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added the pinned Shen–Tamkin skill-formation experiment and its source/access
+  assessment. Chapter 5, the hypothesis register and README now distinguish lower
+  immediate individual learning from favorable observed completion and uncertain
+  mean time. HUM-1 receives provisional support only for the immediate-learning
+  component; durable/shared capability, the proposed mediator and remedies stay
+  open. The percentage discrepancy and exploratory-pattern limits remain visible.
+
 - Added the pinned August 2026 Chen–Stratton firm-production brief, published-value
   calculations and bounded comparison with the accepted September NBER revision.
   Positive coding, uncertain completion, review-process changes, observational

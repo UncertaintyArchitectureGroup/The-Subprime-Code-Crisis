@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "261d5512f46cbb2f75757126283eee26a546877dd587ae6809f4aac86e745630",
+    "digest": "7e5149395ef62bccd51190b3e3fac6dcd1275fc74c3d73d7c274586c2625668f",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "4a4b451ee7d5dea5fc5592023d190d8912544e8a1297eeb838ae63273a95075e"
+        "sha256": "d632c03235acf203166251955ab587db16ed98f4f54b7a0ce253da775264f762"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "a4cee8c8a91cb2fb685ecc6e9665186d3b88711f2f2d3036a61d16dd5b7d6cc8"
+        "sha256": "cd9a813605f5ec0c3fc9798592cab25919751f9547f5872061df58bce3609c48"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "c245947aeda48fbe5aa757f9a1ee43cb6339573f544a407000508d588ade25ef"
+        "sha256": "94d4647811b4b623d763dc10d6f70ad77ee305c7bc5c319f5fb4c9e3f446a63e"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "dd5eb45062caf3c9a72b6054b0c99bd4ae1c176c6dd3e18fa792f20c0800f024"
+        "sha256": "d7f686e808e5a1043104903c90d4d272b7b307b4bed19de99828815683ee8405"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -245,6 +245,11 @@
         "sha256": "fc57ece23a64291dd39756308ade71a3d16db5b150863e1e13a3ec058106edb7"
       },
       {
+        "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
+        "identity_mode": "content",
+        "sha256": "7c40f4972393689291b57fbf7246ee6c863f295f27ba4a8a00912df08ad9f1e8"
+      },
+      {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
         "sha256": "8e2af35feeda06ba31eca97e4285951a515f557b6204ecf33acfab1dd217afcb"
@@ -262,7 +267,7 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "0833c05a4a962ecef3f2e1de7c213250e740c6040efea3de5d6c787392b1ff21"
+        "sha256": "1dcf0a69234a230d330bfe9c5d734e4e74c3a6a30a8fc3429de6506090cf43ae"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -352,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "c5d7248060af7bb7b6d7eb68acd8e0e3b3e028feb07708a902be5835a390b3c2"
+        "sha256": "9abb5071084a2f3d0d534dc5fd0668ed935f453d9182860945e9d6a41dddfe19"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -378,6 +383,26 @@
         "path": "governance/repository-map.md",
         "identity_mode": "content",
         "sha256": "3378a096e6fb8857424037323a5d80d1231471a6fb98a5362a7b3401d3af340a"
+      },
+      {
+        "path": "governance/reviews/issue-4-2026-10-22-integration.md",
+        "identity_mode": "content",
+        "sha256": "dca33e01791c2ef9ef18e92bcf34ecffbbec8e1d147017d3afe9c72d0a0667bf"
+      },
+      {
+        "path": "governance/reviews/issue-4-2026-10-22-numeric-checks.json",
+        "identity_mode": "content",
+        "sha256": "bf4481ed37995a6c92afdb4fbf50f9f6999b365afb3da5f9d2acfbda06081d34"
+      },
+      {
+        "path": "governance/reviews/issue-4-2026-10-22-review.md",
+        "identity_mode": "content",
+        "sha256": "3f46e87cee56b6decea9783a635400c1b36206c0cde511eb1898498320e77e1f"
+      },
+      {
+        "path": "governance/reviews/issue-4-2026-10-22-source-impact.md",
+        "identity_mode": "content",
+        "sha256": "7aa37afe352cc07d5c6b648545920796f4be27a26ea29a70e3301b30e772f9bc"
       },
       {
         "path": "governance/reviews/issue-52-2026-10-20-ri-review.md",
@@ -660,6 +685,11 @@
         "sha256": "6c74e708bf256f460be24c9c0dd2014a6a13fe5e3e6a1d4c9d0e921bd9728aa7"
       },
       {
+        "path": "governance/work-records/2026-10-22-issue-4-source-assessment.toml",
+        "identity_mode": "content",
+        "sha256": "ea5039e76b61fd02e9308cde8a0e01e87e4410baa60f4ca244ffa90981e2c82c"
+      },
+      {
         "path": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
         "identity_mode": "content",
         "sha256": "10e20e22b19aac4cae2df0690259687b4f2450dbef24b5444d9b249c577d97c1"
@@ -732,7 +762,7 @@
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "07b53dcccf414e4c19a85bdd6c7c607367181fdb461ed5bb8cbd7be066185daa"
+        "sha256": "6b0cd169e39f34e50f207c5cc8f26f7f3d4a6fe2d41113f287b9febe81999fea"
       },
       {
         "path": "report/03_the_aftermath.md",
@@ -747,7 +777,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "36ac097538eca2ca014b8b30aa70d82fa2ed62ef35a23d54e41d3f330d2743d5"
+        "sha256": "8e0fcc4681800e20f0269ea257473728e9df169a7afcdf64f4bb7db14845ab83"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -1305,6 +1335,17 @@
     }
   ],
   "sources": [
+    {
+      "id": "P-2026-05",
+      "path": "evidence/SOURCES.md",
+      "source": "Shen & Tamkin, [*How AI Impacts Skill Formation*](https://arxiv.org/abs/2601.20245v2), arXiv v2, submitted 1 February 2026; v1 28 January 2026; reviewed object is a preprint",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Immediate individual learning and task-completion observations in a randomized unfamiliar-library task; percentage/sample-reporting limits; no measured durable skill or shared ownership",
+      "current_use": "`README.md`, `report/02_broken_mechanics.md`, `report/appendices/mechanism-hypotheses.md`, `REFERENCES.md`",
+      "brief_path": "evidence/primary/2026-ai-impacts-skill-formation.md"
+    },
     {
       "id": "P-2026-04",
       "path": "evidence/SOURCES.md",
@@ -2003,6 +2044,13 @@
       ]
     },
     {
+      "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
+      "title": "Shen–Tamkin: AI assistance and learning a new programming library",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2026-chen-stratton-firm-production.md",
       "title": "Chen–Stratton: AI adoption and firm software production",
       "instructions": [
@@ -2187,6 +2235,34 @@
     {
       "path": "governance/repository-map.md",
       "title": "Three-repository ownership and agent routing",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-4-2026-10-22-integration.md",
+      "title": "#4 — accepted skill-formation integration",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-4-2026-10-22-numeric-checks.json",
+      "title": "governance/reviews/issue-4-2026-10-22-numeric-checks.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-4-2026-10-22-review.md",
+      "title": "#4 — independent preparation review",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-4-2026-10-22-source-impact.md",
+      "title": "#4 — skill-formation assessment and proposed treatment",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2579,6 +2655,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
       "title": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-4-source-assessment.toml",
+      "title": "governance/work-records/2026-10-22-issue-4-source-assessment.toml",
       "instructions": [
         "AGENTS.md"
       ]

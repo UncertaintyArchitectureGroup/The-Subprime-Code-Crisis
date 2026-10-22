@@ -1,0 +1,23 @@
+record_version = 1
+title = "Integrate approved immediate-learning evidence and bounded HUM-1 assessment for issue4"
+primary_flow = "Flow A for P-2026-05: original review, approved P1-P5 treatment, every-use integration audit and synchronization; final source verification follows accepted main"
+human_decision = "Maintainer approved the #4 cycle with Починай, then explicitly approved the exact P1-P5 treatment with Погоджую on 2026-10-22; receipt https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339806018. Approval covers implementation, corrections, independent review, checks, merge and actual-main completion. The new competing-hypothesis direction authorizes issue intake and plan revision, not parallel implementation or a silent governance change."
+independent_review = "Confirmed"
+# Completed implementation review by /root/issue4_independent_review, 2026-10-22:
+# ecd53d3670aaa115c2722c7db9bd035929dbfea6, tree9456a9a6d48fae44bf1fd0a88954b4d4bc43fa74.
+# The I4-03 correction is independently verified; exact scope and checks are recorded in
+# governance/reviews/issue-4-2026-10-22-integration.md. This is pre-merge
+# confirmation, not future-main acceptance or final source verification.
+
+[changelog]
+decision = "Updated"
+reason = "Accepted P1-P5 now changes Chapter 5, the register's bounded HUM-1 assessment and README evidence navigation. The earlier preparation-only rationale no longer applies."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor obligation or governance rule changes; existing source and one-issue procedures govern this accepted treatment."
+doctrine = "Existing source/inference, full-outcome and hypothesis boundaries cover the accepted treatment; no new term or claim class."
+repository-architecture = "Uses existing brief, canonical hypothesis register and dated review/work-record layers; master84 owns the live sequence."
+protocols = "All four protocols were assessed; no change recommended because the source does not test controls, thresholds or remedy efficacy."
