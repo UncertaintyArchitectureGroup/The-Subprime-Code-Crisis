@@ -2,10 +2,11 @@
 
 ## Snapshot
 
-- Checked 2026-10-22 UTC; #65 baseline main
-  `4a8165f65d78bbb33a8444a6874478f7784934d2` (accepted #85 / PR101).
-- #65 is the approved active issue: C01–C33 reconciliation, remaining protocol,
-  diagram and source-use synchronization, and final acceptance.
+- Checked 2026-10-22 UTC; accepted correction main
+  `d0ede4d1856e1071c0ab6c52054adcf41a023833` (PR102), identical to the
+  independently Confirmed tree f7b052a3be8a0b6691cf93ab1450a736625b4042.
+- #65 remains the approved active issue. C01–C33/protocol/source-use corrections
+  are merged; this candidate records final S-2025-03 verification and handoff.
 - This candidate cannot record its own future merge. Fetch live #65/PR/main and
   exact-main checks before deciding whether acceptance is complete.
 
@@ -13,8 +14,8 @@
 
 - [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
   owns the single live master sequence; #85 method/workflow implementation is done.
-- #65 owns the current bounded closeout, including S-2025-03 use-record correction
-  and the subsequent separately reviewed merged-state verification PR.
+- #65 owns the final source-verification PR and actual-main/issue acceptance.
+  The correction merge and its actual-main checks are already complete.
 - #53 stays open for deferred terminology/Goldratt original acquisition; retired
   Deloitte remains an explicit historical unresolved record. No cosmetic closure.
 - #86 register architecture, #87 firm evidence, #88 readable edition, #89–99 node
@@ -41,19 +42,22 @@
   exact child receipts, protocol/full-outcome assessment and the AC acceptance table.
 - Dated occurrence trace: 33 source IDs plus 33 claim clusters across 157 baseline
   files; contextual checking found one actual Current use omission (Markus README).
-- S-2025-03 is Reviewed brief / Needs re-verification / —, independently Confirmed
-  for the correction candidate; merged-state acceptance remains pending. Other 32 source states/dates are unchanged.
-- Candidate therefore has 27 Verified and six Needs re-verification. No count or paired-field match establishes actual-use accuracy.
-- Separate /root/issue65_independent_review Confirmed candidate246ade3, tree
-  8ac56591544f6144242e56f5d49c5b8e24388ae7. I65-01 was corrected/rechecked.
-  Independent126tests, trusted gate/state/transitions, RI and412links passed.
+- Actual correction-main Main health39746223003 passed all required steps;
+  local exact-main contract/state/RI passed. See final verification record.
+- S-2025-03's six uses and original boundaries were independently Confirmed;
+  this final candidate restores Verified / 2026-10-22 after accepted main.
+  Other32 source states/dates are unchanged:28Verified plus5unresolved in candidate.
+- Separate /root/issue65_independent_review Confirmed content246ade3 and faithful
+  recordingf74327b. I65-01 was corrected/rechecked; independent126tests, trusted
+  checks, RI and412links passed. Final-state candidatef936e9b is also Confirmed,
+  treeb13d9baab26f25940a0883ac42843c91d5df22be; finalPR acceptance remains pending.
 - Original #53 audit, source limitations and earlier review outcomes remain
   historical. RI checks represented local bytes, not live issue/source truth.
 
 ## Next actions
 
-- Finish #65 candidate checks, independent correction loop, correction PR merge
-  and exact-main acceptance; then a separate final source-verification PR.
+- Finish faithful recording/current-head checks, final PR merge and actual-main
+  acceptance. Then close #65 against actual AC evidence.
 - Reconcile #53 with a named residual queue and partial AC2; do not imply all
   sources were acquired or promote the five unresolved sources.
 - After accepted #65 completion, reread/update #84 and propose #86's scoped

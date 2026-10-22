@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "c87ac8ecac22bad3235fa0c5ffecb6a0be90eacd64f096e1130787569a8b018f",
+    "digest": "c4d72485294d442c9b8bbc1affd94bc6a94424b5708a73ce10039f34612d46fc",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "e0782fb69b21b9e41e8e10d22430a47cd3f2b069f3b1c85923d0992e125e5505"
+        "sha256": "c8e3b3a3cd712c069ad7b14a63503a72d5daae082bc012aac230f5e37e5c490a"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -292,7 +292,7 @@
       {
         "path": "evidence/secondary/2026-inference-cost-commentary.md",
         "identity_mode": "content",
-        "sha256": "331c5cf8d3dec8e7b81b197da83db7f8ee72fff1c7d2bea50745701f11a4c4b1"
+        "sha256": "07850f24636aa83115193f492ddf0fd2770b381e9b7b525f28500b52b2186000"
       },
       {
         "path": "evidence/secondary/README.md",
@@ -347,7 +347,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "1339548ca50895abb1529b2ba427332803ad191b9809939c50f14b0b582c4241"
+        "sha256": "53182789f3e9351fb8f129cfbe1382a3f94ae4130e721db88e041c92586d896c"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -478,6 +478,11 @@
         "path": "governance/reviews/issue-65-2026-10-22-acceptance-closeout.md",
         "identity_mode": "content",
         "sha256": "8dbff3a8cf56d1e84c5cfccb8f64642bf04cb90eb36dab56ad97a4b79f584039"
+      },
+      {
+        "path": "governance/reviews/issue-65-2026-10-22-final-verification.md",
+        "identity_mode": "content",
+        "sha256": "48883adf551b87ca9fd199cf3426711d19acc2f3c783914f02f91e3ab700fe65"
       },
       {
         "path": "governance/reviews/issue-65-2026-10-22-occurrence-trace.json",
@@ -618,6 +623,11 @@
         "path": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
         "identity_mode": "content",
         "sha256": "10e20e22b19aac4cae2df0690259687b4f2450dbef24b5444d9b249c577d97c1"
+      },
+      {
+        "path": "governance/work-records/2026-10-22-issue-65-final-verification.toml",
+        "identity_mode": "content",
+        "sha256": "fe9306871ac9135c2fb846c33c7a118065d5e0dfac1426dba8ecd75d062ed9ef"
       },
       {
         "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
@@ -1529,8 +1539,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Artur Markus, *The Inference Cost Paradox*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-22",
       "can_support": "Practitioner price-volume interpretation; underlying market estimates/intentions require separate original-source boundaries",
       "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
       "brief_path": "evidence/secondary/2026-inference-cost-commentary.md"
@@ -2243,6 +2253,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-65-2026-10-22-final-verification.md",
+      "title": "Issue #65 — final source verification and acceptance handoff",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-65-2026-10-22-occurrence-trace.json",
       "title": "governance/reviews/issue-65-2026-10-22-occurrence-trace.json",
       "instructions": [
@@ -2434,6 +2451,13 @@
     {
       "path": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
       "title": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-65-final-verification.toml",
+      "title": "governance/work-records/2026-10-22-issue-65-final-verification.toml",
       "instructions": [
         "AGENTS.md"
       ]

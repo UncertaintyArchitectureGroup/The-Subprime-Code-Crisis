@@ -1,0 +1,27 @@
+record_version = 1
+title = "Complete Markus source verification after accepted issue65 correction main"
+primary_flow = "Flow D — final verification after accepted correction merge and actual-main checks"
+human_decision = "Continuation of the explicitly approved #65 cycle, start declaration6335594608. Correction PR102 is independently Confirmed and merged at d0ede4d1856e1071c0ab6c52054adcf41a023833; actual-main Main health39746223003 and local state/contract/RI checks passed. This restores only S-2025-03 after its all-use correction and does not authorize #86."
+independent_review = "Confirmed"
+# Independently Confirmed 2026-10-22 by /root/issue65_independent_review on
+# f936e9b9ac895691c49d6e5441837bb0f3eab141, tree
+# b13d9baab26f25940a0883ac42843c91d5df22be. Actual correction-main eligibility,
+# source preservation and candidate gate/state/transition/RI checks accepted.
+# Final metadata PR merge and actual-main acceptance remain separate.
+
+[changelog]
+decision = "Not required"
+reason = "PR102 already records the material protocol/source-use correction; this delta records its accepted-main lifecycle completion without new research or reader/control behavior."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No rule or contributor obligation changed; follow the accepted #85 cycle and existing source flow."
+doctrine = "No claim class, hypothesis verdict or research boundary changed."
+repository-architecture = "Same canonical source and register structure; #86 remains queued."
+reader-navigation = "PR102 navigation already accepted; source identity and six existing use paths unchanged."
+evidence-indexes = "Existing secondary index is accurate; no new or renamed brief."
+references = "Bibliographic identity/date and permitted use unchanged."
+report = "All report content and source interpretations unchanged from the independently accepted correction tree."
+protocols = "All accepted durable-effect and admitted-demand corrections preserved; no new control or efficacy claim."
