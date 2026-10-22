@@ -47,12 +47,16 @@ It combines empirical support and repository synthesis while labeling their boun
 
 ### Competing explanation
 
-A bounded account offering a different explanation for an observation or a
-different prediction for a specified context. Accounts may compete at one link
-while coexisting elsewhere; they need not be mutually exclusive or exhaustive.
-The [canonical rival families](report/appendices/mechanism-hypotheses.md#competing-explanations)
-are research propositions, not automatically supported findings or statistical
-null hypotheses.
+Another explanation for an observed result, or an idea that predicts a different
+result under specified conditions. It may challenge only one part of the argument.
+Two explanations can disagree about that part while both being true elsewhere;
+the list need not cover every possibility.
+
+The register's [ALT questions](report/appendices/mechanism-hypotheses.md#competing-explanations)
+include challenges to the proposed delivery problem, other explanations of data,
+and separate questions about overall benefit and the value of a remedy. They are
+not six blanket denials of the main thesis. Each needs assessment; being listed
+does not make it a supported finding or a statistical null hypothesis.
 
 ### Dataset
 
@@ -104,12 +108,13 @@ An empirical finding must remain bounded by the source's population, setting, pe
 
 ### Diagnostic evidence
 
-Evidence whose observed pattern helps distinguish specified explanations within
-their scope, given predicted direction, magnitude, uncertainty and design limits.
-A result can be compatible with several accounts yet favor one for an explicit
-reason. Missing measurement, imprecision and a shared compatible result alone do
-not establish relative support. This relationship is not a probability, source
-class, verification state or hypothesis verdict; see the
+Evidence that helps tell particular explanations apart. Compare the result with
+what each explanation predicted: its direction, size, setting and uncertainty,
+while keeping the study's design limits visible. A result can fit several
+explanations yet favor one for a stated reason. Missing measurements, imprecise
+estimates or a result that merely fits them all do not by themselves establish
+which is better supported. “Diagnostic” is not a probability, source class, verification state or
+hypothesis verdict; see the
 [comparison method](governance/hypothesis-evaluation.md#compare-explanations).
 
 ### Evidence Map
@@ -177,14 +182,16 @@ The model, assumptions, calibration data, uncertainty, and validation limits sho
 
 ### Node function and outcome
 
-A **function** is a contribution made by a part of the delivery system, such as
+A **node** is a part of the delivery process, such as design, review or operation.
+A **function** is what that part contributes, such as
 clarifying intent, checking behavior or transferring system knowledge. An
 **outcome** is the observed result of that function for the product, team, users
 or surrounding system.
 
-An intended function is not evidence that the previous workflow delivered it.
-An artifact, activity or metric may indicate an outcome without establishing it.
-The node inventory records actual baseline delivery, substitutions and unknowns.
+What a process was meant to do may differ from what it actually achieved. A
+document, activity or metric may be an indicator without proving the result.
+The node inventory records what the previous process achieved, what may replace
+its functions and what remains unknown.
 
 ### Not established
 
@@ -200,9 +207,10 @@ The label does not mean universal, causal, replicated, or free from measurement 
 
 ### Ownership gate
 
-The Review function through which a team knowingly accepts responsibility for a
-change and acquires or demonstrates the shared understanding needed to explain,
-diagnose, change, contain and recover consequential system behavior.
+The part of review where a team knowingly accepts responsibility for a change
+and develops or demonstrates the shared understanding to take care of it. Team
+members need to explain important behavior, diagnose problems, change the system,
+contain failures and recover from them.
 
 It complements Review's quality function. A named assignee or approval click alone
 does not establish competent ownership. The term describes an outcome boundary;
@@ -233,7 +241,9 @@ Primary evidence is an umbrella description, not a replacement for the more spec
 
 ### Production attenuation
 
-A reduction in translation from upstream coding activity to downstream project, release, adoption, marketplace, or production outcomes.
+Less of a change in coding activity carries through to later project, release,
+adoption, marketplace or production outcomes. For example, coding activity may
+grow more strongly than releases, even while releases also grow.
 
 When production attenuation is reported as an empirical finding, its population, period, tool, outcome boundary, and method must remain tied to the relevant source. Broader use as a general delivery mechanism must be labeled as repository interpretation rather than treated as a universal measured law.
 
@@ -257,9 +267,9 @@ A repository interpretation is authored by the project and must remain distingui
 
 ### Rebalancing
 
-A deliberate change to task selection, work admission, capability, coordination
-or functional allocation across the delivery system, aimed at useful outcomes
-at justified total cost and risk.
+A deliberate change to what work is chosen or accepted, what the team and its
+tools can do, how people coordinate, or where a needed function is performed.
+The aim is useful outcomes at a total cost and risk that their benefits justify.
 
 Rebalancing may preserve a function through a new tool or practice, remove
 unnecessary work or retain an adequate existing process. It does not mean equal
@@ -287,10 +297,11 @@ A risk scenario is not a prediction or an observed industry-wide outcome.
 
 ### SDLC imbalance
 
-A mismatch among admitted work, the capability to perform complementary delivery
-functions, and the outcomes needed by users and the business. Its proposed effects
-include queues, transferred effort or unmet quality, understanding and ownership
-needs; each effect requires its own evidence.
+A mismatch between the work a team accepts, its ability to do the rest of the
+delivery work and the results users and the business need. Proposed effects
+include queues, effort shifted elsewhere, or gaps in quality, understanding and
+the ability to take responsibility for the system. Each effect needs its own
+evidence.
 
 The term names the repository's central research hypothesis, not a measured
 industry-wide condition or a claim that the previous process was balanced.

@@ -41,6 +41,14 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
+- Rewrote the main reading path in plainer language: README, thesis and ALT
+  explanations, report argument, evaluation guide, comparison template and key
+  glossary definitions. The ALT overview now explains which questions challenge
+  the proposed problem, which offer other explanations of data, and which test
+  overall benefit or the value of a remedy. Scientific meanings, source results,
+  verdicts, stable links and procedural requirements are preserved. This is the
+  #88 language pass; its broader edition and the #110 comparison remain separate.
+
 - Extended canonical AGENTS and applicable review, audit, discovery, independent
   review and intake procedures to compare relevant explanations consistently.
   Added concise reader/contributor routes and definitions without a new source

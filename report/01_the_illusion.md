@@ -13,9 +13,11 @@
 
 ## Chapter 1. What Productivity Studies Measure: Task Time and Delivery Outcomes
 
-AI assistance can reduce time on a coding task, add time on another, or change which tasks developers choose. A credible productivity claim therefore needs a population, task, tool vintage and outcome boundary.
+AI assistance can shorten one coding task, lengthen another or change which tasks developers choose. To judge a productivity claim, readers need to know who did the work, what the task was, which tools they used and when, and what result the study measured.
 
-The experiments below report different task-time effects. Neither directly measures an enterprise's complete delivery system. The question for this report is when local gains reach production, and under what conditions downstream work absorbs them.
+The experiments below measure task time. They do not directly measure an enterprise's complete delivery process. This report asks when time saved in coding leads to better software delivery, and when the work of checking, integrating, releasing and maintaining changes uses up that saving.
+
+Our research thesis is that AI coding tools have changed the capacity to produce proposed code faster than delivery systems have adapted their ability to select, understand, check, integrate, operate and get value from it. Parts of the evidence support investigating this mismatch; they do not establish the whole causal chain. Teams may also have enough capacity, or adapt successfully, and keep the gains.
 
 Original methods and limitations matter alongside the headline result, including the funding and affiliations of the research team.
 
@@ -29,7 +31,7 @@ Original methods and limitations matter alongside the headline result, including
 | [METR, July 2025 preprint/report](../evidence/primary/2025-metr-experienced-developer-productivity.md); February–June 2025 tools, mainly Cursor Pro with Claude 3.5/3.7 Sonnet | 16 experienced contributors; 246 completed tasks analyzed in familiar mature open-source repositories. Tasks defined before AI-permission randomization; active implementation time before/after review, with some post-review time imputed. Completion/exclusion rules and robustness checks are in the brief | AI allowed was associated with **19% longer task time** in the randomized experiment (95% CI +2 to +39%, as restated in the February 2026 update). Developers forecast 24% less time and retrospectively estimated 20% less time. These perceptions are separate from the measured result; this is not a universal seniority effect. |
 | [METR, 24 February 2026 follow-up](../evidence/primary/2026-metr-productivity-design-update.md); experiment begun August 2025 | Later tools and a broader recruited pool; tasks again randomized to allow/disallow AI | Authors consider the current magnitude **unreliably estimated** because participation/task selection and concurrent-agent time measurement changed. They expect more benefit than in early 2025, but describe weak evidence for its size. This update neither establishes a general speedup nor invalidates the historical 2025 result. |
 
-**Repository interpretation:** These are different experiments, not a controlled comparison of juniors and seniors, or of greenfield and brownfield work. Task, participant and tool differences could each contribute to the contrast; their separate causal contributions are not identified here. Time reduction is not an equally sized percentage increase in throughput. Neither the positive nor the negative task result can decide enterprise delivery performance by itself.
+**Repository interpretation:** The experiments differ in tasks, participants and tools. They do not isolate junior versus senior developers, or new projects versus existing systems, so they cannot tell us how much each difference explains the contrasting results. A percentage reduction in task time is not the same percentage increase in the rate of completed delivery. Neither the positive nor the negative task result, on its own, determines how an enterprise's delivery process performs.
 
 ### [Observational Activity and Rework: Xu et al., v3](../evidence/primary/2025-xu-copilot-oss-activity.md)
 
@@ -41,7 +43,7 @@ Xu et al. use Copilot's 2021 language availability in Microsoft-owned open-sourc
 
 The [brief](../evidence/primary/2025-xu-copilot-oss-activity.md) gives coefficients, transformed-count uncertainty and source-internal reporting discrepancies. The subgroup pattern motivates a redistribution hypothesis; it does not establish its cause, net project value or an enterprise-wide senior penalty.
 
-**Mechanism hypothesis:** Additional generated work could increase review effort when verification capacity does not grow with it. The task-time experiments above do not establish that labor redistribution occurred across teams. Tool friction, task mix and changes in scope are alternative explanations; stable review effort and improved production outcomes would weaken a review-bottleneck explanation in a local deployment.
+**Mechanism hypothesis:** More generated work could require more review effort if the ability to check it does not keep pace. The task-time experiments above do not show that work shifted between people across teams. Difficulties using the tools, different tasks and changes in the amount of work attempted are alternative explanations. In a local deployment, stable review effort alongside better production outcomes would weaken the explanation that review became a bottleneck.
 
 ---
 
@@ -95,9 +97,9 @@ These are positive activity results, with different aggregations and populations
 
 The positive Peng result belongs in the central comparison above. Its bounded scope does not make it irrelevant; it defines what was tested. METR likewise supplies a bounded negative result for early-2025 tools, followed by a later update with substantial identification limits.
 
-**Repository inference:** A local time saving may improve delivery, be absorbed by other constraints, or be traded for a larger or different output. Distinguishing these outcomes requires downstream measures and an appropriate comparator. It cannot be settled by assuming an unsupported industry-wide percentage of maintenance work or equating repository role with professional seniority.
+**Repository inference:** Time saved on one task may improve delivery. Other constraints may use up the saving, or developers may use it to attempt more or different work. To tell these outcomes apart, measure what happens after coding and compare it with a suitable baseline. An assumed industry-wide share of maintenance work cannot answer that question. Nor can treating a contributor's repository role as their professional seniority.
 
-The next section examines a separate source that explicitly follows activity toward projects and releases. Its findings must retain their own design and population boundaries.
+The next section examines a separate study of coding activity, projects and releases. Its findings apply to the people, tools and outcomes that study examined, under its own research design.
 
 ---
 
@@ -113,7 +115,7 @@ They do not track a fixed batch of commits through one funnel. Releases count re
 
 **Separate descriptive marketplace analysis:** Entry rises or reverses a decline on iOS, Android and Chrome, although Chrome growth predates the agentic period; SourceForge shows a slight entry increase. Three-month new-cohort usage has different proxies: iOS ratings are roughly stable, Android downloads rise modestly, and Chrome's proxy declines on an earlier trend. Chrome uses maxima of observed current-user counts, not directly measured cumulative installs. SourceForge has insufficient usage data for an equivalent comparison. These series are not causal follow-ups of the matched developers or measures of all consumer value. Discovery, demand, selection and adoption lag remain alternatives to a production constraint.
 
-**Repository hypothesis:** Additional admitted verification demand could increase waits when effective capacity, variation and work policies make the stage constrained. Headroom, controlled intake, useful selection or effective assistance could preserve quality and improve delivery. Neither attenuation nor the marketplace series identifies review as the constraint in most organizations. [Chapter4](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification) and the [claim graph and tests](appendices/mechanism-hypotheses.md) separate evidence, assumptions and proposed consequences.
+**Repository hypothesis:** Waiting could increase if more work is accepted for checking than a stage can handle at the required quality. That depends on available capacity, fluctuations in demand and the rules for taking in and releasing work. Spare capacity, limits on intake, better task selection or useful assistance could instead preserve quality and improve delivery. Neither the smaller gains toward releases nor the marketplace results identifies review as the constraint in most organizations. [Chapter4](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification) and the [claim graph and tests](appendices/mechanism-hypotheses.md) distinguish the evidence from the assumptions and possible consequences.
 
 ### Firm Evidence: The Work Around Code Changes Too
 
@@ -127,7 +129,7 @@ This is observational evidence with adoption assumptions and visible pre-period 
 
 ### Unmeasured Work Intensity: A Confounder to Test
 
-Work intensity could confound historical output comparisons. Neither GitClear dataset measures whether participants worked more hours or felt replacement pressure; its activity percentages cannot identify those mechanisms.
+Changes in how much people work could affect comparisons of output over time. Neither GitClear dataset measures whether participants worked more hours or felt pressure from the prospect of replacement. Its activity percentages cannot show whether either explanation applies.
 
 **Repository hypothesis:** Adoption expectations might increase overtime or change task selection in some teams. A local study would need hours, task mix, perceived pressure and an appropriate comparator. Stable hours with sustained downstream gains would weaken the overtime explanation. Neither respondent attitudes nor an individual burnout account identifies that causal pathway; they are different evidence from the GitClear results.
 
@@ -142,7 +144,7 @@ A [Techno Diaries introduction](../evidence/secondary/2025-technodiaries-review-
 
 Peng's measured task-time reduction is an operational result for a standardized task, not merely sentiment. METR's comparison of forecast and measured time shows that perceptions can diverge from performance in a particular setting. It does not establish that every productivity survey is invalid.
 
-For a claim about enterprise value, ask whether the evidence measures review effort, release completion, defects, production use and total engineering cost over an adequate period. A task experiment alone establishes neither an improvement nor a deterioration in those outcomes. The absence of those measures in these experiments is not evidence that no relevant vendor or external research exists. This is a comparison of the identified sources reviewed here, not a comprehensive search of vendor or enterprise evaluations; task experiments, surveys and documentary revenue statements answer different questions.
+For a claim about enterprise value, ask whether the evidence follows review effort, completed releases, defects, production use and total engineering cost for long enough to assess the result. A task experiment alone cannot show whether those outcomes improved or worsened. The experiments' missing measures do not show that no relevant vendor or external research exists. This chapter compares the identified sources reviewed here; it is not a comprehensive search of vendor or enterprise evaluations. Task experiments, surveys and company revenue statements answer different questions.
 
 **Proposed measurement practice:** Publish task definitions, tool dates, population, comparator and uncertainty alongside the outcome. Keep task-time results, self-reported experience, activity counts and delivery measures separate. Apply the same scope requirements to positive and negative findings.
 
@@ -158,9 +160,9 @@ Claims about faster coding should specify what was measured and the safeguards r
 
 ### Economic Hypothesis: Count Downstream Work
 
-A subscription purchases a capability; its economic result depends on verified benefits and the work required to absorb it. More candidate code could increase downstream cost when review, testing or maintenance capacity is constrained, but neither GitClear study measures lifecycle TCO or inevitable maintenance-budget failure.
+A subscription buys access to a tool. Whether it pays off depends on demonstrated benefits and the work needed to use its output. More proposed code could raise later costs if review, testing or maintenance cannot keep pace. Neither GitClear study measures total cost of ownership (TCO) over the software's life or establishes that maintenance budgets must fail.
 
-Testing this hypothesis requires total engineering effort, quality, release and operating costs alongside delivered value. A deployment with sustained delivery gains and stable or lower total cost would limit the hypothesis's applicability.
+To test this hypothesis, compare delivered value with total engineering effort, quality, and release and operating costs. Sustained delivery gains at stable or lower total cost would limit where the hypothesis applies.
 
 ---
 
@@ -168,13 +170,13 @@ Testing this hypothesis requires total engineering effort, quality, release and 
 
 The experiments establish a positive effect on conditional completion time in Peng's standardized task and a negative effect on active task time in METR's familiar-repository setting with early-2025 tools. The 2026 follow-up leaves the present magnitude uncertain. They do not establish an industry-wide slowdown or a universal penalty for experienced developers.
 
-**Repository hypothesis:** Where additional upstream work exceeds downstream verification and release capacity, local acceleration may increase queues or rework rather than delivered value. A deployment with shorter production lead time and stable or improved quality would limit that hypothesis's applicability. Code quality and maintenance effects require separate evidence; they cannot be read out of these task-time percentages.
+**Repository hypothesis:** If more work enters checking and release than those functions can handle, faster coding may lead to longer queues or more rework without more delivered value. Shorter time to production with stable or improved quality would limit where that hypothesis applies. Effects on code quality and maintenance need their own evidence; task-time percentages do not measure them.
 
 Xu likewise reports positive project activity alongside heterogeneous contributor activity; Agarwal reports substantial AF activity gains, uncertain IF activity gains and mode-specific structural metrics. These observational results do not establish disappearing aggregate gains, per-feature debt or measured cognitive load. They belong beside the task experiments as different evidence, not additional stages of one causal estimate.
 
 GitClear adds positive selected-cohort output trends and historical quality-proxy signals in separate datasets. Its composite is not net delivery, and its clone/reuse measures do not prove a universal maintenance or staffing outcome.
 
-The practical implication is to measure the complete delivery boundary while retaining local benefits and costs as distinct results.
+The practical question is whether useful software reaches users with the required quality and at a justified total cost. Measure the full delivery process, while reporting the benefits and costs at each step separately.
 
 ---
 
@@ -196,7 +198,7 @@ The practical implication is to measure the complete delivery boundary while ret
 
 ## Chapter 2. Evaluating the Cost of AI-Assisted Delivery
 
-A coding-tool invoice is one input to a delivery decision. The relevant comparison is a defined use case with and without assistance, at comparable quality and scope, including benefits and any additional work. Neither corporate spending totals nor faster code production determines the result for another organization.
+A coding-tool invoice tells only part of the cost story. Compare a defined use case with and without assistance, doing comparable work at comparable quality. Count the benefits and any additional work. Corporate spending totals and faster code production do not determine whether another organization's deployment pays off.
 
 ### Historical Engineering Context
 
@@ -210,9 +212,9 @@ Alphabet, Meta and Microsoft report substantial company-wide research expenses a
 
 The former **$7–27M transformation table**, **30–120-times license multiplier** and **1–3% license share** did not have a traceable empirical basis for their scope, timing or incremental allocation. They are withdrawn as benchmarks. Adding one-time programs to recurring labor and comparing the sum with one year of licenses does not establish a universal cost requirement.
 
-The [conditional sensitivity appendix](appendices/tco-sensitivity.md) instead exposes hypothetical paid seats, price, new external setup, annual cash, already-funded staff effort and existing-platform allocation. It separates the first year from a subsequent steady year and allows released capacity as well as added effort. Every input is an explicit assumption; no market price, forecast or typical-enterprise estimate is implied. The examples reproduce arithmetic, not a measured ROI or complete TCO.
+The [conditional sensitivity appendix](appendices/tco-sensitivity.md) shows how the calculation changes under stated assumptions. It includes hypothetical paid seats, price, new external setup, annual cash costs, already-funded staff effort and a share of existing-platform costs. It separates the first year from a later steady year and allows for time freed as well as added work. Every input is an assumption. The examples imply no market price, forecast or typical-enterprise estimate; they demonstrate arithmetic, not measured return on investment (ROI) or complete TCO.
 
-Some teams may reuse sufficient capability and realize net benefits; others may need additional investment or face more rework. A local baseline and measured change distinguish those cases. An existing platform’s allocated cost should be visible, but relabeling its entire sunk or already-funded cost as a new AI expense would overstate the incremental budget.
+Some teams may already have the tools, skills and capacity they need and gain benefits after costs. Others may need more investment or face more rework. Compare each team's results with its own baseline to tell these cases apart. Include the relevant share of an existing platform's cost, while distinguishing it from new spending: charging the platform's entire sunk or already-funded cost to the AI rollout would overstate the added budget.
 
 ### Market Spending Is Different from Local Economics
 
@@ -226,12 +228,12 @@ A decision record should distinguish:
 
 - new license/usage, setup and recurring cash costs from existing funded capability;
 - one-time work from recurring operations, with paid seat count and period;
-- additional or released engineering capacity from actual payroll/cash savings;
-- delivered benefits, quality, rework and risk over the same comparison boundary.
+- engineering time added or freed from actual payroll/cash savings;
+- delivered benefits, quality, rework and risk for the same scope and period.
 
-This is a proposed measurement practice, not a validated universal operating model. If useful delivery improves at stable or lower comparable total cost, with stable or improved quality, that weakens the adverse cost scenario. If setup, supervision and rework exceed benefits, a deployment may require adjustment or rejection. The source records here do not assign relative probabilities or imply that every positive ROI claim is false.
+This is a proposed way to measure a rollout, not a validated operating model for every organization. Useful delivery gains at stable or lower comparable total cost, with stable or improved quality, would weaken the adverse cost scenario. If setup, supervision and rework cost more than the benefits, a deployment may need adjustment or rejection. The sources here do not estimate how likely each result is or imply that every positive ROI claim is false.
 
-A rollout could increase candidate work faster than a team can absorb it, so capacity and total cost should be measured alongside tool adoption. GitClear's selected added-line averages do not establish a universal 2x team-input increase, an 18-month maintenance bill or burnout.
+A rollout could increase proposed work faster than a team can check, integrate and operate it. Measure that ability and total cost alongside tool adoption. GitClear's selected added-line averages do not establish a universal 2x team-input increase, an 18-month maintenance bill or burnout.
 
 #### References
 
@@ -248,25 +250,25 @@ A rollout could increase candidate work faster than a team can absorb it, so cap
 
 ## Chapter 3. Adoption Budgets and Delivery Capability
 
-Chapter 1 reports different task-time effects in different settings; it does not establish that senior engineers generally slow down. The business question is how adoption decisions account for such variation and for the conditional cost comparison discussed in Chapter 2. The market-pressure explanation below is a proposed mechanism, not a finding of the productivity experiments.
+Chapter 1 reports different task-time effects in different settings; it does not establish that senior engineers generally slow down. Adoption decisions need to account for that variation and for the benefits and costs discussed in Chapter 2. This chapter asks whether expectations about adoption could lead organizations to fund tools before assessing the work needed to use them.
 
-Market pressure is one possible influence on adoption budgets. It does not establish a capability shortfall or a need to redesign every team's operating model.
+Market pressure is a possible explanation to test. The productivity experiments do not measure it, and it does not by itself establish that a team lacks the needed skills or capacity or must redesign how it works.
 
 ---
 
 ### The Mechanics of the "Execution Mandate"
 
-The proposed mechanism begins when adoption expectations are set before the work and capability needed for a defined use case have been assessed.
+The proposed mechanism begins when an organization sets adoption expectations before assessing the work, skills and capacity needed for a particular use case.
 
 **Adoption-pressure hypothesis:** Headlines about large coding-task gains could encourage rapid rollout or cost-cutting expectations. The [bounded experiments in Chapter 1](#bounded-experiments-positive-negative-and-temporally-limited-evidence) do not measure investor pressure or establish enterprise savings. Evidence about adoption decisions and resulting delivery outcomes would be needed to test this mechanism.
 
-In this scenario, leadership approves adoption without assessing whether existing review, testing, integration and operating capability is sufficient. A license-only budget creates a gap if additional necessary work is identified and left unfunded; it may be adequate when the required capability already exists.
+In this scenario, leaders approve adoption before checking whether the team can review, test, integrate and operate the resulting changes. A budget covering only licenses leaves a gap if additional necessary work is identified and left unfunded. It may be adequate when the required capability already exists.
 
 An illustrative **"Execution Mandate"** might read as follows. This is an invented example, not a recorded board quotation:
 
 > *"Implement AI. Here is the budget for licenses. Here is a small budget for a prompt engineering workshop. Go."*
 
-A license-only budget can omit additional work needed for a particular rollout. A subscription is not automatically a capital investment, and approving licenses does not itself establish a volume increase or a capacity shortfall. Chapter 2 proposes comparing incremental costs, reused capability and delivered benefits; the governance-risk mechanism here requires separate observations.
+A budget covering only licenses can leave out work needed for a particular rollout. A subscription is not automatically a capital investment. Buying licenses also does not show that work volume increased or that capacity fell short. Chapter 2 proposes comparing added costs, resources that can be reused and delivered benefits. Testing the decision-making risk described here needs separate observations of how the rollout was approved and funded.
 
 ---
 
@@ -294,7 +296,7 @@ The surveys have different populations, questions, dates and outcome boundaries.
 
 Supplier revenue answers another question. [Microsoft's 29 January 2025 FY25Q2 release](../evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md) attributes to chairman and CEO Satya Nadella an **annual revenue run rate above $13 billion for the overall AI business**. That is not disclosed Copilot revenue, a full year's recognized revenue or a measure of customer ROI. It cannot identify why customers adopted the tools.
 
-**Repository hypothesis:** Market expectations could influence adoption budgets. Testing the proposed execution-mandate mechanism requires actual decisions, local budgets, capability and delivery outcomes. The surveys, personal commentary and revenue statement do not by themselves show investor coercion, vendor intent or underfunding. Existing controls, smaller changes or useful review assistance could preserve gains without a large transformation programme.
+**Repository hypothesis:** Market expectations could influence adoption budgets. To test the proposed execution-mandate mechanism, examine actual decisions and budgets, the ability to carry out the required work, and delivery outcomes. The surveys, personal commentary and revenue statement do not by themselves show investor coercion, vendor intent or underfunding. Existing controls, smaller changes or useful review assistance could preserve gains without a large transformation programme.
 
 ---
 
@@ -302,11 +304,11 @@ Supplier revenue answers another question. [Microsoft's 29 January 2025 FY25Q2 r
 
 This illustrative "Execution Mandate" can mislead when it ignores context.
 
-Consider a time-limited prototype used to test a product hypothesis, with an explicit decision that its code can be discarded and does not yet carry durable production obligations. Under those assumptions, rapid iteration with bounded verification may be useful. This is an illustrative case, not a description of startups as a class or a guarantee of survival or a later rewrite.
+Consider a short-lived prototype used to test a product idea. Assume the team has explicitly decided that its code can be discarded and does not yet carry lasting production obligations. Under those assumptions, rapid iteration with checks of a defined scope may be useful. This is an illustrative case. It does not describe all startups, guarantee their survival or imply that they will later rewrite the code.
 
 For a startup or an established enterprise maintaining a durable system, the comparison includes later integration, operation and maintenance as well as initial implementation. Organizational age does not remove those obligations. No universal post-deployment TCO percentage is established by the sources reviewed in Chapter 2.
 
-**Conditional cost-risk scenario:** Short-term coding savings could be outweighed by extra verification or maintenance if that additional work exceeds delivered benefits. Reusing sufficient capability or sustaining useful gains at stable or lower comparable cost would weaken this scenario. Neither a lifecycle cost share nor a future dollar loss is measured here.
+**Conditional cost-risk scenario:** Extra checking or maintenance could outweigh short-term coding savings if the additional work costs more than the delivered benefits. The scenario would be weakened where existing resources are sufficient, or useful gains last at stable or lower comparable cost. This section measures neither a share of lifecycle costs nor a future dollar loss.
 
 ---
 
@@ -320,9 +322,9 @@ An adoption dashboard can answer whether tools are used. It cannot by itself sho
 
 ### Conclusion: Test the Capability Gap Before Prescribing Transformation
 
-The budget error examined here is conditional: assuming tool-level gains will reach delivery without checking any additional work required for the chosen use case. The absence of a large transformation programme does not establish that error.
+The possible budget error is to assume that gains from a tool will improve delivery without checking what extra work the chosen use case requires. A team can avoid that error without a large transformation programme.
 
-Where measured review, integration or maintenance needs exceed existing capability, targeted process or capacity changes may be justified. If existing capability is sufficient and useful delivery improves at comparable or lower total cost, with stable or improved quality, that weakens the adverse scenario. No universal ranking of typing and thinking costs, or minimum transformation spend, follows from the sources in Chapter 2.
+Where measured review, integration or maintenance needs exceed what the team can handle, targeted changes to its process or capacity may be justified. Where existing capability is sufficient and useful delivery improves at comparable or lower total cost, with stable or improved quality, the adverse scenario is weakened. The sources in Chapter 2 establish neither a universal ranking of typing and thinking costs nor a minimum transformation spend.
 
 ---
 
@@ -337,7 +339,7 @@ Where measured review, integration or maintenance needs exceed existing capabili
 
 ## Chapter 4. A Review-Capacity Scenario: When Candidate Work Outruns Verification
 
-Chapter 1 reports positive and mixed activity findings, plus static-analysis signals with design and uncertainty limits. Xu and Agarwal do not establish a universal decline in quality or a measured review bottleneck. This chapter proposes a conditional systems scenario: additional candidate work could exceed review and validation capacity. Its assumptions and downstream consequences require local evidence.
+Chapter 1 reports positive and mixed activity findings, plus static-analysis signals with design and uncertainty limits. Xu and Agarwal do not establish a universal decline in quality or a measured review bottleneck. This chapter examines a possible mismatch: more proposed changes arrive than a team can review and validate. Evidence from the local workflow is needed to show whether that mismatch exists and what follows from it.
 
 Goldratt and Cox's **Theory of Constraints** is a methodological lens, not evidence identifying a team's constraint or an AI effect. The [methodology record](../evidence/methodology/1984-the-goal.md) explicitly retains an unresolved original-book edition/access gap. The assumptions below are repository proposals; they are not a theorem quoted from that edition.
 
@@ -345,20 +347,20 @@ Goldratt and Cox's **Theory of Constraints** is a methodological lens, not evide
 
 ### Which Stage Constrains This Use Case?
 
-Consider coding, review, validation and release stages. If coding initially limits delivery and later stages have headroom, faster implementation can increase useful releases. If review already limits delivery, extra candidate output need not increase throughput; faster coding can still save effort or enable better task selection. Neither case establishes that coding speed is useless or that every team must encounter a new bottleneck.
+Consider coding, review, validation and release. If coding limits delivery and the later stages have spare capacity, faster implementation can increase useful releases. If review already limits delivery, more proposed code may leave the rate of completed delivery unchanged. Faster coding could still save effort or help the team choose better tasks. Coding speed can therefore be useful, and a new bottleneck is not inevitable.
 
-A constraint can move, be shared across stages or be a release policy rather than a person. Compare production outcomes before selecting a response.
+The limiting factor can move or involve several stages. It can also be a release policy, rather than a person. Compare production outcomes before choosing a response.
 
 ---
 
 ### Admitted Work Meets Effective Capacity
 
-**Conditional repository mechanism:** generated candidates are not automatically admitted work. A queue hypothesis needs the following measured conditions, with comparable units and observation windows:
+**Conditional repository mechanism:** generating a change does not mean accepting it into the delivery process. To test whether accepted work creates a queue, measure the following over comparable periods and in comparable units:
 
-- **Admission and risk mix:** Which candidates enter review, and how much verification does each require? PR/line counts alone omit size, risk, familiarity and rejected work.
-- **Effective service capacity:** Available reviewer/validator time, skills, context, tools and required quality determine processing capacity. Constant headcount or budget does not imply fixed effective capacity.
-- **Utilization and variation:** Average demand below capacity does not rule out burst-related waits, uneven skills or long-tail tasks. Persistently greater admitted demand suggests an accumulating backlog only while work cannot be completed, redirected or withdrawn; no waiting-time multiplier is calibrated here.
-- **WIP and release policies:** Pull limits, smaller changes, batching and release calendars can prevent or relocate a queue. A deliberate scheduled wait is different from evidence of overload.
+- **Work accepted for review and its risk:** Which proposed changes enter review, and how much checking does each need? PR/line counts alone leave out size, risk, familiarity and rejected work.
+- **Ability to review at the required quality:** How much can reviewers and validators handle with their available time, skills, context and tools? That ability can change even when headcount or budget stays the same.
+- **Demand over time:** Average demand below capacity can still include bursts, unevenly available skills or unusually demanding tasks that cause waits. A backlog may keep growing if accepted work continues to exceed capacity and cannot be completed, redirected or withdrawn. This chapter estimates no waiting-time multiplier.
+- **Work in progress (WIP) and release rules:** Limits on starting work, smaller changes, batching and release calendars can prevent a queue or move it elsewhere. A planned wait for a release date does not by itself show overload.
 
 ```mermaid
 flowchart TD
@@ -372,18 +374,18 @@ flowchart TD
     E --> G
 ```
 
-Demand and service capacity must be estimated independently of observing a queue, over a defined stage and window. Record opening WIP, admissions, completions, withdrawals and transfers; backlog accounting itself is not an empirical discovery about AI. The arrows describe assumptions and proposed relationships, not a path measured in one source. Xu's positive project activity, Agarwal's mode-specific activity and structural estimates, and GitClear's [selected output measures](../evidence/primary/2025-gitclear-developer-output.md) do not jointly calibrate arrival rates, review service time or a universal volume multiplier.
+Estimate the work required and the capacity available separately from the queue itself, for a defined stage and period. Record how much work was already in progress, what entered, what finished, and what was withdrawn or transferred. That accounting does not itself establish an effect of AI. The arrows show assumptions and proposed relationships; no single source measures the whole path. Xu's positive project activity, Agarwal's mode-specific activity and structural estimates, and GitClear's [selected output measures](../evidence/primary/2025-gitclear-developer-output.md) cannot be combined to estimate arrival rates, time spent reviewing each change or a universal increase in volume.
 
 ---
 
 ### The Inventory Problem
 
-Queued software work can carry coordination and context costs. The following are possible relationships in this scenario, not measured rates:
+Software waiting in a queue can take extra work to coordinate and understand later. The following are possible relationships to test; this scenario supplies no measured rates:
 
 * **WIP (Work In Progress):** A larger queue could increase switching costs. [Xu v3](../evidence/primary/2025-xu-copilot-oss-activity.md) finds fewer commits in the core activity quartile, but its review-count increase is uncertain (p=.086). It measures neither WIP nor review hours and does not prove that senior engineers stopped building to triage.
 * **Merge Conflicts:** Longer waits could create extra reconciliation work when overlapping changes continue. The rate depends on the repository and change mix; no exponential multiplier is established here.
 * **Cognitive Load:** More structurally complex changes may be harder to inspect. [Agarwal v2](../evidence/primary/2026-agarwal-agent-adoption.md) reports repository-month complexity estimates of +34.85% (AF) and +42.87% (IF), not human cognitive load or time per review. The proposed link requires direct local measurement.
-* **Stale Context:** A queued change may need reevaluation against a newer codebase; this depends on intervening changes and available context.
+* **Stale Context:** A waiting change may need to be checked again against a newer codebase. That depends on what changed in the meantime and what context is available.
 
 **Repository hypothesis:** More or less review effort is possible depending on change size, familiarity, risk and available assistance. Measure review hours and quality directly; no general 2–3× multiplier is established by the retained source set.
 
@@ -391,10 +393,10 @@ Queued software work can carry coordination and context costs. The following are
 
 ### Possible Responses at a Constrained Review Stage
 
-If review demand exceeds capacity, a team might experience longer queues or pressure to shorten checks. These are adverse possibilities, not the only choices or an observed response distribution.
+If the work needing review exceeds what reviewers can handle, queues could grow or pressure to shorten checks could rise. These are possible adverse responses. They are not the only choices, and the report does not measure how often teams choose each one.
 
-- **Maintain the review boundary:** Intake may have to wait or shrink if review capacity cannot grow. That need not imply burnout or poor delivery management.
-- **Reduce scrutiny without adequate verification:** Some defects could escape. The frequency and consequences require observation; no source here establishes that this is the inevitable or individually rational choice.
+- **Keep the required checks:** New work may have to wait or intake may need to shrink if review capacity cannot grow. That need not imply burnout or poor delivery management.
+- **Shorten checks without adequate verification:** Some defects could escape. Their frequency and consequences need to be observed; no source here establishes that this choice is inevitable or rational for the individual making it.
 - **Adapt the workflow:** Smaller changes, intake limits, targeted checks or useful review assistance could preserve quality and improve flow.
 
 The report's **Rubber Stamp Trap** names the second risk scenario. It does not establish that senior engineers generally approve unverified changes or that adoption necessarily rewards this behavior.
@@ -403,22 +405,24 @@ The report's **Rubber Stamp Trap** names the second risk scenario. It does not e
 
 ### A Feedback Hypothesis With Conditions
 
-License procurement alone does not identify a capacity gap. A possible adverse loop requires additional conditions at each edge:
+Buying licenses alone does not show that a team lacks capacity. For the proposed harmful feedback loop to occur, each link needs its own conditions:
 
-1. **More admitted service demand:** Extra candidates enter the pipeline without sufficient rejection, smaller changes or offsetting effort savings.
-2. **Longer waits:** Demand and variation exceed effective capacity under the chosen WIP/release policy.
-3. **Additional verification or rework:** Waiting/intervening changes or unfamiliarity actually increase effort; context tools may prevent this.
-4. **Quality or capacity consequences:** Inadequate checks could permit defects, or rework could displace planned work. These require measured defects and role-hours, not an assumption of rubber stamping or burnout.
+1. **More work accepted for checking:** More proposed changes enter the process without enough rejection, smaller changes or other effort savings to offset the added work.
+2. **Longer waits:** The amount and variability of work exceed what the stage can handle under its rules for work in progress and releases.
+3. **More checking or rework:** Waiting, intervening changes or unfamiliarity actually add effort. Tools that preserve context may prevent this.
+4. **Effects on quality or available capacity:** Inadequate checks could let defects through, or rework could displace planned work. Test this with defect measures and hours spent by each role; do not assume rubber stamping or burnout.
 
-Stable or falling WIP/review effort with useful delivery gains would weaken an inevitable-harm account. If intake controls or new capacity prevented the trigger, this is nonactivation or adaptation, not disconfirmation of harm under that trigger. Lower total effort can coexist with more review effort; test those endpoints separately. Growing queues could instead reflect changing task mix, staff absence, release batching or a non-review constraint. [Hypotheses H1–H4 and their tests](appendices/mechanism-hypotheses.md) preserve these alternatives and beneficial/null outcomes; no probability is assigned to the scenarios.
+Useful delivery gains with stable or falling work in progress and review effort would weaken a claim of inevitable harm. If intake controls or added capacity prevented the overload condition, the team avoided it or adapted successfully. That does not test what would happen if the condition were present. Lower total effort can also coexist with more review effort, so measure each separately.
+
+Growing queues could have other causes: a different task mix, absent staff, release batching or a constraint outside review. [Hypotheses H1–H4 and their tests](appendices/mechanism-hypotheses.md) retain these alternatives and the possibility of beneficial or null results. The scenarios have no assigned probabilities.
 
 ---
 
 ### Conclusion: Test the Constraint
 
-A faster upstream stage can improve delivery when downstream stages can absorb the work. If review is already constrained, more candidate changes may instead grow the queue. This conditional distinction is the point of the scenario; it is not a finding that AI only optimizes typing or necessarily worsens delivery.
+A faster earlier stage can improve delivery when later stages can handle the work. If review is already constrained, more proposed changes may instead grow the queue. The scenario asks which conditions apply. It does not establish that AI only speeds up typing or necessarily worsens delivery.
 
-Xu's positive project activity and Agarwal's positive AF activity remain compatible with either outcome. Their measures do not establish review hours, production lead time or a universal senior bottleneck. Measure those outcomes before attributing a local traffic jam to the proposed mechanism or selecting a capacity intervention.
+Xu's positive project activity and Agarwal's positive AF activity remain compatible with either outcome. Their measures do not establish review hours, production lead time or a universal senior bottleneck. Measure those outcomes before attributing a local delay to the proposed mechanism or deciding how to change capacity.
 
 ---
 

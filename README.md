@@ -4,7 +4,7 @@
 
 **An independent research synthesis on AI-assisted software delivery risk**
 
-**Our research thesis: AI coding tools have changed the capacity to produce candidate software faster than delivery systems have adapted their ability to select, understand, verify, integrate, operate and obtain value from it. This imbalance calls for reassessing the whole SDLC.**
+**Our research thesis: AI coding tools have increased our ability to produce software changes faster than teams have adapted the rest of the work needed to make those changes useful. We need to examine the whole delivery process: deciding what to build, understanding and checking it, putting it into service, maintaining it and seeing whether it helps users.**
 
 **Primary author:** [Vitalii Oborskyi](https://www.linkedin.com/in/vitaliioborskyi) · **Project:** [Uncertainty Architecture Group](https://github.com/UncertaintyArchitectureGroup)
 
@@ -12,53 +12,55 @@
 
 ## The research thesis
 
-The unit of analysis is the complete software-delivery lifecycle:
+Writing code is one part of delivering software. This report examines the complete software development lifecycle (**SDLC**):
 
 **Intent → requirements → design → code → review → test → integration → deployment → operation → realized user outcomes → business economics → feedback to Intent.**
 
-These are recurring functions, not a mandatory waterfall. AI can change several of them. The proposed mechanism is that faster candidate production can increase admitted work faster than complementary capability adapts. Under those conditions, local gains may become waiting, rework or obligations that surface later. Rebalancing means finding the actual constraint and testing a useful response: better automation, clearer intent, smaller changes, stronger capability, less unnecessary work or retaining an already adequate process.
+These activities can overlap and repeat; the list does not prescribe a fixed sequence. AI can change several of them. Our proposed explanation is that teams may accept more changes than they can understand, check, integrate and maintain at the required quality. In that case, time saved while coding may turn into waiting, rework or work left for later. **Rebalancing** means finding what actually limits useful delivery and testing a response: better automation, a clearer goal, smaller changes, stronger skills or tools, or less unnecessary work. An existing process that already works well may need no change.
 
-Each node contributes more than an artifact. It also supplies decisions, learning, coordination, understanding, ownership and feedback. **[Review is both a quality gate and an ownership gate](report/appendices/mechanism-hypotheses.md#review--rev-1-and-rev-2):** the receiving team needs to assess the change and be able to explain, diagnose, modify and recover the system. An approval click does not establish those abilities. The research compares all relevant outcomes with the actual previous process, whose strengths and weaknesses must also be measured.
+Each part of this process does more than produce a document or code. It also helps people make decisions, learn, coordinate, understand the system and take responsibility for it. **[Review has two jobs: check the change and make sure the team can take care of it](report/appendices/mechanism-hypotheses.md#review--rev-1-and-rev-2).** The team needs to explain important behavior, diagnose problems, make changes and recover from failures. Clicking “approve” does not demonstrate those abilities. We compare these outcomes with what the previous process actually achieved, including its weaknesses.
 
-The purpose is **useful software for users, sustainable team capability and justified lifecycle cost and risk**. More code or releases do not by themselves establish user benefit, competitive advantage or ROI. Delivering the same useful service at lower cost can also be a gain. The [canonical hypothesis register](report/appendices/mechanism-hypotheses.md#the-thesis-and-the-outcome-that-matters) separates the premise, mechanisms, consequences and remedies, with observations that could support or weaken each.
+The goal is **software that helps users, a team that can keep supporting it, and benefits that justify the total cost and risk**. More code or releases alone do not demonstrate user benefit, competitive advantage or return on investment. Providing the same useful service at lower cost can also be a gain. The [hypothesis register](report/appendices/mechanism-hypotheses.md#the-thesis-and-the-outcome-that-matters) breaks the argument into questions we can test: what changed, why gains may fail to carry through, what later costs may follow and whether a proposed response helps.
+
+The register also asks [what else could explain the results](report/appendices/mechanism-hypotheses.md#competing-explanations). These questions are numbered **ALT-1–6** for reference. They have different roles. Existing tools or team adaptation may handle the extra work; a change in the work or its measurement may explain an apparent gap. Separately, we must ask whether AI still brings an overall benefit and whether a proposed remedy is worth its added cost. Several of these answers can be true together.
 
 ## Quick Start
 
 | Need | Start here |
 | --- | --- |
 | Read the argument in order | [1. Evidence and Delivery Outcomes](report/01_the_illusion.md) → [2. Verification and Delivery Mechanisms](report/02_broken_mechanics.md) → [3. Scenarios and Adoption Decisions](report/03_the_aftermath.md) |
-| Examine a particular SDLC function or challenge the thesis | [Hypothesis register](report/appendices/mechanism-hypotheses.md), its [node index](report/appendices/mechanism-hypotheses.md#node-index), and the [evaluation method](governance/hypothesis-evaluation.md) |
-| Compare the thesis with rival explanations | [Six competing-explanation families](report/appendices/mechanism-hypotheses.md#competing-explanations) and [how evidence distinguishes them](governance/hypothesis-evaluation.md#compare-explanations) |
+| Examine one part of the delivery process or challenge the thesis | [Hypothesis register](report/appendices/mechanism-hypotheses.md), its [index of delivery activities](report/appendices/mechanism-hypotheses.md#node-index), and [how we evaluate a claim](governance/hypothesis-evaluation.md) |
+| Understand objections and other explanations | [What the ALT questions mean](report/appendices/mechanism-hypotheses.md#competing-explanations) and [how to tell explanations apart](governance/hypothesis-evaluation.md#compare-explanations) |
 | Trace a claim to its source and processing state | [Evidence Library](evidence/README.md), [Source Registry](evidence/SOURCES.md), and [References](REFERENCES.md) |
 | Inspect the economic assumptions and reproduce the illustrative calculation | [Appendices and analytical tools](#appendices-and-analytical-tools) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |
 | Understand the research and reasoning boundaries | [Scope](SCOPE.md), [Doctrine](DOCTRINE.md), and [Artifact Model](ARTIFACT_MODEL.md) |
 | Contribute evidence, a correction or implementation feedback | [`AGENTS.md`](AGENTS.md), [Contributing](CONTRIBUTING.md), and [governance playbooks](governance/README.md) |
 
-The [live master work plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) owns the work sequence and dependencies. The working cycle is one approved issue through review, merge and verification, followed by a plan checkpoint and approval of the next issue. New inputs enter through [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues); the [issue workflow](governance/issue-workflow.md) explains intake and completion. The [backlog audit](governance/issue-backlog-audit.md) is a dated snapshot, and the [repository ownership map](governance/repository-map.md) identifies related projects.
+The [live work plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) records priorities and dependencies. We complete one approved task through review, merge and verification, then review the plan and obtain approval for the next task. Submit new evidence or suggestions through [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues); the [issue workflow](governance/issue-workflow.md) explains the process. The [backlog audit](governance/issue-backlog-audit.md) records an earlier snapshot, and the [repository ownership map](governance/repository-map.md) explains how related projects divide the work.
 
 ## Key Takeaways
 
-1. **Empirical finding:** AI tools can accelerate isolated coding work.
-2. **Systems inference:** Local code-generation speed does not guarantee end-to-end software-delivery throughput.
-3. **Systems hypothesis:** Additional admitted work may strain a downstream stage when effective capacity and work policies cannot absorb it; successful adaptation can preserve useful gains.
-4. **Repository risk framing:** Delivery risk depends on task selection, tool behavior, verification capacity and deployment choices.
-5. **Proposed practice:** Assess the delivery system and adjust controls where evidence identifies a gap; reuse adequate existing capability.
+1. **AI can speed up some coding tasks.** This is a measured finding in particular settings.
+2. **Faster coding does not guarantee faster delivery of useful software.** This is a conclusion about how the delivery system works.
+3. **Extra work may exceed what another part of the process can handle.** This is a hypothesis to test. Teams that adapt successfully may keep the gains.
+4. **Risk depends on what teams choose to build and how they check and release it.** Tool behavior and the ability to verify changes also matter.
+5. **Measure the process and address the problem the evidence identifies.** This is our proposed practice. Keep existing tools and practices when they already do the job.
 
 The current evidence supports parts of this argument. [September NBER](evidence/primary/2026-writing-code-vs-shipping-code.md) reports positive release gains alongside larger coding-activity gains in selected cohorts. [Chen–Stratton](evidence/primary/2026-chen-stratton-firm-production.md) adds a distinct firm setting with positive agent coding-activity estimates, a smaller uncertain tracked-completion estimate and changes in review-process measures. The [register's evidence assessment](report/appendices/mechanism-hypotheses.md#existing-evidence-and-its-exact-coverage) preserves positive, negative, null and context-dependent findings.
 
-**The complete causal chain remains a research hypothesis.** Independently identified capacity shortfalls, lost understanding, persistent debt, exhaustion, higher TCO and the effectiveness of proposed remedies each require their own evidence. Elapsed merge time does not measure active review labor or ownership. The [claim boundaries](DOCTRINE.md#claim-boundaries) and [Repository Scope](SCOPE.md) distinguish source findings, repository inference and conditional scenarios.
+**The full explanation remains a research hypothesis.** Each part needs its own evidence: whether the team lacks capacity, loses understanding, accumulates checking and maintenance obligations that remain unresolved, becomes exhausted or incurs higher total cost—and whether a proposed remedy helps. Time between submitting and merging a change does not tell us how many hours people spent reviewing it or whether they understand the system. The [claim boundaries](DOCTRINE.md#claim-boundaries) and [Repository Scope](SCOPE.md) explain how we separate measured findings, our interpretation and possible future outcomes.
 
 ## Repository Map
 
 | Area | Purpose | Start here |
 | --- | --- | --- |
 | **Report** | Evidence, conditional delivery mechanisms, alternative scenarios and adoption decisions | [Part 1](report/01_the_illusion.md), [Part 2](report/02_broken_mechanics.md), [Part 3](report/03_the_aftermath.md) |
-| **Hypotheses and appendices** | Complete node outcomes, falsifiable propositions, source context and inspectable calculations | [Hypothesis register](report/appendices/mechanism-hypotheses.md) and [appendix guide](#appendices-and-analytical-tools) |
-| **Evidence** | Source registry, evidence taxonomy, source-oriented briefs, limitations, and integration status | [Evidence Library](evidence/README.md) |
+| **Hypotheses and appendices** | What each part of delivery contributes, how to test our claims, source context and reproducible calculations | [Hypothesis register](report/appendices/mechanism-hypotheses.md) and [appendix guide](#appendices-and-analytical-tools) |
+| **Evidence** | Source list, study summaries, limitations and records of what has been checked | [Evidence Library](evidence/README.md) |
 | **Protocols** | Adaptable controls for engineers, teams, public evidence, and organizations | [Operational Protocols](protocols/README.md) |
 | **Scope and Doctrine** | Subject boundaries, evidence principles, claim boundaries, and reasoning rules | [Scope](SCOPE.md) and [Doctrine](DOCTRINE.md) |
-| **Artifact Model and Glossary** | Repository structure, artifact relationships, and canonical terminology | [Artifact Model](ARTIFACT_MODEL.md) and [Glossary](GLOSSARY.md) |
+| **Artifact Model and Glossary** | How the documents fit together and what recurring terms mean | [Artifact Model](ARTIFACT_MODEL.md) and [Glossary](GLOSSARY.md) |
 | **Governance and work plan** | Workflows, approval, source states, verification, synchronization, independent review and current priorities | [`AGENTS.md`](AGENTS.md), [governance playbooks](governance/README.md), and [live plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) |
 | **Citation and attribution** | Repository citation metadata, terminology provenance, and attribution boundaries | [`CITATION.cff`](CITATION.cff) and [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) |
 | **History and review records** | Material evolution, dated assessments and inspectable work records | [Changelog](CHANGELOG.md), [dated reviews](governance/reviews/), and [work records](governance/work-records/) |
@@ -69,14 +71,14 @@ The current evidence supports parts of this argument. [September NBER](evidence/
 
 | Material | What to use it for |
 | --- | --- |
-| [SDLC hypothesis register](report/appendices/mechanism-hypotheses.md) | Thesis, complete node-function inventories, current evidence coverage, alternatives, weakening observations and proposed remedy tests |
+| [SDLC hypothesis register](report/appendices/mechanism-hypotheses.md) | The thesis, what each delivery activity contributes, available evidence, other explanations, and tests that could show where the argument or a remedy is wrong |
 | [Cost context](report/appendices/cost-context.md) | Historical company records, market estimates and budget intentions, with their accounting and inference boundaries |
 | [Conditional cost sensitivity](report/appendices/tco-sensitivity.md) | A hypothetical pilot-cost example with declared assumptions; it is not an empirical TCO estimate or ROI calculation |
 | [Model inputs](report/appendices/tco-scenarios.json), [reproduced results](report/appendices/tco-results.json), and [calculator](tools/tco_sensitivity.py) | Inspect and reproduce the illustrative arithmetic using the appendix's [reproduction instructions](report/appendices/tco-sensitivity.md#reproduction-and-validation) |
 
 ## Claim confidence map
 
-The **Claim confidence map** evaluates selected repository conclusions: what kind of claim each statement is and how strongly the current evidence supports it. It does not classify sources.
+The **Claim confidence map** shows what kind of claim each selected conclusion is and how strongly the current evidence supports it. It assesses the claim; source types are listed separately in the Evidence Map below.
 
 | Claim                                                                                          | Type                      | Confidence  |
 | ---------------------------------------------------------------------------------------------- | ------------------------- | ----------- |
@@ -92,7 +94,7 @@ The debt-risk row describes a [conditional local scenario](report/03_the_afterma
 
 ## 🧾 Evidence Map
 
-The **Evidence Map** classifies materials by role. It answers a different question from the Claim confidence map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
+The **Evidence Map** explains what each kind of material contributes: measured research, documentary records, interpretation or practical guidance. Use it to find the material behind a claim; use the Claim confidence map above to see our assessment of that claim.
 
 Browse the [Evidence Library](evidence/README.md) through its class indexes: [primary empirical research](evidence/primary/README.md), [primary documentary sources](evidence/documentary/README.md), [secondary evidence](evidence/secondary/README.md), [theory and methodology](evidence/methodology/README.md), and [datasets](evidence/datasets/README.md). The coverage below points to the briefs behind the report; source-processing states remain in the [Source Registry](evidence/SOURCES.md).
 
@@ -114,7 +116,7 @@ The canonical source inventory and status registry is [`evidence/SOURCES.md`](ev
 
 ## 📊 The Crisis Map
 
-The Crisis Map is an **explanatory systems synthesis**, not a chronology, an evidence scorecard, or a causal chain measured by one study. Each node states its claim type. Solid arrows show the repository's proposed system mechanism; they do not imply that one population, tool, period, or metric was followed from end to end.
+The Crisis Map shows **our proposed explanation of how delivery problems could develop**. Each box says what kind of claim it contains. The arrows show proposed relationships. No single study followed one group, tool or measure through this whole chain; the map does not establish the order in which events actually happened or rate the strength of the evidence.
 
 ```mermaid
 flowchart TD
@@ -157,7 +159,7 @@ The Doctrine defines why these maps remain bounded views rather than substitutes
 
 ## 🛡️ Operational Response
 
-The repository organizes its practical response as a four-layer control stack:
+The practical guides address four levels of responsibility:
 
 | Layer | Protocol | Primary question |
 | --- | --- | --- |

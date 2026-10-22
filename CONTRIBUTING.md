@@ -80,13 +80,15 @@ outcomes and contrary evidence fit. Citation count alone is insufficient. Test
 both the adverse mechanism and its proposed remedy, with user benefit and full
 lifecycle economics as downstream endpoints.
 
-Compare the strongest applicable [rival explanations](report/appendices/mechanism-hypotheses.md#competing-explanations)
+Compare the strongest relevant [other explanations](report/appendices/mechanism-hypotheses.md#competing-explanations)
 using the [comparison method](governance/hypothesis-evaluation.md#compare-explanations)
 and [record shape](governance/templates.md#source-hypothesis-comparison) within the
-existing brief, register or review. Explain predicted versus observed results and
-what they can distinguish, including uncertainty and material non-applicability.
-In discovery these judgments remain provisional; method adoption alone does not
-reassess existing evidence or change source status.
+existing brief, register or review. State what each explanation predicts, what the
+study found and whether that result can tell the explanations apart. Keep
+uncertainty visible and explain why any important comparison does not apply.
+The ALT questions concern different parts of the argument; some can be true
+together. During a search these judgments remain provisional. Adopting the method
+does not itself reassess existing evidence or change source status.
 
 ### Protect confidential information
 

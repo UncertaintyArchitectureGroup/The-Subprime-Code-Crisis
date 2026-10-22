@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "0ea37371fb8520aa627f1edace7f6fce88f71e74b3d98490bfe02d05debd469e",
+    "digest": "f2ed6ba2ba46d4381603a5830862e5e762ce2554499377903ec348a741f7347e",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "5ca82c9cb4eb5957759d0ecdb71cbe2d6abd26282642d0b29759c58e51a0556e"
+        "sha256": "c6057d11dc38af0603365c20c0b4a66fcc393666b31ea09733de934ca40369b1"
       },
       {
         "path": "CITATION.cff",
@@ -72,7 +72,7 @@
       {
         "path": "CONTRIBUTING.md",
         "identity_mode": "content",
-        "sha256": "0c9ac70ba6053586838c22d2ad37dbfbb92816c8e8d385f42c70a992232e5057"
+        "sha256": "0e8cfc33bfce93db7434a1d4037abc1fcb9d192ba08e8c55065d508f06ae9ecf"
       },
       {
         "path": "DOCTRINE.md",
@@ -82,7 +82,7 @@
       {
         "path": "GLOSSARY.md",
         "identity_mode": "content",
-        "sha256": "9b95dbb76ddc5fcdfedabe26724b5c1dc120a2f244f6c745f385546e176e8f7c"
+        "sha256": "1308c961e318c154f50608ecb551b7580b828fa5117888aace29191a2d3fb1b4"
       },
       {
         "path": "LICENSE.md",
@@ -92,7 +92,7 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "8cb85a6135e9018112a6fb687f228182bd94751aade5fd7c3cb57aac0f55f102"
+        "sha256": "6259a4d65f2b962574c33d933a69fe274fedbe9563a85148de658d10761f1e4a"
       },
       {
         "path": "REFERENCES.md",
@@ -332,7 +332,7 @@
       {
         "path": "governance/hypothesis-evaluation.md",
         "identity_mode": "content",
-        "sha256": "e03d8a27691572b0edabf4e3c9a9d57346057f6fd563bceff66093bb79281f37"
+        "sha256": "ccedc46c78e8c32f39ef636f8286cdce73cc34ffdcf8ae55b31815b1afbe8fe1"
       },
       {
         "path": "governance/independent-review.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "92a4054e0e1976cb05fb4773f02ad328cd018f0fea8d402098ab0b222c8087ca"
+        "sha256": "a5658a1348b8840e5e308b4d2c6c7712c29f3f6fbd116808ec5c1211fe939b5c"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -570,6 +570,11 @@
         "sha256": "9bbe86446ac08afaeed2c64c3c8bfbcbac9376d1c2c21e1319ddd56de35aaf49"
       },
       {
+        "path": "governance/reviews/issue-88-2026-10-22-plain-language.md",
+        "identity_mode": "content",
+        "sha256": "d4880cb18718cee3ffde64fe5a8b7ea35e73635f36f89986b549f801e08245e6"
+      },
+      {
         "path": "governance/status-model.md",
         "identity_mode": "content",
         "sha256": "ad0aeadd7360c7bec6ec76d59a886b9376f50f3fc06d6e7436619d84e5524d90"
@@ -582,7 +587,7 @@
       {
         "path": "governance/templates.md",
         "identity_mode": "content",
-        "sha256": "b9ab1d177892bfb6f028e652f170345aef78f3b33e774e6982454c2b9e0ce2a1"
+        "sha256": "554050a266a3585b327f1a9c89ca9f2b4e8c67adfae30d5affa02359f81e1cf4"
       },
       {
         "path": "governance/work-records/2026-08-04-evidence-state-integrity.toml",
@@ -745,6 +750,11 @@
         "sha256": "583d0660814a13bdd318dd230789376e808eb63524abde902f345b67c230b8d0"
       },
       {
+        "path": "governance/work-records/2026-10-22-issue-88-plain-language.toml",
+        "identity_mode": "content",
+        "sha256": "19b58b63a5f8864c75201dff63f12482699c81e93bbad72dba891ccb3d32f0d0"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -777,17 +787,17 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "5b2bf023dcf7f7595b00795b6907667b42d82f83c533904602a7e118660548b0"
+        "sha256": "3dcda51d0f5beb37351538049440cfd4dea363da9dd867cdfbc6f9f29fdc49e5"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "6b0cd169e39f34e50f207c5cc8f26f7f3d4a6fe2d41113f287b9febe81999fea"
+        "sha256": "053feebe1afa40fc827058981e6d3653612be6d2f5eef94efbcb8ff6dd6034a6"
       },
       {
         "path": "report/03_the_aftermath.md",
         "identity_mode": "content",
-        "sha256": "bf356dd9a3ce579ee5acf1fd3c20cb623f75e5bea7c933e083cc89cb50f224eb"
+        "sha256": "e421f9c3b5e2e28c215815f3c86f602ea8734384d7996dd8d73bdd7cac70bebe"
       },
       {
         "path": "report/appendices/cost-context.md",
@@ -797,7 +807,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "cd51f4736946b5bd19fc0c67889d4734402696200dc129ef96d0d65d971913a0"
+        "sha256": "2fef5b46774d74a68c549224ff94109df40d6813f354a3d742c208dfc6b6200e"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -2541,6 +2551,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-88-2026-10-22-plain-language.md",
+      "title": "Issue #88: plain-language pass — 2026-10-22",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2781,6 +2798,13 @@
     {
       "path": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
       "title": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-88-plain-language.toml",
+      "title": "governance/work-records/2026-10-22-issue-88-plain-language.toml",
       "instructions": [
         "AGENTS.md"
       ]
