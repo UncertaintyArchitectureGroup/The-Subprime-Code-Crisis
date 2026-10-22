@@ -24,10 +24,18 @@ As applicable, independently inspect:
   inventory, actual baseline, source coverage/omissions, substitutions, tradeoffs,
   user-value/full-cost implications and symmetric falsifiers under
   [hypothesis evaluation](hypothesis-evaluation.md);
+- applicable [source hypothesis comparisons](templates.md#source-hypothesis-comparison):
+  challenge omitted strong rivals, unsupported discrimination, source/prediction
+  mismatches, imprecision mistaken for equivalence and dependent evidence counted
+  as independent; check separate net-value/remedy claims and preserved harm/benefit;
 - active-issue authorization and the master-plan/next-issue checkpoint; do not
   endorse a future merge or next-task approval as already completed.
 
 The reviewer must actively seek omissions, misreadings, contradictory evidence, status errors, misleading synthesis, and incomplete synchronization.
+
+For method adoption, distinguish the implemented procedure from its pending
+application. Do not endorse older source cards as compared without an actual
+dated comparison, or infer a source-status change from the new method alone.
 
 ## Allowed outcomes
 

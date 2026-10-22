@@ -111,6 +111,16 @@ Repository interpretations must be labeled or written so that readers cannot rea
 
 The repository may propose mechanisms such as bottleneck migration, verification overload, deferred cost, or maintenance accumulation. Unless a source directly establishes the full causal chain, these remain systems interpretations or scenarios.
 
+### Explanations compete through their predictions
+
+An observation may fit several explanations. Its value for distinguishing them
+depends on how its direction, magnitude, scope and uncertainty compare with their
+specified predictions. Explanations may coexist or concern different links;
+support for a shared premise does not by itself identify a particular mechanism.
+The [comparison method](governance/hypothesis-evaluation.md#compare-explanations)
+keeps these judgments separate from source status and from the net value of a
+workflow or a proposed remedy.
+
 ### Maps are explanatory models
 
 Repository maps and summaries are bounded views over the underlying artifacts. They answer different questions and must not be treated as interchangeable scorecards or as one empirically measured causal sequence:

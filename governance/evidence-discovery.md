@@ -15,6 +15,15 @@ Before searching, create a written strategy that records:
 - populations, tasks, tools, outcomes, and settings of interest;
 - known blind spots and expected search limitations.
 
+For a relevant hypothesis, improvement claim or control, use the
+[comparison fields](templates.md#search-strategy-comparison-fields) to record
+applicable rival IDs, contrasting predictions and the observation that could
+distinguish them. Declare a bounded search scope and completion boundary, including
+channels, query families and observation/publication horizons; document changes
+with reasons. Seek evidence favorable to the strongest rivals and against the
+specified remedy. Completion does not require finding a favorable result or
+settling the hypothesis.
+
 Use multiple query families that deliberately seek positive, negative, null, mixed, contradictory, replication, and critique evidence. A search designed only to confirm the repository thesis is invalid.
 
 Prioritize original and inspectable sources:
@@ -211,6 +220,8 @@ Each entry must contain:
 | Search provenance | Database, site, query, and search date |
 | Relevance | Direct, adjacent, contextual, or not relevant |
 | Relationship | May support, weaken, contradict, replicate, or contextualize |
+| Hypothesis comparison | Applicable hypothesis/node/rival IDs and discriminating question; material non-applicability reason |
+| Diagnostic assessment | Provisional predicted-versus-observed relationship, direction/magnitude/uncertainty, missing measurement and design/scope limits |
 | Inclusion result | Included, excluded, or held |
 | Decision reason | Specific screening rationale |
 | Research entity | Authors, affiliations, and responsible organization |
@@ -222,6 +233,14 @@ Each entry must contain:
 | Proposed routing | Flow A, Flow C, context only, hold, or reject |
 
 Candidates must not disappear from the record because they are inconvenient, unfavorable, duplicated, or rejected. Deduplicate them while preserving the decision trail.
+
+Screen each candidate against the question. For applicable comparisons, use the
+[comparison method](hypothesis-evaluation.md#compare-explanations), recording what
+the accessible original permits at screening depth and what awaits full review.
+Distinguish a measured absence within a justified margin from missing measurement,
+imprecision and irrelevant scope. Compatibility with several accounts needs an
+explicit reason before favoring one. These fields
+extend the Candidate Register and do not create another registry or a final verdict.
 
 ## 13. Candidate Decision and Routing
 
@@ -246,7 +265,12 @@ A second agent or reviewer that did not perform the primary search must independ
 - verify canonical versions and publication statuses;
 - challenge Research Entity, Funding, Conflicts, Scope, External Validity, and Replication assessments;
 - inspect Candidate Register completeness and deduplication;
-- assess whether candidate routing follows the declared criteria.
+- assess whether candidate routing follows the declared criteria;
+- challenge omitted applicable rivals, queries favorable to them and evidence
+  against the remedy; test whether provisional discrimination follows predictions,
+  observed results, uncertainty and evidence-family independence rather than counts;
+- check that missing measurements and scope limits remain visible, net value and
+  remedy value are separate, and the declared search boundary is respected.
 
 Record one outcome:
 
@@ -269,8 +293,10 @@ A separate second reviewer is not required when the Independent Search Review al
 Flow E is complete only when:
 
 - the Search Strategy is recorded;
+- applicable rival predictions, the discriminating question and bounded scope are recorded, with coverage gaps and pending work assigned to an owner;
 - Inclusion and Exclusion criteria are explicit;
 - all screened candidates are traceable in the Candidate Register;
+- applicable candidate comparisons remain provisional and explain diagnostic limits or material non-applicability;
 - canonical versions, publication status, research entity, funding, conflicts, scope, external validity, and replication are assessed for accepted candidates;
 - candidate routing is explicit;
 - Independent Search Review is `Confirmed`;

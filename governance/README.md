@@ -65,8 +65,10 @@ On a pull request, Main health executes the validator version proposed by that p
 ## Navigation
 
 - [Hypothesis evaluation](hypothesis-evaluation.md): full SDLC-node function/outcome
-  assessment, Review ownership, symmetric tests and scoped evidence verdicts
-  within the existing flows; [record shape](templates.md#sdlc-node-assessment).
+  assessment, Review ownership, symmetric tests, [comparison of explanations](hypothesis-evaluation.md#compare-explanations)
+  and scoped evidence verdicts within the existing flows;
+  [node record](templates.md#sdlc-node-assessment) and
+  [source comparison record](templates.md#source-hypothesis-comparison).
 - [Evidence review](evidence-review.md): registration, source acquisition and assessment, evidence brief, and completion.
 - [Integration audit](integration-audit.md): repository-wide use search, trace, numeric and argument checks, corrections, synchronization, and verification completion.
 - [Evidence discovery](evidence-discovery.md): complete Flow E methodology and Independent Search Review.

@@ -28,6 +28,7 @@ The purpose is **useful software for users, sustainable team capability and just
 | --- | --- |
 | Read the argument in order | [1. Evidence and Delivery Outcomes](report/01_the_illusion.md) → [2. Verification and Delivery Mechanisms](report/02_broken_mechanics.md) → [3. Scenarios and Adoption Decisions](report/03_the_aftermath.md) |
 | Examine a particular SDLC function or challenge the thesis | [Hypothesis register](report/appendices/mechanism-hypotheses.md), its [node index](report/appendices/mechanism-hypotheses.md#node-index), and the [evaluation method](governance/hypothesis-evaluation.md) |
+| Compare the thesis with rival explanations | [Six competing-explanation families](report/appendices/mechanism-hypotheses.md#competing-explanations) and [how evidence distinguishes them](governance/hypothesis-evaluation.md#compare-explanations) |
 | Trace a claim to its source and processing state | [Evidence Library](evidence/README.md), [Source Registry](evidence/SOURCES.md), and [References](REFERENCES.md) |
 | Inspect the economic assumptions and reproduce the illustrative calculation | [Appendices and analytical tools](#appendices-and-analytical-tools) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |

@@ -67,6 +67,11 @@ The brief must include:
 12. A `Repository integration audit` section.
 13. An `Independent review` section.
 
+For a relevant hypothesis, improvement claim or proposed control, include or link
+the [source hypothesis comparison](templates.md#source-hypothesis-comparison) in
+the repository interpretation. Keep its predictions and bounded judgments separate
+from findings reported by the source.
+
 ### 3. Complete evidence review
 
 Add the brief to the relevant evidence-directory index and set:
@@ -91,6 +96,10 @@ A reviewed brief does not complete source processing.
   measured functions, proxies, omitted outcomes and baseline/intervention scope.
   A narrow study need not measure every outcome; do not infer preserved ownership,
   learning, user benefit or economics from an unmeasured dimension.
+- Screen relevance and compare applicable explanations using
+  [Compare explanations](hypothesis-evaluation.md#compare-explanations): check
+  predicted versus observed direction, magnitude, scope and uncertainty, explain
+  diagnostic limits and retain the strongest applicable rivals and counterevidence.
 
 ## Completion checklist
 
@@ -98,6 +107,7 @@ A reviewed brief does not complete source processing.
 - [ ] Identity, publication status, source class, canonical URL, and version history recorded.
 - [ ] Method, scope, dataset/population/period/comparator, metrics, and uncertainty recorded.
 - [ ] Findings, calculations, source-author interpretation, repository interpretation, and unsupported claims separated.
+- [ ] Relevance is screened and applicable source hypothesis comparisons record original results, rival predictions, diagnostic limits and material non-applicability.
 - [ ] Limitations, conflicts, external-validity risks, and relevant funding/support recorded.
 - [ ] Known repository uses recorded without assuming completeness.
 - [ ] Brief contains `Repository integration audit` and `Independent review` sections.

@@ -54,6 +54,10 @@ for the next evidence task; an open verdict is a useful result, not a requiremen
 to invent a supporting study. The first readable edition does not await completion
 of every node investigation.
 
+Use the [competing explanations](#competing-explanations) to ask which account a
+result favors, following the [comparison method](../../governance/hypothesis-evaluation.md#compare-explanations)
+and [source × hypothesis record](../../governance/templates.md#source-hypothesis-comparison).
+
 ## Common assessment contract
 
 The [existing evaluation method](../../governance/hypothesis-evaluation.md) defines
@@ -234,6 +238,220 @@ motivate this comparison but establish no common rebalancing package. Next:
 and each selected node issue; [#54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54)
 only if a specific feasible empirical question warrants collection.
 
+
+## Competing explanations
+
+These six families make the thesis contestable at its separate links: observed
+local acceleration, uneven capability, the constraint mechanism, its persistence,
+downstream consequences and the value of a specified remedy. **H0 is this
+register's research-thesis identifier, not a statistical null hypothesis.** The
+families are bounded alternatives, not exhaustive explanations or mutually
+exclusive sides. Several may operate in the same setting; identify the particular
+observation and link over which they compete.
+
+The common assessment contract and complete node inventories still apply. Each
+card describes a proposed comparison, not an observed baseline or a validated
+intervention. Its owning task fixes the population, exposure, comparator, horizon,
+meaningful effect and critical-outcome margins before judging results; any
+retrospective choices remain explicit. Preserve Review's quality and competent
+ownership outcomes even when one is unmeasured. No universal horizon, threshold,
+probability or mandatory manual activity is introduced here.
+
+| Family | Explanation to examine | Main claim boundary |
+| --- | --- | --- |
+| [ALT-1](#alt-1--adequate-capability-and-functional-substitution) | Existing capability or an effective substitute absorbs additional work | H0-B mechanism/prevalence; H0-R necessity |
+| [ALT-2](#alt-2--transitional-adaptation) | Early mismatch recedes through bounded adaptation | H0-B duration; H0-D persistence; H0-R attribution |
+| [ALT-3](#alt-3--task-mix-experimentation-and-measurement) | Scope, useful exploration or measurement accounts for apparent attenuation | H0-A/B interpretation; COD-1; DEBT-1 |
+| [ALT-4](#alt-4--demand-discovery-and-adoption) | Demand and uptake explain the production-to-value gap | H0-B at the value boundary; INT/VAL/ECO |
+| [ALT-5](#alt-5--selection-heterogeneity-and-external-changes) | Selection, context or other changes explain associations or limit their scope | Causal attribution and generalization of H0/node claims |
+| [ALT-6](#alt-6--net-value-and-incremental-remedy-value) | Net benefit and the incremental value of a remedy are separate questions | H0-D/ECO versus H0-R/BAL-1 |
+
+**Initial verdicts, 2026-10-22: Open**, including ALT-6a and ALT-6b separately.
+[#109](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/109)
+defines these comparisons; it does not apply them to the existing evidence packet
+or change its dated assessments. The nine-entry comparison belongs to
+[#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110),
+and the finite diagnostic search to
+[#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111).
+The node owners below retain subsequent research. Definition of a family supplies
+neither evidence for it nor a new source state.
+
+### ALT-1 — Adequate capability and functional substitution
+
+**Scope and comparator:** teams admitting more comparable AI-assisted candidate
+work, with specified baseline headroom, candidate quality or assistance in other
+functions. Measure service requirements and available competent capacity
+independently of the queues and losses being predicted. Compare the actual
+workflow with its prior or credible concurrent baseline, and distinguish existing
+capability from a separately proposed extra intervention. Follow complete delivery
+cycles and a relevant delayed ownership/maintenance window.
+
+**Prediction and distinguishing observations:** useful delivery improves while
+quality, demonstrated understanding and recovery capability remain adequate at
+acceptable total cost. Direct observations of the substitute supplying the same
+function distinguish functional replacement from merely removing a manual step.
+Sustained adequate outcomes without the proposed extra intervention weaken a claim
+that this setting needed that intervention; absent overload exposure does not
+refute a conditional harm prediction under overload.
+
+**Would weaken this account:** independently measured higher comparable admitted
+demand exposes a capability shortfall, persistent waiting/rework or a critical
+quality/ownership loss despite the claimed headroom or substitute. Examine changed
+work mix, reduced intake, staffing additions, hidden transferred effort and short
+follow-up before attributing either success or failure.
+
+**Relations and owners:** contests H0-B's prevalence/necessity claim and specific
+H0-R remedies; it can coexist with constraints elsewhere. Full node outcomes remain
+owned by the [node index](#node-index), especially
+[Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92),
+[Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93)
+and [Integration #95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95).
+
+### ALT-2 — Transitional adaptation
+
+**Scope and comparator:** comparable teams/work during a defined adoption period.
+Follow the same teams through a declared learning horizon, with credible concurrent
+comparators where available. Record tool versions, staffing, training and process
+changes; distinguish routine adjustment from the particular H0-R intervention.
+
+**Prediction and distinguishing observations:** an early mismatch diminishes
+within that horizon as capability or coordination adapts, while useful outcomes
+and critical quality/ownership functions recover. A longitudinal trajectory with
+observed adaptation is more diagnostic than comparing unrelated early and late
+cohorts. Recovery after a specified intervention alone does not identify spontaneous
+adaptation or establish the intervention's incremental effect.
+
+**Would weaken this account:** the predicted recovery fails within the stated
+horizon with adequate measurement and precision, or apparent recovery comes only
+from dropout of struggling teams, reduced scope or uncounted transferred work.
+Check survivor selection, seasonal demand, staffing and simultaneous tool changes;
+do not extend the learning window after seeing an unfavorable result.
+
+**Relations and owners:** may explain timing while accepting initial H0-B imbalance;
+challenges persistence in H0-D and attribution of improvement to H0-R. Relevant
+owners are [Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93),
+[Operation #97](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/97)
+and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99),
+including HUM-1/2 and DEBT-1's distinct delayed endpoints.
+
+### ALT-3 — Task mix, experimentation and measurement
+
+**Scope and comparator:** comparable assigned initiatives or tasks whose scope,
+exploration, activity accounting or release policy changes with AI use. Compare
+functional outcomes, quality and total effort across the same defined boundaries;
+include failed, discarded and stopped work. Follow experimentation through its
+decision/learning window and released work through the relevant delivery lag.
+
+**Prediction and distinguishing observations:** apparent activity-to-output
+attenuation is explained partly or wholly by broader scope, useful exploration,
+finer counting or batching, without the proposed overload mechanism. Linked
+task-to-outcome observations and justified learning from stopped experiments help
+distinguish this account from wasted work. Unequal percentages from different
+populations cannot form a conversion funnel.
+
+**Would weaken this account:** attenuation and independently identified capability
+shortfalls persist after credible boundary, scope, quality and lag comparisons,
+without corresponding useful learning or additional functionality. Check task
+selection, unobserved abandoned work and measurement changes. Report the total
+exposure effect alongside adjusted comparisons: scope or experimentation may be
+part of AI's effect, so adjusting it away is not automatically a causal correction.
+
+**Relations and owners:** qualifies H0-A/B and COD-1 interpretations and inferred
+waste/debt, while allowing a real constraint to coexist. Owners:
+[Intent #89](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/89),
+[Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92)
+and [Integration #95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95);
+DEBT-1 retains its persistence and later-cost test.
+
+### ALT-4 — Demand, discovery and adoption
+
+**Scope and comparator:** released capabilities and comparable user groups/tasks,
+where user-outcome growth may lag production improvement. Link specific delivered
+changes to availability, discovery, adoption and task benefit. Compare demand and
+service conditions over a declared uptake and sustained-benefit window, including
+non-users and adversely affected groups.
+
+**Prediction and distinguishing observations:** a gap arises at discovery, demand,
+competition or uptake despite adequate production and operability. Linked evidence
+that users do not discover, need or yet adopt a delivered capability distinguishes
+this boundary from a failure to deliver it. Usage and user benefit remain separate;
+lower cost or better reliability can benefit users with unchanged usage.
+
+**Would weaken this account:** sufficiently observed stable demand and uptake
+conditions accompany an identified production/quality constraint that explains the
+missing useful outcome, or the predicted uptake recovery does not occur within the
+stated window. Check changing audiences, pricing, product fit, competing offerings
+and external shocks. Separate marketplace series cannot identify this chain.
+
+**Relations and owners:** competes with H0-B explanations specifically at the
+production-to-value boundary; it does not explain every review queue and may
+coexist with one. Owners:
+[Intent #89](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/89),
+[User outcomes #98](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/98)
+and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99).
+
+### ALT-5 — Selection, heterogeneity and external changes
+
+**Scope and comparator:** developers, teams or repositories with different adoption,
+task selection, experience, architecture or concurrent changes. Define exposure,
+assignment/analysis units and relevant strata; compare credible assigned or
+matched groups over pre-exposure and outcome windows appropriate to the claim.
+
+**Prediction and distinguishing observations:** an apparent AI effect diminishes
+under a more credible comparison, precedes exposure, tracks a separate change,
+or is concentrated in specified contexts. Allocation evidence, pre-trends,
+attrition/participation checks and within-context estimates distinguish selection
+or external-change explanations from an effect of the stated exposure. Genuine
+effect heterogeneity limits generalization even when an average causal effect exists.
+
+**Would weaken this account:** a scoped effect survives credible assignment,
+comparator and measurement checks with adequate precision, and proposed external
+changes do not explain its pattern. Check spillovers, concurrent staffing/deadlines,
+measurement error and post-exposure selection; favorable subgroup choices made
+after results remain exploratory. Robustness in one setting does not establish
+prevalence elsewhere or eliminate every unidentified confounder.
+
+**Relations and owners:** challenges attribution or generalization of H0 and node
+claims, without denying a conditional mechanism in a genuinely exposed setting.
+[#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110)
+owns the first comparative assessment; each [node owner](#node-index) retains its
+population/design question, and [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100)
+owns the specific marketing-to-decision chain in H0-C/MKT-1.
+
+### ALT-6 — Net value and incremental remedy value
+
+These are **two separately judged propositions**, not one verdict that can replace
+the individual endpoints in H0-D. Both compare useful user outcomes, all affected
+role-hours/costs and critical capability/quality floors over a stated setup,
+delivery and maintenance horizon. Declare valuation, opportunity-cost and
+uncertainty assumptions; do not add incompatible outcome units into a balance score.
+
+**ALT-6a — Positive net value despite a local burden.** For comparable useful
+service, AI-assisted production may yield sufficient benefit or savings to justify
+greater verification effort or other specified burdens. Compare the actual
+AI-assisted workflow with the credible prior/concurrent workflow. Sustained
+benefit exceeding full incremental cost supports this account; a justified net
+loss or a benefit dependent on omitted costs weakens it. Examine attribution,
+benefit lag, cost transfer, pre-existing obligations and useful learning. Positive
+monetary net benefit does not erase a measured learning, maintenance or human harm,
+and cannot alone establish acceptable overall improvement when a critical floor
+fails. This qualifies a net-harm conclusion; it does not refute the adverse
+endpoint itself. Owners: [User outcomes #98](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/98)
+and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99),
+with H0-D/HUM/DEBT/OPS owners retaining their individual outcomes.
+
+**ALT-6b — Insufficient incremental value from the specified remedy.** Compare a
+predefined extra intervention with unchanged AI-assisted practice and, where
+feasible, further coding optimization at comparable investment. No meaningful
+incremental benefit, or cost/critical-outcome loss exceeding the gain, supports
+this account; sufficient demonstrated incremental benefit with preserved floors
+weakens it. Include setup, learning, upkeep and displaced work over the declared
+horizon. Check spontaneous adaptation, task selection and simultaneous changes;
+do not redefine a failed remedy after seeing results. This tests H0-R/BAL-1 and
+the node `-2` cards independently of ALT-6a. Owners:
+[Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99)
+and the relevant [node owner](#node-index); any separately approved collection
+remains [#54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54).
 
 ## Existing evidence and its exact coverage
 

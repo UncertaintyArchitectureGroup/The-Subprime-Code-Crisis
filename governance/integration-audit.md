@@ -101,7 +101,14 @@ Check whether:
   user-value/full-cost implications follow the
   [hypothesis evaluation method](hypothesis-evaluation.md);
 - hypothesis support reflects independent evidence, scope fit and counterevidence,
-  and adverse mechanisms and proposed remedies both remain falsifiable.
+  and adverse mechanisms and proposed remedies both remain falsifiable;
+- the [source hypothesis comparison](templates.md#source-hypothesis-comparison)
+  covers applicable rivals and matches original direction, magnitude, scope and
+  uncertainty at every material use; it distinguishes missing measurement,
+  imprecision and irrelevant scope, and justifies any claimed discrimination
+  rather than inferring it from shared compatibility alone;
+- net value and the specified remedy's incremental value remain separate, with
+  adverse endpoints and critical-outcome losses visible alongside benefits.
 
 When this check reveals a possible need to change report logic, a major conclusion, claim confidence, protocol logic, or a load-bearing repository map, do not edit that substantive artifact yet. Trigger the human-curated substantive-change discussion defined above, then follow [escalation](../AGENTS.md#escalation-and-conflict-handling) and [human approval gate](../AGENTS.md#human-approval-and-substantive-change-gate).
 
@@ -182,6 +189,7 @@ Only after all corrections are merged, the independent-review outcome is `Confir
 - [ ] Inspectable claim-to-source trace exists for every material use.
 - [ ] Numerators, denominators, units, populations, periods, uncertainty, and derived calculations were checked.
 - [ ] Claim strength and nearby argument fit match source design and scope.
+- [ ] Applicable source hypothesis comparisons and their diagnostic limits match the original results and every material use.
 - [ ] Report, README claims/tables/diagrams/maps, and neighboring conclusions were assessed.
 - [ ] Protocol implications record exactly one allowed outcome.
 - [ ] Any substantive change received explicit human approval before implementation.

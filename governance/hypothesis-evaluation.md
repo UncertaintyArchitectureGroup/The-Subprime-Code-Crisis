@@ -2,8 +2,11 @@
 
 This is a mandatory procedural extension of
 [AGENTS](../AGENTS.md#sdlc-hypotheses-and-complete-node-outcomes) for new or materially
-revised SDLC-node hypotheses, AI-improvement claims and proposed controls. It runs
-inside the existing source and governance procedures, not as a new source flow.
+revised SDLC-node hypotheses, AI-improvement claims and proposed controls. Its
+[comparison method](#compare-explanations) also implements the
+[canonical comparison rule](../AGENTS.md#competing-explanations-and-diagnostic-evidence)
+for relevant source assessments/searches. It runs inside the existing source and
+governance procedures, not as a new source flow.
 The [hypothesis register](../report/appendices/mechanism-hypotheses.md) owns the
 research content; [master plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
 owns its implementation sequence. This playbook defines the method, not a finding
@@ -22,6 +25,61 @@ observations that would weaken it. Preserve existing IDs and links when revising
 the register. Record explicit aliases or dispositions instead of silently replacing
 earlier hypotheses. A precise bounded thesis can be forceful without claiming a
 universal effect or an already measured complete causal chain.
+
+## Compare explanations
+
+Use the [competing-explanation families](../report/appendices/mechanism-hypotheses.md#competing-explanations)
+to identify the strongest applicable alternatives. They are starting points, not
+an exhaustive or mutually exclusive list. `H0` is the register's thesis identifier,
+not a statistical null hypothesis. Keep the comparison inside the existing brief,
+register or owning review artifact using the
+[source hypothesis comparison](templates.md#source-hypothesis-comparison).
+
+1. **Screen applicability.** For every source in the selected scope, identify the
+   proposition and relevant node/rival IDs, population, exposure or intervention,
+   comparator, outcomes and horizon. Explain material non-applicability. Distinguish
+   accounts competing for the same result from those that coexist or concern
+   different links: local acceleration, mismatch, persistence, harm and value.
+2. **State contrasting predictions.** Record what each applicable account predicts
+   and what observation would weaken it. Name the observation that could distinguish
+   them, including direction, meaningful magnitude and horizon. Specify margins
+   before testing; disclose retrospective choices. Separate an absent trigger from
+   an observed trigger with an absent endpoint so that successful adaptation can
+   challenge a prediction of harm under exposure.
+3. **Compare with the original result.** Record its exact locator, metric/unit,
+   direction, magnitude, scope and uncertainty alongside the predictions. Explain
+   support, weakening, contradiction within scope or inability to distinguish;
+   separate missing measurement, imprecision and irrelevant scope. A precise result
+   may weaken a predicted material effect; nonsignificance alone is not equivalence.
+   A result compatible with several accounts can favor one if its pattern is more
+   specifically predicted there. Give that reason and the design limits; shared
+   compatibility alone is insufficient, and no invented probabilities or likelihood
+   ratios may supply the missing discrimination.
+4. **Check alternative causes and complete outcomes.** Retain selection, task mix,
+   confounding, measurement and external-validity limits. Identify shared data,
+   versions or analyses before counting independent evidence families. Apply the
+   full node inventory below, including Review quality and competent ownership.
+   Assess ALT-6a (net value) separately from ALT-6b (the specified remedy's
+   incremental value): benefit and harm may coexist, and an aggregate gain cannot
+   conceal a critical-outcome loss. Adequate unchanged practice can weaken the
+   claimed need for a remedy without disproving every adverse mechanism.
+5. **Record the bounded conclusion and next observation.** Link the comparison to
+   the owning hypothesis and source-use trace, state unresolved outcomes and name
+   the owner of pending application or search. Source review checks the original
+   result; integration audit checks every material use; independent review challenges
+   omitted rivals and unsupported discrimination. The relationship descriptions
+   above are neither new source states nor a replacement for the scoped verdicts
+   below. In Flow E they remain provisional, with a discriminating question and
+   bounded search scope recorded before searching, including evidence favorable
+   to rivals and against a proposed remedy.
+
+**Migration:** [#109](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/109)
+adopts this method only. [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110)
+owns application to the nine accepted evidence entries, and
+[#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111)
+owns the finite diagnostic search. Older dated source cards have not thereby been
+compared under this method. Adoption alone neither reassesses evidence nor changes
+source status; actual source or material-use changes retain their Flow A–D triggers.
 
 ## Inventory the whole node
 

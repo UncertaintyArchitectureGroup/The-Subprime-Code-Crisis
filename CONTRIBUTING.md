@@ -80,6 +80,14 @@ outcomes and contrary evidence fit. Citation count alone is insufficient. Test
 both the adverse mechanism and its proposed remedy, with user benefit and full
 lifecycle economics as downstream endpoints.
 
+Compare the strongest applicable [rival explanations](report/appendices/mechanism-hypotheses.md#competing-explanations)
+using the [comparison method](governance/hypothesis-evaluation.md#compare-explanations)
+and [record shape](governance/templates.md#source-hypothesis-comparison) within the
+existing brief, register or review. Explain predicted versus observed results and
+what they can distinguish, including uncertainty and material non-applicability.
+In discovery these judgments remain provisional; method adoption alone does not
+reassess existing evidence or change source status.
+
 ### Protect confidential information
 
 For internal case studies:
