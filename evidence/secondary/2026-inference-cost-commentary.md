@@ -1,8 +1,8 @@
 +++
 source_ids = ["S-2025-03"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-22"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/03_the_aftermath.md", "report/appendices/cost-context.md", "REFERENCES.md"]
 +++
@@ -10,6 +10,27 @@ current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mecha
 # Markus inference-cost commentary: interpretation and corrected source boundaries
 
 ## Current integration checkpoint — 2026-10-22, #65
+
+The independently Confirmed six-use correction merged in PR102 at actual main
+`d0ede4d1856e1071c0ab6c52054adcf41a023833`, tree
+`f7b052a3be8a0b6691cf93ab1450a736625b4042`, identical to the accepted recording
+candidate. Exact-head and exact-main required checks passed; local actual-main
+contract, evidence integrity and RI freshness also passed. The
+[final verification record](../../governance/reviews/issue-65-2026-10-22-final-verification.md)
+records those observed conditions and the separate status-change review boundary.
+
+Integration **Verified**, Last verified **2026-10-22**, independent review
+**Confirmed** for the bounded source/content integration. Separate reviewer
+`/root/issue65_independent_review` also Confirmed final-state candidate `f936e9b`
+on 2026-10-22. The metadata PR still requires faithful recording/current-head
+checks and accepted main before #65 closes. Findings, limits and all six use paths are unchanged from the
+accepted correction. Verification does not validate the commentary's unsupported
+retellings or establish a measured software-maintenance effect.
+
+## Correction checkpoint — historical preparation for PR102
+
+The following records the reset-bearing correction before its accepted merge;
+the current final verification above supersedes its pending integration state.
 
 The #65 occurrence sweep found an existing README Evidence Map link missing from
 both Current use records. Flow D resets the previous integration acceptance and
