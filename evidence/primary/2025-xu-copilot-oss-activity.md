@@ -1,13 +1,30 @@
 +++
 source_ids = ["P-2025-03"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-20"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
-current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md"]
+current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Xu: Copilot availability and open-source activity
+
+## Current integration checkpoint — 2026-10-22, #86
+
+The full SDLC register adds or materially reframes this source's bounded evidence
+coverage. Flow D retains **Reviewed brief** and resets integration to
+**Needs re-verification / —** until the changed use is independently confirmed,
+merged and checked on main. The source findings/version below are unchanged.
+The earlier Confirmed review and verification records remain historical; the new
+#86 independent review is pending at this preparation checkpoint.
+
+Current use includes `report/appendices/mechanism-hypotheses.md`, in addition to
+the prior paths. The [#86 audit and occurrence trace](../../governance/reviews/issue-86-2026-10-22-register-audit.md)
+record original locators, scope, outcome omissions, all-use checks and placement.
+**Protocol outcome for #86: No protocol change.** Existing controls do not acquire
+empirical efficacy from a new hypothesis map. This checkpoint supersedes earlier
+integration-state prose for the new use; it does not rewrite prior acceptance.
+
 
 ## Citation, version and acquisition
 
