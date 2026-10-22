@@ -1,13 +1,27 @@
 +++
 source_ids = ["P-2026-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-22"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md", "evidence/primary/2026-chen-stratton-firm-production.md"]
 +++
 
 # Writing Code vs. Shipping Code — September 2026 revision
+
+## Final comparative-use checkpoint — 2026-10-22, #87
+
+Changed-use integration is **Verified / 2026-10-22** for accepted correction main
+`72a0b83798df53199341c4c3e96a2313e36c9398`, tree
+`32c435ae00593075be60bf26cb1e988656a08a06` (PR #106). Separate content,
+faithful-recording and actual-main eligibility reviews are **Confirmed**, and
+required head/main checks passed. The [final verification record](../../governance/reviews/issue-87-2026-10-22-final-verification.md)
+records the new comparison and all retained-use scope. The September original,
+findings and May/July history remain unchanged. Verification covers audited
+repository use, not the full SDLC hypothesis or an untested remedy.
+
+This checkpoint supersedes the #87 reset history below. The live issue records
+later acceptance of the final metadata PR; no future merge is inferred here.
 
 ## Changed comparative use — 2026-10-22, #87
 
