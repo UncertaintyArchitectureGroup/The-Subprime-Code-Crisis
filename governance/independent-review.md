@@ -20,6 +20,12 @@ As applicable, independently inspect:
 - attributed numbers, units, calculations, uncertainty, and diagrams;
 - report argument fit, README/maps, protocol implications, synchronization, and completion checklists;
 - human approval and decision record for substantive work.
+- for SDLC hypotheses, improvement claims or controls: the complete node-outcome
+  inventory, actual baseline, source coverage/omissions, substitutions, tradeoffs,
+  user-value/full-cost implications and symmetric falsifiers under
+  [hypothesis evaluation](hypothesis-evaluation.md);
+- active-issue authorization and the master-plan/next-issue checkpoint; do not
+  endorse a future merge or next-task approval as already completed.
 
 The reviewer must actively seek omissions, misreadings, contradictory evidence, status errors, misleading synthesis, and incomplete synchronization.
 

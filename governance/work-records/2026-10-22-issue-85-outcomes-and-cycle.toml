@@ -1,0 +1,23 @@
+record_version = 1
+title = "Complete SDLC node outcomes and one-issue approval cycle"
+primary_flow = "Approved governance change procedure"
+human_decision = "Issue #85 records the maintainer's explicit 2026-10-22 request to evaluate all node outcomes, include Review ownership, update AGENTS/workflows, create issues and use one issue through main/merge followed by master-plan reread and approval of the next issue. Master plan #84 contains the dated amendment."
+independent_review = "Review unavailable"
+# Assembled-candidate review is pending; do not infer completion from this record.
+# Detailed record: governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md.
+
+[changelog]
+decision = "Updated"
+reason = "Changes governance, hypothesis evaluation, contributor duties and issue/PR handoff templates."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+repository-architecture = "Existing research and artifact boundaries retained; method playbook and node vocabulary extend the existing systems lens, with no new evidence layer or duplicate register/master plan."
+source-registry = "No source identity, factual use, reviewed link, state or verification date changed."
+evidence = "No source finding, evidence brief or interpretation changed; method and issue intake do not integrate sources."
+evidence-indexes = "No new or revised brief to index."
+references = "README change only links the live work plan; no citation, bibliography, identity or attribution change."
+report = "Hypotheses and edition implementation are queued in #86/#88 and node research issues, not performed in this governance task."
+protocols = "No production control, threshold or gate changed; this task governs assessment of future proposed controls."

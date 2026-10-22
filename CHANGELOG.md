@@ -48,6 +48,15 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Governance
 
+- Added complete SDLC-node outcome assessment, including Review as both quality
+  and ownership, actual baselines, functional substitutes, tradeoffs, symmetric
+  hypothesis tests and scoped evidence verdicts. Existing source states remain
+  distinct; adoption of the method does not assign new research verdicts.
+- Adopted the maintainer's one-issue cycle: implement, independently review,
+  validate, merge and verify main; then reread/revise master plan #84, show the
+  next proposed issue/scope and wait for explicit approval before starting it.
+  Synchronized contributor, source-review, issue/PR and handoff procedures in #85.
+
 - Made the existing live issue/PR/main/CI/source-state handoff check explicit and discoverable through RI; local index freshness remains distinct from a dated live-status observation.
 - Adapted selected author-site controls: stable acceptance IDs with exact-source evidence, bounded dated handoff, RI inventory/task-context routes and asset-byte freshness. Clarified occurrence-level source/number/placement review and neutral, falsifiable criticism; canonical source states and merge/verification gates remain unchanged.
 - Kept RI tests independent of historical research-verification states; a source reset invalidates stale context and is reproduced on rebuild without changing canonical source state rules.

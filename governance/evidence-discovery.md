@@ -28,6 +28,15 @@ Prioritize original and inspectable sources:
 
 Record enough detail for another reviewer to rerun representative searches.
 
+For SDLC hypotheses or AI-improvement claims, include the stable hypothesis/node
+IDs and full function/outcome inventory from the
+[evaluation method](hypothesis-evaluation.md). Search for effects on the less
+visible outcomes as well as speed/quality, and for evidence that could weaken
+both the adverse mechanism and the proposed remedy. Identify coverage gaps and
+independence of empirical families; a macro/micro label or two citations is not
+itself triangulation. Flow E still cannot assign a final repository verdict or
+integrate claims.
+
 ## 2. Inclusion
 
 Define inclusion criteria before candidate selection. Criteria should address:

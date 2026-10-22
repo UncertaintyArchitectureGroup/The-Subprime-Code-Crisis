@@ -86,6 +86,11 @@ A reviewed brief does not complete source processing.
 - Separate source-author interpretation from repository interpretation and explicitly state what the source does not establish.
 - Record limitations and conflicts. When relevant, record funding and employer/tool/data support. Separate documented conflicts from repository inference; do not imply misconduct without evidence.
 - Assess external-validity boundaries, including representativeness, task realism, duration/lifecycle coverage, unit-of-analysis generalization, participant experience, tool/version dependence, selection/novelty effects, and geographic/organizational/regulatory scope.
+- For SDLC-node hypotheses or AI-improvement claims, map the source's outcomes to
+  the [node inventory](hypothesis-evaluation.md#inventory-the-whole-node). Record
+  measured functions, proxies, omitted outcomes and baseline/intervention scope.
+  A narrow study need not measure every outcome; do not infer preserved ownership,
+  learning, user benefit or economics from an unmeasured dimension.
 
 ## Completion checklist
 

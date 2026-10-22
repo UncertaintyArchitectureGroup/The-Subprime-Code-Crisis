@@ -17,22 +17,22 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "c43d44f7b1969e645c9cdc966d880fdba4fdc377345bec85c702fa435c57fcda",
+    "digest": "502a1f23281ea3798140af8e0f61dbc83b9f8c903fc59a90d2f47f56135387a9",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
         "identity_mode": "content",
-        "sha256": "39f023206fa179d5a9b379dc31fbcdffffe667345e7d1252a70c01695096c50a"
+        "sha256": "0ace4c5b67baf72a0d565d49cc4225f1825bae2fcea69a14d4fb5265e394d845"
       },
       {
         "path": ".github/ISSUE_TEMPLATE/work-item.md",
         "identity_mode": "content",
-        "sha256": "31af4ab594c048ee45e270046439404a4a36f0d63d237ee85e278afac33057b2"
+        "sha256": "0dea4f58085d968e4a33cf925d1c59c14029568ea460c5bd68ab99b7d98df7fd"
       },
       {
         "path": ".github/pull_request_template.md",
         "identity_mode": "content",
-        "sha256": "8a29aa977d3794c1645d26ae655e86f2bd6c6e712b07ceb794fbee0087497c24"
+        "sha256": "56f3ab06382eb8296bf9a866637d10411f3b6215878169f1cc4ff9ad6c006477"
       },
       {
         "path": ".github/workflows/main-health.yml",
@@ -52,7 +52,7 @@
       {
         "path": "AGENTS.md",
         "identity_mode": "content",
-        "sha256": "38e7a642c2528d156d94d657e33e7e382aa50e04a188385242c44148b9d4bd6d"
+        "sha256": "d00d2de0909a84aba3c66edc3aa25065268fdc4e33dccd9c8bc6578ab0c26130"
       },
       {
         "path": "ARTIFACT_MODEL.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "34f80a34cea80954c998ac0f066033f73da82dd5bc88fdf0f222dae370877e3d"
+        "sha256": "c06170dcae7c3d6bd4b62906e55abbd635ee813437a90148f6da18e82109ed1b"
       },
       {
         "path": "CITATION.cff",
@@ -72,17 +72,17 @@
       {
         "path": "CONTRIBUTING.md",
         "identity_mode": "content",
-        "sha256": "0cb65bf36db0215137a6ca7d26a179d94bfb439396cbcddc034872c80814c35a"
+        "sha256": "992bd642ef358d24f58cad8305319abcdf598bf0a86abc50ce3c0e7a399ae4be"
       },
       {
         "path": "DOCTRINE.md",
         "identity_mode": "content",
-        "sha256": "e13412316ea65aad6d872d662d4902493205396eb1f58fecc195527e8affdbe4"
+        "sha256": "6cce7d99120c818bcd768fccdd62a696bf5fed096b586025811f4c5e35d3e835"
       },
       {
         "path": "GLOSSARY.md",
         "identity_mode": "content",
-        "sha256": "2b7ce42499f4de7fcd02b3e37535dde695542467c041fde8bf53e81ab8539761"
+        "sha256": "b2cddda9b841c6ccd7cae5a98e846e52e76bbe508a909f757888fe7e53147bc2"
       },
       {
         "path": "LICENSE.md",
@@ -92,7 +92,7 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "e3a659ce6b7e8cb3e250d59fd0e9b05bdcda074447e29f86cd884214265c0894"
+        "sha256": "817b2e72b2d9d47a181f09cf974dd6be661f9d5eeca6f2adb1cd3d3df8466d7e"
       },
       {
         "path": "REFERENCES.md",
@@ -302,7 +302,7 @@
       {
         "path": "governance/README.md",
         "identity_mode": "content",
-        "sha256": "a1f830a5d8aa407c92b753dc894c86c623efca6f52f68c6e0ac94d31b601890a"
+        "sha256": "63da06f9d312bb0c7f750c3bd09e6049bdafaed6129185ff804c8132477e1496"
       },
       {
         "path": "governance/content-synchronization.md",
@@ -312,22 +312,27 @@
       {
         "path": "governance/evidence-discovery.md",
         "identity_mode": "content",
-        "sha256": "7c97242c94772355f7488e22e34e59af6a7f8755fbfb8bac741d4058fd1cbd81"
+        "sha256": "c738cdba38c84b14da66733d2a0353476b91d68931488de87e3ea0a6326cceaf"
       },
       {
         "path": "governance/evidence-review.md",
         "identity_mode": "content",
-        "sha256": "5ad54957e9f66bb1542c0c8dc792fe208843f9710ae11153d2329a4269ea95d5"
+        "sha256": "2bbe21ffc9764bbede330927fdf514794b9426e1605417ccd3000c510cbfa6bd"
+      },
+      {
+        "path": "governance/hypothesis-evaluation.md",
+        "identity_mode": "content",
+        "sha256": "7eabbad24e40e27fd0f836e1b63a9125853759aa2d632138f3775945100d7064"
       },
       {
         "path": "governance/independent-review.md",
         "identity_mode": "content",
-        "sha256": "43508856f66456db20591a88fed3c65e02d917d014edc7a9bb6fb429a2f47f06"
+        "sha256": "9bc60c504043c65d4880bf296e089550649bd494feca43c8885ea8c73c234279"
       },
       {
         "path": "governance/integration-audit.md",
         "identity_mode": "content",
-        "sha256": "9a2a4cf4ad5e133e358abd54349a4409728c730e6c2d87cdac5281c8b0916a4c"
+        "sha256": "b923279f70697495a8103ad242c129f4f7a6b65c9bdd14a827dc0cc5443063fb"
       },
       {
         "path": "governance/issue-backlog-audit.md",
@@ -337,17 +342,17 @@
       {
         "path": "governance/issue-workflow.md",
         "identity_mode": "content",
-        "sha256": "311218a95555923e64c8d2cced8902693299bc9a1eba442fe82d7283c14a5e89"
+        "sha256": "d9e5e6561747d7f161a229ff21c7b8b22a6fcc9bf53e60439050d12cbf5f938b"
       },
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "2fde1d6d0ba14fb18c1c58b1f7d7392cab9590bd836e55f03cdbf0b09b81ce80"
+        "sha256": "2e3595ee74a74e6d60d1edf6f7695e54b6a67526fb4d69307ddb57017e7e1ead"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
         "identity_mode": "content",
-        "sha256": "971eb0e8f75232de9776b05b642af06ffa33701b7188e4a38fd262141e341f73"
+        "sha256": "9e2ece20953849c144d5e5ff6c374555a43fafddb100ff812db1e91ead486247"
       },
       {
         "path": "governance/repository-contract.toml",
@@ -357,7 +362,7 @@
       {
         "path": "governance/repository-intelligence-config.json",
         "identity_mode": "content",
-        "sha256": "762b0aaf1f4318b14cd4f7dc9d2c5688aa3686fbbe9910ff067c516819e2c823"
+        "sha256": "3a5bc626083940220a046235f782a47aa781d44d83ccff619594b1508c3af586"
       },
       {
         "path": "governance/repository-intelligence.md",
@@ -470,6 +475,11 @@
         "sha256": "7bcc6327210dac44f46e29b5ec03037c3d93ad4513024cb68d750aefbbdb3cd5"
       },
       {
+        "path": "governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md",
+        "identity_mode": "content",
+        "sha256": "93b3338e0720085883a538c51fbbf6417d6d7e5be5bcf8c5efc18bb1da761cb5"
+      },
+      {
         "path": "governance/status-model.md",
         "identity_mode": "content",
         "sha256": "ad0aeadd7360c7bec6ec76d59a886b9376f50f3fc06d6e7436619d84e5524d90"
@@ -482,7 +492,7 @@
       {
         "path": "governance/templates.md",
         "identity_mode": "content",
-        "sha256": "af121247a529baad892872354f889c830a74c9fb7ecf3cdf3371b9cac2739210"
+        "sha256": "0ad5fb206a39e66a72d25c077779d69b3797582931a94e290d8cbed7906f527f"
       },
       {
         "path": "governance/work-records/2026-08-04-evidence-state-integrity.toml",
@@ -593,6 +603,11 @@
         "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
         "identity_mode": "content",
         "sha256": "6c74e708bf256f460be24c9c0dd2014a6a13fe5e3e6a1d4c9d0e921bd9728aa7"
+      },
+      {
+        "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
+        "identity_mode": "content",
+        "sha256": "a0c5404cd7fec15e5e0b2c5a47d4d4865bcf38b1075a6198345c38c9d7166fb8"
       },
       {
         "path": "governance/work-records/README.md",
@@ -790,7 +805,7 @@
     "path": "tools/repository_intelligence.py",
     "sha256": "6544d9790ecd432bf7174a6d18a644a78bb0a3eb7554483e4fe2c7ca2ad8e306",
     "config_path": "governance/repository-intelligence-config.json",
-    "config_sha256": "762b0aaf1f4318b14cd4f7dc9d2c5688aa3686fbbe9910ff067c516819e2c823"
+    "config_sha256": "3a5bc626083940220a046235f782a47aa781d44d83ccff619594b1508c3af586"
   },
   "owners": [
     {
@@ -811,7 +826,11 @@
         "ішью",
         "беклог",
         "status check",
-        "перевірка статусу"
+        "перевірка статусу",
+        "master plan",
+        "генеральний план",
+        "next issue",
+        "наступне ішью"
       ]
     },
     {
@@ -976,6 +995,18 @@
         "гіпотези",
         "сценарії"
       ]
+    },
+    {
+      "concern": "SDLC hypothesis and complete node outcome evaluation",
+      "path": "governance/hypothesis-evaluation.md",
+      "queries": [
+        "node outcomes",
+        "ownership gate",
+        "hypothesis evaluation",
+        "ауткоми ноди",
+        "оцінка гіпотез",
+        "ребалансування"
+      ]
     }
   ],
   "terms": [
@@ -1056,6 +1087,10 @@
       "path": "GLOSSARY.md"
     },
     {
+      "term": "Hypothesis verdict",
+      "path": "GLOSSARY.md"
+    },
+    {
       "term": "Independent conceptual convergence",
       "path": "GLOSSARY.md"
     },
@@ -1076,11 +1111,19 @@
       "path": "GLOSSARY.md"
     },
     {
+      "term": "Node function and outcome",
+      "path": "GLOSSARY.md"
+    },
+    {
       "term": "Not established",
       "path": "GLOSSARY.md"
     },
     {
       "term": "Observed",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Ownership gate",
       "path": "GLOSSARY.md"
     },
     {
@@ -1961,6 +2004,13 @@
       ]
     },
     {
+      "path": "governance/hypothesis-evaluation.md",
+      "title": "SDLC hypothesis and outcome evaluation",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/independent-review.md",
       "title": "Independent review playbook",
       "instructions": [
@@ -2171,6 +2221,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md",
+      "title": "Issue 85: complete node outcomes and sequential issue approval",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2341,6 +2398,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
       "title": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
+      "title": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
       "instructions": [
         "AGENTS.md"
       ]

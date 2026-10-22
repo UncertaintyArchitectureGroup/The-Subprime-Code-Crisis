@@ -13,6 +13,12 @@ Every governed pull request uses both:
 
 The work record must use one of the canonical independent-review outcomes: `Confirmed`, `Corrections required`, `Unresolved disagreement`, or `Review unavailable`.
 
+Link the one active issue and its scope approval. Several PRs may implement that
+issue under the existing source procedures. After its accepted result is merged
+and verified, complete the [master-plan checkpoint](issue-workflow.md#one-issue-execution-and-plan-checkpoint)
+before starting the next issue. A PR may identify that checkpoint as pending;
+its future merge and next-issue approval must not be asserted in advance.
+
 Merged work records are append-only repository history. A later pull request may add its own record but may not modify, delete, or rename an existing `governance/work-records/*.toml` file. Corrections must be recorded in a new work record that references the earlier record rather than rewriting it.
 
 ## Changed-path classification

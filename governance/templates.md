@@ -7,6 +7,8 @@ These templates are mandatory record shapes when required by [`AGENTS.md`](../AG
 ```markdown
 ## Start-of-work declaration
 
+- Active issue and live master plan:
+- Maintainer approval of this issue's scope/acceptance (reference/date):
 - Selected primary flow:
 - Files in scope:
 - Source IDs in scope:
@@ -27,6 +29,55 @@ When content synchronization is declared `No`, state why the work is strictly me
 | Claim or paraphrase | File and section | Finding or record | Direct, derived, synthesis, scenario, or unsupported | Keep, qualify, correct, relocate, or remove |
 
 Record the trace location in the evidence brief.
+
+## SDLC node assessment
+
+Use within the existing hypothesis register or owning issue/review artifact under
+[the evaluation method](hypothesis-evaluation.md). Do not create a second register.
+
+```markdown
+## Node and hypothesis assessment
+
+- Node and stable hypothesis IDs; input/output boundaries:
+- Actual previous workflow, population/risk context and observation horizon:
+- Intended functions versus demonstrated/weak/absent/unmeasured baseline delivery:
+- AI intervention; removed/added/transferred functions and receiving owners:
+
+| Function/outcome | Baseline evidence | Change or substitute | Measure/proxy, unit, comparator and horizon | Effect, uncertainty and missing evidence |
+| --- | --- | --- | --- | --- |
+| Product/team/system function | Actual delivery or unknown | Named mechanism/owner | Observable and source/test | Gain/loss/tradeoff/unknown |
+
+- Adverse hypothesis, independent trigger, alternatives and weakening observation:
+- Remedy hypothesis, defined intervention, comparator and weakening observation:
+- Critical outcomes, justified margins, accepted tradeoffs and decision owner:
+- Downstream user benefit, team capability and full lifecycle economics:
+- Source IDs/versions; independent evidence families; counterevidence/search:
+- Verdict and rationale, remaining gaps, date and next evidence issue:
+```
+
+Review includes both quality and competent shared ownership. An unmeasured outcome
+is neither preserved nor harmed by default. A study can support a bounded outcome
+without measuring the whole inventory. Verdicts do not change source status.
+
+## Post-merge plan checkpoint
+
+```markdown
+## Completed issue and current plan
+
+- Issue and accepted scope; exact merged refs and current-main checks:
+- Acceptance/review evidence and surviving gaps:
+- Live master plan reread (URL and as-of date):
+- What the result changes about thesis/process/dependencies/order:
+- Plan changes with reason, or reasoned no-change decision:
+- Current ordered plan:
+- One proposed next issue and concrete scope/acceptance:
+- Dependencies and material decisions still open:
+- Next-issue approval: Awaiting maintainer | Approved — reference/date
+```
+
+Present this checkpoint to the maintainer after completing the current issue.
+Do not begin the next issue while approval is awaiting. Existing authorization
+continues to cover routine completion steps within the current issue.
 
 ## Integration audit record
 
@@ -156,6 +207,8 @@ Do not list a surface as synchronized merely because it was opened. Record the a
 
 - Approval record:
 - Maintainer decisions still required:
+- Post-merge master-plan checkpoint: Pending | Completed — issue/plan reference
+- Proposed next issue and approval state (not inferred from this PR):
 
 ## Independent review
 

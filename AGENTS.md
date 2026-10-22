@@ -68,7 +68,7 @@ Before reading other repository files, editing, reviewing, searching for evidenc
    Confirm the live repository, base/head refs and working-tree state; read any
    applicable nested `AGENTS.md`. The dated [handoff](governance/memory.md) is a
    navigation hint, never current evidence; revalidate its relevant issue/PR/check facts.
-2. State the selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether the content synchronization assessment is required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration). When declaring the content synchronization assessment not required, state the specific reason the work is strictly mechanical and does not alter meaning, status, behavior, navigation structure, or reader understanding.
+2. State the active issue, live master-plan reference and scope approval; selected primary flow; files and source IDs in scope; whether evidence review, integration audit, or both are required; whether the content synchronization assessment is required; whether an independent reviewer is available; and whether substantive-change discussion may be triggered. Use the [start-of-work template](governance/templates.md#start-of-work-declaration). When declaring the content synchronization assessment not required, state the specific reason the work is strictly mechanical and does not alter meaning, status, behavior, navigation structure, or reader understanding.
 3. Read the playbooks marked mandatory for the selected flow in the [flow table](#flow-selection-table), plus any cross-cutting playbook triggered by the declared work.
 4. Read `DOCTRINE.md` and `GLOSSARY.md`, then read `README.md`, `evidence/README.md`, `evidence/SOURCES.md`, the relevant evidence brief when one exists, every relevant file under `report/` and `protocols/`, `REFERENCES.md`, and `CONTRIBUTING.md`.
 
@@ -109,6 +109,57 @@ Safe editorial or mechanical changes that do not alter meaning, interpretation, 
   placement. Record each material use with its exact source locator, metric/unit,
   current location, recommended action and better destination when relocation is
   proposed. Missing original access remains unresolved; it is not validation.
+
+### SDLC hypotheses and complete node outcomes
+
+Preserve an explicit thesis, proposed mechanisms and testable subhypotheses.
+Evidence discipline must make their support and limits inspectable, rather than
+replace the argument with generic cautions. An industry-level hypothesis need
+not await a study of every developer; its scope and confidence must still follow
+the evidence. Separate an observed local gain, a plausible systems mechanism and
+an established downstream outcome.
+
+For a new or materially revised SDLC-node hypothesis, AI-improvement claim or
+proposed control, use the [hypothesis evaluation method](governance/hypothesis-evaluation.md)
+and [node assessment](governance/templates.md#sdlc-node-assessment). Cover Intent,
+requirements, design, code, review, test, integration, deployment and operation,
+with user outcomes and business economics closing the feedback loop to Intent.
+These are functions, not a mandatory waterfall or a requirement for equal capacity.
+
+- Inventory every material function/outcome the node supplied or was expected to
+  supply in the actual previous process: technical output, decisions, understanding,
+  learning, coordination, ownership and feedback as applicable. Record whether
+  each was delivered, weak, absent or unmeasured; do not idealize the old process.
+- Evaluate the AI intervention across that inventory and its downstream effects.
+  Record direct measures, proxies, missing observations, horizon, comparator and
+  tradeoffs. Unmeasured does not mean preserved, improved or harmed. A narrow
+  study may be valid without measuring all outcomes; its omissions limit the
+  synthesis, not its right to be included.
+- Treat Review as both a quality gate and an ownership gate: assess defect/risk
+  detection alongside shared understanding, knowledge transfer and the team's
+  ability and responsibility to explain, diagnose, change and recover the system.
+  An approval click, named assignee or generated explanation alone establishes
+  none of those abilities.
+- Allow functions to move or be replaced by demonstrably adequate alternatives.
+  Do not require every manual activity to survive or every metric to improve.
+  State who accepts a tradeoff, critical outcome floors and unresolved losses;
+  do not call an intervention an overall improvement from one favorable metric.
+- State what would weaken both the adverse-mechanism hypothesis and its proposed
+  remedy. Specify exposure, intervention, comparator and meaningful effect before
+  evaluating results; successful unchanged practice can weaken a claimed need to
+  rebalance. Do not redefine failed interventions retrospectively to protect them.
+- Assess useful outcomes for users, sustainable team capability and full lifecycle
+  economics. Code volume, release counts or local savings alone do not establish
+  user benefit, competitive advantage or ROI; state the proposed link and measure
+  it where possible.
+
+Evaluate support at the level of the scoped hypothesis. Independent, relevant
+macro and micro studies can triangulate it when their outcomes and mechanisms
+fit; two citations alone cannot. Record study quality, dependence, uncertainty,
+counterevidence, alternatives and the reason for the verdict. A single rigorous
+study can establish its bounded finding. Hypothesis verdicts remain separate
+from claim classes, source states and independent-review outcomes; they never
+promote a source to `Verified`. Existing Flow A–E routing and approval gates apply.
 
 ## Canonical source state model
 
@@ -154,6 +205,36 @@ or pending checks open. Update issue checkboxes to match actual whole criteria.
 Link implementation commits with `Refs #N` and refresh evidence after source changes.
 Append dated scope changes; never rewrite the initial goal to fit the result.
 The [issue-workflow playbook](governance/issue-workflow.md) implements this rule.
+
+### One issue, then a plan and approval checkpoint
+
+The live [master plan (#84)](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
+owns the current sequence, dependencies and next proposed issue. Dated audits and
+memory link to it; do not maintain a competing live plan. A successor plan needs
+an explicit maintainer decision and a link from the previous owner.
+
+1. Select one issue with explicit maintainer approval of its scope and acceptance.
+   Work it through implementation, corrections, independent review, required checks,
+   merge to `main` and verification of the accepted default-branch state.
+2. Finish that issue's acceptance and completion records. One issue may require
+   multiple PRs, including final source verification; do not start another issue
+   merely because its first PR merged.
+3. Reread the live master plan after completion. Record what the result changed
+   about the thesis, process, dependencies or order; update the plan if needed,
+   preserving dated decisions and original intent. Record a reasoned no-change
+   result when the sequence still fits.
+4. Show the maintainer the current plan, completed result, next proposed issue,
+   concrete scope/acceptance, dependencies and material open decisions.
+5. Wait for explicit approval of that next issue before beginning its substantive
+   work. A queued issue, earlier roadmap approval, silence or green CI is not this
+   approval. Planning and presenting the next task are part of the current handoff.
+
+Do not ask again for routine implementation, correction, review, verification or
+merge already authorized within the active issue. A materially different treatment
+still uses the substantive-change gate. If blocked, record the blocker and proposed
+replan, then obtain the maintainer's decision before switching issues. Read-only
+planning and independent review may run in parallel inside the active scope;
+parallel implementation of separate issues requires an explicit exception.
 
 The issue records intent; PRs and commits implement it. When asked to create an
 issue, clarify a materially unclear outcome, reason, boundary or acceptance with
@@ -215,6 +296,7 @@ Playbooks are normative procedural extensions of this file when listed as mandat
 - [`governance/pr-process-and-synchronization.md`](governance/pr-process-and-synchronization.md) — mandatory PR record, changed-path classification, synchronization declaration, changelog decision, and Repository Gate procedure for every governed pull request.
 - [`governance/status-model.md`](governance/status-model.md) — the only definitions of allowed source states and transition rules.
 - [`governance/templates.md`](governance/templates.md) — mandatory record shapes when the applicable procedure requires them.
+- [`governance/hypothesis-evaluation.md`](governance/hypothesis-evaluation.md) — complete node outcomes, symmetric hypothesis testing and claim-level evidence assessment when SDLC hypotheses, improvement claims or controls are introduced or materially revised; used within the existing flows.
 
 ## Synchronization requirements
 

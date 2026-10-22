@@ -49,6 +49,9 @@ On a pull request, Main health executes the validator version proposed by that p
 
 ## Task intake and navigation
 
+- [Live master plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84):
+  current sequence and dependencies; after each completed issue, reread/revise it,
+  show one next issue/scope and obtain approval before starting that issue.
 - [Issue workflow](issue-workflow.md): durable intent, input-impact report,
   maintainer review, linked PR and issue completion/closure under AGENTS.
 - [Backlog audit](issue-backlog-audit.md): dated open-PR and unresolved-work snapshot.
@@ -61,6 +64,9 @@ On a pull request, Main health executes the validator version proposed by that p
 
 ## Navigation
 
+- [Hypothesis evaluation](hypothesis-evaluation.md): full SDLC-node function/outcome
+  assessment, Review ownership, symmetric tests and scoped evidence verdicts
+  within the existing flows; [record shape](templates.md#sdlc-node-assessment).
 - [Evidence review](evidence-review.md): registration, source acquisition and assessment, evidence brief, and completion.
 - [Integration audit](integration-audit.md): repository-wide use search, trace, numeric and argument checks, corrections, synchronization, and verification completion.
 - [Evidence discovery](evidence-discovery.md): complete Flow E methodology and Independent Search Review.

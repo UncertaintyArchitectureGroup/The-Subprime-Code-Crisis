@@ -1,5 +1,7 @@
 ## Start-of-work declaration
 
+- Active issue and master plan:
+- Approval of this issue's scope/acceptance (reference/date):
 - Primary flow or approved governance procedure:
 - Files and Source IDs in scope:
 - Evidence review required: Yes / No — reason
@@ -43,5 +45,15 @@
 - Repository Gate:
 - Tests:
 - Completion or ready-for-merge claim permitted: Yes / No — reason
+
+## Plan checkpoint
+
+- Node-outcome/hypothesis assessment, when applicable: link or specific reason not applicable
+- Post-merge master-plan reread/update: Pending / Completed — actual issue/plan record
+- Proposed next issue and scope:
+- Next-issue approval: Awaiting maintainer / Approved — reference/date
+
+Complete the live plan checkpoint after accepted main verification. This PR does
+not itself authorize starting the next issue or establish its own future merge.
 
 > The PR body is the human-readable review surface. The work record is the machine-readable declaration checked by Repository Gate. Neither record may claim verification, completion, or independent confirmation that has not occurred.

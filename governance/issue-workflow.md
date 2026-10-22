@@ -50,6 +50,42 @@ reference; never silently rewrite the goal to fit the result. An issue is a task
 record, not a replacement for a canonical source registry, research register,
 provenance note or framework decision.
 
+## One-issue execution and plan checkpoint
+
+The canonical cycle is in
+[AGENTS](../AGENTS.md#one-issue-then-a-plan-and-approval-checkpoint). The live
+[master plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
+owns sequence and dependencies; dated audits and memory are navigation snapshots.
+
+Before substantive work, record the selected issue, scope/acceptance and explicit
+maintainer approval. A queued item or approved roadmap is not approval to start
+each item. Work only that implementation issue through corrections, independent
+review, required checks, merge and accepted default-branch verification. Several
+PRs may belong to it, including a final source-verification PR. Preserve existing
+authorization for routine steps inside that scope; do not repeatedly ask for it.
+
+After completion, use the [plan checkpoint](templates.md#post-merge-plan-checkpoint):
+
+1. Fetch the actual issue/PR/main/check state and reread the live master plan.
+2. Compare the result with the thesis, process, dependencies and proposed order.
+   Append a dated change with its reason, or record why no change is needed.
+   Do not rewrite original intent or imply a dependent issue is complete.
+3. Present the maintainer with the completed outcome, current ordered plan and
+   **one proposed next issue**, its concrete scope/acceptance and open decisions.
+4. Wait for explicit approval before starting that next issue. Record the approval
+   in its intake/start record. Silence, elapsed time and passing checks do not count.
+
+The checkpoint is part of closing the current cycle. It can be recorded in the
+owning issue and live plan after merge; a speculative future merge must not be
+written as a fact in a PR. Memory can point conditionally to those live records,
+without requiring a recursive PR merely to predict its own completion.
+
+If blocked, show the blocker and proposed replan and request a decision before
+switching implementation issues. Read-only planning, issue intake and independent
+review within the active scope may run in parallel. Multiple implementation issues
+require an explicit maintainer exception. A materially different treatment within
+the active issue still uses the existing substantive-change gate.
+
 ### Research-input report before integration
 
 For a new report, expert discussion, hypothesis, test data, changed source or
@@ -68,7 +104,10 @@ The report must contain:
 4. affected claims, numbers, diagrams, maps, protocols, publications or framework
    owners, with paths and proposed treatment;
 5. recommendation: include, exclude, narrow, defer, or request more evidence;
-6. proposed acceptance checks, open decisions and maintainer-review request.
+6. proposed acceptance checks, open decisions and maintainer-review request;
+7. for an SDLC hypothesis or improvement claim, the affected node's full outcome
+   inventory, source coverage/omissions, tradeoffs and symmetric tests under the
+   [hypothesis evaluation method](hypothesis-evaluation.md).
 
 Wait for the required maintainer decision on substantive integration. An existing
 explicit authorization covering that exact treatment may be referenced instead
@@ -95,6 +134,7 @@ correspondence boundaries; link public evidence or a bounded authorized summary.
 Draft, merged, reviewed, published and deployed are separate observations.
 An umbrella issue remains open until its required dependencies are complete.
 Issue closure and green CI do not change scientific or source-verification state.
+After completion, finish the master-plan and next-issue approval checkpoint above.
 
 ## Handoff and proportional checks
 

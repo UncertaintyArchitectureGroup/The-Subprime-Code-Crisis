@@ -66,6 +66,20 @@ Do not submit text that has not been checked against the cited source. Remove fa
 
 A source does not need to support the Subprime Code Crisis thesis to be included. Positive productivity evidence, null results, critiques, contradictions, and replications are necessary for a credible synthesis.
 
+### Preserve the thesis and assess the whole node
+
+State the proposed mechanism and testable hypotheses clearly. For an SDLC
+improvement claim or control, use the [node outcome method](governance/hypothesis-evaluation.md):
+inventory what the actual previous process supplied, then compare all material
+outcomes, substitutions, tradeoffs and unknowns. Review includes shared understanding
+and competent ownership as well as quality. A source may measure only part of that
+inventory; keep its bounded finding without inferring the unmeasured remainder.
+
+Independent macro/micro evidence can triangulate a scoped hypothesis when methods,
+outcomes and contrary evidence fit. Citation count alone is insufficient. Test
+both the adverse mechanism and its proposed remedy, with user benefit and full
+lifecycle economics as downstream endpoints.
+
 ### Protect confidential information
 
 For internal case studies:
@@ -84,6 +98,14 @@ Repository-management ideas and research/source inputs both belong in the
 backlog. Existing contributor issues remain the owning input; triage with a
 comment. A source/research impact report and required maintainer decision precede
 substantive integration; source flows and independent review still apply.
+
+Follow the [one-issue cycle](governance/issue-workflow.md#one-issue-execution-and-plan-checkpoint)
+and [live master plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84):
+complete the approved issue through all necessary PRs, independent review, main
+merge and acceptance. Then reread/revise the plan, present its current sequence
+and one next issue/scope, and wait for explicit approval before starting it.
+Routine corrections and completion steps inside the current approved scope do
+not need repeated permission. A queued issue is not approval to implement it.
 
 The [dated backlog audit](governance/issue-backlog-audit.md) records open PRs and
 unprocessed research ideas. [Cross-repository ownership](governance/repository-map.md)
