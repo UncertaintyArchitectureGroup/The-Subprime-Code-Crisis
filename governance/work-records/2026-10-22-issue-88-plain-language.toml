@@ -1,0 +1,28 @@
+record_version = 1
+title = "Make the thesis, alternatives and report easier to read"
+primary_flow = "Approved editorial change procedure"
+human_decision = "The maintainer requested a clear rewrite of the ALT explanation and simpler language across the repository, 2026-10-22. Approved limited #88 pass, PL-1–5 and start: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88#issuecomment-6349668620. #84 amendment 14 brings this pass forward. Original #88 AC-1–6 remain open; #110 is not authorized."
+independent_review = "Confirmed"
+# Independent implementation review by /root/readability_review, 2026-10-22.
+# Candidate 7b23af7cb3567ed489fd158a84ea76fff0bf3cde, tree
+# 6e37fdc7544cc0bc6dc636b7c5e06403f56fbe16; base 5a55c6fc8b8d85eb761f0d22a2f030c2c0fb532f.
+# Full 13-file candidate independently read; all requested corrections resolved.
+# 126 tests, contract, evidence integrity, RI and link/anchor checks passed.
+# This records implementation review, not a future merge or hosted acceptance.
+# Final record and exact published tree receive a separate faithful-record check.
+# Receipt: governance/reviews/issue-88-2026-10-22-plain-language.md.
+
+[changelog]
+decision = "Updated"
+reason = "Clarifies the main reading path, thesis/ALT explanations, evaluation guide and template prompts without changing scientific meanings or procedural requirements."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "reader-navigation", "history"]
+
+[synchronization.non_applicable]
+repository-architecture = "SCOPE and ARTIFACT_MODEL inspected; no subject boundary, artifact type, file ownership or relationship changes."
+source-registry = "Source identities, factual Current use, statuses and verification dates remain unchanged. Meaning-preserving prose does not claim a new audit."
+evidence = "No brief, original finding, estimate, source interpretation or evidence assessment changes; #110 retains the nine-entry comparison."
+evidence-indexes = "No source or brief is added, removed or relocated; classification, navigation and processing descriptions remain accurate."
+references = "Citation destinations, source versions, bibliography, authorship and provenance are preserved."
+protocols = "No changes to the four protocol layers, controls, thresholds, decision rights or local adaptation requirements."

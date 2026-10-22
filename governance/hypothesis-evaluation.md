@@ -1,85 +1,117 @@
 # SDLC hypothesis and outcome evaluation
 
-This is a mandatory procedural extension of
-[AGENTS](../AGENTS.md#sdlc-hypotheses-and-complete-node-outcomes) for new or materially
-revised SDLC-node hypotheses, AI-improvement claims and proposed controls. Its
+This guide explains how to test a claim about AI and software delivery: state the
+idea, consider other explanations, compare it with the evidence and say what
+remains unknown. A **node** means a part of the software development lifecycle
+(SDLC), such as coding, review or operation.
+
+Follow this guide when adding or materially changing a hypothesis about a delivery
+activity, a claim that AI improves it, or a proposed control. It is a mandatory
+extension of [AGENTS](../AGENTS.md#sdlc-hypotheses-and-complete-node-outcomes). Its
 [comparison method](#compare-explanations) also implements the
 [canonical comparison rule](../AGENTS.md#competing-explanations-and-diagnostic-evidence)
 for relevant source assessments/searches. It runs inside the existing source and
 governance procedures, not as a new source flow.
 The [hypothesis register](../report/appendices/mechanism-hypotheses.md) owns the
 research content; [master plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
-owns its implementation sequence. This playbook defines the method, not a finding
-that the thesis or a control is already validated.
+records the order of work. This is a method for testing the thesis and proposed
+controls; adopting the method does not establish that either is correct.
 
 ## Start with a thesis and a discriminating question
 
-State the proposed systems mechanism plainly, then decompose it into claims that
-could receive different answers. A local coding gain, an uneven change in stage
-capacity, a loss of team understanding, persistent debt and higher lifecycle cost
-are separate claims. Evidence for one does not automatically establish the others.
+Start with the explanation in ordinary words. Then split it into claims that
+could receive different answers. Faster coding, different rates of improvement
+across delivery activities, lost team understanding, checking and maintenance
+obligations that remain unresolved, and higher total cost are separate claims.
+Evidence for one does not establish the rest.
 
-For each hypothesis identify population/context, exposure or intervention,
-comparator, predicted outcome, observation horizon, plausible alternatives and
-observations that would weaken it. Preserve existing IDs and links when revising
-the register. Record explicit aliases or dispositions instead of silently replacing
-earlier hypotheses. A precise bounded thesis can be forceful without claiming a
-universal effect or an already measured complete causal chain.
+For each hypothesis, say who and what it concerns, what condition or change is
+being tested, what it is compared with, what result it predicts and over what
+period. Give plausible other explanations and results that would weaken the
+hypothesis. Preserve existing IDs and links when revising the register. If an
+earlier hypothesis is renamed or replaced, record where it went and why. A clear
+thesis can make a strong argument while saying where it applies and which links
+have yet to be measured.
 
 ## Compare explanations
 
-Use the [competing-explanation families](../report/appendices/mechanism-hypotheses.md#competing-explanations)
-to identify the strongest applicable alternatives. They are starting points, not
-an exhaustive or mutually exclusive list. `H0` is the register's thesis identifier,
-not a statistical null hypothesis. Keep the comparison inside the existing brief,
-register or owning review artifact using the
-[source hypothesis comparison](templates.md#source-hypothesis-comparison).
+Ask **“What else could produce this result, and what evidence would tell the
+explanations apart?”** The register's
+[ALT questions](../report/appendices/mechanism-hypotheses.md#competing-explanations)
+help identify the strongest relevant alternatives. They cover different parts of
+the argument and can sometimes be true together. They are a starting list, not
+every possible explanation. `H0` is simply the ID of our main thesis; it is not the
+statistical term “null hypothesis.”
 
-1. **Screen applicability.** For every source in the selected scope, identify the
-   proposition and relevant node/rival IDs, population, exposure or intervention,
-   comparator, outcomes and horizon. Explain material non-applicability. Distinguish
-   accounts competing for the same result from those that coexist or concern
-   different links: local acceleration, mismatch, persistence, harm and value.
-2. **State contrasting predictions.** Record what each applicable account predicts
-   and what observation would weaken it. Name the observation that could distinguish
-   them, including direction, meaningful magnitude and horizon. Specify margins
-   before testing; disclose retrospective choices. Separate an absent trigger from
-   an observed trigger with an absent endpoint so that successful adaptation can
-   challenge a prediction of harm under exposure.
-3. **Compare with the original result.** Record its exact locator, metric/unit,
-   direction, magnitude, scope and uncertainty alongside the predictions. Explain
-   support, weakening, contradiction within scope or inability to distinguish;
-   separate missing measurement, imprecision and irrelevant scope. A precise result
-   may weaken a predicted material effect; nonsignificance alone is not equivalence.
-   A result compatible with several accounts can favor one if its pattern is more
-   specifically predicted there. Give that reason and the design limits; shared
-   compatibility alone is insufficient, and no invented probabilities or likelihood
-   ratios may supply the missing discrimination.
-4. **Check alternative causes and complete outcomes.** Retain selection, task mix,
-   confounding, measurement and external-validity limits. Identify shared data,
-   versions or analyses before counting independent evidence families. Apply the
-   full node inventory below, including Review quality and competent ownership.
-   Assess ALT-6a (net value) separately from ALT-6b (the specified remedy's
-   incremental value): benefit and harm may coexist, and an aggregate gain cannot
-   conceal a critical-outcome loss. Adequate unchanged practice can weaken the
-   claimed need for a remedy without disproving every adverse mechanism.
-5. **Record the bounded conclusion and next observation.** Link the comparison to
-   the owning hypothesis and source-use trace, state unresolved outcomes and name
-   the owner of pending application or search. Source review checks the original
-   result; integration audit checks every material use; independent review challenges
-   omitted rivals and unsupported discrimination. The relationship descriptions
-   above are neither new source states nor a replacement for the scoped verdicts
-   below. In Flow E they remain provisional, with a discriminating question and
-   bounded search scope recorded before searching, including evidence favorable
-   to rivals and against a proposed remedy.
+Some ALT questions challenge the proposed mismatch or its persistence. Others
+ask whether the work, measurement or user demand explains a particular result.
+Two questions concern the decision to act: whether benefits exceed all costs
+(ALT-6a), and whether a specified remedy adds enough benefit to justify its extra
+costs (ALT-6b). Those two answers do not decide whether every individual harm
+occurred. Keep the comparison in the existing source brief, register or task's
+review record, using the [comparison template](templates.md#source-hypothesis-comparison).
 
-**Migration:** [#109](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/109)
-adopts this method only. [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110)
-owns application to the nine accepted evidence entries, and
+1. **Choose the relevant questions.** For every source in the selected scope,
+   identify the exact claim, delivery activity and relevant hypothesis/ALT IDs.
+   Record who was studied, the condition or change, the comparison, the outcomes
+   and the period measured. Explain why any important comparison does not apply.
+   Say which explanations compete for the same result, which can coexist and
+   which address different questions: coding speed, mismatch, duration, harm or
+   value.
+2. **Say what each explanation predicts.** Record the expected result and what
+   would weaken that explanation. Describe evidence that could tell them apart:
+   which way the result should change, how large a change would matter and over
+   what period. Set those margins before testing; disclose choices made after
+   seeing results. Distinguish “the proposed cause was absent” from “the proposed
+   cause was present but the predicted harm did not follow.” Successful adaptation
+   under the stated conditions can challenge a prediction of harm.
+3. **Compare predictions with the original finding.** Give the exact source
+   location, measure and unit, direction and size of the result, scope and
+   uncertainty. Explain whether it supports, weakens or contradicts an account
+   within that scope, or cannot tell the accounts apart. Say whether a missing
+   answer comes from no measurement, an imprecise estimate or a study of a
+   different question. A precise result can weaken a prediction of a meaningful
+   effect. A statistically nonsignificant result alone does not show that two
+   outcomes are equivalent. A result that fits several explanations may favor
+   one if that explanation predicts its pattern more specifically. Explain why,
+   and retain the study's design limits. Fitting the same result is not enough;
+   do not invent probabilities or likelihood ratios to manufacture a distinction.
+4. **Check other causes and all relevant outcomes.** Keep limits due to who chose
+   the tool, which tasks they did, other simultaneous changes, measurement and
+   the settings to which results can apply. Check for shared data, versions or
+   analyses before counting evidence as independent. Use the full inventory below,
+   including Review quality (such as fit, assumptions and security) and the team's
+   ability to understand and take care of the system. Assess overall benefit
+   (ALT-6a) separately from the added value of
+   the specified remedy (ALT-6b). Benefits and harms can coexist; an overall gain
+   cannot hide a loss in a critical outcome. An unchanged process that already
+   works well can weaken the need for a remedy without disproving every proposed
+   cause of harm.
+5. **Record what follows and what is still needed.** Link the comparison to the
+   hypothesis and the record of where the source is used. State unresolved
+   outcomes and name the issue responsible for the next comparison or search.
+   Source review checks the original finding; integration audit checks every
+   material use; independent review looks for omitted alternatives and claims
+   that the evidence tells them apart when it does not. These descriptions of
+   support are not new source statuses or replacements for the hypothesis verdicts
+   below. During a search (Flow E), judgments remain provisional. Before searching,
+   record the question that could separate explanations and the search's scope
+   and stopping point. Include evidence favorable to alternatives and against
+   the proposed remedy.
+
+**Example of the reasoning, not a study result:** if coding activity grows more
+than releases, both a delivery constraint and a change in the type of work may
+fit that pattern. The difference between the counts alone cannot decide which
+explanation is better. The comparison must say what additional observation would
+help, such as evidence about the work being done or the suspected constraint.
+
+**Applying the method:** [#109](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/109)
+introduced the method. [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110)
+owns its application to the nine accepted evidence entries, and
 [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111)
-owns the finite diagnostic search. Older dated source cards have not thereby been
-compared under this method. Adoption alone neither reassesses evidence nor changes
-source status; actual source or material-use changes retain their Flow A–D triggers.
+owns the limited search for evidence that can tell explanations apart. Adopting
+the method did not compare the older source cards or change their status. Actual
+changes to a source or its material use still trigger the applicable Flow A–D.
 
 ## Inventory the whole node
 
@@ -89,7 +121,8 @@ Include the post-operation boundaries of realized user outcomes and business
 economics, with feedback to Intent. The categories may overlap or recur; they are
 not mandatory sequential departments or an instruction to equalize staffing.
 
-For the actual previous workflow, inventory all material functions/outcomes:
+List what the previous process actually contributed, including every function
+or result that materially matters:
 
 - product or technical output and assurance;
 - decisions, constraints and acceptance criteria;
@@ -98,12 +131,12 @@ For the actual previous workflow, inventory all material functions/outcomes:
 - coordination, handoff and dependencies;
 - feedback, correction and future ability to change or recover the system.
 
-This is a coverage checklist, not an assertion that every node or historical team
-delivered every function. Add context-specific outcomes and explain exclusions.
-For each relevant outcome distinguish its intended function from evidence of its
-actual delivery: demonstrated, weak, absent or unmeasured. These descriptions are
-not additional source states. Include existing automation, known defects and
-baseline costs; do not compare AI with an idealized manual process.
+The list helps check for omissions. It does not assume that every team or part of
+the old process performed all these functions well. Add results that matter in the
+particular setting and explain exclusions. Separate what the process was meant
+to do from what evidence shows it did: demonstrated, weak, absent or unmeasured.
+These descriptions are not new source statuses. Include existing automation,
+known defects and costs; compare AI with the real previous process.
 
 Describe what the intervention adds, removes or moves. If another node, person,
 tool or procedure supplies the function, name that mechanism, owner and cost.
@@ -111,11 +144,12 @@ Do not count displaced work as eliminated or count the same benefit twice.
 
 ## Compare outcomes, including unknowns
 
-For each material outcome record its observable, direct measure or proxy,
-denominator/unit, comparator, follow-up period, evidence and uncertainty. Record
-benefits, losses, transferred burdens and missing observations separately. Active
-work and elapsed waiting are different; task completion, shipped change, user
-benefit and business return are different boundaries.
+For every result that materially matters, say how it is measured, whether the
+measure is direct or an indirect indicator, its unit or denominator, what it is
+compared with and for how long. Record the evidence and uncertainty. Keep benefits,
+losses, work shifted to someone else and missing measurements separate. Time spent
+working differs from time spent waiting. Completing a task, shipping a change,
+helping a user and earning a business return are also different results.
 
 A source does not need to measure the entire inventory. Its brief states which
 outcomes it measures and which remain outside its scope. The node synthesis then
@@ -123,13 +157,14 @@ shows the combined coverage and gaps. Missing measurement establishes neither
 preservation nor deterioration. A result about one outcome remains useful as a
 bounded result, even when no overall verdict is possible.
 
-For an overall-improvement claim, state the decision rule, critical outcome floors,
-acceptable tradeoffs, decision owner and relevant user/system effects. A useful
-change need not improve every metric. Functional replacement is permitted when
-its claimed outcomes are demonstrated; manual ceremony, document volume and
-headcount are not success criteria. Critical losses require an explicit remedy or
-decision, not concealment inside an average score. Proposed margins must be
-justified for the local context; this method sets no universal numerical threshold.
+Before calling a change an overall improvement, say how that judgment will be
+made, which critical outcomes must meet a minimum standard, what tradeoffs are
+acceptable and who decides. Include effects on users and the wider system. Every
+metric need not improve. A new tool or practice can replace an old one when it
+demonstrably performs the needed function; keeping the same manual steps,
+document count or staffing level is not the goal. A critical loss needs an
+explicit remedy or decision and must not disappear inside an average score.
+Justify acceptable margins for the setting; this method sets no universal number.
 
 Assess the path to useful user outcomes and sustainable economics. Preserve service
 quality, reduced user burden, avoided harm and useful learning as possible benefits;

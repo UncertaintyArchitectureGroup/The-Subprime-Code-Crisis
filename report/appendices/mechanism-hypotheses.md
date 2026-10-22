@@ -4,95 +4,119 @@
 
 ## The thesis and the outcome that matters
 
-**Our central research thesis is that AI coding tools have changed the economics
-and capacity of producing candidate software faster than delivery systems have
-adapted their ability to select, understand, verify, integrate, operate and obtain
-value from it. This structural imbalance calls for reassessing the whole SDLC.**
-Rebalancing means addressing the actual constraint while preserving the functions
-that make software useful and sustainable. It can mean better automation, clearer
-intent, smaller changes, stronger capability, less unnecessary work or an already
-adequate process left in place.
+**Our research thesis: AI coding tools have changed how quickly and cheaply teams
+can produce software changes. Delivery systems have not adapted as quickly in
+their ability to choose useful work, understand the changes, review and test them,
+integrate and operate the software, and obtain useful value from it. This mismatch
+calls for reassessing the whole software-development lifecycle (SDLC).**
+The proposed changes produced by coding tools are called *candidate software*
+below: they still need to be accepted and made useful. *Rebalancing* means finding
+and addressing the actual constraint while preserving the functions that make
+software useful and sustainable. A useful response might be better automation,
+clearer intent, smaller changes, stronger capability or less unnecessary work.
+An already adequate process may need no change.
 
-The complete boundary is **Intent → requirements → design → code → review → test
+The full lifecycle is **Intent → requirements → design → code → review → test
 → integration → deployment → operation → realized user outcomes → business
-economics → feedback to Intent**. These are recurring functions, not a mandatory
-waterfall or a requirement to staff every stage equally. AI can change several
-functions; the thesis does not depend on claiming it affects only code.
+economics → feedback to Intent**. Each part of the delivery process is called a
+*node* in this register. These functions can recur and overlap; they do not require
+a fixed sequence or equal staffing. AI can change several of them.
 
-The destination is useful, understandable and operable software at justified total
-cost and risk. A release has to connect to a useful outcome: solving a problem,
-preserving reliable service, reducing user effort, improving accessibility,
-avoiding harm or producing decision-relevant learning. Delivering the same useful
-service more cheaply can also be a benefit. User benefit, competitive advantage
-and ROI are separate propositions; the economics card tests the connection rather
-than assuming it. More code, more releases and unchanged usage settle none of them.
+The goal is **useful software for users, sustainable team capability, and justified
+total cost and risk**. The software must be understandable and operable. A release
+needs to contribute to a useful outcome: solving a problem, preserving reliable
+service, reducing user effort, improving accessibility, avoiding harm or producing
+learning that helps a decision. Providing the same useful service more cheaply
+can also be a benefit. User benefit, competitive advantage and return on investment
+(ROI) are separate questions. The economics card tests their connection; code
+counts, release counts and unchanged usage cannot settle it.
 
-The strongest existing support is uneven translation of activity toward releases
-and tracked completion, plus observed review-process changes in a distinct firm
-setting. Task experiments retain their different time effects. The [evidence map](#existing-evidence-and-its-exact-coverage)
-shows that support and its limits. **The diagnosis is explicit; the consequence
-claims are separate.** Review overload, lost understanding, persistent debt,
-burnout and higher TCO must each earn their own verdict. Their absence or successful
-unchanged practice can narrow the diagnosis; an accounting identity cannot make
-an industry hypothesis immune to evidence.
+The strongest existing support concerns gaps between changes in coding activity
+and changes in releases or tracked completion, plus review-process changes in a
+distinct firm setting. Task experiments report different effects on time. The
+[evidence map](#existing-evidence-and-its-exact-coverage) shows these findings and
+their limits. **Each proposed consequence needs its own evidence:** review
+overload, lost understanding, persistent debt, burnout and higher total cost of
+ownership (TCO) are separate claims. Missing predicted harm or successful unchanged
+practice can narrow the diagnosis. Counting work entering and leaving a backlog
+cannot, by itself, prove that AI caused a harmful imbalance.
 
 This is the single research register, expanded under
 [#86](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/86).
 It implements the maintainer's [thesis and author-context direction](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84#2-authorial-continuity-and-existing-evidence),
 including the R23 unpublished author-review context recorded there. That context
-supplies questions and concepts, not independent empirical corroboration. The
+supplies questions and concepts; it is not independent empirical evidence. The
 earlier [H1–H5](#hypotheses-and-distinguishing-observations), source/model graph and
-measurement handoff remain below with explicit mappings. The live plan owns work
-order; this register owns propositions and their evidence coverage.
+measurement handoff remain below, with links showing how they fit the expanded
+register. The live plan owns work order; this register owns the hypotheses and
+records what the evidence covers.
 
 ### How to use this register
 
-Start with H0, then the node where a benefit or loss is claimed. Read its whole
-outcome inventory, not just its output metric. Separate what was measured, what
-is a proposed mechanism and what remains unknown. Follow the linked research owner
-for the next evidence task; an open verdict is a useful result, not a requirement
-to invent a supporting study. The first readable edition does not await completion
-of every node investigation.
+Start with the main thesis and its parts below. **H0 is the identifier for that
+thesis, not a statistical null hypothesis.** Its parts ask whether coding gains
+outpace other work (H0-A), whether a capacity gap limits useful delivery (H0-B),
+whether local targets sustain that gap (H0-C), whether it causes lasting harm
+(H0-D), and whether a particular response helps (H0-R).
 
-Use the [competing explanations](#competing-explanations) to ask which account a
-result favors, following the [comparison method](../../governance/hypothesis-evaluation.md#compare-explanations)
-and [source × hypothesis record](../../governance/templates.md#source-hypothesis-comparison).
+Then read the card for the part of the delivery process where a benefit or loss
+is claimed. Include everything that part is expected to supply—quality,
+understanding, ownership and feedback as well as output. Separate what was measured
+and for how long from a proposed explanation and from what remains unknown. The
+linked issue identifies who owns the next research task. An Open verdict records
+an unanswered question; the first readable edition need not wait for every
+question to be answered.
+
+The [competing explanations](#competing-explanations) show other accounts of the
+same observations and questions about whether a proposed response is worthwhile.
+Use them with the [comparison method](../../governance/hypothesis-evaluation.md#compare-explanations)
+and [source-to-hypothesis comparison record](../../governance/templates.md#source-hypothesis-comparison)
+to ask which explanation a result can actually distinguish.
 
 ## Common assessment contract
 
-The [existing evaluation method](../../governance/hypothesis-evaluation.md) defines
-the verdicts and evidence test. The following conventions apply to every card;
-they avoid duplicating the method in each row.
+These are the rules for reading and testing every card. The
+[existing evaluation method](../../governance/hypothesis-evaluation.md) defines the
+evidence test and verdicts.
 
-- **Baseline:** no common historical team has been measured for this register.
-  The inventories describe intended functions. Their actual previous delivery is
-  **unmeasured** unless a scoped source result is identified. In a particular study,
-  record demonstrated, weak, absent or unmeasured delivery for each outcome, with
-  its evidence. Include existing automation, defects, staffing, duties and costs.
-- **Comparison:** record the actual prior human/AI workflow, exposure/tool version,
-  assignment unit, comparable task/risk/functional scope and the named intervention.
-  Keep rejected, failed and withdrawn work in the denominator. Report per assigned
-  task/initiative and per accepted useful outcome where selection changes.
-- **Observation:** distinguish active person-hours, elapsed waiting, activity,
-  assurance, demonstrated understanding, user outcomes and money. Each card gives
-  candidate observables and a follow-up boundary. The owning evidence task must
-  justify a concrete window, meaningful effect and critical-outcome margins before
-  testing; these cards are not preregistered experiments or universal thresholds.
-- **Substitution and cost:** a function may move to another node, tool or person.
-  Name the receiving owner, evidence of adequate delivery and setup/ongoing burden.
-  Count the work once across nodes. Neither fewer manual steps nor a new ceremony
-  establishes improvement. Unmeasured functions are neither preserved nor harmed.
-- **Decision:** the named local role accepts a stated tradeoff; it is not a new
-  repository-mandated production gate. Preserve critical quality, safety, data and
-  capability floors appropriate to the context. Higher cost can be justified by
-  greater benefit; a lower local cost that hides an unacceptable transferred loss
-  cannot establish overall improvement. These cards record proposed owners and
-  criteria, not actual organizational consent or measured net benefits.
-- **Symmetry:** observe the trigger independently of the predicted harm. Test a
-  specified remedy against the actual baseline and, where feasible, an unchanged
-  AI-assisted workflow. Adequate unchanged outcomes weaken a claimed need for that
-  remedy. A remedy's failure cannot be reclassified afterward as “not real
-  rebalancing.” Nonsignificance does not establish equivalence.
+- **Actual starting process:** this register has not measured one common historical
+  team. Its tables list intended functions; whether the previous process actually
+  supplied them is **unmeasured** unless a specific source result says otherwise.
+  For each outcome in a study, record demonstrated, weak, absent or unmeasured
+  delivery and the supporting evidence. Include existing automation, defects,
+  staffing, duties and costs.
+- **Fair comparison:** describe the actual previous human/AI workflow, the tool
+  version and the measure of AI access, use or adoption. State whether the measure
+  records actual use, permission, availability or only an observed sign of adoption.
+  Identify the unit compared or assigned (such as a person, team or task) and the
+  particular change being tested. Compare similar tasks, risks and functions. Count
+  rejected, failed and withdrawn work. When task selection changes, show results
+  both per assigned task or initiative and per accepted useful outcome.
+- **What was measured and for how long:** keep active working hours, elapsed
+  waiting, activity, evidence of required quality, demonstrated understanding,
+  user outcomes and money separate. Each card suggests measures and a follow-up
+  period. Before testing, the owning research task must justify the period, the
+  size of a change that would matter and the minimum acceptable outcomes. These cards are not
+  preregistered experiments and set no universal thresholds.
+- **Moving work and counting costs:** a function may move to another part of the
+  process, tool or person. Name who receives it, show that the replacement supplies
+  it adequately, and count setup and ongoing work. Count transferred work once.
+  Fewer manual steps or a new procedure do not, by themselves, establish improvement.
+  An unmeasured function cannot be assumed preserved or harmed.
+- **Decisions and minimum acceptable outcomes:** the named local role decides
+  whether a stated tradeoff is acceptable. These cards propose owners and criteria;
+  they do not record actual organizational consent or create production gates.
+  Preserve the quality, safety, data and capability outcomes that the context
+  requires. Greater benefit can justify higher cost. A local saving cannot establish
+  overall improvement if it conceals an unacceptable loss elsewhere. No net benefit
+  is assumed in advance.
+- **Test both the harm and the remedy:** measure the proposed trigger separately
+  from the harm it is supposed to cause. Test a defined response against the actual
+  starting process and, where feasible, unchanged AI-assisted practice. If unchanged
+  practice produces adequate outcomes, that weakens a claim that it needs the
+  response. Do not rescue a failed remedy by later calling it “not real rebalancing.”
+  A statistically nonsignificant difference does not prove that outcomes are
+  equivalent.
 
 **Assessment history:** the starting #86 assessment on 2026-10-22 mapped existing
 reviewed evidence; #87 adds the reviewed Chen–Stratton firm study and the explicitly
@@ -108,26 +132,32 @@ remain different records.
 
 ## H0: separate the premise, mechanism, consequences and remedy
 
+These five parts can receive different answers. Evidence for a coding gain does
+not automatically establish a capacity shortfall, lasting harm or a useful remedy.
+
 ### H0-A — Uneven change in capacity and cost
 
-**Prediction:** in specified tool/task settings, implementation or candidate
-production gains exceed gains in complementary delivery functions. Compare the
-same defined boundary before/after exposure against a credible untreated or
-alternative-workflow comparator. Observe implementation time/cost and accepted
-outcomes separately from activity, review, release and operation, over complete
-task-to-release cycles; preserve outcome-specific samples where a source lacks
-a linked cohort.
+**Prediction:** in specified task and tool settings, gains in implementation or
+candidate production exceed gains elsewhere in delivery. Compare the same defined
+work before and after the specified change in AI access, use or adoption, against
+a credible group without that change or an alternative workflow. Measure
+implementation time, cost and accepted work separately from activity, review,
+release and operation. Follow complete task-to-release cycles.
+When a source measures different groups for different outcomes, keep those groups
+separate.
 
-**Alternatives and weakening result:** improved output quality, changed task mix,
-valuable experimentation or equally effective downstream assistance may account
-for or absorb the activity increase. Sustained proportionate downstream gains at
-comparable scope/quality/cost weaken an asymmetry claim in that setting. Positive
-release gains are benefits even when proportionally smaller.
+**Other explanations and what would weaken this claim:** better output quality,
+different tasks, useful experiments or equally effective assistance elsewhere may
+explain or absorb the activity increase. Sustained, proportionate downstream gains
+for comparable scope, quality and cost weaken the claim of uneven gains in that
+setting. Positive release gains remain benefits even when proportionally smaller.
 
-**Remedy test:** compare a predefined allocation of investment across functions
-with additional coding optimization alone; use H0-R/BAL-1 for its net result.
-The delivery owner must preserve the relevant node floors; no transfer of effort
-counts as elimination. **Starting #86 verdict: Provisional support** for uneven translation in
+**Test the proposed response:** compare a predefined allocation of investment
+across delivery functions with further coding optimization alone. H0-R/BAL-1 assess
+the overall result. The delivery owner must preserve each relevant part's minimum
+acceptable outcomes; moving effort elsewhere does not eliminate it.
+
+**Starting #86 verdict: Provisional support** for uneven translation in
 the existing NBER setting and bounded coding gains; whole-system capacity/cost
 ratios remain unmeasured. E-NBER/E-PENG support parts; E-METR-Productivity/E-METR-Update preserve
 context/time heterogeneity.
@@ -140,25 +170,32 @@ release gains remain benefits. Next: [Code #92](https://github.com/UncertaintyAr
 
 ### H0-B — Complementary constraints attenuate useful outcomes
 
-**Prediction:** where independently measured admitted service demand rises beyond
-available quality-preserving capability, insufficient adaptation reduces the
-translation into useful delivery, through stage waits, coordination or rework.
-Measure demand, capacity, work/risk mix and policies before attributing observed
-queues to this mechanism. Compare similar exposed workflows with different
-baseline headroom/adaptation over multiple delivery cycles and downstream follow-up.
+**Prediction:** when the demands of accepted work grow beyond what the available
+people and tools can handle at the required quality, insufficient adaptation means
+that coding gains do not fully carry through to useful delivery. Useful delivery
+may improve less, remain unchanged or get worse. Waiting, coordination or rework
+may explain the gap.
+Measure required work, available capability, task and risk mix, and work policies
+before attributing a queue to this mechanism. Compare similar AI-assisted workflows
+with different spare capacity or adaptations over multiple delivery cycles and
+later follow-up.
 
-**Alternatives and weakening result:** deliberate experiments, scope changes,
-release batching, product demand/discovery, selection and outcome lag can produce
-attenuation without overloaded review. With the independently measured trigger
-present, no meaningful worsening of the predicted stage/outcome link weakens that
-local model. Broad sustained gains under unchanged adequate practice narrow the
-claimed prevalence of a need to rebalance; absence of the trigger is not a test
-of harm under that trigger.
+**Other explanations and what would weaken this claim:** deliberate experiments,
+changed scope, release batching, product demand or discovery, selection and delayed
+outcomes can create activity-to-delivery gaps without overloaded review. If the
+independently measured capacity shortfall is present but the predicted worsening
+at the affected stage or outcome is not meaningful, that weakens the local model.
+Sustained gains under adequate unchanged practice limit how widely a need for
+rebalancing can be claimed. If the capacity shortfall never occurred, the study
+has not tested harm under that condition.
 
-**Remedy test:** predefine a stage-specific admission, capability or coordination
-change and test whether useful outcomes improve enough to justify its total cost,
-including displaced work and ownership. The delivery owner and affected node owner
-accept the tradeoff. **Starting #86 verdict: Provisional support for the attenuation premise;
+**Test the proposed response:** define a change to work intake, capability or
+coordination at the affected stage before testing it. Ask whether useful outcomes
+improve enough to justify the total cost, including displaced work and ownership.
+The delivery owner and the owner of the affected part of the process accept the
+tradeoff.
+
+**Starting #86 verdict: Provisional support for the attenuation premise;
 Open for identification of the proposed capacity mechanism.** E-NBER measures
 bounded cross-outcome attenuation and provides a model-dependent complementarity
 interpretation; it does not identify review overload. E-Xu is adjacent activity
@@ -175,96 +212,113 @@ and [Integration #95](https://github.com/UncertaintyArchitectureGroup/The-Subpri
 
 ### H0-C — Local targets sustain the mismatch
 
-**Prediction:** adoption decisions tied to coding/usage targets, without downstream
-acceptance, expand commitments or remove complementary capacity sooner than
-otherwise comparable outcome-led decisions. Inspect dated claims, actual targets,
-budgets and decisions before measuring subsequent capability gaps and outcomes.
-Compare decision cohorts over an adoption cycle and delivery/operating follow-up.
+**Prediction:** decisions driven by coding or AI-usage targets, without checking
+downstream acceptance, expand commitments or remove needed delivery capability
+earlier than comparable decisions based on useful outcomes. Inspect dated claims,
+actual targets, budgets and decisions before measuring later capability gaps and
+outcomes. Compare groups of decisions over an adoption cycle and subsequent
+delivery and operation.
 
-**Alternatives and weakening result:** commercial deadlines, demand, staffing or
-already adequate capability may explain the choices. With the specified target
-exposure, no earlier expansion, capacity loss or reduced use of downstream evidence
-weakens the decision link; later net benefit alone does not test that earlier link.
-**Remedy:** compare an explicit outcome/capability decision record with actual prior
-decision practice, including decision delay and analysis cost. Failure to improve
-decision accuracy or outcomes enough to justify cost weakens the remedy. The
-investment owner owns the tradeoff; marketing intent is not inferred.
+**Other explanations and what would weaken this claim:** commercial deadlines,
+demand, staffing changes or already adequate capability may explain the choices.
+If the specified targets are present but commitments do not expand earlier,
+capability does not fall and downstream evidence receives no less attention, the
+proposed decision link is weakened. A later net benefit alone does not test that
+earlier link.
+
+**Test the proposed response:** compare an explicit record of expected outcomes
+and required capability with the actual previous decision practice. Count decision
+delay and analysis cost. If it does not improve decision accuracy or outcomes
+enough to justify those costs, that weakens the response. The investment owner
+accepts the tradeoff; the test does not infer marketing intent.
+
 **Verdict: Open**, including the remedy; no direct decision-chain evidence is
 assessed here. MKT-1 separates the documentary and causal links. Next:
 [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100).
 
 ### H0-D — Persistent mismatch has distinct downstream costs
 
-**Prediction:** sustained, independently observed capability shortfalls contribute
-to one or more of lost understanding, unresolved obligations, overload, incidents
-or higher lifecycle cost. These are separate endpoints, not a compulsory sequence.
-Compare matched exposure/risk and pre-existing trends, following tasks into later
-change, operation and human outcomes. Measure capability through tasks, retained
-obligations through a longitudinal ledger, human outcomes directly and economics
-over the same defined horizon.
+**Prediction:** lasting, independently observed capability shortfalls contribute
+to lost understanding, unresolved obligations, overload, incidents or higher
+lifecycle cost. Test each outcome separately; they need not occur in that order
+or all occur together. Compare similar exposure and risk, account for earlier
+trends, and follow tasks into later changes, operation and human outcomes. Assess
+capability through practical tasks, track unresolved obligations over time, measure
+human outcomes directly and compare benefits and costs over the same defined period.
 
-**Alternatives and weakening result:** new scope, pre-existing debt, reorganizations,
-useful experimentation and improved automation may explain apparent burdens.
-Stable/improved capability, recovery, well-being or full cost under the relevant
-exposure weakens that endpoint's harm prediction with adequate precision; one
-endpoint cannot stand in for another. **Remedy:** independently test the particular
-training, ownership, capacity or recovery intervention against its full cost and
-affected user/team outcomes. Engineering and operating owners share the relevant
-decisions, with human outcomes included rather than traded away invisibly.
+**Other explanations and what would weaken this claim:** added scope, existing
+debt, reorganizations, useful experiments and improved automation may explain
+apparent burdens. Under the relevant conditions, stable or improved capability,
+recovery, well-being or full cost weakens the corresponding harm prediction if
+measurement is precise enough. One outcome cannot stand in for another.
+
+**Test the proposed response:** separately test the specified training, ownership,
+capacity or recovery change against its full cost and its effects on users and
+teams. Engineering and operating owners share the relevant decisions. Human
+outcomes must remain visible in those tradeoffs.
+
 **Verdict: Open** for the downstream causal claims and remedies. E-Xu/E-Agarwal
 provide adjacent proxies, not measured debt stock, cognition, burnout or TCO.
 Next: HUM-1/2, DEBT-1 and OPS/ECO owners below.
 
 ### H0-R — Rebalancing improves the system
 
-**Prediction:** a predefined intervention addressing an independently diagnosed
-constraint improves useful outcomes and/or full cost and risk relative to the
-actual prior workflow, without unacceptable loss of other node functions. Compare
-it with unchanged practice and additional coding optimization where feasible,
-including setup, learning, ongoing work, long-term maintenance and opportunity cost.
+**Prediction:** a predefined change aimed at an independently identified constraint
+improves useful outcomes, improves full cost and risk, or does both, compared with
+the actual previous workflow and without unacceptable losses elsewhere in the
+process. Where feasible, compare it with unchanged practice and with further coding
+optimization. Count setup, learning, ongoing work, long-term maintenance and the value of other work
+that the investment displaces.
 
-**Alternatives and weakening result:** adequate baseline capability, spontaneous
-learning, improved tools or simpler task selection may deliver the same gain.
-No meaningful incremental benefit, or benefit outweighed by cost/critical-outcome
-loss, weakens the specified intervention. A successful unchanged process weakens
-the claim it needed that intervention. Do not define the constraint from the remedy's
-success or exempt failed interventions retrospectively.
+**Other explanations and what would weaken this claim:** sufficient existing
+capability, routine learning, improved tools or simpler task selection may deliver
+the same gain. No meaningful added benefit, or a gain outweighed by cost or loss
+of a required outcome, weakens the specified response. A successful unchanged
+process weakens the claim that it needed that response. Identify the constraint
+before judging the response; do not infer it from success or redefine a failed
+intervention afterward.
 
-**Remedy and decision:** the node-specific `-2` cards and BAL-1 specify candidate
-changes; the delivery/investment owner evaluates benefit, capability, user effects
-and cost together over the matching horizon. **Verdict: Open.** Existing observations
+**Response and decision:** the node-specific `-2` cards and BAL-1 propose changes
+to test. The delivery/investment owner evaluates benefits, capability, user effects
+and costs together over the same relevant period.
+
+**Verdict: Open.** Existing observations
 motivate this comparison but establish no common rebalancing package. Next:
 [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99)
 and each selected node issue; [#54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54)
 only if a specific feasible empirical question warrants collection.
 
-
 ## Competing explanations
 
-These six families make the thesis contestable at its separate links: observed
-local acceleration, uneven capability, the constraint mechanism, its persistence,
-downstream consequences and the value of a specified remedy. **H0 is this
-register's research-thesis identifier, not a statistical null hypothesis.** The
-families are bounded alternatives, not exhaustive explanations or mutually
-exclusive sides. Several may operate in the same setting; identify the particular
-observation and link over which they compete.
+**These six families ask different questions about the thesis.** The closest
+direct rival says that existing capability or an effective replacement can already
+handle the extra work. Other accounts accept an initial mismatch but question how
+long it lasts, offer another explanation for an observed gap, or ask whether the
+benefits still justify all costs and whether a particular remedy adds value.
+They are starting points, not an exhaustive list or six blanket rejections of the
+thesis. Several can be true in the same setting. State which observation each
+account explains and where their predictions differ.
 
-The common assessment contract and complete node inventories still apply. Each
-card describes a proposed comparison, not an observed baseline or a validated
-intervention. Its owning task fixes the population, exposure, comparator, horizon,
-meaningful effect and critical-outcome margins before judging results; any
-retrospective choices remain explicit. Preserve Review's quality and competent
-ownership outcomes even when one is unmeasured. No universal horizon, threshold,
-probability or mandatory manual activity is introduced here.
+The common assessment rules and complete node inventories apply to every card.
+Each describes a comparison to make, not a measured starting process or a validated
+intervention. Before judging results, the owning task must define who and what is
+being studied, the AI access, use, adoption or other change tested, the comparison
+workflow, the observation period, the size of an effect that would matter and
+minimum acceptable outcomes.
+Disclose any choices made after seeing results. Preserve Review's quality checks
+and the team's demonstrated ability to understand, change and recover the system,
+even when one is unmeasured. These cards set no universal period, threshold,
+probability or required manual activity.
 
-| Family | Explanation to examine | Main claim boundary |
+| Family | Plain-English explanation | What it tests |
 | --- | --- | --- |
-| [ALT-1](#alt-1--adequate-capability-and-functional-substitution) | Existing capability or an effective substitute absorbs additional work | H0-B mechanism/prevalence; H0-R necessity |
-| [ALT-2](#alt-2--transitional-adaptation) | Early mismatch recedes through bounded adaptation | H0-B duration; H0-D persistence; H0-R attribution |
-| [ALT-3](#alt-3--task-mix-experimentation-and-measurement) | Scope, useful exploration or measurement accounts for apparent attenuation | H0-A/B interpretation; COD-1; DEBT-1 |
-| [ALT-4](#alt-4--demand-discovery-and-adoption) | Demand and uptake explain the production-to-value gap | H0-B at the value boundary; INT/VAL/ECO |
-| [ALT-5](#alt-5--selection-heterogeneity-and-external-changes) | Selection, context or other changes explain associations or limit their scope | Causal attribution and generalization of H0/node claims |
-| [ALT-6](#alt-6--net-value-and-incremental-remedy-value) | Net benefit and the incremental value of a remedy are separate questions | H0-D/ECO versus H0-R/BAL-1 |
+| [ALT-1](#alt-1--adequate-capability-and-functional-substitution) | Existing capability or an effective substitute already handles the extra accepted work. | The closest direct rival: limits how common the H0-B constraint is and whether a particular H0-R response is needed. |
+| [ALT-2](#alt-2--transitional-adaptation) | There is an initial mismatch, but teams adapt within a defined period. | Accepts an early H0-B gap while challenging lasting H0-D harm and whether H0-R caused recovery. |
+| [ALT-3](#alt-3--task-mix-experimentation-and-measurement) | Changed work scope, useful experiments or counting differences explain an activity-to-output gap. | Tests the interpretation of H0-A/B and COD-1, including whether apparent waste persists and adds later costs under DEBT-1. |
+| [ALT-4](#alt-4--demand-discovery-and-adoption) | Software is delivered, but users do not discover, need or adopt it as expected. | Tests the step from delivery to user value: H0-B at that boundary, plus INT/VAL/ECO. |
+| [ALT-5](#alt-5--selection-heterogeneity-and-external-changes) | Who adopts AI, the setting or other changes explain an association or limit where it applies. | Tests whether AI caused the result and whether H0 or a node claim can generalize. |
+| [ALT-6a](#alt-6--net-value-and-incremental-remedy-value) | Benefits outweigh all additional costs, even though some local harms remain. | Tests net value in H0-D/ECO; it does not erase an individually measured harm. |
+| [ALT-6b](#alt-6--net-value-and-incremental-remedy-value) | A specified remedy may add too little benefit compared with unchanged practice or another investment. | Separately tests the added value of H0-R/BAL-1 and the node `-2` responses. |
 
 **Initial verdicts, 2026-10-22: Open**, including ALT-6a and ALT-6b separately.
 [#109](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/109)
@@ -278,180 +332,223 @@ neither evidence for it nor a new source state.
 
 ### ALT-1 — Adequate capability and functional substitution
 
-**Scope and comparator:** teams admitting more comparable AI-assisted candidate
-work, with specified baseline headroom, candidate quality or assistance in other
-functions. Measure service requirements and available competent capacity
-independently of the queues and losses being predicted. Compare the actual
-workflow with its prior or credible concurrent baseline, and distinguish existing
-capability from a separately proposed extra intervention. Follow complete delivery
-cycles and a relevant delayed ownership/maintenance window.
+**The idea:** the team may already have enough capability, or a new tool or
+practice may supply the required function effectively.
 
-**Prediction and distinguishing observations:** useful delivery improves while
+**What to compare:** study teams accepting a larger amount of comparable
+AI-assisted candidate work. Record spare capacity in the starting process, the
+quality of the proposed changes and assistance in other parts of delivery.
+Estimate the work required and
+the time, skills and tools available to do it properly, separately from the queues
+or losses being predicted. Compare the actual workflow with its previous version
+or a credible comparison at the same time. Distinguish existing capability from a
+separately proposed extra intervention. Follow complete delivery cycles and later
+ownership and maintenance outcomes.
+
+**Prediction and distinguishing evidence:** useful delivery improves while
 quality, demonstrated understanding and recovery capability remain adequate at
-acceptable total cost. Direct observations of the substitute supplying the same
-function distinguish functional replacement from merely removing a manual step.
-Sustained adequate outcomes without the proposed extra intervention weaken a claim
-that this setting needed that intervention; absent overload exposure does not
-refute a conditional harm prediction under overload.
+acceptable total cost. To show that a function has been replaced successfully,
+observe the substitute supplying it; fewer manual steps alone are insufficient.
+Sustained adequate outcomes without an extra intervention weaken a claim that the
+setting needed it. If overload never occurred, those outcomes do not disprove a
+prediction of harm under overload.
 
-**Would weaken this account:** independently measured higher comparable admitted
-demand exposes a capability shortfall, persistent waiting/rework or a critical
-quality/ownership loss despite the claimed headroom or substitute. Examine changed
-work mix, reduced intake, staffing additions, hidden transferred effort and short
-follow-up before attributing either success or failure.
+**What would weaken this explanation:** independently measured higher demand from
+comparable accepted work exposes a capability shortfall, persistent waiting or
+rework, or loss of required quality or ownership despite the claimed spare capacity
+or substitute.
+Before attributing success or failure, check for changed tasks, reduced intake,
+added staff, hidden work shifted elsewhere and too little follow-up.
 
-**Relations and owners:** contests H0-B's prevalence/necessity claim and specific
-H0-R remedies; it can coexist with constraints elsewhere. Full node outcomes remain
-owned by the [node index](#node-index), especially
-[Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92),
+**What it tests and who follows up:** this challenges how widespread the H0-B
+constraint is and whether a particular H0-R remedy is needed. It can coexist with
+constraints elsewhere. Full node outcomes remain owned by the [node index](#node-index),
+especially [Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92),
 [Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93)
 and [Integration #95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95).
 
 ### ALT-2 — Transitional adaptation
 
-**Scope and comparator:** comparable teams/work during a defined adoption period.
-Follow the same teams through a declared learning horizon, with credible concurrent
-comparators where available. Record tool versions, staffing, training and process
-changes; distinguish routine adjustment from the particular H0-R intervention.
+**The idea:** an initial mismatch may be real but temporary as the team learns
+and adjusts.
 
-**Prediction and distinguishing observations:** an early mismatch diminishes
-within that horizon as capability or coordination adapts, while useful outcomes
-and critical quality/ownership functions recover. A longitudinal trajectory with
-observed adaptation is more diagnostic than comparing unrelated early and late
-cohorts. Recovery after a specified intervention alone does not identify spontaneous
-adaptation or establish the intervention's incremental effect.
+**What to compare:** follow the same teams doing comparable work through a defined
+adoption and learning period. Where available, use credible comparison teams
+observed at the same time. Record tool versions, staffing, training and process
+changes. Separate routine adjustments from the particular H0-R intervention being
+tested.
 
-**Would weaken this account:** the predicted recovery fails within the stated
-horizon with adequate measurement and precision, or apparent recovery comes only
-from dropout of struggling teams, reduced scope or uncounted transferred work.
-Check survivor selection, seasonal demand, staffing and simultaneous tool changes;
-do not extend the learning window after seeing an unfavorable result.
+**Prediction and distinguishing evidence:** the early mismatch shrinks within the
+stated period as capability or coordination improves. Useful outcomes and required
+quality and ownership recover. Following the same teams and observing their
+adjustments tells us more than comparing unrelated groups of early and late users.
+Recovery after a specified intervention alone shows neither that teams would have
+adapted without it nor how much benefit it added.
 
-**Relations and owners:** may explain timing while accepting initial H0-B imbalance;
-challenges persistence in H0-D and attribution of improvement to H0-R. Relevant
-owners are [Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93),
+**What would weaken this explanation:** recovery fails within the stated period,
+with sufficiently complete and precise measurement. It is also weakened if apparent
+recovery comes only from struggling teams dropping out, reduced scope or uncounted
+work shifted elsewhere. Check who remains in the study, seasonal demand, staffing
+and simultaneous tool changes. Do not extend the learning period after an
+unfavorable result.
+
+**What it tests and who follows up:** this accepts an initial H0-B mismatch while
+challenging its duration, lasting harm under H0-D and attribution of recovery to
+H0-R. Owners are [Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93),
 [Operation #97](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/97)
-and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99),
-including HUM-1/2 and DEBT-1's distinct delayed endpoints.
+and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99).
+HUM-1/2 and DEBT-1 keep their separate tests of later human and maintenance outcomes.
 
 ### ALT-3 — Task mix, experimentation and measurement
 
-**Scope and comparator:** comparable assigned initiatives or tasks whose scope,
-exploration, activity accounting or release policy changes with AI use. Compare
-functional outcomes, quality and total effort across the same defined boundaries;
-include failed, discarded and stopped work. Follow experimentation through its
-decision/learning window and released work through the relevant delivery lag.
+**The idea:** more coding activity may reflect broader work, useful experiments
+or different counting practices, so an activity-to-output gap need not indicate
+overload or waste.
 
-**Prediction and distinguishing observations:** apparent activity-to-output
-attenuation is explained partly or wholly by broader scope, useful exploration,
-finer counting or batching, without the proposed overload mechanism. Linked
-task-to-outcome observations and justified learning from stopped experiments help
-distinguish this account from wasted work. Unequal percentages from different
-populations cannot form a conversion funnel.
+**What to compare:** examine comparable assigned initiatives or tasks when scope,
+exploration, activity counting or release policy changes alongside the AI access,
+use or adoption being studied. Compare delivered functions, quality and total
+effort across the same defined start and end points.
+Include failed, discarded and stopped work. Follow experiments through the period
+when they should inform decisions, and released work long enough to allow for
+delivery delays.
 
-**Would weaken this account:** attenuation and independently identified capability
-shortfalls persist after credible boundary, scope, quality and lag comparisons,
-without corresponding useful learning or additional functionality. Check task
-selection, unobserved abandoned work and measurement changes. Report the total
-exposure effect alongside adjusted comparisons: scope or experimentation may be
-part of AI's effect, so adjusting it away is not automatically a causal correction.
+**Prediction and distinguishing evidence:** broader scope, useful exploration,
+finer counting or release batching explains some or all of the apparent gap,
+without the proposed overload mechanism. Link tasks to outcomes and show useful
+learning from stopped experiments to distinguish exploration from wasted work.
+Percentages from different populations cannot be treated as steps in one conversion
+funnel.
 
-**Relations and owners:** qualifies H0-A/B and COD-1 interpretations and inferred
-waste/debt, while allowing a real constraint to coexist. Owners:
-[Intent #89](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/89),
+**What would weaken this explanation:** the gap and independently identified
+capability shortfalls remain after credible comparisons of scope, quality, timing
+and what was measured, without corresponding learning or added functionality.
+Check task selection, abandoned work that was not observed and measurement changes.
+Report the total estimated effect of the measured AI access, use or adoption
+alongside adjusted comparisons. Broader scope or experimentation may themselves
+be part of AI's effect; adjusting them away
+does not automatically give a better causal estimate.
+
+**What it tests and who follows up:** this qualifies interpretations of H0-A/B and
+COD-1, including claims of waste or debt. A real constraint may still coexist with
+it. Owners are [Intent #89](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/89),
 [Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92)
-and [Integration #95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95);
-DEBT-1 retains its persistence and later-cost test.
+and [Integration #95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95).
+DEBT-1 retains its separate test of whether obligations persist and add later cost.
 
 ### ALT-4 — Demand, discovery and adoption
 
-**Scope and comparator:** released capabilities and comparable user groups/tasks,
-where user-outcome growth may lag production improvement. Link specific delivered
+**The idea:** a gap between delivered software and user value may arise after
+delivery because people do not discover, need or adopt the capability.
+
+**What to compare:** examine released capabilities and comparable user groups or
+tasks when user outcomes improve less or later than production. Link specific
 changes to availability, discovery, adoption and task benefit. Compare demand and
-service conditions over a declared uptake and sustained-benefit window, including
-non-users and adversely affected groups.
+service conditions over stated periods for adoption and lasting benefit.
+Include non-users and groups that are adversely affected.
 
-**Prediction and distinguishing observations:** a gap arises at discovery, demand,
-competition or uptake despite adequate production and operability. Linked evidence
-that users do not discover, need or yet adopt a delivered capability distinguishes
-this boundary from a failure to deliver it. Usage and user benefit remain separate;
-lower cost or better reliability can benefit users with unchanged usage.
+**Prediction and distinguishing evidence:** discovery, demand, competition or
+uptake explains the gap despite adequate production and operability. Evidence
+linking a delivered capability to users who do not find, need or yet adopt it helps
+distinguish this explanation from a failure to deliver the capability. Measure
+usage and user benefit separately: lower cost or better reliability can benefit
+users even when usage is unchanged.
 
-**Would weaken this account:** sufficiently observed stable demand and uptake
-conditions accompany an identified production/quality constraint that explains the
-missing useful outcome, or the predicted uptake recovery does not occur within the
-stated window. Check changing audiences, pricing, product fit, competing offerings
-and external shocks. Separate marketplace series cannot identify this chain.
+**What would weaken this explanation:** well-observed, stable demand and uptake
+conditions accompany a production or quality constraint that explains the missing
+useful outcome. A predicted recovery in uptake that fails within the stated period
+also weakens it. Check changing audiences, pricing, product fit, competing offerings
+and external shocks. Separate marketplace series cannot identify the complete
+path from a particular production change to user benefit.
 
-**Relations and owners:** competes with H0-B explanations specifically at the
-production-to-value boundary; it does not explain every review queue and may
-coexist with one. Owners:
-[Intent #89](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/89),
+**What it tests and who follows up:** this competes with H0-B explanations at the
+step from delivery to value. It need not explain a review queue and can coexist
+with one. Owners are [Intent #89](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/89),
 [User outcomes #98](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/98)
 and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99).
 
 ### ALT-5 — Selection, heterogeneity and external changes
 
-**Scope and comparator:** developers, teams or repositories with different adoption,
-task selection, experience, architecture or concurrent changes. Define exposure,
-assignment/analysis units and relevant strata; compare credible assigned or
-matched groups over pre-exposure and outcome windows appropriate to the claim.
+**The idea:** an apparent AI effect may reflect who adopts it, what work they
+choose, the setting or another change happening at the same time. A real effect
+may also differ across settings.
 
-**Prediction and distinguishing observations:** an apparent AI effect diminishes
-under a more credible comparison, precedes exposure, tracks a separate change,
-or is concentrated in specified contexts. Allocation evidence, pre-trends,
-attrition/participation checks and within-context estimates distinguish selection
-or external-change explanations from an effect of the stated exposure. Genuine
-effect heterogeneity limits generalization even when an average causal effect exists.
+**What to compare:** define the measure of AI access, use or adoption being studied.
+Record how people, teams or repositories entered the compared groups, what unit
+is analyzed and which subgroups matter.
+Developers, teams or repositories may differ in task selection, experience,
+architecture or concurrent changes. Use credible assigned or matched groups and
+observe periods before and after the measured change that fit the claim.
 
-**Would weaken this account:** a scoped effect survives credible assignment,
-comparator and measurement checks with adequate precision, and proposed external
-changes do not explain its pattern. Check spillovers, concurrent staffing/deadlines,
-measurement error and post-exposure selection; favorable subgroup choices made
-after results remain exploratory. Robustness in one setting does not establish
-prevalence elsewhere or eliminate every unidentified confounder.
+**Prediction and distinguishing evidence:** an apparent effect shrinks under a
+more credible comparison, appears before the measured change, follows another
+change or occurs mainly in particular settings. Check how access, use or adoption
+was assigned or chosen, earlier trends, who participated or dropped out, and
+estimates within comparable settings. These observations help distinguish
+selection and other causes from an effect of the stated AI access, use or adoption.
+Even a credible average causal effect need not generalize when effects differ
+across settings.
 
-**Relations and owners:** challenges attribution or generalization of H0 and node
-claims, without denying a conditional mechanism in a genuinely exposed setting.
+**What would weaken this explanation:** the specified effect survives credible
+checks of assignment, comparison and measurement with adequate precision, and the
+proposed external changes do not explain the pattern. Check effects spilling into
+comparison groups, simultaneous staffing or deadline changes, measurement error
+and selection after the measured change. Favorable subgroups chosen after seeing the
+results remain exploratory. A robust result in one setting neither establishes
+how common it is elsewhere nor rules out every unmeasured alternative cause.
+
+**What it tests and who follows up:** this challenges causal attribution or
+generalization of H0 and node claims, while allowing a conditional mechanism where
+the relevant exposure really occurs.
 [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110)
-owns the first comparative assessment; each [node owner](#node-index) retains its
-population/design question, and [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100)
+owns the first comparative assessment. Each [node owner](#node-index) retains its
+population and study-design question; [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100)
 owns the specific marketing-to-decision chain in H0-C/MKT-1.
 
 ### ALT-6 — Net value and incremental remedy value
 
-These are **two separately judged propositions**, not one verdict that can replace
-the individual endpoints in H0-D. Both compare useful user outcomes, all affected
-role-hours/costs and critical capability/quality floors over a stated setup,
-delivery and maintenance horizon. Declare valuation, opportunity-cost and
-uncertainty assumptions; do not add incompatible outcome units into a balance score.
+**These are two separate questions: does AI-assisted work provide net value, and
+does a particular extra remedy add enough value?** Judge ALT-6a and ALT-6b
+separately. Neither judgment replaces the individual harm outcomes in H0-D.
+
+For both, compare useful user outcomes, working time and costs for every affected
+role, and minimum acceptable capability and quality. Use a stated period that
+covers setup, delivery and maintenance. Explain how benefits are valued, what
+other work the investment displaces and what remains uncertain. Do not add
+incompatible units into a single balance score.
 
 **ALT-6a — Positive net value despite a local burden.** For comparable useful
-service, AI-assisted production may yield sufficient benefit or savings to justify
-greater verification effort or other specified burdens. Compare the actual
-AI-assisted workflow with the credible prior/concurrent workflow. Sustained
-benefit exceeding full incremental cost supports this account; a justified net
-loss or a benefit dependent on omitted costs weakens it. Examine attribution,
-benefit lag, cost transfer, pre-existing obligations and useful learning. Positive
-monetary net benefit does not erase a measured learning, maintenance or human harm,
-and cannot alone establish acceptable overall improvement when a critical floor
-fails. This qualifies a net-harm conclusion; it does not refute the adverse
-endpoint itself. Owners: [User outcomes #98](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/98)
-and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99),
-with H0-D/HUM/DEBT/OPS owners retaining their individual outcomes.
+service, AI-assisted production may provide benefits or savings that justify
+extra review, testing or other specified burdens. Compare the actual AI-assisted
+workflow with a credible previous workflow or one observed at the same time.
+Sustained benefits exceeding all additional costs support this explanation. A
+justified finding of net loss, or a benefit that depends on leaving costs out,
+weakens it. Check whether AI caused the result, delayed benefits, costs moved to
+other people or stages, existing obligations and useful learning.
 
-**ALT-6b — Insufficient incremental value from the specified remedy.** Compare a
-predefined extra intervention with unchanged AI-assisted practice and, where
-feasible, further coding optimization at comparable investment. No meaningful
-incremental benefit, or cost/critical-outcome loss exceeding the gain, supports
-this account; sufficient demonstrated incremental benefit with preserved floors
-weakens it. Include setup, learning, upkeep and displaced work over the declared
-horizon. Check spontaneous adaptation, task selection and simultaneous changes;
-do not redefine a failed remedy after seeing results. This tests H0-R/BAL-1 and
-the node `-2` cards independently of ALT-6a. Owners:
+A positive financial result does not erase measured harm to learning, maintenance
+or people. It cannot by itself establish acceptable overall improvement if a
+required outcome falls below its minimum. ALT-6a challenges a claim of net harm;
+it does not refute a separately measured harm. Owners are
+[User outcomes #98](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/98)
+and [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99).
+H0-D/HUM/DEBT/OPS owners retain their individual outcomes.
+
+**ALT-6b — Insufficient incremental value from the specified remedy.** An extra
+intervention may add too little benefit to justify its costs. Define it before
+testing. Compare it with unchanged AI-assisted practice and, where feasible, with
+further coding optimization at comparable investment. No meaningful added benefit,
+or costs or losses of required outcomes that outweigh the gain, support this
+explanation. Sufficient demonstrated added benefit while preserving minimum
+acceptable outcomes weakens it.
+
+Count setup, learning, upkeep and displaced work over the stated period. Check
+routine adaptation, task selection and other simultaneous changes. Do not redefine
+a failed remedy after seeing the result. This tests H0-R/BAL-1 and the node `-2`
+cards separately from ALT-6a. Owners are
 [Economics #99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99)
-and the relevant [node owner](#node-index); any separately approved collection
-remains [#54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54).
+and the relevant [node owner](#node-index). Any separately approved data collection
+remains with [#54](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/54).
 
 ## Existing evidence and its exact coverage
 
