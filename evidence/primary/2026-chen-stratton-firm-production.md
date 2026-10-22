@@ -1,21 +1,31 @@
 +++
 source_ids = ["P-2026-04"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-22"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Chen–Stratton: AI adoption and firm software production
 
-> **Reviewed source; approved integration in progress, 2026-10-22, #87.**
-> The maintainer accepted the concrete treatment and README entry/navigation work
-> in the [recorded decision](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933).
-> Source assessment and the implemented integration are independently Confirmed;
-> merge and actual-main acceptance remain separate gates. This is not yet a `Verified`
-> source. The [impact report](../../governance/reviews/issue-87-2026-10-22-source-impact.md)
-> preserves the proposal, approval and review history.
+## Final integration checkpoint — 2026-10-22, #87
+
+Integration is **Verified / 2026-10-22** for accepted correction main
+`72a0b83798df53199341c4c3e96a2313e36c9398`, tree
+`32c435ae00593075be60bf26cb1e988656a08a06`, merged through PR #106.
+Separate source/content, faithful-recording and actual-main eligibility reviews
+are **Confirmed**; required head/main checks passed. The
+[final verification record](../../governance/reviews/issue-87-2026-10-22-final-verification.md)
+records the exact scope and evidence. Verification concerns the source's bounded
+repository uses; it does not establish every hypothesis or proposed remedy.
+
+The maintainer's [approval](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933)
+included the README entry/navigation work. The
+[impact report](../../governance/reviews/issue-87-2026-10-22-source-impact.md)
+preserves the proposal, approval and original review history. This checkpoint
+supersedes the pre-merge audit state below; the live issue records acceptance of
+the subsequent verification-metadata PR.
 
 ## Identity, exact version and access
 
@@ -274,15 +284,16 @@ identified broad employment loss remain part of the finding.
 
 ## Known uses and repository integration audit
 
-- **Current candidate uses:** `README.md`; `report/01_the_illusion.md`;
+- **Accepted current uses:** `README.md`; `report/01_the_illusion.md`;
   `report/02_broken_mechanics.md`; `report/appendices/mechanism-hypotheses.md`;
-  `REFERENCES.md`. The primary index is a navigation route. Merge/main acceptance
-  of these uses is not inferred from inclusion in this list.
+  `REFERENCES.md`. The primary index is a navigation route. Actual-main acceptance
+  of these uses is recorded in the final checkpoint above.
 - **Audit owner:** primary agent `/root`; supporting analyst
   `/root/issue87_existing_evidence` inspected existing uses and all report/protocol
   layers; `/root/issue87_source_identity` assisted source acquisition and arithmetic.
-- **Audit state:** In progress, after completing/indexing the Reviewed brief;
-  baseline main `00d2b65c27d18b78d8f6cbe597a3a6dfe762409a`.
+- **Audit state:** Verified after completing/indexing the Reviewed brief, the
+  In progress audit and accepted corrections. Original audit baseline was main
+  `00d2b65c27d18b78d8f6cbe597a3a6dfe762409a`; accepted main is identified above.
 - **Approval, original locators, interpretation limits and complete node outcomes:**
   [#87 impact report](../../governance/reviews/issue-87-2026-10-22-source-impact.md).
 - **Occurrence trace and synchronization:**
@@ -290,10 +301,11 @@ identified broad employment loss remain part of the finding.
 - **Numbers:** figure transcription plus normal/relative transformations in the
   linked calculation record; no raw-data replication.
 - **Protocol outcome:** No protocol change.
-- **Last verified:** —. Report/register integration, all-use audit, synchronized
-  status transitions, independent integration review and accepted-main verification
-  remain required before verification. The newly material NBER comparison follows
-  Flow D while retaining its accepted September source/version and May/July history.
+- **Last verified:** 2026-10-22. Report/register integration, all-use audit,
+  synchronized state/current-use records, independent integration review and
+  actual correction-main acceptance are complete. The newly material NBER
+  comparison followed Flow D while retaining its September source/version and
+  May/July history. Final metadata acceptance is recorded separately in the issue.
 
 ## Independent review
 

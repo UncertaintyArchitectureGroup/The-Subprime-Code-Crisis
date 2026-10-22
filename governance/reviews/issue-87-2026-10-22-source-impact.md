@@ -1,6 +1,9 @@
 # #87 — Chen–Stratton assessment and proposed treatment
 
-**Date:** 2026-10-22. **Current decision state: approved; implementation in progress.**
+**Date:** 2026-10-22. **Current decision state: approved; substantive integration
+accepted on main through PR #106.** The
+[final verification record](issue-87-2026-10-22-final-verification.md) owns the
+subsequent source-state checkpoint.
 The maintainer accepted the concrete treatment and explicitly added README as a
 clear entry point with comprehensive navigation. The
 [approval record](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933)

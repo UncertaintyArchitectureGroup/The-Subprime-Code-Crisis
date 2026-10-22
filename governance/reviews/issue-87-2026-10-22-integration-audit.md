@@ -5,9 +5,10 @@ live master [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-C
 Primary author: `/root`; README/report coauthor: `/root/issue87_existing_evidence`;
 source/navigation analyst: `/root/issue87_source_identity`. Independent reviewer:
 `/root/issue87_independent_review`, who authored none of the implementation.
-**Current checkpoint: independent integration Confirmed and required local checks
-passed. Live PR checks, merge/main acceptance and final source verification remain
-separate checkpoints.**
+**Current checkpoint: independent integration and actual-main acceptance Confirmed;
+PR #106 is merged with passing head/main checks.** The
+[final verification record](issue-87-2026-10-22-final-verification.md) records
+eligible source-state completion and its separate metadata review.
 
 ## Authority, baseline and scope
 
@@ -202,8 +203,18 @@ README routes through canonical indexes rather than duplicating every source bri
   in contributor workflows. Independent reviewer additionally inspected 419
   relative links and 72 local fragments in 13 changed Markdown files, with no
   unresolved target. External HTTP sites were not exhaustively crawled.
-- Live PR head checks, merge and actual-main acceptance: pending; no future result
-  recorded. Final source verification is a separate eligibility checkpoint.
+- Live publication: remote head `6bc25a7930339aa5447d1fba97c033d9a640a84f`
+  has exactly the independently Confirmed local recording tree
+  `32c435ae00593075be60bf26cb1e988656a08a06`. All three head checks passed
+  (Repository Gate twice for the update/ready events; Repository contract).
+- PR #106 merged at 2026-10-22T10:35:48Z into actual main
+  `72a0b83798df53199341c4c3e96a2313e36c9398`, with that identical tree.
+  Actual-main Repository contract passed. Primary and independent reviewer both
+  checked the live ref/tree/PR/checks and accepted the correction state.
+- Independent actual-main acceptance/verification eligibility: **Confirmed**,
+  2026-10-22, by `/root/issue87_independent_review`, including live reader/source
+  blob checks. This permits the authorized final metadata step; its subsequent
+  review and acceptance are recorded separately, not retroactively assumed here.
 - Plan checkpoint: after complete #87 acceptance, reread #84 and record whether
   this result changes scope/order. Current order remains #87 → #4 → #100 → #88
   with #1. Show current plan and propose #4 for approval; do not start it here.

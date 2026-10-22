@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "31c6782dd73841fbe75e2df31c948dcd3f05b5c2c644a95e3554f14fb6e60b9b",
+    "digest": "261d5512f46cbb2f75757126283eee26a546877dd587ae6809f4aac86e745630",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "23949287a32f0c1cae037983c12e74f16489db71aeb158fd29e44950a92cadf8"
+        "sha256": "dd5eb45062caf3c9a72b6054b0c99bd4ae1c176c6dd3e18fa792f20c0800f024"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -247,7 +247,7 @@
       {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
-        "sha256": "b5962364448f5b1a982bf680c3002ec754b074eb1aac3e67c3aa61ff05d6beb1"
+        "sha256": "8e2af35feeda06ba31eca97e4285951a515f557b6204ecf33acfab1dd217afcb"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
@@ -257,7 +257,7 @@
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "b2bfee000ccc7e938ca0e8b7b66d77de27f4e2d7fac26c3e6ec4cb52f0263e1b"
+        "sha256": "15a0792ffabc652ebdcc52eff4adc9106b29362c8cc3941524fdc2a7f90a71ba"
       },
       {
         "path": "evidence/primary/README.md",
@@ -352,7 +352,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "d540cc25059b760d9e13784b0684d91fea7dc2ee742df6ea03675d6272ba1471"
+        "sha256": "c5d7248060af7bb7b6d7eb68acd8e0e3b3e028feb07708a902be5835a390b3c2"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -515,9 +515,14 @@
         "sha256": "9f80be6ba3e3884bde4f1fd65571d9071acbda4015e6e698dc906c7d02288ee5"
       },
       {
+        "path": "governance/reviews/issue-87-2026-10-22-final-verification.md",
+        "identity_mode": "content",
+        "sha256": "fd24b211a3a0103684f9c40882d14a7dd793dfb3843995fe040113adb5a08395"
+      },
+      {
         "path": "governance/reviews/issue-87-2026-10-22-integration-audit.md",
         "identity_mode": "content",
-        "sha256": "7c3f4c2893179ae12cb1a4f2e041e52ab673f4ec8f6c3878dd22089bb7bd5be3"
+        "sha256": "1e2dc5f7bdda9303354651ac2ecf3c2368649f53bd1184fd67f2923cbcb9bb73"
       },
       {
         "path": "governance/reviews/issue-87-2026-10-22-numeric-checks.json",
@@ -527,7 +532,7 @@
       {
         "path": "governance/reviews/issue-87-2026-10-22-source-impact.md",
         "identity_mode": "content",
-        "sha256": "17f576854957ff789b957489c28f34e873e46c0b0508d45a5ed5a0a0b7b2557a"
+        "sha256": "9bbe86446ac08afaeed2c64c3c8bfbcbac9376d1c2c21e1319ddd56de35aaf49"
       },
       {
         "path": "governance/status-model.md",
@@ -678,6 +683,11 @@
         "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
         "identity_mode": "content",
         "sha256": "84739a05b2077c7ff41a43ebb8e1ebd1804a368a388f225ea3229662bbbfab75"
+      },
+      {
+        "path": "governance/work-records/2026-10-22-issue-87-final-verification.toml",
+        "identity_mode": "content",
+        "sha256": "be52ab46410485bf596eebc1cc10da793d9d341ab7f91969b23fd887ae92804b"
       },
       {
         "path": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
@@ -1300,8 +1310,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Chen & Stratton, [*Artificial Intelligence in the Firm: Bottlenecks in Software Production*](https://fion.ac/jellyfish.pdf), Job Market Paper, 4 August 2026; first version 7 January 2026",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "In progress",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-22",
       "can_support": "Firm-level coding, uncertain tracked completion and review-process estimates; observational adoption and pre-period movements; no measured ownership or active review labor",
       "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2026-chen-stratton-firm-production.md"
@@ -1311,8 +1321,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275, May 2026 revised September 2026; original PDF pinned, May history retained",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-22",
       "can_support": "September observational outcome estimates, positive releases, calibrated model and separate marketplace proxies; no identified universal bottleneck",
       "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`; `evidence/primary/2026-chen-stratton-firm-production.md` (bounded comparison)",
       "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
@@ -2371,6 +2381,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-87-2026-10-22-final-verification.md",
+      "title": "#87 — final source verification after accepted integration",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-87-2026-10-22-integration-audit.md",
       "title": "#87 — approved firm-evidence integration and README entry point",
       "instructions": [
@@ -2597,6 +2614,13 @@
     {
       "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
       "title": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-87-final-verification.toml",
+      "title": "governance/work-records/2026-10-22-issue-87-final-verification.toml",
       "instructions": [
         "AGENTS.md"
       ]

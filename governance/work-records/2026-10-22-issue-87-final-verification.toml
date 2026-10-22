@@ -1,0 +1,29 @@
+record_version = 1
+title = "Complete issue87 source verification after accepted firm-evidence integration"
+primary_flow = "Flow A completion for P-2026-04 and Flow D completion for P-2026-01 after independently accepted correction main"
+human_decision = "The maintainer's 2026-10-22 approval of the concrete #87 treatment and README entry/navigation work includes review, checks, merge/main and eligible final verification: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933. This is that authorized metadata step; no new source treatment, claim, workflow, protocol or next issue is selected."
+independent_review = "Confirmed"
+# Actual independent final-metadata outcome, 2026-10-22,
+# /root/issue87_independent_review: Confirmed for
+# 12b265f660d92ecfc3fa4642469e0f65aa9dc479, tree
+# 6411f31310828aa77884a14811ad2459124ae044. No remaining discrepancy.
+# Accepted correction main is 72a0b83798df53199341c4c3e96a2313e36c9398.
+# This records the actual review, not unseen recording changes, future metadata
+# merge, its actual-main acceptance or issue closure.
+
+[changelog]
+decision = "Not required"
+reason = "Records eligible final source verification and acceptance history for the substantive integration already recorded in CHANGELOG by PR106. No finding, hypothesis verdict, protocol or reader argument changes."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor obligation or governance rule changes; this applies accepted #85 and source-status procedures."
+doctrine = "No claim class, source meaning, terminology or hypothesis verdict changes."
+repository-architecture = "Existing source and dated-review/work-record layers retain ownership; no new live plan or register."
+reader-navigation = "Accepted README/report routes and anchors remain unchanged; only source-checkpoint and dated-review links are synchronized."
+evidence-indexes = "The accepted primary index already identifies the exact reviewed source and links its unchanged brief; no identity/path/status table there requires alteration."
+references = "Bibliographic identity and version are unchanged; REFERENCES does not own integration status."
+report = "Every accepted reader-facing source use and scoped hypothesis assessment remains byte-identical to correction main."
+protocols = "No protocol change for either source; accepted full-layer assessment remains applicable, with no measured remedy efficacy or new control."
