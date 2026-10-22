@@ -1,13 +1,39 @@
 +++
 source_ids = ["P-2026-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-22"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
-current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
+current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md", "evidence/primary/2026-chen-stratton-firm-production.md"]
 +++
 
 # Writing Code vs. Shipping Code — September 2026 revision
+
+## Changed comparative use — 2026-10-22, #87
+
+The maintainer approved comparison with the newly reviewed Chen–Stratton firm
+study and the README entry/navigation changes in [#87's treatment decision](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933).
+The September original, source findings and May/July history remain unchanged.
+Flow D retains **Reviewed brief** and resets integration to **Needs re-verification
+/ —** for changed README/report/register use and the new comparison in
+`evidence/primary/2026-chen-stratton-firm-production.md`.
+
+The independent integration review is **Confirmed**, 2026-10-22, by separate
+reviewer `/root/issue87_independent_review` for commit
+`1bf92575b4804ef4834660fa24566a2e4692cfb8`, tree
+`82218a60766d19846aabac25c71fd7b1620bbea1`. The current independent-review field
+records that actual result. Correction merge and actual-main acceptance remain
+required before a new verification checkpoint. The earlier #86 checkpoint below
+is historical for its accepted repository state, not current verification of
+these changed uses.
+
+The affected-use audit started locally at **In progress / —**. The corrective
+PR retains the initial **Needs re-verification / —** reset against its Verified
+base, as required by the trusted changed-use transition gate. The
+[#87 integration audit](../../governance/reviews/issue-87-2026-10-22-integration-audit.md)
+records each changed/retained occurrence, the new comparison, full node boundaries
+and the **No protocol change** disposition. No source re-review or version
+substitution is required by this unchanged original.
 
 ## Final integration checkpoint — 2026-10-22, #86
 

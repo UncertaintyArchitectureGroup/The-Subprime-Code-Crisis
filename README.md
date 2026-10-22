@@ -1,30 +1,40 @@
 # The Subprime Code Crisis
+
 ![crisis_cover](assets/crisis_cover.png)
 
 **An independent research synthesis on AI-assisted software delivery risk**
 
-When local coding gains improve delivery, and when review, QA, security, architecture, maintenance or operating work may absorb them.
+**Our research thesis: AI coding tools have changed the capacity to produce candidate software faster than delivery systems have adapted their ability to select, understand, verify, integrate, operate and obtain value from it. This imbalance calls for reassessing the whole SDLC.**
 
 **Primary author:** [Vitalii Oborskyi](https://www.linkedin.com/in/vitaliioborskyi) · **Project:** [Uncertainty Architecture Group](https://github.com/UncertaintyArchitectureGroup)
 
-> **Navigation:** [📉 **Read the Report**](report/01_the_illusion.md) | [🧾 **Evidence Library**](evidence/README.md) | [🛡️ **Operational Protocols**](protocols/README.md)
+> **Navigation:** [Read the Report](report/01_the_illusion.md) | [Hypotheses](report/appendices/mechanism-hypotheses.md) | [Evidence Library](evidence/README.md) | [Operational Protocols](protocols/README.md) | [Live Work Plan](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
+
+## The research thesis
+
+The unit of analysis is the complete software-delivery lifecycle:
+
+**Intent → requirements → design → code → review → test → integration → deployment → operation → realized user outcomes → business economics → feedback to Intent.**
+
+These are recurring functions, not a mandatory waterfall. AI can change several of them. The proposed mechanism is that faster candidate production can increase admitted work faster than complementary capability adapts. Under those conditions, local gains may become waiting, rework or obligations that surface later. Rebalancing means finding the actual constraint and testing a useful response: better automation, clearer intent, smaller changes, stronger capability, less unnecessary work or retaining an already adequate process.
+
+Each node contributes more than an artifact. It also supplies decisions, learning, coordination, understanding, ownership and feedback. **[Review is both a quality gate and an ownership gate](report/appendices/mechanism-hypotheses.md#review--rev-1-and-rev-2):** the receiving team needs to assess the change and be able to explain, diagnose, modify and recover the system. An approval click does not establish those abilities. The research compares all relevant outcomes with the actual previous process, whose strengths and weaknesses must also be measured.
+
+The purpose is **useful software for users, sustainable team capability and justified lifecycle cost and risk**. More code or releases do not by themselves establish user benefit, competitive advantage or ROI. Delivering the same useful service at lower cost can also be a gain. The [canonical hypothesis register](report/appendices/mechanism-hypotheses.md#the-thesis-and-the-outcome-that-matters) separates the premise, mechanisms, consequences and remedies, with observations that could support or weaken each.
 
 ## Quick Start
 
-Repository/source ideas enter through [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues).
-See the [live master work plan](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84),
-[dated backlog audit](governance/issue-backlog-audit.md),
-[intake and reviewed closure](governance/issue-workflow.md), and
-[cross-repository ownership](governance/repository-map.md).
-
 | Need | Start here |
 | --- | --- |
-| Understand the complete argument | [Read the report](report/01_the_illusion.md) |
-| Inspect the SDLC rebalancing thesis, every node's outcomes and testable hypotheses | [Canonical hypothesis register](report/appendices/mechanism-hypotheses.md) |
-| Inspect sources, evidence briefs, and source status | [Evidence Library](evidence/README.md) and [Source Registry](evidence/SOURCES.md) |
+| Read the argument in order | [1. Evidence and Delivery Outcomes](report/01_the_illusion.md) → [2. Verification and Delivery Mechanisms](report/02_broken_mechanics.md) → [3. Scenarios and Adoption Decisions](report/03_the_aftermath.md) |
+| Examine a particular SDLC function or challenge the thesis | [Hypothesis register](report/appendices/mechanism-hypotheses.md), its [node index](report/appendices/mechanism-hypotheses.md#node-index), and the [evaluation method](governance/hypothesis-evaluation.md) |
+| Trace a claim to its source and processing state | [Evidence Library](evidence/README.md), [Source Registry](evidence/SOURCES.md), and [References](REFERENCES.md) |
+| Inspect the economic assumptions and reproduce the illustrative calculation | [Appendices and analytical tools](#appendices-and-analytical-tools) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |
 | Understand the research and reasoning boundaries | [Scope](SCOPE.md), [Doctrine](DOCTRINE.md), and [Artifact Model](ARTIFACT_MODEL.md) |
-| Contribute or change the repository | [`AGENTS.md`](AGENTS.md) and [Contributing](CONTRIBUTING.md) |
+| Contribute evidence, a correction or implementation feedback | [`AGENTS.md`](AGENTS.md), [Contributing](CONTRIBUTING.md), and [governance playbooks](governance/README.md) |
+
+The [live master work plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) owns the work sequence and dependencies. The working cycle is one approved issue through review, merge and verification, followed by a plan checkpoint and approval of the next issue. New inputs enter through [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues); the [issue workflow](governance/issue-workflow.md) explains intake and completion. The [backlog audit](governance/issue-backlog-audit.md) is a dated snapshot, and the [repository ownership map](governance/repository-map.md) identifies related projects.
 
 ## Key Takeaways
 
@@ -34,22 +44,34 @@ See the [live master work plan](https://github.com/UncertaintyArchitectureGroup/
 4. **Repository risk framing:** Delivery risk depends on task selection, tool behavior, verification capacity and deployment choices.
 5. **Proposed practice:** Assess the delivery system and adjust controls where evidence identifies a gap; reuse adequate existing capability.
 
-The repository examines this as a delivery-system problem. It distinguishes source-reported findings and documented facts from repository interpretations, systems inferences, risk scenarios, and warning scenarios. It does not claim that AI coding tools are useless, that every organization will fail, or that isolated productivity gains are unreal. The detailed research boundary is defined in [Repository Scope](SCOPE.md).
+The current evidence supports parts of this argument. [September NBER](evidence/primary/2026-writing-code-vs-shipping-code.md) reports positive release gains alongside larger coding-activity gains in selected cohorts. [Chen–Stratton](evidence/primary/2026-chen-stratton-firm-production.md) adds a distinct firm setting with positive agent coding-activity estimates, a smaller uncertain tracked-completion estimate and changes in review-process measures. The [register's evidence assessment](report/appendices/mechanism-hypotheses.md#existing-evidence-and-its-exact-coverage) preserves positive, negative, null and context-dependent findings.
+
+**The complete causal chain remains a research hypothesis.** Independently identified capacity shortfalls, lost understanding, persistent debt, exhaustion, higher TCO and the effectiveness of proposed remedies each require their own evidence. Elapsed merge time does not measure active review labor or ownership. The [claim boundaries](DOCTRINE.md#claim-boundaries) and [Repository Scope](SCOPE.md) distinguish source findings, repository inference and conditional scenarios.
 
 ## Repository Map
 
 | Area | Purpose | Start here |
 | --- | --- | --- |
-| **Report** | Evidence, conditional delivery mechanisms, alternative scenarios and adoption decisions | [Part 1: Evidence and Delivery Outcomes](report/01_the_illusion.md) |
+| **Report** | Evidence, conditional delivery mechanisms, alternative scenarios and adoption decisions | [Part 1](report/01_the_illusion.md), [Part 2](report/02_broken_mechanics.md), [Part 3](report/03_the_aftermath.md) |
+| **Hypotheses and appendices** | Complete node outcomes, falsifiable propositions, source context and inspectable calculations | [Hypothesis register](report/appendices/mechanism-hypotheses.md) and [appendix guide](#appendices-and-analytical-tools) |
 | **Evidence** | Source registry, evidence taxonomy, source-oriented briefs, limitations, and integration status | [Evidence Library](evidence/README.md) |
 | **Protocols** | Adaptable controls for engineers, teams, public evidence, and organizations | [Operational Protocols](protocols/README.md) |
 | **Scope and Doctrine** | Subject boundaries, evidence principles, claim boundaries, and reasoning rules | [Scope](SCOPE.md) and [Doctrine](DOCTRINE.md) |
 | **Artifact Model and Glossary** | Repository structure, artifact relationships, and canonical terminology | [Artifact Model](ARTIFACT_MODEL.md) and [Glossary](GLOSSARY.md) |
-| **Governance** | Workflows, approval, source states, verification, synchronization, and independent review | [`AGENTS.md`](AGENTS.md) and [governance playbooks](governance/README.md) |
+| **Governance and work plan** | Workflows, approval, source states, verification, synchronization, independent review and current priorities | [`AGENTS.md`](AGENTS.md), [governance playbooks](governance/README.md), and [live plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) |
 | **Citation and attribution** | Repository citation metadata, terminology provenance, and attribution boundaries | [`CITATION.cff`](CITATION.cff) and [Terminology & Attribution](TERMINOLOGY_AND_ATTRIBUTION.md) |
-| **History** | Selected material evolution of the repository | [Changelog](CHANGELOG.md) |
+| **History and review records** | Material evolution, dated assessments and inspectable work records | [Changelog](CHANGELOG.md), [dated reviews](governance/reviews/), and [work records](governance/work-records/) |
 
 `AGENTS.md` governs repository work. The Doctrine governs content principles and claim boundaries. Scope and the Artifact Model expand those boundaries for readers. The Glossary governs recurring repository vocabulary. None of these documents overrides original source evidence or the canonical source-state rules.
+
+### Appendices and analytical tools
+
+| Material | What to use it for |
+| --- | --- |
+| [SDLC hypothesis register](report/appendices/mechanism-hypotheses.md) | Thesis, complete node-function inventories, current evidence coverage, alternatives, weakening observations and proposed remedy tests |
+| [Cost context](report/appendices/cost-context.md) | Historical company records, market estimates and budget intentions, with their accounting and inference boundaries |
+| [Conditional cost sensitivity](report/appendices/tco-sensitivity.md) | A hypothetical pilot-cost example with declared assumptions; it is not an empirical TCO estimate or ROI calculation |
+| [Model inputs](report/appendices/tco-scenarios.json), [reproduced results](report/appendices/tco-results.json), and [calculator](tools/tco_sensitivity.py) | Inspect and reproduce the illustrative arithmetic using the appendix's [reproduction instructions](report/appendices/tco-sensitivity.md#reproduction-and-validation) |
 
 ## Claim confidence map
 
@@ -71,14 +93,19 @@ The debt-risk row describes a [conditional local scenario](report/03_the_afterma
 
 The **Evidence Map** classifies materials by role. It answers a different question from the Claim confidence map: not *how confident are we in a claim?*, but *what kind of source, interpretation, or operational artifact is this?*
 
+Browse the [Evidence Library](evidence/README.md) through its class indexes: [primary empirical research](evidence/primary/README.md), [primary documentary sources](evidence/documentary/README.md), [secondary evidence](evidence/secondary/README.md), [theory and methodology](evidence/methodology/README.md), and [datasets](evidence/datasets/README.md). The coverage below points to the briefs behind the report; source-processing states remain in the [Source Registry](evidence/SOURCES.md).
+
 | Layer | Purpose | Current coverage in this repository |
 | --- | --- | --- |
-| **Primary empirical research** | Original studies and measurement reports with inspectable methods and results | [NBER: September revision, positive releases and bounded attenuation](evidence/primary/2026-writing-code-vs-shipping-code.md); [Peng bounded Copilot experiment](evidence/primary/2023-copilot-task-productivity.md); [METR early-2025 task-time RCT](evidence/primary/2025-metr-experienced-developer-productivity.md) and [2026 follow-up with identification limits](evidence/primary/2026-metr-productivity-design-update.md); [METR v1 long-task methods and verification limits](evidence/primary/2025-metr-task-horizon.md); [Xu OSS activity/rework with proxy and uncertainty limits](evidence/primary/2025-xu-copilot-oss-activity.md); [Agarwal adoption-mode activity/structure estimates](evidence/primary/2026-agarwal-agent-adoption.md); [GitClear historical code-change/clone signals](evidence/primary/2025-gitclear-code-quality.md) and [separate developer-output measures](evidence/primary/2025-gitclear-developer-output.md); [Menlo market-size estimates](evidence/primary/2025-menlo-enterprise-ai-spend.md) and [CloudZero budget intentions](evidence/primary/2025-cloudzero-ai-budget-intentions.md), distinct from delivery outcomes; [McKinsey 2025 adoption/value](evidence/primary/2025-mckinsey-ai-adoption-value.md), [Deloitte Q4 reported ROI/scaling expectations](evidence/primary/2025-deloitte-genai-q4.md) and [Stack Overflow 2024 attitudes](evidence/primary/2024-stackoverflow-ai-attitudes.md), distinct respondent-reported outcomes |
+| **Primary empirical research: coding and delivery** | Original task and delivery studies with inspectable methods and results | [NBER: September revision, positive releases and bounded attenuation](evidence/primary/2026-writing-code-vs-shipping-code.md); [Peng bounded Copilot experiment](evidence/primary/2023-copilot-task-productivity.md); [METR early-2025 task-time RCT](evidence/primary/2025-metr-experienced-developer-productivity.md) and [2026 follow-up with identification limits](evidence/primary/2026-metr-productivity-design-update.md); [METR v1 long-task methods and verification limits](evidence/primary/2025-metr-task-horizon.md) |
+| **Primary empirical research: firm production and review** | Firm-level activity, tracked completion and review-process estimates | [Chen–Stratton, August 2026 (P-2026-04)](evidence/primary/2026-chen-stratton-firm-production.md): positive agent coding-activity estimates, a smaller uncertain Jira-completion estimate, longer PR submission-to-merge elapsed time, and more formal change requests, comments and reviewer participation. Observational design and pre-period movements constrain causality; earlier assistant estimates differ. These measures establish neither active review labor nor competent ownership. See the [hypothesis assessment](report/appendices/mechanism-hypotheses.md#e-chen-stratton) |
+| **Primary empirical research: activity and structure** | Observational activity, rework and structural measures with source-specific boundaries | [Xu OSS activity/rework with proxy and uncertainty limits](evidence/primary/2025-xu-copilot-oss-activity.md); [Agarwal adoption-mode activity/structure estimates](evidence/primary/2026-agarwal-agent-adoption.md); [GitClear historical code-change/clone signals](evidence/primary/2025-gitclear-code-quality.md) and [separate developer-output measures](evidence/primary/2025-gitclear-developer-output.md) |
+| **Primary empirical research: spending and reported outcomes** | Market estimates, adoption and respondent reports, distinct from measured delivery effects | [Menlo market-size estimates](evidence/primary/2025-menlo-enterprise-ai-spend.md) and [CloudZero budget intentions](evidence/primary/2025-cloudzero-ai-budget-intentions.md), distinct from delivery outcomes; [McKinsey 2025 adoption/value](evidence/primary/2025-mckinsey-ai-adoption-value.md), [Deloitte Q4 reported ROI/scaling expectations](evidence/primary/2025-deloitte-genai-q4.md) and [Stack Overflow 2024 attitudes](evidence/primary/2024-stackoverflow-ai-attitudes.md), distinct respondent-reported outcomes |
 | **Primary documentary sources** | First-party records used for infrastructure, spending, organizational, and terminology-provenance claims | [Alphabet CY2024](evidence/documentary/2024-alphabet-financial-context.md), [Meta CY2024](evidence/documentary/2024-meta-financial-context.md) and [Microsoft FY2024](evidence/documentary/2024-microsoft-financial-context.md) company-wide filings; [Google historical engineering practices](evidence/documentary/2020-google-engineering-practices.md); [Microsoft FY25Q2 AI-business run rate](evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md), distinct from Copilot revenue/customer ROI; [terminology provenance records](evidence/documentary/terminology-provenance.md); [project-analysis provenance](evidence/documentary/project-provenance.md) |
 | **Secondary evidence and industry context** | Reviews, practitioner analyses, and synthesis used for context without treating them as independent measurements | [Techno Diaries single accessible anecdote](evidence/secondary/2025-technodiaries-review-anecdote.md); Horn’s personal [capability forecast](evidence/secondary/2026-horn-capability-commentary.md) and [engineering commentary](evidence/secondary/2026-horn-engineering-commentary.md); [Markus cost commentary](evidence/secondary/2026-inference-cost-commentary.md); [SoftwareSeni discovery/correction record](evidence/secondary/2025-softwareseni-review-synthesis.md), without live report/protocol use |
 | **Theory and methodology** | Frameworks used to interpret delivery-system behavior rather than to measure AI effects directly | [Goldratt/Cox methodology and original-access gap](evidence/methodology/1984-the-goal.md) |
 | **Datasets** | Documented data sources and datasets used by cited studies or future independent analysis | [Dataset registry](evidence/datasets/README.md); GitHub activity and marketplace datasets documented in cited studies |
-| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), Claim confidence map, and Crisis Map |
+| **Repository interpretation** | The Subprime Code Crisis synthesis: bottleneck migration, production attenuation, risk scenarios, and system-level implications | [Report](report/01_the_illusion.md), [hypothesis register](report/appendices/mechanism-hypotheses.md), [Claim confidence map](#claim-confidence-map), and [Crisis Map](#-the-crisis-map) |
 | **Protocols** | Practical responses, controls, metrics, and decision rules derived from the risk analysis | [Operational Protocols](protocols/README.md) |
 
 The canonical source inventory and status registry is [`evidence/SOURCES.md`](evidence/SOURCES.md). [`REFERENCES.md`](REFERENCES.md) is a compact bibliography and navigation aid. The [Artifact Model](ARTIFACT_MODEL.md) explains the complete relationship among sources, briefs, interpretation, claims, protocols, and feedback.
@@ -154,4 +181,4 @@ Use [`CITATION.cff`](CITATION.cff) with GitHub's **Cite this repository** functi
 This repository does not claim ownership of, or exclusive authorship over, the phrase **Subprime Code Crisis**. Its attributable contribution is the evidence-governed delivery-system synthesis, claim boundaries, risk mechanism, maps, and operational protocols.
 
 ---
-*License: CC-BY-SA 4.0*
+*License: [CC-BY-SA 4.0](LICENSE.md)*

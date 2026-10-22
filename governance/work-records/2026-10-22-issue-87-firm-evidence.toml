@@ -1,0 +1,25 @@
+record_version = 1
+title = "Integrate bounded firm evidence and make README the thesis and navigation entry point"
+primary_flow = "Flow A — new P-2026-04 reviewed and integrated; Flow D — new comparative use of unchanged September NBER P-2026-01"
+human_decision = "Maintainer approved issue87 with Починай, then accepted the concrete bounded treatment and explicitly requested README as a clear entry point with comprehensive navigation on 2026-10-22: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933. Proposal and alternatives: comment6338190401 and dated impact report. Approval covers split REV-1 process support/open causal-capacity and ownership consequences, necessary reader/source synchronization, review/checks/merge/main and eligible final verification within87. No next issue is authorized."
+independent_review = "Confirmed"
+# Actual independent integration outcome, 2026-10-22,
+# /root/issue87_independent_review: Confirmed for
+# 1bf92575b4804ef4834660fa24566a2e4692cfb8, tree
+# 82218a60766d19846aabac25c71fd7b1620bbea1. No remaining material discrepancy.
+# Earlier source-assessment correction I87-01 remains resolved and preserved
+# in the impact report. This does not certify unseen recording changes,
+# future merge, actual-main acceptance or final source verification.
+
+[changelog]
+decision = "Updated"
+reason = "Adds the reviewed firm study, bounded report/register synthesis and split REV-1 assessment; makes README a clear thesis/navigation entry point. Source verification remains a separate accepted-main step."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No new rule or obligation. Accepted85 governance already covers full-node outcomes and the one-issue cycle."
+doctrine = "Existing doctrine, scope and glossary support the approved thesis and source/inference/scenario distinctions; no new term or claim class is introduced."
+repository-architecture = "Uses the existing source-brief and dated-review layers; the canonical register and live master plan remain their existing owners."
+protocols = "No protocol change recommended: existing controls distinguish elapsed time, active effort, ownership, headroom and total cost; the paper tests no control efficacy."

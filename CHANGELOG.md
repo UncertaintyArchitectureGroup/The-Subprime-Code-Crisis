@@ -8,6 +8,11 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added the pinned August 2026 Chen–Stratton firm-production brief, published-value
+  calculations and bounded comparison with the accepted September NBER revision.
+  Positive coding, uncertain completion, review-process changes, observational
+  limits and unmeasured quality/ownership remain distinct.
+
 - Added a bounded claim graph with assumptions, alternative outcomes, falsifiers and proposed #54 measurements; a pinned METR v1 source assessment and a non-load-bearing methodology record with unresolved original-book access.
 
 - Added distinct original-survey briefs for McKinsey, Deloitte Q4 and Stack Overflow, a Microsoft FY25Q2 documentary record, separate personal Horn posts and bounded legacy/commentary/anecdote dispositions for #61.
@@ -21,6 +26,14 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 - Added a reviewed documentary project-provenance record covering the 2026-01-05 DOU precursor and discussion, the 2026-02-06 GitHub repository creation timestamp, and the 2026-02-10 explicit Subprime Code publication.
 
 ### Changed
+
+- Made README a direct entry to the SDLC rebalancing thesis, full user-outcome and
+  economics loop, Review quality/ownership functions and all main artifact families.
+  Integrated the approved #87 firm evidence in Chapters 1/5/7 and the hypothesis
+  register: retained H0-A/COD-1 and attenuation's provisional scope, added provisional
+  support for REV-1's observed process component, and kept causal capacity,
+  quality/ownership consequences and remedies open. Prior assessments are preserved;
+  source verification follows separate accepted-main completion.
 
 - Expanded the existing mechanism appendix into the canonical full-SDLC hypothesis
   register: explicit H0, eleven function/outcome inventories, separate adverse and

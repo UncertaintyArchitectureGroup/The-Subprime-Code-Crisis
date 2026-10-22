@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "f1200b95a4c664c4dee14b9f6b468c809c366fcc3721dab88bf6dfaf2a71c2f4",
+    "digest": "31c6782dd73841fbe75e2df31c948dcd3f05b5c2c644a95e3554f14fb6e60b9b",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "90b21c4d7f60ef67b6c4bd59dd9d308dce780ef80a3fd40b71c44cdf49bc204e"
+        "sha256": "4a4b451ee7d5dea5fc5592023d190d8912544e8a1297eeb838ae63273a95075e"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "c7321301cad1e3890c12c2f1beb89ca6920fa52e2ac3612232934b64d176bef3"
+        "sha256": "a4cee8c8a91cb2fb685ecc6e9665186d3b88711f2f2d3036a61d16dd5b7d6cc8"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "5f45632165c8de874c5d70761bf832a648c5052f86ac3088b14e159eaaae43e3"
+        "sha256": "c245947aeda48fbe5aa757f9a1ee43cb6339573f544a407000508d588ade25ef"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "0dddfa1f66e7fabcb50ca7b3821db1e2489923bcb51c30fd40639c784e886f2d"
+        "sha256": "23949287a32f0c1cae037983c12e74f16489db71aeb158fd29e44950a92cadf8"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -245,6 +245,11 @@
         "sha256": "fc57ece23a64291dd39756308ade71a3d16db5b150863e1e13a3ec058106edb7"
       },
       {
+        "path": "evidence/primary/2026-chen-stratton-firm-production.md",
+        "identity_mode": "content",
+        "sha256": "b5962364448f5b1a982bf680c3002ec754b074eb1aac3e67c3aa61ff05d6beb1"
+      },
+      {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
         "sha256": "457dba78a4dd7a873673a04b00f9e290dba4b4e44358a8ac588afabd86563468"
@@ -252,12 +257,12 @@
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "1b859e9e173e193753838fff4d9617ef7b97d62b449a1697ad79f208d1a2acda"
+        "sha256": "b2bfee000ccc7e938ca0e8b7b66d77de27f4e2d7fac26c3e6ec4cb52f0263e1b"
       },
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "96d12bbec4c96b63e51306c3039284e0d57f11263aa89b74c42789791b8ff620"
+        "sha256": "0833c05a4a962ecef3f2e1de7c213250e740c6040efea3de5d6c787392b1ff21"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -347,7 +352,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "9d396f39a2fe033be3f8e8a58a241ac792f725d854b92237bcafc3948648fa64"
+        "sha256": "d540cc25059b760d9e13784b0684d91fea7dc2ee742df6ea03675d6272ba1471"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -510,6 +515,21 @@
         "sha256": "9f80be6ba3e3884bde4f1fd65571d9071acbda4015e6e698dc906c7d02288ee5"
       },
       {
+        "path": "governance/reviews/issue-87-2026-10-22-integration-audit.md",
+        "identity_mode": "content",
+        "sha256": "7c3f4c2893179ae12cb1a4f2e041e52ab673f4ec8f6c3878dd22089bb7bd5be3"
+      },
+      {
+        "path": "governance/reviews/issue-87-2026-10-22-numeric-checks.json",
+        "identity_mode": "content",
+        "sha256": "470f519507a56c606e8802a99c152091fe1eee459d2603f0d3a51e626a23d0ac"
+      },
+      {
+        "path": "governance/reviews/issue-87-2026-10-22-source-impact.md",
+        "identity_mode": "content",
+        "sha256": "17f576854957ff789b957489c28f34e873e46c0b0508d45a5ed5a0a0b7b2557a"
+      },
+      {
         "path": "governance/status-model.md",
         "identity_mode": "content",
         "sha256": "ad0aeadd7360c7bec6ec76d59a886b9376f50f3fc06d6e7436619d84e5524d90"
@@ -660,6 +680,11 @@
         "sha256": "84739a05b2077c7ff41a43ebb8e1ebd1804a368a388f225ea3229662bbbfab75"
       },
       {
+        "path": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
+        "identity_mode": "content",
+        "sha256": "583d0660814a13bdd318dd230789376e808eb63524abde902f345b67c230b8d0"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -692,12 +717,12 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "97e4bdfdad4fe8946e2279ef0ae36375fb86c512d89901cd91a91ffd436c289d"
+        "sha256": "5b2bf023dcf7f7595b00795b6907667b42d82f83c533904602a7e118660548b0"
       },
       {
         "path": "report/02_broken_mechanics.md",
         "identity_mode": "content",
-        "sha256": "a40b93f0b9e791b9b15b0b76a1f5b95a15b9c0bd73d6a063742a9db353273172"
+        "sha256": "07b53dcccf414e4c19a85bdd6c7c607367181fdb461ed5bb8cbd7be066185daa"
       },
       {
         "path": "report/03_the_aftermath.md",
@@ -712,7 +737,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "fa61949caa5b28e95348e9d1ee97627ab97bd25139f79b4afa02f91c46bca780"
+        "sha256": "36ac097538eca2ca014b8b30aa70d82fa2ed62ef35a23d54e41d3f330d2743d5"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -1271,14 +1296,25 @@
   ],
   "sources": [
     {
+      "id": "P-2026-04",
+      "path": "evidence/SOURCES.md",
+      "source": "Chen & Stratton, [*Artificial Intelligence in the Firm: Bottlenecks in Software Production*](https://fion.ac/jellyfish.pdf), Job Market Paper, 4 August 2026; first version 7 January 2026",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Firm-level coding, uncertain tracked completion and review-process estimates; observational adoption and pre-period movements; no measured ownership or active review labor",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2026-chen-stratton-firm-production.md"
+    },
+    {
       "id": "P-2026-01",
       "path": "evidence/SOURCES.md",
       "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275, May 2026 revised September 2026; original PDF pinned, May history retained",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-22",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "September observational outcome estimates, positive releases, calibrated model and separate marketplace proxies; no identified universal bottleneck",
-      "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`; `evidence/primary/2026-chen-stratton-firm-production.md` (bounded comparison)",
       "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
     },
     {
@@ -1957,6 +1993,13 @@
       ]
     },
     {
+      "path": "evidence/primary/2026-chen-stratton-firm-production.md",
+      "title": "Chen–Stratton: AI adoption and firm software production",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/primary/2026-metr-productivity-design-update.md",
       "title": "METR: follow-up selection and measurement limits",
       "instructions": [
@@ -2328,6 +2371,27 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-87-2026-10-22-integration-audit.md",
+      "title": "#87 — approved firm-evidence integration and README entry point",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-87-2026-10-22-numeric-checks.json",
+      "title": "governance/reviews/issue-87-2026-10-22-numeric-checks.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-87-2026-10-22-source-impact.md",
+      "title": "#87 — Chen–Stratton assessment and proposed treatment",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/status-model.md",
       "title": "Source status model",
       "instructions": [
@@ -2533,6 +2597,13 @@
     {
       "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
       "title": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
+      "title": "governance/work-records/2026-10-22-issue-87-firm-evidence.toml",
       "instructions": [
         "AGENTS.md"
       ]
