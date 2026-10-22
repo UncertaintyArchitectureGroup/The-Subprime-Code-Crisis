@@ -1,15 +1,28 @@
 +++
 source_ids = ["P-2023-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-22"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2025-metr-experienced-developer-productivity.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Copilot and a standardized programming task
 
-## Current integration checkpoint — 2026-10-22, #86
+## Final integration checkpoint — 2026-10-22, #86
+
+Changed-use integration is **Verified / 2026-10-22** for accepted correction main
+`c67eb5787838735ab670a3788db4714d5ae45ff2`. Separate content, faithful-recording
+and actual-main eligibility reviews are **Confirmed**. The
+[final verification record](../../governance/reviews/issue-86-2026-10-22-final-verification.md)
+records the reviewed trees, actual-main checks and exact source boundary.
+
+The source's identity, findings, limitations and Current use paths are unchanged.
+Verification covers the audited repository use; it does not validate every linked
+hypothesis or proposed protocol remedy. This checkpoint supersedes the reset
+history below. The live #86 issue records later acceptance of the final metadata PR.
+
+## Changed-use reset history — 2026-10-22, #86
 
 The full SDLC register adds or materially reframes this source's bounded evidence
 coverage. Flow D retains **Reviewed brief** and resets integration to

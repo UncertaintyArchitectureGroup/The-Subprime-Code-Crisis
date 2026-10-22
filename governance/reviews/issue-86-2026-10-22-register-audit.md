@@ -3,8 +3,8 @@
 Date: 2026-10-22. Primary author: `/root`; node-card coauthor:
 `/root/issue86_node_cards`; evidence coauthor: `/root/issue86_evidence_fit`.
 Independent reviewer: `/root/issue86_independent_review`, which authored none of
-the candidate. **Corrected content review: Confirmed; I86-01 is resolved.
-Faithful recording, merge and actual-main acceptance remain separate.** This
+the candidate. **Corrected content and faithful recording: Confirmed; I86-01 is resolved.
+The correction is merged and checked on main; see the final-verification record.** This
 artifact records the active issue's implementation, not a competing live plan.
 
 ## Start-of-work declaration and authorization
@@ -377,3 +377,22 @@ E-* names now match the evidence entries, and the Review card identifies #4/#87/
 as owners of future work rather than implying completed reviews. The node coauthor
 produced the 11 inventories without source/status mutations. Neither coauthor is
 the independent reviewer.
+
+
+## Accepted correction-main checkpoint — 2026-10-22
+
+[PR #104](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/104)
+merged at `c67eb5787838735ab670a3788db4714d5ae45ff2`, tree
+`9d42506380605c70dca3c11db8ef49bb7918bc70`. Separate faithful-recording review
+Confirmed local `143af1059cdf7368268b35df090a10f3cf84f0aa` with that same tree;
+published head `dfc84d9f9a5b6d8e92080b72ada01385fe68c23c` also matches.
+
+Required PR checks and actual-main Main health 39753429113 passed. The independent
+reviewer fetched live PR/main/run/job records, compared all 165 tracked files with
+the Confirmed recording snapshot, and repeated main contract/state/RI checks.
+It **Confirmed actual-main eligibility** for final verification of the seven sources,
+with the five earlier unresolved records unchanged. The
+[actual acceptance comment](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/86#issuecomment-6337115495)
+and [separate final-verification record](issue-86-2026-10-22-final-verification.md)
+carry the observed completion and remaining final-candidate/plan checkpoint.
+Earlier preparation/pending statements above are dated history, not a live plan.
