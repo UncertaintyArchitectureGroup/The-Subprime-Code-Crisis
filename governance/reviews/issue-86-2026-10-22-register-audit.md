@@ -3,7 +3,8 @@
 Date: 2026-10-22. Primary author: `/root`; node-card coauthor:
 `/root/issue86_node_cards`; evidence coauthor: `/root/issue86_evidence_fit`.
 Independent reviewer: `/root/issue86_independent_review`, which authored none of
-the candidate. **Content review is pending in this preparation record.** This
+the candidate. **Initial review: Corrections required; I86-01 is corrected and
+repeat review is pending.** This
 artifact records the active issue's implementation, not a competing live plan.
 
 ## Start-of-work declaration and authorization
@@ -82,12 +83,12 @@ tests, not five additional independent confirmations. All original detailed H1�
 table text, A1–A3, F/M/D distinctions, scenarios, measurement handoff and section
 anchors survive; the original document-title fragment also receives an explicit alias.
 
-| Acceptance | Observable condition and implementation | Preparation status |
+| Acceptance | Observable condition and implementation | Current pre-merge assessment |
 | --- | --- | --- |
-| AC-1 | Eleven inventories, 44 grouped function rows, actual-baseline U/unmeasured convention, substitutions/owners/costs, quality/ownership/learning/handoff/recovery/value boundaries | Implemented; independent challenge pending |
-| AC-2 | H0 and all pairs/cross-cutting IDs, independent exposure, adverse/remedy predictions, comparators/horizons/alternatives/falsifiers, critical outcomes and decision roles; H1–H5 mapping and original tests | Implemented; independent challenge pending |
-| AC-3 | Seven existing exact-version source records; partial support restricted to H0-A, attenuation premise of H0-B and COD-1; mechanism/other outcomes remain Open; family dependence and counterevidence explicit | Implemented; original/all-use audit and independent acceptance required |
-| AC-4 | One existing register; README and three chapter navigation; two glossary terms; R2 statement updated to expanded owner; no new chapter conclusion or operational control | Implemented; link/synchronization checks pending |
+| AC-1 | Eleven inventories, 44 grouped function rows, actual-baseline U/unmeasured convention, substitutions/owners/costs, quality/ownership/learning/handoff/recovery/value boundaries | Independently checked in initial review; AC-5 remains separate |
+| AC-2 | H0 and all pairs/cross-cutting IDs, independent exposure, adverse/remedy predictions, comparators/horizons/alternatives/falsifiers, critical outcomes and decision roles; H1–H5 mapping and original tests | I86-01 corrected; repeat review pending |
+| AC-3 | Seven existing exact-version source records; partial support restricted to H0-A, attenuation premise of H0-B and COD-1; mechanism/other outcomes remain Open; family dependence and counterevidence explicit | Original/all-use assessment independently checked; full acceptance pending |
+| AC-4 | One existing register; README and three chapter navigation; two glossary terms; R2 statement updated to expanded owner; no new chapter conclusion or operational control | Navigation/synchronization independently checked; AC-5 remains separate |
 | AC-5 | Independent content/recording review, applicable trusted/local/live checks, correction merge, separate final source verification, actual-main acceptance, #84 reread and next scope/approval handoff | Pending; not inferred from draft or green local checks |
 
 ### Assessment boundaries that matter
@@ -165,6 +166,41 @@ will contain exactly one new work record. Existing merged work records remain in
 This candidate cannot record its own future merge or closure. After correction
 acceptance, a separate final-verification record will inspect actual main; issue/PR
 comments and #84 will carry the actual post-merge checkpoint and next approval.
+
+
+### Initial independent outcome and I86-01 correction
+
+On 2026-10-22 `/root/issue86_independent_review` returned **Corrections required**
+for content commit `73974b5d6c7a88381ed238987d0b79764ff843f8`, tree
+`43b89357090780c92400a23ca9e015c612dd2b03`. The retrievable GitHub content commit
+`9a93270d65c4bb6c9e22aa75c891651943afb7f8` has that identical tree. The reviewer
+and its separate read-only challenge reviewer authored none of this candidate.
+The primary independent reviewer inspected and adjudicated the challenge finding.
+
+**I86-01, P2:** DES-1's “stable or lower later effort and capability” gave capability
+deterioration the wrong favorable direction. Root changed the joint weakening
+observation to stable/lower later effort **with preserved or improved demonstrated
+capability**. Lower capability no longer counts as favorable counterevidence.
+This corrects the proposed test; it reports no observed team deterioration.
+
+No other material content defect was found. The independent review covered all 32
+hypotheses, 44 node-function rows, whole-outcome substitutions/tradeoffs, symmetrical
+adverse/remedy tests, source fit, independence, historical continuity and scope.
+It independently reopened all seven originals with the disclosed NBER access
+boundary, inspected reader/protocol implications, and confirmed appropriate resets.
+The actual initial Corrections required outcome is now recorded in the seven brief
+front-matter fields; integration remains Needs re-verification with empty dates.
+
+Independent structural checks passed: contract, evidence state/transitions,
+126 tests, RI, diff whitespace, exact 162-file baseline manifest, reproduction of
+all 652 source-query hits, 14 manual pointers, exact retained seven brief bodies,
+33 registry identities and five Current use additions. Its separate bounded scan
+checked 390 local links (58 fragments) across 22 changed/affected Markdown files
+without missing targets; that scope differs from root's 21-file reader scan.
+
+The work record remains intentionally absent until the actual repeated content
+outcome is received. Faithful recording, the final trusted gate, merge and
+actual-main/final source verification remain separate acceptance steps.
 
 
 ## Source audit annex

@@ -6,7 +6,8 @@
   `6db10bbe870eed825847c294394b4923b0d9e643`, tree
   `2d6516fca89987a74635a1f742054b4f4c56dde6` (#65 completed via PR102/103).
 - #86 is the approved active issue. This candidate implements its full SDLC
-  function/outcome and hypothesis register; independent content review is pending.
+  function/outcome and hypothesis register. Initial independent review required one
+  Design test correction (I86-01); corrected candidate awaits repeated review.
 - This candidate cannot record its own future merge. Fetch live #86/PR/main and
   actual-main checks before deciding whether acceptance is complete.
 
@@ -47,7 +48,8 @@
   seven source searches, 652 hit dispositions and 14 manual indirect/protocol uses.
 - Seven reviewed sources retain their original identities/results. Their changed
   use resets integration to Needs re-verification / Last verified —; five add the
-  register to Current use. Previous Confirmed metadata is explicitly historical.
+  register to Current use. Actual initial review is Corrections required for I86-01; prior review history is
+  preserved. The fixed candidate awaits repeated independent review.
 - NBER publisher access was denied on 2026-10-22. Matching decisive September
   passages were inspected in the author-hosted 133-page original. The accepted
   134-page publisher original/hash is retained; no whole-document equivalence or
@@ -63,7 +65,7 @@
 
 ## Next actions
 
-- Freeze the content candidate and receive independent review; correct findings.
+- Obtain repeated independent review of the corrected I86-01 candidate.
   Record the actual outcome in exactly one work record per eventual PR and obtain
   faithful-recording review. Run applicable trusted/local/live checks.
 - Merge corrections with seven source resets intact; verify actual main. Then

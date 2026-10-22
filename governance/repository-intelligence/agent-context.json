@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "62b32e22d508ae6959b2e275fdabed74713dc4cd15d43b9c80d721c54374fcb7",
+    "digest": "26bf905c0b3c6299e7bed336a9b146186e934b09c5c1dbb89b97600efa9a91c1",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -187,7 +187,7 @@
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
-        "sha256": "3f543363b42b1071b8f52d7fe7ac1430cbdfcceb72e741f88b509878c1187ec4"
+        "sha256": "1b36c4a2faf038b08f661c6a4817c1b15fb53ad84cd30785dd624d5b99d21fd5"
       },
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
@@ -227,32 +227,32 @@
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "90a0c0afc2472974164645006a0d858267a33d160b08aa8f850da9d3ae6f972e"
+        "sha256": "963d8cf9b843d2171c563262878efaa3c72f156a4cca294331fcb1ca2a80855c"
       },
       {
         "path": "evidence/primary/2025-metr-task-horizon.md",
         "identity_mode": "content",
-        "sha256": "a5f0b00cf6c22c2e88d8fb02a5e746108ac872512a845606ad44b243918cf5c2"
+        "sha256": "da04af625feb15dfbc20b7ca3d79e750e4ac95c707c332fb2f8b866abc2efa89"
       },
       {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
         "identity_mode": "content",
-        "sha256": "ee70808bee7e18ef511b79c817f49843178a30f6bf215d6c733d22f433b15bc3"
+        "sha256": "ff742211c84f42d09e5facad859c6a5874585db40212bbededc81b9a7680eb46"
       },
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "df2fd39a35a187dbe14c7562c28f2bc89b09ee59211da8534573be68bbf29cee"
+        "sha256": "846b5677e1796987ba0aca745bdf24cc7b2b29ea530600e032a62707767ec573"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "7345e69c8afec0e4adafb25da769c0e3ff960e34daf363993449c5131036c293"
+        "sha256": "ff54e21bb3656ac61d5743a574e5dbb33f1bd4f2698735ceea2c10e950564ddb"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "8c0a76fc209f89b5ed40a725c84d1f625c2011ce020ce340610077a05c3b6100"
+        "sha256": "12a2084e90bc4e71ccffbf3e18f8fc5d2f4af53eac74932b577b741ada74d2ae"
       },
       {
         "path": "evidence/primary/README.md",
@@ -347,7 +347,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "9c1e37df8d3980b5e2f068c8c3bcb62606b0edc00676c5af6363a02b9fb992d0"
+        "sha256": "38cff7ed3af158419688000c1b270ef3b3744784ddd0c0e1eaf61147de977caa"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -502,7 +502,7 @@
       {
         "path": "governance/reviews/issue-86-2026-10-22-register-audit.md",
         "identity_mode": "content",
-        "sha256": "6ba0235fbbeaa499cc31918a941f9a809562084ca51064c3b337dec87a53212a"
+        "sha256": "359eb4085a99d946f53605e736682c2e45ff68af31e4609952b1a7977672860a"
       },
       {
         "path": "governance/status-model.md",
@@ -697,7 +697,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "e97b1e539ef94a11fdf18869fd958cdd901c84f4276b81c643b356f55118936a"
+        "sha256": "fa61949caa5b28e95348e9d1ee97627ab97bd25139f79b4afa02f91c46bca780"
       },
       {
         "path": "report/appendices/tco-results.json",
