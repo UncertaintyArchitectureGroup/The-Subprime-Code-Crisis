@@ -37,7 +37,7 @@ Each layer addresses a different decision boundary. Choose and evaluate a combin
 - Green, Controlled, and Protected work zones;
 - Disposable Boundary Pattern;
 - Reference-Bounded Adaptation;
-- explicit verification before generated output becomes durable code;
+- explicit verification before generated output changes durable code, data, or operations;
 - engineer accountability for every committed change.
 
 **Use this when:** AI-generated output is entering day-to-day implementation work and the team needs clear boundaries for what may be generated, adapted, reviewed, or rejected.

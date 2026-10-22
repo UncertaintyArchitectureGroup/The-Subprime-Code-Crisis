@@ -1,0 +1,2814 @@
+{
+  "purpose": "Issue65 coauthor occurrence/disposition preparation; no source re-evaluation or independent final review",
+  "date": "2026-10-22",
+  "baseline": "4a8165f65d78bbb33a8444a6874478f7784934d2",
+  "snapshot_path": "/tmp/issue65-baseline-audit",
+  "scope": "All 157 tracked files at baseline; each registered ID plus names/title/URLs/distinctive values; each C01-C33 cluster. Broad queries intentionally contain false-positive terms; hits are not assertions.",
+  "file_count": 157,
+  "manifest": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/research-input.md",
+      "sha256": "0ace4c5b67baf72a0d565d49cc4225f1825bae2fcea69a14d4fb5265e394d845"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/work-item.md",
+      "sha256": "0dea4f58085d968e4a33cf925d1c59c14029568ea460c5bd68ab99b7d98df7fd"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "56f3ab06382eb8296bf9a866637d10411f3b6215878169f1cc4ff9ad6c006477"
+    },
+    {
+      "path": ".github/workflows/main-health.yml",
+      "sha256": "c782f224d7afcbaaf4d6e2efcaf1e8cb2e60985eab1d5af5086970927be29ceb"
+    },
+    {
+      "path": ".github/workflows/repository-gate.yml",
+      "sha256": "bd26e285c21d30b2fd73881c706e8cca0d245ad6df0fe1ec4f4b8d23a36c8c07"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "557fa38167e169d450781791b18c3f34e22bb5b536d26d86326bec8490ae5964"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "d00d2de0909a84aba3c66edc3aa25065268fdc4e33dccd9c8bc6578ab0c26130"
+    },
+    {
+      "path": "ARTIFACT_MODEL.md",
+      "sha256": "bdaaa11959016973a27c936d462632953b436288031a354a4ed4587530aad46f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "c06170dcae7c3d6bd4b62906e55abbd635ee813437a90148f6da18e82109ed1b"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "a3492a01ea794eba777b3c3c1412780ff070c1390474097831495da898ebfcb5"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "992bd642ef358d24f58cad8305319abcdf598bf0a86abc50ce3c0e7a399ae4be"
+    },
+    {
+      "path": "DOCTRINE.md",
+      "sha256": "6cce7d99120c818bcd768fccdd62a696bf5fed096b586025811f4c5e35d3e835"
+    },
+    {
+      "path": "GLOSSARY.md",
+      "sha256": "b2cddda9b841c6ccd7cae5a98e846e52e76bbe508a909f757888fe7e53147bc2"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "a4c5a19ccb3afc01692c66a17633e51f32db1cf9f676bc64b4672598ed583545"
+    },
+    {
+      "path": "README.md",
+      "sha256": "817b2e72b2d9d47a181f09cf974dd6be661f9d5eeca6f2adb1cd3d3df8466d7e"
+    },
+    {
+      "path": "REFERENCES.md",
+      "sha256": "5f45632165c8de874c5d70761bf832a648c5052f86ac3088b14e159eaaae43e3"
+    },
+    {
+      "path": "SCOPE.md",
+      "sha256": "fc36db9fad3c1e3959a8f31d5e44cf2569f7a495a6e5e925e2b8a159beebfc65"
+    },
+    {
+      "path": "TERMINOLOGY_AND_ATTRIBUTION.md",
+      "sha256": "09dbe41609c2399c64fbccdf092a25f1517d8dd8e5d879a491d08a1a640ef290"
+    },
+    {
+      "path": "assets/Pasted image 20260209153307.png",
+      "sha256": "1514b7f8ad8f3c2e0ec993fe14b99a97531b79e00c469370ec60539d6a6a2fc0"
+    },
+    {
+      "path": "assets/crisis_cover.png",
+      "sha256": "8de4839abd07cc08ad9d5a58c9676798819a03a2178ce159487b38e2f349972f"
+    },
+    {
+      "path": "evidence/README.md",
+      "sha256": "f1b74032bd0a8e963c3197e4139a8e6400de935674c370086a0c9c34f64c0aa5"
+    },
+    {
+      "path": "evidence/SOURCES.md",
+      "sha256": "163fa459adc1f76cb7296fa690b66a94978f7d7c5c7639f08d4d5703073afb86"
+    },
+    {
+      "path": "evidence/datasets/README.md",
+      "sha256": "ff99829c003ed87b93ca8de93a9c63c6c9f61beeac122f588ca15e167a1a4fea"
+    },
+    {
+      "path": "evidence/documentary/2020-google-engineering-practices.md",
+      "sha256": "a9f97f4107620632b1822385d83ec29d2db020f3e7dfad42c3f994315646bd24"
+    },
+    {
+      "path": "evidence/documentary/2024-alphabet-financial-context.md",
+      "sha256": "f46730584652dfd43b873e1f7fc7a4814add2db33abcbd2e807033c72040a64d"
+    },
+    {
+      "path": "evidence/documentary/2024-meta-financial-context.md",
+      "sha256": "6c4aa2e1a3e2f4fad6eefe5c9f409ccd9b31647ddecab3357dbc4fa7982ac44e"
+    },
+    {
+      "path": "evidence/documentary/2024-microsoft-financial-context.md",
+      "sha256": "34c14167aee1621bf666e7f3d1dcfc332fb83819bcfe512fe79a4a21450a9af1"
+    },
+    {
+      "path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
+      "sha256": "662c5a875f61fa524f967a793f1063b51dd6552cf32eedf36d34ca7ff6784d59"
+    },
+    {
+      "path": "evidence/documentary/README.md",
+      "sha256": "d764bd2f8cdeded1db156953bc31495c90d977fcd2afaa7b7cf62434e1c727be"
+    },
+    {
+      "path": "evidence/documentary/project-provenance.md",
+      "sha256": "7bcfbf0c2558f527a91b8f0f014b3284f5e8dc170a8e8de0bcd59c6e8d9582f0"
+    },
+    {
+      "path": "evidence/documentary/terminology-provenance.md",
+      "sha256": "04a72cb7a182213f82c7a32badafef1c78fe5fbc2809ddede30f380b7dc79fe3"
+    },
+    {
+      "path": "evidence/methodology/1984-the-goal.md",
+      "sha256": "557e6713d41a14fa5e12e65562a5dd168b1b9713cf86f1493bb6b01e5de7a895"
+    },
+    {
+      "path": "evidence/methodology/README.md",
+      "sha256": "d1a736a961441475cc6e98e8fb25b2c9cd4e0ec59d7432a8ee72d32ea6098c9f"
+    },
+    {
+      "path": "evidence/primary/2023-copilot-task-productivity.md",
+      "sha256": "de54c8975283dbb770fff786880bff3e6e7a54af82da21580727fba0ebb301ed"
+    },
+    {
+      "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
+      "sha256": "b4f50edcca331d5b318ff91c89799635ea5e0034682ee2dced7d92e3efba5c0e"
+    },
+    {
+      "path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
+      "sha256": "a85985902998c9295c892e545a5e56986a329730b49fa8fa92a9566776dc5803"
+    },
+    {
+      "path": "evidence/primary/2025-deloitte-genai-q4.md",
+      "sha256": "85f31ba25e0d44e952364e2e453877ac544eac5c13ac12585f214cd56906efa6"
+    },
+    {
+      "path": "evidence/primary/2025-gitclear-code-quality.md",
+      "sha256": "dcfb508750adf5526ffbfcb763afb69dbe8351ecfe69ed230b18b2fe24a17c89"
+    },
+    {
+      "path": "evidence/primary/2025-gitclear-developer-output.md",
+      "sha256": "f7fb46aa3b73998a9873fd8d966e30f060c4f55b7001483c87c045692aca1518"
+    },
+    {
+      "path": "evidence/primary/2025-mckinsey-ai-adoption-value.md",
+      "sha256": "8e2a4fbd9ac4681c66522e545706137b2df40da01a18ede7ec2f6480977a7a02"
+    },
+    {
+      "path": "evidence/primary/2025-menlo-enterprise-ai-spend.md",
+      "sha256": "f669e2998e9e574f6098ed3d04cf19e39d1c9fbe41735a9bb87a06ad6663bcaa"
+    },
+    {
+      "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
+      "sha256": "049b999f86049ad760838ac5f660c3c157c3c32bd6aeb6605f808dc0d2f42120"
+    },
+    {
+      "path": "evidence/primary/2025-metr-task-horizon.md",
+      "sha256": "804967219d7327e2788848ab6f1f7517202a059133ff1f49befe998717052f63"
+    },
+    {
+      "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
+      "sha256": "3146babd8b1a5e306c886d869b5920ba6020fb07c51a2a4b982c49b98a301848"
+    },
+    {
+      "path": "evidence/primary/2026-agarwal-agent-adoption.md",
+      "sha256": "e53d1e5d896067f46c07b1917f50a1f162d80e0322121ef422b1803395c4c667"
+    },
+    {
+      "path": "evidence/primary/2026-metr-productivity-design-update.md",
+      "sha256": "2813687c828b4ef02f811260f689eef804172157a70607300f66e774c59de1b7"
+    },
+    {
+      "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
+      "sha256": "ca326ca6b8aed8781b00b2cf546493cc275ef7bdb66f70e348895b3694dd1f43"
+    },
+    {
+      "path": "evidence/primary/README.md",
+      "sha256": "96d12bbec4c96b63e51306c3039284e0d57f11263aa89b74c42789791b8ff620"
+    },
+    {
+      "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
+      "sha256": "679fadc6806f084b89383a420db81c263b07be0dc655aa7c29c9adcecfa402a4"
+    },
+    {
+      "path": "evidence/secondary/2025-deloitte-legacy-citation.md",
+      "sha256": "05df36bb4c268f4a3e2d258838bc85c9c111481e444e7bfec5081be3183ba73f"
+    },
+    {
+      "path": "evidence/secondary/2025-softwareseni-review-synthesis.md",
+      "sha256": "6b4d39c9331c5abd3db8448084cf7fcd3fedd9f3295f29349cc0e9b9363b5b04"
+    },
+    {
+      "path": "evidence/secondary/2025-technodiaries-review-anecdote.md",
+      "sha256": "dda50822e22de54cfa086888c52ee762db8bd4a84e1fc25ae79065b1c1cf8002"
+    },
+    {
+      "path": "evidence/secondary/2026-horn-capability-commentary.md",
+      "sha256": "c859fe3addaa0bd06e4c9f6956c8e0a16a0f701015c27b48f5bad5cd1b4c70c0"
+    },
+    {
+      "path": "evidence/secondary/2026-horn-engineering-commentary.md",
+      "sha256": "435e03ea589132e285d898955aae2170fc96a0d24c6da610c0116f99cae9c1c6"
+    },
+    {
+      "path": "evidence/secondary/2026-inference-cost-commentary.md",
+      "sha256": "f74c5a28a9b9268402df6fe003430663a95f11e5ce1ea763845213ac5c6001a1"
+    },
+    {
+      "path": "evidence/secondary/README.md",
+      "sha256": "f25f867b5002a27b480f0139b4ece7aa51cc19b4a3c81cfa934bbd0bde7d4bfc"
+    },
+    {
+      "path": "governance/README.md",
+      "sha256": "63da06f9d312bb0c7f750c3bd09e6049bdafaed6129185ff804c8132477e1496"
+    },
+    {
+      "path": "governance/content-synchronization.md",
+      "sha256": "2da5b6f65466ec39464d5fa3b7ff1aaa0777c7993601cc10bbe6acbf85a2e7c7"
+    },
+    {
+      "path": "governance/evidence-discovery.md",
+      "sha256": "c738cdba38c84b14da66733d2a0353476b91d68931488de87e3ea0a6326cceaf"
+    },
+    {
+      "path": "governance/evidence-review.md",
+      "sha256": "2bbe21ffc9764bbede330927fdf514794b9426e1605417ccd3000c510cbfa6bd"
+    },
+    {
+      "path": "governance/hypothesis-evaluation.md",
+      "sha256": "7eabbad24e40e27fd0f836e1b63a9125853759aa2d632138f3775945100d7064"
+    },
+    {
+      "path": "governance/independent-review.md",
+      "sha256": "9bc60c504043c65d4880bf296e089550649bd494feca43c8885ea8c73c234279"
+    },
+    {
+      "path": "governance/integration-audit.md",
+      "sha256": "b923279f70697495a8103ad242c129f4f7a6b65c9bdd14a827dc0cc5443063fb"
+    },
+    {
+      "path": "governance/issue-backlog-audit.md",
+      "sha256": "43b5f69f2a555c0df7d91cd0c12a409e4d1d3c8a24086c326f181a69d2c63cdb"
+    },
+    {
+      "path": "governance/issue-workflow.md",
+      "sha256": "d9e5e6561747d7f161a229ff21c7b8b22a6fcc9bf53e60439050d12cbf5f938b"
+    },
+    {
+      "path": "governance/memory.md",
+      "sha256": "6fe6c8cf9ccf84d17f2391d88ad5e3fb791b66abd03216b84836e71124b3156d"
+    },
+    {
+      "path": "governance/pr-process-and-synchronization.md",
+      "sha256": "9e2ece20953849c144d5e5ff6c374555a43fafddb100ff812db1e91ead486247"
+    },
+    {
+      "path": "governance/repository-contract.toml",
+      "sha256": "9ea8405562b4093834660ad721275e5a3b81faf98efaa081fee3d2247fdf9448"
+    },
+    {
+      "path": "governance/repository-intelligence-config.json",
+      "sha256": "3a5bc626083940220a046235f782a47aa781d44d83ccff619594b1508c3af586"
+    },
+    {
+      "path": "governance/repository-intelligence.md",
+      "sha256": "4855857ea34d8f7b55b1a95318102e80e23f4334ef7111dfd620d47b44f91d28"
+    },
+    {
+      "path": "governance/repository-intelligence/agent-context.json",
+      "sha256": "5462b28784f02188db75449b303974800761c348d6f4a48ab8b9d892bf713ced"
+    },
+    {
+      "path": "governance/repository-map.md",
+      "sha256": "3378a096e6fb8857424037323a5d80d1231471a6fb98a5362a7b3401d3af340a"
+    },
+    {
+      "path": "governance/reviews/issue-52-2026-10-20-ri-review.md",
+      "sha256": "1dbd76b1eef18b36a9433e9cfb211a9b0691c55c3976f765dd6937a8a56c3ff9"
+    },
+    {
+      "path": "governance/reviews/issue-53-2026-10-20-evidence-audit.md",
+      "sha256": "ded60e5abe9c881643009f07fa22e0eb8d04cb3bae7e5e3ba39a658e2ecfadd9"
+    },
+    {
+      "path": "governance/reviews/issue-57-2026-10-20-productivity-audit.md",
+      "sha256": "5d7498be8b55ef7ee49306363c123b323ad2083b9ce66529643b6f960f1cdf01"
+    },
+    {
+      "path": "governance/reviews/issue-58-2026-10-20-xu-agarwal-audit.md",
+      "sha256": "0e24cd30a60e89347e1f6ea4be9fe21f5cad7db03f993b7d849b51bb0818b21a"
+    },
+    {
+      "path": "governance/reviews/issue-59-2026-10-20-gitclear-audit.md",
+      "sha256": "f22b61febad050b86a638a3c4e0507af6fd2c39b84da2aeb64014d53d1aaffe3"
+    },
+    {
+      "path": "governance/reviews/issue-60-2026-10-20-cost-audit.md",
+      "sha256": "5d99abb6a776c68ae6bc531a82e11470c63818fd0b36311e0650c17502e14e54"
+    },
+    {
+      "path": "governance/reviews/issue-60-2026-10-21-astra-review.md",
+      "sha256": "5c5db639b5a848fc15d571e762f689b2ee5edee3094b7708dabd15df2a85ef75"
+    },
+    {
+      "path": "governance/reviews/issue-60-2026-10-21-final-verification.md",
+      "sha256": "ab68d3e00acbf4f0683cbb37956508b30cd17a15bd99372e784e1084215b2f39"
+    },
+    {
+      "path": "governance/reviews/issue-60-2026-10-21-sol-corrections.md",
+      "sha256": "04f20dc7e08365ada25fe7e4407a459d263cbfa8b87ce42282f27f42cce29019"
+    },
+    {
+      "path": "governance/reviews/issue-61-2026-10-21-astra-review.md",
+      "sha256": "3a81c4fb4396334ee58523abf80c18c3abd8814d959f71bb914dd7a6ee29a031"
+    },
+    {
+      "path": "governance/reviews/issue-61-2026-10-21-final-verification.md",
+      "sha256": "06ac8d1de25b49258520a533039ee8e8cc29424ab387f591cb6b22339c5107bf"
+    },
+    {
+      "path": "governance/reviews/issue-61-2026-10-21-survey-audit.md",
+      "sha256": "30c0f161a3788c39892687629973e33f5c1b4776ab20e5910a935e99162ec037"
+    },
+    {
+      "path": "governance/reviews/issue-62-2026-10-21-final-verification.md",
+      "sha256": "5609600f52dd5dd5cf12e551e5cd124bb4d0c6393b83ebbf025c7c55f996804e"
+    },
+    {
+      "path": "governance/reviews/issue-62-2026-10-21-provenance-audit.md",
+      "sha256": "bc907a20f164b3de6ffa1a042ca94970fba8afbb26dd0a2386913d306d2fb21f"
+    },
+    {
+      "path": "governance/reviews/issue-63-2026-10-21-astra-review.md",
+      "sha256": "b8c9828819474d243eb885eb488b15692aaf4354a8745b619a228c5811aa43ed"
+    },
+    {
+      "path": "governance/reviews/issue-63-2026-10-21-final-verification.md",
+      "sha256": "8fcf21278140c0ac7c00b63eae9d02487b5c49ee6ea4d1ee5922537c856078ed"
+    },
+    {
+      "path": "governance/reviews/issue-63-2026-10-21-mechanism-audit.md",
+      "sha256": "3a8adb19e27bbfe041520dd8b3249dd98e23bcb3fbd3bfb862680434b4bec727"
+    },
+    {
+      "path": "governance/reviews/issue-64-2026-10-21-astra-review.md",
+      "sha256": "714188a922b68d5f47b131b329a5f727bb816943aac8603a0ac44d7738752741"
+    },
+    {
+      "path": "governance/reviews/issue-64-2026-10-21-final-verification.md",
+      "sha256": "b2e5a62cd0cff74ea78e1524dd765b94ef8ec169e53ad829352bca3b5112899b"
+    },
+    {
+      "path": "governance/reviews/issue-64-2026-10-21-sol-editorial-audit.md",
+      "sha256": "7bcc6327210dac44f46e29b5ec03037c3d93ad4513024cb68d750aefbbdb3cd5"
+    },
+    {
+      "path": "governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md",
+      "sha256": "dc55e0bf4f060236d28304bc5a9b99fbca7aace57cb669a32f6110d1119e21e2"
+    },
+    {
+      "path": "governance/status-model.md",
+      "sha256": "ad0aeadd7360c7bec6ec76d59a886b9376f50f3fc06d6e7436619d84e5524d90"
+    },
+    {
+      "path": "governance/synchronization-matrix.toml",
+      "sha256": "4373843a61b839ead805a32c230c015701894b5957a0d99546f2cb5c20480247"
+    },
+    {
+      "path": "governance/templates.md",
+      "sha256": "0ad5fb206a39e66a72d25c077779d69b3797582931a94e290d8cbed7906f527f"
+    },
+    {
+      "path": "governance/work-records/2026-08-04-evidence-state-integrity.toml",
+      "sha256": "725053b1db3cbbc9023e0803eb16b059cdba5c4b7eb3e8bb356a7746b994c8c6"
+    },
+    {
+      "path": "governance/work-records/2026-08-04-pr-process-and-synchronization-v2.toml",
+      "sha256": "4bf3315cb6c4a8090f752f42413eb79e1f397cc37226521513ca786c0c82f1ee"
+    },
+    {
+      "path": "governance/work-records/2026-08-31-ewing-provenance-chronology.toml",
+      "sha256": "090060f80098493178a8cebacdc3ca92482b8cb0d506211cccb3acfd47e2e393"
+    },
+    {
+      "path": "governance/work-records/2026-08-31-project-provenance-attribution.toml",
+      "sha256": "02b71ab8ba4e8271ebc9d80948a30ffa6d6a4064bb1a139f1d60fdde65063daf"
+    },
+    {
+      "path": "governance/work-records/2026-08-31-readme-attribution-links.toml",
+      "sha256": "cccd538efc905a7d19eac2f0d6bcf99b0cfc09828efd99eeb4ffcf0b8b1c73d1"
+    },
+    {
+      "path": "governance/work-records/2026-10-01-issue-workflow-ri.toml",
+      "sha256": "a44fa5b8d04e0f66c1a638702fdc55c16555f3854f42faa54c097e9f87cf90b6"
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-57-final-verification.toml",
+      "sha256": "e56824367f0105a98bc2d7d36158b067f21f79143cb2ea02c3918b5693c02139"
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-57-productivity-evidence.toml",
+      "sha256": "8a64ec7d831f42eddd008508ab350882726256e3527488f788a5cdc739bbc85e"
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-58-final-verification.toml",
+      "sha256": "a008d26beb0577ff54898b0e9972ddad9d68d5f3ba14eede395d2f5af93848f1"
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-58-xu-agarwal.toml",
+      "sha256": "c37d351926ab1d31cd3d82f17a4b64a9ea758737d7bcc0296130612b369b36b9"
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-59-final-verification.toml",
+      "sha256": "55f9ecd3b394b7085f04e41af705f8479309f8dd96c36e12362bee68f58d6ef1"
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-59-gitclear.toml",
+      "sha256": "05f7c513cdf87fed948c13ecc8737e81adf65d06e8043becdc2c818da7769f6f"
+    },
+    {
+      "path": "governance/work-records/2026-10-20-issue-60-cost-model.toml",
+      "sha256": "2d25c97c21d76c6484d3bc3578ec790b1ded3f31ab4101aecfc17245eeae3cc4"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-60-final-verification.toml",
+      "sha256": "4a6deacd1cd37f4217652c800c4ac1ba57f50f7c4705636bf84c71bb48c2d039"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-61-final-verification.toml",
+      "sha256": "cc83ecfad3b996ee6fa7f1232da58af4e7b4173d7ddc913514f8b81a72ec3f4a"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-61-survey-evidence.toml",
+      "sha256": "0645900cf0cbfb6e5aa62acee90a5b9f6d4b9156967fd302bff4b42dd17bcb9f"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-62-final-verification.toml",
+      "sha256": "e326a681af7bc3bc0b4fc5f96b3ac67dffc66a38ece463612e5d6e627f207a03"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-62-provenance.toml",
+      "sha256": "12527cdf3980f02ba03de9181abd184890e7ae8e63342db3f82cb643a5fe9d7f"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-63-final-verification.toml",
+      "sha256": "3e5d58cdcfaf568a45a776986bb9b8d8415f9723a1c23c210bb56007e2f67a6f"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-63-sol-preparation.toml",
+      "sha256": "34617a7bf48224b759a898e2af185e1166e555cf38fc733929b10866ee6703fd"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-64-final-verification.toml",
+      "sha256": "9216c40c0b548a32f493c39d2bfa9ffafd88e5d1ea13d90cb7bd314e4f4dfbc6"
+    },
+    {
+      "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "sha256": "6c74e708bf256f460be24c9c0dd2014a6a13fe5e3e6a1d4c9d0e921bd9728aa7"
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
+      "sha256": "3bfe51777fa6e9bf19f1875c1d53b99412796c8db6e0088c3f10ed257b681628"
+    },
+    {
+      "path": "governance/work-records/README.md",
+      "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
+    },
+    {
+      "path": "protocols/01_personal_defense.md",
+      "sha256": "0a18fe293ba7cf287b1c2c14e369a2942b964c7201fb092919344a93b49367c4"
+    },
+    {
+      "path": "protocols/02_operational_defense.md",
+      "sha256": "0c4ab8aff62ceccb5d4f63dff75d34a2dfa8aa366662d68f26682912544c58a4"
+    },
+    {
+      "path": "protocols/03_public_defense.md",
+      "sha256": "00ae8176eef7d1c9529aca1933ed5d1c994c96bac5c0b08be4599a2daa96e887"
+    },
+    {
+      "path": "protocols/04_systemic_cure.md",
+      "sha256": "de562201f2ef60dc8b9e433a63f703a6a1e0ac13d73c0cd5e0b25febc2f4f688"
+    },
+    {
+      "path": "protocols/README.md",
+      "sha256": "30705acb73b5138ed2bf98f3a3be6aa228bbacbbe1d2bd9d5466ae95fc5f3cf8"
+    },
+    {
+      "path": "report/01_the_illusion.md",
+      "sha256": "dc27a699ddd1c0ecadc29c6958b944619a6af699ba473ccc7e2c1da0f7bbb34f"
+    },
+    {
+      "path": "report/02_broken_mechanics.md",
+      "sha256": "c7272da6a58b90b5105ca47dc08443d562f6f6e02806409566646642b43c7f0b"
+    },
+    {
+      "path": "report/03_the_aftermath.md",
+      "sha256": "4f2d4298656de0d945b0bb6b3f243c7f6c9388d8d018c0d81b14121855c9aae0"
+    },
+    {
+      "path": "report/appendices/cost-context.md",
+      "sha256": "444c154087a1e05872fb75bd85d21adab1788b44df19ec91def9760b596e1116"
+    },
+    {
+      "path": "report/appendices/mechanism-hypotheses.md",
+      "sha256": "2961ff101c0d3c2e92a5bfa06b98f89adf2c01f0d64e2e194b25678ec7550003"
+    },
+    {
+      "path": "report/appendices/tco-results.json",
+      "sha256": "52e6c05f80f46cb57a397b8ec7fba457dbd41d33804c83361087502b192d3a43"
+    },
+    {
+      "path": "report/appendices/tco-scenarios.json",
+      "sha256": "940c6d0e8e13b95503f109bc7506be9ee8e71801b5b5eea7cf420dd55f0efd74"
+    },
+    {
+      "path": "report/appendices/tco-sensitivity.md",
+      "sha256": "3f39181bd9c301d0c09667eb63d562c134cea13bace44bfa318f60d5e83b26e7"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "7de89de3c06a319901184f6398687ce8dc2ab57b7c6189084dfd9880d87a6a7e"
+    },
+    {
+      "path": "tests/repository_validator/__init__.py",
+      "sha256": "c2779fb8622609d73183fa558423d55781b0006f6d5dbe0c60f69bf3552f43e1"
+    },
+    {
+      "path": "tests/repository_validator/test_contract_invariants.py",
+      "sha256": "5ab90311f2a2171be0c7ea0dcfcd944127765fad29e7241e7c6a6e6a2784084f"
+    },
+    {
+      "path": "tests/repository_validator/test_validator.py",
+      "sha256": "e153efa7d8798e7d9067d3372e18cb23dea39f1cdd1e291abb7b33500fab99e9"
+    },
+    {
+      "path": "tests/test_evidence_state_integrity.py",
+      "sha256": "43adb58302f73a3e49fefbf60f16c6ca83b533975d760bdb2472d10cefa62bee"
+    },
+    {
+      "path": "tests/test_pr_governance_contract.py",
+      "sha256": "3786506e40b1a09a09d1b2a3ae19241a623e62e4e16040209792b2e26d1ef370"
+    },
+    {
+      "path": "tests/test_repository_gate.py",
+      "sha256": "d8c58b415ea13bb141bfbf0695511c427407b080ef09096b4289ac60bafa1cad"
+    },
+    {
+      "path": "tests/test_repository_intelligence.py",
+      "sha256": "25a83ea4ccb388248f495b920b7bb38feb1d864856e509a79ebd72b41c1208b5"
+    },
+    {
+      "path": "tests/test_tco_sensitivity.py",
+      "sha256": "47ad65b8fea4a4781bc501b6b72659a7c0ae34819a8dd235c9a9d1badaecd5a2"
+    },
+    {
+      "path": "tools/RI-LICENSE.md",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "path": "tools/RI-NOTICE.md",
+      "sha256": "d86fcd477d5ebbe7909d80dacec89038d165d01882a5bcdce78b22be17273ac7"
+    },
+    {
+      "path": "tools/__init__.py",
+      "sha256": "be5884a1e2e6a9dc2d5199d65efca8a37ca06a609f6b50869830412f15668571"
+    },
+    {
+      "path": "tools/evidence_state_check.py",
+      "sha256": "c63bc5f4040bc37efed634b072e79f1da67c1286f76a791b15a73d082cb3362b"
+    },
+    {
+      "path": "tools/evidence_transition_gate.py",
+      "sha256": "2a05ff3503603bc95b630b45a7cc8be2c8fac6c6ce50825aec0493efb8955ffb"
+    },
+    {
+      "path": "tools/repository_gate.py",
+      "sha256": "7ea9b3a50d4dba628de1c62384610dc09ca764c28dcbf2ad1750c54700ada425"
+    },
+    {
+      "path": "tools/repository_intelligence.py",
+      "sha256": "6544d9790ecd432bf7174a6d18a644a78bb0a3eb7554483e4fe2c7ca2ad8e306"
+    },
+    {
+      "path": "tools/repository_validator/__init__.py",
+      "sha256": "208cf34b80d98ad70c82ad78c32040034ac79b5a87d00426cb0368454fd9561d"
+    },
+    {
+      "path": "tools/repository_validator/__main__.py",
+      "sha256": "2d74bbff7c3ba76f0ff3cae554ce7dbc5c0750bd3a9ef3afbbc54e9f1d5a4824"
+    },
+    {
+      "path": "tools/repository_validator/contract.py",
+      "sha256": "f562ab51749aa8d757429b522ad0b056f7177d50243719d54fdeb9d1974aed6f"
+    },
+    {
+      "path": "tools/repository_validator/evidence_state.py",
+      "sha256": "71e5df7dedf05632753fc0db688119d77aa2a09df0f7e5bae2ddd83caf83da08"
+    },
+    {
+      "path": "tools/repository_validator/markdown.py",
+      "sha256": "30d52b7ad71ad4f2d4c8984eb2f447fc0176bdb636c5cc08b6544164aa37197a"
+    },
+    {
+      "path": "tools/repository_validator/registry.py",
+      "sha256": "5261fc43638be7b32f053b74b700f3a3518d71c2b41a183d80bc043092f1def9"
+    },
+    {
+      "path": "tools/repository_validator/validator.py",
+      "sha256": "d3405cc1d5cd5533e459b0ff1c4c8acb0c60169277570df890595f2fc6c0b046"
+    },
+    {
+      "path": "tools/tco_sensitivity.py",
+      "sha256": "e1e6cf734cf5bcb3b992e0f117896556b81c4d2577e8ba1899eec53639b395c4"
+    }
+  ],
+  "historical_starts": {
+    "evidence/primary/2026-writing-code-vs-shipping-code.md": 82,
+    "evidence/primary/2025-metr-task-horizon.md": 50,
+    "evidence/documentary/terminology-provenance.md": 103,
+    "evidence/documentary/project-provenance.md": 97
+  },
+  "integration_record_starts": {
+    "evidence/README.md": 100,
+    "evidence/documentary/2020-google-engineering-practices.md": 36,
+    "evidence/documentary/2024-alphabet-financial-context.md": 39,
+    "evidence/documentary/2024-meta-financial-context.md": 40,
+    "evidence/documentary/2024-microsoft-financial-context.md": 39,
+    "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md": 41,
+    "evidence/documentary/project-provenance.md": 69,
+    "evidence/documentary/terminology-provenance.md": 73,
+    "evidence/methodology/1984-the-goal.md": 24,
+    "evidence/primary/2023-copilot-task-productivity.md": 54,
+    "evidence/primary/2024-stackoverflow-ai-attitudes.md": 51,
+    "evidence/primary/2025-cloudzero-ai-budget-intentions.md": 34,
+    "evidence/primary/2025-deloitte-genai-q4.md": 63,
+    "evidence/primary/2025-gitclear-code-quality.md": 71,
+    "evidence/primary/2025-gitclear-developer-output.md": 51,
+    "evidence/primary/2025-mckinsey-ai-adoption-value.md": 63,
+    "evidence/primary/2025-menlo-enterprise-ai-spend.md": 36,
+    "evidence/primary/2025-metr-experienced-developer-productivity.md": 59,
+    "evidence/primary/2025-metr-task-horizon.md": 57,
+    "evidence/primary/2025-xu-copilot-oss-activity.md": 59,
+    "evidence/primary/2026-agarwal-agent-adoption.md": 57,
+    "evidence/primary/2026-metr-productivity-design-update.md": 54,
+    "evidence/primary/2026-writing-code-vs-shipping-code.md": 76,
+    "evidence/secondary/2025-banandre-mckinsey-summary.md": 35,
+    "evidence/secondary/2025-deloitte-legacy-citation.md": 43,
+    "evidence/secondary/2025-softwareseni-review-synthesis.md": 46,
+    "evidence/secondary/2025-technodiaries-review-anecdote.md": 40,
+    "evidence/secondary/2026-horn-capability-commentary.md": 37,
+    "evidence/secondary/2026-horn-engineering-commentary.md": 35,
+    "evidence/secondary/2026-inference-cost-commentary.md": 37
+  },
+  "active_incoming_brief_link_audit": {
+    "method": "Resolve local Markdown brief links in reader/evidence bodies; exclude indexes, bookkeeping, own-source and explicitly preserved history; check against declared supplying-source current_use. This structural check complements manual inspection of indirect/uncited uses.",
+    "findings": [
+      {
+        "source_id": "S-2025-03",
+        "path": "README.md",
+        "line": 77,
+        "target": "evidence/secondary/2026-inference-cost-commentary.md",
+        "finding": "Existing active brief navigation absent from registry and brief current_use"
+      }
+    ]
+  },
+  "baseline_tree": "d0daab6189c0e536d4efd291352281d741bbfcd9",
+  "reproduction": {
+    "baseline_materialization": "git ls-tree -r --name-only BASELINE; git show BASELINE:path for each manifest path into a separate directory; filenames and SHA256 checks in manifest",
+    "search_argv_template": [
+      "rg",
+      "--json",
+      "-i",
+      "-n",
+      "--hidden",
+      "--pcre2",
+      "-e",
+      "PATTERN",
+      "."
+    ],
+    "search_cwd": "the complete materialized baseline directory",
+    "classification": "Path classes below plus exact source-history and integration-section cutoffs; they classify locations, not truth or assertion polarity.",
+    "regex_engine": "ripgrep 15.2.0 (rev e89fff89ac)",
+    "scanner_sha256": "9e7b9ef77cccc4c79a45b95b8190b7f75572cb246bbff387853419fd10b0ab75",
+    "all_raw_hits_kept_in_scratch": true,
+    "underlying_source_reacquisition": false,
+    "independent_final_review": false,
+    "binary_behavior": "Manifest includes all tracked bytes; ripgrep default binary handling applies, so binary images are not treated as current prose. Counts are match lines per query, with duplicates across queries."
+  },
+  "queries": [
+    {
+      "kind": "source",
+      "id": "P-2026-01",
+      "pattern": "P\\-2026\\-01|NBER|Demirer|Musolff|Writing Code vs. Shipping Code|35275|240%|180%|80%.{0,20}repositor|0\\.23|20\\.2|20\\.3",
+      "raw_hit_count": 156,
+      "counts": {
+        "tooling_or_test": 21,
+        "current_reader_surface": 18,
+        "historical_governance_or_handoff": 81,
+        "source_registry_or_index": 2,
+        "governance_or_navigation": 1,
+        "current_evidence_record": 6,
+        "source_frontmatter": 1,
+        "preserved_source_history": 23,
+        "generated_projection": 3
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-01",
+      "pattern": "P\\-2025\\-01|Measuring the Impact of Early-2025 AI|2507\\.09089|experienced.{0,20}open.source|\\b246\\b|19%|24%|20%",
+      "raw_hit_count": 56,
+      "counts": {
+        "source_registry_or_index": 1,
+        "current_evidence_record": 15,
+        "tooling_or_test": 6,
+        "current_reader_surface": 8,
+        "source_frontmatter": 1,
+        "source_integration_record": 2,
+        "preserved_source_history": 2,
+        "historical_governance_or_handoff": 19,
+        "generated_projection": 2
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2026-03",
+      "pattern": "P\\-2026\\-03|Changing our Developer Productivity Experiment|2026-02-24-uplift|follow.up.{0,45}METR|METR.{0,45}follow.up|800\\+|143 repositories",
+      "raw_hit_count": 31,
+      "counts": {
+        "current_reader_surface": 4,
+        "source_registry_or_index": 2,
+        "current_evidence_record": 5,
+        "source_integration_record": 2,
+        "historical_governance_or_handoff": 14,
+        "source_frontmatter": 1,
+        "generated_projection": 3
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-02",
+      "pattern": "P\\-2025\\-02|Measuring AI Ability to Complete Long Tasks|2503\\.14499|task.horizon|seven.month|7.month|212.day|GPT.5\\.2|50%.{0,20}horizon",
+      "raw_hit_count": 52,
+      "counts": {
+        "source_registry_or_index": 2,
+        "tooling_or_test": 4,
+        "current_reader_surface": 10,
+        "historical_governance_or_handoff": 24,
+        "source_frontmatter": 1,
+        "current_evidence_record": 6,
+        "generated_projection": 5
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/02_broken_mechanics.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-03",
+      "pattern": "P\\-2025\\-03|\\bXu\\b|Medappa|AI-Assisted Programming Decreases|2510\\.10165|2,?755|1,?699|43\\.5|6\\.5%|19\\.3|10,?000.{0,20}developer",
+      "raw_hit_count": 100,
+      "counts": {
+        "source_registry_or_index": 2,
+        "historical_governance_or_handoff": 53,
+        "current_reader_surface": 16,
+        "current_evidence_record": 11,
+        "source_integration_record": 5,
+        "source_frontmatter": 1,
+        "generated_projection": 12
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2026-02",
+      "pattern": "P\\-2026\\-02|Agarwal|Vasilescu|AI IDEs or Autonomous Agents|2601\\.13597|34\\.85|42\\.87|17\\.73|39%.{0,30}(debt|complex)",
+      "raw_hit_count": 83,
+      "counts": {
+        "tooling_or_test": 7,
+        "current_reader_surface": 16,
+        "historical_governance_or_handoff": 37,
+        "source_registry_or_index": 2,
+        "source_frontmatter": 1,
+        "current_evidence_record": 8,
+        "generated_projection": 12
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2023-01",
+      "pattern": "P\\-2023\\-01|\\bPeng\\b|The Impact of AI on Developer Productivity|2302\\.06590|55[.,]8%|\\b196\\b|71\\.17|160\\.89",
+      "raw_hit_count": 60,
+      "counts": {
+        "current_reader_surface": 8,
+        "source_registry_or_index": 2,
+        "historical_governance_or_handoff": 39,
+        "current_evidence_record": 7,
+        "source_frontmatter": 1,
+        "generated_projection": 2,
+        "source_integration_record": 1
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-04",
+      "pattern": "P\\-2025\\-04|GitClear.{0,35}(quality|copilot)|AI Assistant Code Quality|AI Copilot Code Quality|211[ ,]?(million|087)|24\\.65|9\\.47|8\\.86|12\\.32|6\\.66|ten.files",
+      "raw_hit_count": 57,
+      "counts": {
+        "current_reader_surface": 15,
+        "source_registry_or_index": 2,
+        "historical_governance_or_handoff": 22,
+        "current_evidence_record": 12,
+        "source_frontmatter": 1,
+        "generated_projection": 5
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-05",
+      "pattern": "P\\-2025\\-05|How much more productive are AI.powered|GitClear.{0,35}(output|productivity)|productive_output_from_2022|131\\.1|76\\.3|17,?341|9\\.0%|10\\.1%|34\\.1%|7\\.1%",
+      "raw_hit_count": 54,
+      "counts": {
+        "current_reader_surface": 16,
+        "historical_governance_or_handoff": 20,
+        "source_registry_or_index": 2,
+        "current_evidence_record": 9,
+        "source_frontmatter": 1,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-06",
+      "pattern": "P\\-2025\\-06|Menlo|State of Generative AI in the Enterprise|221\\.7|321\\.?7|\\$37B|\\$11\\.5B",
+      "raw_hit_count": 50,
+      "counts": {
+        "current_reader_surface": 12,
+        "current_evidence_record": 9,
+        "historical_governance_or_handoff": 20,
+        "source_registry_or_index": 2,
+        "source_frontmatter": 1,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md",
+        "report/appendices/tco-sensitivity.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-07",
+      "pattern": "P\\-2025\\-07|CloudZero|State of AI Costs|85,?521|62,?964|45%.{0,20}100|43%.{0,20}100",
+      "raw_hit_count": 45,
+      "counts": {
+        "source_registry_or_index": 2,
+        "current_reader_surface": 11,
+        "current_evidence_record": 7,
+        "source_frontmatter": 1,
+        "historical_governance_or_handoff": 18,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md",
+        "report/appendices/tco-sensitivity.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-08",
+      "pattern": "P\\-2025\\-08|McKinsey|state of AI in 2025|1,?993|88%|39%|82.point|high.performer",
+      "raw_hit_count": 96,
+      "counts": {
+        "current_reader_surface": 14,
+        "source_registry_or_index": 4,
+        "source_frontmatter": 2,
+        "current_evidence_record": 25,
+        "historical_governance_or_handoff": 37,
+        "generated_projection": 14
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2025-09",
+      "pattern": "P\\-2025\\-09|Now decides next|Deloitte.{0,25}(Q4|quarter.four|January 2025)|2,?773|74%|43%.{0,20}31%",
+      "raw_hit_count": 37,
+      "counts": {
+        "historical_governance_or_handoff": 13,
+        "current_reader_surface": 7,
+        "source_registry_or_index": 3,
+        "source_frontmatter": 2,
+        "current_evidence_record": 5,
+        "generated_projection": 7
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "P-2024-01",
+      "pattern": "P\\-2024\\-01|Stack Overflow|stackoverflow.co/2024|69\\.6|28,?142",
+      "raw_hit_count": 31,
+      "counts": {
+        "historical_governance_or_handoff": 12,
+        "current_reader_surface": 6,
+        "source_registry_or_index": 2,
+        "source_frontmatter": 1,
+        "current_evidence_record": 7,
+        "generated_projection": 3
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2019-01",
+      "pattern": "D\\-2019\\-01|Software Engineering at Google|abseil.io/resources/swe-book|Critique|Tricorder|4\\.2.?billion|four billion|TAP",
+      "raw_hit_count": 59,
+      "counts": {
+        "current_reader_surface": 19,
+        "governance_or_navigation": 11,
+        "source_registry_or_index": 3,
+        "source_frontmatter": 1,
+        "current_evidence_record": 6,
+        "preserved_source_history": 1,
+        "historical_governance_or_handoff": 16,
+        "generated_projection": 2
+      },
+      "current_reader_paths": [
+        "DOCTRINE.md",
+        "GLOSSARY.md",
+        "REFERENCES.md",
+        "SCOPE.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2024-01",
+      "pattern": "D\\-2024\\-01|Alphabet|goog-20241231|49[,.]326|52[,.]535|45[,.]427|45\\.4B",
+      "raw_hit_count": 32,
+      "counts": {
+        "current_reader_surface": 7,
+        "source_registry_or_index": 2,
+        "historical_governance_or_handoff": 11,
+        "source_frontmatter": 1,
+        "current_evidence_record": 5,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2024-02",
+      "pattern": "D\\-2024\\-02|Meta.{0,25}(annual|filing|2024|R&D)|meta-12312024|43[,.]873|37[,.]256|39[,.]225|44\\.4B",
+      "raw_hit_count": 24,
+      "counts": {
+        "current_reader_surface": 6,
+        "source_registry_or_index": 2,
+        "historical_governance_or_handoff": 7,
+        "generated_projection": 3,
+        "source_frontmatter": 1,
+        "current_evidence_record": 5
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2024-03",
+      "pattern": "D\\-2024\\-03|Microsoft.{0,30}(FY2024|2024 Annual|annual filing)|reports/ar24|29[,.]510|44[,.]477|64B",
+      "raw_hit_count": 49,
+      "counts": {
+        "current_reader_surface": 5,
+        "source_registry_or_index": 2,
+        "current_evidence_record": 6,
+        "source_integration_record": 10,
+        "source_frontmatter": 1,
+        "historical_governance_or_handoff": 17,
+        "generated_projection": 8
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2025-05",
+      "pattern": "D\\-2025\\-05|Vigier|How Vibe Coding Could Trigger|2025-09-16",
+      "raw_hit_count": 30,
+      "counts": {
+        "current_reader_surface": 4,
+        "source_registry_or_index": 1,
+        "source_frontmatter": 1,
+        "current_evidence_record": 3,
+        "source_integration_record": 1,
+        "preserved_source_history": 7,
+        "historical_governance_or_handoff": 11,
+        "generated_projection": 2
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2025-06",
+      "pattern": "D\\-2025\\-06|Światowski|Swiatowski|The Subprime Code Crisis Has Started|2025-12-16",
+      "raw_hit_count": 32,
+      "counts": {
+        "current_reader_surface": 4,
+        "source_registry_or_index": 1,
+        "historical_governance_or_handoff": 8,
+        "source_frontmatter": 1,
+        "current_evidence_record": 7,
+        "source_integration_record": 1,
+        "preserved_source_history": 8,
+        "generated_projection": 2
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2026-04",
+      "pattern": "D\\-2026\\-04|Richard Ewing|Ewing|Epistemic Crisis|Truth Becomes Too Expensive",
+      "raw_hit_count": 80,
+      "counts": {
+        "current_reader_surface": 10,
+        "source_registry_or_index": 1,
+        "historical_governance_or_handoff": 25,
+        "source_frontmatter": 1,
+        "current_evidence_record": 12,
+        "source_integration_record": 1,
+        "preserved_source_history": 24,
+        "governance_or_navigation": 1,
+        "generated_projection": 5
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "protocols/04_systemic_cure.md",
+        "report/02_broken_mechanics.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2026-05",
+      "pattern": "D\\-2026\\-05|Ілюзія економії|2026-01-05|January 8|8 January",
+      "raw_hit_count": 39,
+      "counts": {
+        "current_reader_surface": 9,
+        "source_registry_or_index": 2,
+        "historical_governance_or_handoff": 8,
+        "source_frontmatter": 1,
+        "current_evidence_record": 5,
+        "preserved_source_history": 11,
+        "generated_projection": 3
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2026-06",
+      "pattern": "D\\-2026\\-06|2026-02-06T17:16:44Z|repository.object|created_at|public.opening",
+      "raw_hit_count": 47,
+      "counts": {
+        "current_reader_surface": 6,
+        "source_registry_or_index": 3,
+        "preserved_source_history": 9,
+        "source_frontmatter": 1,
+        "current_evidence_record": 5,
+        "source_integration_record": 1,
+        "generated_projection": 4,
+        "historical_governance_or_handoff": 18
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2026-07",
+      "pattern": "D\\-2026\\-07|Субпрайм-криза коду|2026-02-10|February 10|10 February",
+      "raw_hit_count": 29,
+      "counts": {
+        "source_registry_or_index": 1,
+        "current_reader_surface": 5,
+        "source_frontmatter": 1,
+        "current_evidence_record": 2,
+        "preserved_source_history": 13,
+        "historical_governance_or_handoff": 5,
+        "generated_projection": 2
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "D-2025-07",
+      "pattern": "D\\-2025\\-07|FY25.?Q2|29 January 2025|2025-01-29|AI.business.{0,30}run.rate|13.{0,5}billion|\\$13B",
+      "raw_hit_count": 35,
+      "counts": {
+        "source_registry_or_index": 2,
+        "source_frontmatter": 1,
+        "current_evidence_record": 6,
+        "current_reader_surface": 6,
+        "historical_governance_or_handoff": 13,
+        "generated_projection": 7
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "S-2025-01",
+      "pattern": "S\\-2025\\-01|Deloitte.{0,30}(legacy|retired|Q3 2025|moving)|historical.{0,20}edition|unidentified.{0,20}edition",
+      "raw_hit_count": 43,
+      "counts": {
+        "source_registry_or_index": 2,
+        "current_reader_surface": 3,
+        "current_evidence_record": 4,
+        "source_frontmatter": 1,
+        "source_integration_record": 3,
+        "historical_governance_or_handoff": 23,
+        "generated_projection": 7
+      },
+      "current_reader_paths": [
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "S-2025-02",
+      "pattern": "S\\-2025\\-02|Banandre|Enterprise AI Theater Continues|88%.Adoption,.6%.Impact",
+      "raw_hit_count": 24,
+      "counts": {
+        "current_reader_surface": 3,
+        "source_registry_or_index": 2,
+        "source_frontmatter": 1,
+        "current_evidence_record": 4,
+        "historical_governance_or_handoff": 8,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "S-2025-03",
+      "pattern": "S\\-2025\\-03|Artur Markus|Inference Cost Paradox|Jevons|1,?000.fold|320%",
+      "raw_hit_count": 32,
+      "counts": {
+        "current_reader_surface": 8,
+        "source_registry_or_index": 1,
+        "historical_governance_or_handoff": 14,
+        "current_evidence_record": 6,
+        "generated_projection": 2,
+        "source_frontmatter": 1
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "S-2026-01",
+      "pattern": "S\\-2026\\-01|The Most Important Chart in AI|7425435461994635264|Horn.{0,40}capability",
+      "raw_hit_count": 35,
+      "counts": {
+        "tooling_or_test": 6,
+        "current_reader_surface": 6,
+        "historical_governance_or_handoff": 9,
+        "source_registry_or_index": 2,
+        "current_evidence_record": 5,
+        "source_frontmatter": 1,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "S-2025-04",
+      "pattern": "S\\-2025\\-04|SoftwareSeni|Wondrasek|Why AI Coding Speed Gains Disappear|Faros|Harness|2.?3[×x]|91%",
+      "raw_hit_count": 63,
+      "counts": {
+        "historical_governance_or_handoff": 29,
+        "current_reader_surface": 5,
+        "source_registry_or_index": 2,
+        "source_frontmatter": 1,
+        "current_evidence_record": 8,
+        "source_integration_record": 10,
+        "governance_or_navigation": 2,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "S-2025-05",
+      "pattern": "S\\-2025\\-05|Techno.?Diaries|Post.Copilot Burnout|doubled.{0,20}review|review.{0,20}doubled",
+      "raw_hit_count": 29,
+      "counts": {
+        "current_reader_surface": 7,
+        "source_registry_or_index": 2,
+        "source_frontmatter": 1,
+        "current_evidence_record": 3,
+        "historical_governance_or_handoff": 10,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "S-2026-02",
+      "pattern": "S\\-2026\\-02|AI writes code faster than teams can keep up|7422178629528330240|Horn.{0,40}engineering",
+      "raw_hit_count": 25,
+      "counts": {
+        "source_registry_or_index": 2,
+        "current_reader_surface": 6,
+        "source_frontmatter": 1,
+        "current_evidence_record": 4,
+        "historical_governance_or_handoff": 6,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "source",
+      "id": "M-1984-01",
+      "pattern": "M\\-1984\\-01|Goldratt|The Goal|Theory of Constraints|M-1984-01",
+      "raw_hit_count": 50,
+      "counts": {
+        "current_reader_surface": 10,
+        "source_registry_or_index": 4,
+        "historical_governance_or_handoff": 28,
+        "governance_or_navigation": 1,
+        "source_frontmatter": 1,
+        "current_evidence_record": 3,
+        "generated_projection": 3
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "protocols/03_public_defense.md",
+        "protocols/04_systemic_cure.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C01",
+      "pattern": "\\b196\\b|55\\.8|95 randomized|70.{0,25}completer",
+      "raw_hit_count": 13,
+      "counts": {
+        "current_reader_surface": 2,
+        "current_evidence_record": 3,
+        "historical_governance_or_handoff": 8
+      },
+      "current_reader_paths": [
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C02",
+      "pattern": "19%.{0,20}(slow|time)|senior.penalty|METR.{0,50}(2025|2026)|universal.{0,15}seniority",
+      "raw_hit_count": 72,
+      "counts": {
+        "historical_governance_or_handoff": 29,
+        "current_reader_surface": 19,
+        "governance_or_navigation": 1,
+        "current_evidence_record": 13,
+        "source_registry_or_index": 6,
+        "generated_projection": 4
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C03",
+      "pattern": "10,?000.{0,20}developer|2,?755|1,?699|6\\.5%|core.{0,20}senior",
+      "raw_hit_count": 16,
+      "counts": {
+        "current_reader_surface": 3,
+        "source_integration_record": 3,
+        "historical_governance_or_handoff": 8,
+        "current_evidence_record": 2
+      },
+      "current_reader_paths": [
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C04",
+      "pattern": "43\\.5|aggregate.{0,30}(disappear|gain)|bottom.{0,15}quartile",
+      "raw_hit_count": 15,
+      "counts": {
+        "current_reader_surface": 2,
+        "current_evidence_record": 3,
+        "historical_governance_or_handoff": 10
+      },
+      "current_reader_paths": [
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C05",
+      "pattern": "18%|39%|34\\.85|42\\.87|per.feature|cognitive.load|functionally.correct",
+      "raw_hit_count": 47,
+      "counts": {
+        "source_registry_or_index": 1,
+        "current_reader_surface": 11,
+        "current_evidence_record": 13,
+        "historical_governance_or_handoff": 20,
+        "generated_projection": 1,
+        "governance_or_navigation": 1
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C06",
+      "pattern": "211|24\\.65|9\\.47|6\\.66|10.files|ten.files|clone|copy.past",
+      "raw_hit_count": 47,
+      "counts": {
+        "current_reader_surface": 9,
+        "source_registry_or_index": 2,
+        "historical_governance_or_handoff": 16,
+        "current_evidence_record": 16,
+        "generated_projection": 4
+      },
+      "current_reader_paths": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C07",
+      "pattern": "9\\.0%|10\\.1%|34\\.1%|7\\.1%|net.productivity|median.composite",
+      "raw_hit_count": 15,
+      "counts": {
+        "current_reader_surface": 3,
+        "historical_governance_or_handoff": 6,
+        "current_evidence_record": 5,
+        "governance_or_navigation": 1
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C08",
+      "pattern": "131\\.1|76\\.3|2x|doubl.{0,30}(team|intake|volume)|measured.SDLC.chain",
+      "raw_hit_count": 17,
+      "counts": {
+        "current_reader_surface": 4,
+        "historical_governance_or_handoff": 10,
+        "current_evidence_record": 3
+      },
+      "current_reader_paths": [
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C09",
+      "pattern": "20\\.2|20\\.3|19\\.8|9\\.0|30%|180%|240%|async.{0,30}release",
+      "raw_hit_count": 42,
+      "counts": {
+        "current_reader_surface": 5,
+        "historical_governance_or_handoff": 17,
+        "current_evidence_record": 11,
+        "preserved_source_history": 9
+      },
+      "current_reader_paths": [
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C10",
+      "pattern": "most.organizations|bottleneck|Crisis Map|headroom|adaptation",
+      "raw_hit_count": 152,
+      "counts": {
+        "current_reader_surface": 57,
+        "historical_governance_or_handoff": 50,
+        "governance_or_navigation": 10,
+        "source_registry_or_index": 2,
+        "preserved_source_history": 20,
+        "current_evidence_record": 6,
+        "source_integration_record": 1,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "ARTIFACT_MODEL.md",
+        "DOCTRINE.md",
+        "GLOSSARY.md",
+        "README.md",
+        "REFERENCES.md",
+        "SCOPE.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "protocols/01_personal_defense.md",
+        "protocols/02_operational_defense.md",
+        "protocols/04_systemic_cure.md",
+        "protocols/README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C11",
+      "pattern": "45\\.4B|44\\.4B|64B|49\\.326|43\\.873|29\\.510|52\\.535|37\\.256|44\\.477",
+      "raw_hit_count": 49,
+      "counts": {
+        "source_integration_record": 10,
+        "current_evidence_record": 9,
+        "current_reader_surface": 5,
+        "historical_governance_or_handoff": 20,
+        "generated_projection": 5
+      },
+      "current_reader_paths": [
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C12",
+      "pattern": "4\\.2|four.billion|2019|2020|Critique|Tricorder|1.3B|10.15.year",
+      "raw_hit_count": 92,
+      "counts": {
+        "governance_or_navigation": 11,
+        "historical_governance_or_handoff": 27,
+        "current_reader_surface": 20,
+        "source_registry_or_index": 5,
+        "current_evidence_record": 19,
+        "source_frontmatter": 1,
+        "generated_projection": 9
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C13",
+      "pattern": "7.27M|30.120|1.3%|228,?000|30\\.7|118\\.4|one.time|recurring|incremental",
+      "raw_hit_count": 60,
+      "counts": {
+        "historical_governance_or_handoff": 22,
+        "governance_or_navigation": 4,
+        "current_reader_surface": 27,
+        "tooling_or_test": 1,
+        "current_evidence_record": 2,
+        "preserved_source_history": 4
+      },
+      "current_reader_paths": [
+        "ARTIFACT_MODEL.md",
+        "GLOSSARY.md",
+        "README.md",
+        "protocols/02_operational_defense.md",
+        "protocols/04_systemic_cure.md",
+        "protocols/README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/appendices/tco-results.json",
+        "report/appendices/tco-scenarios.json",
+        "report/appendices/tco-sensitivity.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C14",
+      "pattern": "320%|321|221\\.7|37B|11\\.5B|85,?521|45%|43%|1,?000.fold|Jevons",
+      "raw_hit_count": 54,
+      "counts": {
+        "current_reader_surface": 11,
+        "current_evidence_record": 11,
+        "tooling_or_test": 1,
+        "historical_governance_or_handoff": 24,
+        "governance_or_navigation": 2,
+        "generated_projection": 5
+      },
+      "current_reader_paths": [
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C15",
+      "pattern": "88%|6%|39%|82.point|high.performer",
+      "raw_hit_count": 82,
+      "counts": {
+        "historical_governance_or_handoff": 32,
+        "current_reader_surface": 17,
+        "source_registry_or_index": 3,
+        "current_evidence_record": 26,
+        "generated_projection": 3,
+        "preserved_source_history": 1
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/appendices/cost-context.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C16",
+      "pattern": "Deloitte|Q3 2025|74%|43%.{0,25}31%|2,?773",
+      "raw_hit_count": 70,
+      "counts": {
+        "current_reader_surface": 8,
+        "historical_governance_or_handoff": 31,
+        "source_registry_or_index": 4,
+        "generated_projection": 11,
+        "source_frontmatter": 1,
+        "current_evidence_record": 15
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C17",
+      "pattern": "Horn|IBM|13.{0,6}billion|\\$13B|Execution Mandate|investor.pressure",
+      "raw_hit_count": 81,
+      "counts": {
+        "current_reader_surface": 14,
+        "historical_governance_or_handoff": 32,
+        "source_registry_or_index": 4,
+        "current_evidence_record": 10,
+        "source_integration_record": 10,
+        "generated_projection": 11
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C18",
+      "pattern": "GPT.5\\.2|6.7.hour|50%|seven.month|7.month|exponential.liability",
+      "raw_hit_count": 23,
+      "counts": {
+        "current_reader_surface": 2,
+        "historical_governance_or_handoff": 13,
+        "preserved_source_history": 4,
+        "current_evidence_record": 3,
+        "tooling_or_test": 1
+      },
+      "current_reader_paths": [
+        "report/02_broken_mechanics.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C19",
+      "pattern": "2.?3[×x]|Faros|91%|SoftwareSeni|review.time.multiplier",
+      "raw_hit_count": 60,
+      "counts": {
+        "source_registry_or_index": 2,
+        "source_integration_record": 10,
+        "current_reader_surface": 4,
+        "historical_governance_or_handoff": 28,
+        "current_evidence_record": 9,
+        "preserved_source_history": 1,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "report/01_the_illusion.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C20",
+      "pattern": "fear|overtime|burnout|Techno.?Diaries|69\\.6|70%|Stack Overflow",
+      "raw_hit_count": 70,
+      "counts": {
+        "current_reader_surface": 19,
+        "source_registry_or_index": 4,
+        "historical_governance_or_handoff": 21,
+        "current_evidence_record": 18,
+        "generated_projection": 8
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "protocols/02_operational_defense.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C21",
+      "pattern": "natural.bottleneck|coding.{0,45}(constraint|bottleneck)|admitted|utilization|variation",
+      "raw_hit_count": 47,
+      "counts": {
+        "historical_governance_or_handoff": 11,
+        "current_reader_surface": 27,
+        "tooling_or_test": 2,
+        "governance_or_navigation": 4,
+        "generated_projection": 1,
+        "source_integration_record": 1,
+        "current_evidence_record": 1
+      },
+      "current_reader_paths": [
+        "README.md",
+        "protocols/01_personal_defense.md",
+        "protocols/02_operational_defense.md",
+        "protocols/04_systemic_cure.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C22",
+      "pattern": "Rubber.Stamp|deep.review|only.choices|adapt.{0,25}workflow|smaller.changes",
+      "raw_hit_count": 18,
+      "counts": {
+        "current_reader_surface": 14,
+        "historical_governance_or_handoff": 4
+      },
+      "current_reader_paths": [
+        "protocols/01_personal_defense.md",
+        "protocols/02_operational_defense.md",
+        "protocols/03_public_defense.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C23",
+      "pattern": "3.?5.{0,12}junior|10\\+|ten.developer|10.second|30.minutes|mentor",
+      "raw_hit_count": 16,
+      "counts": {
+        "current_reader_surface": 6,
+        "historical_governance_or_handoff": 10
+      },
+      "current_reader_paths": [
+        "report/02_broken_mechanics.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C24",
+      "pattern": "case.study|thought.experiment|AI.review|Chapter [56]",
+      "raw_hit_count": 22,
+      "counts": {
+        "historical_governance_or_handoff": 9,
+        "governance_or_navigation": 1,
+        "current_reader_surface": 11,
+        "current_evidence_record": 1
+      },
+      "current_reader_paths": [
+        "protocols/03_public_defense.md",
+        "protocols/README.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C25",
+      "pattern": "no.vendor|vendor.{0,35}(data|evidence|intent)|placebo.analytics|guaranteed|bankruptcy",
+      "raw_hit_count": 41,
+      "counts": {
+        "current_reader_surface": 16,
+        "current_evidence_record": 5,
+        "preserved_source_history": 4,
+        "tooling_or_test": 1,
+        "governance_or_navigation": 2,
+        "historical_governance_or_handoff": 12,
+        "generated_projection": 1
+      },
+      "current_reader_paths": [
+        "DOCTRINE.md",
+        "GLOSSARY.md",
+        "README.md",
+        "SCOPE.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "protocols/04_systemic_cure.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/tco-sensitivity.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C26",
+      "pattern": "inevitab|all.enterprises|every.stage|precipice|probabilit|industry.{0,20}(crisis|collapse)|beneficial.adaptation",
+      "raw_hit_count": 83,
+      "counts": {
+        "current_reader_surface": 29,
+        "historical_governance_or_handoff": 44,
+        "current_evidence_record": 7,
+        "governance_or_navigation": 2,
+        "preserved_source_history": 1
+      },
+      "current_reader_paths": [
+        "DOCTRINE.md",
+        "GLOSSARY.md",
+        "README.md",
+        "SCOPE.md",
+        "protocols/03_public_defense.md",
+        "protocols/04_systemic_cure.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/mechanism-hypotheses.md",
+        "report/appendices/tco-scenarios.json",
+        "report/appendices/tco-sensitivity.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C27",
+      "pattern": "parasit|extractive|host.organism|fiduciary|dishonest|motives|misconduct",
+      "raw_hit_count": 41,
+      "counts": {
+        "current_reader_surface": 4,
+        "governance_or_navigation": 3,
+        "historical_governance_or_handoff": 19,
+        "current_evidence_record": 14,
+        "preserved_source_history": 1
+      },
+      "current_reader_paths": [
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C28",
+      "pattern": "80.?90|80%|six.month|6.month|18.month|30.PR|exponential.{0,25}conflict|future.maintenance",
+      "raw_hit_count": 35,
+      "counts": {
+        "current_reader_surface": 6,
+        "preserved_source_history": 6,
+        "current_evidence_record": 5,
+        "historical_governance_or_handoff": 17,
+        "generated_projection": 1
+      },
+      "current_reader_paths": [
+        "REFERENCES.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C29",
+      "pattern": "independent.{0,25}(convergence|development)|terminology|Vigier|Światowski|Ewing",
+      "raw_hit_count": 218,
+      "counts": {
+        "current_reader_surface": 39,
+        "governance_or_navigation": 20,
+        "current_evidence_record": 18,
+        "historical_governance_or_handoff": 63,
+        "source_registry_or_index": 8,
+        "source_frontmatter": 2,
+        "source_integration_record": 4,
+        "preserved_source_history": 38,
+        "generated_projection": 26
+      },
+      "current_reader_paths": [
+        "ARTIFACT_MODEL.md",
+        "DOCTRINE.md",
+        "GLOSSARY.md",
+        "README.md",
+        "REFERENCES.md",
+        "SCOPE.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "protocols/03_public_defense.md",
+        "protocols/04_systemic_cure.md",
+        "report/02_broken_mechanics.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C30",
+      "pattern": "created_at|public.opening|public.visibility|author.reported|2026-02-06T17:16:44Z",
+      "raw_hit_count": 49,
+      "counts": {
+        "historical_governance_or_handoff": 25,
+        "current_reader_surface": 7,
+        "source_registry_or_index": 3,
+        "current_evidence_record": 5,
+        "source_integration_record": 1,
+        "preserved_source_history": 5,
+        "generated_projection": 3
+      },
+      "current_reader_paths": [
+        "README.md",
+        "REFERENCES.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C31",
+      "pattern": "Systemic Cure|Protocol [34]|Chapter [56]|Table of Contents",
+      "raw_hit_count": 36,
+      "counts": {
+        "current_reader_surface": 27,
+        "historical_governance_or_handoff": 7,
+        "generated_projection": 2
+      },
+      "current_reader_paths": [
+        "protocols/01_personal_defense.md",
+        "protocols/02_operational_defense.md",
+        "protocols/03_public_defense.md",
+        "protocols/04_systemic_cure.md",
+        "protocols/README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C32",
+      "pattern": "migration|throughput|wait.{0,20}rework|completion.rate",
+      "raw_hit_count": 67,
+      "counts": {
+        "current_reader_surface": 31,
+        "source_registry_or_index": 1,
+        "preserved_source_history": 3,
+        "current_evidence_record": 6,
+        "source_integration_record": 1,
+        "historical_governance_or_handoff": 10,
+        "governance_or_navigation": 9,
+        "generated_projection": 6
+      },
+      "current_reader_paths": [
+        "DOCTRINE.md",
+        "GLOSSARY.md",
+        "README.md",
+        "SCOPE.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "protocols/01_personal_defense.md",
+        "protocols/02_operational_defense.md",
+        "protocols/03_public_defense.md",
+        "protocols/README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "kind": "claim",
+      "id": "C33",
+      "pattern": "admitted|candidate|capacity|validated|proposed.pattern|pilot",
+      "raw_hit_count": 652,
+      "counts": {
+        "governance_or_navigation": 66,
+        "current_reader_surface": 195,
+        "tooling_or_test": 77,
+        "historical_governance_or_handoff": 190,
+        "source_registry_or_index": 9,
+        "current_evidence_record": 27,
+        "source_integration_record": 61,
+        "preserved_source_history": 11,
+        "generated_projection": 15,
+        "source_frontmatter": 1
+      },
+      "current_reader_paths": [
+        "DOCTRINE.md",
+        "GLOSSARY.md",
+        "README.md",
+        "REFERENCES.md",
+        "SCOPE.md",
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "protocols/01_personal_defense.md",
+        "protocols/02_operational_defense.md",
+        "protocols/03_public_defense.md",
+        "protocols/04_systemic_cure.md",
+        "protocols/README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/mechanism-hypotheses.md",
+        "report/appendices/tco-results.json",
+        "report/appendices/tco-scenarios.json",
+        "report/appendices/tco-sensitivity.md"
+      ]
+    }
+  ],
+  "classification_rules_in_order": [
+    {
+      "class": "generated_projection",
+      "when": "path starts governance/repository-intelligence/"
+    },
+    {
+      "class": "historical_governance_or_handoff",
+      "when": "path starts governance/reviews/ or governance/work-records/, or equals CHANGELOG.md or governance/memory.md"
+    },
+    {
+      "class": "current_reader_surface",
+      "when": "path starts report/ or protocols/, or equals README.md, REFERENCES.md, TERMINOLOGY_AND_ATTRIBUTION.md, GLOSSARY.md, DOCTRINE.md, SCOPE.md, ARTIFACT_MODEL.md"
+    },
+    {
+      "class": "preserved_source_history",
+      "when": "evidence path and line >= historical_starts[path]"
+    },
+    {
+      "class": "source_integration_record",
+      "when": "evidence path and line >= integration_record_starts[path]"
+    },
+    {
+      "class": "source_registry_or_index",
+      "when": "evidence path ending README.md or equals evidence/SOURCES.md"
+    },
+    {
+      "class": "source_frontmatter",
+      "when": "other evidence path and line <=8"
+    },
+    {
+      "class": "current_evidence_record",
+      "when": "other evidence path"
+    },
+    {
+      "class": "tooling_or_test",
+      "when": "path starts tools/ or tests/"
+    },
+    {
+      "class": "governance_or_navigation",
+      "when": "all remaining locations"
+    }
+  ],
+  "source_metadata_comparison": [
+    {
+      "id": "P-2026-01",
+      "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "REFERENCES.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2025-01",
+      "brief_path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md",
+        "evidence/primary/2023-copilot-task-productivity.md",
+        "evidence/primary/2026-metr-productivity-design-update.md"
+      ]
+    },
+    {
+      "id": "P-2026-03",
+      "brief_path": "evidence/primary/2026-metr-productivity-design-update.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md",
+        "evidence/primary/2025-metr-experienced-developer-productivity.md"
+      ]
+    },
+    {
+      "id": "P-2025-02",
+      "brief_path": "evidence/primary/2025-metr-task-horizon.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/02_broken_mechanics.md",
+        "REFERENCES.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2025-03",
+      "brief_path": "evidence/primary/2025-xu-copilot-oss-activity.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2026-02",
+      "brief_path": "evidence/primary/2026-agarwal-agent-adoption.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2023-01",
+      "brief_path": "evidence/primary/2023-copilot-task-productivity.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md",
+        "evidence/primary/2025-metr-experienced-developer-productivity.md"
+      ]
+    },
+    {
+      "id": "P-2025-04",
+      "brief_path": "evidence/primary/2025-gitclear-code-quality.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2025-05",
+      "brief_path": "evidence/primary/2025-gitclear-developer-output.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-20",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2025-06",
+      "brief_path": "evidence/primary/2025-menlo-enterprise-ai-spend.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/cost-context.md",
+        "evidence/secondary/2026-inference-cost-commentary.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2025-07",
+      "brief_path": "evidence/primary/2025-cloudzero-ai-budget-intentions.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/cost-context.md",
+        "evidence/secondary/2026-inference-cost-commentary.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2025-08",
+      "brief_path": "evidence/primary/2025-mckinsey-ai-adoption-value.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "protocols/README.md",
+        "protocols/04_systemic_cure.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2025-09",
+      "brief_path": "evidence/primary/2025-deloitte-genai-q4.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "protocols/README.md",
+        "protocols/04_systemic_cure.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2024-01",
+      "brief_path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2019-01",
+      "brief_path": "evidence/documentary/2020-google-engineering-practices.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/cost-context.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2024-01",
+      "brief_path": "evidence/documentary/2024-alphabet-financial-context.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/cost-context.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2024-02",
+      "brief_path": "evidence/documentary/2024-meta-financial-context.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/cost-context.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2024-03",
+      "brief_path": "evidence/documentary/2024-microsoft-financial-context.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/cost-context.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2025-05",
+      "brief_path": "evidence/documentary/terminology-provenance.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "GLOSSARY.md",
+        "README.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2025-06",
+      "brief_path": "evidence/documentary/terminology-provenance.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "GLOSSARY.md",
+        "README.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2026-04",
+      "brief_path": "evidence/documentary/terminology-provenance.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "GLOSSARY.md",
+        "README.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2026-05",
+      "brief_path": "evidence/documentary/project-provenance.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "README.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2026-06",
+      "brief_path": "evidence/documentary/project-provenance.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "README.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2026-07",
+      "brief_path": "evidence/documentary/project-provenance.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "README.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "D-2025-07",
+      "brief_path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "S-2025-01",
+      "brief_path": "evidence/secondary/2025-deloitte-legacy-citation.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "REFERENCES.md",
+        "evidence/primary/2025-deloitte-genai-q4.md"
+      ]
+    },
+    {
+      "id": "S-2025-02",
+      "brief_path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "REFERENCES.md",
+        "evidence/primary/2025-mckinsey-ai-adoption-value.md"
+      ]
+    },
+    {
+      "id": "S-2025-03",
+      "brief_path": "evidence/secondary/2026-inference-cost-commentary.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/03_the_aftermath.md",
+        "report/appendices/cost-context.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "S-2026-01",
+      "brief_path": "evidence/secondary/2026-horn-capability-commentary.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "protocols/04_systemic_cure.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "S-2025-04",
+      "brief_path": "evidence/secondary/2025-softwareseni-review-synthesis.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "S-2025-05",
+      "brief_path": "evidence/secondary/2025-technodiaries-review-anecdote.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "protocols/04_systemic_cure.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "S-2026-02",
+      "brief_path": "evidence/secondary/2026-horn-engineering-commentary.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-21",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "protocols/04_systemic_cure.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "M-1984-01",
+      "brief_path": "evidence/methodology/1984-the-goal.md",
+      "fields_match": {
+        "evidence_review": true,
+        "integration_audit": true,
+        "last_verified": true,
+        "current_use": true
+      },
+      "evidence_review": "Needs re-review",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
+      "independent_review": "Confirmed",
+      "declared_current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "REFERENCES.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    }
+  ],
+  "summary": {
+    "query_count": 66,
+    "source_query_count": 33,
+    "claim_query_count": 33,
+    "raw_match_count_with_duplicates_across_queries": 4067,
+    "class_counts_with_duplicates_across_queries": {
+      "tooling_or_test": 127,
+      "current_reader_surface": 944,
+      "historical_governance_or_handoff": 1520,
+      "source_registry_or_index": 121,
+      "governance_or_navigation": 153,
+      "current_evidence_record": 517,
+      "source_frontmatter": 40,
+      "preserved_source_history": 206,
+      "generated_projection": 300,
+      "source_integration_record": 139
+    },
+    "source_state_counts": {
+      "Verified": 28,
+      "Needs re-verification": 5
+    },
+    "registry_brief_mismatch_count": 0,
+    "active_brief_navigation_missing_current_use_count": 1
+  }
+}

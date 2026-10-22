@@ -109,12 +109,14 @@ Apply different controls according to the cost of failure and durability of the 
 
 | Risk class | Typical work | Minimum gate |
 | --- | --- | --- |
-| **Low** | Disposable scripts, documentation drafts, isolated test scaffolds | Author verification and automated checks |
+| **Low** | Isolated scripts with disposable outputs, documentation drafts, isolated test scaffolds | Author verification and automated checks |
 | **Moderate** | Ordinary feature code, adapters, bounded refactoring | Reference-bounded implementation, tests, independent review |
 | **High** | Business rules, shared interfaces, persistent data changes | Senior review, integration tests, rollback plan, explicit acceptance criteria |
 | **Critical** | Security controls, financial logic, destructive migrations, concurrency, compliance paths | Named accountable owner, specialist review, staged release, production monitoring, rollback or kill mechanism |
 
 AI assistance does not determine the risk class. The system impact of the change does.
+
+A one-off script that changes persistent data belongs in the High or Critical class as its effects require. Classify the effects before execution; short-lived code is not evidence of low risk.
 
 ### Gate rule
 

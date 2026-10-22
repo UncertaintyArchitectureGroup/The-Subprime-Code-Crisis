@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "d1bc1f384392bf67dbce6687a053167b030d5c900d11de3a251d93328fafc3ce",
+    "digest": "c87ac8ecac22bad3235fa0c5ffecb6a0be90eacd64f096e1130787569a8b018f",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "c06170dcae7c3d6bd4b62906e55abbd635ee813437a90148f6da18e82109ed1b"
+        "sha256": "b2cc6f75298cd99daae59b16c37bdd092e99aefb256ec93b45d46b673410e4e8"
       },
       {
         "path": "CITATION.cff",
@@ -92,7 +92,7 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "817b2e72b2d9d47a181f09cf974dd6be661f9d5eeca6f2adb1cd3d3df8466d7e"
+        "sha256": "c329fba240f9e686d02a6fb5adb818edd41f5eea1b99eaf18c3a2ba8315a37b5"
       },
       {
         "path": "REFERENCES.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "163fa459adc1f76cb7296fa690b66a94978f7d7c5c7639f08d4d5703073afb86"
+        "sha256": "e0782fb69b21b9e41e8e10d22430a47cd3f2b069f3b1c85923d0992e125e5505"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -292,7 +292,7 @@
       {
         "path": "evidence/secondary/2026-inference-cost-commentary.md",
         "identity_mode": "content",
-        "sha256": "f74c5a28a9b9268402df6fe003430663a95f11e5ce1ea763845213ac5c6001a1"
+        "sha256": "331c5cf8d3dec8e7b81b197da83db7f8ee72fff1c7d2bea50745701f11a4c4b1"
       },
       {
         "path": "evidence/secondary/README.md",
@@ -347,7 +347,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "6fe6c8cf9ccf84d17f2391d88ad5e3fb791b66abd03216b84836e71124b3156d"
+        "sha256": "1339548ca50895abb1529b2ba427332803ad191b9809939c50f14b0b582c4241"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -473,6 +473,16 @@
         "path": "governance/reviews/issue-64-2026-10-21-sol-editorial-audit.md",
         "identity_mode": "content",
         "sha256": "7bcc6327210dac44f46e29b5ec03037c3d93ad4513024cb68d750aefbbdb3cd5"
+      },
+      {
+        "path": "governance/reviews/issue-65-2026-10-22-acceptance-closeout.md",
+        "identity_mode": "content",
+        "sha256": "8dbff3a8cf56d1e84c5cfccb8f64642bf04cb90eb36dab56ad97a4b79f584039"
+      },
+      {
+        "path": "governance/reviews/issue-65-2026-10-22-occurrence-trace.json",
+        "identity_mode": "content",
+        "sha256": "88ddec417e7c857a7a4944206df6e0a70fcab3df9050bd4adc60b37dd96ec16e"
       },
       {
         "path": "governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md",
@@ -605,6 +615,11 @@
         "sha256": "6c74e708bf256f460be24c9c0dd2014a6a13fe5e3e6a1d4c9d0e921bd9728aa7"
       },
       {
+        "path": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
+        "identity_mode": "content",
+        "sha256": "10e20e22b19aac4cae2df0690259687b4f2450dbef24b5444d9b249c577d97c1"
+      },
+      {
         "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
         "identity_mode": "content",
         "sha256": "3bfe51777fa6e9bf19f1875c1d53b99412796c8db6e0088c3f10ed257b681628"
@@ -617,12 +632,12 @@
       {
         "path": "protocols/01_personal_defense.md",
         "identity_mode": "content",
-        "sha256": "0a18fe293ba7cf287b1c2c14e369a2942b964c7201fb092919344a93b49367c4"
+        "sha256": "025e667c88719da78c9b841c25196d068da267a2b6ecd3d7207f80f02e659e96"
       },
       {
         "path": "protocols/02_operational_defense.md",
         "identity_mode": "content",
-        "sha256": "0c4ab8aff62ceccb5d4f63dff75d34a2dfa8aa366662d68f26682912544c58a4"
+        "sha256": "9e4298d396ebb8b3d252dd52a3afc51b30a5a977ba32b3d20f50f13d917ad6a7"
       },
       {
         "path": "protocols/03_public_defense.md",
@@ -632,12 +647,12 @@
       {
         "path": "protocols/04_systemic_cure.md",
         "identity_mode": "content",
-        "sha256": "de562201f2ef60dc8b9e433a63f703a6a1e0ac13d73c0cd5e0b25febc2f4f688"
+        "sha256": "4d83758bc0271ceab32da26ac455a538c64d922f6cb3fa417f5b274e8932b7d9"
       },
       {
         "path": "protocols/README.md",
         "identity_mode": "content",
-        "sha256": "30705acb73b5138ed2bf98f3a3be6aa228bbacbbe1d2bd9d5466ae95fc5f3cf8"
+        "sha256": "17f9ad90288a620d48dc7b0c8f3ee21142971fd5b4843fec5f1dcf140728790c"
       },
       {
         "path": "report/01_the_illusion.md",
@@ -1514,10 +1529,10 @@
       "path": "evidence/SOURCES.md",
       "source": "Artur Markus, *The Inference Cost Paradox*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-21",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Practitioner price-volume interpretation; underlying market estimates/intentions require separate original-source boundaries",
-      "current_use": "`report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
+      "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md` and `report/03_the_aftermath.md` indirect cost reprises only (H15/H16); `report/appendices/cost-context.md`; `REFERENCES.md`",
       "brief_path": "evidence/secondary/2026-inference-cost-commentary.md"
     },
     {
@@ -2221,6 +2236,20 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-65-2026-10-22-acceptance-closeout.md",
+      "title": "Issue #65 — evidence reconciliation and protocol acceptance",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-65-2026-10-22-occurrence-trace.json",
+      "title": "governance/reviews/issue-65-2026-10-22-occurrence-trace.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md",
       "title": "Issue 85: complete node outcomes and sequential issue approval",
       "instructions": [
@@ -2398,6 +2427,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
       "title": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
+      "title": "governance/work-records/2026-10-22-issue-65-acceptance-closeout.toml",
       "instructions": [
         "AGENTS.md"
       ]

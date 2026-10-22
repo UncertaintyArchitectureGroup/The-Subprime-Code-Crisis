@@ -22,6 +22,13 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Changed
 
+- Reconciled the original C01–C33 audit against accepted corrections and retained
+  explicit source-access gaps. Clarified that disposable code can have durable
+  data/operational effects requiring the existing risk and ownership boundary;
+  aligned the organizational diagram with admitted stage demand. Corrected README
+  coverage descriptions and the omitted Markus README use; that affected source
+  follows a separate integration reset, audit and merged-state verification.
+
 - Replaced unsupported industry-collapse quantities, vendor motive/exoneration claims, biology analogies and legal verdicts with conditional scenarios and observable limits. Neutralized report headings and the Protocol4 display title, retained source findings and positive/mixed outcomes, and clarified proposed protocol benefits without changing controls. Sol implementation and final Astra analytical acceptance are recorded separately under #64.
 
 - Astra's #64 review made debt-risk confidence explicitly conditional, separated recovery from demonstrated benefit and local triggers from predicted outcomes, and scoped the propagation and incentive tests. Disclosure examples now distinguish comparisons from causal claims; incident diagrams identify factors to investigate rather than presuming causes. Source findings and operational gates remain unchanged.

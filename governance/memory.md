@@ -2,59 +2,62 @@
 
 ## Snapshot
 
-- Checked 2026-10-22 UTC; implementation baseline main
-  `334638f6081c83ecb59dfabaf90137c2567b47d1` (PR83).
-- #85 is the authorized governance/plan task: complete node outcomes and the
-  one-issue-through-merge, plan-reread, next-issue-approval cycle.
-- This candidate cannot record its own future merge. Fetch live #85/PR101/main
-  and exact-main checks before deciding whether its acceptance is complete.
+- Checked 2026-10-22 UTC; #65 baseline main
+  `4a8165f65d78bbb33a8444a6874478f7784934d2` (accepted #85 / PR101).
+- #65 is the approved active issue: C01–C33 reconciliation, remaining protocol,
+  diagram and source-use synchronization, and final acceptance.
+- This candidate cannot record its own future merge. Fetch live #65/PR/main and
+  exact-main checks before deciding whether acceptance is complete.
 
 ## Active owners
 
 - [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
-  is the single live master plan; its 2026-10-22 amendment owns current sequence.
-- #85 owns governance/method and issue planning. #86 owns register architecture;
-  #87 the firm-evidence source review; #88 the first readable edition.
-- #89–99 own the eleven continuing node investigations; #100 owns MKT-1/H0-C.
-- Existing #4 skill input, #49 recovery and #1 reader feedback retain their scopes.
-- #65/#53 cleanup acceptance, publishing/tooling #48/#50/#51/#74/#55 and pilot #54
-  remain separate owners. Queued issue creation does not authorize implementation.
+  owns the single live master sequence; #85 method/workflow implementation is done.
+- #65 owns the current bounded closeout, including S-2025-03 use-record correction
+  and the subsequent separately reviewed merged-state verification PR.
+- #53 stays open for deferred terminology/Goldratt original acquisition; retired
+  Deloitte remains an explicit historical unresolved record. No cosmetic closure.
+- #86 register architecture, #87 firm evidence, #88 readable edition, #89–99 node
+  research and #100 marketing analysis remain queued under the master plan.
+- Existing #4 skill input, #49 recovery, #1 feedback, publication/tooling owners
+  and #54 pilot retain their scopes. Issue creation is not implementation approval.
 
 ## Decisions
 
-- Maintainer explicitly authorized #85 on 2026-10-22, including AGENTS/workflows,
-  necessary issues and plan updates; ordinary correction/review/merge are in scope.
-- Every node includes its actual baseline functions/outcomes and unknowns.
-  Review includes quality plus knowledgeable shared ownership and system understanding.
-- Functional substitutes and explicit tradeoffs are allowed; unmeasured outcomes
-  are neither preserved nor harmed by default. Harms and remedies are testable.
-- Preserve an explicit thesis, scoped evidence and independent triangulation;
-  no study of every developer is required and no source status changes here.
-- Complete one issue through all necessary PRs and actual-main acceptance, reread
-  the plan, show the next scope and wait for explicit approval before starting it.
+- Maintainer explicitly approved #65 with “Так” after the #85 plan checkpoint.
+  Ordinary correction, independent review, checks and merge are authorized.
+- Credit completed #57–64 corrections. Fix actual remaining drift; no new broad
+  neutralization, source study, universal-proof requirement or thesis rewrite.
+- Disposable code may cause durable data/operational effects. Existing risk and
+  ownership acceptance applies before those effects, including recovery limits.
+- Full node outcomes include understanding/learning, ownership, coordination and
+  feedback as well as artifact quality; actual unmeasured baselines stay unknown.
+- Complete #65 through all needed PRs and actual-main acceptance, reread #84,
+  show the current plan/next scope and wait for explicit approval before #86.
 
 ## Evidence
 
-- reviews/issue-85-2026-10-22-outcomes-and-cycle.md records decision, synchronization,
-  issue mapping and candidate review/check evidence; #85/PR own live completion.
-- Governance/plan independently Confirmed at tree `9e581614637765a7e0ac4fbd1869438992a20596`;
-  PR101 initial head `c46bfd8607c819d4abcc37bd74f3d7aeae867d45` has that tree.
-  Local 126 tests, contract, source integrity/transitions, trusted gate and RI passed.
-- Master plan #84 preserves original direction, author-context links, all node
-  hypotheses, earlier independent plan review and the new dated amendment.
-- #57–64 corrections remain the input baseline; no report/brief/protocol findings,
-  source states or source dates are changed by the current governance diff.
-- Older review files and source registry retain their actual evidence boundaries
-  and unresolved original-access/provenance gaps. RI verifies local bytes only.
+- reviews/issue-65-2026-10-22-acceptance-closeout.md holds all C01–C33 dispositions,
+  exact child receipts, protocol/full-outcome assessment and the AC acceptance table.
+- Dated occurrence trace: 33 source IDs plus 33 claim clusters across 157 baseline
+  files; contextual checking found one actual Current use omission (Markus README).
+- S-2025-03 is Reviewed brief / Needs re-verification / —, independently Confirmed
+  for the correction candidate; merged-state acceptance remains pending. Other 32 source states/dates are unchanged.
+- Candidate therefore has 27 Verified and six Needs re-verification. No count or paired-field match establishes actual-use accuracy.
+- Separate /root/issue65_independent_review Confirmed candidate246ade3, tree
+  8ac56591544f6144242e56f5d49c5b8e24388ae7. I65-01 was corrected/rechecked.
+  Independent126tests, trusted gate/state/transitions, RI and412links passed.
+- Original #53 audit, source limitations and earlier review outcomes remain
+  historical. RI checks represented local bytes, not live issue/source truth.
 
 ## Next actions
 
-- If #85 is incomplete, finish only its missing review/check/merge/acceptance steps.
-- After accepted #85 completion, reread #84 and record a reasoned plan update or
-  no-change decision. Present the current plan and propose #65's bounded closeout.
-- **Do not start #65 until the maintainer approves that next issue.** A prior
-  roadmap, issue creation, green check or older handoff is not this approval.
-- #65 should reconcile already corrected items before making edits; no new blanket
-  neutralizing rewrite or source promotion is authorized by this handoff.
-- Full node research is not a hidden prerequisite for the first readable edition
-  or publication. Select later research/publication work through the live plan.
+- Finish #65 candidate checks, independent correction loop, correction PR merge
+  and exact-main acceptance; then a separate final source-verification PR.
+- Reconcile #53 with a named residual queue and partial AC2; do not imply all
+  sources were acquired or promote the five unresolved sources.
+- After accepted #65 completion, reread/update #84 and propose #86's scoped
+  thesis/register architecture with full node functions, hypotheses and source fit.
+- **Do not start #86 until the maintainer approves that next issue.**
+- Deferred original acquisition and all node research are not hidden prerequisites
+  for the first readable edition or later publication selection.
