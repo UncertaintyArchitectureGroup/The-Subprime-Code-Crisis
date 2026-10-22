@@ -119,3 +119,31 @@ source/content, faithful-recording and actual-main eligibility Confirmed outcome
 above are real; they do not certify an unseen final-state delta. Append the actual
 candidate/tree, independent outcome and applicable checks after execution. This
 record cannot assert its own future merge, #86 closure or next-issue approval.
+
+
+### Actual final-state review — Confirmed, 2026-10-22
+
+Separate reviewer `/root/issue86_independent_review` **Confirmed** candidate
+`5b30b4e28f62132461fb1836008815476b9c8549`, tree
+`fc804bbb659ea71664b16dcea80c9d8b8de482af`. Retrievable GitHub equivalent
+`e3cf03c4046df53a24bfd67667266e9afbf574c2` has that identical tree.
+No material finding remains in the metadata delta.
+
+The reviewer checked exactly seven paired state/date restorations; unchanged
+Reviewed brief/Confirmed fields, source identities/findings/versions/limits/uses;
+all 26 unaffected rows; preserved prior/reset bodies; and the unchanged register,
+report, protocols, glossary, references, changelog, occurrence trace, policy/tooling
+and historical work records. Exactly one new work record is present. The separate
+read-only receipt challenge found no scope or acceptance overclaim; the primary
+reviewer independently assessed the records and underlying references.
+
+Using accepted-main policy/tooling, trusted Repository Gate, contract, evidence
+integrity/transitions, RI, all 126 existing tests and diff checks passed. The
+reviewer's bounded scan checked 69 local Markdown links (one fragment) across the
+11 changed Markdown files, with no missing target. Root's broader reader/metadata
+scan checked 376 local links (59 fragments) across 22 files and also passed.
+
+The work record now records this actual final-candidate Confirmed outcome.
+This receipt and its generated-context update still need faithful-recording review;
+live final PR checks, merge, resulting-main acceptance and #86/#84 handoff remain
+separate. No future merge, issue closure or next-issue approval is asserted.

@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "33fe0518ec3a7a2e7266dd03be40e23b14e701d92cbe09f44d6ac720c7cc6406",
+    "digest": "f1200b95a4c664c4dee14b9f6b468c809c366fcc3721dab88bf6dfaf2a71c2f4",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -347,7 +347,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "acaa4a299832615d2a9deb99cc3108540d9ca5cb21bcbeaff2ba5e49f97461a2"
+        "sha256": "9d396f39a2fe033be3f8e8a58a241ac792f725d854b92237bcafc3948648fa64"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -502,7 +502,7 @@
       {
         "path": "governance/reviews/issue-86-2026-10-22-final-verification.md",
         "identity_mode": "content",
-        "sha256": "c9bfccc774957d53b003c01fe9c6fc4a6da6797e8dd20b0688dc5dec794aaefe"
+        "sha256": "b515ce16d2208b3bca7d51cad190983b1e5de0c070b161126aff42aa9d5786b0"
       },
       {
         "path": "governance/reviews/issue-86-2026-10-22-register-audit.md",
@@ -652,7 +652,7 @@
       {
         "path": "governance/work-records/2026-10-22-issue-86-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "6604440e09bb273905dd7814b67e4f75ffeb6837e6163c36d63e61bdc45360af"
+        "sha256": "fe594dd46cf74a2d84ede77b041bb2373610cfa9f048fcd2f42aa6c4221c7847"
       },
       {
         "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",

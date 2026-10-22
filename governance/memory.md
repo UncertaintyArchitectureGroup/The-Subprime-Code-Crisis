@@ -7,6 +7,7 @@
   `9d42506380605c70dca3c11db8ef49bb7918bc70`.
 - #86 remains the approved active issue. The full register is merged and accepted;
   this candidate records final verification of its seven changed-use sources.
+  Final-state candidate 5b30b4e / tree fc804bbb is independently Confirmed.
 - This candidate cannot record its own future merge. Fetch live #86/PR/main and
   actual-main checks before deciding whether full acceptance is complete.
 
@@ -61,8 +62,8 @@
 
 ## Next actions
 
-- Independently review the exact final-state candidate and faithful recording;
-  run applicable trusted/local/live checks, merge and check actual main.
+- Obtain faithful-recording review of the actual final-state Confirmed receipt;
+  finish trusted/local/live checks, merge and check resulting main.
 - Complete #86's AC/result records, reread/update #84's sequence and rationale,
   show the current plan and propose #87's concrete firm-evidence scope.
 - **Do not start #87 or another queued issue without that approval.**

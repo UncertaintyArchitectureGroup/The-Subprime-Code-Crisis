@@ -3,11 +3,13 @@ title = "Complete seven-source verification after accepted issue86 correction ma
 primary_flow = "Flow D — final verification after accepted correction merge and independently checked actual main"
 human_decision = "Continuation of maintainer-approved #86, Роби on 2026-10-22, start declaration 6336459981. Correction PR104 is Confirmed and merged at c67eb5787838735ab670a3788db4714d5ae45ff2; actual-main health 39753429113 and local checks passed. Separate reviewer Confirmed actual-main eligibility for the seven sources. This records that accepted use and does not authorize #87."
 independent_review = "Confirmed"
-# Actual content, faithful-recording and actual-main eligibility outcomes from
-# /root/issue86_independent_review are Confirmed. Accepted correction-main tree:
-# 9d42506380605c70dca3c11db8ef49bb7918bc70. This actual-source outcome does not
-# pre-confirm the unseen final metadata candidate; its separate review and actual
-# final merge/main acceptance remain required and will be recorded after execution.
+# Actual final-state candidate Confirmed, 2026-10-22, by
+# /root/issue86_independent_review at 5b30b4e28f62132461fb1836008815476b9c8549,
+# tree fc804bbb659ea71664b16dcea80c9d8b8de482af. GitHub equivalent
+# e3cf03c4046df53a24bfd67667266e9afbf574c2 has that identical tree.
+# Exact seven restorations, preserved content/history and trusted gate/state/
+# transition/contract/RI/tests were independently checked. The receipt update,
+# final PR checks/merge and resulting-main acceptance remain separate.
 
 [changelog]
 decision = "Not required"
