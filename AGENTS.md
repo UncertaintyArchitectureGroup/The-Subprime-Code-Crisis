@@ -161,6 +161,49 @@ study can establish its bounded finding. Hypothesis verdicts remain separate
 from claim classes, source states and independent-review outcomes; they never
 promote a source to `Verified`. Existing Flow A–E routing and approval gates apply.
 
+### Competing explanations and diagnostic evidence
+
+For a new or materially revised SDLC hypothesis, improvement claim, proposed
+control or relevant source assessment/search, compare the thesis with the strongest
+applicable [competing explanations](report/appendices/mechanism-hypotheses.md#competing-explanations).
+Use the [comparison method](governance/hypothesis-evaluation.md#compare-explanations)
+and [record shape](governance/templates.md#source-hypothesis-comparison) inside the
+existing register, brief or owning review record. Screen each source in the
+selected scope for relevance; assess applicable rivals and explain material
+non-applicability rather than forcing a judgment for every family.
+
+- Specify the scoped proposition, population, exposure/intervention, comparator,
+  horizon, predicted observations and observations that could weaken each account.
+  State which explanations compete for the same result and which can coexist or
+  concern different links. Keep local acceleration, capacity mismatch, persistence,
+  downstream harm, net value and incremental remedy value distinct.
+- Compare the source's observed direction, magnitude, scope and uncertainty with
+  the relevant predictions. Explain what it supports, weakens, contradicts within
+  scope or cannot distinguish, separating missing measurement, imprecision and
+  irrelevance. Compatibility with several explanations can still favor one when
+  the observed pattern is more specifically predicted there; justify that judgment
+  without inventing probabilities or likelihood ratios. A shared compatible result
+  alone does not establish relative support.
+- Preserve design, selection, confounding and evidence-family dependence limits.
+  Nonsignificance alone is not equivalence. Distinguish an absent trigger from an
+  observed trigger with an absent endpoint; specify a meaningful margin and horizon
+  before testing rather than redefining them to protect a favored account.
+- Retain complete node outcomes, including Review quality and competent ownership.
+  Judge net value and a specified remedy's incremental value separately; a benefit
+  does not erase an adverse endpoint or conceal a critical-outcome loss.
+- Use source review and integration audit to check the comparison against original
+  results and every material use. In Flow E, seek evidence favorable to the strongest
+  rivals and against proposed remedies, record the discriminating question and
+  bounded search scope, and keep candidate judgments provisional. Independent review
+  challenges omitted rivals and unsupported discrimination as well as source use.
+
+These evidence-to-hypothesis relationships are not new source states, claim classes,
+hypothesis verdicts or review outcomes. Method adoption alone neither reassesses
+existing evidence nor promotes or resets its status. Record the owner of any
+pending application; actual source or material use changes retain their existing
+Flow A–D triggers. This comparison extends existing procedures without creating
+another registry, source Flow, approval layer or requirement for a favorable result.
+
 ## Canonical source state model
 
 Every source has separate `Evidence review` and `Integration audit` states. Allowed statuses, transitions, reset behavior, and `Last verified` rules are defined once in the mandatory [`status-model.md`](governance/status-model.md).

@@ -8,6 +8,13 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added six bounded competing-explanation families to the existing SDLC register,
+  with separate net-value and incremental-remedy propositions. Added a shared
+  source × hypothesis comparison method and record, including diagnostic evidence,
+  non-measurement and uncertainty boundaries. Existing evidence assessments and
+  source states are preserved; #110 owns the nine-entry application and #111 the
+  finite diagnostic search.
+
 - Added the pinned Shen–Tamkin skill-formation experiment and its source/access
   assessment. Chapter 5, the hypothesis register and README now distinguish lower
   immediate individual learning from favorable observed completion and uncertain
@@ -33,6 +40,11 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 - Added a reviewed documentary project-provenance record covering the 2026-01-05 DOU precursor and discussion, the 2026-02-06 GitHub repository creation timestamp, and the 2026-02-10 explicit Subprime Code publication.
 
 ### Changed
+
+- Extended canonical AGENTS and applicable review, audit, discovery, independent
+  review and intake procedures to compare relevant explanations consistently.
+  Added concise reader/contributor routes and definitions without a new source
+  flow, registry, status, approval layer or required favorable verdict.
 
 - Made README a direct entry to the SDLC rebalancing thesis, full user-outcome and
   economics loop, Review quality/ownership functions and all main artifact families.

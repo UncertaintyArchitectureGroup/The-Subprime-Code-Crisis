@@ -49,6 +49,8 @@
 ## Plan checkpoint
 
 - Node-outcome/hypothesis assessment, when applicable: link or specific reason not applicable
+- Competing-explanation comparison: link to applicable source/hypothesis record,
+  distinguishing observations and unresolved owner, or specific non-applicability
 - Post-merge master-plan reread/update: Pending / Completed — actual issue/plan record
 - Proposed next issue and scope:
 - Next-issue approval: Awaiting maintainer / Approved — reference/date

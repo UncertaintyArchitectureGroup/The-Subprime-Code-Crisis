@@ -1,0 +1,29 @@
+record_version = 1
+title = "Make competing explanations and diagnostic evidence explicit"
+primary_flow = "Approved governance change procedure"
+human_decision = "Maintainer selected the presented #109 scope and all eight acceptance conditions with «Роби 109» on 2026-10-22. Exact approved treatment, missing-step analysis, alternatives and scope through merge/main acceptance: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/109#issuecomment-6346517476. Master plan #84 records the active cycle. #110 and #111 remain unstarted and require their own selection."
+independent_review = "Confirmed"
+# Independent implementation review by /root/issue109_independent, 2026-10-22.
+# Candidate 893ac93c78ae1af1492291bd755e0d74122f282e, tree
+# c628cdda1219f59da48b69ed9645be24fa6095ba; base fdbd6ee051d32e0cd83b4919e8ebaa76ca6798c9.
+# Full 22-file diff plus live #109/#84 independently inspected; no material findings.
+# 126 tests, contract, evidence integrity, RI, whitespace and 398 local links passed.
+# All existing empirical uses/states/verdicts preserved. This outcome does not
+# certify the future hosted checks, merge, exact-main acceptance or next-task approval.
+# Faithful final receipt and this record are checked before publication.
+# Detailed scope and receipt: governance/reviews/issue-109-2026-10-22-comparison-method.md.
+
+[changelog]
+decision = "Updated"
+reason = "Changes canonical contributor obligations, comparison method, applicable workflows/templates, interpretation vocabulary and navigation; adds six Open rival families without empirical reassessment."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "reader-navigation", "history"]
+
+[synchronization.non_applicable]
+repository-architecture = "Existing register, evaluation method, briefs, review artifacts and source flows retain ownership; no artifact class, parallel registry, master plan or flow is introduced."
+source-registry = "No source identity, factual Current use, reviewed link, state or verification date changes. Register additions define comparison propositions without changing accepted source interpretations."
+evidence = "No brief, finding, estimate, uncertainty or scientific interpretation changes. #110 owns pending application to the nine core entries; actual future changed uses retain existing procedures."
+evidence-indexes = "No brief is added, removed or revised; existing index navigation and source-processing descriptions remain accurate."
+references = "No citation, bibliography, identity, attribution or provenance change; README adds only a route to the existing register and method."
+protocols = "No intervention, threshold or production gate changes; the method defines how future proposed remedies are compared."

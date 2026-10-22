@@ -32,6 +32,9 @@ Next step and related issue/PR links. Preserve initial intent; append approved c
 - Scope/acceptance approval: Awaiting maintainer / Approved — reference/date
 - If an SDLC hypothesis, improvement claim or control is affected: node IDs and
   complete function/outcome assessment under `governance/hypothesis-evaluation.md`.
+- Applicable competing explanations, distinguishing predictions and remaining
+  observations: use the comparison section of that method; explain material
+  non-applicability and name the existing owner of any deferred assessment.
 
 Work one selected issue through all necessary PRs, review, main merge and acceptance.
 Queued issues are not authorized for implementation merely by appearing in the plan.

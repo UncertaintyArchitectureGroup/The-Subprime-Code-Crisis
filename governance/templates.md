@@ -52,12 +52,47 @@ Use within the existing hypothesis register or owning issue/review artifact unde
 - Critical outcomes, justified margins, accepted tradeoffs and decision owner:
 - Downstream user benefit, team capability and full lifecycle economics:
 - Source IDs/versions; independent evidence families; counterevidence/search:
+- Applicable rival IDs and source hypothesis comparison location; material exclusions:
 - Verdict and rationale, remaining gaps, date and next evidence issue:
 ```
 
 Review includes both quality and competent shared ownership. An unmeasured outcome
 is neither preserved nor harmed by default. A study can support a bounded outcome
 without measuring the whole inventory. Verdicts do not change source status.
+
+## Source hypothesis comparison
+
+Use under [Compare explanations](hypothesis-evaluation.md#compare-explanations)
+inside the existing brief, hypothesis register or owning review record. Link to
+one comparison rather than copying it into a second registry. Screen each source
+in the selected scope; complete the applicable comparisons and explain material
+non-applicability. Flow E records screening judgments as provisional.
+
+```markdown
+## Source hypothesis comparison
+
+- Source ID/candidate ID, exact version, original locator and access limits:
+- Owning proposition and node IDs; population/context, exposure/intervention,
+  comparator, outcomes, unit of analysis and horizon:
+- Applicable rival IDs; material non-applicability and reason:
+- Which accounts compete for the same result, coexist or address different links:
+
+| Account/ID and scoped prediction | Observed direction, magnitude, uncertainty and locator | Relationship and diagnostic reason | Limits or missing discriminating observation |
+| --- | --- | --- | --- |
+| Prediction and weakening observation | Exact result and metric/unit | Supports/weakens/contradicts within scope/cannot distinguish, with reason | Missing measurement, imprecision, scope or design limit |
+
+- Design, selection/confounding, external validity and evidence-family dependence:
+- Full outcome coverage/gaps, including Review quality and competent ownership:
+- Net value (ALT-6a) versus specified remedy's incremental value (ALT-6b), if relevant:
+- Prespecified margin/horizon versus retrospective choices; critical-outcome losses:
+- Owning hypothesis/source-use trace links; bounded conclusion and date:
+- Pending application or diagnostic search, unresolved observation and owning issue:
+```
+
+Relationship descriptions explain evidence; they do not set source status or a
+hypothesis verdict. Preserve simultaneous benefits and harms. Compatible results
+may favor an account for an explicit diagnostic reason; nonsignificance alone does
+not establish equivalence. Use the method for the full interpretation limits.
 
 ## Post-merge plan checkpoint
 
@@ -91,6 +126,7 @@ continues to cover routine completion steps within the current issue.
 - Claim-to-source trace location:
 - Numeric checks and reproduced calculations:
 - Argument-fit findings:
+- Applicable source hypothesis comparison checked against original and material uses:
 - Report implications:
 - README/map/diagram implications:
 - Protocol outcome: No protocol change | Protocol clarification | Protocol change proposed
@@ -111,11 +147,24 @@ continues to cover routine completion steps within the current issue.
 - Independent reviewer:
 - Flow reviewed:
 - Materials independently checked:
+- Applicable rival selection, predictions/results and diagnostic conclusions checked:
 - Outcome: Confirmed | Corrections required | Unresolved disagreement | Review unavailable
 - Discrepancies found:
 - Corrections completed:
 - Human decision required:
 - Review date:
+```
+
+## Search Strategy comparison fields
+
+Include these in the existing [Flow E Search Strategy](evidence-discovery.md#1-search-strategy)
+alongside its other required fields; this is not a separate search or approval.
+
+```markdown
+- Scoped question and applicable hypothesis/node/rival IDs; material exclusions:
+- Contrasting predictions and observation that could distinguish them:
+- Queries favorable to the strongest rivals and against proposed remedies:
+- Bounded search scope/completion boundary, coverage gaps and owning issue:
 ```
 
 ## Candidate Register
@@ -131,6 +180,8 @@ Maintain this table for every claim-critical, systematic, or multi-source Flow E
 | Search provenance | Database, site, query, and search date |
 | Relevance | Direct, adjacent, contextual, or not relevant |
 | Relationship | May support, weaken, contradict, replicate, or contextualize |
+| Hypothesis comparison | Applicable hypothesis/node/rival IDs and discriminating question; material non-applicability reason |
+| Diagnostic assessment | Provisional predicted-versus-observed relationship, direction/magnitude/uncertainty, missing measurement and design/scope limits |
 | Inclusion result | Included, excluded, or held |
 | Decision reason | Specific screening rationale |
 | Research entity | Authors, affiliations, and responsible organization |

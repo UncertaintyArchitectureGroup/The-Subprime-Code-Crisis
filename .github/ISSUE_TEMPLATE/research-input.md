@@ -33,6 +33,12 @@ each source measures, what remains unknown, functional substitutes, tradeoffs
 and observations that could weaken both the adverse mechanism and the remedy.
 Use `governance/hypothesis-evaluation.md`; one study need not cover all outcomes.
 
+Screen relevant H0/node and rival explanations. Use the Source hypothesis
+comparison in `governance/templates.md` to separate shared compatibility from
+diagnostic evidence, non-measurement and imprecision. Include evidence favoring
+rivals or weakening remedies; explain material non-applicability. Discovery
+records candidate relevance provisionally and does not change accepted verdicts.
+
 ## Acceptance checks
 
 - [ ] AC-1 — Exact source/version, metrics, uncertainty and limitations inspected.

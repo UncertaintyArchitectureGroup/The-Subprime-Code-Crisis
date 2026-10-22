@@ -17,22 +17,22 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "f5f963dbe2e1baa841334b17ab4bc98f475b2326f4c6e07b2fd3ab8b94e78e47",
+    "digest": "0ea37371fb8520aa627f1edace7f6fce88f71e74b3d98490bfe02d05debd469e",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
         "identity_mode": "content",
-        "sha256": "0ace4c5b67baf72a0d565d49cc4225f1825bae2fcea69a14d4fb5265e394d845"
+        "sha256": "84a1caf0a1c2cf8f184cc5269134c1b4f4fa17f77ac81124ac1e7bd9fb5bb02c"
       },
       {
         "path": ".github/ISSUE_TEMPLATE/work-item.md",
         "identity_mode": "content",
-        "sha256": "0dea4f58085d968e4a33cf925d1c59c14029568ea460c5bd68ab99b7d98df7fd"
+        "sha256": "af43fc6d19efec9e886a2f0caa6f4658585044ef43157040f04f23ad0b4a1c42"
       },
       {
         "path": ".github/pull_request_template.md",
         "identity_mode": "content",
-        "sha256": "56f3ab06382eb8296bf9a866637d10411f3b6215878169f1cc4ff9ad6c006477"
+        "sha256": "6238ed21d57c12c1c9de75143dbd91c56ec3f7aaf0ec32302f99b9c8017e3978"
       },
       {
         "path": ".github/workflows/main-health.yml",
@@ -52,7 +52,7 @@
       {
         "path": "AGENTS.md",
         "identity_mode": "content",
-        "sha256": "d00d2de0909a84aba3c66edc3aa25065268fdc4e33dccd9c8bc6578ab0c26130"
+        "sha256": "a09ba433512d6f440c23679990c5cd2f2c3c083becb80d4759281afff49e44b8"
       },
       {
         "path": "ARTIFACT_MODEL.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "d632c03235acf203166251955ab587db16ed98f4f54b7a0ce253da775264f762"
+        "sha256": "5ca82c9cb4eb5957759d0ecdb71cbe2d6abd26282642d0b29759c58e51a0556e"
       },
       {
         "path": "CITATION.cff",
@@ -72,17 +72,17 @@
       {
         "path": "CONTRIBUTING.md",
         "identity_mode": "content",
-        "sha256": "992bd642ef358d24f58cad8305319abcdf598bf0a86abc50ce3c0e7a399ae4be"
+        "sha256": "0c9ac70ba6053586838c22d2ad37dbfbb92816c8e8d385f42c70a992232e5057"
       },
       {
         "path": "DOCTRINE.md",
         "identity_mode": "content",
-        "sha256": "6cce7d99120c818bcd768fccdd62a696bf5fed096b586025811f4c5e35d3e835"
+        "sha256": "efb744d3d8d7e13077b9574cbde5cc7f5a8bfccdd03992e919f49a4480994d7f"
       },
       {
         "path": "GLOSSARY.md",
         "identity_mode": "content",
-        "sha256": "8dbba1b1cfd8551cd83b86b386f0137c9349ae9a514e463aeb4d7c8e612b9b46"
+        "sha256": "9b95dbb76ddc5fcdfedabe26724b5c1dc120a2f244f6c745f385546e176e8f7c"
       },
       {
         "path": "LICENSE.md",
@@ -92,7 +92,7 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "cd9a813605f5ec0c3fc9798592cab25919751f9547f5872061df58bce3609c48"
+        "sha256": "8cb85a6135e9018112a6fb687f228182bd94751aade5fd7c3cb57aac0f55f102"
       },
       {
         "path": "REFERENCES.md",
@@ -312,7 +312,7 @@
       {
         "path": "governance/README.md",
         "identity_mode": "content",
-        "sha256": "63da06f9d312bb0c7f750c3bd09e6049bdafaed6129185ff804c8132477e1496"
+        "sha256": "e90fcda9b5253cf15ae99104b07b3695e7885b2e3cdd8fbbd344b2431c763432"
       },
       {
         "path": "governance/content-synchronization.md",
@@ -322,27 +322,27 @@
       {
         "path": "governance/evidence-discovery.md",
         "identity_mode": "content",
-        "sha256": "c738cdba38c84b14da66733d2a0353476b91d68931488de87e3ea0a6326cceaf"
+        "sha256": "d4e6805b51da7bd693dba17f4af3a11f4a95f27fa24ba5f3f0c0d816e3dc6dfa"
       },
       {
         "path": "governance/evidence-review.md",
         "identity_mode": "content",
-        "sha256": "2bbe21ffc9764bbede330927fdf514794b9426e1605417ccd3000c510cbfa6bd"
+        "sha256": "c336147e08771a2a9f9137f7d4b3199f5ded7680b457e19eef97fe4662c245f0"
       },
       {
         "path": "governance/hypothesis-evaluation.md",
         "identity_mode": "content",
-        "sha256": "7eabbad24e40e27fd0f836e1b63a9125853759aa2d632138f3775945100d7064"
+        "sha256": "e03d8a27691572b0edabf4e3c9a9d57346057f6fd563bceff66093bb79281f37"
       },
       {
         "path": "governance/independent-review.md",
         "identity_mode": "content",
-        "sha256": "9bc60c504043c65d4880bf296e089550649bd494feca43c8885ea8c73c234279"
+        "sha256": "6105d72ccb73efcc4be9c9deef4fd5fdd587c71666929a8fdde04d390a38874c"
       },
       {
         "path": "governance/integration-audit.md",
         "identity_mode": "content",
-        "sha256": "b923279f70697495a8103ad242c129f4f7a6b65c9bdd14a827dc0cc5443063fb"
+        "sha256": "ba67d5cf9892c1a6dfea6af5ae1a629e561190d3cd9a26e5afe4d289555af79d"
       },
       {
         "path": "governance/issue-backlog-audit.md",
@@ -352,12 +352,12 @@
       {
         "path": "governance/issue-workflow.md",
         "identity_mode": "content",
-        "sha256": "d9e5e6561747d7f161a229ff21c7b8b22a6fcc9bf53e60439050d12cbf5f938b"
+        "sha256": "7e109fa450beef33edf0fb5b6e056673114dc9dccb7718b722d852a8a1c0580e"
       },
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "6b810868fc7e3339bfb96671c8590eaacf7bec36623b0e6d7948e01ae970cbc8"
+        "sha256": "92a4054e0e1976cb05fb4773f02ad328cd018f0fea8d402098ab0b222c8087ca"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -372,7 +372,7 @@
       {
         "path": "governance/repository-intelligence-config.json",
         "identity_mode": "content",
-        "sha256": "3a5bc626083940220a046235f782a47aa781d44d83ccff619594b1508c3af586"
+        "sha256": "9c48e0d5a476294a8844f6f80553a4079c86d0af71f3808cc1111e1a5d7bc962"
       },
       {
         "path": "governance/repository-intelligence.md",
@@ -383,6 +383,11 @@
         "path": "governance/repository-map.md",
         "identity_mode": "content",
         "sha256": "3378a096e6fb8857424037323a5d80d1231471a6fb98a5362a7b3401d3af340a"
+      },
+      {
+        "path": "governance/reviews/issue-109-2026-10-22-comparison-method.md",
+        "identity_mode": "content",
+        "sha256": "05b02eb49285e53734f3cb641de22b564242697c8a01c46ab03712806b18af16"
       },
       {
         "path": "governance/reviews/issue-4-2026-10-22-final-verification.md",
@@ -577,7 +582,7 @@
       {
         "path": "governance/templates.md",
         "identity_mode": "content",
-        "sha256": "0ad5fb206a39e66a72d25c077779d69b3797582931a94e290d8cbed7906f527f"
+        "sha256": "b9ab1d177892bfb6f028e652f170345aef78f3b33e774e6982454c2b9e0ce2a1"
       },
       {
         "path": "governance/work-records/2026-08-04-evidence-state-integrity.toml",
@@ -690,6 +695,11 @@
         "sha256": "6c74e708bf256f460be24c9c0dd2014a6a13fe5e3e6a1d4c9d0e921bd9728aa7"
       },
       {
+        "path": "governance/work-records/2026-10-22-issue-109-competing-explanations.toml",
+        "identity_mode": "content",
+        "sha256": "a0fd17f6b07d7f90b01adb9c22885c45dd14862ba2223e17289dacb16b79ac9b"
+      },
+      {
         "path": "governance/work-records/2026-10-22-issue-4-final-verification.toml",
         "identity_mode": "content",
         "sha256": "15e4db4b808b6bed4791df1bff8ba59e622f5bf5e99250aaa32cbd1c7f63d281"
@@ -787,7 +797,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "8e0fcc4681800e20f0269ea257473728e9df169a7afcdf64f4bb7db14845ab83"
+        "sha256": "cd51f4736946b5bd19fc0c67889d4734402696200dc129ef96d0d65d971913a0"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -930,7 +940,7 @@
     "path": "tools/repository_intelligence.py",
     "sha256": "6544d9790ecd432bf7174a6d18a644a78bb0a3eb7554483e4fe2c7ca2ad8e306",
     "config_path": "governance/repository-intelligence-config.json",
-    "config_sha256": "3a5bc626083940220a046235f782a47aa781d44d83ccff619594b1508c3af586"
+    "config_sha256": "9c48e0d5a476294a8844f6f80553a4079c86d0af71f3808cc1111e1a5d7bc962"
   },
   "owners": [
     {
@@ -1128,9 +1138,23 @@
         "node outcomes",
         "ownership gate",
         "hypothesis evaluation",
+        "diagnostic evidence",
+        "source hypothesis comparison",
         "ауткоми ноди",
         "оцінка гіпотез",
+        "діагностичні докази",
         "ребалансування"
+      ]
+    },
+    {
+      "concern": "SDLC thesis, node hypotheses and competing explanations",
+      "path": "report/appendices/mechanism-hypotheses.md",
+      "queries": [
+        "competing explanations",
+        "rival hypotheses",
+        "ALT-1",
+        "конкуруючі пояснення",
+        "альтернативні гіпотези"
       ]
     }
   ],
@@ -1164,6 +1188,10 @@
       "path": "GLOSSARY.md"
     },
     {
+      "term": "Competing explanation",
+      "path": "GLOSSARY.md"
+    },
+    {
       "term": "Dataset",
       "path": "GLOSSARY.md"
     },
@@ -1193,6 +1221,10 @@
     },
     {
       "term": "Empirical finding",
+      "path": "GLOSSARY.md"
+    },
+    {
+      "term": "Diagnostic evidence",
       "path": "GLOSSARY.md"
     },
     {
@@ -2250,6 +2282,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-109-2026-10-22-comparison-method.md",
+      "title": "Issue 109: competing explanations and diagnostic evidence",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-4-2026-10-22-final-verification.md",
       "title": "#4 — final source verification after accepted main",
       "instructions": [
@@ -2672,6 +2711,13 @@
     {
       "path": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
       "title": "governance/work-records/2026-10-21-issue-64-sol-preparation.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-109-competing-explanations.toml",
+      "title": "governance/work-records/2026-10-22-issue-109-competing-explanations.toml",
       "instructions": [
         "AGENTS.md"
       ]

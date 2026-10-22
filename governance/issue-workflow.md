@@ -107,7 +107,12 @@ The report must contain:
 6. proposed acceptance checks, open decisions and maintainer-review request;
 7. for an SDLC hypothesis or improvement claim, the affected node's full outcome
    inventory, source coverage/omissions, tradeoffs and symmetric tests under the
-   [hypothesis evaluation method](hypothesis-evaluation.md).
+   [hypothesis evaluation method](hypothesis-evaluation.md);
+8. for a relevant hypothesis, improvement claim, control or source assessment,
+   the [applicable rival comparison](templates.md#source-hypothesis-comparison),
+   its diagnostic limits and the owner of pending application/search. A proposed
+   Flow E search states the discriminating question and bounded scope; screening
+   judgments remain provisional and do not authorize integration.
 
 Wait for the required maintainer decision on substantive integration. An existing
 explicit authorization covering that exact treatment may be referenced instead

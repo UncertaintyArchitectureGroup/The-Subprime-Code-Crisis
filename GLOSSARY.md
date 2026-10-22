@@ -45,6 +45,15 @@ The repository's explanatory systems map of the proposed Subprime Code Crisis me
 
 It combines empirical support and repository synthesis while labeling their boundaries. It is not a chronology, a source scorecard, or a single measured end-to-end causal chain.
 
+### Competing explanation
+
+A bounded account offering a different explanation for an observation or a
+different prediction for a specified context. Accounts may compete at one link
+while coexisting elsewhere; they need not be mutually exclusive or exhaustive.
+The [canonical rival families](report/appendices/mechanism-hypotheses.md#competing-explanations)
+are research propositions, not automatically supported findings or statistical
+null hypotheses.
+
 ### Dataset
 
 A documented collection of observations or records used by a source or by repository analysis.
@@ -92,6 +101,16 @@ The inputs, formula, units, assumptions, and rounding should remain inspectable.
 A result directly reported by an empirical source from its observed data or analysis.
 
 An empirical finding must remain bounded by the source's population, setting, period, tools, methods, outcomes, uncertainty, and publication status.
+
+### Diagnostic evidence
+
+Evidence whose observed pattern helps distinguish specified explanations within
+their scope, given predicted direction, magnitude, uncertainty and design limits.
+A result can be compatible with several accounts yet favor one for an explicit
+reason. Missing measurement, imprecision and a shared compatible result alone do
+not establish relative support. This relationship is not a probability, source
+class, verification state or hypothesis verdict; see the
+[comparison method](governance/hypothesis-evaluation.md#compare-explanations).
 
 ### Evidence Map
 

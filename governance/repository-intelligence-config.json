@@ -216,9 +216,23 @@
         "node outcomes",
         "ownership gate",
         "hypothesis evaluation",
+        "diagnostic evidence",
+        "source hypothesis comparison",
         "ауткоми ноди",
         "оцінка гіпотез",
+        "діагностичні докази",
         "ребалансування"
+      ]
+    },
+    {
+      "concern": "SDLC thesis, node hypotheses and competing explanations",
+      "path": "report/appendices/mechanism-hypotheses.md",
+      "queries": [
+        "competing explanations",
+        "rival hypotheses",
+        "ALT-1",
+        "конкуруючі пояснення",
+        "альтернативні гіпотези"
       ]
     }
   ],
