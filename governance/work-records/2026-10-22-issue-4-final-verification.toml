@@ -1,0 +1,28 @@
+record_version = 1
+title = "Record final P-2026-05 verification after independently accepted main"
+primary_flow = "Flow A final verification for issue4: synchronize completed source integration after PR108 merge and independent actual-main acceptance"
+human_decision = "Maintainer's exact P1-P5 approval with Погоджую on 2026-10-22 covers routine verification, review, correction and merge; https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339806018. No new interpretation, protocol or governance treatment. Next issue109 still awaits explicit approval after the issue4 completion/plan checkpoint."
+independent_review = "Confirmed"
+# Independent actual-main acceptance by /root/issue4_independent_review:
+# 66f3d8ac65432275c8745654a47b693cb8d9ed0e, tree6cc46c399294ae6777ffdae9f7167ab30c4b191a.
+# Metadata candidate independently Confirmed at ef96b014300cbbad0db5c9fe6f97d3e24614349b,
+# treef3e9d0bc25ac20f5410350c48050ce90c7d82c2b; exact scope is recorded in
+# governance/reviews/issue-4-2026-10-22-final-verification.md. Published-head
+# and eventual actual-main checks remain separate; no issue closure is predicted.
+
+[changelog]
+decision = "Not required"
+reason = "Exact final status/date synchronization after the accepted implementation and independent main audit; PR108 already records the substantive inclusion. Findings, verdicts, Current use, status definitions, obligations and reader navigation are unchanged."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "Existing source verification and issue lifecycle apply; no contributor obligation changes."
+doctrine = "No term, claim class, scientific scope or doctrine change."
+repository-architecture = "Uses existing brief/registry, dated records and RI; master84 remains the live plan."
+reader-navigation = "Accepted README/links remain accurate and unchanged; final audit adds a brief receipt without changing reader routes."
+evidence-indexes = "The primary index describes accepted scope and points to the registry; no stale state or identity needs correction."
+references = "Existing pinned citation, accepted bounded use and source-state pointer remain accurate."
+report = "All reviewed reader-facing claims, node outcomes and verdicts remain byte-unchanged."
+protocols = "No protocol change; the accepted source tests no production control or remedy."

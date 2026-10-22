@@ -1,8 +1,8 @@
 +++
 source_ids = ["P-2026-05"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-22"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
@@ -15,10 +15,13 @@ This is the source assessment for [#4](https://github.com/UncertaintyArchitectur
 The [impact and treatment proposal](../../governance/reviews/issue-4-2026-10-22-source-impact.md)
 contains the exact report, hypothesis-register and README treatment, approved
 by the maintainer on 2026-10-22 ([decision receipt](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/4#issuecomment-6339806018)).
-The accepted additions are implemented on the issue branch; the
+The accepted additions were merged through PR #108 and independently accepted
+on actual main `66f3d8ac65432275c8745654a47b693cb8d9ed0e`; the
 [integration audit](../../governance/reviews/issue-4-2026-10-22-integration.md)
-records their actual uses. Source review, accepted synthesis and verified
-default-branch integration remain separate. No main-branch verification is claimed.
+records their actual uses. The [final-verification receipt](../../governance/reviews/issue-4-2026-10-22-final-verification.md)
+records independent acceptance of that exact default-branch state and its checks.
+Source verification concerns accurate repository use; it does not resolve the
+paper's reporting limitations or establish the full SDLC thesis.
 
 ## Identity, exact version and access
 
@@ -250,15 +253,19 @@ is separately owned planning work under #84.
 
 ## Repository integration audit
 
-**In progress; Last verified —.** The [occurrence-level audit](../../governance/reviews/issue-4-2026-10-22-integration.md)
+**Verified; Last verified 2026-10-22.** The [occurrence-level audit](../../governance/reviews/issue-4-2026-10-22-integration.md)
 records every material source use, exact original locators, numeric/inference
 boundaries, placement and neighboring argument; full Code/Review/HUM-1 coverage;
 README/maps and all four protocols; and synchronized registry/index/bibliography.
 The approved treatment preserves favorable completion, inconclusive mean time,
 the percentage-reporting discrepancy and unmeasured durable/shared capability.
-Independent implementation review is Confirmed for the exact candidate recorded
-in the audit. Published-head checks, merge and accepted actual-main inspection
-still precede any final `Verified` metadata.
+Independent implementation and faithful-recording reviews are Confirmed for the
+exact candidates recorded in the audit. Published-head checks passed, PR #108
+merged, and independent actual-main acceptance Confirmed the identical tree
+`6cc46c399294ae6777ffdae9f7167ab30c4b191a` at `66f3d8ac65432275c8745654a47b693cb8d9ed0e`.
+The [final receipt](../../governance/reviews/issue-4-2026-10-22-final-verification.md)
+records the completed prerequisites and separately tracks acceptance of this
+verification metadata. No material implementation correction remains.
 
 ## Independent review
 
@@ -279,3 +286,13 @@ records actual P1–P5 uses, complete outcomes, I4-03 locator correction, source
 states, synchronization and approval checks. No material implementation correction
 remains; source limitations are preserved. This confirms the pre-merge candidate,
 not its future published head, merge or accepted main.
+
+**Actual-main acceptance: Confirmed**, 2026-10-22, by
+`/root/issue4_independent_review`, after independently fetching the merge/ref/tree,
+PR #108 state, exact hosted runs and job steps, and source brief/registry bytes.
+Accepted main `66f3d8ac65432275c8745654a47b693cb8d9ed0e` has the same reviewed tree;
+[main health 39774666155](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39774666155)
+passed tests, contract, evidence integrity and RI freshness. This completed review
+permits final source-verification metadata; the final PR and issue acceptance
+remain separately traceable in the [final receipt](../../governance/reviews/issue-4-2026-10-22-final-verification.md)
+and live #4. Scientific findings and unmeasured outcomes are unchanged.
