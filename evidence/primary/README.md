@@ -12,6 +12,7 @@ This directory contains evidence briefs for original empirical studies.
 - [GitClear: historical code-change/clone signals](2025-gitclear-code-quality.md) — full v2025.2.5 PDF; distinct line/commit denominators, selected samples, projections and internal-reporting limits.
 - [GitClear: separate developer-output measures](2025-gitclear-developer-output.md) — full original embedded report; positive component results, cohort/window limits and disputed Method 1 mean; no net-delivery composite.
 - [Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools](2026-writing-code-vs-shipping-code.md) — September 2026 original, positive releases, estimation/sample sensitivity and model/marketplace boundaries; May and July history preserved.
+- [Chen–Stratton: firm software production](2026-chen-stratton-firm-production.md) — pinned August 2026 working paper; positive agent coding estimates, uncertain tracked completion and observed review-process changes; elapsed time, active labor and ownership remain distinct.
 - [METR task-horizon definition](2025-metr-task-horizon.md) — pinned March 2025 v1 methods/trend, internal count discrepancies, context/scaffold limits and bounded scoring counterevidence; no current-model or review-duration inference.
 
 - [Menlo 2025 enterprise AI market estimates](2025-menlo-enterprise-ai-spend.md) — revised market boundary, derived growth and estimation limits.
@@ -20,10 +21,6 @@ This directory contains evidence briefs for original empirical studies.
 - [McKinsey 2025 adoption and value](2025-mckinsey-ai-adoption-value.md) — regular use, EBIT attribution and joint high-performer classification; original self-report survey, not causal ROI.
 - [Deloitte January 2025 Q4 report](2025-deloitte-genai-q4.md) — AI-active leaders, selected advanced initiatives and near-term expectations; positive returns alongside scaling limits.
 - [Stack Overflow 2024 AI attitudes](2024-stackoverflow-ai-attitudes.md) — exact questions/subsamples; not measured productivity, rising fear or overtime.
-
-## Assessment candidates
-
-- [Chen–Stratton: firm software production](2026-chen-stratton-firm-production.md) — pinned August 2026 original; #87 assessment and proposed treatment, **Brief in progress / Not started**. Substantive integration awaits the maintainer's decision.
 
 ## Inclusion criteria
 

@@ -27,8 +27,9 @@ service more cheaply can also be a benefit. User benefit, competitive advantage
 and ROI are separate propositions; the economics card tests the connection rather
 than assuming it. More code, more releases and unchanged usage settle none of them.
 
-The strongest existing support is uneven translation of activity toward releases,
-alongside task experiments with different time effects. The [evidence map](#existing-evidence-and-its-exact-coverage)
+The strongest existing support is uneven translation of activity toward releases
+and tracked completion, plus observed review-process changes in a distinct firm
+setting. Task experiments retain their different time effects. The [evidence map](#existing-evidence-and-its-exact-coverage)
 shows that support and its limits. **The diagnosis is explicit; the consequence
 claims are separate.** Review overload, lost understanding, persistent debt,
 burnout and higher TCO must each earn their own verdict. Their absence or successful
@@ -89,8 +90,10 @@ they avoid duplicating the method in each row.
   remedy. A remedy's failure cannot be reclassified afterward as “not real
   rebalancing.” Nonsignificance does not establish equivalence.
 
-**Starting assessment: 2026-10-22.** This slice maps the existing reviewed evidence;
-it is not a new systematic search. No full-chain **Plausible — triangulated** verdict
+**Assessment history:** the starting #86 assessment on 2026-10-22 mapped existing
+reviewed evidence; #87 adds the reviewed Chen–Stratton firm study and the explicitly
+dated successor assessments below. Neither is a systematic search of every node.
+No full-chain **Plausible — triangulated** verdict
 is assigned. Independent macro/micro evidence can justify that verdict when it
 fits the same scoped proposition, methods and contrary evidence have been assessed,
 and underlying data are independent. One rigorous study can establish its own
@@ -118,11 +121,16 @@ release gains are benefits even when proportionally smaller.
 **Remedy test:** compare a predefined allocation of investment across functions
 with additional coding optimization alone; use H0-R/BAL-1 for its net result.
 The delivery owner must preserve the relevant node floors; no transfer of effort
-counts as elimination. **Verdict: Provisional support** for uneven translation in
+counts as elimination. **Starting #86 verdict: Provisional support** for uneven translation in
 the existing NBER setting and bounded coding gains; whole-system capacity/cost
 ratios remain unmeasured. E-NBER/E-PENG support parts; E-METR-Productivity/E-METR-Update preserve
-context/time heterogeneity. Next: [#87](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87),
-then [Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92).
+context/time heterogeneity.
+
+**Assessment after #87, 2026-10-22:** retain **Provisional support** and extend its
+observable scope to [Chen–Stratton's firm-level coding/completion pattern](#e-chen-stratton).
+The small positive completion estimate is uncertain; neither study measures the
+whole-system capacity/cost ratio or proves an industry-wide loss. Positive NBER
+release gains remain benefits. Next: [Code #92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92).
 
 ### H0-B — Complementary constraints attenuate useful outcomes
 
@@ -144,11 +152,18 @@ of harm under that trigger.
 **Remedy test:** predefine a stage-specific admission, capability or coordination
 change and test whether useful outcomes improve enough to justify its total cost,
 including displaced work and ownership. The delivery owner and affected node owner
-accept the tradeoff. **Verdict: Provisional support for the attenuation premise;
+accept the tradeoff. **Starting #86 verdict: Provisional support for the attenuation premise;
 Open for identification of the proposed capacity mechanism.** E-NBER measures
 bounded cross-outcome attenuation and provides a model-dependent complementarity
 interpretation; it does not identify review overload. E-Xu is adjacent activity
-evidence. Next: [#87](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87),
+evidence.
+
+**Assessment after #87, 2026-10-22:** retain that split verdict.
+[Chen–Stratton](#e-chen-stratton) adds direct review-process observations consistent
+with the mechanism: longer elapsed merge time, more formal change requests and
+comments, and broader reviewer participation after agent adoption. Active service
+demand, competent capacity and causal mediation remain unidentified; altered
+standards, coordination and successful adaptation remain alternatives. Next:
 [Review #93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93)
 and [Integration #95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95).
 
@@ -220,7 +235,7 @@ only if a specific feasible empirical question warrants collection.
 
 ## Existing evidence and its exact coverage
 
-These are existing reviewed sources, not seven independent confirmations of H0.
+These are eight reviewed source entries, not eight independent confirmations of H0.
 Each linked brief owns its methods, calculations, disclosures and limitations.
 Original locators below identify the inspected edition. The
 [Source Registry](../../evidence/SOURCES.md) owns current processing state; a
@@ -239,6 +254,32 @@ or user benefit. Complementarity is model-calibrated. Separate marketplace proxi
 include modest Android usage growth. This supports the H0-A/H0-B and COD-1 premise;
 review overload, ownership loss and full TCO remain unmeasured. The brief preserves
 the May attachment as history; this assessment uses September.
+
+### E-CHEN-STRATTON
+
+[P-2026-04 — Chen–Stratton, 4 August 2026 working paper](../../evidence/primary/2026-chen-stratton-firm-production.md),
+§§2–4 and Figures 6–7/11–13, pp39–40/44–46. In selected Jellyfish firms,
+pooled agent-adoption estimates are about **30% more added lines and 23% more PRs
+per active worker-month**. Resolved Jira issues have an approximately **3% positive
+estimate, with an approximate 95% interval of −6% to +12%**. These are different
+outcomes, not a loss funnel or evidence of zero completion gain; a formal test of
+their difference is not supplied. Jira resolution is the authors' completion
+proxy, not an independent deployment or user-benefit audit.
+
+The agent review path has **3.45 additional elapsed days to merge from a 7.03-day
+baseline**, more formal change requests/comments and broader reviewer participation.
+These are direct process observations, not active labor, actual defects, quality
+effectiveness or demonstrated ownership. Earlier assistant estimates do not show
+the same significant merge-time, change-request and comment increases. Adoption is
+observational; visible pre-period movements and incomplete exposure/coverage limit
+causal attribution. The source's two-stage model interprets these patterns but
+does not identify review saturation or prove that AI review is ineffective.
+
+This extends H0-A/H0-B/COD-1's bounded premise and gives REV-1 provisional process
+support. The causal demand/capacity mechanism, quality/ownership consequences,
+INTG-1/2 and remedies remain Open. The brief records exact coefficients, uncertainty,
+source-reporting discrepancies and the NBER comparison; the [#87 impact report](../../governance/reviews/issue-87-2026-10-22-source-impact.md)
+maps every affected Code/Review/Integration function, including the unmeasured ones.
 
 ### E-PENG
 
@@ -305,6 +346,14 @@ limits and internal count discrepancies remain explicit. It constrains REV-1/2
 and legacy H3/H4 without validating a remedy.
 
 ### Independence and missing links
+
+Chen–Stratton's firm-month Jellyfish data/design and NBER's selected individual
+GitHub cohorts are distinct analytical settings. Their person/repository overlap
+is unknown; they are not documented disjoint random samples. Convergent
+activity/completion patterns and added review-process coverage strengthen a bounded
+inference without supplying a second measurement of the complete causal mechanism.
+Chen–Stratton cites the May NBER edition; this register compares the accepted
+September edition. Those versions are not independent studies.
 
 NBER and Peng use different data/designs but share an author and relevant
 Microsoft/GitHub relationships. METR productivity and its follow-up are one research
@@ -422,7 +471,14 @@ organizational approvals. Functions can move if their outcomes remain adequate.
 
 **Critical outcomes and decision:** technical and product owners set behavior, security and maintainability floors and accept explicit speed/learning tradeoffs. Coding time and preserved engineering capability are distinct outcomes; neither alone proves user benefit or ROI.
 
-**Starting verdict, 2026-10-22:** COD-1 **Provisional support**, limited to the bounded activity-to-release attenuation in [the September NBER evidence](#e-nber); correct useful change, ownership and causal explanation remain incompletely measured. COD-2 **Open**, with no direct assessed comparison of this intervention. [Peng](#e-peng), [METR task productivity](#e-metr-productivity) and [its update](#e-metr-update) retain their positive/negative or uncertain local results and context differences; this verdict is not an overall negative productivity judgment. Next owner: [#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92), with #4 for skill formation and #87 for the separate firm evidence.
+**Starting #86 verdict, 2026-10-22:** COD-1 **Provisional support**, limited to the bounded activity-to-release attenuation in [the September NBER evidence](#e-nber); correct useful change, ownership and causal explanation remain incompletely measured. COD-2 **Open**, with no direct assessed comparison of this intervention. [Peng](#e-peng), [METR task productivity](#e-metr-productivity) and [its update](#e-metr-update) retain their positive/negative or uncertain local results and context differences; this verdict is not an overall negative productivity judgment.
+
+**Assessment after #87, 2026-10-22:** COD-1 remains **Provisional support**, now also
+covering [Chen–Stratton's distinct coding/tracked-completion observations](#e-chen-stratton).
+Correct useful change and retained knowledge remain incompletely measured, and
+uncertain positive completion is preserved. COD-2 remains **Open**. Next owner:
+[#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92),
+with #4 for skill formation.
 
 ### Review — REV-1 and REV-2
 
@@ -441,7 +497,20 @@ organizational approvals. Functions can move if their outcomes remain adequate.
 
 **Critical outcomes and decision:** review lead and accountable receiving maintainers agree quality and competent-ownership floors appropriate to the change. Explicitly price learning time, interruptions and later recovery capability. Product/operations owners accept downstream risk/cost tradeoffs; individual review savings must not hide burden transferred to them.
 
-**Starting verdict, 2026-10-22:** REV-1 **Open** for this specified causal and full-outcome proposition; REV-2 **Open**. [Output attenuation](#e-nber) and [review-count proxies](#e-xu) motivate review investigation but do not identify active review burden or demonstrate lost ownership. The [bounded scoring counterexample](#e-metr-horizon) remains relevant to effort claims. Next owner: [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93); #4, #87 and #49 own the separate skill, firm and recovery evidence work.
+**Starting #86 verdict, 2026-10-22:** REV-1 **Open** for this specified causal and full-outcome proposition; REV-2 **Open**. [Output attenuation](#e-nber) and [review-count proxies](#e-xu) motivated review investigation but did not identify active review burden or demonstrate lost ownership.
+
+**Assessment after #87, 2026-10-22:** REV-1 has **Provisional support for its
+review-process component in the observed agent setting; Open for the specified
+demand/capacity mechanism and quality/ownership consequences**. [Chen–Stratton](#e-chen-stratton)
+reports longer PR submission-to-merge elapsed time, more formal change requests
+and comments, and broader reviewer participation. These measures add direct
+process coverage beyond output counts; they do not identify active review labor,
+competent capacity or lost understanding. Visible pre-period movements and
+observational adoption limit causal attribution. REV-2 remains **Open**: the
+descriptive adoption of AI review tools does not evaluate the proposed remedy.
+The existing [METR scoring counterexample](#e-metr-horizon) remains relevant to
+effort claims. Next owner: [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93),
+with #4 for skill formation and #49 for recovery evidence.
 
 ### Test — TST-1 and TST-2
 

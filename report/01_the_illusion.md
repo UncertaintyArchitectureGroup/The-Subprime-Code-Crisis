@@ -5,6 +5,7 @@
 **Table of Contents:**
 *   [Chapter 1. What Productivity Studies Measure](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
+    *   [Firm Evidence: The Work Around Code Changes Too](#firm-evidence-the-work-around-code-changes-too)
 *   [Chapter 2. Evaluating the Cost of AI-Assisted Delivery](#chapter-2-evaluating-the-cost-of-ai-assisted-delivery)
 *   [Chapter 3. Adoption Budgets and Delivery Capability](#chapter-3-adoption-budgets-and-delivery-capability)
 *   [Chapter 4. A Review-Capacity Scenario](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
@@ -114,6 +115,14 @@ They do not track a fixed batch of commits through one funnel. Releases count re
 
 **Repository hypothesis:** Additional admitted verification demand could increase waits when effective capacity, variation and work policies make the stage constrained. Headroom, controlled intake, useful selection or effective assistance could preserve quality and improve delivery. Neither attenuation nor the marketplace series identifies review as the constraint in most organizations. [Chapter4](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification) and the [claim graph and tests](appendices/mechanism-hypotheses.md) separate evidence, assumptions and proposed consequences.
 
+### Firm Evidence: The Work Around Code Changes Too
+
+Chen and Stratton's [August 2026 working paper](../evidence/primary/2026-chen-stratton-firm-production.md) adds a distinct organizational setting to the activity-versus-delivery question. Across selected Jellyfish firms, the pooled agent-adoption estimates are about **30% more added lines and 23% more submitted PRs per active worker-month** ([Figure 6, p39; estimates and calculations](../evidence/primary/2026-chen-stratton-firm-production.md#published-estimates-and-reproduced-calculations)). Resolved Jira issues per active worker-month have a much smaller positive estimate, about **3%, with an approximate 95% interval spanning −6% to +12%** ([Figure 7, p40; calculation boundary](../evidence/primary/2026-chen-stratton-firm-production.md#published-estimates-and-reproduced-calculations)). Completion gains remain possible; these different outcomes do not form a measured loss funnel, and their comparison is not a statistical test of their difference.
+
+The review path also changes: the pooled estimate for PR submission-to-merge **elapsed time is +3.45 days from a 7.03-day baseline**, alongside more formal change requests and comments and broader reviewer participation ([Figures 11–13, pp44–46; source measures](../evidence/primary/2026-chen-stratton-firm-production.md#published-estimates-and-reproduced-calculations)). These are consequential process observations. They strengthen the case for examining complementary work around code generation. They do not measure active reviewer hours or the team's acquired understanding.
+
+This is observational evidence with adoption assumptions and visible pre-period movements. Earlier assistant estimates do not show the same significant increases in merge latency, formal change requests and comments. Together with [NBER's positive release gains and broader attenuation](#writing-code-vs-shipping-code), the firm results support the rebalancing investigation without establishing an inevitable failure of every AI-assisted workflow. The [source brief](../evidence/primary/2026-chen-stratton-firm-production.md) and [hypothesis assessment](appendices/mechanism-hypotheses.md#e-chen-stratton) distinguish those observations from the proposed capacity mechanism, ownership consequences and remedies.
+
 ---
 
 ### Unmeasured Work Intensity: A Confounder to Test
@@ -179,6 +188,7 @@ The practical implication is to measure the complete delivery boundary while ret
 * **GitClear quality (February 2025, v2025.2.5):** [Full original PDF](https://gitclear-public.s3.us-west-2.amazonaws.com/GitClear-AI-Copilot-Code-Quality-2025.pdf) and [brief](../evidence/primary/2025-gitclear-code-quality.md) — 2020–24 operation/clone signals in selected samples; exact fractions, sampling, appendix/body/landing conflicts and projections are distinguished.
 * **GitClear developer output (publisher date 1 October 2025; inspected 20 October 2026):** [Original report](https://www.gitclear.com/research/ai_tool_impact_on_developer_productive_output_from_2022_to_2025) and [brief](../evidence/primary/2025-gitclear-developer-output.md) — separate cohort/aggregation results; positive activity, unobserved AI exposure and internal Method 1 mean discrepancy, not net-delivery productivity.
 * **Demirer, Musolff and Yang (NBER Working Paper 35275, September 2026 revision):** [Evidence brief and version boundary](../evidence/primary/2026-writing-code-vs-shipping-code.md) — positive coding/release estimates with attenuation, a calibrated model and separate descriptive marketplace series. Exact revised original and historical versions are identified in the brief.
+* **Chen and Stratton (4 August 2026 Job Market Paper):** [Artificial Intelligence in the Firm: Bottlenecks in Software Production](https://fion.ac/jellyfish.pdf) and [version-pinned evidence brief](../evidence/primary/2026-chen-stratton-firm-production.md) — firm-level observational estimates of coding activity, tracked completion and review-process measures; elapsed merge time is distinct from active labor and competent ownership.
 * **Techno Diaries (29 October 2025):** [Public introduction and source brief](../evidence/secondary/2025-technodiaries-review-anecdote.md) — one unaudited first-person review-time account; member-only remainder unavailable. Practitioner context, not a population estimate.
 * **Stack Overflow Developer Survey (2024):** [AI results](https://survey.stackoverflow.co/2024/ai) and [source brief](../evidence/primary/2024-stackoverflow-ai-attitudes.md) — question-specific attitudes, including mostly favorable sentiment and a majority reporting no current-job threat; not a fear/overtime trend.
 

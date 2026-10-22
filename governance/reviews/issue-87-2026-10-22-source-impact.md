@@ -1,7 +1,11 @@
 # #87 — Chen–Stratton assessment and proposed treatment
 
-**Date:** 2026-10-22. **Decision state:** proposed; substantive integration awaits
-the maintainer's decision. This is the research-input report required by
+**Date:** 2026-10-22. **Current decision state: approved; implementation in progress.**
+The maintainer accepted the concrete treatment and explicitly added README as a
+clear entry point with comprehensive navigation. The
+[approval record](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933)
+supersedes the proposal-stage decision-pending statements preserved below.
+This is the research-input report required by
 [AGENTS](../../AGENTS.md#human-approval-and-substantive-change-gate) and
 [issue workflow](../issue-workflow.md#research-input-report-before-integration), not a second
 live hypothesis register or work plan.
@@ -271,7 +275,7 @@ judgments—wording, numbers, placement and proposed destination—for every new
 changed material use. This pre-integration impact scope does not claim that the
 future implemented diff has already passed that audit.
 
-## Acceptance and next work inside #87
+## Proposed acceptance sequence at the decision checkpoint
 
 1. Resolve the exact treatment decision on this reviewed proposal.
 2. Complete/index the source brief, integrate only the approved scoped changes,
@@ -314,5 +318,35 @@ routine completion already authorized. No verification or merge is claimed here.
   full-node coverage and proposed no-protocol-change disposition. This receipt
   records the outcome; it does not approve the treatment or certify later
   integration, source verification, merge or actual-main acceptance.
-- Human decision: **Awaiting decision on the concrete recommendation above.**
-- Integration review, actual-main acceptance and issue completion: pending.
+- Human decision at that proposal checkpoint: **Awaiting decision**; superseded
+  by the explicit approval below.
+- That assessment review did not include later integration, actual-main acceptance
+  or issue completion.
+
+## Approved treatment and implementation — 2026-10-22
+
+The maintainer accepted the exact bounded treatment with **“Так”** and added:
+**“не забудь оновити рідмі як точку входу щоб було зрозуміло про що репо.
+І також - щоб всі лінки на все були.”** The durable
+[approval and continuation declaration](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933)
+links the reviewable proposal. Brief-only deferral, exclusion and no-change
+alternatives were not selected. This authorizes the remaining #87 implementation,
+independent review, corrections, checks, merge/main and eligible verification cycle.
+It does not start the next issue.
+
+The implementation uses the exact treatment above. README additionally leads
+with the research thesis, full lifecycle and user/economic feedback, Review's
+quality/ownership functions and comprehensive routes through the existing indexes.
+Its confidence and Crisis maps keep their existing meanings. Report 1 adds the
+bounded firm subsection; Report 2 uses short cross-references; the single register
+preserves #86's starting assessments and adds explicit #87 successors. The source,
+references and primary index are synchronized. No protocol, AGENTS or workflow
+change is needed: #85 already implements the maintainer's process.
+
+Flow A completed/indexed the independently reviewed brief before starting its
+integration audit. Flow D reset unchanged P-2026-01's integration/date and started
+the comparative-use audit; its September original and May/July history remain
+intact. Neither source receives Verified from this implementation alone. The
+[integration audit and occurrence trace](issue-87-2026-10-22-integration-audit.md)
+own subsequent review/validation/acceptance evidence. The exact source assessment
+and initial I87-01 correction history above remain unchanged.

@@ -12,6 +12,11 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ## Primary empirical research
 
+### P-2026-04 — Firm software production and review
+
+- Fiona Chen & James Stratton. [*Artificial Intelligence in the Firm: Bottlenecks in Software Production*](https://fion.ac/jellyfish.pdf). Job Market Paper, **4 August 2026**; first version 7 January 2026.
+- Status: working/job-market paper; completed peer review or journal acceptance not established. The [version-pinned brief](evidence/primary/2026-chen-stratton-firm-production.md) records the 78-page original, observational firm design, coding/completion and review-process measures, uncertainty and reporting limits. Elapsed merge time is not active review labor or competent ownership; source-processing states remain in the registry.
+
 ### P-2026-01 — Writing Code vs. Shipping Code
 
 - Demirer, Musolff & Yang. [*Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools*](https://www.nber.org/papers/w35275). NBER Working Paper 35275, May 2026, **revised September 2026**; exact original and older versions identified in the brief.

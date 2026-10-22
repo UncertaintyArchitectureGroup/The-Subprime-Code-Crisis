@@ -13,6 +13,8 @@
 
 Continue Chapter 4's conditional scenario: candidate work grows faster than a constrained review stage can process it. Reviewer load depends on change size/risk, familiarity, tooling and available capacity. The evidence reviewed here does not establish a universal senior-to-junior staffing ratio or that AI permanently breaks one.
 
+[Chen–Stratton](../evidence/primary/2026-chen-stratton-firm-production.md) adds direct firm-level review-process evidence: agent adoption is associated with longer submission-to-merge elapsed time and more formal change requests and comments. This makes Review a concrete candidate constraint. It does not establish that active reviewer demand exceeded competent capacity, or that shared ownership deteriorated. [Chapter 1](01_the_illusion.md#firm-evidence-the-work-around-code-changes-too) gives the estimates and design limits; the [REV-1/REV-2 assessment](appendices/mechanism-hypotheses.md#review--rev-1-and-rev-2) separates the supported process component from those causal and capability questions.
+
 ### Activity Growth Does Not Set Staffing Ratios
 
 [GitClear's developer-output report](../evidence/primary/2025-gitclear-developer-output.md) reports +131.1% mean and +76.3% median added-line output in selected developer-month records versus 2022. These are different statistics from a changing sample, without observed individual AI exposure. They do not establish that every team doubles its PR intake, or that one reviewer now handles the output of ten developers.
@@ -60,6 +62,8 @@ A team could gain useful output while preserving review and learning, or create 
 ---
 
 #### References
+
+* **Chen and Stratton (August 2026):** [Firm evidence in Chapter 1](01_the_illusion.md#firm-evidence-the-work-around-code-changes-too) and [source brief](../evidence/primary/2026-chen-stratton-firm-production.md) — observed review-process measures, with identification and outcome limits; not measured review capacity or lost ownership.
 *   **GitClear developer output:** [Evidence brief](../evidence/primary/2025-gitclear-developer-output.md) — selected output comparisons and aggregation/window limits; not a staffing or review-time estimate.
 * **METR (March 2025):** [Pinned v1 definition and review boundary](../evidence/primary/2025-metr-task-horizon.md) — historical benchmark methods, limitations and bounded scoring evidence; no current-model threshold adopted.
 
@@ -95,6 +99,8 @@ The relevant question is whether useful review savings exceed setup, supervision
 
 The central empirical NBER synthesis belongs in [Chapter1](01_the_illusion.md#writing-code-vs-shipping-code). It preserves the September revision's positive releases, cumulative/incremental distinction, selected samples, estimation uncertainty and sensitivity, model assumptions and separate marketplace design. Attenuation does not establish overall decline, a universal review constraint or the full mechanism below. The [brief](../evidence/primary/2026-writing-code-vs-shipping-code.md) retains the supplied May version as history.
 
+The [Chen–Stratton firm evidence](01_the_illusion.md#firm-evidence-the-work-around-code-changes-too) adds review-process observations to this investigation. Together, these sources motivate tests of complementary constraints; different populations, exposures and outcome definitions prevent a common conversion calculation or proof of the whole mechanism. The [source comparison](../evidence/primary/2026-chen-stratton-firm-production.md) and [hypothesis register](appendices/mechanism-hypotheses.md#e-chen-stratton) preserve those boundaries.
+
 ### Necessary Conditions and Alternatives
 
 [Chapter 4](01_the_illusion.md#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification) defines the proposed capacity mechanism. It needs **admitted service demand**, effective capacity at required quality, utilization/variation and WIP/release policies. Higher generated volume alone is insufficient. No study reviewed here establishes one causal chain from AI generation through requirements, code review, QA and customer value.
@@ -118,6 +124,7 @@ If coding time falls and useful delivery improves at comparable or lower total e
 #### References
 
 - **NBER September 2026 revision:** [Chapter 1 synthesis](01_the_illusion.md#writing-code-vs-shipping-code) and [evidence brief](../evidence/primary/2026-writing-code-vs-shipping-code.md); original, uncertainty and historical versions pinned in the brief.
+- **Chen–Stratton August 2026:** [Firm-level findings and NBER comparison](../evidence/primary/2026-chen-stratton-firm-production.md); review-process observations do not identify the complete capacity mechanism or test a rebalancing remedy.
 - **Goldratt and Cox:** [Methodology/access-gap record](../evidence/methodology/1984-the-goal.md); interpretive lens, not an empirically identified AI bottleneck or an edition-verified theorem.
 - **Repository synthesis:** [Claim graph, alternatives and proposed tests](appendices/mechanism-hypotheses.md), coordinated with #54; no empirical results inferred from a diagram or protocol.
 

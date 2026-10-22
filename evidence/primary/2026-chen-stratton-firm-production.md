@@ -1,19 +1,21 @@
 +++
 source_ids = ["P-2026-04"]
-evidence_review = "Brief in progress"
-integration_audit = "Not started"
+evidence_review = "Reviewed brief"
+integration_audit = "In progress"
 last_verified = "—"
 independent_review = "Confirmed"
-current_use = []
+current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Chen–Stratton: AI adoption and firm software production
 
-> **Assessment candidate, 2026-10-22, #87.** Source review and the proposed
-> interpretation below are prepared for the required treatment decision. No
-> report claim, hypothesis verdict or protocol has been changed. This is not an
-> accepted integration or a `Verified` source. See the
-> [impact and treatment proposal](../../governance/reviews/issue-87-2026-10-22-source-impact.md).
+> **Reviewed source; approved integration in progress, 2026-10-22, #87.**
+> The maintainer accepted the concrete treatment and README entry/navigation work
+> in the [recorded decision](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/87#issuecomment-6338461933).
+> Source assessment and the implemented integration are independently Confirmed;
+> merge and actual-main acceptance remain separate gates. This is not yet a `Verified`
+> source. The [impact report](../../governance/reviews/issue-87-2026-10-22-source-impact.md)
+> preserves the proposal, approval and review history.
 
 ## Identity, exact version and access
 
@@ -223,9 +225,9 @@ measurement. Its statement that the bottleneck persists despite AI review is
 stronger than a causal effectiveness result supplied by the descriptive uptake
 data. Continued human participation can coexist with effective assistance.
 
-## Proposed repository interpretation and comparison with NBER
+## Repository interpretation and comparison with NBER
 
-**Proposed, pending the #87 treatment decision:** this is material firm-level
+**Approved treatment in #87, 2026-10-22:** this is material firm-level
 evidence that larger coding-activity estimates can coexist with a much smaller,
 uncertain tracked-completion estimate and a lengthening review path. It strengthens
 the case for evaluating the SDLC as a coupled system. It does not measure a
@@ -253,7 +255,7 @@ provide convergent bounded observations, not automatically a macro/micro proof
 of the same causal mechanism. Chen–Stratton's own NBER citation (p74) is to May,
 retrieved June 19; its Appendix Figure 2 is not a comparison to September.
 
-The proposed hypothesis treatment is H0-A/COD-1 **Provisional support** for the
+The approved hypothesis treatment is H0-A/COD-1 **Provisional support** for the
 observable activity/completion premise; H0-B gains review-process evidence while
 its demand/capacity mechanism remains **Open**. REV-1 receives provisional support
 for the agent-associated process pattern; its complete causal quality/ownership
@@ -272,21 +274,26 @@ identified broad employment loss remain part of the finding.
 
 ## Known uses and repository integration audit
 
-- **Accepted reader-facing uses:** none. This source is newly registered for #87.
+- **Current candidate uses:** `README.md`; `report/01_the_illusion.md`;
+  `report/02_broken_mechanics.md`; `report/appendices/mechanism-hypotheses.md`;
+  `REFERENCES.md`. The primary index is a navigation route. Merge/main acceptance
+  of these uses is not inferred from inclusion in this list.
 - **Audit owner:** primary agent `/root`; supporting analyst
   `/root/issue87_existing_evidence` inspected existing uses and all report/protocol
   layers; `/root/issue87_source_identity` assisted source acquisition and arithmetic.
-- **Audit state:** Not started for substantive integration; impact assessment
-  prepared against main `00d2b65c27d18b78d8f6cbe597a3a6dfe762409a`.
-- **Proposed paths, original locators, interpretation limits and protocol outcome:**
+- **Audit state:** In progress, after completing/indexing the Reviewed brief;
+  baseline main `00d2b65c27d18b78d8f6cbe597a3a6dfe762409a`.
+- **Approval, original locators, interpretation limits and complete node outcomes:**
   [#87 impact report](../../governance/reviews/issue-87-2026-10-22-source-impact.md).
+- **Occurrence trace and synchronization:**
+  [#87 integration audit](../../governance/reviews/issue-87-2026-10-22-integration-audit.md).
 - **Numbers:** figure transcription plus normal/relative transformations in the
   linked calculation record; no raw-data replication.
-- **Proposed protocol outcome:** No protocol change.
+- **Protocol outcome:** No protocol change.
 - **Last verified:** —. Report/register integration, all-use audit, synchronized
   status transitions, independent integration review and accepted-main verification
-  remain required after the treatment decision. New material NBER use will require
-  Flow D; this provisional proposal does not revise its accepted interpretation.
+  remain required before verification. The newly material NBER comparison follows
+  Flow D while retaining its accepted September source/version and May/July history.
 
 ## Independent review
 
@@ -303,8 +310,12 @@ identified broad employment loss remain part of the finding.
   and the associated impact/numeric hashes recorded in the impact report. I87-01
   is resolved. This paragraph faithfully records that actual outcome; it does not
   expand its scope to substantive integration or maintainer approval.
-- Source review remains `Brief in progress` at this proposal checkpoint;
-  integration remains `Not started / —`.
-- Review boundary: assessment and proposed treatment only; no accepted integration
-  or future merge may be inferred. The impact report records the eventual outcome,
-  discrepancies, corrections and exact reviewed candidate.
+- At that proposal checkpoint, source review was `Brief in progress` and
+  integration was `Not started / —`. The approved implementation subsequently
+  completed/indexed the brief and started the all-use integration audit.
+- Independent integration outcome: **Confirmed**, 2026-10-22, by the same separate
+  reviewer for commit `1bf92575b4804ef4834660fa24566a2e4692cfb8`, tree
+  `82218a60766d19846aabac25c71fd7b1620bbea1`. The integration audit records its full
+  scope, all-use trace and checks; no remaining material correction/disagreement.
+  The Confirmed field records that actual review, not future merge, main acceptance
+  or final verification.
