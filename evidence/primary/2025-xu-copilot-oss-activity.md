@@ -3,7 +3,7 @@ source_ids = ["P-2025-03"]
 evidence_review = "Reviewed brief"
 integration_audit = "Needs re-verification"
 last_verified = "—"
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
@@ -15,11 +15,11 @@ The full SDLC register adds or materially reframes this source's bounded evidenc
 coverage. Flow D retains **Reviewed brief** and resets integration to
 **Needs re-verification / —** until the changed use is independently confirmed,
 merged and checked on main. The source findings/version below are unchanged.
-The earlier Confirmed review and verification records remain historical. Initial
-#86 content review returned **Corrections required** for the Design card’s I86-01
-test direction, with no source-fit defect found. That narrow correction is made;
-repeat independent review remains pending. The current front matter records the
-actual received outcome, not a promised confirmation.
+The earlier review and verification records remain historical. A separate
+reviewer **Confirmed** the corrected #86 content on 2026-10-22, after I86-01’s
+Design-test correction. The current review field records that actual outcome;
+correction merge, actual-main acceptance and final integration verification
+remain separate gates. See the dated audit for the exact reviewed commit/tree.
 
 Current use includes `report/appendices/mechanism-hypotheses.md`, in addition to
 the prior paths. The [#86 audit and occurrence trace](../../governance/reviews/issue-86-2026-10-22-register-audit.md)

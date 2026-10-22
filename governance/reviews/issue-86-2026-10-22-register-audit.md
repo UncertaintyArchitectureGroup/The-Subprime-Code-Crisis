@@ -3,8 +3,8 @@
 Date: 2026-10-22. Primary author: `/root`; node-card coauthor:
 `/root/issue86_node_cards`; evidence coauthor: `/root/issue86_evidence_fit`.
 Independent reviewer: `/root/issue86_independent_review`, which authored none of
-the candidate. **Initial review: Corrections required; I86-01 is corrected and
-repeat review is pending.** This
+the candidate. **Corrected content review: Confirmed; I86-01 is resolved.
+Faithful recording, merge and actual-main acceptance remain separate.** This
 artifact records the active issue's implementation, not a competing live plan.
 
 ## Start-of-work declaration and authorization
@@ -85,10 +85,10 @@ anchors survive; the original document-title fragment also receives an explicit 
 
 | Acceptance | Observable condition and implementation | Current pre-merge assessment |
 | --- | --- | --- |
-| AC-1 | Eleven inventories, 44 grouped function rows, actual-baseline U/unmeasured convention, substitutions/owners/costs, quality/ownership/learning/handoff/recovery/value boundaries | Independently checked in initial review; AC-5 remains separate |
-| AC-2 | H0 and all pairs/cross-cutting IDs, independent exposure, adverse/remedy predictions, comparators/horizons/alternatives/falsifiers, critical outcomes and decision roles; H1–H5 mapping and original tests | I86-01 corrected; repeat review pending |
-| AC-3 | Seven existing exact-version source records; partial support restricted to H0-A, attenuation premise of H0-B and COD-1; mechanism/other outcomes remain Open; family dependence and counterevidence explicit | Original/all-use assessment independently checked; full acceptance pending |
-| AC-4 | One existing register; README and three chapter navigation; two glossary terms; R2 statement updated to expanded owner; no new chapter conclusion or operational control | Navigation/synchronization independently checked; AC-5 remains separate |
+| AC-1 | Eleven inventories, 44 grouped function rows, actual-baseline U/unmeasured convention, substitutions/owners/costs, quality/ownership/learning/handoff/recovery/value boundaries | Content independently Confirmed; AC-5 remains separate |
+| AC-2 | H0 and all pairs/cross-cutting IDs, independent exposure, adverse/remedy predictions, comparators/horizons/alternatives/falsifiers, critical outcomes and decision roles; H1–H5 mapping and original tests | I86-01 resolved; corrected content independently Confirmed |
+| AC-3 | Seven existing exact-version source records; partial support restricted to H0-A, attenuation premise of H0-B and COD-1; mechanism/other outcomes remain Open; family dependence and counterevidence explicit | Original/all-use content independently Confirmed; final source verification pending |
+| AC-4 | One existing register; README and three chapter navigation; two glossary terms; R2 statement updated to expanded owner; no new chapter conclusion or operational control | Navigation/synchronization independently Confirmed; AC-5 remains separate |
 | AC-5 | Independent content/recording review, applicable trusted/local/live checks, correction merge, separate final source verification, actual-main acceptance, #84 reread and next scope/approval handoff | Pending; not inferred from draft or green local checks |
 
 ### Assessment boundaries that matter
@@ -114,9 +114,9 @@ anchors survive; the original document-title fragment also receives an explicit 
 The seven sources retain **Evidence review = Reviewed brief**. This correction
 candidate publishes **Integration audit = Needs re-verification; Last verified = —**.
 The integration procedure is being performed, but the initial reset must remain
-visible on the accepted changed-use surface. Prior actual Confirmed review fields
-are explicitly historical until the new candidate receives actual review. No pending
-review is invented as a Confirmed outcome.
+visible on the accepted changed-use surface. Original review history
+is preserved. The current Confirmed fields record the actual corrected-content
+review documented below, not acceptance of a future merge or final verification.
 
 The register was already in P-2026-01/P-2025-02 Current use; the other five gain that
 path in registry and brief. No previous legitimate path is removed. The original
@@ -201,6 +201,31 @@ without missing targets; that scope differs from root's 21-file reader scan.
 The work record remains intentionally absent until the actual repeated content
 outcome is received. Faithful recording, the final trusted gate, merge and
 actual-main/final source verification remain separate acceptance steps.
+
+
+### Corrected-content outcome and recording boundary
+
+On 2026-10-22 `/root/issue86_independent_review` returned **Confirmed** for corrected
+commit `e2ec97c9f03bf27f45123c76bb86880469fd596c`, tree
+`78e32a22e2ee083081047ad2273b4be3ef5fa18f`. GitHub commit
+`272a19d85505326048fe35e7cef6eeb56c3a8f46` has that identical tree. I86-01 is
+resolved; no outstanding material content finding remains. The independent
+reviewer compared the entire delta and rechecked the surrounding Design card;
+its separate challenge reviewer independently rechecked the correction too.
+
+The reviewer also confirmed faithful recording of the initial outcome and checks,
+preserved source findings/versions/uses, continuing Needs re-verification / —
+states and unchanged scope. Contract, source-state integrity/transitions, RI and
+diff checks passed on the corrected isolated snapshot. The original-source and
+126-test review of unchanged content remains applicable; no new source finding,
+source-use expansion, policy change or full repeated evidence review was needed.
+
+This recording update changes the seven review fields/checkpoints from the actual
+initial Corrections required outcome to the actual corrected-content Confirmed
+outcome. Integration and verification dates stay reset. It adds exactly one new
+work record, updates the handoff and rebuilds RI. The reviewer must separately
+check faithful recording and the final trusted gate before PR readiness. This
+receipt does not claim an unseen recording review, merge or actual-main acceptance.
 
 
 ## Source audit annex

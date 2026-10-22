@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "26bf905c0b3c6299e7bed336a9b146186e934b09c5c1dbb89b97600efa9a91c1",
+    "digest": "3ae9e3da8b847d4102f33fb69636b1fb8c7ade1ec0bdbdb82dfa1b470838cb75",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -187,7 +187,7 @@
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
-        "sha256": "1b36c4a2faf038b08f661c6a4817c1b15fb53ad84cd30785dd624d5b99d21fd5"
+        "sha256": "28b37f296796e3d7cd4b4a07edcd8fc7b59702029c94571113841052a1f027b2"
       },
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
@@ -227,32 +227,32 @@
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "963d8cf9b843d2171c563262878efaa3c72f156a4cca294331fcb1ca2a80855c"
+        "sha256": "84f62a145ffd591c202d1ae4438d12e897720db5aab8207116085f8074161b9a"
       },
       {
         "path": "evidence/primary/2025-metr-task-horizon.md",
         "identity_mode": "content",
-        "sha256": "da04af625feb15dfbc20b7ca3d79e750e4ac95c707c332fb2f8b866abc2efa89"
+        "sha256": "370d6032d793a6a663d583b1aecf423819e2a1a7301f66861068f738e4a10da0"
       },
       {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
         "identity_mode": "content",
-        "sha256": "ff742211c84f42d09e5facad859c6a5874585db40212bbededc81b9a7680eb46"
+        "sha256": "afae5bdf6e7253a002cac8b68cc3876b6f93fdcc5177937792d969a67b2c6db5"
       },
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "846b5677e1796987ba0aca745bdf24cc7b2b29ea530600e032a62707767ec573"
+        "sha256": "c13175accfa9326053bc9cd678d5484254fe40f2163fe9529017767360d63fcc"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "ff54e21bb3656ac61d5743a574e5dbb33f1bd4f2698735ceea2c10e950564ddb"
+        "sha256": "40451bc5a0cd128c06b49d4f178ec4defa4d1c5448a34270bf103f80f5556731"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "12a2084e90bc4e71ccffbf3e18f8fc5d2f4af53eac74932b577b741ada74d2ae"
+        "sha256": "b80fadd99c475674740d6e9cc063a5e852d58ade6982ad5a6d9b9a3bce1443e9"
       },
       {
         "path": "evidence/primary/README.md",
@@ -347,7 +347,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "38cff7ed3af158419688000c1b270ef3b3744784ddd0c0e1eaf61147de977caa"
+        "sha256": "16ee34c0fc86a1d39eeec27fa9b4feafd5ff132136f2c8b84c4256f1aa82788d"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -502,7 +502,7 @@
       {
         "path": "governance/reviews/issue-86-2026-10-22-register-audit.md",
         "identity_mode": "content",
-        "sha256": "359eb4085a99d946f53605e736682c2e45ff68af31e4609952b1a7977672860a"
+        "sha256": "bd7f06af4cf73e38ba7b8f44960e87ffb97a1a31dcd05ffadaf8b76f748da65a"
       },
       {
         "path": "governance/status-model.md",
@@ -643,6 +643,11 @@
         "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
         "identity_mode": "content",
         "sha256": "3bfe51777fa6e9bf19f1875c1d53b99412796c8db6e0088c3f10ed257b681628"
+      },
+      {
+        "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+        "identity_mode": "content",
+        "sha256": "84739a05b2077c7ff41a43ebb8e1ebd1804a368a388f225ea3229662bbbfab75"
       },
       {
         "path": "governance/work-records/README.md",
@@ -2497,6 +2502,13 @@
     {
       "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
       "title": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
+      "title": "governance/work-records/2026-10-22-issue-86-sdlc-register.toml",
       "instructions": [
         "AGENTS.md"
       ]
