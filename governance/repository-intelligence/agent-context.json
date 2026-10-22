@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "502a1f23281ea3798140af8e0f61dbc83b9f8c903fc59a90d2f47f56135387a9",
+    "digest": "d1bc1f384392bf67dbce6687a053167b030d5c900d11de3a251d93328fafc3ce",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -347,7 +347,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "2e3595ee74a74e6d60d1edf6f7695e54b6a67526fb4d69307ddb57017e7e1ead"
+        "sha256": "6fe6c8cf9ccf84d17f2391d88ad5e3fb791b66abd03216b84836e71124b3156d"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -477,7 +477,7 @@
       {
         "path": "governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md",
         "identity_mode": "content",
-        "sha256": "93b3338e0720085883a538c51fbbf6417d6d7e5be5bcf8c5efc18bb1da761cb5"
+        "sha256": "dc55e0bf4f060236d28304bc5a9b99fbca7aace57cb669a32f6110d1119e21e2"
       },
       {
         "path": "governance/status-model.md",
@@ -607,7 +607,7 @@
       {
         "path": "governance/work-records/2026-10-22-issue-85-outcomes-and-cycle.toml",
         "identity_mode": "content",
-        "sha256": "a0c5404cd7fec15e5e0b2c5a47d4d4865bcf38b1075a6198345c38c9d7166fb8"
+        "sha256": "3bfe51777fa6e9bf19f1875c1d53b99412796c8db6e0088c3f10ed257b681628"
       },
       {
         "path": "governance/work-records/README.md",

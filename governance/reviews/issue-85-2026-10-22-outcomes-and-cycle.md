@@ -90,30 +90,54 @@ plan owns sequence; this dated record and memory are not competing live queues.
 
 | AC | Evidence owner | State at implementation checkpoint |
 | --- | --- | --- |
-| AC-1 | AGENTS, hypothesis method, node template, doctrine/glossary | Implemented; independent review pending |
-| AC-2 | AGENTS issue cycle, issue workflow, PR/issue/handoff templates | Implemented; independent review pending |
-| AC-3 | Synchronization assessment above, actual diff and source-preservation checks | Implemented; validation pending |
-| AC-4 | #84 dated amendment; #85–100; preserved #1/#4/#49 and existing backlog | Created/updated; independent review pending |
+| AC-1 | AGENTS, hypothesis method, node template, doctrine/glossary | Independently Confirmed; canonical after merge |
+| AC-2 | AGENTS issue cycle, issue workflow, PR/issue/handoff templates | Independently Confirmed; canonical after merge |
+| AC-3 | Synchronization assessment above, actual diff and source-preservation checks | Independently Confirmed; local checks passed |
+| AC-4 | #84 dated amendment; #85–100; preserved #1/#4/#49 and existing backlog | Created/updated and independently Confirmed |
 | AC-5 | Independent review, local/trusted PR checks, merge and exact-main health | Pending; no future completion inferred |
 | AC-6 | Post-merge #84 reread and current-plan/next-issue presentation | Pending; #65 remains unstarted |
 
 ## Validation
 
-Local validation and exact candidate refs will be recorded after the complete
-candidate is assembled. Live PR/main runs and post-merge acceptance belong in
-the owning PR/#85 completion records; this file does not predict its own merge.
+Reviewed local commit `3d270dc112147676d4b989cd94d7cba1e8b645ad`, tree
+`9e581614637765a7e0ac4fbd1869438992a20596`. Published PR101 head
+`c46bfd8607c819d4abcc37bd74f3d7aeae867d45` has that exact tree.
+
+Root and the independent reviewer separately ran the 126-test suite, repository
+contract, RI verification, trusted-base Repository Gate and evidence transitions;
+all passed. The reviewer also ran trusted-base evidence integrity, diff whitespace
+checks and checked 265 local links/anchors in changed Markdown without findings.
+RI queries `ownership gate` and `генеральний план` reached the expected method,
+Glossary and issue-workflow owners. The generated projection represents 156 files.
+
+Independent byte comparison confirmed that evidence/, report/, protocols/,
+REFERENCES, the source status model, CI workflows, tools and tests are unchanged.
+Live final-head PR runs and post-merge exact-main acceptance belong in
+[PR101](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/101)
+and #85 completion records; this file does not predict its own merge.
 
 ## Independent review
 
 - Primary implementer: `/root`.
 - Design inputs: `/root/node_outcome_design`, `/root/governance_implementation_audit`;
   neither counts as the independent final reviewer.
-- Independent reviewer: pending assignment.
+- Independent reviewer: `/root/issue85_independent_review`; separate read-only
+  issue/plan subreview by `/root/issue85_independent_review/issue_plan_audit`.
 - Procedure: approved governance change; full diff, live #84/#85–100, existing owner
   scope, method/approval boundaries, synchronization and relevant checks.
-- Outcome: Review unavailable — not yet requested for the assembled candidate.
-- Corrections and review date: pending.
-- Completion/merge readiness: not yet established.
+- Materials: all 23 changed files at the refs above; live #84/#85 and main fetched
+  by the reviewer; live #84–100 and #1/#4/#49/#65/#53 checked by the independent
+  subreview against supplied snapshots. Original #84 intent and all eleven node
+  hypothesis pairs/weakening observations are preserved.
+- Outcome: Confirmed, 2026-10-22. No material discrepancy found.
+- Non-blocking clarity note: #88's original phrase "preserve all node outcomes"
+  could imply every outcome must improve. Root clarified it to assess/account for
+  all outcomes, preserve critical functions or justify substitutes, and expose
+  accepted tradeoffs; a dated correction note preserves the original wording.
+- Human decision required: no new decision within #85's approved scope; next-issue
+  approval remains required. Review does not validate studies or authorize #65.
+- Merge readiness still depends on live final-head PR checks and faithful recording;
+  completion still depends on actual main/acceptance and the plan checkpoint.
 
 ## Post-merge handoff
 

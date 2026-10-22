@@ -6,7 +6,7 @@
   `334638f6081c83ecb59dfabaf90137c2567b47d1` (PR83).
 - #85 is the authorized governance/plan task: complete node outcomes and the
   one-issue-through-merge, plan-reread, next-issue-approval cycle.
-- This candidate cannot record its own future merge. Fetch live #85/linked PR/main
+- This candidate cannot record its own future merge. Fetch live #85/PR101/main
   and exact-main checks before deciding whether its acceptance is complete.
 
 ## Active owners
@@ -37,6 +37,9 @@
 
 - reviews/issue-85-2026-10-22-outcomes-and-cycle.md records decision, synchronization,
   issue mapping and candidate review/check evidence; #85/PR own live completion.
+- Governance/plan independently Confirmed at tree `9e581614637765a7e0ac4fbd1869438992a20596`;
+  PR101 initial head `c46bfd8607c819d4abcc37bd74f3d7aeae867d45` has that tree.
+  Local 126 tests, contract, source integrity/transitions, trusted gate and RI passed.
 - Master plan #84 preserves original direction, author-context links, all node
   hypotheses, earlier independent plan review and the new dated amendment.
 - #57–64 corrections remain the input baseline; no report/brief/protocol findings,
