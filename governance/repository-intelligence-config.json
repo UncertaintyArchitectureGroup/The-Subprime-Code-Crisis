@@ -39,7 +39,11 @@
         "ішью",
         "беклог",
         "status check",
-        "перевірка статусу"
+        "перевірка статусу",
+        "master plan",
+        "генеральний план",
+        "next issue",
+        "наступне ішью"
       ]
     },
     {
@@ -203,6 +207,18 @@
         "vendor criticism",
         "гіпотези",
         "сценарії"
+      ]
+    },
+    {
+      "concern": "SDLC hypothesis and complete node outcome evaluation",
+      "path": "governance/hypothesis-evaluation.md",
+      "queries": [
+        "node outcomes",
+        "ownership gate",
+        "hypothesis evaluation",
+        "ауткоми ноди",
+        "оцінка гіпотез",
+        "ребалансування"
       ]
     }
   ],

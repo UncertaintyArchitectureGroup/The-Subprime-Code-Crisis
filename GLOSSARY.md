@@ -117,6 +117,15 @@ The process and status dimension concerned with understanding and documenting th
 
 A completed evidence review may produce a **Reviewed brief**. It remains separate from the **Integration audit**.
 
+### Hypothesis verdict
+
+A dated, scoped assessment of support for a testable repository proposition,
+including its evidence, alternatives, counterevidence and unresolved outcomes.
+
+The [evaluation method](governance/hypothesis-evaluation.md#hypothesis-verdict-vocabulary)
+defines the vocabulary. A verdict is not a probability, source-status field,
+claim class or independent-review outcome.
+
 ### Independent conceptual convergence
 
 The possibility that different authors independently develop similar terminology, metaphors, or conclusions while examining related conditions, without documented derivation from one another.
@@ -147,6 +156,17 @@ An estimate produced by a fitted, simulated, or calibrated model rather than dir
 
 The model, assumptions, calibration data, uncertainty, and validation limits should be visible.
 
+### Node function and outcome
+
+A **function** is a contribution made by a part of the delivery system, such as
+clarifying intent, checking behavior or transferring system knowledge. An
+**outcome** is the observed result of that function for the product, team, users
+or surrounding system.
+
+An intended function is not evidence that the previous workflow delivered it.
+An artifact, activity or metric may indicate an outcome without establishing it.
+The node inventory records actual baseline delivery, substitutions and unknowns.
+
 ### Not established
 
 An interpretation label for a claim that may be plausible or relevant but is not demonstrated by the cited source.
@@ -158,6 +178,16 @@ It identifies a source boundary, not necessarily a conclusion that the claim is 
 Directly reported from empirical measurement or inspection in the cited source.
 
 The label does not mean universal, causal, replicated, or free from measurement error.
+
+### Ownership gate
+
+The Review function through which a team knowingly accepts responsibility for a
+change and acquires or demonstrates the shared understanding needed to explain,
+diagnose, change, contain and recover consequential system behavior.
+
+It complements Review's quality function. A named assignee or approval click alone
+does not establish competent ownership. The term describes an outcome boundary;
+it does not prescribe a particular manual ceremony or universal production gate.
 
 ### Primary documentary source
 

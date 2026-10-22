@@ -1,0 +1,27 @@
+record_version = 1
+title = "Complete SDLC node outcomes and one-issue approval cycle"
+primary_flow = "Approved governance change procedure"
+human_decision = "Issue #85 records the maintainer's explicit 2026-10-22 request to evaluate all node outcomes, include Review ownership, update AGENTS/workflows, create issues and use one issue through main/merge followed by master-plan reread and approval of the next issue. Master plan #84 contains the dated amendment."
+independent_review = "Confirmed"
+# Independently reviewed 2026-10-22 by /root/issue85_independent_review.
+# Candidate 3d270dc112147676d4b989cd94d7cba1e8b645ad, tree
+# 9e581614637765a7e0ac4fbd1869438992a20596; PR101 c46bfd8 has the same tree.
+# Scope includes live #84–100 and preserved existing owners. No material findings.
+# Confirmation does not establish merge, source validity or next-issue approval.
+# Detailed record: governance/reviews/issue-85-2026-10-22-outcomes-and-cycle.md.
+
+[changelog]
+decision = "Updated"
+reason = "Changes governance, hypothesis evaluation, contributor duties and issue/PR handoff templates."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+repository-architecture = "Existing research and artifact boundaries retained; method playbook and node vocabulary extend the existing systems lens, with no new evidence layer or duplicate register/master plan."
+source-registry = "No source identity, factual use, reviewed link, state or verification date changed."
+evidence = "No source finding, evidence brief or interpretation changed; method and issue intake do not integrate sources."
+evidence-indexes = "No new or revised brief to index."
+references = "README change only links the live work plan; no citation, bibliography, identity or attribution change."
+report = "Hypotheses and edition implementation are queued in #86/#88 and node research issues, not performed in this governance task."
+protocols = "No production control, threshold or gate changed; this task governs assessment of future proposed controls."

@@ -29,6 +29,26 @@ It is not an anti-AI manifesto, a vendor ranking, a prediction that every adopti
 
 Code generation is one activity inside a larger system. The relevant outcome is not how quickly code-like output appears, but whether useful, understandable, secure, maintainable software moves through the complete delivery path.
 
+The system extends from Intent through requirements, design, code, review, test,
+integration, deployment and operation to realized user outcomes and business
+economics, with feedback to Intent. These are functions rather than mandatory
+waterfall stages. User benefit and sustainable lifecycle value give the argument
+its purpose; activity counts alone do not establish either.
+
+### Each node has several outcomes
+
+A node supplies more than its visible artifact. Its outcome inventory includes
+the relevant decisions, assurance, learning, shared understanding, ownership,
+coordination and feedback. Review therefore has a quality function and an
+ownership function: the team understands consequential behavior and can take
+responsibility for changing and operating the system.
+
+This is an analytical lens, not a claim that every previous process delivered
+those functions well. Compare actual baselines, recognize missing measurements,
+and expose transferred work and tradeoffs. A function may be supplied by a new
+mechanism; preserving the old manual activity is not the criterion. The canonical
+assessment procedure is in [AGENTS](AGENTS.md#sdlc-hypotheses-and-complete-node-outcomes).
+
 ### 2. Local productivity is not system throughput
 
 An improvement at one step may increase queues, review load, rework, coordination cost, or maintenance exposure elsewhere. Local acceleration must not be presented as end-to-end improvement without downstream evidence.
@@ -44,6 +64,12 @@ Positive, negative, null, mixed, contradictory, replication, and limiting eviden
 ### 5. The argument must remain falsifiable and correctable
 
 Claims, mechanisms, maps, and protocols should be stated so that new evidence or implementation feedback can qualify, weaken, revise, or reject them.
+
+The report should retain a clear thesis and explicit subhypotheses while showing
+what is observed, inferred and unresolved. A systems hypothesis can be useful
+without a universal industry experiment. Both a proposed failure mechanism and
+its remedy need observations that could weaken them. Hypothesis verdicts describe
+bounded support; they do not replace claim classes or source-verification states.
 
 ### 6. Scope must remain explicit
 

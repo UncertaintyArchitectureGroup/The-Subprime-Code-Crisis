@@ -28,7 +28,19 @@ stale, unavailable or pending evidence stays open; issue status is not source st
 
 Next step and related issue/PR links. Preserve initial intent; append approved changes.
 
+- Live master plan and position/dependencies:
+- Scope/acceptance approval: Awaiting maintainer / Approved — reference/date
+- If an SDLC hypothesis, improvement claim or control is affected: node IDs and
+  complete function/outcome assessment under `governance/hypothesis-evaluation.md`.
+
+Work one selected issue through all necessary PRs, review, main merge and acceptance.
+Queued issues are not authorized for implementation merely by appearing in the plan.
+
 ## Completion evidence
 
 Merged ref/edition; outcome versus intent; checks/review; deviations; remaining work.
 Leave open while required publication, deployment or cross-repository results remain.
+
+After completion, reread/update the live master plan; show its current sequence,
+one next issue and proposed scope; wait for explicit approval before starting it.
+Record the checkpoint and approval state here or link its dated plan record.

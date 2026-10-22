@@ -95,6 +95,13 @@ Check whether:
 - source-author interpretation is presented as an observed result;
 - repository synthesis is clearly identified;
 - positive, null, mixed, contradictory, and unfavorable findings are treated fairly.
+- an SDLC improvement claim covers the node's full function/outcome inventory,
+  including understanding/ownership, or explicitly remains a bounded result;
+- the actual baseline, substitutions, missing measures, tradeoffs and downstream
+  user-value/full-cost implications follow the
+  [hypothesis evaluation method](hypothesis-evaluation.md);
+- hypothesis support reflects independent evidence, scope fit and counterevidence,
+  and adverse mechanisms and proposed remedies both remain falsifiable.
 
 When this check reveals a possible need to change report logic, a major conclusion, claim confidence, protocol logic, or a load-bearing repository map, do not edit that substantive artifact yet. Trigger the human-curated substantive-change discussion defined above, then follow [escalation](../AGENTS.md#escalation-and-conflict-handling) and [human approval gate](../AGENTS.md#human-approval-and-substantive-change-gate).
 
@@ -141,6 +148,11 @@ Inspect every protocol for explicit or implicit reliance on the source. Document
 - `Protocol change proposed`
 
 Do not change a protocol merely for symmetry with a report change.
+
+For a proposed SDLC control, map the functions/outcomes it supplies, shifts or
+risks losing; inspect Review ownership as well as quality where affected. State
+the comparator, cost/tradeoffs, expected benefit and observation that could weaken
+the remedy. Do not infer a control's effectiveness from support for the risk alone.
 
 A proposed protocol clarification or protocol change must follow [escalation](../AGENTS.md#escalation-and-conflict-handling) and [human approval gate](../AGENTS.md#human-approval-and-substantive-change-gate), and must be discussed with and approved by the human user before implementation.
 

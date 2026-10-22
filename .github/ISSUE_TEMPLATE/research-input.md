@@ -17,12 +17,21 @@ confirmed decisions and open questions; do not treat assumptions as agreed inten
 Source/research IDs, relevant research/brief/manuscript/blueprint and issue links.
 A candidate is not an accepted finding.
 
+Live master plan, node/hypothesis IDs and dependencies:
+Scope/acceptance approval: Awaiting maintainer / Approved — reference/date.
+
 ## Review plan
 
 Search original input and existing source/research uses. Select the existing
 repository flow. Produce an impact report for maintainer review before substantive
 integration (methods, limitations, contradictions, affected claims/figures/protocols,
 include/exclude/narrow/defer recommendation).
+
+For SDLC-node work, inventory every material function/outcome of the actual
+previous workflow, including understanding, learning and ownership. Record what
+each source measures, what remains unknown, functional substitutes, tradeoffs
+and observations that could weaken both the adverse mechanism and the remedy.
+Use `governance/hypothesis-evaluation.md`; one study need not cover all outcomes.
 
 ## Acceptance checks
 
@@ -37,3 +46,7 @@ include/exclude/narrow/defer recommendation).
 ## Linked work and decisions
 
 Owning PRs, cross-repository dependencies and dated scope/decision changes.
+
+Complete only this selected issue through review, checks, main merge and acceptance.
+Then reread/update the live master plan, present the next issue/scope and wait for
+explicit approval before starting it. Issue creation is not implementation approval.

@@ -12,7 +12,8 @@ When local coding gains improve delivery, and when review, QA, security, archite
 ## Quick Start
 
 Repository/source ideas enter through [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues).
-See the [dated backlog audit](governance/issue-backlog-audit.md),
+See the [live master work plan](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84),
+[dated backlog audit](governance/issue-backlog-audit.md),
 [intake and reviewed closure](governance/issue-workflow.md), and
 [cross-repository ownership](governance/repository-map.md).
 
