@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "1e4cc9c9f6c77f72f611a2712c088944e015109effd3857429541b6fd74b7fc2",
+    "digest": "3898eeb986aae3fc4ee495411be72d07d5254bb36f47b1140d8408b2db10675b",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "2f52c63ef1fa7ad84ef726aa925e2cd584a0a65ede73dc0b60f7bf65f354a093"
+        "sha256": "895204cf4f0e4f9fad94a42fd873b1a009b6e0041d5157f960297cf297f5ec96"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/reviews/issue-110-2026-10-23-final-verification.md",
         "identity_mode": "content",
-        "sha256": "9faae246f999706d1edde40fbd8754ba7f23d5e41a46d02bd219848d9062a616"
+        "sha256": "cab0f191ae9683c0ee53360451c6c2d0f6f5c43acaaa45dfd2de4f168ec4055d"
       },
       {
         "path": "governance/reviews/issue-110-2026-10-23-independent-acceptance.md",
@@ -787,7 +787,7 @@
       {
         "path": "governance/work-records/2026-10-23-issue-110-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "24c6f3fc9c9e54b559f70048304ed6d2308bbb1eb4d65402bd80ad7e4f9829a8"
+        "sha256": "d87243871d9861789c1dcc2141726b7887ff014a5f2aeee1fb54984c7822f88e"
       },
       {
         "path": "governance/work-records/2026-10-23-issue-110-source-comparison.toml",

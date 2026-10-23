@@ -2,8 +2,8 @@ record_version = 1
 title = "Complete nine-source verification after accepted issue110 main"
 primary_flow = "Flow D — final verification after accepted correction merge and independently checked actual main"
 human_decision = "Continuation of approved T1–T4, decision6361681797. PR115 is merged at 6769de4ed9183f7c956e6980ba7fd0dce29126d8; main eligibility is independently Confirmed in PR115 comment6366534816. No new treatment or next issue is authorized."
-independent_review = "Review unavailable"
-# New metadata delta awaits review; underlying source-use/main eligibility is Confirmed.
+independent_review = "Confirmed"
+# Actual metadata review: PR116 comment6366810798, exact f75a122; final merge/main checks remain separate.
 
 [changelog]
 decision = "Not required"

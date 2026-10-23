@@ -6,7 +6,8 @@
   tree `7560a286f3e75a08a0a02a6a6affc0364e7b8876`, identical to accepted166a07f.
 - Actual-main health39964585198 passed. Research, faithful recording and
   actual-main eligibility are independently Confirmed.
-- #110 remains active for final metadata review/merge and resulting-main checks.
+- Final metadata f75a122 is independently Confirmed in PR116 comment6366810798.
+- #110 remains active for final receipt checks/merge and resulting-main acceptance.
   This note does not predict its own future merge or issue closure.
 
 ## Active owners
@@ -37,7 +38,7 @@
 
 ## Next actions
 
-- Independently review/check this final metadata candidate, merge and check main.
+- Check faithful receipt recording and final head; merge and accept actual main.
 - Finish #110 AC evidence and the #84 completion checkpoint only after acceptance.
 - Proposed next#111: bounded capacity/adaptation, shared-understanding/substitution,
   and full-cost/remedy-value search; separate selection is required.
