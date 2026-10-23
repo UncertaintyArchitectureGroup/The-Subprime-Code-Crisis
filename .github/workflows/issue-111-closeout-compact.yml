@@ -1,0 +1,42 @@
+name: Issue 111 compact closeout records
+on:
+  push:
+    branches: [issue-111-workbench-20261023]
+    paths: [.github/workflows/issue-111-closeout-compact.yml]
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+  actions: read
+jobs:
+  closeout_records:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reuse guarded administrative update with compact current plan labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api 'repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/contents/.github/workflows/issue-111-closeout-records.yml?ref=376a1c6497f7d8cfbb67755a8a19afc73bea5b3c' --jq .content | base64 -d > /tmp/original.yml
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          s=Path('/tmp/original.yml').read_text()
+          match=re.search(r"          python3 - <<'PY'\n(.*?)          PY\n",s,re.S);assert match
+          code='\n'.join(line[10:] for line in match.group(1).splitlines())
+          header='> **Current state — 2026-10-23:** #111 completed via #117; accepted main `b72b50e`. Next proposal: **#100 → remaining #88/#1**, not started. #84 remains open. [Completion and next scope](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84#issuecomment-6373505186). Earlier states below are history.\n'
+          code,count=re.subn(r'^lines\[0\]=.*$',lambda m:'lines[0]='+repr(header),code,flags=re.M);assert count==1
+          code,count=re.subn(r"^state_row\('\| 7 \| \*\*#111\*\* \|'.*$",lambda m:"state_row('| 7 | **#111** |','Completed via #117; main b72b50e accepted; Search Review Confirmed. Source follow-ups remain separate')",code,flags=re.M);assert count==1
+          code,count=re.subn(r"^state_row\('\| 8 \| \*\*#100\*\* \|'.*$",lambda m:"state_row('| 8 | **#100** |','Next proposal; #109–111 inputs ready. Awaiting selection; not started')",code,flags=re.M);assert count==1
+          old='assert len(proposed111)<=65536 and len(proposed84)<=65536';assert old in code
+          code=code.replace(old,"print('Issue lengths: original84=',len(original84),'updated84=',len(proposed84),'updated111=',len(proposed111))\n"+old)
+          Path('/tmp/closeout.py').write_text(code+'\n')
+          PY
+          python3 /tmp/closeout.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: issue-111-closeout-records
+          path: /tmp/issue111-closeout/
+          retention-days: 2
