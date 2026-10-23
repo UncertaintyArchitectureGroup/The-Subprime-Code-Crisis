@@ -1,0 +1,86 @@
+name: Issue 111 closeout records
+on:
+  push:
+    branches: [issue-111-workbench-20261023]
+    paths: [.github/workflows/issue-111-closeout-records.yml]
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+  actions: read
+jobs:
+  closeout_records:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify completed main and update only current issue records
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, re, urllib.request, hashlib
+          from pathlib import Path
+          base='https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
+          expected='b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e'
+          tree='181615bcde9068ceb1c995b2f90b12b5866472d2'
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}
+          def api(path, data=None):
+              req=urllib.request.Request(base+path,data=None if data is None else json.dumps(data).encode(),headers=headers,method='GET' if data is None else 'PATCH')
+              with urllib.request.urlopen(req,timeout=30) as response: return json.load(response)
+          pr=api('/pulls/117'); assert pr['merged'] and pr['merge_commit_sha']==expected
+          assert api('/git/ref/heads/main')['object']['sha']==expected
+          assert api('/git/commits/'+expected)['tree']['sha']==tree
+          receipt=api('/issues/comments/6373484746')
+          assert receipt['user']['login']=='chatgpt-codex-connector[bot]'
+          assert 'Confirmed' in receipt['body'] and expected in receipt['body'] and tree in receipt['body']
+          run=api('/actions/runs/40014654492'); assert run['head_sha']==expected and run['conclusion']=='success'
+          jobs=api('/actions/runs/40014654492/jobs')['jobs']; assert jobs and all(j['conclusion']=='success' for j in jobs)
+          required={'Run validator tests','Validate repository contract','Validate evidence-state integrity','Verify local Repository Intelligence context'}
+          steps={s['name']:s['conclusion'] for j in jobs for s in j['steps']}
+          assert all(steps.get(name)=='success' for name in required)
+          complete=api('/issues/comments/6373515628'); checkpoint=api('/issues/comments/6373505186')
+          assert '/issues/111' in complete['issue_url'] and expected in complete['body']
+          assert '/issues/84' in checkpoint['issue_url'] and expected in checkpoint['body']
+          root=Path('/tmp/issue111-closeout');root.mkdir()
+          snapshots={n:api('/issues/'+str(n)) for n in [111,84]}
+          for n,snap in snapshots.items(): (root/f'issue-{n}-before.json').write_text(json.dumps(snap,ensure_ascii=False,indent=2))
+          # Preserve the complete original #111 intent; change only the live header and the eight acceptance boxes.
+          original=snapshots[111]['body']; body=original
+          assert not body.startswith('> **Completed'), 'Already completed; avoid duplicate mutation'
+          assert len(re.findall(r'^- \[ \] AC-[1-8] —',body,re.M))==8
+          for i in range(1,9):
+              old=f'- [ ] AC-{i} —';assert body.count(old)==1;body=body.replace(old,f'- [x] AC-{i} —',1)
+          header='> **Completed — 2026-10-23:** bounded discovery and all corrections are merged through [PR #117](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117), accepted main `'+expected+'`, tree `'+tree+'`. Independent Search Review, faithful recording and actual-main acceptance are Confirmed; all eight criteria below are met. [Detailed completion evidence](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111#issuecomment-6373515628) and [post-completion plan](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84#issuecomment-6373505186). Candidate routes remain provisional; no source/report/verdict changes. #100 is the next proposal, not started. Initial approval/queued statements below are preserved historical intake, not current status.\n\n'
+          proposed111=header+body
+          assert proposed111[len(header):].replace('- [x] AC-','- [ ] AC-')==original
+          # Preserve every dated plan section and parent AC. Only current header and table state cells change.
+          original84=snapshots[84]['body']; lines=original84.splitlines(keepends=True)
+          assert lines[0].startswith('> **Current state'), 'Unexpected current-header shape'
+          lines[0]='> **Current state — 2026-10-23:** #85, #65, #86, #87, #4, #109, #110 and now **#111 are completed**; the #88 plain-language slice is merged. #111 completed through PR #117 at accepted main `'+expected+'` with independent whole-search, recording and actual-main Confirmed acceptance. [Current completion and next-task checkpoint](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84#issuecomment-6373505186). **Next proposal: #100 → remaining #88 with #1.** Those tasks are not started or authorized by #111 closure. The wider #84 remains open; historical queues and decisions below are retained.\n'
+          def state_row(prefix,newstate):
+              found=[i for i,line in enumerate(lines) if line.startswith(prefix)]
+              assert len(found)==1,(prefix,found)
+              i=found[0]; parts=lines[i].rstrip('\n').split('|');assert len(parts)==6,(prefix,parts)
+              parts[-2]=' '+newstate+' ';lines[i]='|'.join(parts)+'\n'
+          state_row('| 7 | **#111** |','Completed via #117; bounded search and corrections accepted on main b72b50e…; independent Search Review/recording/actual-main Confirmed. Candidate follow-ups remain separately selected')
+          state_row('| 8 | **#100** |','Next proposed issue; #109–111 inputs ready. Awaiting explicit selection of its documentary/decision-chain scope; not started')
+          proposed84=''.join(lines)
+          assert re.findall(r'^- \[[ x]\] \*\*AC-.*$',original84,re.M)==re.findall(r'^- \[[ x]\] \*\*AC-.*$',proposed84,re.M)
+          assert len(proposed111)<=65536 and len(proposed84)<=65536
+          proposed={111:proposed111,84:proposed84}
+          for n,body in proposed.items():
+              current=api('/issues/'+str(n)); assert current['body']==snapshots[n]['body'],f'Concurrent issue {n} edit'
+              result=api('/issues/'+str(n),{'body':body});assert result['body']==body
+              (root/f'issue-{n}-after.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+          final111=api('/issues/111');final84=api('/issues/84')
+          assert len(re.findall(r'^- \[x\] AC-[1-8] —',final111['body'],re.M))==8
+          assert final84['state']=='open'
+          assert api('/git/ref/heads/main')['object']['sha']==expected
+          print('Updated only #111 header/eight checkboxes and #84 current header/two state cells. All intent/history and parent acceptance preserved. Issue closure remains native coordinator action.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: issue-111-closeout-records
+          path: /tmp/issue111-closeout/
+          retention-days: 2
