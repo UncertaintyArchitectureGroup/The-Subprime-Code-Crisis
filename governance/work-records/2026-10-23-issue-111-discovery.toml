@@ -1,7 +1,7 @@
 record_version = 1
 title = "Bounded discovery on capacity, understanding and control value"
 primary_flow = "Flow E — evidence discovery; provisional candidates only"
-human_decision = "Maintainer selected issue111 after issue110 completion with Роби; issue111 comment6369320604. No candidate integration or next-issue selection."
+human_decision = "Maintainer selected issue111 after issue110 completion with Роби; issue111 comment6369320604. User authorized remaining correction; PR117 comment6370961841. No candidate integration or next-issue selection."
 independent_review = "Review unavailable"
 
 [changelog]

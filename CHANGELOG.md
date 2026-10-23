@@ -22,6 +22,11 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Corrected #111's search trace with 18 individually recorded reruns, an ordered
+  return ledger and continuation D24–D51. Retained original search history,
+  explicit unknowns, contrary/null candidates and the 24-object full-text cap.
+  Independent Search Review is still required; accepted research is unchanged.
+
 - Added the #111 bounded discovery packet: frozen questions/strategy, query
   provenance and limitations, 23 screened candidates and provisional routing.
   Independent search access is unavailable; no source status, report claim,
