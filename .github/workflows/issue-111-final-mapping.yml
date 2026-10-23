@@ -1,0 +1,90 @@
+name: Issue 111 final mapping correction
+on:
+  push:
+    branches: [issue-111-workbench-20261023]
+    paths: [.github/workflows/issue-111-final-mapping.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ad5c30cc8ce3c5c16fc1fafc64bc15c6580ecf9c
+          fetch-depth: 0
+      - name: Apply exact tested correction
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = 9fbf674d58f0dedb10a2bc22bd825699589142be
+          test "$(git ls-remote origin refs/heads/issue-111-bounded-discovery | cut -f1)" = ad5c30cc8ce3c5c16fc1fafc64bc15c6580ecf9c
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('.')
+          r=root/'governance/reviews'
+          p=r/'issue-111-2026-10-23-candidates-continuation.json'
+          d=json.loads(p.read_text()); c=next(x for x in d['candidates'] if x['id']=='D48')
+          c.update(question_ids=['Q2','Q3'], hypothesis_ids=['HUM-1','REV','H0-R','BAL','ALT-1','ALT-5','ALT-6b'],owner='#92/#93',
+           mapping_basis='Review finding r4363491743 and direct arXiv v1 abstract checked on 2026-10-23. Learning-process scaffolding is adjacent Q2 relevance, not a demonstrated retention effect; named review assistance is Q3 relevance, not established net value.',
+           comparison='Q2/Q3 adjacent lead: learning-process scaffolding and review-assistance design. Engagement indicators and qualitative observations do not establish retained individual understanding, shared ownership or incremental economic value.',
+           access='ArXiv v1 landing metadata and abstract inspected on 2026-10-23 after independent review. No full-text screen or new result estimate.',
+           version='arXiv v1, 25 April 2026. Landing page links related DOI 10.1145/3786580.3786956; publisher/venue relationship not independently verified.',
+           authors_entity='Eduardo Oliveira, Michael Fu, Patanamon Thongtanunam, Sonsoles López-Pernas and Mohammed Saqr; affiliations not established from the inspected landing metadata.',
+           scope='Experience report comparing two capstone cohorts; mixed GitHub activity, reflective reports and survey. Engagement and responsiveness are learning-process proxies, not tests of retained capability.',
+           limits='Metadata/abstract only; cross-cohort/tool/instruction changes limit causal interpretation. No verified delayed retention, shared recovery capability or full-cost comparison. Full methods and publication relationship remain later work.',
+           locators='https://arxiv.org/abs/2604.23251v1 — metadata and abstract',
+           url='https://arxiv.org/abs/2604.23251v1')
+          assert c['routing']=='Hold'
+          d['review_correction']['additional_mapping_finding']='https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4363491743'
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+          p=root/'governance/README.md'; s=p.read_text(); old='issue #111 primary packet and provisional routes; independent Search Review remains unavailable.'; assert old in s
+          p.write_text(s.replace(old,'issue #111 search record and provisional routes; the correction record carries the current independent-review outcome.'))
+          p=r/'issue-111-2026-10-23-search.md'; s=p.read_text()
+          start=s.index('**Current correction, 23 October 2026:'); end=s.index('[Owning issue #111]',start)
+          s=s[:start]+'''## Original search pass — historical record
+
+          The account below describes the first pass and its then-unavailable review.
+          Its 23-object counts and pending checks are preserved as history, not the current state.
+          For the current combined record and acceptance, use the [correction report](issue-111-2026-10-23-correction.md),
+          [per-query return ledger](issue-111-2026-10-23-rerun.md) and
+          [continuation D24–D53](issue-111-2026-10-23-candidates-continuation.json).
+
+          '''+s[end:]
+          p.write_text(s)
+          p=r/'issue-111-2026-10-23-correction.md'; s=p.read_text()
+          s += '''
+          ## Remaining mapping correction — 23 October 2026
+
+          The [repeat independent review](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4363491743) found one remaining mapping mismatch: D48's reason named Q2/Q3 while its structured fields named only Q3. The coordinator inspected the [arXiv v1 abstract](https://arxiv.org/abs/2604.23251v1) and aligned its question/hypothesis/owner fields with that bounded relevance. Engagement and qualitative learning-process observations are adjacent leads, not demonstrated retained understanding. D48 remains Hold. No new full-text screen, topic query or candidate was added.
+
+          The governance navigation no longer embeds an obsolete unavailable status; it points to this current record. The earlier search entry is explicitly headed as historical, removing conflicting current labels without changing the initial evidence records. Current outcome remains **Corrections required** until a separate review accepts this correction. Totals remain 53 candidates, 14 proposed Flow A / 17 Hold / 15 Context only / 7 Reject, and 24 primary full-text/passage screens.
+          '''
+          p.write_text(s)
+          p=root/'governance/memory.md'; s=p.read_text().replace('The next candidate addresses its four findings; repeat acceptance is pending.','The current correction addresses its original four findings and the repeat-review D48 mapping finding; repeat acceptance is pending.')
+          s=s.replace('- Review: [r4362922817]', '- D48 Q2/Q3 relevance is corrected at abstract depth; its Hold route and all counts remain unchanged.\n- Review: [r4362922817]'); p.write_text(s)
+          p=root/'CHANGELOG.md'; s=p.read_text().replace('- Recorded the actual Corrections required outcome; repeat acceptance remains pending.','- Repaired the repeat-review D48 learning/control mapping and obsolete status labels.\n- Recorded the actual Corrections required outcome; repeat acceptance remains pending.',1); p.write_text(s)
+          PY
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
+          git add CHANGELOG.md governance
+          test "$(git write-tree)" = 26c8d7af689e263905bd07054624c6af0a59f52c
+      - name: Validate unchanged scope and publish candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -p 'test_*.py' -q
+          python3 -m tools.repository_validator
+          python3 -m tools.evidence_state_check
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
+          git diff --cached --check
+          git diff --cached --exit-code -- evidence report protocols AGENTS.md DOCTRINE.md GLOSSARY.md README.md REFERENCES.md tools tests governance/reviews/issue-111-2026-10-23-strategy.md governance/reviews/issue-111-2026-10-23-queries.json governance/reviews/issue-111-2026-10-23-candidates.json governance/reviews/issue-111-2026-10-23-rerun.md
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Fix final #111 D48 mapping and historical status labels' -m 'Refs #111. Metadata-depth correction only; no added full-text screens or accepted claims. Independent acceptance remains required.'
+          git worktree add --detach /tmp/trusted 9fbf674d58f0dedb10a2bc22bd825699589142be
+          PYTHONPATH=/tmp/trusted python3 /tmp/trusted/tools/repository_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base 9fbf674d58f0dedb10a2bc22bd825699589142be --head HEAD
+          PYTHONPATH=/tmp/trusted python3 /tmp/trusted/tools/evidence_transition_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base 9fbf674d58f0dedb10a2bc22bd825699589142be
+          test "$(git ls-remote origin refs/heads/issue-111-bounded-discovery | cut -f1)" = ad5c30cc8ce3c5c16fc1fafc64bc15c6580ecf9c
+          git push origin HEAD:refs/heads/issue-111-bounded-discovery
+          git show -s --format='%H %T' HEAD
