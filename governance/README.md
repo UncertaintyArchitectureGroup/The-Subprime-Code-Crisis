@@ -63,7 +63,7 @@ On a pull request, Main health executes the validator version proposed by that p
   not a replacement for canonical source states.
 
 - [2026-10-23 bounded evidence search](reviews/issue-111-2026-10-23-search.md):
-  issue #111 primary packet and provisional routes; independent Search Review remains unavailable.
+  issue #111 search record and provisional routes; the correction record carries the current independent-review outcome.
 
 ## Navigation
 

@@ -4,7 +4,7 @@
 
 - 2026-10-23: #110 is completed through PR115/116; accepted main is `9fbf674d58f0dedb10a2bc22bd825699589142be`.
 - Active #111/PR117: the 18-query trace correction was published at `49dbfe5`.
-- A completed independent search review returned Corrections required. The next candidate addresses its four findings; repeat acceptance is pending.
+- A completed independent search review returned Corrections required. The current correction addresses its original four findings and the repeat-review D48 mapping finding; repeat acceptance is pending.
 - Actual head/check/review/merge facts must be fetched from the live PR, not inferred from this dated note.
 
 ## Active owners
@@ -25,6 +25,7 @@
 - Current correction: `reviews/issue-111-2026-10-23-correction.md`.
 - Current combined register: 53 objects; 14 proposed Flow A, 17 Hold, 15 Context only, 7 Reject. Primary full-text/passage screens: 24.
 - D52/D53 are review-discovered metadata leads; D38/D42 distinguish historical v1 readings from current canonical editions. These four remain Hold with later owners.
+- D48 Q2/Q3 relevance is corrected at abstract depth; its Hold route and all counts remain unchanged.
 - Review: [r4362922817](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817); original retrieval failures remain history.
 
 ## Next actions

@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "c145f0ef9cd435e11d990ed1ee073b3bd4d625549525fbfc228daaa0af472d9b",
+    "digest": "db44a4d6ca9075e28fe14e043ab03a95e1d1b1d481882f686c33fa5f3ffc6616",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "8aa9beea7fed17ad14b35b8d0433d98609d180a917aa3edef420eccb19e20b80"
+        "sha256": "4abce6451dc43484259a8a8aeae7bf17d641ed32ce11c64083f42e1a926a9ebc"
       },
       {
         "path": "CITATION.cff",
@@ -312,7 +312,7 @@
       {
         "path": "governance/README.md",
         "identity_mode": "content",
-        "sha256": "266d077e9c0c602affab8817f70974b911f481cfe965e768ab5c9db1723d8c53"
+        "sha256": "6094336ba6b38bfa81698358725f5abb31314102b339b2c704bfc86a726e08b3"
       },
       {
         "path": "governance/content-synchronization.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "26d67fc0cec92710126de0655de0e642bea733bfd21bc8ecf1325d1cf8a95877"
+        "sha256": "14cee8418910c958e6c585328e8d647e6df6f7079bce7e3a291eff3885d91c0d"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -422,7 +422,7 @@
       {
         "path": "governance/reviews/issue-111-2026-10-23-candidates-continuation.json",
         "identity_mode": "content",
-        "sha256": "21204f2aa38b992244502a786935ca5b27606833571cdbeaa640863c8d3a01de"
+        "sha256": "2fdc3fec33774517a4eee3e78bc7062b922a84836c39aedf8e01842accd87169"
       },
       {
         "path": "governance/reviews/issue-111-2026-10-23-candidates.json",
@@ -432,7 +432,7 @@
       {
         "path": "governance/reviews/issue-111-2026-10-23-correction.md",
         "identity_mode": "content",
-        "sha256": "fad44132600768f87c7e1ab5d05696665bc544361974e38242bc61b8d5cd633d"
+        "sha256": "27e84097599e4c8d3164e3edecb0b1c4e258e4cafff9d6afd9c23ed96d929c51"
       },
       {
         "path": "governance/reviews/issue-111-2026-10-23-queries.json",
@@ -447,7 +447,7 @@
       {
         "path": "governance/reviews/issue-111-2026-10-23-search.md",
         "identity_mode": "content",
-        "sha256": "71c67ac4f8e7a001f5d8617cdf988008617337399d30d78fef4fe9289abb9c35"
+        "sha256": "5faa43adec87f6b2169dbffa8b1d5716f7bb67b455a48d539941c3f33557cd65"
       },
       {
         "path": "governance/reviews/issue-111-2026-10-23-strategy.md",

@@ -961,37 +961,40 @@
       "id": "D48",
       "arxiv": "2604.23251",
       "title": "AI-Assisted Code Review as a Scaffold for Code Quality and Self-Regulated Learning: An Experience Report",
-      "url": "https://arxiv.org/abs/2604.23251",
+      "url": "https://arxiv.org/abs/2604.23251v1",
       "queries": [
         "Q15"
       ],
       "screening": "Select lead",
       "reason": "Original educational experience report relevant to Q2/Q3; two cohorts and changing instruction do not identify a randomized causal effect or durable understanding. Full-text budget/remaining method and version checks prevent a stronger routing decision at this screen.",
       "date": "2026-10-23",
-      "access": "Returned abstract/metadata only; no full-text inspection",
-      "version": "Unpinned landing identity; publication/venue/version history not verified",
-      "authors_entity": "Not independently established at this screen",
+      "access": "ArXiv v1 landing metadata and abstract inspected on 2026-10-23 after independent review. No full-text screen or new result estimate.",
+      "version": "arXiv v1, 25 April 2026. Landing page links related DOI 10.1145/3786580.3786956; publisher/venue relationship not independently verified.",
+      "authors_entity": "Eduardo Oliveira, Michael Fu, Patanamon Thongtanunam, Sonsoles López-Pernas and Mohammed Saqr; affiliations not established from the inspected landing metadata.",
       "funding_conflicts": "Unknown; not treated as absent",
       "replication": "No independent replication established; editions/retellings are not independent",
       "status": "Provisional, not accepted evidence",
-      "owner": "#111; prospective source review owner depends on selected question",
+      "owner": "#92/#93",
       "routing": "Hold",
-      "comparison": "Adjacent/not diagnostic at this access depth; no H0 or rival verdict. See query purpose and original title-level reason.",
-      "scope": "Only title/returned abstract screened; design, sample, tools, comparator and horizon not verified. No empirical magnitude adopted.",
-      "limits": "Metadata-only screening; full-text/identity checks remain outstanding. Context/rejection is restricted to the stated relevance/window reason.",
+      "comparison": "Q2/Q3 adjacent lead: learning-process scaffolding and review-assistance design. Engagement indicators and qualitative observations do not establish retained individual understanding, shared ownership or incremental economic value.",
+      "scope": "Experience report comparing two capstone cohorts; mixed GitHub activity, reflective reports and survey. Engagement and responsiveness are learning-process proxies, not tests of retained capability.",
+      "limits": "Metadata/abstract only; cross-cohort/tool/instruction changes limit causal interpretation. No verified delayed retention, shared recovery capability or full-cost comparison. Full methods and publication relationship remain later work.",
       "question_ids": [
+        "Q2",
         "Q3"
       ],
       "hypothesis_ids": [
-        "ECO",
-        "H0-D",
+        "HUM-1",
+        "REV",
         "H0-R",
         "BAL",
-        "VAL",
-        "ALT-6a",
+        "ALT-1",
+        "ALT-5",
         "ALT-6b"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Review finding r4363491743 and direct arXiv v1 abstract checked on 2026-10-23. Learning-process scaffolding is adjacent Q2 relevance, not a demonstrated retention effect; named review assistance is Q3 relevance, not established net value.",
+      "locators": "https://arxiv.org/abs/2604.23251v1 — metadata and abstract"
     },
     {
       "id": "D49",
@@ -1182,6 +1185,7 @@
   "review_correction": {
     "date": "2026-10-23",
     "review": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817",
-    "scope": "Four published findings only; no new topic search or full-text screen; original D01-D23 and frozen query records preserved."
+    "scope": "Four published findings only; no new topic search or full-text screen; original D01-D23 and frozen query records preserved.",
+    "additional_mapping_finding": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4363491743"
   }
 }

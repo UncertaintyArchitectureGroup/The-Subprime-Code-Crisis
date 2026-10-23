@@ -8,6 +8,7 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 - Preserved two omitted controlled-study leads, reconciled current candidate editions
   without transferring old results, and repaired question/owner mappings.
+- Repaired the repeat-review D48 learning/control mapping and obsolete status labels.
 - Recorded the actual Corrections required outcome; repeat acceptance remains pending.
   No accepted source, report claim, protocol or governance rule changed.
 
