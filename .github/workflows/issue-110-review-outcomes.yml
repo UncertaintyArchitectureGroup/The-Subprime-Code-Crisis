@@ -1,0 +1,133 @@
+name: Issue 110 review-outcome correction
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+    paths: [.github/workflows/issue-110-review-outcomes.yml]
+permissions:
+  contents: write
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: 939dd0805041debd69fde68a8467aa6202c51bc1
+          path: trusted
+          persist-credentials: false
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: issue-110-core-comparison
+          path: candidate
+          fetch-depth: 0
+      - name: Correct exactly seven stale review outcomes
+        working-directory: candidate
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = b4bd013f359acc511fef3c69ae43cba56fa98f88
+          python3 - <<'PY'
+          from pathlib import Path
+          files=['2023-copilot-task-productivity.md','2025-metr-experienced-developer-productivity.md','2026-metr-productivity-design-update.md','2025-xu-copilot-oss-activity.md','2026-agarwal-agent-adoption.md','2025-metr-task-horizon.md','2026-ai-impacts-skill-formation.md']
+          url='https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4359943405'
+          for name in files:
+              p=Path('evidence/primary')/name
+              s=p.read_text()
+              assert s.count('independent_review = "Review unavailable"')==1,name
+              s=s.replace('independent_review = "Review unavailable"','independent_review = "Corrections required"',1)
+              old='Independent review of this new comparison is **Review unavailable**; earlier\nConfirmed reviews certify their own accepted uses, not this candidate. The\n'
+              new=(f'Independent review of this new comparison is **Corrections required**. The\n'
+                   f'[separate review]({url}) inspected all nine comparisons, their accepted\n'
+                   'briefs and prior source checks, the synthesis and retained-use trace. It found\n'
+                   'the reused factual premises of C3–C9 adequately covered by accepted original\n'
+                   'checks and required synchronization of the stale review outcomes. This note\n'
+                   'records that review, not final acceptance of this correction. Earlier\n'
+                   'Confirmed reviews retain their dated scope; they do not certify the new\n'
+                   'comparison by themselves. The\n')
+              assert old in s,name
+              p.write_text(s.replace(old,new,1))
+          p=Path('governance/reviews/issue-110-2026-10-23-integration.md');s=p.read_text()
+          assert '## Review-outcome synchronization' not in s
+          s+='''
+
+          ## Review-outcome synchronization — 2026-10-23
+
+          Separate reviewer `chatgpt-codex-connector[bot]` inspected exact candidate
+          `b4bd013f359acc511fef3c69ae43cba56fa98f88` and returned
+          [finding 4359943405](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4359943405).
+          Its stated scope includes the nine accepted briefs and prior original-source
+          checks, C1–C9, synthesis, rival predictions, positive/null/contrary evidence,
+          dependence cautions and retained-use trace. The reviewer judged the existing
+          accepted source checks adequate for the factual premises reused by C3–C9; it
+          identified no additional original passage needed for those comparisons. This is
+          a documented reuse judgment, not fresh access to all nine original PDFs. It also
+          confirmed that the NBER identity/direct-link and Chen denominator corrections
+          resolve the three earlier findings.
+
+          **Outcome: Corrections required.** Seven current brief fields and leading notes
+          incorrectly retained `Review unavailable` after a reviewer had actually been used.
+          That value means no independent reviewer could be used; it is not a synonym for
+          incomplete acceptance or corrections. C3–C9 now record the actual outcome in both
+          the field and current note. Their dated historical checkpoints, source findings,
+          source identities and Current use paths are unchanged. C1/C2 and the existing
+          work record already record Corrections required. No Verified state/date is
+          restored and no hypothesis verdict changes.
+
+          This is a correction within the existing approved Flow D treatment. It changes
+          only current review-status reporting and this handoff, not governance or evidence
+          interpretation. The comparison, registry integration/date fields, report chapters,
+          protocols, bibliography and evidence indexes need no matching edit. RI is rebuilt
+          and checked. Changelog decision: Updated; the existing #110 history is extended.
+
+          The independent correction loop must still accept the synchronized candidate,
+          explicitly dispose of the C5 historical-note concern and state whether the whole
+          required comparison/integration scope is Confirmed. The primary implementer does
+          not upgrade this bounded review to a full acceptance outcome. Live PR receipts
+          own exact published-head checks. Main verification remains a later step.
+          '''
+          p.write_text(s)
+          p=Path('governance/memory.md');s=p.read_text()
+          old='- Automated checks and primary self-checks do not supply independent acceptance.'
+          assert old in s
+          s=s.replace(old,'- Separate review 4359943405 accepts reuse of prior source checks for C3–C9\n  and confirms the NBER/Chen fixes. Seven stale current review outcomes were\n  synchronized to Corrections required; repeat acceptance is still needed.\n'+old)
+          p.write_text(s)
+          p=Path('CHANGELOG.md');s=p.read_text();pos=s.index('## ')
+          s=s[:pos]+'''## 2026-10-23 — #110 current review-outcome correction
+
+          - Corrected seven current brief outcomes from Review unavailable to Corrections
+            required after actual separate review; retained all dated source-review history.
+          - Recorded the reviewer's accepted-source reuse judgment and confirmation of the
+            NBER/Chen corrections. Full correction acceptance and final verification remain
+            pending; findings, source versions, hypothesis verdicts and protocols unchanged.
+
+          '''+s[pos:]
+          p.write_text(s)
+          PY
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
+          git diff --check
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 -m tools.repository_validator
+          python3 -m tools.evidence_state_check
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
+          git config user.name 'ChatGPT implementation agent'
+          git config user.email 'noreply@openai.com'
+          git add evidence/primary governance/reviews/issue-110-2026-10-23-integration.md governance/memory.md governance/repository-intelligence/agent-context.json CHANGELOG.md
+          git commit -m 'Synchronize current review outcomes after independent assessment' -m 'Refs #110. Record actual Corrections required outcome; preserve source findings and dated history.'
+      - name: Trusted gates and guarded publication
+        run: |
+          set -euo pipefail
+          BASE=939dd0805041debd69fde68a8467aa6202c51bc1
+          HEAD=$(git -C candidate rev-parse HEAD)
+          python3 trusted/tools/repository_gate.py --policy-root trusted --candidate-root candidate --repo candidate --base "$BASE" --head "$HEAD"
+          PYTHONPATH=trusted python3 trusted/tools/evidence_state_check.py --policy-root trusted --candidate-root candidate
+          PYTHONPATH=trusted python3 trusted/tools/evidence_transition_gate.py --policy-root trusted --candidate-root candidate --repo candidate --base "$BASE"
+          test "$(git -C candidate ls-remote origin refs/heads/issue-110-core-comparison | cut -f1)" = b4bd013f359acc511fef3c69ae43cba56fa98f88
+          git -C candidate push origin HEAD:refs/heads/issue-110-core-comparison
+          mkdir -p output
+          git -C candidate rev-parse HEAD HEAD^{tree} > output/receipt.txt
+          git -C candidate diff --stat b4bd013f359acc511fef3c69ae43cba56fa98f88 HEAD >> output/receipt.txt
+          git -C candidate archive --format=zip --output="$GITHUB_WORKSPACE/output/candidate.zip" HEAD
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue-110-review-outcome-candidate
+          path: output
+          retention-days: 1
