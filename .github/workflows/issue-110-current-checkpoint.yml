@@ -1,0 +1,36 @@
+name: Issue 110 live checkpoint sync
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+    paths: [.github/workflows/issue-110-current-checkpoint.yml]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Update only leading current-state banners
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request
+          base='https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
+          def call(path,data=None):
+              req=urllib.request.Request(base+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'},method='GET' if data is None else 'PATCH')
+              with urllib.request.urlopen(req,timeout=30) as r:return json.load(r)
+          head=call('/git/ref/heads/issue-110-core-comparison')['object']['sha']
+          assert head=='22c4f589d7d9eb6adfa1b50138dc17e4471acd8f',head
+          banners={84:'> **Current state — 2026-10-23:** #85, #65, #86, #87, #4 and #109 are completed; the #88 plain-language pass is merged through #114. **#110 is explicitly approved and active**, implemented in [draft PR #115](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115) at `22c4f589d7d9eb6adfa1b50138dc17e4471acd8f`. Complete current-head independent acceptance, merge/main checks and final source verification before closure. The broader #88 edition remains open. Proposed order after #110: **#111 → #100 → remaining #88 with #1**; those next issues are not authorized or started by this checkpoint. Earlier dated queues and approvals remain history.',110:'> **Current state — 2026-10-23:** T1–T4 is explicitly approved and implemented in [draft PR #115](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115), current head `22c4f589d7d9eb6adfa1b50138dc17e4471acd8f`. NBER identity/direct-link, Chen denominator and seven stale review outcomes are corrected. Separate substantive acceptance of the comparison exists; current-head correction/recording acceptance, merge, actual-main checks and final source verification remain in progress. No new treatment approval is needed. AC-1/AC-4 are met; other whole criteria remain open until their acceptance completes. #111 has not started. Dated checkpoints below retain their original refs and outcomes as history.'}
+          for n,banner in banners.items():
+              issue=call('/issues/'+str(n));body=issue['body']
+              first,rest=body.split('\n\n',1)
+              assert first.startswith('> **Current'),n
+              new=banner+'\n\n'+rest
+              assert new.split('\n\n',1)[1]==rest
+              updated=call('/issues/'+str(n),{'body':new})
+              assert updated['body']==new
+              print(json.dumps({'issue':n,'url':updated['html_url'],'state':updated['state'],'head':head,'only_leading_banner_changed':True}))
+          PY
