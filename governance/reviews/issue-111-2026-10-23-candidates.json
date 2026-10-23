@@ -1,0 +1,872 @@
+{
+  "title": "Issue 111 provisional Candidate Register",
+  "date": "2026-10-23",
+  "baseline": "9fbf674d58f0dedb10a2bc22bd825699589142be",
+  "status": "Primary screening complete; independent Search Review unavailable; no accepted integration",
+  "common_boundaries": [
+    "Routes are primary proposals pending Independent Search Review; Accept for Flow A means a candidate for later registration/full review, not evidence acceptance.",
+    "Unknown funding/conflicts means not established from inspected material, not absent.",
+    "Hypothesis IDs identify relevant questions, not new verdicts. Unmeasured Q1/Q2/Q3 outcomes must not be treated as preserved or harmed.",
+    "Dates identify the inspected object, not an assurance that no later authoritative edition exists.",
+    "No raw-data replication or full paper-level review was performed.",
+    "All empirical result descriptions are provisional screening notes with original locators."
+  ],
+  "candidates": [
+    {
+      "id": "D01",
+      "label": "Vella: repeated survey",
+      "citation": {
+        "title": "The Impact of AI Coding Assistants on Software Engineering: A Longitudinal Study",
+        "authors": "Vella and Blincoe",
+        "url": "https://arxiv.org/html/2605.23135v1",
+        "version": "v1, 2026-05-22",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B1",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1"
+      ],
+      "hypotheses": [
+        "H0-B",
+        "ALT-2",
+        "ALT-5"
+      ],
+      "scope": "Two surveys six months apart; 95 matched developers; perceived productivity and experience, not active service capacity.",
+      "screening_result": "Perceived benefits coexist with a larger proportion reporting deterioration in a development-experience dimension.",
+      "limits": "Self-report, attrition and construct reliability limit causal or capacity interpretation.",
+      "research_entity": "University of Auckland",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Abstract; methods; results; limitations",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Contextual only",
+      "routing": "Context only",
+      "decision_reason": "Useful adaptation/perception context; not a direct test of overload.",
+      "remaining_owner": "#93/#95",
+      "diagnostic_assessment": "Compatible with adaptation and burden, but perceptions do not identify either mechanism.",
+      "next_distinguishing_observation": "Measure within-team active demand/capacity and outcomes alongside perceived experience.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D02",
+      "label": "Sergeyuk: IDE logs",
+      "citation": {
+        "title": "Evolving with AI: A Longitudinal Analysis of Developer Logs",
+        "authors": "Sergeyuk et al.",
+        "url": "https://arxiv.org/html/2601.10258v1",
+        "version": "v1, 2026-01-15",
+        "publication_state": "arXiv preprint; manuscript names ICSE 2026 / DOI 10.1145/3744916.3787811, venue record not independently checked."
+      },
+      "provenance": "B1",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1"
+      ],
+      "hypotheses": [
+        "COD-1",
+        "ALT-2",
+        "ALT-3",
+        "ALT-5"
+      ],
+      "scope": "Two-year IDE telemetry from 800 developers plus a survey; provider-selected users and activity measures.",
+      "screening_result": "Longitudinal behavior can inform task-mix/adaptation questions, but activity does not identify useful delivered output.",
+      "limits": "Provider selection and changing tools; no comprehensive review-capacity or lifecycle comparison.",
+      "research_entity": "JetBrains and University of California, Irvine",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Studied developer-tool provider employs authors and controls telemetry.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Abstract; methods; results; limitations",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Contextual only",
+      "routing": "Context only",
+      "decision_reason": "Background on evolving work; stronger outcome-fit needed before claim integration.",
+      "remaining_owner": "#92/#93",
+      "diagnostic_assessment": "Activity trajectories may distinguish changes in task mix; not a direct capacity comparison.",
+      "next_distinguishing_observation": "Link telemetry to comparable completed work, quality, human effort and later support.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D03",
+      "label": "He: enterprise mandate",
+      "citation": {
+        "title": "AI Writes Faster Than Humans Can Review: A Longitudinal Study of an Enterprise “2×” Mandate",
+        "authors": "He, Agarwal, Denisov-Blanch, Azaletskiy, Koyejo and Vasilescu",
+        "url": "https://arxiv.org/html/2607.01904v1",
+        "version": "v1, 2026-07-02",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B1",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1",
+        "Q3"
+      ],
+      "hypotheses": [
+        "H0-A",
+        "H0-B",
+        "REV-1",
+        "ALT-1",
+        "ALT-2",
+        "ALT-5",
+        "ALT-6a"
+      ],
+      "scope": "802 developers / 196,212 PRs, January 2024–April 2026; estimation subset 564; observational staggered adoption.",
+      "screening_result": "Merged PRs per engineer reached 2.09 times baseline; review load grew while automation increased and coarse merge/revert measures stayed stable.",
+      "limits": "Counts are not functionality; elapsed review is not active labor. Selection and calendar/model effects preclude exact causal attribution.",
+      "research_entity": "Carnegie Mellon, Stanford and an independent researcher",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "Shares authors with the registered Agarwal family; distinct enterprise setting, private-data independence needs verification.",
+      "locators": "III-B/III-C; IV-A; IV-C; V-C; appendices C/D",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Direct longitudinal contrast: throughput benefits and review burden can coexist.",
+      "remaining_owner": "#93/#95",
+      "diagnostic_assessment": "Favors investigating complementary constraints while preserving adequate automation/net-benefit alternatives; not exclusive discrimination.",
+      "next_distinguishing_observation": "Compare functionality, active review effort and later quality under measured demand and changing automation.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D04",
+      "label": "Maier: meta-analysis",
+      "citation": {
+        "title": "A meta-analysis of the effect of generative AI on productivity and learning in programming",
+        "authors": "Maier et al.",
+        "url": "https://arxiv.org/html/2605.04779v1",
+        "version": "v1, 2026-05-06",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B1; duplicate lead in B3",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1",
+        "Q2"
+      ],
+      "hypotheses": [
+        "H0-A",
+        "HUM-1",
+        "ALT-1",
+        "ALT-5"
+      ],
+      "scope": "Secondary synthesis: 23 studies, 27 effects; differing programming productivity and learning outcomes.",
+      "screening_result": "Heterogeneous productivity and uncertain learning estimates provide discovery leads, not another independent empirical family.",
+      "limits": "Includes already-used work and candidates in this packet; pooling does not measure shared ownership.",
+      "research_entity": "LMU Munich / Munich Center for Machine Learning",
+      "funding": "Swiss National Science Foundation grants 197485 and 186932 disclosed.",
+      "conflicts": "Authors declare no conflict.",
+      "replication": "Contains Peng, METR, Xu, Cui and Kazemitabaar; explicitly dependent secondary synthesis.",
+      "locators": "Methods; limitations; funding/conflict statements; references",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Contextual only",
+      "routing": "Context only",
+      "decision_reason": "Backward-reference map only; do not count alongside its constituent studies.",
+      "remaining_owner": "#111",
+      "diagnostic_assessment": "Secondary map of conflicting endpoints; not an independent vote for either account.",
+      "next_distinguishing_observation": "Inspect constituent studies separately and retain common-data relationships.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D05",
+      "label": "Bergh: recall after 48 hours",
+      "citation": {
+        "title": "Your Programming Students' Cognition with ChatGPT: Higher Performance, Lower Retention, and Reduced Ownership",
+        "authors": "Bergh, Tag, Vassar and Renzella",
+        "url": "https://arxiv.org/html/2609.21194v1",
+        "version": "v1, 2026-09-18",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B2; duplicate lead in B3",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [
+        "HUM-1",
+        "ALT-1",
+        "ALT-5"
+      ],
+      "scope": "Randomized novice C tasks: 59 completed, 55 analyzed after exclusions; ChatGPT 4.5 versus no-AI/web; immediate and 48-hour recall.",
+      "screening_result": "Higher coding scores accompanied lower recall in the AI group; no significant between-group difference in decay rate.",
+      "limits": "48 hours is shorter than the ≥7-day target. Psychological ownership is not demonstrated team operability.",
+      "research_entity": "Named university researchers; complete affiliations to verify at full review",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Participants/exclusions; coding performance; cued recall; ownership measures",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Relevant short-horizon adverse result with explicit non-equivalence to lasting/shared skill.",
+      "remaining_owner": "#92/#93",
+      "diagnostic_assessment": "Relevant adverse recall observation, not a test of persistent shared-understanding loss.",
+      "next_distinguishing_observation": "Longer unaided follow-up and non-author diagnosis/recovery tasks.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D06",
+      "label": "CODE-GEN: question generation",
+      "citation": {
+        "title": "CODE-GEN: A Human-in-the-Loop RAG-Based Agentic AI System for Multiple-Choice Question Generation",
+        "authors": "Duan, Nwanganga and Wang",
+        "url": "https://arxiv.org/abs/2604.03926",
+        "version": "arXiv identifier, April 2026; version not pinned",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B2",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [],
+      "scope": "Question-generation evaluation with expert ratings, not retained programmer capability.",
+      "screening_result": "No relevant learner-retention or software-delivery comparison was identified at abstract screening.",
+      "limits": "Do not treat educational material quality as a human learning outcome.",
+      "research_entity": "Authors identified; affiliation not pursued after irrelevance screening",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Abstract",
+      "access_depth": "Abstract only; no full-text assessment.",
+      "inclusion": "Excluded",
+      "routing": "Reject",
+      "decision_reason": "Wrong measured outcome for the selected questions.",
+      "remaining_owner": "#111",
+      "diagnostic_assessment": "Not applicable: generated question quality is not retained human understanding.",
+      "next_distinguishing_observation": "None in this search; wrong endpoint.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D07",
+      "label": "Continual learning: wrong population",
+      "citation": {
+        "title": "Class-Incremental Learning Using Generative Experience Replay Based on Time-aware Regularization",
+        "authors": "Hu and Rostami",
+        "url": "https://arxiv.org/abs/2310.03898",
+        "version": "arXiv identifier, October 2023; version not pinned",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B2",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [],
+      "scope": "Machine continual learning rather than human programmers.",
+      "screening_result": "Terminological match only: retention concerns model classes.",
+      "limits": "No transfer from machine forgetting to developer understanding is assumed.",
+      "research_entity": "Authors identified; entity not further assessed after exclusion",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Title/abstract",
+      "access_depth": "Abstract only.",
+      "inclusion": "Excluded",
+      "routing": "Reject",
+      "decision_reason": "Population and mechanism outside scope.",
+      "remaining_owner": "#111",
+      "diagnostic_assessment": "Not applicable: learning system is a machine, not a developer.",
+      "next_distinguishing_observation": "None in this search; wrong population.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D08",
+      "label": "Adaptive pretesting: statistics course",
+      "citation": {
+        "title": "Do Gains from Generative AI–Enabled Adaptive Pretesting Persist? Evidence from a Retention Study",
+        "authors": "Akgun and Toker",
+        "url": "https://arxiv.org/html/2606.22328v1",
+        "version": "v1, 2026-06-21",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B2",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [
+        "HUM-1",
+        "ALT-6b"
+      ],
+      "scope": "89 undergraduates studying applied statistics; three AI-supported practice conditions over seven weeks.",
+      "screening_result": "Useful delayed-assessment design, but not a programming comparison and not an AI versus no-AI contrast.",
+      "limits": "Practice/feedback conditions differ together; cannot transfer the effect to shared system knowledge.",
+      "research_entity": "Penn State and Atilim University",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Participants; procedure/conditions; delayed assessment",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Contextual only",
+      "routing": "Context only",
+      "decision_reason": "Potential study-design analogy; not direct evidence for the programming thesis.",
+      "remaining_owner": "#92/#93",
+      "diagnostic_assessment": "Adjacent design context only, not discrimination between programming hypotheses.",
+      "next_distinguishing_observation": "A corresponding programming study with a suitable comparator.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D09",
+      "label": "Gardella: one-week retest",
+      "citation": {
+        "title": "Fast and Forgettable: A Controlled Study of Novices’ Performance, Learning, Workload, and Emotion in AI-Assisted and Human Pair Programming Paradigms",
+        "authors": "Gardella, Prather, Leinonen, Denny, Pettit and Riggs",
+        "url": "https://arxiv.org/html/2604.18538v1",
+        "version": "v1, 2026-04-20",
+        "publication_state": "arXiv preprint; manuscript venue/DOI placeholders do not establish publication."
+      },
+      "provenance": "B3",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [
+        "HUM-1",
+        "ALT-1",
+        "ALT-5"
+      ],
+      "scope": "22 novices; timed Python with a human partner versus Copilot, then an individual retest about one week later.",
+      "screening_result": "AI increased initial performance. Absolute retest difference was uncertain (adjusted p=.529); larger decrement had adjusted p=.054.",
+      "limits": "Neither value establishes a conventional significant retention deficit. Repeated tasks and small sample limit transfer.",
+      "research_entity": "Virginia, Abilene Christian, Aalto and Auckland universities",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "3.1–3.7; 4.1–4.2; 6",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Direct delayed endpoint; preserve the difference between level and decrement, not just the title.",
+      "remaining_owner": "#92/#93",
+      "diagnostic_assessment": "Mixed endpoint evidence; initial advantage and uncertain later level do not establish a persistent deficit.",
+      "next_distinguishing_observation": "Adequately powered delayed transfer and shared-capability outcomes, with an a priori meaningful margin.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D10",
+      "label": "Qiao: version reconciliation",
+      "citation": {
+        "title": "Comprehension-Performance Gap in GenAI-Assisted Brownfield Programming: A Replication and Extension",
+        "authors": "Qiao, Hundhausen, Haque and Shihab",
+        "url": "https://arxiv.org/html/2511.02922v1",
+        "version": "Pinned v1, 2025-11-04; current landing/full-text title differs",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B3; F3",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [
+        "HUM-1",
+        "ALT-1",
+        "ALT-5"
+      ],
+      "scope": "18 graduate students; Copilot brownfield tasks, same-session comprehension; treatment order not counterbalanced.",
+      "screening_result": "Faster performance without a significant comprehension difference; this is not equivalence or delayed retention.",
+      "limits": "The current page presents a different title; latest authoritative edition remains unresolved, so versions are not mixed.",
+      "research_entity": "University researchers; full affiliation/version reconciliation pending",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "Explicit extension of a Shihab study; related family, not assumed independent.",
+      "locators": "Pinned v1 abstract; method/order; current abstract-page identity",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Held",
+      "routing": "Hold",
+      "decision_reason": "Resolve edition identity and order effects before accepting for full review.",
+      "remaining_owner": "#93",
+      "diagnostic_assessment": "Possible favorable/null boundary, but no equivalence or causal order-free comparison is established.",
+      "next_distinguishing_observation": "Resolve version identity, then check counterbalanced treatment and delayed comprehension.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D11",
+      "label": "Cihan: industrial review rollout",
+      "citation": {
+        "title": "Automated Code Review In Practice",
+        "authors": "Cihan et al.",
+        "url": "https://arxiv.org/html/2412.18531v1",
+        "version": "v1, 2024-12-24",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B4",
+      "date": "2026-10-23",
+      "questions": [
+        "Q3"
+      ],
+      "hypotheses": [
+        "REV-2",
+        "ALT-1",
+        "ALT-6b"
+      ],
+      "scope": "Beko rollout across ten projects; analysis of three projects/4,335 PRs, 1,568 automated-review PRs; 22 survey responses.",
+      "screening_result": "Comments were acted on, alongside longer elapsed PR closure under the rollout.",
+      "limits": "Before/after comparison combines customized Qodo review with mandatory-resolution policy; elapsed time is not labor.",
+      "research_entity": "Bilkent University and Beko",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Employer setting and employee coauthors; evaluated workflow was internally implemented.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Study design; data collection; quantitative results; limitations",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Named additional-control comparison; examine usefulness and added burden together.",
+      "remaining_owner": "#93/#99",
+      "diagnostic_assessment": "Potential control usefulness coexists with rollout cost; added latency alone does not decide net benefit.",
+      "next_distinguishing_observation": "Same AI baseline with versus without the specified control; active effort and escaped defects.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D12",
+      "label": "Butler: workplace diary",
+      "citation": {
+        "title": "Dear Diary: A randomized controlled trial of Generative AI coding tools in the workplace",
+        "authors": "Butler, Suh, Haniyur and Hadley",
+        "url": "https://arxiv.org/html/2410.18334v1",
+        "version": "v1, 2024-10-24",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B4",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1",
+        "Q3"
+      ],
+      "hypotheses": [
+        "H0-B",
+        "ALT-2",
+        "ALT-5",
+        "ALT-6a"
+      ],
+      "scope": "Three-week diary; 228 intake, 106 retained: 29 controls, 35 new-tool users and 42 continuing users.",
+      "screening_result": "Captures perceived work effects; continuing-user group is not randomized.",
+      "limits": "Attrition/adherence selection and self-report prevent treating attitudes as full productivity or cost estimates.",
+      "research_entity": "Microsoft and Institute for Life at Work",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Microsoft coauthors and tool-provider setting.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Recruitment; conditions; exclusions; analysis groups",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Contextual only",
+      "routing": "Context only",
+      "decision_reason": "Human-experience context; does not directly distinguish system capacity or lifecycle return.",
+      "remaining_owner": "#93/#97",
+      "diagnostic_assessment": "Attitudes illuminate heterogeneity; not a measure of cost-benefit or system capacity.",
+      "next_distinguishing_observation": "All-role effort and useful outcomes linked to randomized assignment and attrition.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D13",
+      "label": "Ye: code detection",
+      "citation": {
+        "title": "Correctness, Convergence, and AI-Generated Code Detection: A Longitudinal Study of Student and Large Language Model Code in Introductory Programming",
+        "authors": "Ye et al.",
+        "url": "https://arxiv.org/abs/2610.00863",
+        "version": "arXiv identifier, October 2026; version not pinned",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B4",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [],
+      "scope": "Student/model submissions compared for code properties and detection.",
+      "screening_result": "No delayed unaided learning or shared-understanding endpoint identified in the abstract.",
+      "limits": "Longitudinal code records do not themselves measure retained human capability.",
+      "research_entity": "Named researchers; entity not further assessed after exclusion",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Abstract",
+      "access_depth": "Abstract only.",
+      "inclusion": "Excluded",
+      "routing": "Reject",
+      "decision_reason": "Adjacent code-property study, outside selected retention/control questions.",
+      "remaining_owner": "#111",
+      "diagnostic_assessment": "Not applicable to retained human understanding or incremental control value.",
+      "next_distinguishing_observation": "None in this search; different endpoint.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D14",
+      "label": "Crupi: human versus generated comments",
+      "citation": {
+        "title": "Studying Quality Improvements Recommended via Manual and Automated Code Review",
+        "authors": "Crupi, Tufano and Bavota",
+        "url": "https://arxiv.org/html/2602.11925v1",
+        "version": "v1, 2026-02-12",
+        "publication_state": "Preprint inspected; manuscript names ICPC 2026 and DOI 10.1145/3794763.3794809, publisher status unchecked."
+      },
+      "provenance": "B4",
+      "date": "2026-10-23",
+      "questions": [
+        "Q3"
+      ],
+      "hypotheses": [
+        "REV-2",
+        "ALT-1",
+        "ALT-6b"
+      ],
+      "scope": "Retrospective review-comment comparison: 447 valid human comments; GPT-4 outputs and manually assessed unmatched suggestions.",
+      "screening_result": "Exact matches covered 45/447; including partial matches 103/447. Additional suggestions require their own quality assessment.",
+      "limits": "Comment overlap/volume does not measure reviewer effort, complete defect detection or net value.",
+      "research_entity": "Universita della Svizzera italiana",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Dataset filtering; RQ1 overlap; RQ2 additional suggestions",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Tests what review functions automation reproduces, rather than assuming substitution.",
+      "remaining_owner": "#93",
+      "diagnostic_assessment": "Overlap challenges complete replacement; additional comments could still be complementary.",
+      "next_distinguishing_observation": "Measure incremental defect detection and reviewer effort, not suggestion counts alone.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D15",
+      "label": "Du: static-analysis filtering",
+      "citation": {
+        "title": "Reducing False Positives in Static Bug Detection with LLMs: An Empirical Study in Industry",
+        "authors": "Du et al.",
+        "url": "https://arxiv.org/html/2601.18844v1",
+        "version": "v1, 2026-01-26",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B5",
+      "date": "2026-10-23",
+      "questions": [
+        "Q3"
+      ],
+      "hypotheses": [
+        "REV-2",
+        "TST-2",
+        "ALT-1",
+        "ALT-6b"
+      ],
+      "scope": "Tencent system; 433 alarms, 328 false/105 true, three bug classes; hybrid filtering versus alternatives.",
+      "screening_result": "High false-alarm reduction offers a concrete substitution candidate; recall must be checked separately by bug type.",
+      "limits": "Inference cost/time is measured differently from interview-reported manual time; no randomized labor savings or lifecycle ROI.",
+      "research_entity": "Fudan University and Tencent",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Tencent employees and company-controlled evaluation system/data.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Dataset; comparison methods; effectiveness; efficiency",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Promising narrow control benefit; full review must preserve missed-bug and cost boundaries.",
+      "remaining_owner": "#93/#94/#99",
+      "diagnostic_assessment": "Candidate evidence for a narrow functional substitute, not whole-node improvement.",
+      "next_distinguishing_observation": "Independent true-positive recall, prospective human effort and operational cost comparison.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D16",
+      "label": "Earlier completion-ranking work",
+      "citation": {
+        "title": "Toward Less Hidden Cost of Code Completion with Acceptance and Ranking Models",
+        "authors": "Li et al.",
+        "url": "https://arxiv.org/abs/2106.13928",
+        "version": "arXiv identifier, June 2021",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B5",
+      "date": "2026-10-23",
+      "questions": [
+        "Q3"
+      ],
+      "hypotheses": [],
+      "scope": "Earlier code-completion acceptance/ranking work.",
+      "screening_result": "Not screened as current generative-AI review evidence.",
+      "limits": "Outside the frozen empirical publication window; no effect assessment performed.",
+      "research_entity": "Authors identified; entity assessment not pursued",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Date/title/abstract",
+      "access_depth": "Date/title/abstract screening only.",
+      "inclusion": "Excluded",
+      "routing": "Reject",
+      "decision_reason": "Out of publication window; not needed as a foundational context lead.",
+      "remaining_owner": "#111",
+      "diagnostic_assessment": "Outside the frozen empirical window; no comparison performed.",
+      "next_distinguishing_observation": "No further work selected.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D17",
+      "label": "Kaufman: explanations as a control",
+      "citation": {
+        "title": "Programmers Are Poor and Overconfident Judges of LLM-Generated Assertions",
+        "authors": "Kaufman, Brun, Murali and Endres",
+        "url": "https://arxiv.org/html/2607.08885v1",
+        "version": "v1, 2026-07-09",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B5",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2",
+        "Q3"
+      ],
+      "hypotheses": [
+        "REV-2",
+        "HUM-1",
+        "ALT-6b"
+      ],
+      "scope": "86 Python programmers plus ten think-aloud participants; correctness judgments under differing generated explanation quality.",
+      "screening_result": "Incorrect assertions were harder to reject; explanations had no significant overall benefit. Underspecified versus faithful comments could impair accuracy.",
+      "limits": "A controlled assertion-judgment task, not full production review or proof that every explanation fails.",
+      "research_entity": "University of Massachusetts Amherst and University of Wisconsin–Madison",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "3; 5; 6.1–6.2; 9",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Direct challenge to a specific proposed comprehension aid.",
+      "remaining_owner": "#93/#94",
+      "diagnostic_assessment": "Challenges a specific explanatory aid; does not establish failure of every review substitute.",
+      "next_distinguishing_observation": "Replicate with realistic code, independent correctness oracles and total reviewer effort.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D18",
+      "label": "Sajadi: query refinement",
+      "citation": {
+        "title": "An Empirical Analysis of CodeQL False Positives and Query Refinements for Java Vulnerabilities",
+        "authors": "Sajadi, Dutta and Chatterjee",
+        "url": "https://arxiv.org/html/2609.04535v1",
+        "version": "v1, 2026-09-03",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "B5",
+      "date": "2026-10-23",
+      "questions": [
+        "Q3"
+      ],
+      "hypotheses": [
+        "TST-2",
+        "ALT-1",
+        "ALT-6b"
+      ],
+      "scope": "Java vulnerability benchmark; manual false-positive analysis and query refinements.",
+      "screening_result": "Refinement reduced false alarms but retained seven of eight observed true positives in the cited comparison.",
+      "limits": "Detection tradeoff and limited true-positive denominator require specialist review; no reviewer-hour comparison.",
+      "research_entity": "Drexel University and Cornell University",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "Benchmark construction; query-refinement evaluation; threats",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Held",
+      "routing": "Hold",
+      "decision_reason": "Potentially useful control comparison, but not ready to infer net assurance benefit.",
+      "remaining_owner": "#94",
+      "diagnostic_assessment": "A cost-quality tradeoff, not unqualified assurance improvement.",
+      "next_distinguishing_observation": "Independent recall/false-negative and human-effort assessment.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D19",
+      "label": "Stray: NAV longitudinal case",
+      "citation": {
+        "title": "Developer Productivity With and Without GitHub Copilot: A Longitudinal Mixed-Methods Case Study",
+        "authors": "Stray et al.",
+        "url": "https://arxiv.org/html/2509.20353v2",
+        "version": "v2, 2026-01-28; v1 2025-09-24",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "F1, D03 reference 54",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1"
+      ],
+      "hypotheses": [
+        "COD-1",
+        "H0-B",
+        "ALT-2",
+        "ALT-3",
+        "ALT-5"
+      ],
+      "scope": "NAV public-sector case; 39 developers, 25 users/14 nonusers, 105 weeks, 26,317 nonmerge commits; interviews.",
+      "screening_result": "No significant commit-count change attributable to adoption; adopters already differed before adoption.",
+      "limits": "No equivalence test or full delivery-capacity endpoint. Consent, activity selection and observational adoption matter.",
+      "research_entity": "University of Oslo / SINTEF; Norwegian Labour and Welfare Administration setting",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "Reuses NAV research context; related surveys/interviews are not independent confirmations.",
+      "locators": "3 methods; 4 results; threats; version history",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Important null/selection contrast to positive throughput studies.",
+      "remaining_owner": "#92/#93",
+      "diagnostic_assessment": "Especially relevant to selection/activity explanations; a null count result does not settle useful productivity.",
+      "next_distinguishing_observation": "Comparable functional delivery, active effort and longer quality/capability endpoints.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D20",
+      "label": "Chen: greater automation",
+      "citation": {
+        "title": "Code with Me or for Me? How Increasing AI Automation Transforms Developer Workflows",
+        "authors": "Chen, Talwalkar, Brennan and Neubig",
+        "url": "https://arxiv.org/html/2507.08149v2",
+        "version": "v2, 2025-09-13; v1 2025-07-10",
+        "publication_state": "Preprint; publisher acceptance not independently established."
+      },
+      "provenance": "F2, D03 reference 12",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1",
+        "Q3"
+      ],
+      "hypotheses": [
+        "COD-1",
+        "ALT-1",
+        "ALT-5",
+        "ALT-6a"
+      ],
+      "scope": "20 university-recruited students, most with professional experience; Copilot versus OpenHands on selected tasks.",
+      "screening_result": "Correct completion 25% versus 60% is a 35-percentage-point difference, not a 35% relative gain; user effort decreased.",
+      "limits": "Agent familiarity, small sample and task setting limit transfer. User effort excludes other roles and lifecycle costs.",
+      "research_entity": "Carnegie Mellon and All Hands AI",
+      "funding": "Unknown in the inspected material; verify during source review.",
+      "conflicts": "OpenHands developer All Hands AI affiliation; tool interest is explicit.",
+      "replication": "No independent direct replication established by this bounded search.",
+      "locators": "3 recruitment/tools; 4 correctness/effort; limitations",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Favorable automation contrast worth preserving, with correct denominator and population.",
+      "remaining_owner": "#92/#99",
+      "diagnostic_assessment": "Favorable bounded functional-substitution candidate; no claim of preserved unmeasured team knowledge.",
+      "next_distinguishing_observation": "Longer production follow-up with waiting, other-role effort and unaided knowledge checks.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D21",
+      "label": "Kazemitabaar: structured novice learning",
+      "citation": {
+        "title": "Studying the effect of AI Code Generators on Supporting Novice Learners in Introductory Programming",
+        "authors": "Kazemitabaar, Chow, Ma, Ericson, Weintrop and Grossman",
+        "url": "https://arxiv.org/html/2302.07427v2",
+        "version": "v2, 2023-02-21",
+        "publication_state": "Inspected arXiv v2 with CHI 2023 bibliographic DOI 10.1145/3544548.3580919; ACM access unavailable."
+      },
+      "provenance": "F4, D04 reference 44",
+      "date": "2026-10-23",
+      "questions": [
+        "Q2"
+      ],
+      "hypotheses": [
+        "HUM-1",
+        "ALT-1",
+        "ALT-5",
+        "ALT-6b"
+      ],
+      "scope": "69 learners aged 10–17; structured Python generation/modification tasks and one-week unaided evaluation.",
+      "screening_result": "Authoring improved; manual modification did not worsen. Slightly better delayed tests were not statistically significant overall.",
+      "limits": "Not equivalence, senior-developer comprehension or team ownership; structured practice is part of the treatment.",
+      "research_entity": "Toronto, Michigan and Maryland universities",
+      "funding": "Acknowledgements inspected; complete funding/role disclosure not established.",
+      "conflicts": "Not established at screening depth.",
+      "replication": "Included in D04; meta-analysis is not independent corroboration.",
+      "locators": "4 procedure/participants; 5.2; 7",
+      "access_depth": "Original HTML: relevant methods/results and context inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Favorable/uncertain delayed result; examine effective practice substitutes rather than assuming universal harm.",
+      "remaining_owner": "#92/#93",
+      "diagnostic_assessment": "Counters universal learning-harm claims in a structured setting; does not establish equivalence or isolate the practice component.",
+      "next_distinguishing_observation": "Compare specific practice substitutes with unchanged AI assistance and test non-author transfer.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D22",
+      "label": "Cui: three field experiments",
+      "citation": {
+        "title": "The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers",
+        "authors": "Cui, Demirer, Jaffe, Musolff, Peng and Salz",
+        "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2025.00535",
+        "version": "Publisher online 2026-02-27; accepted 2025-08-12",
+        "publication_state": "Management Science articles-in-advance; publisher date/status inspected."
+      },
+      "provenance": "F5, D03 reference 13",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1",
+        "Q3"
+      ],
+      "hypotheses": [
+        "H0-A",
+        "ALT-1",
+        "ALT-5",
+        "ALT-6a"
+      ],
+      "scope": "Publisher abstract: randomized access across 4,867 developers in Microsoft, Accenture and another company.",
+      "screening_result": "Pooled task-completion estimate is favorable, but complete methods were not inspected in this search.",
+      "limits": "Abstract-only screening cannot settle estimands, implementation heterogeneity or full cost.",
+      "research_entity": "Princeton, MIT, Wharton and Microsoft researchers",
+      "funding": "MIT Generative AI funding to Demirer and Salz acknowledged.",
+      "conflicts": "Microsoft authors/data and tool-provider role disclosed; registry is postregistered.",
+      "replication": "Overlap of authors with NBER/Peng; editions and three component trials must be mapped, not simply counted.",
+      "locators": "Publisher abstract; dates; funding/registration links",
+      "access_depth": "Publisher abstract, metadata and acknowledgement information; no full-method reading.",
+      "inclusion": "Held",
+      "routing": "Hold",
+      "decision_reason": "Retrieve authoritative full methods before accepting the object for substantive source review.",
+      "remaining_owner": "#92/#99",
+      "diagnostic_assessment": "Favorable abstract lead only; final diagnostic judgment awaits full methods.",
+      "next_distinguishing_observation": "Retrieve authoritative methods and map trials, estimands, uncertainty and dependencies.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    },
+    {
+      "id": "D23",
+      "label": "Linux Foundation: maintainer survey",
+      "citation": {
+        "title": "Navigating Open Source Software Development in the Generative AI Era: Challenges and Opportunities for Project Communities",
+        "authors": "Boysel and Lai",
+        "url": "https://www.linuxfoundation.org/research/oss-development-gen-ai-era-2026?hsLang=en",
+        "version": "October 2026 report; announcement 2026-10-20; DOI 10.70828/BUHS3754",
+        "publication_state": "Institutional research report, not established peer review."
+      },
+      "provenance": "F6, B4 derivative lead traced to publisher",
+      "date": "2026-10-23",
+      "questions": [
+        "Q1",
+        "Q3"
+      ],
+      "hypotheses": [
+        "REV-1",
+        "REV-2",
+        "ALT-1",
+        "ALT-5",
+        "ALT-6a"
+      ],
+      "scope": "Convenience web survey: 234 qualified respondents, April–June 2026; item denominators differ.",
+      "screening_result": "Reported review-time savings coexist with low-quality submission concerns. The 25% headline combines low-quality and/or AI-generated PRs.",
+      "limits": "Retrospective estimates, not observed times or representative PR counts; n=111 for that item, n=96 for time comparisons.",
+      "research_entity": "Linux Foundation Research / Generative AI Commons",
+      "funding": "Red Hat sponsorship; Futurewei, OpenSSF and LF AI & Data support identified.",
+      "conflicts": "Industry/community-sponsored self-selected survey; AI-assisted research drafting/synthesis disclosed.",
+      "replication": "Underlying exact dataset release not resolved; open-data link led to a Zenodo community.",
+      "locators": "PDF pp.10 (Figure2),23 (Figure19),29 (methodology); cover",
+      "access_depth": "Publisher landing/announcement and PDF text; relevant table/method pages visually inspected.",
+      "inclusion": "Included provisionally",
+      "routing": "Accept for Flow A",
+      "decision_reason": "Recent first-party counterpoint; preserve favorable and adverse reports with item denominators.",
+      "remaining_owner": "#93/#99",
+      "diagnostic_assessment": "Self-reported benefits and burdens can coexist; neither directly identifies a bottleneck or a remedy effect.",
+      "next_distinguishing_observation": "Observed comparable review quality/effort, item-level nonresponse and sampled-project follow-up.",
+      "other_comparisons": "No conclusion for other hypotheses or unmeasured outcomes; omitted rival families concern different links or lack an observable comparison in this source."
+    }
+  ]
+}

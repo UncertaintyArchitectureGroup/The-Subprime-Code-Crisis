@@ -22,6 +22,11 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added the #111 bounded discovery packet: frozen questions/strategy, query
+  provenance and limitations, 23 screened candidates and provisional routing.
+  Independent search access is unavailable; no source status, report claim,
+  hypothesis verdict or protocol is changed by the draft.
+
 - Added the #110 comparison of nine accepted source versions against the main
   thesis and relevant alternatives, with a concise synthesis, unchanged scoped
   verdicts and three ranked follow-up questions. Preserved positive, null and

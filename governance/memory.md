@@ -2,44 +2,42 @@
 
 ## Snapshot
 
-- 2026-10-23: PR115 merged at `6769de4ed9183f7c956e6980ba7fd0dce29126d8`,
-  tree `7560a286f3e75a08a0a02a6a6affc0364e7b8876`, identical to accepted166a07f.
-- Actual-main health39964585198 passed. Research, faithful recording and
-  actual-main eligibility are independently Confirmed.
-- Final metadata f75a122 is independently Confirmed in PR116 comment6366810798.
-- #110 remains active for final receipt checks/merge and resulting-main acceptance.
-  This note does not predict its own future merge or issue closure.
+- 2026-10-23: accepted main `9fbf674d58f0dedb10a2bc22bd825699589142be`,
+  tree `2fd3b46a2e4c41009639a1ee97395a5313c1c755`.
+- #110 completed through PR115/116; final-main review Confirmed in PR116
+  comment6368591738. Issue completion6368674498 and #84 checkpoint6368658030.
+- This #111 candidate records primary discovery only; it predicts no merge/closure.
 
 ## Active owners
 
-- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) remains the sole live plan.
-- [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110) owns comparison and final verification.
-- #111, #100 and remaining #88/#1 are queued, not started or selected here.
-- Node studies#89–99, #49 recovery, #54 pilot, #53 acquisition residue and
-  #74 publication retain their separately selected scopes.
+- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) is the sole live plan.
+- [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) is approved and active.
+- #100 and remaining #88/#1 remain queued, not started.
+- #89–99 node studies, #49 recovery, #54 pilot, #53 acquisition and #74 publication
+  retain their existing separately selected scope.
 
 ## Decisions
 
-- Exact proposal6360324854 and approval6361681797 remain controlling.
-- Preserve source versions, findings, favorable/contrary evidence and verdicts.
-- No new search, source, protocol, governance exception or next-issue approval.
-- Prior original checks are reused only where independently assessed adequate;
-  unavailable PDFs are not represented as freshly read.
+- Maintainer selected #111 with «Роби» after #110; start comment6369320604.
+- Flow E: three questions, 18 initial queries, six follow-ups, four review-correction
+  queries allowed, maximum24 new full-text objects. Frozen strategy preserved.
+- No source-state, accepted finding, report/verdict, protocol or governance change.
+- Candidate routes are provisional; no source follow-up starts through this task.
 
 ## Evidence
 
-- Comparison: `report/appendices/mechanism-hypotheses.md#nine-source-comparison`.
-- Research receipt6366174999 and recording receipt6366382582 are on PR115.
-- Actual-main eligibility receipt6366534816 confirms final-state prerequisites.
-- Final owner: `reviews/issue-110-2026-10-23-final-verification.md`.
-- This candidate pairs nine Verified/2026-10-23 restorations with checkpoints;
-  findings/history/versions/uses and all other source rows remain unchanged.
-- NBER September publisher hash matched; the May input was not substituted.
+- [Primary search and limitations](reviews/issue-111-2026-10-23-search.md).
+- [Frozen strategy](reviews/issue-111-2026-10-23-strategy.md).
+- [Query provenance](reviews/issue-111-2026-10-23-queries.json).
+- [23-object candidate register](reviews/issue-111-2026-10-23-candidates.json).
+- Independent preliminary request6369609136/report6369641845 on #111:
+  Review unavailable; external search/original access failed, not an empty result.
+- Batch-level primary provenance does not establish the planned per-query ranking.
 
 ## Next actions
 
-- Check faithful receipt recording and final head; merge and accept actual main.
-- Finish #110 AC evidence and the #84 completion checkpoint only after acceptance.
-- Proposed next#111: bounded capacity/adaptation, shared-understanding/substitution,
-  and full-cost/remedy-value search; separate selection is required.
-- Resume from live issue/PR/check records, not a new nine-source analysis.
+- Complete independent Search Review with successful reruns, omission searches,
+  held/excluded sampling and adjudication of provenance/version limits.
+- Complete checks, corrections, merge/main acceptance and #111 ACs before closure.
+- Do not repeat #110 or ask again to start the already selected #111.
+- After accepted #111, reread #84 and present proposed #100; #88/#1 remains finite.

@@ -62,6 +62,9 @@ On a pull request, Main health executes the validator version proposed by that p
   issue #53's dated findings, source-placement decisions and remediation plan;
   not a replacement for canonical source states.
 
+- [2026-10-23 bounded evidence search](reviews/issue-111-2026-10-23-search.md):
+  issue #111 primary packet and provisional routes; independent Search Review remains unavailable.
+
 ## Navigation
 
 - [Hypothesis evaluation](hypothesis-evaluation.md): full SDLC-node function/outcome
