@@ -1,0 +1,40 @@
+name: Issue 110 independent original-source checks
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+    paths: [.github/workflows/issue-110-source-review.yml]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Collect separate model reports, not original documents
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures,datetime,json,pathlib,urllib.request,hashlib
+          out=pathlib.Path('reports');out.mkdir()
+          root='https://subprime-110-audit-8f31d7.oborskyivitalii.workers.dev/audit-6703c58f95da14b9/'
+          def one(i):
+              sid=f'C{i}';url=root+sid
+              try:
+                  request=urllib.request.Request(url,headers={'User-Agent':'Issue-110-independent-source-inspection'})
+                  with urllib.request.urlopen(request,timeout=240) as response:
+                      body=response.read(); data=json.loads(body)
+                  assert data.get('head')=='b4bd013f359acc511fef3c69ae43cba56fa98f88',data
+                  assert data.get('id')==sid,data
+              except Exception as e:
+                  data={'id':sid,'head':'b4bd013f359acc511fef3c69ae43cba56fa98f88','outcome':'Review unavailable','transport_error':str(e)}
+              (out/(sid+'.json')).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+              print(sid,'report_present',bool(data.get('report')),'error',data.get('error',data.get('transport_error','none')))
+              return sid
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+              list(pool.map(one,range(1,10)))
+          (out/'transport.json').write_text(json.dumps({'date':datetime.datetime.now(datetime.timezone.utc).isoformat(),'head':'b4bd013f359acc511fef3c69ae43cba56fa98f88','model':'@cf/nvidia/nemotron-3-120b-a12b','role':'Separate-model original-source comparison checks; not implementation or whole-PR acceptance','original_documents_exported':False,'reports':[p.name for p in sorted(out.glob('C*.json'))]},indent=2)+'\n')
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue-110-independent-source-reports
+          path: reports/
+          retention-days: 1
