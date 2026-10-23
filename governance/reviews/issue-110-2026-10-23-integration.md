@@ -184,8 +184,9 @@ issue/PR after execution. These local tests do not validate scientific inference
 establish independent review or predict future merge/acceptance.
 
 - Primary analyst/implementer: current ChatGPT session.
-- Separate independent reviewer: **not available**.
-- Independent-review outcome: **Review unavailable**.
+- At initial preparation, no separate reviewer was available. The later Codex
+  review and source-access correction are recorded below; no Confirmed result
+  is claimed.
 - Original reviews: retained for their own previously accepted artifacts only.
 - Required next acceptance: challenge original/version fit, each new comparison,
   omitted alternatives, all-use consistency and the NBER access question; correct
@@ -206,3 +207,41 @@ establish independent review or predict future merge/acceptance.
 
 Resume this same approved #110 candidate; do not repeat the completed analysis,
 create a second hypothesis database, silently replace versions or begin #111.
+
+
+## Separate review and authenticated source-access correction — 2026-10-23
+
+A separate Codex GitHub reviewer inspected head
+`b110235e78294adcd46ba83da14d1b6bf30c5599` and returned
+[one P1 finding](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4358367872):
+the mixed NBER browsing surface and two matching tables do not authenticate the
+whole September source. **Outcome: Corrections required.** The reviewer explicitly
+reported reading the complete diff, C1–C9, nine briefs, registry/reset states,
+manifest, numeric record, retained-use searches, local treatment records and
+governance, and running 126 tests and repository gates. The reviewer also stated
+that external exact originals, live approval receipts and hosted checks were
+unavailable. Therefore this is a real separate review, but not completed
+original-source independent research acceptance. Do not convert it to Confirmed.
+
+**Correction performed:** after local DNS still failed, a temporary isolated,
+read-only GitHub job fetched the publisher and author URLs. Publisher response
+was HTTP 200, application/pdf, 1,437,135 bytes, SHA-256
+`a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711`,
+identical to the already accepted publisher object. The author copy was
+1,633,904 bytes with a different hash; it is not substituted. The
+[machine-readable receipt](issue-110-2026-10-23-nber-access.json) retains the
+actual URL/time/status/length/hash and
+[run 39936630504](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39936630504).
+Only identity metadata was exported; no original PDF was redistributed.
+
+This corrects the access/identity uncertainty without changing the source,
+findings, comparison numbers or approved interpretation. It does not supply a
+second person's inspection of every original result. Repeated independent review
+must examine this correction and explicitly cover remaining original-source and
+live-decision/hosted-check gaps before acceptance. The other eight sources have
+not received a fabricated original-source confirmation. All nine integration
+states remain nonfinal; NBER and the work record now record Corrections required.
+
+Normal PR Main health 39935161585 and Repository Gate 39935161605 passed for
+`b110235`; those results belong to that pre-correction head. The correction must
+receive its own checks. Live issue/PR records own subsequent exact-head receipts.

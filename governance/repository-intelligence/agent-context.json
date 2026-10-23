@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "f28e04ebe6b56396b6a01bf672501977e6ec51468bada76839332ecb69e09a90",
+    "digest": "faf3dc0adcd35cd7caccd84d919cebba0a7008b426dd61e88c397382d93be8d5",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -262,7 +262,7 @@
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "2e7a1a208f2bcb58ea1923660e18b37a623d1904158686411ecaa7290129167d"
+        "sha256": "3d1fb9d8fecf5e65e04bfdb88d44d17c02fc7a7259322d07035f6a14ac574a8b"
       },
       {
         "path": "evidence/primary/README.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "623dd92e8842bea5c8d7b8b947523b020648b2e4a53eab0e63247c2a3f133a13"
+        "sha256": "878f52bd5c383c51a871736c6fc6b8c47ba5c8ea29ea81be569cab424a5bfc99"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -392,7 +392,12 @@
       {
         "path": "governance/reviews/issue-110-2026-10-23-integration.md",
         "identity_mode": "content",
-        "sha256": "1aeb86437a52319be426f186c82cbf93e017c9dd0cd62fb4954fee5c0389a5ed"
+        "sha256": "f21549d53740a2566cd9759bbea8346191596cbfc095440010915e8eea91f2df"
+      },
+      {
+        "path": "governance/reviews/issue-110-2026-10-23-nber-access.json",
+        "identity_mode": "content",
+        "sha256": "2b0d4664cb7e281ff87fa1d2eba9dab4f0643ad379600e24386c5e7606f301bd"
       },
       {
         "path": "governance/reviews/issue-110-2026-10-23-numeric-checks.json",
@@ -772,7 +777,7 @@
       {
         "path": "governance/work-records/2026-10-23-issue-110-source-comparison.toml",
         "identity_mode": "content",
-        "sha256": "c763cf3d8fdfba95ec7b1d0d988782cdb3788ad034273d292ab922f36e2c3460"
+        "sha256": "ba0203ac6a2fee3e998f326a529fd7c4a244649dc5c7cef68c2370e9914e469a"
       },
       {
         "path": "governance/work-records/README.md",
@@ -827,7 +832,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "1f9b9dccfa0c459b01d362fc2e1957f88b26f01ec0027a50e4b0557f4a89cfc6"
+        "sha256": "2531a984540e9b2aabea84ca1c6c0f87bbe234eed999c79598e84aeb55c6ce60"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -2321,6 +2326,13 @@
     {
       "path": "governance/reviews/issue-110-2026-10-23-integration.md",
       "title": "Issue 110: approved comparison integration — primary review record",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-110-2026-10-23-nber-access.json",
+      "title": "governance/reviews/issue-110-2026-10-23-nber-access.json",
       "instructions": [
         "AGENTS.md"
       ]

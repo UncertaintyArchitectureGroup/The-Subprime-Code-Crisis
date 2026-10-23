@@ -3,7 +3,7 @@ source_ids = ["P-2026-01"]
 evidence_review = "Reviewed brief"
 integration_audit = "Needs re-verification"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Corrections required"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md", "evidence/primary/2026-chen-stratton-firm-production.md"]
 +++
 
@@ -18,12 +18,17 @@ uses this same accepted source object. Its findings, version and historical
 reviews below are preserved. Flow D retains **Reviewed brief** and resets
 integration to **Needs re-verification / —** for the changed use.
 
-Independent review of this new comparison is **Review unavailable**; earlier
-Confirmed reviews certify their own accepted uses, not this candidate. The
-[primary integration record](../../governance/reviews/issue-110-2026-10-23-integration.md) identifies the inspected
-surfaces, exact locators and remaining acceptance. No final verification, merge
-or confidence promotion is claimed. This checkpoint supersedes older current-
-state wording only for the new use; it does not erase earlier acceptance.
+The separate Codex review of the new comparison returned **Corrections required**
+for unauthenticated NBER access. The publisher copy was then reacquired and its
+SHA-256 matched the accepted object exactly; the
+[access receipt](../../governance/reviews/issue-110-2026-10-23-nber-access.json)
+records that correction. Full independent original-source inspection and repeated
+acceptance remain pending. Earlier Confirmed reviews certify their own uses,
+not this candidate. The
+[primary integration record](../../governance/reviews/issue-110-2026-10-23-integration.md)
+records the review, correction and remaining acceptance. No final verification,
+merge or confidence promotion is claimed. This checkpoint supersedes older
+current-state wording for the new use, without erasing earlier acceptance.
 
 
 ## Final comparative-use checkpoint — 2026-10-22, #87

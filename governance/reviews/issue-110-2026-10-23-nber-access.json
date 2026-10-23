@@ -1,0 +1,34 @@
+{
+  "purpose": "Resolve exact source identity, not source substitution or research acceptance",
+  "originals_redistributed": false,
+  "results": [
+    {
+      "requested_url": "https://www.nber.org/system/files/working_papers/w35275/w35275.pdf",
+      "retrieved_utc": "2026-10-23T10:05:46.855471+00:00",
+      "expected_accepted_sha256": "a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711",
+      "status": 200,
+      "final_url": "https://www.nber.org/system/files/working_papers/w35275/w35275.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1437135,
+      "sha256": "a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711",
+      "is_pdf": true,
+      "matches_accepted_binary": true
+    },
+    {
+      "requested_url": "https://www.mertdemirer.com/Papers/Demirer_Writing_vs_shipping_code.pdf",
+      "retrieved_utc": "2026-10-23T10:05:48.149992+00:00",
+      "expected_accepted_sha256": "a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711",
+      "status": 200,
+      "final_url": "https://www.mertdemirer.com/Papers/Demirer_Writing_vs_shipping_code.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1633904,
+      "sha256": "2e0cadd6e3d78a0ac2d12085d86d0b6ea0877ef3fb8ede365a2b7f238c2075df",
+      "is_pdf": true,
+      "matches_accepted_binary": false
+    }
+  ],
+  "workflow_run": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/39936630504",
+  "workflow_commit": "585d49514fd4baef086d3215fe7e3b8c25f6cb5f",
+  "independent_review_finding": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4358367872",
+  "disposition": "Publisher binary identity reacquired and matched exactly. This does not establish completion of independent original-source inspection, live-decision checks or final integration acceptance."
+}

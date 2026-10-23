@@ -7,9 +7,10 @@
 - #110 is active. The nine-source analysis and exact T1–T4 treatment were
   presented, and the maintainer replied «Ок роби». This candidate implements it.
 - This file records a draft handoff, not its own future merge. Live #110 and its
-  PR own current head, tests and acceptance; recheck them before resuming.
+  [PR #115](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115)
+  own current head, tests and acceptance; recheck them before resuming.
 - Prior #4/#109 acceptance remains history. Independent research review of the
-  #110 comparison is not available; no accepted-main or Verified claim is made.
+  #110 comparison returned Corrections required; no accepted-main or Verified claim is made.
 
 ## Active owners
 
@@ -37,8 +38,9 @@
 
 - All nine accepted source objects are unchanged; the new material uses require
   Flow D integration re-verification. Candidate brief and registry states match.
-- NBER's inherited exact-version/access question is disclosed in the comparison
-  and audit record; the supplied May PDF does not replace the September edition.
+- NBER publisher PDF reacquired through run 39936630504: exact accepted SHA-256
+  matched. Full independent original inspection remains pending; the May PDF and
+  different author copy do not replace the September edition.
 - Review quality and competent shared ownership remain distinct outcomes.
   Immediate individual learning is not a measurement of long-term team ownership.
 - Main comparison: `report/appendices/mechanism-hypotheses.md#nine-source-comparison`.
@@ -48,7 +50,7 @@
 ## Next actions
 
 - Obtain independent research/integration review of the exact #110 candidate,
-  resolve corrections/access adequacy, rerun required checks and then merge.
+  check the authenticated-source correction, rerun checks and only then merge.
 - Verify actual main before a separate final source-verification update;
   do not restore Verified or close #110 from an unreviewed draft or green CI.
 - Finish #110 AC evidence and reread #84 after accepted-main completion.
