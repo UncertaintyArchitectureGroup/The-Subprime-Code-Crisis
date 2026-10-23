@@ -1,0 +1,27 @@
+name: Issue 110 temporary source snapshot
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    if: github.ref == 'refs/heads/issue-110-workbench-20261023'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: 939dd0805041debd69fde68a8467aa6202c51bc1
+          persist-credentials: false
+      - name: Export tracked baseline only, without git credentials or runner files
+        run: |
+          test "$(git rev-parse HEAD)" = 939dd0805041debd69fde68a8467aa6202c51bc1
+          git archive --format=zip --output=/tmp/issue-110-baseline.zip HEAD
+          sha256sum /tmp/issue-110-baseline.zip
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue-110-baseline
+          path: /tmp/issue-110-baseline.zip
+          retention-days: 1
+          if-no-files-found: error
