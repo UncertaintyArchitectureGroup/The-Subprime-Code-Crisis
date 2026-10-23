@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-23",
+  "baseline": "939dd0805041debd69fde68a8467aa6202c51bc1",
+  "scope": "Arithmetic from printed/accepted inputs only. No regression, raw-data replication, covariance-based difference test or combined productivity score.",
+  "cautions": [
+    "Normal intervals are derived approximations using rounded printed coefficients and standard errors; baseline uncertainty is not included.",
+    "The Shen calculation exposes the existing reporting discrepancy; it is NOT a replacement verified observed effect or a percentage loss of general skill.",
+    "Xu transformations concern log(1+count) contrasts, not hours or productivity rates."
+  ],
+  "checks": {
+    "chen_agent_lines_pct": 29.789078992219785,
+    "chen_agent_commits_pct": 20.239149689991144,
+    "chen_agent_issues_pct": 3.2697547683923704,
+    "chen_agent_issues_normal95_pct": [
+      -5.809264305177112,
+      12.348773841961853
+    ],
+    "chen_merge_elapsed_pct": 49.075391180654336,
+    "chen_merge_elapsed_normal95_days": [
+      0.31400000000000006,
+      6.586
+    ],
+    "nber_sync_releases_normal95_pct": [
+      14.116,
+      25.484
+    ],
+    "peng_completer_time_reduction_pct": 55.76480825408664,
+    "xu_core_reviews_transformed_pct": 6.4813855162576095,
+    "xu_core_reviews_normal95_transformed_pct": [
+      -0.8896192613180864,
+      14.400584247141746
+    ],
+    "shen_reported_points_divided_by_scale_pct": 15.370370370370372
+  },
+  "reproduced_2026_10_23": {
+    "chen_agent_lines_pct": {
+      "source_id": "P-2026-04",
+      "original_locator": "Fig 6A, PDF p39",
+      "formula": "100*1494.39/5016.57",
+      "matches_saved_result": true
+    },
+    "chen_agent_commits_pct": {
+      "source_id": "P-2026-04",
+      "original_locator": "Fig 6C, PDF p39",
+      "formula": "100*4.57/22.58",
+      "matches_saved_result": true
+    },
+    "chen_agent_issues_pct": {
+      "source_id": "P-2026-04",
+      "original_locator": "Fig 7A, PDF p40",
+      "formula": "100*0.12/3.67",
+      "matches_saved_result": true
+    },
+    "chen_agent_issues_normal95_pct": {
+      "source_id": "P-2026-04",
+      "original_locator": "Fig 7A, PDF p40",
+      "formula": "100*(0.12 +/- 1.96*0.17)/3.67",
+      "matches_saved_result": true
+    },
+    "chen_merge_elapsed_pct": {
+      "source_id": "P-2026-04",
+      "original_locator": "Fig 11A, PDF p44",
+      "formula": "100*3.45/7.03",
+      "matches_saved_result": true
+    },
+    "chen_merge_elapsed_normal95_days": {
+      "source_id": "P-2026-04",
+      "original_locator": "Fig 11A, PDF p44",
+      "formula": "3.45 +/- 1.96*1.60",
+      "matches_saved_result": true
+    },
+    "nber_sync_releases_normal95_pct": {
+      "source_id": "P-2026-01",
+      "original_locator": "Accepted September Table 6, PDF p35 / printed p33",
+      "formula": "19.8 +/- 1.96*2.9",
+      "matches_saved_result": true
+    },
+    "peng_completer_time_reduction_pct": {
+      "source_id": "P-2023-01",
+      "original_locator": "Results, Figure 6 paragraph",
+      "formula": "100*(160.89-71.17)/160.89",
+      "matches_saved_result": true
+    },
+    "xu_core_reviews_transformed_pct": {
+      "source_id": "P-2025-03",
+      "original_locator": "Table 11, PDF p29",
+      "formula": "100*(exp(0.0628)-1)",
+      "matches_saved_result": true
+    },
+    "xu_core_reviews_normal95_transformed_pct": {
+      "source_id": "P-2025-03",
+      "original_locator": "Table 11, PDF p29",
+      "formula": "100*(exp(0.0628 +/- 1.96*0.0366)-1)",
+      "matches_saved_result": true
+    },
+    "shen_reported_points_divided_by_scale_pct": {
+      "source_id": "P-2026-05",
+      "original_locator": "Section 5.2.2; discrepancy only, not adopted effect",
+      "formula": "100*4.15/27",
+      "matches_saved_result": true
+    }
+  }
+}

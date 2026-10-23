@@ -1,13 +1,30 @@
 +++
 source_ids = ["P-2023-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-22"
-independent_review = "Confirmed"
+integration_audit = "Needs re-verification"
+last_verified = "—"
+independent_review = "Review unavailable"
 current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2025-metr-experienced-developer-productivity.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Copilot and a standardized programming task
+
+## Comparative-use reset — 2026-10-23, #110
+
+The maintainer [approved T1–T4](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6361681797) after the
+[nine-source comparison and exact treatment proposal](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6360324854).
+The new [comparison C3](../../report/appendices/mechanism-hypotheses.md#comparison-c3)
+uses this same accepted source object. Its findings, version and historical
+reviews below are preserved. Flow D retains **Reviewed brief** and resets
+integration to **Needs re-verification / —** for the changed use.
+
+Independent review of this new comparison is **Review unavailable**; earlier
+Confirmed reviews certify their own accepted uses, not this candidate. The
+[primary integration record](../../governance/reviews/issue-110-2026-10-23-integration.md) identifies the inspected
+surfaces, exact locators and remaining acceptance. No final verification, merge
+or confidence promotion is claimed. This checkpoint supersedes older current-
+state wording only for the new use; it does not erase earlier acceptance.
+
 
 ## Final integration checkpoint — 2026-10-22, #86
 

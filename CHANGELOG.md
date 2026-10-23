@@ -8,6 +8,12 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 
 ### Added
 
+- Added the #110 comparison of nine accepted source versions against the main
+  thesis and relevant alternatives, with a concise synthesis, unchanged scoped
+  verdicts and three ranked follow-up questions. Preserved positive, null and
+  contrary findings, evidence-family dependence and full-outcome gaps. Changed
+  uses follow Flow D; independent acceptance and final verification are pending.
+
 - Added six bounded competing-explanation families to the existing SDLC register,
   with separate net-value and incremental-remedy propositions. Added a shared
   source × hypothesis comparison method and record, including diagnostic evidence,

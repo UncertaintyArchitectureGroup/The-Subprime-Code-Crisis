@@ -31,6 +31,7 @@ The register also asks [what else could explain the results](report/appendices/m
 | Read the argument in order | [1. Evidence and Delivery Outcomes](report/01_the_illusion.md) → [2. Verification and Delivery Mechanisms](report/02_broken_mechanics.md) → [3. Scenarios and Adoption Decisions](report/03_the_aftermath.md) |
 | Examine one part of the delivery process or challenge the thesis | [Hypothesis register](report/appendices/mechanism-hypotheses.md), its [index of delivery activities](report/appendices/mechanism-hypotheses.md#node-index), and [how we evaluate a claim](governance/hypothesis-evaluation.md) |
 | Understand objections and other explanations | [What the ALT questions mean](report/appendices/mechanism-hypotheses.md#competing-explanations) and [how to tell explanations apart](governance/hypothesis-evaluation.md#compare-explanations) |
+| See what the nine core studies support, weaken or leave unanswered | [Source-by-source comparison and three next questions](report/appendices/mechanism-hypotheses.md#nine-source-comparison) |
 | Trace a claim to its source and processing state | [Evidence Library](evidence/README.md), [Source Registry](evidence/SOURCES.md), and [References](REFERENCES.md) |
 | Inspect the economic assumptions and reproduce the illustrative calculation | [Appendices and analytical tools](#appendices-and-analytical-tools) |
 | Apply practical controls | [Operational Protocols](protocols/README.md) |
