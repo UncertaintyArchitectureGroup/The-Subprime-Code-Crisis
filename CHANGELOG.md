@@ -4,6 +4,14 @@ This changelog records selected material changes to the repository's reader-faci
 
 It is not a complete commit ledger. Git history and pull requests remain authoritative for implementation details. [`evidence/SOURCES.md`](evidence/SOURCES.md) remains canonical for source identity and status, and evidence briefs remain canonical for source-oriented review records.
 
+## 2026-10-23 — #110 current review-outcome correction
+
+- Corrected seven current brief outcomes from Review unavailable to Corrections
+  required after actual separate review; retained all dated source-review history.
+- Recorded the reviewer's accepted-source reuse judgment and confirmation of the
+  NBER/Chen corrections. Full correction acceptance and final verification remain
+  pending; findings, source versions, hypothesis verdicts and protocols unchanged.
+
 ## Unreleased
 
 ### Added

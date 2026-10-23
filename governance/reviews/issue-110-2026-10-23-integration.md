@@ -259,3 +259,39 @@ The initial review also contained [P2 4358367881](https://github.com/Uncertainty
 Canonical governance, all hypothesis verdicts, existing report chapters, numeric inputs and protocols remain unchanged. Required synchronization is confined to the two comparisons, this record, the affected source note, memory and RI. The existing PR changelog/work-record scope remains applicable. No new work record is added to the same PR.
 
 Primary checks run for this correction are recorded by the isolated job and subsequent published-head checks; this paragraph does not predeclare their success. Independent acceptance, correction merge, actual-main checks and final verification remain pending. #110 stays active and #111 is not started.
+
+
+## Review-outcome synchronization — 2026-10-23
+
+Separate reviewer `chatgpt-codex-connector[bot]` inspected exact candidate
+`b4bd013f359acc511fef3c69ae43cba56fa98f88` and returned
+[finding 4359943405](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4359943405).
+Its stated scope includes the nine accepted briefs and prior original-source
+checks, C1–C9, synthesis, rival predictions, positive/null/contrary evidence,
+dependence cautions and retained-use trace. The reviewer judged the existing
+accepted source checks adequate for the factual premises reused by C3–C9; it
+identified no additional original passage needed for those comparisons. This is
+a documented reuse judgment, not fresh access to all nine original PDFs. It also
+confirmed that the NBER identity/direct-link and Chen denominator corrections
+resolve the three earlier findings.
+
+**Outcome: Corrections required.** Seven current brief fields and leading notes
+incorrectly retained `Review unavailable` after a reviewer had actually been used.
+That value means no independent reviewer could be used; it is not a synonym for
+incomplete acceptance or corrections. C3–C9 now record the actual outcome in both
+the field and current note. Their dated historical checkpoints, source findings,
+source identities and Current use paths are unchanged. C1/C2 and the existing
+work record already record Corrections required. No Verified state/date is
+restored and no hypothesis verdict changes.
+
+This is a correction within the existing approved Flow D treatment. It changes
+only current review-status reporting and this handoff, not governance or evidence
+interpretation. The comparison, registry integration/date fields, report chapters,
+protocols, bibliography and evidence indexes need no matching edit. RI is rebuilt
+and checked. Changelog decision: Updated; the existing #110 history is extended.
+
+The independent correction loop must still accept the synchronized candidate,
+explicitly dispose of the C5 historical-note concern and state whether the whole
+required comparison/integration scope is Confirmed. The primary implementer does
+not upgrade this bounded review to a full acceptance outcome. Live PR receipts
+own exact published-head checks. Main verification remains a later step.

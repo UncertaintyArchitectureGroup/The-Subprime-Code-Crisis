@@ -3,7 +3,7 @@ source_ids = ["P-2025-03"]
 evidence_review = "Reviewed brief"
 integration_audit = "Needs re-verification"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Corrections required"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
@@ -18,8 +18,14 @@ uses this same accepted source object. Its findings, version and historical
 reviews below are preserved. Flow D retains **Reviewed brief** and resets
 integration to **Needs re-verification / —** for the changed use.
 
-Independent review of this new comparison is **Review unavailable**; earlier
-Confirmed reviews certify their own accepted uses, not this candidate. The
+Independent review of this new comparison is **Corrections required**. The
+[separate review](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4359943405) inspected all nine comparisons, their accepted
+briefs and prior source checks, the synthesis and retained-use trace. It found
+the reused factual premises of C3–C9 adequately covered by accepted original
+checks and required synchronization of the stale review outcomes. This note
+records that review, not final acceptance of this correction. Earlier
+Confirmed reviews retain their dated scope; they do not certify the new
+comparison by themselves. The
 [primary integration record](../../governance/reviews/issue-110-2026-10-23-integration.md) identifies the inspected
 surfaces, exact locators and remaining acceptance. No final verification, merge
 or confidence promotion is claimed. This checkpoint supersedes older current-

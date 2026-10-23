@@ -45,6 +45,9 @@
   Immediate individual learning is not a measurement of long-term team ownership.
 - Main comparison: `report/appendices/mechanism-hypotheses.md#nine-source-comparison`.
 - Audit and handoff: `reviews/issue-110-2026-10-23-integration.md`.
+- Separate review 4359943405 accepts reuse of prior source checks for C3–C9
+  and confirms the NBER/Chen fixes. Seven stale current review outcomes were
+  synchronized to Corrections required; repeat acceptance is still needed.
 - Automated checks and primary self-checks do not supply independent acceptance.
 
 - Follow-up corrections restore C2's per-active-worker-month denominator and

@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "b9d1e40a9aba9069a9a565f84c1bf5cea0ce5bd20bf97b2df89cdce2c712ed27",
+    "digest": "85603e098b14c2caa417c94407be8de2e58a5ea7a575c6d5c34102488e3c06f4",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "118f18e222f0e4cf54b6c4fe4bc7c8f7ea7086484cc6369c8ed91a0365e40e92"
+        "sha256": "29592b33ea5cb145f0d11b71b56640a4551a89dde5c36e8833c39722ad15a68b"
       },
       {
         "path": "CITATION.cff",
@@ -187,7 +187,7 @@
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
-        "sha256": "93cefcf6521705ec6f311c4be798ea4f167667f77ce59d77d195b2972551411e"
+        "sha256": "219a42271ca58944ba5d39fd7784483b0f6130708ac8beb72a7a40c1619b54fb"
       },
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
@@ -227,27 +227,27 @@
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "c7c4ca35dcb0a2145a877e97836d2c83aa9d508725adc5750a2279ee8d69b333"
+        "sha256": "f324a68ae9f41df8b98294cf850c4585248cfd09df384a3f7cb60d1a2ddae75c"
       },
       {
         "path": "evidence/primary/2025-metr-task-horizon.md",
         "identity_mode": "content",
-        "sha256": "4cc636db2f20b72b1e4dae12e66c59e30bc58ad5274adfb1297b57acff667514"
+        "sha256": "3afca7efac65a12fbfc8adfe060bebbb2cfa24462dc78dcb0503379186fe13b5"
       },
       {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
         "identity_mode": "content",
-        "sha256": "b2bd4072361f343ade5808336eb6ad8a99f34b904d4ded00e20ffa4f4fcf26c1"
+        "sha256": "bcec4783e39a591335a43634a9c663524a232357bf75bc7119d5e757da3c06b2"
       },
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "7b0cd6d1bdf30932dcb06d054a7cedf2665172a170350bf05e4c0308110c703f"
+        "sha256": "4a23ad2e2f5b24c7d3aac800ef6a969c48a2b59333d64765022def37781dc6f8"
       },
       {
         "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
         "identity_mode": "content",
-        "sha256": "1c3402358912e1d0fc67b03c0ad50175d8f1d344c0aa75e2683300c088067a9b"
+        "sha256": "8c9286453a805ff0416e4d3b7c667693027d6f384e90070d80d46d5cc9fb3b1d"
       },
       {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
@@ -257,7 +257,7 @@
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "cdb0ea5e8315554acb39715af4496a9c366a53b8c5b787673674197bda0e9e86"
+        "sha256": "40eebdfaac6dca94032ec77e16524b74fb3af54c6ac331fb51bf0acfcbd86a15"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "0fb8b402ee5e4b8c9905f1b38b4bdb079647d875b43fde01430b5faf1cf058ac"
+        "sha256": "6c8cb128298cd65fef558699b4f46bd5d2efa3af0c0b83711f39314792d0f1d6"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/reviews/issue-110-2026-10-23-integration.md",
         "identity_mode": "content",
-        "sha256": "caeab70c047fc8d21fafd77e462a1f8a012a8b6312ee885b2baaf51219f077b3"
+        "sha256": "04f324d8e5c232219c3982f519a02ecbcc01169a1f2561d19cd5a42825b5ff9e"
       },
       {
         "path": "governance/reviews/issue-110-2026-10-23-nber-access.json",
