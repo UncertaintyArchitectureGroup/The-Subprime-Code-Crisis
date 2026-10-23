@@ -1,15 +1,32 @@
 +++
 source_ids = ["P-2026-02"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-23"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Agarwal: agent adoption, activity and code structure
 
-## Comparison acceptance — 2026-10-23, #110
+## Final integration checkpoint — 2026-10-23, #110
+
+Integration is **Verified / 2026-10-23** for accepted correction main
+`6769de4ed9183f7c956e6980ba7fd0dce29126d8`, tree `7560a286f3e75a08a0a02a6a6affc0364e7b8876`,
+merged through [PR #115](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115). Research, faithful-recording and
+[actual-main eligibility](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#issuecomment-6366534816)
+reviews are **Confirmed**; required candidate and main checks passed.
+
+The [final verification record](../../governance/reviews/issue-110-2026-10-23-final-verification.md) identifies the exact accepted
+state and paired status/date completion. Findings, versions, limits and Current
+use are unchanged. This verifies repository use, not a fresh reading of every
+original, a stronger hypothesis verdict or efficacy of a proposed remedy.
+
+This current checkpoint supersedes the dated history below. The final metadata
+PR still has its own review/merge/checks; no future merge, issue closure or
+next-issue authorization is asserted by this checkpoint.
+
+## Comparison acceptance history — 2026-10-23, #110
 
 The [independent acceptance report](../../governance/reviews/issue-110-2026-10-23-independent-acceptance.md)
 confirms the comparison and integration correction at `22c4f589d7d9eb6adfa1b50138dc17e4471acd8f`.

@@ -1,9 +1,10 @@
 # Issue 110: approved comparison integration — primary review record
 
-**Current checkpoint:** independent content/integration review is Confirmed;
-see the final acceptance-recording section below. Merge/main and final source
-verification are not claimed. Earlier preparation/correction stages below are
-historical and retain their original observations.
+**Current checkpoint:** the comparison and its recording are Confirmed and merged
+through PR115 at `6769de4ed9183f7c956e6980ba7fd0dce29126d8`. Actual-main checks and independent eligibility
+are complete. The [final verification record](issue-110-2026-10-23-final-verification.md)
+owns paired source-state completion. Earlier preparation/correction stages below
+are history; no future metadata merge or issue closure is asserted.
 
 **Preparation date:** 23 October 2026. **Initial state (superseded):** implemented
 candidate, not independently accepted or merged, not final source verification.
