@@ -1,13 +1,50 @@
 +++
 source_ids = ["P-2026-02"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-22"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Agarwal: agent adoption, activity and code structure
+
+## Comparison acceptance — 2026-10-23, #110
+
+The [independent acceptance report](../../governance/reviews/issue-110-2026-10-23-independent-acceptance.md)
+confirms the comparison and integration correction at `22c4f589d7d9eb6adfa1b50138dc17e4471acd8f`.
+It states which accepted original-source checks were reused and which fresh
+access attempts were unavailable; it does not claim a fresh reading of every PDF.
+The factual findings, accepted version, uncertainty and Current use are unchanged.
+
+Evidence review remains **Reviewed brief**. Integration remains
+**Needs re-verification / —** until the accepted content is merged and actual-main
+checks pass. Independent review is **Confirmed** for the report’s stated content
+scope, not for a future merge or a final Verified state. The dated notes below
+are history and do not replace this current checkpoint.
+
+## Comparative-use reset history — 2026-10-23, #110
+
+The maintainer [approved T1–T4](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6361681797) after the
+[nine-source comparison and exact treatment proposal](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6360324854).
+The new [comparison C7](../../report/appendices/mechanism-hypotheses.md#comparison-c7)
+uses this same accepted source object. Its findings, version and historical
+reviews below are preserved. Flow D retains **Reviewed brief** and resets
+integration to **Needs re-verification / —** for the changed use.
+
+Independent review of this new comparison is **Corrections required**. The
+[separate review](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4359943405) inspected all nine comparisons, their accepted
+briefs and prior source checks, the synthesis and retained-use trace. It found
+the reused factual premises of C3–C9 adequately covered by accepted original
+checks and required synchronization of the stale review outcomes. This note
+records that review, not final acceptance of this correction. Earlier
+Confirmed reviews retain their dated scope; they do not certify the new
+comparison by themselves. The
+[primary integration record](../../governance/reviews/issue-110-2026-10-23-integration.md) identifies the inspected
+surfaces, exact locators and remaining acceptance. No final verification, merge
+or confidence promotion is claimed. This checkpoint supersedes older current-
+state wording only for the new use; it does not erase earlier acceptance.
+
 
 ## Final integration checkpoint — 2026-10-22, #86
 

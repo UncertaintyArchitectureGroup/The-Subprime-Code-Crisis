@@ -1,0 +1,20 @@
+record_version = 1
+title = "Compare nine accepted sources with the SDLC thesis and relevant alternatives"
+primary_flow = "Flow D — changed use of nine unchanged accepted source objects"
+human_decision = "The maintainer approved the concrete T1–T4 proposal with Ок роби on 2026-10-23. Decision receipt: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6361681797 . The original proposal is https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6360324854 . Preserve current scoped verdicts and source versions; no new search, protocol or governance change."
+independent_review = "Confirmed"
+
+[changelog]
+decision = "Updated"
+reason = "Adds the approved nine-source comparison, concise synthesis, README route and ranked gaps without promoting confidence. Independent content acceptance is recorded; final default-branch verification remains separate."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor obligation changes; current AGENTS and playbooks already govern this source-use comparison."
+doctrine = "Claim classes, comparison meanings and evidence boundaries are retained. No new doctrine or glossary term."
+repository-architecture = "The existing hypothesis register remains the sole research register; the dated review record contains execution evidence, not a second live plan."
+evidence-indexes = "Same nine existing source objects and brief paths; no addition, removal, relocation or publication-state substitution."
+references = "Bibliographic identities and accepted versions unchanged. No new citation or author-priority claim."
+protocols = "No protocol change. Existing controls remain proposed and locally testable; no threshold or efficacy claim is inferred from the comparison."

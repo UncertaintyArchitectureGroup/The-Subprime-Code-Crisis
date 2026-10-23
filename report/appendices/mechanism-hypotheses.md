@@ -714,6 +714,324 @@ The skill-formation source adds immediate individual-learning coverage. It does
 not fill the durable or collective-capability gaps, and its versions, summaries
 and exploratory interaction patterns do not supply independent replications.
 
+<a id="nine-source-comparison"></a>
+
+## What the nine studies tell us — comparison of explanations
+
+**Prepared 23 October 2026 under [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110).**
+This comparison has completed [independent content review](../../governance/reviews/issue-110-2026-10-23-independent-acceptance.md).
+The [integration record](../../governance/reviews/issue-110-2026-10-23-integration.md)
+records the review, corrections and verification history. Source processing states are in the
+[registry](../../evidence/SOURCES.md). The dated hypothesis verdicts above and
+below are unchanged.
+
+### The conclusion in ordinary words
+
+AI assistance can improve coding performance, but the gain is not the same across tasks or across the delivery process. The [NBER](#comparison-c1) and [firm-level](#comparison-c2) studies show larger changes in coding activity than in higher-level output measures. The firm study also reports longer merge delays and changes in review activity, making complementary delivery work an important explanation to test. Changed scope, useful experimentation, selection and adaptation remain relevant. These results do not establish universal overload, negative total value or the effectiveness of one prescribed remedy.
+
+Completing a change and retaining the ability to understand it are also different outcomes. The [skill-formation experiment](#comparison-c9) supports that distinction for an immediate individual assessment; it does not measure long-term team ownership. A useful response must therefore be judged by delivery, quality, demonstrated capability and total cost—not by code volume alone, and not by the amount of manual process retained.
+
+This is our synthesis, not a quotation or a newly measured end-to-end effect.
+The studies compare different outcomes and settings; comparing their point
+estimates is not a statistical test of equal effects. Positive gains and costs
+remain separate instead of being averaged into one score.
+
+**Read one comparison:** [NBER](#comparison-c1) · [Chen–Stratton](#comparison-c2) ·
+[Peng](#comparison-c3) · [METR 2025](#comparison-c4) · [METR update](#comparison-c5) ·
+[Xu](#comparison-c6) · [Agarwal](#comparison-c7) · [METR horizon](#comparison-c8) ·
+[Shen–Tamkin](#comparison-c9).
+
+### Versions and comparison rules
+
+| Source ID | Accepted object reused | Original result locations used | Existing brief under `evidence/primary/` |
+|---|---|---|---|
+| P-2026-01 | NBER WP35275, September 2026 revision | Table 6; §6.2 and Table 7; §6.3; marketplace discussion; Table OA-8 | [Brief](../../evidence/primary/2026-writing-code-vs-shipping-code.md) |
+| P-2026-04 | Chen–Stratton, 4 August 2026 working paper | §§2–3; Figures 6–7, 11–13, physical PDF pp.39–40, 44–46 | [Brief](../../evidence/primary/2026-chen-stratton-firm-production.md) |
+| P-2023-01 | Peng et al., arXiv 2302.06590v1, 13 February 2023 | Study Design; Results around Figure 6; Discussion | [Brief](../../evidence/primary/2023-copilot-task-productivity.md) |
+| P-2025-01 | METR productivity, arXiv 2507.09089v2, 25 July 2025 | §§2–3, Figure 1; Appendix C.3.4/D; interval provenance retained from the accepted brief | [Brief](../../evidence/primary/2025-metr-experienced-developer-productivity.md) |
+| P-2026-03 | METR research update, 24 February 2026 | Opening estimates; study details; participation/task-selection and time-attribution discussion | [Brief](../../evidence/primary/2026-metr-productivity-design-update.md) |
+| P-2025-03 | Xu et al., arXiv 2510.10165v3, 28 January 2026 | §§3.1–3.4; Table 5 p.16; Tables 11–14 p.29 | [Brief](../../evidence/primary/2025-xu-copilot-oss-activity.md) |
+| P-2026-02 | Agarwal et al., arXiv 2601.13597v2, 27 January 2026 | §3; Table 2 p.3; Figure 2/§4 p.4 | [Brief](../../evidence/primary/2026-agarwal-agent-adoption.md) |
+| P-2025-02 | METR task horizon, arXiv 2503.14499v1, 18 March 2025 | §4.2 p.10; §6.4 and Appendix B.2 pp.29–31, especially “Time to score” p.31 | [Brief](../../evidence/primary/2025-metr-task-horizon.md) |
+| P-2026-05 | Shen–Tamkin, arXiv 2601.20245v2, 1 February 2026 | §§4–6; Table 1 p.7; results p.9; Figure 6 p.10 | [Brief](../../evidence/primary/2026-ai-impacts-skill-formation.md) |
+
+The nine entries were Reviewed brief / Verified / 2026-10-22 at the baseline.
+The new material uses follow Flow D; that earlier acceptance does not certify
+this comparison. Exact original locators and the source-specific reporting
+limits remain in the linked briefs. This is a retrospective assessment of known
+studies, not a preregistered test or a new literature search. Questions adopted
+in [#109](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/109) precede this assessment, not the original results. No new effect margin,
+competence floor, adaptation deadline or numerical probability is invented here.
+
+The ALT questions have different roles and may be true together. Missing
+measurement is not preservation or harm; imprecision is not equivalence; a
+study of a different outcome is not a failed test. Full-cost benefit (ALT-6a)
+and a specified remedy's added value (ALT-6b) are judged separately.
+
+<a id="comparison-access"></a>
+
+### Access and original-source limits
+
+**NBER access history and correction.** The accepted brief pins a 134-page publisher PDF with SHA-256 `a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711`. Initial publisher access failed; the author browsing surface mixed September text and matching table images with an older May cover. Independent review correctly required exact reacquisition rather than treating that mixed surface as one authenticated original. On 23 October 2026, a separate GitHub-hosted read-only access check downloaded the publisher PDF successfully: 1,437,135 bytes, with **exactly the accepted SHA-256**. The [access receipt](../../governance/reviews/issue-110-2026-10-23-nber-access.json) records the URL, time, response and hash. The author's copy had a different hash and was not substituted. This establishes publisher-binary identity. The later independent review separately accepted the source-check reuse and corrected comparison; its report distinguishes that assessment from fresh access to the PDF. Neither the May attachment nor the tool mismatch changes the accepted September source. No original PDF is redistributed.
+
+The May PDF supplied with the task is the 97-page May edition, not the accepted September edition. It is not used to replace the September estimates. Existing hashes in the briefs are inherited acquisition records, not newly computed checksums during the comparison preparation. The original source limits and reporting discrepancies already documented in the briefs remain in force.
+
+<a id="comparison-c1"></a>
+
+### C1 — P-2026-01: NBER, coding activity and releases
+
+[Accepted-version source card](../../evidence/primary/2026-writing-code-vs-shipping-code.md) · [Existing coverage](#e-nber)
+
+**Source observation and scope.** Selected developer-week observational panels, with different eligible populations by outcome; matched earlier-year controls for human outcomes and a separate agent-authored design. Table 6's weeks 21–30 pooled-sync estimates are +153.2% commits (SE 2.7) and +19.8% releases (SE 2.9). Table OA-8's common six-outcome sample still has positive releases, +35.0% (SE 6.1), alongside larger upstream gains. These are not active-hour productivity or a fraction of one workload lost between stages. [Accepted publisher original](https://www.nber.org/system/files/working_papers/w35275/w35275.pdf); see the [exact-version access note](#comparison-access).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| H0-A/B: complementary work limits translation beyond coding | Supports unequal changes across observed outcomes; consistent with a complementary constraint. It does not identify a harmful capacity shortfall by itself. | Comparable accepted work, active work required at each function, available capability and resulting delivery/quality over time. |
+| ALT-3: larger outputs or productive selection explain the counts | Relevant, not a generic dismissal. The authors examine scope and experimentation. Experimentation may itself coexist with complementarity; it need not be waste or retained debt. | Track why alternatives are rejected, useful learning, retained functionality and total effort, not only artifact counts. |
+| ALT-1/2: sufficient capability or adaptation retains useful gains | Positive releases are real favorable evidence. The data do not establish preservation of the full quality/ownership inventory or a time-bounded adaptation mechanism. | Follow the same teams, comparable work and observed substitutes, recording tool/process/staff changes. |
+| ALT-4/5: demand or selection changes the interpretation | Demand is relevant to the separate marketplace analysis, not an automatic explanation of a review queue. Selection/calendar/normalization concerns remain relevant to developer estimates. | Linked delivered changes and user outcomes; credible contemporaneous comparisons and sensitivity checks. |
+
+**Coverage and conclusion.** Relevant: H0-A/B, COD-1, REV-1/INTG-1 as mechanisms to test, VAL/ECO at a separate boundary. H0-C, persistent H0-D harm, ALT-6a and a specified ALT-6b/H0-R remedy are not established. No common-cohort conversion ratio or general ROI is inferred. Next: [Q1](#comparison-q1); Review [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93), Integration [#95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95) and User outcomes [#98](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/98).
+
+<a id="comparison-c2"></a>
+
+### C2 — P-2026-04: Chen–Stratton, firm output and review
+
+[Accepted-version source card](../../evidence/primary/2026-chen-stratton-firm-production.md) · [Existing coverage](#e-chen-stratton)
+
+**Source observation and scope.** The source covers 718 selected firms overall; outcome-specific regression firm counts are not reported. The adoption analysis uses firm-month observations. Coding and tracked-completion totals are divided by active Jellyfish workers in each firm-month, not by labor-hours. On this per-active-worker-month basis, agents' pooled coefficients imply about +29.8% added lines, +20.2% commits and an uncertain +3.3% resolved issues; a derived normal interval for resolved issues is roughly −6% to +12%. Submission-to-merge elapsed time rises 3.45 days (SE 1.60) on a 7.03-day baseline. Formal change requests, comments and reviewer participation also rise. Figures 6–7 and 11–13, pp.39–40/44–46. [Original](https://fion.ac/jellyfish.pdf).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| H0-B/REV-1: complementary review work constrains translation | This packet's most direct review-process evidence, beyond a coding/release count gap. The joint pattern makes a review-related explanation worth testing. | Independently measured service demand/capability and mediation between exposure, review effort/waiting and accepted useful completion. |
+| ALT-3: changed work or review standards explain the process | Still possible. More change requests need not mean more defects; comparable PR size would not establish comparable difficulty or correctness. | Task/risk/standard-adjusted completion, handling of never-merged PRs and active effort by role. |
+| ALT-2/1: participation or automation absorbs additional work | More reviewers may be an adaptation, not simply evidence that adaptation failed. Adequate ownership and a settled long-run workflow were not tested. | Within-team trajectories, actual substitutions and all relevant outcomes before/after the adaptation. |
+| ALT-5: adoption selection or pre-existing changes | Material pre-period movement and nonrandom adoption prevent treating all changes as identified AI effects. | Credible timing/assignment checks across review and completion, not just coding. |
+
+**Coverage and conclusion.** The coding estimates and review observations support further investigation; significance of one estimate and nonsignificance of another do not test their difference. ALT-4 is outside these process outcomes. H0-C, persistent H0-D, complete ownership, ALT-6a and the added value of an H0-R remedy remain unanswered. Next: Q1, [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93)/#95. Do not rename elapsed days “reviewer-hours.”
+
+<a id="comparison-c3"></a>
+
+### C3 — P-2023-01: Peng, a standardized coding task
+
+[Accepted-version source card](../../evidence/primary/2023-copilot-task-productivity.md) · [Existing coverage](#e-peng)
+
+**Source observation and scope.** Randomized Copilot access for 95 recruits, 45/50 assigned; the reported time comparison conditions on completion. A fixed JavaScript task passing 12 tests took 55.8% less time with assistance, 95% CI 21–89%. The success-rate contrast was imprecise. These are 2022 tools and a bounded task, not a delivery organization. [Original v1, Study Design and Results/Figure 6](https://arxiv.org/html/2302.06590v1).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| Local-acceleration premise / COD and limited ALT-1 | Positive evidence that assistance can save time on specified coding work. It challenges universal claims that assistance necessarily slows execution. | Repeat under specified realistic contexts, preserving the assigned-task denominator and quality criteria. |
+| ALT-3: apparent gain is merely inflated activity counts | A predefined task/time endpoint is more informative than counting generated lines. Completion conditioning still limits the effect's population. | Completion and time jointly, including withdrawals/failures; later maintainability and independently assessed quality. |
+| ALT-5: context explains differences across studies | Randomization helps the within-study contrast; it does not make this task representative of every developer or repository. | Cross-context comparisons that vary task, familiarity and tool conditions explicitly. |
+
+**Coverage and conclusion.** This study does not compare growth in admitted work with downstream capacity, so it neither confirms nor refutes H0-B. ALT-2 persistence, ALT-4 uptake, H0-C/D and ALT-6a/b are outside the measured scope. Test passage is not complete Review quality or team ownership. Next: Code [#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92); Q1 only as supporting local evidence, not a direct queue test.
+
+<a id="comparison-c4"></a>
+
+### C4 — P-2025-01: METR, familiar repositories in early 2025
+
+[Accepted-version source card](../../evidence/primary/2025-metr-experienced-developer-productivity.md) · [Existing coverage](#e-metr-productivity)
+
+**Source observation and scope.** Issue-level randomized AI permission in familiar mature repositories: 16 developers and 246 analyzed completed issues, February–June 2025. Adjusted task time was about 19% longer; retain the accepted +2% to +39% interval and its documented provenance. Mainly Cursor/Claude 3.5–3.7. Time reporting, completion restrictions, clustering and some imputation remain limitations. [Original v2, §§2–3 and Appendix C/D](https://arxiv.org/html/2507.09089v2).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| Universal local acceleration | Weakened in this setting. This is not evidence that coding accelerated and overloaded a later queue; measured local execution itself took longer. | Distinguish implementation overhead from other people's review/coordination work on the same tasks. |
+| ALT-3/5: task, context or measurement determines the effect | Fixed tasks randomized before execution reduce one task-selection problem. Familiarity, quality requirements and tool vintage remain possible reasons for cross-study differences, not experimentally isolated causes. | Factorial or otherwise credible comparisons of those features, plus assigned-task and time sensitivity checks. |
+| ALT-2: later tools or practice improve the result | Not tested by this historical experiment. A later improvement is possible without invalidating the old estimate. | A comparable follow-up with stable inclusion, accounting for concurrent-agent effort and changes in tools/practice. |
+
+**Coverage and conclusion.** Relevant to H0-A's scope, COD and heterogeneous effects. It does not identify H0-B's increased-flow mechanism, H0-C, durable H0-D or H0-R. ALT-4 is irrelevant to its task-time endpoint. ALT-1 whole-process adequacy and ALT-6a/b remain unmeasured. Next: Q1 and [#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92); pair the historical result with C5, not with a claim about all current tools.
+
+<a id="comparison-c5"></a>
+
+### C5 — P-2026-03: METR follow-up and measurement difficulties
+
+[Accepted-version source card](../../evidence/primary/2026-metr-productivity-design-update.md) · [Existing coverage](#e-metr-update)
+
+**Source observation and scope.** The dated research update describes 57 developers, including 10 returning participants. Later raw task-time estimates are −18% (95% CI −38% to +9%) for returning developers and −4% (−15% to +9%) for new developers. The authors identify participation/task withholding and concurrent-agent time attribution as reasons not to trust these as current general effect sizes. [Original, opening results and study/design discussion](https://metr.org/blog/2026-02-24-uplift-update/).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| ALT-2: adaptation or better tools remove the earlier slowdown | Compatible with the direction of the point estimates, but not established: both precision and selection/measurement are problems. | Comparable sampling and assigned tasks, observed workflow changes and consistent active-time accounting. |
+| ALT-3/5: task composition and observation change the estimate | The update directly documents threats to measurement and selection. It does not quantify how much each explains the observed estimates. | Report recruitment/withholding and re-estimate a justified target population; distinguish agent runtime, elapsed time and human attention. |
+| A permanent slowdown or a proven universal reversal | Neither follows. Failure to obtain a reliable present estimate cannot rescue either sweeping claim. | A design that can measure the target effect credibly. |
+
+**Coverage and conclusion.** This qualifies how C4 is generalized; it is not an independent confirmation of a reversal. H0-B/C/D/R and ALT-1 whole-system preservation are not tested; ALT-4 is outside scope; ALT-6a/b remain unanswered. Next: [#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92) and [Q1](#comparison-q1)'s measurement criteria. Treat selection concerns as more than a confidence interval crossing zero.
+
+<a id="comparison-c6"></a>
+
+### C6 — P-2025-03: Xu, OSS activity and contributor differences
+
+[Accepted-version source card](../../evidence/primary/2025-xu-copilot-oss-activity.md) · [Existing coverage](#e-xu)
+
+**Source observation and scope.** Language-availability difference-in-differences in Microsoft-owned OSS, July 2020–July 2022; actual individual use is unobserved. Table 5 reports positive project activity and more follow-up-commit rework. Appendix p.29 reports top pre-activity-quartile commits about −19.3%, while bottom-quartile commits increase. The top-quartile review-count estimate is +6.5%, with an interval spanning zero (about −0.9% to +14.4%). “Core” means activity rank, not professional seniority. [Original v3, Table 5 and Tables 11–14](https://arxiv.org/pdf/2510.10165v3).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| REV-1/H0-B: review displaces implementation | The activity redistribution is compatible, but the proposed hours-displacement mechanism is not observed. An uncertain review-count change cannot establish it. | Active effort and responsibility by contributor, accepted task output and independent review demand. |
+| ALT-3/5: different work, roles or language trends | Relevant alternatives. Aggregate growth and subgroup declines can coexist without net project deterioration. Availability is not uniform treatment exposure. | Better exposure data, credible language comparisons, role/task-adjusted outcomes and spillover checks. |
+| H0-D/DEBT-1: the extra rework is persistent debt | Not established. Follow-up commits are not a stock of unresolved obligations or a later maintenance-cost observation. | Retained defects/obligations and their subsequent cost, after useful rework and scope are separated. |
+
+**Coverage and conclusion.** Limited adverse proxy evidence coexists with favorable project output. ALT-1 full adequacy, ALT-2 adaptation and ALT-6a/b are unmeasured; ALT-4 is outside scope. Original table/reporting ambiguities remain. Next: [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93), [#97](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/97)/#99; Q1 for measured workload, not a universal senior-engineer penalty.
+
+<a id="comparison-c7"></a>
+
+### C7 — P-2026-02: Agarwal, activity and structure after agent adoption
+
+[Accepted-version source card](../../evidence/primary/2026-agarwal-agent-adoption.md) · [Existing coverage](#e-agarwal)
+
+**Source observation and scope.** Matched repository-month panels from AIDev v3, January 2024–November 2025, separated by observed prior IDE traces. Table 2 reports agent-first commits +36.25% and warnings +17.73%; complexity rises +34.85% in agent-first and +42.87% in IDE-first. The corresponding log-coefficient standard errors are .051 for agent-first commits, .048 for warnings, and .059/.114 for the two complexity estimates (Table 2). Several IDE-first activity/warning estimates are inconclusive. Configuration traces do not establish actual first AI use; some pre-adoption complexity differences remain. [Original v2, §3, Table 2 and Figure 2](https://arxiv.org/pdf/2601.13597v2).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| DES-1/H0-D: structural change leads to maintenance burden | The structural observations justify a maintenance question. They are not measured comprehension, future effort, defects per feature or money-valued debt. | Comparable functional scope, subsequent change/diagnosis tasks, escaped defects and maintenance cost. |
+| ALT-3: output scope or structure explains the metrics | Still plausible. LOC controls do not turn repository aggregates into per-feature measures or establish equivalent functionality. | Functionally matched work and longitudinal outcome measures. |
+| ALT-5: prior exposure, selection and other changes | Important to causal/general interpretation; observable adoption groups are not randomized histories. | Actual use/intensity and credible prior-trend/comparator checks. |
+| ALT-1/6a: useful gains coexist with additional complexity | Positive activity and higher structure metrics coexist. Whether the tradeoff is acceptable or net-positive is unmeasured. | Useful completion and capability floors evaluated alongside all costs. |
+
+**Coverage and conclusion.** H0-B's review mechanism is not measured; H0-C and a tested H0-R/ALT-6b remedy are absent. ALT-2 needs a credible adaptation trajectory; ALT-4 does not explain this structural endpoint. Next: Design [#91](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/91), Operation [#97](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/97) and [Q3](#comparison-q3). Do not use “+39% debt per feature.”
+
+<a id="comparison-c8"></a>
+
+### C8 — P-2025-02: METR horizon and the cost of checking
+
+[Accepted-version source card](../../evidence/primary/2025-metr-task-horizon.md) · [Existing coverage](#e-metr-horizon)
+
+**Source observation and scope.** Historical benchmark v1 fits success against human-baseline task duration, with selected suites, scaffolds and context. The fitted 50% horizon is not time spent by the agent or reviewer. Appendix B.2's small internal-task exercise reports average scoring of 3.5 minutes for maintainers and 8 for contractors; scoring was quicker than completion for each issue. [Original v1, §4.2 and Appendix B.2, p.31](https://arxiv.org/pdf/2503.14499v1).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| Strong claim that checking necessarily takes as long as doing | Weakened by the bounded scoring counterexample. It is not legitimate to turn a task horizon into required review hours. | Measure actual verification across realistic security, fit, maintainability and ownership requirements. |
+| ALT-1: an effective checking mechanism can absorb output | Shows a limited possibility, not preservation of all Review functions. Cheap task scoring and cheap production assurance are different claims. | Broader independent checks, shared understanding and later recovery with total effort recorded. |
+| ALT-3/5: benchmark measurement and context change the meaning | Material. Human time, selected tasks, success scoring and context affect what the horizon represents. | Comparable real work and explicit deployment-quality criteria. |
+
+**Coverage and conclusion.** Supports distinguishing capability progress from delivery assurance. Not a direct H0-B queue experiment; not H0-C or persistent H0-D. ALT-2 team adaptation and ALT-6a full value are unmeasured; ALT-6b remedy and ALT-4 uptake are outside the experiment. Next: [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93)/#94 and Q1/Q3. No current frontier threshold is adopted; internal reporting discrepancies remain disclosed in the accepted brief.
+
+<a id="comparison-c9"></a>
+
+### C9 — P-2026-05: Shen–Tamkin, completion and independent learning
+
+[Accepted-version source card](../../evidence/primary/2026-ai-impacts-skill-formation.md) · [Existing coverage](#e-shen-tamkin)
+
+**Source observation and scope.** One randomized unfamiliar-library session: 52 analyzed participants, GPT-4o chat versus no AI. Immediate unassisted quiz scores are lower with assistance (d=0.738, p=.010). Task-time difference is inconclusive (p=.391); second-task completion is 26/26 with AI versus 22/26 without. The percentage headline has a documented arithmetic discrepancy; no “17% less general skill” is adopted. [Original v2, §§4–6 and Figure 6](https://arxiv.org/pdf/2601.20245v2).
+
+| Explanation and prediction | Comparison with the finding | What would separate the accounts |
+|---|---|---|
+| HUM-1 immediate-learning component / ALT-1 preservation of that outcome | The randomized contrast supports an immediate acquisition tradeoff and challenges automatic preservation of this outcome in this setup. It does not show deterioration of previously held skills. | Delayed independent explanation, diagnosis and modification under the actual assisted workflow. |
+| ALT-2: later practice or other support restores capability | Not tested by an immediate quiz. Neither eventual recovery nor permanent loss is demonstrated. | Follow-up over a predefined period with actual compensating practice observed. |
+| ALT-3/5: engagement, prompting or other contextual differences | Possible explanations of how the effect occurs and where it applies. Exploratory prompting groups do not isolate a causal remedy; randomization still matters for the main comparison. | Independently vary the proposed learning mechanism, with comparable tasks and complete outcomes. |
+| ALT-6a/b: completion benefit justifies cost, or a learning remedy helps | Neither is decided by the quiz. The completion advantage and learning disadvantage must both remain visible. | Test a specified remedy and all relevant costs against the actual baseline, without hiding a critical competence loss. |
+
+**Coverage and conclusion.** Supports the existing scoped HUM-1 assessment, not H0-B's queue mechanism or persistent H0-D/team-ownership loss. Review is adjacent, not an observed team-review intervention. H0-C and ALT-4 are outside scope. Next: [Q2](#comparison-q2); Code [#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92), Review [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93) and later Operation [#97](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/97).
+
+### Why experimentation is not automatically waste
+
+Experimentation and a complementary constraint are not mutually exclusive. The
+NBER authors discuss producing and selecting alternatives within their model.
+Our separate question is whether selection is useful exploration, avoidable
+delay or unresolved work that creates later cost. For example, trying several
+implementations and retaining the best may be useful; discarded alternatives
+do not become technical debt simply because they never shipped. Accepted
+changes without required assurance or competent ownership are a different
+case. Counts alone cannot tell these cases apart.
+
+### Independence and contrasting results
+
+The nine entries do not form nine independent confirmations of one proposition.
+
+| Relationship | How it is handled |
+|---|---|
+| METR early productivity and its follow-up | Same research programme and returning participants. Preserve historical and later results separately; do not count them as independent replications of the same effect. |
+| METR horizon versus METR productivity | Different tasks, designs and outcomes. Being from one organization does not make them the same dataset, but neither do they replicate one delivery claim. |
+| NBER versus Chen–Stratton | Different empirical settings and data sources, useful for cross-setting comparison. A shared broad pattern is not a measured common mechanism or a representative industry prevalence estimate. |
+| Public-OSS studies | No row-level participant/repository overlap audit was performed. Do not assume disjoint underlying populations merely because titles and research teams differ. |
+| NBER and Peng | Shared authorship does not itself mean shared observations. Their different designs should not be pooled into one effect or treated as a causal mediation chain. |
+| Shen–Tamkin main trial, pilots, adjustments and publisher summary | One programme, not multiple independent confirmations of durable capability loss. |
+| Additional papers cited inside these originals | Discovery leads only. They are not silently added to the fixed nine-source packet. |
+
+No meta-analysis, pooled productivity percentage, overall balance score, raw-data replication or model-probability calculation was performed.
+
+Peng and the early METR trial show different effects for different tasks,
+people and tools; they do not isolate seniority as the cause. Later METR point
+estimates do not establish a causal reversal. More activity plus structural
+risk in Agarwal, or more completion plus less immediate learning in Shen–Tamkin,
+are different simultaneous outcomes, not contradictions to average away.
+
+### Current verdicts are retained
+
+The current register already distinguishes bounded observations from the proposed complete mechanism. This comparison explains those positions; it does not assign new confidence labels.
+
+| Claim | Current accepted position | Treatment retained in this candidate |
+|---|---|---|
+| H0-A: uneven change | Provisional support for unequal translation in specified settings; whole-system capacity/cost ratios unmeasured | **Keep.** Explain why coding, completion and release measures differ, including favorable results and task/tool context. Do not promote to a measured industry-wide ratio. |
+| H0-B: complementary constraint | Provisional support for attenuation; Open for identification of the proposed capacity mechanism | **Keep that split.** Describe C2 as more directly relevant to the review process; compare it with scope, standards, selection and adaptation. “Open” for identification does not mean evidence-free or implausible. |
+| H0-C: targets/incentives sustain mismatch | Open | **Keep.** None of these comparisons establishes the claimed decision chain. Retain [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100) ownership. |
+| H0-D: persistent downstream harm | Open for the complete downstream causal claims | **Keep.** Separate structural/rework signals from retained debt, burnout, production incidents and lifecycle cost. Do not join them into one measured progression. |
+| HUM-1: learning/understanding | Provisional support for immediate individual-learning component; durable/shared capability and mechanism/remedy Open | **Keep.** Preserve both completion and quiz outcomes. Do not rename acquisition loss as proven long-term deskilling. |
+| H0-R/BAL-1 and node remedy claims | Open | **Keep.** The packet does not validate a common rebalance package or its extra benefit over actual unchanged AI-assisted practice. |
+| ALT-1–6 families | Open as broad scoped propositions | **Keep broad labels.** Record source-level support, counterexamples, compatibility and missing tests without converting a whole family into a universal winner. |
+
+### Whole-process coverage and gaps
+
+This is a coverage assessment of the selected packet, not a claim that no relevant study exists elsewhere. Intended functions are not evidence of what an actual earlier workflow achieved.
+
+| Part of delivery | What this packet can contribute | What it cannot establish for the whole function |
+|---|---|---|
+| Intent | Experimentation/entry observations suggest questions about selection | Validated need, decision ownership and the value of rejected initiatives |
+| Requirements | Some experiments specify a task in advance | Shared domain meaning, independent acceptance criteria and downstream semantic rework in teams |
+| Design | Structural metrics and work-scope questions | Sound architectural tradeoffs, shared system models and later changeability costs |
+| Code | Task time, counts, completion and immediate individual learning, depending on source | One universal productivity effect or preservation of all implementation/debugging knowledge |
+| Review — quality | Formal change requests, comments, task test/scoring results in different settings | Comprehensive defect/security/fit assurance; formal activity is not defect detection effectiveness |
+| Review — ownership | Individual learning evidence is adjacent and informative | Shared understanding across contributors, knowledgeable acceptance of responsibility, or ability to change/recover without the producer or preferred agent |
+| Test | Task-specific pass criteria and benchmark scoring | Independence of production tests, assurance completeness and semantic failure detection |
+| Integration | Merge latency and some aggregate completion measures are relevant signals | The exact location of cross-component coordination constraints or system-level correctness |
+| Deployment | GitHub releases and tracked completion are partial output measures | Safe exposure, migration integrity, effective rollback and responsibility for release decisions |
+| Operation | Rework/structure motivate future questions | Measured incident/support burden, independent diagnosis/recovery or longitudinal maintenance economics |
+| Realized user outcomes | Separate marketplace engagement proxies | A linked causal path from the studied code changes to user benefit, accessibility or reliable service |
+| Business economics and feedback | Partial input/output changes | Full lifecycle benefits and costs, sustainable return, or better continuation/stop decisions |
+
+Cross-cutting HUM-2/burnout, DEBT-1/persistent obligations and ECO/full economics remain distinct questions. Nothing in this comparison treats missing measurements as either preservation or harm. Potential duplicate costs or shared capability benefits cannot be summed across rows as though independent.
+
+### Three questions for the next search
+
+<a id="comparison-q1"></a>
+
+### Q1. Does additional work actually exceed delivery capability, or is the gap explained by adaptation, scope and selection?
+
+**Priority 1.** H0-A/B; COD-1, REV-1/2, INTG-1/2; ALT-1/2/3/5.
+
+Look for comparable teams/tasks with observed AI exposure, active implementation/review/rework effort, elapsed waiting, quality and accepted useful output. Prefer repeated complete delivery cycles, with later follow-up and recorded tool/staff/process changes. Do not prescribe a universal adaptation deadline after seeing results.
+
+A persistent, independently measured capability shortfall that predicts worse waiting or completion after task/risk adjustment would favor the proposed mechanism. Adequate unchanged practice, or recovery traceable to ordinary adaptation without unacceptable losses, would favor ALT-1/2 in that context. Attenuation disappearing after credible functionality/scope adjustment would favor ALT-3. A count-only panel is adjacent evidence, not a complete answer.
+
+Owners: bounded discovery [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111); continuing Review [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93) and Integration [#95](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/95). No pilot collection is authorized.
+
+<a id="comparison-q2"></a>
+
+### Q2. Is independent and shared understanding preserved over time, and which substitute actually helps?
+
+**Priority 2.** HUM-1; COD/REV/OPS outcomes; ALT-1/2/5 and separately ALT-6b.
+
+Look for delayed unassisted explanation, diagnosis, modification and recovery tasks, including contributors other than the original author. Separate new skill acquisition, retention of prior skill, system familiarity and distribution of knowledge. A study can answer one of these without answering all of them.
+
+Preservation within a justified competence margin under the actual assisted workflow would weaken a local capability-loss claim. A sustained deficit under measured displaced practice would support it. A specific explanation-oriented, mentoring, review or other intervention requires its own comparison against unchanged assisted practice, counting all learning/review costs. Observational prompting groups and immediate self-report are insufficient substitutes.
+
+Owners: [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) discovery; Code [#92](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/92), Review [#93](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/93), Operation [#97](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/97). No specific manual intervention is presumed effective.
+
+<a id="comparison-q3"></a>
+
+### Q3. Are the gains worthwhile after all costs, and does a proposed extra control improve that result?
+
+**Priority 3.** ECO-1/2, H0-D/R, BAL-1, VAL; ALT-6a/6b, with ALT-3/4/5 where relevant.
+
+Look for observed useful outcomes or equivalent reliable service, total role-hours/tooling/coordination costs, later maintenance and capability/quality floors. Keep an adoption-versus-baseline comparison separate from a remedy-versus-unchanged-AI-workflow comparison. Count a cost or benefit once.
+
+Positive total value with additional review burden supports ALT-6a without disproving the burden. A sufficiently beneficial specified remedy would weaken ALT-6b; an unnecessary or costly remedy would weaken the corresponding H0-R claim. Flat usage alone cannot decide value, and short-run cost savings cannot establish lifecycle return.
+
+Owners: [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) discovery; Economics [#99](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/99) and User outcomes [#98](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/98). Marketing claims and actual adoption decisions remain [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100).
+
+**Search boundary proposal.** These are three questions, not eleven new literature reviews. At [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111)'s approved start, fix channels, query families, date/language windows, screening depth and a stopping rule before screening. Explicitly seek successful unchanged practice, failed remedies, precise nulls and counterevidence as well as bottleneck findings. Retain unresolved questions after the bounded search; they are not an indefinite publication gate. The comparison preparation revisited only the selected originals; the new search under [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) has not started.
+
 ## Node index
 
 | Function / hypotheses | Key contribution beyond the artifact | Research owner |

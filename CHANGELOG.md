@@ -4,9 +4,29 @@ This changelog records selected material changes to the repository's reader-faci
 
 It is not a complete commit ledger. Git history and pull requests remain authoritative for implementation details. [`evidence/SOURCES.md`](evidence/SOURCES.md) remains canonical for source identity and status, and evidence briefs remain canonical for source-oriented review records.
 
+## 2026-10-23 — #110 independent comparison acceptance
+
+- Recorded the separate reviewer’s full acceptance and source-access boundaries.
+- Synchronized current independent-review outcomes; retained source histories,
+  unchanged findings and nonfinal integration states pending merge/main checks.
+
+## 2026-10-23 — #110 current review-outcome correction
+
+- Corrected seven current brief outcomes from Review unavailable to Corrections
+  required after actual separate review; retained all dated source-review history.
+- Recorded the reviewer's accepted-source reuse judgment and confirmation of the
+  NBER/Chen corrections. Full correction acceptance and final verification remain
+  pending; findings, source versions, hypothesis verdicts and protocols unchanged.
+
 ## Unreleased
 
 ### Added
+
+- Added the #110 comparison of nine accepted source versions against the main
+  thesis and relevant alternatives, with a concise synthesis, unchanged scoped
+  verdicts and three ranked follow-up questions. Preserved positive, null and
+  contrary findings, evidence-family dependence and full-outcome gaps. Changed
+  uses follow Flow D; independent acceptance and final verification are pending.
 
 - Added six bounded competing-explanation families to the existing SDLC register,
   with separate net-value and incremental-remedy propositions. Added a shared

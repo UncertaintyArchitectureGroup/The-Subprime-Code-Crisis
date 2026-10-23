@@ -1,13 +1,47 @@
 +++
 source_ids = ["P-2026-04"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-22"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Chen–Stratton: AI adoption and firm software production
+
+## Comparison acceptance — 2026-10-23, #110
+
+The [independent acceptance report](../../governance/reviews/issue-110-2026-10-23-independent-acceptance.md)
+confirms the comparison and integration correction at `22c4f589d7d9eb6adfa1b50138dc17e4471acd8f`.
+It states which accepted original-source checks were reused and which fresh
+access attempts were unavailable; it does not claim a fresh reading of every PDF.
+The factual findings, accepted version, uncertainty and Current use are unchanged.
+
+Evidence review remains **Reviewed brief**. Integration remains
+**Needs re-verification / —** until the accepted content is merged and actual-main
+checks pass. Independent review is **Confirmed** for the report’s stated content
+scope, not for a future merge or a final Verified state. The dated notes below
+are history and do not replace this current checkpoint.
+
+## Comparative-use reset history — 2026-10-23, #110
+
+The maintainer [approved T1–T4](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6361681797) after the
+[nine-source comparison and exact treatment proposal](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6360324854).
+The new [comparison C2](../../report/appendices/mechanism-hypotheses.md#comparison-c2)
+uses this same accepted source object. Its findings, version and historical
+reviews below are preserved. Flow D retains **Reviewed brief** and resets
+integration to **Needs re-verification / —** for the changed use.
+
+Independent review of this new comparison returned **Corrections required**.
+The correction distinguishes total firm coverage from the unknown regression
+firm counts and restores the per-active-worker-month denominator. Repeated
+independent acceptance remains pending; earlier Confirmed reviews certify their
+own accepted uses, not this candidate. The
+[primary integration record](../../governance/reviews/issue-110-2026-10-23-integration.md) identifies the inspected
+surfaces, exact locators and remaining acceptance. No final verification, merge
+or confidence promotion is claimed. This checkpoint supersedes older current-
+state wording only for the new use; it does not erase earlier acceptance.
+
 
 ## Final integration checkpoint — 2026-10-22, #87
 

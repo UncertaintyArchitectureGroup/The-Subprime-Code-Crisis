@@ -1,0 +1,136 @@
+{
+  "base": "939dd0805041debd69fde68a8467aa6202c51bc1",
+  "base_tree": "b607f5dde5de2ba61bdc6662f901a3a1a6976401",
+  "approval": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6361681797",
+  "primary_review": "Review unavailable is independent-review status; this is primary implementation only",
+  "sources": [
+    {
+      "id": "P-2026-01",
+      "comparison": "C1",
+      "brief": "evidence/primary/2026-writing-code-vs-shipping-code.md",
+      "baseline_sha256": "15a0792ffabc652ebdcc52eff4adc9106b29362c8cc3941524fdc2a7f90a71ba",
+      "original_locators": "Table 6 (PDF p35 / printed p33), section 6.2/Table 7, section 6.3 and Table OA8 (PDF p129 / OA-74); separate marketplace sections",
+      "current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "REFERENCES.md",
+        "report/appendices/mechanism-hypotheses.md",
+        "evidence/primary/2026-chen-stratton-firm-production.md"
+      ]
+    },
+    {
+      "id": "P-2026-04",
+      "comparison": "C2",
+      "brief": "evidence/primary/2026-chen-stratton-firm-production.md",
+      "baseline_sha256": "8e2af35feeda06ba31eca97e4285951a515f557b6204ecf33acfab1dd217afcb",
+      "original_locators": "Sections 2–3; Figures 6–7 (PDF pp39–40) and 11–13 (pp44–46)",
+      "current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/02_broken_mechanics.md",
+        "report/appendices/mechanism-hypotheses.md",
+        "REFERENCES.md"
+      ]
+    },
+    {
+      "id": "P-2023-01",
+      "comparison": "C3",
+      "brief": "evidence/primary/2023-copilot-task-productivity.md",
+      "baseline_sha256": "ff0d00a518926c181ae042e568a2181cb8cf41dc66d9e7777bf588e915901d77",
+      "original_locators": "Study Design; Results/Figure 6; Table 1; Discussion",
+      "current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md",
+        "evidence/primary/2025-metr-experienced-developer-productivity.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2025-01",
+      "comparison": "C4",
+      "brief": "evidence/primary/2025-metr-experienced-developer-productivity.md",
+      "baseline_sha256": "3e6614f21254913be01500e06b03c531c4cf4906b06f50861faa8a0526621dbb",
+      "original_locators": "Sections 2–3/Figure 1; Appendices C.3.3–C.3.4/D; accepted brief interval provenance",
+      "current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md",
+        "evidence/primary/2023-copilot-task-productivity.md",
+        "evidence/primary/2026-metr-productivity-design-update.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2026-03",
+      "comparison": "C5",
+      "brief": "evidence/primary/2026-metr-productivity-design-update.md",
+      "baseline_sha256": "457dba78a4dd7a873673a04b00f9e290dba4b4e44358a8ac588afabd86563468",
+      "original_locators": "Opening results; Details of the productivity study; participation, task selection and concurrent-agent time discussion",
+      "current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "report/03_the_aftermath.md",
+        "REFERENCES.md",
+        "evidence/primary/2025-metr-experienced-developer-productivity.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2025-03",
+      "comparison": "C6",
+      "brief": "evidence/primary/2025-xu-copilot-oss-activity.md",
+      "baseline_sha256": "05b0c89f6fc2e77141b868c70a9ede7f5ad4c6f971014087bf36c6935eea8612",
+      "original_locators": "Sections 3.1–3.4; Table 5 (PDF p16); Tables 11–14 (p29)",
+      "current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "REFERENCES.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2026-02",
+      "comparison": "C7",
+      "brief": "evidence/primary/2026-agarwal-agent-adoption.md",
+      "baseline_sha256": "fc57ece23a64291dd39756308ade71a3d16db5b150863e1e13a3ec058106edb7",
+      "original_locators": "Section 3; Table 2 (PDF p3); Figure 2/section 4 (p4)",
+      "current_use": [
+        "README.md",
+        "report/01_the_illusion.md",
+        "REFERENCES.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2025-02",
+      "comparison": "C8",
+      "brief": "evidence/primary/2025-metr-task-horizon.md",
+      "baseline_sha256": "3610a769fd641f047daeb912fa37699cd4ca8c6eb99300a82a43153d5246f69d",
+      "original_locators": "Section 4.2 (PDF p10); section 6.4 and Appendix B.2 (pp29–31), Time to score (p31)",
+      "current_use": [
+        "README.md",
+        "report/02_broken_mechanics.md",
+        "REFERENCES.md",
+        "report/appendices/mechanism-hypotheses.md"
+      ]
+    },
+    {
+      "id": "P-2026-05",
+      "comparison": "C9",
+      "brief": "evidence/primary/2026-ai-impacts-skill-formation.md",
+      "baseline_sha256": "4abeede4686381feacde331eed742e196ad7dfd2a3560376dda6b49a7ccb0076",
+      "original_locators": "Sections 4–6; Table 1 (PDF p7); section 5.2.2 (p9); Figure 6 (p10)",
+      "current_use": [
+        "README.md",
+        "report/02_broken_mechanics.md",
+        "report/appendices/mechanism-hypotheses.md",
+        "REFERENCES.md"
+      ]
+    }
+  ],
+  "note": "Primary baseline/current-use manifest; not an independent review or original-PDF checksum."
+}
