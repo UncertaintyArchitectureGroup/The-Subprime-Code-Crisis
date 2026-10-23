@@ -4,7 +4,8 @@
 
 - 2026-10-23: #110 is completed through PR115/116; accepted main is `9fbf674d58f0dedb10a2bc22bd825699589142be`.
 - Active #111/PR117: the 18-query trace correction was published at `49dbfe5`.
-- A completed independent search review returned Corrections required. The current correction addresses its original four findings and the repeat-review D48 mapping finding; repeat acceptance is pending.
+- Separate independent Search Review is Confirmed for corrected head `babeb8d51a129142a4eb5aba148a1ce646bd47be`, tree `26c8d7af689e263905bd07054624c6af0a59f52c`; receipt6373238690.
+- This recording does not claim future merge, main verification or issue closure.
 - Actual head/check/review/merge facts must be fetched from the live PR, not inferred from this dated note.
 
 ## Active owners
@@ -30,6 +31,6 @@
 
 ## Next actions
 
-- Verify the published correction, then obtain separate independent correction acceptance; do not treat implementation as self-approval.
+- Verify faithful recording and exact-head checks; completed search acceptance is not repeated or self-issued.
 - Only after acceptance: merge PR117, inspect actual main, complete #111 ACs and reread/update #84.
 - No fresh 18-query campaign, no repeated #110 review and no automatic source integration.

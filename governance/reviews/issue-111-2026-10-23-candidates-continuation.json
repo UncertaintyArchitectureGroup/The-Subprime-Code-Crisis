@@ -1,7 +1,7 @@
 {
   "date": "2026-10-23",
   "purpose": "Continuation of the same #111 Candidate Register following the dated corrective rerun; D01–D23 remain unchanged in the original register.",
-  "status": "Corrections required from completed independent review; targeted fixes recorded, repeat independent acceptance pending",
+  "status": "Independent Search Review Confirmed for the corrected bounded discovery packet at babeb8d51a129142a4eb5aba148a1ce646bd47be; routes remain provisional for later source review, not accepted evidence.",
   "prior_register": "issue-111-2026-10-23-candidates.json",
   "criteria": "Unchanged frozen strategy; metadata-only unresolved leads held; no new source accepted or hypothesis verdict assigned.",
   "registered_anchors": {
@@ -1186,6 +1186,7 @@
     "date": "2026-10-23",
     "review": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817",
     "scope": "Four published findings only; no new topic search or full-text screen; original D01-D23 and frozen query records preserved.",
-    "additional_mapping_finding": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4363491743"
+    "additional_mapping_finding": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4363491743",
+    "acceptance_receipt": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#issuecomment-6373238690"
   }
 }

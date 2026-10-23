@@ -1,6 +1,6 @@
 # Issue 111 — Search-record correction
 
-**23 October 2026. Independent review returned Corrections required. Targeted fixes below await repeat acceptance.**
+**23 October 2026. Independent Search Review: Confirmed. Earlier correction checkpoints below are history; the final acceptance record is at the end.**
 
 The original search found useful papers, but its grouped output did not show
 which hits came from each individual query. This correction repeats the same
@@ -134,3 +134,15 @@ The coordinator's [identity/access check](https://github.com/UncertaintyArchitec
 The [repeat independent review](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4363491743) found one remaining mapping mismatch: D48's reason named Q2/Q3 while its structured fields named only Q3. The coordinator inspected the [arXiv v1 abstract](https://arxiv.org/abs/2604.23251v1) and aligned its question/hypothesis/owner fields with that bounded relevance. Engagement and qualitative learning-process observations are adjacent leads, not demonstrated retained understanding. D48 remains Hold. No new full-text screen, topic query or candidate was added.
 
 The governance navigation no longer embeds an obsolete unavailable status; it points to this current record. The earlier search entry is explicitly headed as historical, removing conflicting current labels without changing the initial evidence records. Current outcome remains **Corrections required** until a separate review accepts this correction. Totals remain 53 candidates, 14 proposed Flow A / 17 Hold / 15 Context only / 7 Reject, and 24 primary full-text/passage screens.
+
+## Independent acceptance — 23 October 2026
+
+**Flow E outcome: Confirmed.** Separate reviewer `chatgpt-codex-connector[bot]` returned the [complete public acceptance note](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#issuecomment-6373238690) for exact head `babeb8d51a129142a4eb5aba148a1ce646bd47be`, tree `26c8d7af689e263905bd07054624c6af0a59f52c`, against main `9fbf674d58f0dedb10a2bc22bd825699589142be`. Primary searcher and correction author: ChatGPT coordinator; the acceptance reviewer did not author the published corrections. No new human decision or material defect remained.
+
+The reviewer checked the complete original/corrected packet, all five finding dispositions, 53 unique candidates and routes, 24 full-text/passage screens, the 18-query ledger (149 displayed hits, 108 distinct URLs, five-lead limit), version/access boundaries, preservation, navigation, handoff and RI. It ran 126 tests, contract, state integrity, fresh RI, trusted full-PR Repository Gate and transition checks; all passed.
+
+It reused the completed representative-query, four omission-family, original/reference and held/excluded checks in reviews r4362922817/r4363491743 only in their real scope. Its new D48 URL attempt returned no page through the web opener and HTTP403 through direct access. It did not claim a fresh original reading, raw replication or successful native database access. The coordinator's D48 abstract check and historical successful independent searches remain separately attributed.
+
+D52/D53 and current editions D38/D42 remain Hold with later owners; D48 remains an adjacent learning-process/control lead, not demonstrated retention or net value. These explicit later source tasks do not prevent acceptance of the finite search. No source state, report claim, hypothesis verdict or protocol changed.
+
+This short receipt records the actual outcome, not a new scientific assessment. Candidate records and the frozen history are otherwise unchanged. It does not assert a future merge, final-main acceptance, #111 closure or #100 selection. Final recording checks and the actual post-merge/issue records belong in the live PR and issues; no recursive receipt-only PR is required.
