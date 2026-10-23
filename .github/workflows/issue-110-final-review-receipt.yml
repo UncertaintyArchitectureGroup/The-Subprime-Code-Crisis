@@ -1,0 +1,115 @@
+name: Issue 110 final metadata review receipt
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+    paths: [.github/workflows/issue-110-final-review-receipt.yml]
+permissions:
+  contents: write
+  issues: read
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: 6769de4ed9183f7c956e6980ba7fd0dce29126d8
+          path: trusted
+          persist-credentials: false
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: issue-110-final-verification
+          path: candidate
+          fetch-depth: 0
+      - name: Record real review without expanding its scope
+        working-directory: candidate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = f75a122412a7f3b5084323aa70e56241c899d038
+          python3 - <<'PY'
+          from pathlib import Path
+          import os,json,urllib.request,hashlib
+          url='https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/comments/6366810798'
+          req=urllib.request.Request(url,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+          with urllib.request.urlopen(req,timeout=30) as r:receipt=json.load(r)
+          assert receipt['user']['login']=='chatgpt-codex-connector[bot]'
+          assert 'f75a122412a7f3b5084323aa70e56241c899d038' in receipt['body'] and '**Outcome: Confirmed.**' in receipt['body']
+          p=Path('governance/work-records/2026-10-23-issue-110-final-verification.toml');s=p.read_text()
+          old='independent_review = "Review unavailable"\n# New metadata delta awaits review; underlying source-use/main eligibility is Confirmed.'
+          new='independent_review = "Confirmed"\n# Actual metadata review: PR116 comment6366810798, exact f75a122; final merge/main checks remain separate.'
+          assert s.count(old)==1;p.write_text(s.replace(old,new,1))
+          p=Path('governance/reviews/issue-110-2026-10-23-final-verification.md');s=p.read_text()
+          assert '## Metadata review receipt' not in s
+          s+='''
+
+          ## Metadata review receipt — 2026-10-23
+
+          Separate reviewer `chatgpt-codex-connector[bot]` returned **Confirmed** for
+          `f75a122412a7f3b5084323aa70e56241c899d038`, tree
+          `64fe60a37d7ffe6c9564d984c99efb876ab35249`, in
+          [the complete public audit](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/116#issuecomment-6366810798).
+          The report independently checks the full metadata delta, nine paired restores,
+          preserved source facts/versions/uses/history and all 26 other registry rows,
+          unchanged reader/research/governance surfaces, exactly one new work record,
+          current handoff and RI, and absence of future-merge/closure claims.
+
+          It reports 126 tests, contract, state integrity, RI, repository/transition gates
+          and preservation checks passed; 167 changed-file relative Markdown links
+          resolve. No correction or missing material prerequisite was found. Direct
+          hosted API/comment rendering was unavailable to that reviewer; it inspected
+          the recorded receipt identities/boundaries and repository acceptance record,
+          then reran equivalent local checks. It did not perform a fresh paper review.
+
+          The new work record now records that actual outcome, replacing the initial
+          pending-review value. This append and the handoff are faithful receipt recording,
+          not an extension of the accepted scope. Source states and all research content
+          are unchanged by this recording delta. The original preparation wording above
+          remains dated history. Final exact-head checks, merge, resulting-main acceptance
+          and issue/plan completion remain separate actions recorded in the live PR.
+          '''
+          p.write_text(s)
+          p=Path('governance/memory.md');s=p.read_text()
+          old='- #110 remains active for final metadata review/merge and resulting-main checks.'
+          new='- Final metadata f75a122 is independently Confirmed in PR116 comment6366810798.\n- #110 remains active for final receipt checks/merge and resulting-main acceptance.'
+          assert s.count(old)==1;s=s.replace(old,new,1)
+          old='- Independently review/check this final metadata candidate, merge and check main.'
+          new='- Check faithful receipt recording and final head; merge and accept actual main.'
+          assert s.count(old)==1;p.write_text(s.replace(old,new,1))
+          PY
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
+          git diff --check
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 -m tools.repository_validator
+          python3 -m tools.evidence_state_check
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
+          python3 - <<'PY'
+          import subprocess
+          actual=set(subprocess.check_output(['git','diff','--name-only']).decode().splitlines())
+          allowed={'governance/work-records/2026-10-23-issue-110-final-verification.toml','governance/reviews/issue-110-2026-10-23-final-verification.md','governance/memory.md','governance/repository-intelligence/agent-context.json'}
+          assert actual==allowed,(actual,allowed)
+          PY
+          git config user.name 'ChatGPT implementation agent'
+          git config user.email 'noreply@openai.com'
+          git add governance
+          git commit -m 'Record independent acceptance of final verification metadata' -m 'Refs #110. Faithful receipt only; no source facts, states or conclusions changed.'
+      - name: Trusted gates and guarded branch update
+        run: |
+          set -euo pipefail
+          BASE=6769de4ed9183f7c956e6980ba7fd0dce29126d8
+          HEAD=$(git -C candidate rev-parse HEAD)
+          python3 trusted/tools/repository_gate.py --policy-root trusted --candidate-root candidate --repo candidate --base "$BASE" --head "$HEAD"
+          PYTHONPATH=trusted python3 trusted/tools/evidence_state_check.py --policy-root trusted --candidate-root candidate
+          PYTHONPATH=trusted python3 trusted/tools/evidence_transition_gate.py --policy-root trusted --candidate-root candidate --repo candidate --base "$BASE"
+          test "$(git -C candidate ls-remote origin refs/heads/main | cut -f1)" = "$BASE"
+          test "$(git -C candidate ls-remote origin refs/heads/issue-110-final-verification | cut -f1)" = f75a122412a7f3b5084323aa70e56241c899d038
+          git -C candidate push origin HEAD:refs/heads/issue-110-final-verification
+          mkdir -p output
+          git -C candidate rev-parse HEAD HEAD^{tree} > output/receipt.txt
+          git -C candidate archive --format=zip --output="$GITHUB_WORKSPACE/output/candidate.zip" HEAD
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue-110-final-recorded-candidate
+          path: output
+          retention-days: 1
