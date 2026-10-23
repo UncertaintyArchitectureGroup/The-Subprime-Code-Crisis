@@ -3,7 +3,7 @@ source_ids = ["P-2026-04"]
 evidence_review = "Reviewed brief"
 integration_audit = "Needs re-verification"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Corrections required"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
@@ -18,8 +18,11 @@ uses this same accepted source object. Its findings, version and historical
 reviews below are preserved. Flow D retains **Reviewed brief** and resets
 integration to **Needs re-verification / —** for the changed use.
 
-Independent review of this new comparison is **Review unavailable**; earlier
-Confirmed reviews certify their own accepted uses, not this candidate. The
+Independent review of this new comparison returned **Corrections required**.
+The correction distinguishes total firm coverage from the unknown regression
+firm counts and restores the per-active-worker-month denominator. Repeated
+independent acceptance remains pending; earlier Confirmed reviews certify their
+own accepted uses, not this candidate. The
 [primary integration record](../../governance/reviews/issue-110-2026-10-23-integration.md) identifies the inspected
 surfaces, exact locators and remaining acceptance. No final verification, merge
 or confidence promotion is claimed. This checkpoint supersedes older current-

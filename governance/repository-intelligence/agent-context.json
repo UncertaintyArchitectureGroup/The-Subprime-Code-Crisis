@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "faf3dc0adcd35cd7caccd84d919cebba0a7008b426dd61e88c397382d93be8d5",
+    "digest": "b9d1e40a9aba9069a9a565f84c1bf5cea0ce5bd20bf97b2df89cdce2c712ed27",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -252,7 +252,7 @@
       {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
-        "sha256": "ed11e264fd3c6dda986345e061cc70353a895f5457ae547ac33e28c6c3ef4091"
+        "sha256": "c5353fb245842ca85816d500ddc2289cbd63868e8c634c64818b0a8728d71410"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "878f52bd5c383c51a871736c6fc6b8c47ba5c8ea29ea81be569cab424a5bfc99"
+        "sha256": "0fb8b402ee5e4b8c9905f1b38b4bdb079647d875b43fde01430b5faf1cf058ac"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/reviews/issue-110-2026-10-23-integration.md",
         "identity_mode": "content",
-        "sha256": "f21549d53740a2566cd9759bbea8346191596cbfc095440010915e8eea91f2df"
+        "sha256": "caeab70c047fc8d21fafd77e462a1f8a012a8b6312ee885b2baaf51219f077b3"
       },
       {
         "path": "governance/reviews/issue-110-2026-10-23-nber-access.json",
@@ -832,7 +832,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "2531a984540e9b2aabea84ca1c6c0f87bbe234eed999c79598e84aeb55c6ce60"
+        "sha256": "fbbb90a3e2660bf213079ea3ca882a73e332b2e94d4d877c171a9242c525ac33"
       },
       {
         "path": "report/appendices/tco-results.json",

@@ -47,6 +47,10 @@
 - Audit and handoff: `reviews/issue-110-2026-10-23-integration.md`.
 - Automated checks and primary self-checks do not supply independent acceptance.
 
+- Follow-up corrections restore C2's per-active-worker-month denominator and
+  unknown regression count; C1 now links to the authenticated publisher object.
+  Initial P2 and later P1 findings are recorded; repeated acceptance is pending.
+
 ## Next actions
 
 - Obtain independent research/integration review of the exact #110 candidate,

@@ -782,7 +782,7 @@ The May PDF supplied with the task is the 97-page May edition, not the accepted 
 
 [Accepted-version source card](../../evidence/primary/2026-writing-code-vs-shipping-code.md) · [Existing coverage](#e-nber)
 
-**Source observation and scope.** Selected developer-week observational panels, with different eligible populations by outcome; matched earlier-year controls for human outcomes and a separate agent-authored design. Table 6's weeks 21–30 pooled-sync estimates are +153.2% commits (SE 2.7) and +19.8% releases (SE 2.9). Table OA-8's common six-outcome sample still has positive releases, +35.0% (SE 6.1), alongside larger upstream gains. These are not active-hour productivity or a fraction of one workload lost between stages. [Original author surface](https://www.mertdemirer.com/Papers/Demirer_Writing_vs_shipping_code.pdf); see the [exact-version access note](#comparison-access).
+**Source observation and scope.** Selected developer-week observational panels, with different eligible populations by outcome; matched earlier-year controls for human outcomes and a separate agent-authored design. Table 6's weeks 21–30 pooled-sync estimates are +153.2% commits (SE 2.7) and +19.8% releases (SE 2.9). Table OA-8's common six-outcome sample still has positive releases, +35.0% (SE 6.1), alongside larger upstream gains. These are not active-hour productivity or a fraction of one workload lost between stages. [Accepted publisher original](https://www.nber.org/system/files/working_papers/w35275/w35275.pdf); see the [exact-version access note](#comparison-access).
 
 | Explanation and prediction | Comparison with the finding | What would separate the accounts |
 |---|---|---|
@@ -799,7 +799,7 @@ The May PDF supplied with the task is the 97-page May edition, not the accepted 
 
 [Accepted-version source card](../../evidence/primary/2026-chen-stratton-firm-production.md) · [Existing coverage](#e-chen-stratton)
 
-**Source observation and scope.** A selected 718-firm observational adoption panel; outcomes are firm-month measures, not labor-hour productivity. Agents' pooled coefficients imply about +29.8% added lines and +20.2% commits. Resolved issues rise by an uncertain +3.3%; a derived normal interval is roughly −6% to +12%. Submission-to-merge elapsed time rises 3.45 days (SE 1.60) on a 7.03-day baseline. Formal change requests, comments and reviewer participation also rise. Figures 6–7 and 11–13, pp.39–40/44–46. [Original](https://fion.ac/jellyfish.pdf).
+**Source observation and scope.** The source covers 718 selected firms overall; outcome-specific regression firm counts are not reported. The adoption analysis uses firm-month observations. Coding and tracked-completion totals are divided by active Jellyfish workers in each firm-month, not by labor-hours. On this per-active-worker-month basis, agents' pooled coefficients imply about +29.8% added lines, +20.2% commits and an uncertain +3.3% resolved issues; a derived normal interval for resolved issues is roughly −6% to +12%. Submission-to-merge elapsed time rises 3.45 days (SE 1.60) on a 7.03-day baseline. Formal change requests, comments and reviewer participation also rise. Figures 6–7 and 11–13, pp.39–40/44–46. [Original](https://fion.ac/jellyfish.pdf).
 
 | Explanation and prediction | Comparison with the finding | What would separate the accounts |
 |---|---|---|

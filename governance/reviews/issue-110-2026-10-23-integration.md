@@ -213,7 +213,7 @@ create a second hypothesis database, silently replace versions or begin #111.
 
 A separate Codex GitHub reviewer inspected head
 `b110235e78294adcd46ba83da14d1b6bf30c5599` and returned
-[one P1 finding](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4358367872):
+[a P1 finding](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4358367872):
 the mixed NBER browsing surface and two matching tables do not authenticate the
 whole September source. **Outcome: Corrections required.** The reviewer explicitly
 reported reading the complete diff, C1–C9, nine briefs, registry/reset states,
@@ -245,3 +245,17 @@ states remain nonfinal; NBER and the work record now record Corrections required
 Normal PR Main health 39935161585 and Repository Gate 39935161605 passed for
 `b110235`; those results belong to that pre-correction head. The correction must
 receive its own checks. Live issue/PR records own subsequent exact-head receipts.
+
+
+## Follow-up corrections: original link and analysis denominator — 2026-10-23
+
+The initial review also contained [P2 4358367881](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4358367881), omitted from the earlier summary above. The later [P1 4358595846](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#discussion_r4358595846) identified the remaining wrong direct original link. Both are now implemented within the already approved T1–T4 scope:
+
+- C1 links directly to the NBER publisher object whose accepted hash was reacquired; it no longer directs readers to the different author copy. No source identity or estimate changes.
+- C2 states 718 as overall source coverage, leaves outcome-specific regression counts unknown, and names the per-active-Jellyfish-worker-month denominator for coding/completion estimates. Merge latency remains elapsed days. No coefficient or inference is promoted.
+- The Chen–Stratton current independent-review field now records Corrections required, rather than unavailable; its original findings and historical acceptance remain untouched.
+- This record corrects the earlier incomplete finding inventory. A generic no-major-issues receipt did not establish that the denominator issue or full original-source scope was accepted.
+
+Canonical governance, all hypothesis verdicts, existing report chapters, numeric inputs and protocols remain unchanged. Required synchronization is confined to the two comparisons, this record, the affected source note, memory and RI. The existing PR changelog/work-record scope remains applicable. No new work record is added to the same PR.
+
+Primary checks run for this correction are recorded by the isolated job and subsequent published-head checks; this paragraph does not predeclare their success. Independent acceptance, correction merge, actual-main checks and final verification remain pending. #110 stays active and #111 is not started.
