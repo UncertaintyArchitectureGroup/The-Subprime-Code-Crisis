@@ -1,0 +1,83 @@
+name: Issue 110 closeout records
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+    paths: [.github/workflows/issue-110-closeout-records.yml]
+permissions:
+  contents: read
+  issues: write
+  actions: read
+jobs:
+  synchronize:
+    if: github.repository == 'UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Preserve history and update two approved tracking records
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import difflib, hashlib, json, os, pathlib, re, urllib.request
+          repo = 'UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
+          base = 'https://api.github.com/repos/' + repo
+          web = 'https://github.com/' + repo
+          main = '9fbf674d58f0dedb10a2bc22bd825699589142be'
+          out = pathlib.Path('closeout-receipts'); out.mkdir()
+          def api(path, data=None):
+              req = urllib.request.Request(base + path, data=None if data is None else json.dumps(data).encode(), method='GET' if data is None else 'PATCH', headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json'})
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return json.load(r)
+          assert api('/git/ref/heads/main')['object']['sha'] == main, 'Main moved: inspect before editing records'
+          pr = api('/pulls/116')
+          assert pr['merged'] and pr['merge_commit_sha'] == main and pr['head']['sha'] == '4ae1fc7cec7eadb742bf86aba4b3f7f088c79973'
+          run = api('/actions/runs/39978721889')
+          assert run['head_sha'] == main and run['status'] == 'completed' and run['conclusion'] == 'success'
+          acceptance = api('/issues/comments/6368591738')
+          assert acceptance['user']['login'] == 'chatgpt-codex-connector[bot]' and 'Canonical outcome: Confirmed.' in acceptance['body'] and main in acceptance['body']
+          for cid, owner in [(6368643888,116),(6368658030,84),(6368674498,110)]:
+              note=api('/issues/comments/'+str(cid))
+              assert note['issue_url'].endswith('/issues/'+str(owner)) and main in note['body']
+          planned = []
+          for number in [84,110]:
+              original=api('/issues/'+str(number))
+              body=original['body']
+              assert original['state']=='open'
+              first, sep, tail=body.partition('\n\n')
+              assert sep and first.startswith('> **Current state'), 'Unexpected current banner'
+              if number==84:
+                  banner = '> **Current state — 2026-10-23:** #85, #65, #86, #87, #4 and #109 are completed; the #88 plain-language pass is merged through #114. **#110 implementation and final-main acceptance are complete** through [PR #115]('+web+'/pull/115) and [PR #116]('+web+'/pull/116), actual main `'+main+'`. [Post-completion checkpoint and next scope]('+web+'/issues/84#issuecomment-6368658030). Proposed next order: **#111 → #100 → remaining #88 with #1**. #111 is not started and awaits separate selection. This parent remains open; original intent and all dated decisions below remain history.'
+                  old='Next proposed issue; #4/#109 dependencies complete; implementation awaits explicit scope/acceptance approval'
+                  lines=tail.splitlines(keepends=True)
+                  matches=[i for i,line in enumerate(lines) if line.startswith('| 6 | **#110** |')]
+                  assert len(matches)==1 and old in lines[matches[0]]
+                  i=matches[0]
+                  lines[i]=lines[i].replace(old,'Completed via #115/#116; final main9fbf674 accepted, all nine affected sources Verified/2026-10-23; see post-completion checkpoint6368658030')
+                  changed_tail=''.join(lines)
+                  assert changed_tail.replace(lines[i],tail.splitlines(keepends=True)[i],1)==tail, 'Unexpected history change'
+              else:
+                  banner = '> **Completed — 2026-10-23:** approved T1–T4 is implemented and independently accepted through [PR #115]('+web+'/pull/115) and [PR #116]('+web+'/pull/116). Final main `'+main+'`, tree `2fd3b46a2e4c41009639a1ee97395a5313c1c755`; all nine sources are Reviewed brief / Verified / 2026-10-23 with current independent review Confirmed. [AC-1–8 completion evidence]('+web+'/issues/110#issuecomment-6368674498) and [post-completion plan]('+web+'/issues/84#issuecomment-6368658030). #111 is proposed next, not started or authorized by this closure. Older checkpoints below preserve their historical states and are superseded by this completion record.'
+                  ids=re.findall(r'(?m)^- \[[ x]\] AC-(\d+) —',tail)
+                  assert ids==[str(i) for i in range(1,9)], 'Unexpected acceptance checklist'
+                  changed_tail=re.sub(r'(?m)^- \[[ x]\] (AC-[1-8] —)',r'- [x] \1',tail)
+              candidate=banner+sep+changed_tail
+              (out/(str(number)+'-before.json')).write_text(json.dumps(original,ensure_ascii=False,indent=2))
+              (out/(str(number)+'-after-body.md')).write_text(candidate)
+              (out/(str(number)+'-body.diff')).write_text(''.join(difflib.unified_diff(body.splitlines(True),candidate.splitlines(True),fromfile='before',tofile='after')))
+              planned.append((number,body,candidate))
+          results=[]
+          for number,before,candidate in planned:
+              assert api('/issues/'+str(number))['body']==before, 'Concurrent body change: inspect before retry'
+              result=api('/issues/'+str(number),{'body':candidate})
+              assert result['body']==candidate and result['state']=='open', 'Unexpected write result'
+              results.append({'issue':number,'url':result['html_url'],'before_sha256':hashlib.sha256(before.encode()).hexdigest(),'after_sha256':hashlib.sha256(candidate.encode()).hexdigest(),'updated_at':result['updated_at'],'state':result['state']})
+          assert api('/git/ref/heads/main')['object']['sha']==main
+          (out/'result.json').write_text(json.dumps({'main_unchanged':main,'updated':results,'issue_closure':'separate explicit connector action','scope':'body banners; one current-sequence cell; original eight acceptance boxes only'},indent=2))
+          print(json.dumps(results,indent=2))
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: issue-110-closeout-records
+          path: closeout-receipts/
+          retention-days: 7
