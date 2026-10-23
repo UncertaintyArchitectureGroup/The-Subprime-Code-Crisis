@@ -1,0 +1,38 @@
+name: Issue 110 temporary original-access check
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+permissions:
+  contents: read
+jobs:
+  access:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Download originals ephemerally and record identity only
+        run: |
+          python3 - <<'PY'
+          import urllib.request, hashlib, json, pathlib, datetime
+          root=pathlib.Path('/tmp/issue110-access');root.mkdir()
+          expected='a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711'
+          urls=['https://www.nber.org/system/files/working_papers/w35275/w35275.pdf','https://www.mertdemirer.com/Papers/Demirer_Writing_vs_shipping_code.pdf']
+          results=[]
+          for url in urls:
+            record={'requested_url':url,'retrieved_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'expected_accepted_sha256':expected}
+            try:
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=40) as response:
+                body=response.read(25000000)
+                record.update(status=response.status,final_url=response.url,content_type=response.headers.get('Content-Type'),bytes=len(body),sha256=hashlib.sha256(body).hexdigest(),is_pdf=body.startswith(b'%PDF-'))
+                record['matches_accepted_binary']=record['is_pdf'] and record['sha256']==expected
+            except Exception as exc:
+              record['error']=type(exc).__name__+': '+str(exc)
+            results.append(record)
+            print(json.dumps(record,sort_keys=True))
+          (root/'access-results.json').write_text(json.dumps({'purpose':'Resolve exact source identity, not source substitution or research acceptance','originals_redistributed':False,'results':results},indent=2)+'\n')
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue-110-original-access-metadata
+          path: /tmp/issue110-access/access-results.json
+          retention-days: 1
+          if-no-files-found: error
