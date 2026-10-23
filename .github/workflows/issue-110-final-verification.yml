@@ -1,0 +1,274 @@
+name: Issue 110 final source verification
+on:
+  push:
+    branches: [issue-110-workbench-20261023]
+    paths: [.github/workflows/issue-110-final-verification.yml]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: 6769de4ed9183f7c956e6980ba7fd0dce29126d8
+          path: trusted
+          persist-credentials: false
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: main
+          path: candidate
+          fetch-depth: 0
+      - name: Record eligible final states only
+        working-directory: candidate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = 6769de4ed9183f7c956e6980ba7fd0dce29126d8
+          test -z "$(git ls-remote origin refs/heads/issue-110-final-verification)"
+          git switch -c issue-110-final-verification
+          python3 - <<'PY'
+          from pathlib import Path
+          import os,json,urllib.request,re,tomllib,subprocess
+          MAIN='6769de4ed9183f7c956e6980ba7fd0dce29126d8'
+          TREE='7560a286f3e75a08a0a02a6a6affc0364e7b8876'
+          WEB='https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
+          API='https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
+          def get(path):
+              req=urllib.request.Request(API+path,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+              with urllib.request.urlopen(req,timeout=30) as r:return json.load(r)
+          assert get('/git/ref/heads/main')['object']['sha']==MAIN
+          assert get('/git/commits/'+MAIN)['tree']['sha']==TREE
+          receipt=get('/issues/comments/6366534816')
+          assert receipt['user']['login']=='chatgpt-codex-connector[bot]'
+          assert MAIN in receipt['body'] and '**Confirmed**' in receipt['body']
+          run=get('/actions/runs/39964585198')
+          assert run['head_sha']==MAIN and run['conclusion']=='success'
+          jobs=get('/actions/runs/39964585198/jobs')['jobs']
+          assert len(jobs)==1 and all(s['conclusion']=='success' for s in jobs[0]['steps'])
+          pairs={'P-2026-01':'2026-writing-code-vs-shipping-code.md','P-2026-04':'2026-chen-stratton-firm-production.md','P-2023-01':'2023-copilot-task-productivity.md','P-2025-01':'2025-metr-experienced-developer-productivity.md','P-2026-03':'2026-metr-productivity-design-update.md','P-2025-03':'2025-xu-copilot-oss-activity.md','P-2026-02':'2026-agarwal-agent-adoption.md','P-2025-02':'2025-metr-task-horizon.md','P-2026-05':'2026-ai-impacts-skill-formation.md'}
+          audit='governance/reviews/issue-110-2026-10-23-final-verification.md'
+          assert not Path(audit).exists()
+          for sid,name in pairs.items():
+              p=Path('evidence/primary')/name;s=p.read_text();a=s.split('+++',2);m=tomllib.loads(a[1])
+              assert m['source_ids']==[sid] and m['evidence_review']=='Reviewed brief' and m['independent_review']=='Confirmed'
+              assert m['integration_audit']=='Needs re-verification' and m['last_verified']=='—'
+              assert all(Path(x).is_file() for x in m['current_use'])
+              a[1]=a[1].replace('integration_audit = "Needs re-verification"','integration_audit = "Verified"',1).replace('last_verified = "—"','last_verified = "2026-10-23"',1)
+              marker='## Comparison acceptance — 2026-10-23, #110'
+              assert a[2].count(marker)==1
+              note=f'''## Final integration checkpoint — 2026-10-23, #110
+
+          Integration is **Verified / 2026-10-23** for accepted correction main
+          `{MAIN}`, tree `{TREE}`,
+          merged through [PR #115]({WEB}/pull/115). Research, faithful-recording and
+          [actual-main eligibility]({WEB}/pull/115#issuecomment-6366534816)
+          reviews are **Confirmed**; required candidate and main checks passed.
+
+          The [final verification record](../../{audit}) identifies the exact accepted
+          state and paired status/date completion. Findings, versions, limits and Current
+          use are unchanged. This verifies repository use, not a fresh reading of every
+          original, a stronger hypothesis verdict or efficacy of a proposed remedy.
+
+          This current checkpoint supersedes the dated history below. The final metadata
+          PR still has its own review/merge/checks; no future merge, issue closure or
+          next-issue authorization is asserted by this checkpoint.
+
+          ## Comparison acceptance history — 2026-10-23, #110'''
+              a[2]=a[2].replace(marker,note,1)
+              p.write_text('+++'.join(a))
+              assert p.read_text().split('## Comparison acceptance history — 2026-10-23, #110',1)[1]==s.split(marker,1)[1]
+          p=Path('evidence/SOURCES.md');s=p.read_text();lines=s.splitlines(keepends=True);changed=set()
+          for i,line in enumerate(lines):
+              m=re.match(r'\| \*\*(P-[\d-]+)\*\* \|',line)
+              if m and m[1] in pairs:
+                  assert '| Needs re-verification | — |' in line
+                  lines[i]=line.replace('| Needs re-verification | — |','| Verified | 2026-10-23 |',1);changed.add(m[1])
+          assert changed==set(pairs);p.write_text(''.join(lines))
+          table='\n'.join(f'| {sid} | [{name}](../../evidence/primary/{name}) |' for sid,name in pairs.items())
+          Path(audit).write_text(f'''# Issue 110: final source verification
+
+          ## Accepted state and scope
+
+          Date: 2026-10-23. This is the final Flow D metadata update inside approved
+          [#110]({WEB}/issues/110), under [decision6361681797]({WEB}/issues/110#issuecomment-6361681797).
+          Primary implementer: ChatGPT. Separate independent reviewer: Codex, identified
+          by the public reports below. No new research, version, verdict, protocol or
+          governance change is introduced.
+
+          [PR115]({WEB}/pull/115) actually merged at **`{MAIN}`**,
+          tree **`{TREE}`**. The tree equals independently accepted166a07f.
+
+          | Completed prerequisite | Evidence |
+          | --- | --- |
+          | Research and integration correction | [Full Confirmed report6366174999]({WEB}/pull/115#issuecomment-6366174999), exact22c4f589; [repository copy](issue-110-2026-10-23-independent-acceptance.md) |
+          | Faithful recording | [Confirmed report6366382582]({WEB}/pull/115#issuecomment-6366382582), exact166a07f and matching tree |
+          | Accepted-head checks | [Main health39963606150]({WEB}/actions/runs/39963606150), [Repository Gate39963606906]({WEB}/actions/runs/39963606906); all required steps passed |
+          | Actual-main checks | [Main health39964585198]({WEB}/actions/runs/39964585198), exact6769de4; all test, contract, state and RI steps passed |
+          | Actual-main eligibility | [Independent Confirmed report6366534816]({WEB}/pull/115#issuecomment-6366534816) for final source verification |
+
+          The eligibility reviewer disclosed GitHub API HTTP403, used the supplied run
+          fact and reran equivalent local checks. The primary session independently read
+          every required hosted step. No unperformed access is attributed to the reviewer.
+          The reports' completed scopes are reused; future metadata acceptance is separate.
+
+          ## Completion checklist and source states
+
+          The [all-use record](issue-110-2026-10-23-integration.md), exact-version manifest,
+          numeric record and full independent report cover every changed and retained
+          material use: reviewed source objects and locators; units/denominators and
+          uncertainty; claim strength, rivals and dependence; report/README/maps;
+          Current use, indexes, bibliography, links and protocol implications.
+          Approval and independent confirmation are recorded; all content corrections are
+          merged. No unresolved correction or substantive human decision remains.
+
+          The independent reviewer assessed accepted original-source checks for adequacy
+          claim by claim. No fresh reading of unavailable PDFs or raw-data replication is
+          claimed. The NBER September publisher hash was actually matched; the May input
+          and different author copy were not substituted. All source limits remain visible.
+
+          These nine pairs change from Reviewed brief / Needs re-verification / — to
+          **Reviewed brief / Verified / 2026-10-23**; independent_review stays Confirmed.
+
+          | Source | Existing brief |
+          | --- | --- |
+          {table}
+
+          Exactly nine registry rows and current brief states change. Every Current use
+          target exists. Findings, identities, versions, uses, scoped verdicts and prior
+          dated history are preserved; all other rows/briefs are unchanged. Verification
+          is faithful repository integration, not proof of the full causal thesis or a
+          remedy. **No protocol change** remains the accepted outcome.
+
+          ## Synchronization and metadata acceptance boundary
+
+          This delta synchronizes nine paired states/dates, current brief checkpoints,
+          this record, one new work record, the earlier audit's current banner, memory and
+          RI. All merged work records remain untouched. Report/comparison text, README,
+          protocols, references/indexes, source findings and governance/tooling are unchanged.
+          **Changelog: Not required**; PR115 already records the material research change.
+
+          At preparation, independent review of this exact metadata delta is pending.
+          Underlying content/recording/main-eligibility reviews are actual Confirmed results,
+          not acceptance of an unseen candidate. Required checks are126 tests, contract,
+          evidence integrity, RI, trusted Repository Gate/transitions and exact preservation.
+          Actual results and the final metadata review are recorded in its live PR.
+
+          Merge and check the final state before closing#110 or marking its remaining ACs.
+          Then reread/update sole plan#84 and report the accepted result and next scope.
+          Proposed order remains **#111 → #100 → remaining #88/#1**. #111 is a bounded
+          search on capacity/adaptation, delayed shared understanding/substitutes and full
+          cost/remedy value; it is not started or authorized by this metadata update.
+          ''')
+          p=Path('governance/reviews/issue-110-2026-10-23-integration.md');s=p.read_text();a=s.index('**Current checkpoint:**');b=s.index('**Preparation date:**')
+          p.write_text(s[:a]+f'''**Current checkpoint:** the comparison and its recording are Confirmed and merged
+          through PR115 at `{MAIN}`. Actual-main checks and independent eligibility
+          are complete. The [final verification record](issue-110-2026-10-23-final-verification.md)
+          owns paired source-state completion. Earlier preparation/correction stages below
+          are history; no future metadata merge or issue closure is asserted.
+
+          '''+s[b:])
+          p=Path('governance/work-records/2026-10-23-issue-110-final-verification.toml');assert not p.exists()
+          p.write_text(f'''record_version = 1
+          title = "Complete nine-source verification after accepted issue110 main"
+          primary_flow = "Flow D — final verification after accepted correction merge and independently checked actual main"
+          human_decision = "Continuation of approved T1–T4, decision6361681797. PR115 is merged at {MAIN}; main eligibility is independently Confirmed in PR115 comment6366534816. No new treatment or next issue is authorized."
+          independent_review = "Review unavailable"
+          # New metadata delta awaits review; underlying source-use/main eligibility is Confirmed.
+
+          [changelog]
+          decision = "Not required"
+          reason = "PR115 records the material comparison/navigation change; this delta records eligible verification without new findings, verdicts or reader/control behavior."
+
+          [synchronization]
+          assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+          [synchronization.non_applicable]
+          contributor-guidance = "Existing source and issue rules apply unchanged."
+          doctrine = "No claim class, hypothesis verdict or terminology change."
+          repository-architecture = "Existing registry and hypothesis-register owners unchanged."
+          reader-navigation = "Existing reader routes preserved; brief checkpoints link this final record."
+          evidence-indexes = "Same nine source objects and brief paths; no additions or relocations."
+          references = "Bibliographic objects, accepted versions and Current use unchanged."
+          report = "Accepted comparison, hypotheses, chapters, diagrams and README preserved byte for byte."
+          protocols = "No protocol change, control threshold or remedy claim."
+          ''')
+          Path('governance/memory.md').write_text(f'''# Dated repository handoff
+
+          ## Snapshot
+
+          - 2026-10-23: PR115 merged at `{MAIN}`,
+            tree `{TREE}`, identical to accepted166a07f.
+          - Actual-main health39964585198 passed. Research, faithful recording and
+            actual-main eligibility are independently Confirmed.
+          - #110 remains active for final metadata review/merge and resulting-main checks.
+            This note does not predict its own future merge or issue closure.
+
+          ## Active owners
+
+          - [#84]({WEB}/issues/84) remains the sole live plan.
+          - [#110]({WEB}/issues/110) owns comparison and final verification.
+          - #111, #100 and remaining #88/#1 are queued, not started or selected here.
+          - Node studies#89–99, #49 recovery, #54 pilot, #53 acquisition residue and
+            #74 publication retain their separately selected scopes.
+
+          ## Decisions
+
+          - Exact proposal6360324854 and approval6361681797 remain controlling.
+          - Preserve source versions, findings, favorable/contrary evidence and verdicts.
+          - No new search, source, protocol, governance exception or next-issue approval.
+          - Prior original checks are reused only where independently assessed adequate;
+            unavailable PDFs are not represented as freshly read.
+
+          ## Evidence
+
+          - Comparison: `report/appendices/mechanism-hypotheses.md#nine-source-comparison`.
+          - Research receipt6366174999 and recording receipt6366382582 are on PR115.
+          - Actual-main eligibility receipt6366534816 confirms final-state prerequisites.
+          - Final owner: `reviews/issue-110-2026-10-23-final-verification.md`.
+          - This candidate pairs nine Verified/2026-10-23 restorations with checkpoints;
+            findings/history/versions/uses and all other source rows remain unchanged.
+          - NBER September publisher hash matched; the May input was not substituted.
+
+          ## Next actions
+
+          - Independently review/check this final metadata candidate, merge and check main.
+          - Finish #110 AC evidence and the #84 completion checkpoint only after acceptance.
+          - Proposed next#111: bounded capacity/adaptation, shared-understanding/substitution,
+            and full-cost/remedy-value search; separate selection is required.
+          - Resume from live issue/PR/check records, not a new nine-source analysis.
+          ''')
+          print(json.dumps({'main':MAIN,'tree':TREE,'source_ids':sorted(changed),'new_metadata_review':'pending'}))
+          PY
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
+          git diff --check
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 -m tools.repository_validator
+          python3 -m tools.evidence_state_check
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
+          git config user.name 'ChatGPT implementation agent'
+          git config user.email 'noreply@openai.com'
+          git add evidence/SOURCES.md evidence/primary governance
+          git commit -m 'Record final verification of nine accepted source uses' -m 'Refs #110. Actual accepted correction main and independent eligibility established; metadata review and final merge remain separate.'
+      - name: Trusted gates and publish final branch only
+        run: |
+          set -euo pipefail
+          BASE=6769de4ed9183f7c956e6980ba7fd0dce29126d8
+          HEAD=$(git -C candidate rev-parse HEAD)
+          python3 trusted/tools/repository_gate.py --policy-root trusted --candidate-root candidate --repo candidate --base "$BASE" --head "$HEAD"
+          PYTHONPATH=trusted python3 trusted/tools/evidence_state_check.py --policy-root trusted --candidate-root candidate
+          PYTHONPATH=trusted python3 trusted/tools/evidence_transition_gate.py --policy-root trusted --candidate-root candidate --repo candidate --base "$BASE"
+          test "$(git -C candidate ls-remote origin refs/heads/main | cut -f1)" = "$BASE"
+          test -z "$(git -C candidate ls-remote origin refs/heads/issue-110-final-verification)"
+          git -C candidate push origin HEAD:refs/heads/issue-110-final-verification
+          mkdir -p output
+          git -C candidate rev-parse HEAD HEAD^{tree} > output/receipt.txt
+          git -C candidate diff --stat "$BASE" HEAD >> output/receipt.txt
+          git -C candidate archive --format=zip --output="$GITHUB_WORKSPACE/output/candidate.zip" HEAD
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue-110-final-verification-candidate
+          path: output
+          retention-days: 1
