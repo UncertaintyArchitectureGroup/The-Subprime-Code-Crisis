@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "79946fce88c32b8addfc5b2f7f1fe8a41e067b3c5e42c633861ac5968e8538fd",
+    "digest": "1e4cc9c9f6c77f72f611a2712c088944e015109effd3857429541b6fd74b7fc2",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "729b09ba39d34f99053fd2c18b780d4827c22f93b26f41b7e2b544a7c724b417"
+        "sha256": "858fa7a5268759279728fe1e3585b9cb8a2b016b7e3537f661d70588814a13cf"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -187,7 +187,7 @@
       {
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
-        "sha256": "32b6b898d01bc8f3d6d30c56c1f4a50e3b0ceb4a620575c84fb720b404a99028"
+        "sha256": "0ff34e0f3717d8b2cedbe4e45f45e10a81db0f4fb919aa1537a02f3147d754bb"
       },
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
@@ -227,42 +227,42 @@
       {
         "path": "evidence/primary/2025-metr-experienced-developer-productivity.md",
         "identity_mode": "content",
-        "sha256": "007f83a7f168d0a81fa42c44ea0e5ae869b950928761fd2f5e9a1e4f25507461"
+        "sha256": "20e4cf88b4c770fe20d4b78d9aa47a5d3fca62bd08cb2ba168b7feedf89fd134"
       },
       {
         "path": "evidence/primary/2025-metr-task-horizon.md",
         "identity_mode": "content",
-        "sha256": "3f1d94a5a7b5c9c0823d5dd11c91c28755c082d41f0050e46215e277ad48d759"
+        "sha256": "d0ed34fe60fcce88cd1a6d869e0077ae4daa3c6df592c934a2be0e79d981a795"
       },
       {
         "path": "evidence/primary/2025-xu-copilot-oss-activity.md",
         "identity_mode": "content",
-        "sha256": "b490f2f683b7c1b4d2801f4786d467ad81e399a577891aceccf30fb97b29fdfb"
+        "sha256": "36354be0835a612eb83d6ad9a357bc995a50e046f0409c62411edd71d41cb1e7"
       },
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "bc927859651f4323f7c54f53560e3707ee5601f127741bac67eb54045d75ad70"
+        "sha256": "2034d0a7510ab46624abe89c9e67c2070221d2bfe93ca10a7b1476c8626e64f1"
       },
       {
         "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
         "identity_mode": "content",
-        "sha256": "65bccaaea25a12f7f343183af47930db9d8be2c5067e643c5ad88b82eec2a200"
+        "sha256": "b5422a0625b121b9672544ce22c538f8dac356c58b8b7474d62ba3c57612f1e4"
       },
       {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
-        "sha256": "ee21095ff13c6c11c4549b69da778a509a50eee8888360111836ea0877f4c981"
+        "sha256": "2930ba15249c9c424e37c30cc15470ead4c55f7fbf6af5237ec26d27264b8c66"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
         "identity_mode": "content",
-        "sha256": "4b932eb16de60418afcb05cd6e913753a508f279f1f9d97da3656953f0a1c40a"
+        "sha256": "ec81ba89ba557f15b0d304373a193be93858ce7115f860a538e3e57618d2ce59"
       },
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "5ea85413c3665ab962c3bcaf493fb4d667109394398633c9ffcb5e9e5978d87b"
+        "sha256": "dddc7978ea06b7e47422de1510724748dda5c1c69b95784c1eaaf94ee6746ce9"
       },
       {
         "path": "evidence/primary/README.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "90662309910b057ac0932b0760ab117c2b4a06f16081efe6e062b8616cf4f1dc"
+        "sha256": "2f52c63ef1fa7ad84ef726aa925e2cd584a0a65ede73dc0b60f7bf65f354a093"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -390,6 +390,11 @@
         "sha256": "05b02eb49285e53734f3cb641de22b564242697c8a01c46ab03712806b18af16"
       },
       {
+        "path": "governance/reviews/issue-110-2026-10-23-final-verification.md",
+        "identity_mode": "content",
+        "sha256": "9faae246f999706d1edde40fbd8754ba7f23d5e41a46d02bd219848d9062a616"
+      },
+      {
         "path": "governance/reviews/issue-110-2026-10-23-independent-acceptance.md",
         "identity_mode": "content",
         "sha256": "c5140bf97ae65aa838453beb1cb17e18d39b9e92f7a1e6179f0f85c6a196cf94"
@@ -397,7 +402,7 @@
       {
         "path": "governance/reviews/issue-110-2026-10-23-integration.md",
         "identity_mode": "content",
-        "sha256": "f9b6fe799b95fdafa4fb6dfb78017920f19143f59d06ebf57d7c46352e5faf54"
+        "sha256": "2bad622109b4f747fefbd2137f749dc01e1b5a61a22833a36230aa54d3d63bc2"
       },
       {
         "path": "governance/reviews/issue-110-2026-10-23-nber-access.json",
@@ -778,6 +783,11 @@
         "path": "governance/work-records/2026-10-22-issue-88-plain-language.toml",
         "identity_mode": "content",
         "sha256": "19b58b63a5f8864c75201dff63f12482699c81e93bbad72dba891ccb3d32f0d0"
+      },
+      {
+        "path": "governance/work-records/2026-10-23-issue-110-final-verification.toml",
+        "identity_mode": "content",
+        "sha256": "24c6f3fc9c9e54b559f70048304ed6d2308bbb1eb4d65402bd80ad7e4f9829a8"
       },
       {
         "path": "governance/work-records/2026-10-23-issue-110-source-comparison.toml",
@@ -1422,8 +1432,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Shen & Tamkin, [*How AI Impacts Skill Formation*](https://arxiv.org/abs/2601.20245v2), arXiv v2, submitted 1 February 2026; v1 28 January 2026; reviewed object is a preprint",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Immediate individual learning and task-completion observations in a randomized unfamiliar-library task; percentage/sample-reporting limits; no measured durable skill or shared ownership",
       "current_use": "`README.md`, `report/02_broken_mechanics.md`, `report/appendices/mechanism-hypotheses.md`, `REFERENCES.md`",
       "brief_path": "evidence/primary/2026-ai-impacts-skill-formation.md"
@@ -1433,8 +1443,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Chen & Stratton, [*Artificial Intelligence in the Firm: Bottlenecks in Software Production*](https://fion.ac/jellyfish.pdf), Job Market Paper, 4 August 2026; first version 7 January 2026",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Firm-level coding, uncertain tracked completion and review-process estimates; observational adoption and pre-period movements; no measured ownership or active review labor",
       "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2026-chen-stratton-firm-production.md"
@@ -1444,8 +1454,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275, May 2026 revised September 2026; original PDF pinned, May history retained",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "September observational outcome estimates, positive releases, calibrated model and separate marketplace proxies; no identified universal bottleneck",
       "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`; `evidence/primary/2026-chen-stratton-firm-production.md` (bounded comparison)",
       "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
@@ -1455,8 +1465,8 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Randomized task-time effect for experienced contributors in familiar mature open-source repositories with early-2025 tools; not a universal seniority effect",
       "current_use": "`README.md` Evidence Map and outcome boundary; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2023-copilot-task-productivity.md` (comparison boundary); `evidence/primary/2026-metr-productivity-design-update.md` (historical result); `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2025-metr-experienced-developer-productivity.md"
@@ -1466,8 +1476,8 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *We are Changing our Developer Productivity Experiment Design* (2026-02-24)",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Follow-up experiment and first-party account of selection and measurement limits; not a reliable estimate of current productivity magnitude",
       "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (interval restatement and temporal update); `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2026-metr-productivity-design-update.md"
@@ -1477,8 +1487,8 @@
       "path": "evidence/SOURCES.md",
       "source": "METR, *Measuring AI Ability to Complete Long Tasks*, arXiv v1 (18 March 2025); author post 19 March with later live-chart data",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Historical v1 benchmark methods/trend and bounded internal-PR scoring evidence; not current-model thresholds, global reliability or production review demand",
       "current_use": "`README.md`; `report/02_broken_mechanics.md` Ch5; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2025-metr-task-horizon.md"
@@ -1488,8 +1498,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Xu et al., *AI-Assisted Programming Decreases the Productivity of Experienced Developers*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Language-availability DiD estimates of OSS project/contributor activity and rework/review-count proxies; not seniority, review hours or net delivery loss",
       "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2025-xu-copilot-oss-activity.md"
@@ -1499,8 +1509,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Agarwal et al., *AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Repository-month activity and static-metric estimates by observable adoption history; not per-feature debt, human cognitive load or functional correctness",
       "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2026-agarwal-agent-adoption.md"
@@ -1510,8 +1520,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Peng et al., *The Impact of AI on Developer Productivity*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-23",
       "can_support": "Reduced completion time conditional on completing a standardized JavaScript task; not enterprise throughput or a universal experience effect",
       "current_use": "`README.md` task-acceleration claim and Evidence Map; `report/01_the_illusion.md` Chapter 1 and references; `report/03_the_aftermath.md` Chapter 8 opening; `REFERENCES.md`; `evidence/primary/2025-metr-experienced-developer-productivity.md` (cross-study interpretation); `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2023-copilot-task-productivity.md"
@@ -2329,6 +2339,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-110-2026-10-23-final-verification.md",
+      "title": "Issue 110: final source verification",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-110-2026-10-23-independent-acceptance.md",
       "title": "Independent acceptance of the nine-source comparison",
       "instructions": [
@@ -2870,6 +2887,13 @@
     {
       "path": "governance/work-records/2026-10-22-issue-88-plain-language.toml",
       "title": "governance/work-records/2026-10-22-issue-88-plain-language.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-23-issue-110-final-verification.toml",
+      "title": "governance/work-records/2026-10-23-issue-110-final-verification.toml",
       "instructions": [
         "AGENTS.md"
       ]
