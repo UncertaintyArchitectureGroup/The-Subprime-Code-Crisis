@@ -1,0 +1,128 @@
+name: Issue 111 publish review fixes
+on:
+  push:
+    branches: [issue-111-workbench-20261023]
+    paths: [.github/workflows/issue-111-publish-review-fixes.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: 49dbfe52168b2bbd78f85de657a888cddf522f7b
+          fetch-depth: 0
+      - name: Guard inputs and apply only approved review corrections
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = 49dbfe52168b2bbd78f85de657a888cddf522f7b
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = 9fbf674d58f0dedb10a2bc22bd825699589142be
+          test "$(git ls-remote origin refs/heads/issue-111-bounded-discovery | cut -f1)" = 49dbfe52168b2bbd78f85de657a888cddf522f7b
+          python3 - <<'PY'
+          import json, re, hashlib
+          from pathlib import Path
+          from collections import Counter
+          root=Path('governance/reviews')
+          strategy=root/'issue-111-2026-10-23-strategy.md'
+          assert hashlib.sha256(strategy.read_bytes()).hexdigest() == '084e1a5a46c404647bf3a9e85db870b272306e47162f08935f824a1cf61531fd'
+          p=root/'issue-111-2026-10-23-candidates-continuation.json'
+          data=json.loads(p.read_text()); items=data['candidates']; by={r['id']:r for r in items}
+          assert len(items)==28 and len(by)==28 and 'D53' not in by
+          review='https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817'
+          omissions='https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922772'
+          data['status']='Corrections required from completed independent review; targeted fixes recorded, repeat independent acceptance pending'
+          data['review_correction']={'date':'2026-10-23','review':review,'scope':'Four published findings only; no new topic search or full-text screen; original D01-D23 and frozen query records preserved.'}
+          mappings={
+            'D24':(['Q1','Q3'],['H0-B','H0-R','REV','INTG','ECO','BAL','ALT-1','ALT-2','ALT-5','ALT-6a','ALT-6b'],'#93/#95/#99'),
+            'D26':(['Q1','Q3'],['H0-B','H0-R','REV','TST','ECO','BAL','ALT-1','ALT-5','ALT-6b'],'#93/#94/#99'),
+            'D27':(['Q1','Q2'],['H0-A','COD','REV','HUM-1','ALT-1','ALT-5','ALT-6b'],'#92/#93'),
+            'D28':(['Q1','Q3'],['H0-A','COD','ECO','ALT-5','ALT-6a'],'#92/#99'),
+            'D32':(['Q1','Q3'],['H0-B','H0-R','REV','ECO','BAL','ALT-1','ALT-2','ALT-5','ALT-6a','ALT-6b'],'#93/#99'),
+            'D39':(['Q2','Q3'],['HUM-1','COD','BAL','H0-R','ALT-1','ALT-6b'],'#92/#93/#99'),
+            'D42':(['Q2','Q3'],['HUM-1','DEBT-1','OPS','ECO','ALT-1','ALT-5','ALT-6a'],'#93/#97/#99')
+          }
+          for ident,(qs,hs,owner) in mappings.items():
+            r=by[ident]; r['question_ids']=qs; r['hypothesis_ids']=hs; r['owner']=owner
+            r['mapping_basis']='Corrected against this record\'s stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support.'
+          for ident in ['D38','D42']:
+            r=by[ident]
+            r['historical_screen']={k:r[k] for k in ['url','version','access','scope','result','locators','funding_conflicts'] if k in r}
+            r['screened_version']='arXiv v1; historical methods/results screen only'
+            r['routing']='Hold'
+            r['reason']='High-priority relevant candidate retained. Canonical edition identified at metadata/abstract depth; its complete methods and edition differences require the named later source review. No new full-text screen beyond the frozen cap.'
+            r['scope']='Historical arXiv v1 screen only: '+r['scope']
+            r['result']='Historical arXiv v1 result only; not transferred to the current edition: '+r['result']
+            r['funding_conflicts']='Historically recorded for arXiv v1, not reverified for the canonical edition: '+r['funding_conflicts']
+            r['access']='Historical v1 methods/results screen retained. Coordinator verified current landing-page/publisher metadata and abstract on 2026-10-23; current full text and edition equivalence not checked.'
+          by['D38']['url']='https://arxiv.org/abs/2506.05579v2'
+          by['D38']['version']='Canonical identified object: arXiv v2, 9 June 2025; v1 submitted 5 June 2025. Peer-reviewed venue not established. Current v2 full-text differences remain unreviewed.'
+          by['D38']['canonical_metadata_source']='https://arxiv.org/abs/2506.05579'
+          by['D42']['url']='https://link.springer.com/article/10.1007/s10664-026-10889-1'
+          by['D42']['version']='Canonical publisher object: Empirical Software Engineering 31, article 161, published 9 June 2026, DOI 10.1007/s10664-026-10889-1. Related preprint v3: 26 February 2026; v2: 18 December 2025; v1: 1 July 2025. Publication is not an independent replication.'
+          by['D42']['canonical_metadata_source']=['https://arxiv.org/abs/2507.00788','https://link.springer.com/article/10.1007/s10664-026-10889-1']
+          common={'date':'2026-10-23','queries':[], 'search_provenance':omissions,'screening':'Review-discovered metadata lead','routing':'Hold','status':'Provisional, not accepted evidence','funding_conflicts':'Unknown at this screening depth; not treated as absent.','replication':'Independence and replication not established; reviewer discovery is not a separate study.','non_applicability':'No conclusion on durable team ownership, enterprise capacity or lifecycle value from an abstract. No source or hypothesis status changes.'}
+          d52=dict(common,id='D52',title='When Help Hurts (review-reported title)',url='https://doi.org/10.1145/3772318.3791176',version='CHI peer-reviewed study reported by the independent reviewer; DOI supplied. Coordinator DOI/ACM access returned HTTP403, Crossref was inaccessible and exact lookup returned no result objects. Canonical authors, full title and publication date remain unverified by the coordinator.',authors_entity='Not independently established by the coordinator; retrieve from DOI/publisher in later review.',access='Independent reviewer supplied DOI and study description; coordinator attempted metadata retrieval but did not obtain inspectable publisher content. No fresh full text or abstract claimed.',reason='Relevant omitted controlled comparison retained on Hold for identity/access and method checks, not rejected for its result.',question_ids=['Q1','Q2','Q3'],hypothesis_ids=['H0-B','REV','HUM-1','ECO','BAL','ALT-1','ALT-5','ALT-6a','ALT-6b'],owner='#92/#93/#99',scope='Reviewer reports three AI modes versus a no-AI cohort, measuring verification load, workload, time and correctness. These details are attributed to the review, not a coordinator original-source check.',result='No numerical or directional empirical result adopted from an inaccessible original.',limits='Identity, sample, tools, precision, funding and generalization unresolved. Metadata-only Hold; count of primary full-text screens unchanged.',comparison='Q1-Q3 lead for verification burden and intervention tradeoffs. Diagnostic weight cannot be judged from this access state.',locators=omissions)
+          d53=dict(common,id='D53',title='Less stress, better scores, same learning: The dissociation of performance and learning in AI-supported programming education',url='https://doi.org/10.1016/j.caeai.2025.100537',version='University publication record identifies peer-reviewed journal article, Computers and Education: Artificial Intelligence 10, article 100537, June 2026. DOI year is not treated as the publication year.',authors_entity='Patrick Bassner, Ben Lenk-Ostendorf, Ramona Beinstingel, Tobias Wasner and Stephan Krusche; Technical University of Munich.',access='Coordinator inspected the institutional publication metadata and abstract on 2026-10-23; no full-text method, uncertainty or funding review.',reason='Relevant favorable/null and named-control comparison retained for full source review; frozen full-text cap reached. Hold does not dismiss the study or establish no effect.',question_ids=['Q2','Q3'],hypothesis_ids=['HUM-1','COD','BAL','H0-R','ALT-1','ALT-5','ALT-6b'],owner='#92/#93/#99',scope='Institutional abstract: randomized three-arm CS1 study, N=275, 90-minute concurrency exercise; Iris hints, unrestricted ChatGPT, or no-AI traditional web resources. Immediate pre/post knowledge and code comprehension, task scores and reported load/motivation.',result='Abstract reports higher exercise scores in both AI groups, without greater knowledge-gain or comprehension advantages; lower frustration/load and an Iris motivation advantage. No effect sizes, precision or equivalence margin verified here.',limits='Abstract-only classroom result; no delayed retention, shared operational ownership or total lifecycle economics. A reported nonsignificant contrast is not demonstrated equivalence.',comparison='Q2/Q3: performance and learning may differ; a scaffolded control may have a motivational benefit without an established learning advantage. Full method review required.',locators='https://portal.fis.tum.de/en/publications/less-stress-better-scores-same-learning-the-dissociation-of-perfo/')
+          items.extend([d52,d53]); assert len(items)==30 and len({r['id'] for r in items})==30
+          counts=Counter(r['routing'] for r in items)
+          assert counts==Counter({'Accept for Flow A':3,'Hold':14,'Context only':10,'Reject':3}),counts
+          p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+          wr=Path('governance/work-records/2026-10-23-issue-111-discovery.toml')
+          s=wr.read_text(); assert 'independent_review = "Review unavailable"' in s
+          s=s.replace('independent_review = "Review unavailable"','independent_review = "Corrections required"\n# Completed review: '+review+'; repeat review of fixes remains pending.')
+          wr.write_text(s)
+          correction=root/'issue-111-2026-10-23-correction.md'
+          s=correction.read_text()
+          s=s.replace('**23 October 2026. Primary correction recorded; independent acceptance pending.**','**23 October 2026. Independent review returned Corrections required. Targeted fixes below await repeat acceptance.**')
+          s=s.replace('adds **D24–D51: 28 research identities**.','contains **D24–D53: 30 research identities**: 28 from the corrective rerun and two later metadata-only leads from independent review.')
+          s=s.replace('| Continuation D24–D51 | 5 | 10 | 10 | 3 | 28 |','| Continuation D24–D53 | 3 | 14 | 10 | 3 | 30 |')
+          s=s.replace('| Combined register | **16** | **13** | **15** | **7** | **51** |','| Combined register | **14** | **17** | **15** | **7** | **53** |')
+          s+='''\n## Independent-review corrections — 23 October 2026\n\nThe separate reviewer actually reran Q01/Q07/Q13, performed four bounded omission-query families, inspected originals and held/excluded examples, and checked the packet. Its [canonical outcome](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817) was **Corrections required**. The earlier unavailable attempt above is dated history, not the current outcome. Successful general search and primary-reference checks are not relabeled as successful native database access.\n\n- Added D52/D53 from the [omission finding](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922772) without another full-text screen. D52 preserves the reviewer-supplied DOI and explicitly unavailable coordinator metadata; D53 records the accessible TUM abstract. Both remain visible Hold candidates with later owners, not accepted evidence.\n- Identified D38's v2 and D42's v3/journal edition. Original v1 methods/results/funding notes are preserved in `historical_screen` and labeled as historical, not silently transferred. Both current editions remain Hold pending the named later review. This is candidate version reconciliation, not Flow C for a registered source.\n- Corrected question/hypothesis/owner mappings for D27/D28/D32 and the same evidenced mismatch in D24/D26/D39/D42. Scope and comparisons determine relevance; retrieval query alone does not.\n- Updated the current work record to Corrections required. The fixes do not self-certify Confirmed.\n\nCurrent totals are **53 candidates: 14 proposed Flow A, 17 Hold, 15 Context only, 7 Reject**. The primary full-text/passage count stays **24**. The original 18-query ledger, 149 displayed hits, 108 distinct returned URLs and frozen first-pass files are unchanged. Two reviewer-discovered omissions are separately attributed, not invented additions to the old returned hit lists.\n\n**Synchronization:** updated this correction, candidate continuation, search current banner, one existing unmerged work record, changelog, dated memory and RI. Existing navigation remains valid. Canonical evidence, report, protocols, policies, code and merged work records are unchanged. Changelog: Updated. No protocol change. All required tests/gates and exact-head review must pass before merge.\n\nThe coordinator's [identity/access check](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#issuecomment-6372839793) distinguishes inspected metadata from failed retrieval. The earlier implementation task produced an unpublished local commit; the published correction must be identified by its actual GitHub SHA, not that local commit. No source task or #100 starts here.\n'''
+          correction.write_text(s)
+          report=root/'issue-111-2026-10-23-search.md'
+          s=report.read_text()
+          banner='''> **Current review correction — 2026-10-23:** independent Search Review completed with **Corrections required**; the four findings are now addressed in the [current correction record](issue-111-2026-10-23-correction.md#independent-review-corrections--23-october-2026) and candidate continuation, pending repeat acceptance. Current combined register: **53 objects (14 proposed Flow A, 17 Hold, 15 Context only, 7 Reject); 24 primary full-text/passage screens**. Earlier counts/outcomes below are dated preparation history, not the current acceptance state. No source or report claim has been accepted through discovery.\n\n'''
+          report.write_text(banner+s)
+          cl=Path('CHANGELOG.md'); s=cl.read_text(); pos=s.index('\n## ')
+          s=s[:pos]+'''\n## 2026-10-23 — #111 independent search-review corrections\n\n- Preserved two omitted controlled-study leads, reconciled current candidate editions\n  without transferring old results, and repaired question/owner mappings.\n- Recorded the actual Corrections required outcome; repeat acceptance remains pending.\n  No accepted source, report claim, protocol or governance rule changed.\n'''+s[pos:]; cl.write_text(s)
+          Path('governance/memory.md').write_text('''# Dated repository handoff\n\n## Snapshot\n\n- 2026-10-23: #110 is completed through PR115/116; accepted main is `9fbf674d58f0dedb10a2bc22bd825699589142be`.\n- Active #111/PR117: the 18-query trace correction was published at `49dbfe5`.\n- A completed independent search review returned Corrections required. The next candidate addresses its four findings; repeat acceptance is pending.\n- Actual head/check/review/merge facts must be fetched from the live PR, not inferred from this dated note.\n\n## Active owners\n\n- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) is the sole live plan.\n- [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) and [PR117](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117) own bounded discovery.\n- Existing node owners retain later source work. #100 and remaining #88/#1 are proposed later tasks, not started here.\n\n## Decisions\n\n- User approved the three-question search and correction/continuation; no repeat approval for ordinary fixes.\n- Flow E only. Keep frozen strategy, first-pass query log and D01-D23 unchanged.\n- No new source state, empirical verdict, protocol, governance rule or full-text-budget expansion.\n\n## Evidence\n\n- Main entry: `reviews/issue-111-2026-10-23-search.md`.\n- Current correction: `reviews/issue-111-2026-10-23-correction.md`.\n- Current combined register: 53 objects; 14 proposed Flow A, 17 Hold, 15 Context only, 7 Reject. Primary full-text/passage screens: 24.\n- D52/D53 are review-discovered metadata leads; D38/D42 distinguish historical v1 readings from current canonical editions. These four remain Hold with later owners.\n- Review: [r4362922817](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817); original retrieval failures remain history.\n\n## Next actions\n\n- Verify the published correction, then obtain separate independent correction acceptance; do not treat implementation as self-approval.\n- Only after acceptance: merge PR117, inspect actual main, complete #111 ACs and reread/update #84.\n- No fresh 18-query campaign, no repeated #110 review and no automatic source integration.\n''')
+          print('Corrected 30 continuation records; combined counts 14/17/15/7 = 53. No new full-text screen.')
+          PY
+      - name: Validate and publish only the existing candidate branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
+          python3 -m unittest discover -s tests -p 'test_*.py' -v > /tmp/issue111-validation.txt 2>&1
+          python3 -m tools.repository_validator --format github | tee -a /tmp/issue111-validation.txt
+          python3 -m tools.evidence_state_check | tee -a /tmp/issue111-validation.txt
+          python3 tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify | tee -a /tmp/issue111-validation.txt
+          git diff --check
+          git diff --exit-code 49dbfe52168b2bbd78f85de657a888cddf522f7b -- evidence report protocols AGENTS.md DOCTRINE.md GLOSSARY.md README.md REFERENCES.md tools tests governance/reviews/issue-111-2026-10-23-strategy.md governance/reviews/issue-111-2026-10-23-queries.json governance/reviews/issue-111-2026-10-23-candidates.json governance/reviews/issue-111-2026-10-23-rerun.md
+          python3 - <<'PY'
+          import subprocess
+          actual=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          allowed={'CHANGELOG.md','governance/memory.md','governance/repository-intelligence/agent-context.json','governance/reviews/issue-111-2026-10-23-candidates-continuation.json','governance/reviews/issue-111-2026-10-23-correction.md','governance/reviews/issue-111-2026-10-23-search.md','governance/work-records/2026-10-23-issue-111-discovery.toml'}
+          assert actual==allowed,(actual,allowed)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add CHANGELOG.md governance
+          git commit -m 'Correct #111 omitted leads, versions, mappings and review outcome' -m 'Refs #111. Preserve frozen search history and source/report states. Repeat independent acceptance remains pending.'
+          git worktree add --detach /tmp/issue111-trusted 9fbf674d58f0dedb10a2bc22bd825699589142be
+          PYTHONPATH=/tmp/issue111-trusted python3 /tmp/issue111-trusted/tools/repository_gate.py --policy-root /tmp/issue111-trusted --candidate-root "$PWD" --repo "$PWD" --base 9fbf674d58f0dedb10a2bc22bd825699589142be --head HEAD | tee -a /tmp/issue111-validation.txt
+          PYTHONPATH=/tmp/issue111-trusted python3 /tmp/issue111-trusted/tools/evidence_transition_gate.py --policy-root /tmp/issue111-trusted --candidate-root "$PWD" --repo "$PWD" --base 9fbf674d58f0dedb10a2bc22bd825699589142be | tee -a /tmp/issue111-validation.txt
+          test "$(git ls-remote origin refs/heads/issue-111-bounded-discovery | cut -f1)" = 49dbfe52168b2bbd78f85de657a888cddf522f7b
+          git push origin HEAD:refs/heads/issue-111-bounded-discovery
+          mkdir -p /tmp/issue111-artifact
+          git show -s --format='%H%n%T' HEAD > /tmp/issue111-artifact/identity.txt
+          git archive --format=zip HEAD > /tmp/issue111-artifact/candidate.zip
+          git diff 49dbfe52168b2bbd78f85de657a888cddf522f7b..HEAD > /tmp/issue111-artifact/review-fixes.patch
+          cp /tmp/issue111-validation.txt /tmp/issue111-artifact/validation.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: issue-111-review-fixes
+          path: /tmp/issue111-artifact/
+          retention-days: 2
