@@ -1,6 +1,6 @@
 # Issue 111 — Search-record correction
 
-**23 October 2026. Primary correction recorded; independent acceptance pending.**
+**23 October 2026. Independent review returned Corrections required. Targeted fixes below await repeat acceptance.**
 
 The original search found useful papers, but its grouped output did not show
 which hits came from each individual query. This correction repeats the same
@@ -28,7 +28,7 @@ original batch log and D01–D23 records are unchanged. They remain dated histor
 their missing per-query order has not retrospectively become known.
 
 The [same Candidate Register's continuation](issue-111-2026-10-23-candidates-continuation.json)
-adds **D24–D51: 28 research identities**. It is not another accepted-source registry.
+contains **D24–D53: 30 research identities**: 28 from the corrective rerun and two later metadata-only leads from independent review. It is not another accepted-source registry.
 Repeated papers, known METR/Xu source anchors, media retellings and encyclopedias
 are distinguished. All title-level exclusions remain in the return ledger.
 The first pass's six citation/version follow-ups remain in the original log;
@@ -67,8 +67,8 @@ Existing source states, H0/node verdicts and protocols remain untouched.
 | Portion | Proposed Flow A | Hold | Context only | Reject | Total |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Original D01–D23 | 11 | 3 | 5 | 4 | 23 |
-| Continuation D24–D51 | 5 | 10 | 10 | 3 | 28 |
-| Combined register | **16** | **13** | **15** | **7** | **51** |
+| Continuation D24–D53 | 3 | 14 | 10 | 3 | 30 |
+| Combined register | **14** | **17** | **15** | **7** | **53** |
 
 “Proposed Flow A” means worth a separately selected source review, not accepted
 as evidence. Counts are not counts of independent supporting studies. Held
@@ -113,3 +113,18 @@ AC-1 is supported by the approved frozen strategy and correction record.
 The primary work for AC-2/3/4/6 is now updated, but independent challenge remains.
 AC-5 is still open. AC-7 needs accepted review, merge and exact-main checks.
 AC-8 is the post-completion #84 checkpoint and has not been claimed prematurely.
+
+## Independent-review corrections — 23 October 2026
+
+The separate reviewer actually reran Q01/Q07/Q13, performed four bounded omission-query families, inspected originals and held/excluded examples, and checked the packet. Its [canonical outcome](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817) was **Corrections required**. The earlier unavailable attempt above is dated history, not the current outcome. Successful general search and primary-reference checks are not relabeled as successful native database access.
+
+- Added D52/D53 from the [omission finding](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922772) without another full-text screen. D52 preserves the reviewer-supplied DOI and explicitly unavailable coordinator metadata; D53 records the accessible TUM abstract. Both remain visible Hold candidates with later owners, not accepted evidence.
+- Identified D38's v2 and D42's v3/journal edition. Original v1 methods/results/funding notes are preserved in `historical_screen` and labeled as historical, not silently transferred. Both current editions remain Hold pending the named later review. This is candidate version reconciliation, not Flow C for a registered source.
+- Corrected question/hypothesis/owner mappings for D27/D28/D32 and the same evidenced mismatch in D24/D26/D39/D42. Scope and comparisons determine relevance; retrieval query alone does not.
+- Updated the current work record to Corrections required. The fixes do not self-certify Confirmed.
+
+Current totals are **53 candidates: 14 proposed Flow A, 17 Hold, 15 Context only, 7 Reject**. The primary full-text/passage count stays **24**. The original 18-query ledger, 149 displayed hits, 108 distinct returned URLs and frozen first-pass files are unchanged. Two reviewer-discovered omissions are separately attributed, not invented additions to the old returned hit lists.
+
+**Synchronization:** updated this correction, candidate continuation, search current banner, one existing unmerged work record, changelog, dated memory and RI. Existing navigation remains valid. Canonical evidence, report, protocols, policies, code and merged work records are unchanged. Changelog: Updated. No protocol change. All required tests/gates and exact-head review must pass before merge.
+
+The coordinator's [identity/access check](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#issuecomment-6372839793) distinguishes inspected metadata from failed retrieval. The earlier implementation task produced an unpublished local commit; the published correction must be identified by its actual GitHub SHA, not that local commit. No source task or #100 starts here.

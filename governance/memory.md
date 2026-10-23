@@ -2,48 +2,33 @@
 
 ## Snapshot
 
-- 2026-10-23: accepted main `9fbf674d58f0dedb10a2bc22bd825699589142be`,
-  tree `2fd3b46a2e4c41009639a1ee97395a5313c1c755`.
-- #110 completed through PR115/116; final-main review Confirmed in PR116
-  comment6368591738. Issue completion6368674498 and #84 checkpoint6368658030.
-- #111 PR117 initial head65b1341 is the baseline of the dated correction.
-- This candidate repairs primary search trace; no merge/closure is predicted.
+- 2026-10-23: #110 is completed through PR115/116; accepted main is `9fbf674d58f0dedb10a2bc22bd825699589142be`.
+- Active #111/PR117: the 18-query trace correction was published at `49dbfe5`.
+- A completed independent search review returned Corrections required. The next candidate addresses its four findings; repeat acceptance is pending.
+- Actual head/check/review/merge facts must be fetched from the live PR, not inferred from this dated note.
 
 ## Active owners
 
 - [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) is the sole live plan.
-- [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) is approved and active.
-- #100 and remaining #88/#1 remain queued, not started.
-- #89–99 node studies, #49 recovery, #54 pilot, #53 acquisition and #74 publication
-  retain their existing separately selected scope.
+- [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) and [PR117](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117) own bounded discovery.
+- Existing node owners retain later source work. #100 and remaining #88/#1 are proposed later tasks, not started here.
 
 ## Decisions
 
-- Maintainer selected #111 with «Роби» after #110; start comment6369320604.
-- Flow E: three questions, 18 initial queries, six follow-ups, four review-correction
-  queries allowed, maximum24 new full-text objects. Frozen strategy preserved.
-- User approved remaining correction: PR117 comment6370961841.
-- No source-state, accepted finding, report/verdict, protocol or governance change.
-- Candidate routes are provisional; no source follow-up starts through this task.
+- User approved the three-question search and correction/continuation; no repeat approval for ordinary fixes.
+- Flow E only. Keep frozen strategy, first-pass query log and D01-D23 unchanged.
+- No new source state, empirical verdict, protocol, governance rule or full-text-budget expansion.
 
 ## Evidence
 
-- [Primary search and limitations](reviews/issue-111-2026-10-23-search.md).
-- [Frozen strategy](reviews/issue-111-2026-10-23-strategy.md).
-- [Query provenance](reviews/issue-111-2026-10-23-queries.json).
-- [Original D01–D23](reviews/issue-111-2026-10-23-candidates.json) retained unchanged.
-- [Correction and counts](reviews/issue-111-2026-10-23-correction.md): 18 separate
-  queries,149 displayed hits,108 URLs; continuation D24–D51; total24 full-text screens.
-- [Return ledger](reviews/issue-111-2026-10-23-rerun.md).
-- Independent preliminary request6369609136/report6369641845 on #111:
-  Review unavailable; external search/original access failed, not an empty result.
-- New rerun repairs current displayed-hit selection; lost old order is not invented.
-- D27 extension retains chatbot; D32 period/endpoint ambiguity remains Hold.
+- Main entry: `reviews/issue-111-2026-10-23-search.md`.
+- Current correction: `reviews/issue-111-2026-10-23-correction.md`.
+- Current combined register: 53 objects; 14 proposed Flow A, 17 Hold, 15 Context only, 7 Reject. Primary full-text/passage screens: 24.
+- D52/D53 are review-discovered metadata leads; D38/D42 distinguish historical v1 readings from current canonical editions. These four remain Hold with later owners.
+- Review: [r4362922817](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817); original retrieval failures remain history.
 
 ## Next actions
 
-- Complete independent Search Review with successful reruns, omission searches,
-  held/excluded sampling and challenge of the corrected trace/version limits.
-- Complete checks, corrections, merge/main acceptance and #111 ACs before closure.
-- Do not repeat #110 or ask again to start the already selected #111.
-- After accepted #111, reread #84 and present proposed #100; #88/#1 remains finite.
+- Verify the published correction, then obtain separate independent correction acceptance; do not treat implementation as self-approval.
+- Only after acceptance: merge PR117, inspect actual main, complete #111 ACs and reread/update #84.
+- No fresh 18-query campaign, no repeated #110 review and no automatic source integration.

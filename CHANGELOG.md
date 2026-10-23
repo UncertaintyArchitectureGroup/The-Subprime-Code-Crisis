@@ -4,6 +4,13 @@ This changelog records selected material changes to the repository's reader-faci
 
 It is not a complete commit ledger. Git history and pull requests remain authoritative for implementation details. [`evidence/SOURCES.md`](evidence/SOURCES.md) remains canonical for source identity and status, and evidence briefs remain canonical for source-oriented review records.
 
+## 2026-10-23 — #111 independent search-review corrections
+
+- Preserved two omitted controlled-study leads, reconciled current candidate editions
+  without transferring old results, and repaired question/owner mappings.
+- Recorded the actual Corrections required outcome; repeat acceptance remains pending.
+  No accepted source, report claim, protocol or governance rule changed.
+
 ## 2026-10-23 — #110 independent comparison acceptance
 
 - Recorded the separate reviewer’s full acceptance and source-access boundaries.

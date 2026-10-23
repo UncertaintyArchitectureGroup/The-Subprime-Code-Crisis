@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "c17e788565279a1f6bd12b78a27b515114b7bfaa129176755a6fae113bfc9f3d",
+    "digest": "c145f0ef9cd435e11d990ed1ee073b3bd4d625549525fbfc228daaa0af472d9b",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "7d1edb63759f35ea3f2d7eae7761a1c58776576b4c9413440766d6b171aaa686"
+        "sha256": "8aa9beea7fed17ad14b35b8d0433d98609d180a917aa3edef420eccb19e20b80"
       },
       {
         "path": "CITATION.cff",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "f4b8345b80db1c02825d9b533e75d6d7a4e24b4642c09a92d18b33f0a6681196"
+        "sha256": "26d67fc0cec92710126de0655de0e642bea733bfd21bc8ecf1325d1cf8a95877"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -422,7 +422,7 @@
       {
         "path": "governance/reviews/issue-111-2026-10-23-candidates-continuation.json",
         "identity_mode": "content",
-        "sha256": "a5e7383abf61ac71b82916d725c933ae7404ac88530cae0b6cff99768f7da9fa"
+        "sha256": "21204f2aa38b992244502a786935ca5b27606833571cdbeaa640863c8d3a01de"
       },
       {
         "path": "governance/reviews/issue-111-2026-10-23-candidates.json",
@@ -432,7 +432,7 @@
       {
         "path": "governance/reviews/issue-111-2026-10-23-correction.md",
         "identity_mode": "content",
-        "sha256": "f2128392b02e9299ae95b469e83933185188883dcd2fe140413b296cd0ef5ea8"
+        "sha256": "fad44132600768f87c7e1ab5d05696665bc544361974e38242bc61b8d5cd633d"
       },
       {
         "path": "governance/reviews/issue-111-2026-10-23-queries.json",
@@ -447,7 +447,7 @@
       {
         "path": "governance/reviews/issue-111-2026-10-23-search.md",
         "identity_mode": "content",
-        "sha256": "29e7b133f6e6f422e85b2146142cf94064ca54cfcc96ec30c84676f3129bc06e"
+        "sha256": "71c67ac4f8e7a001f5d8617cdf988008617337399d30d78fef4fe9289abb9c35"
       },
       {
         "path": "governance/reviews/issue-111-2026-10-23-strategy.md",
@@ -832,7 +832,7 @@
       {
         "path": "governance/work-records/2026-10-23-issue-111-discovery.toml",
         "identity_mode": "content",
-        "sha256": "6f9d410225dd1c9dd49d8c07eb1483c8503899f0a8684f466204d7764cae3377"
+        "sha256": "ccc506fa32609568f6a1ae674921e621c91209ab2604e4717da5180a3266a64f"
       },
       {
         "path": "governance/work-records/README.md",

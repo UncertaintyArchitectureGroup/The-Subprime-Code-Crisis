@@ -1,7 +1,7 @@
 {
   "date": "2026-10-23",
   "purpose": "Continuation of the same #111 Candidate Register following the dated corrective rerun; D01–D23 remain unchanged in the original register.",
-  "status": "Provisional pending Independent Search Review",
+  "status": "Corrections required from completed independent review; targeted fixes recorded, repeat independent acceptance pending",
   "prior_register": "issue-111-2026-10-23-candidates.json",
   "criteria": "Unchanged frozen strategy; metadata-only unresolved leads held; no new source accepted or hypothesis verdict assigned.",
   "registered_anchors": {
@@ -35,20 +35,24 @@
       "locators": "Sections 3.1–3.6, 4, 6–7",
       "web_ref": "turn629590view5",
       "question_ids": [
-        "Q1"
+        "Q1",
+        "Q3"
       ],
       "hypothesis_ids": [
-        "H0-A",
         "H0-B",
-        "COD",
+        "H0-R",
         "REV",
         "INTG",
+        "ECO",
+        "BAL",
         "ALT-1",
         "ALT-2",
-        "ALT-3",
-        "ALT-5"
+        "ALT-5",
+        "ALT-6a",
+        "ALT-6b"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Corrected against this record's stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support."
     },
     {
       "id": "D25",
@@ -106,26 +110,28 @@
       "funding_conflicts": "Unknown; not treated as absent",
       "replication": "No independent replication established; editions/retellings are not independent",
       "status": "Provisional, not accepted evidence",
-      "owner": "#111; prospective source review owner depends on selected question",
+      "owner": "#93/#94/#99",
       "routing": "Hold",
       "comparison": "Adjacent/not diagnostic at this access depth; no H0 or rival verdict. See query purpose and original title-level reason.",
       "scope": "Only title/returned abstract screened; design, sample, tools, comparator and horizon not verified. No empirical magnitude adopted.",
       "limits": "Metadata-only screening; full-text/identity checks remain outstanding. Context/rejection is restricted to the stated relevance/window reason.",
       "question_ids": [
-        "Q1"
+        "Q1",
+        "Q3"
       ],
       "hypothesis_ids": [
-        "H0-A",
         "H0-B",
-        "COD",
+        "H0-R",
         "REV",
-        "INTG",
+        "TST",
+        "ECO",
+        "BAL",
         "ALT-1",
-        "ALT-2",
-        "ALT-3",
-        "ALT-5"
+        "ALT-5",
+        "ALT-6b"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Corrected against this record's stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support."
     },
     {
       "id": "D27",
@@ -154,20 +160,20 @@
       "locators": "Sections 3.2–3.5, 4, 8, Acknowledgments",
       "web_ref": "turn629590view4",
       "question_ids": [
-        "Q1"
+        "Q1",
+        "Q2"
       ],
       "hypothesis_ids": [
         "H0-A",
-        "H0-B",
         "COD",
         "REV",
-        "INTG",
+        "HUM-1",
         "ALT-1",
-        "ALT-2",
-        "ALT-3",
-        "ALT-5"
+        "ALT-5",
+        "ALT-6b"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Corrected against this record's stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support."
     },
     {
       "id": "D28",
@@ -187,26 +193,24 @@
       "funding_conflicts": "Unknown; not treated as absent",
       "replication": "No independent replication established; editions/retellings are not independent",
       "status": "Provisional, not accepted evidence",
-      "owner": "#111; prospective source review owner depends on selected question",
+      "owner": "#92/#99",
       "routing": "Hold",
       "comparison": "Adjacent/not diagnostic at this access depth; no H0 or rival verdict. See query purpose and original title-level reason.",
       "scope": "Only title/returned abstract screened; design, sample, tools, comparator and horizon not verified. No empirical magnitude adopted.",
       "limits": "Metadata-only screening; full-text/identity checks remain outstanding. Context/rejection is restricted to the stated relevance/window reason.",
       "question_ids": [
-        "Q1"
+        "Q1",
+        "Q3"
       ],
       "hypothesis_ids": [
         "H0-A",
-        "H0-B",
         "COD",
-        "REV",
-        "INTG",
-        "ALT-1",
-        "ALT-2",
-        "ALT-3",
-        "ALT-5"
+        "ECO",
+        "ALT-5",
+        "ALT-6a"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Corrected against this record's stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support."
     },
     {
       "id": "D29",
@@ -349,20 +353,23 @@
       "locators": "Sections 4.2–4.3, 5.2.1, 5.3, 5.6",
       "web_ref": "turn629590view1",
       "question_ids": [
-        "Q1"
+        "Q1",
+        "Q3"
       ],
       "hypothesis_ids": [
-        "H0-A",
         "H0-B",
-        "COD",
+        "H0-R",
         "REV",
-        "INTG",
+        "ECO",
+        "BAL",
         "ALT-1",
         "ALT-2",
-        "ALT-3",
-        "ALT-5"
+        "ALT-5",
+        "ALT-6a",
+        "ALT-6b"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Corrected against this record's stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support."
     },
     {
       "id": "D33",
@@ -553,24 +560,24 @@
       "id": "D38",
       "arxiv": "2506.05579",
       "title": "When Models Know More Than They Can Explain: Quantifying Knowledge Transfer in Human-AI Collaboration",
-      "url": "https://arxiv.org/html/2506.05579v1",
+      "url": "https://arxiv.org/abs/2506.05579v2",
       "queries": [
         "Q09"
       ],
       "screening": "Select lead",
-      "reason": "Direct independent implementation endpoint; useful for testing substitutes, not just adverse effects.",
+      "reason": "High-priority relevant candidate retained. Canonical edition identified at metadata/abstract depth; its complete methods and edition differences require the named later source review. No new full-text screen beyond the frozen cap.",
       "date": "2026-10-23",
-      "access": "Original v1 HTML: relevant methods/results/limitations inspected; no raw-data replication",
-      "version": "arXiv v1 inspected; publisher status and later-version completeness not independently established",
+      "access": "Historical v1 methods/results screen retained. Coordinator verified current landing-page/publisher metadata and abstract on 2026-10-23; current full text and edition equivalence not checked.",
+      "version": "Canonical identified object: arXiv v2, 9 June 2025; v1 submitted 5 June 2025. Peer-reviewed venue not established. Current v2 full-text differences remain unreviewed.",
       "authors_entity": "Shi, Jimenez, Yao, Haber, Yang and Narasimhan; Princeton/Stanford/OpenAI affiliations",
-      "funding_conflicts": "Open Philanthropy funding; Princeton Language & Intelligence API credits; model-provider affiliation disclosed.",
+      "funding_conflicts": "Historically recorded for arXiv v1, not reverified for the canonical edition: Open Philanthropy funding; Princeton Language & Intelligence API credits; model-provider affiliation disclosed.",
       "replication": "No independent replication established; editions/retellings are not independent",
       "status": "Provisional, not accepted evidence",
       "owner": "#92/#93",
-      "routing": "Accept for Flow A",
+      "routing": "Hold",
       "comparison": "Q2; HUM-1 and ALT-1/2/6b. Separates immediate usable knowledge from model task success; does not establish delayed shared ownership.",
-      "scope": "118 mostly STEM students; calibrated coding/mathematics tasks; AI ideation then independent implementation without AI or transcript.",
-      "result": "Transfer varies across models; solo capability is not a proportional guarantee of human performance.",
+      "scope": "Historical arXiv v1 screen only: 118 mostly STEM students; calibrated coding/mathematics tasks; AI ideation then independent implementation without AI or transcript.",
+      "result": "Historical arXiv v1 result only; not transferred to the current edition: Transfer varies across models; solo capability is not a proportional guarantee of human performance.",
       "limits": "Mixed domains, selected students, immediate task transfer; no tested universal review-control or lifecycle effect.",
       "locators": "Sections 4.1–4.3, 5, Limitations, Acknowledgments",
       "web_ref": "turn629590view2",
@@ -587,7 +594,18 @@
         "ALT-5",
         "ALT-6b"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "historical_screen": {
+        "url": "https://arxiv.org/html/2506.05579v1",
+        "version": "arXiv v1 inspected; publisher status and later-version completeness not independently established",
+        "access": "Original v1 HTML: relevant methods/results/limitations inspected; no raw-data replication",
+        "scope": "118 mostly STEM students; calibrated coding/mathematics tasks; AI ideation then independent implementation without AI or transcript.",
+        "result": "Transfer varies across models; solo capability is not a proportional guarantee of human performance.",
+        "locators": "Sections 4.1–4.3, 5, Limitations, Acknowledgments",
+        "funding_conflicts": "Open Philanthropy funding; Princeton Language & Intelligence API credits; model-provider affiliation disclosed."
+      },
+      "screened_version": "arXiv v1; historical methods/results screen only",
+      "canonical_metadata_source": "https://arxiv.org/abs/2506.05579"
     },
     {
       "id": "D39",
@@ -606,7 +624,7 @@
       "funding_conflicts": "Funding/approval rights not established from inspected sections; institutional affiliations known.",
       "replication": "No independent replication established; editions/retellings are not independent",
       "status": "Provisional, not accepted evidence",
-      "owner": "#92/#93",
+      "owner": "#92/#93/#99",
       "routing": "Accept for Flow A",
       "comparison": "Q2/Q3; HUM-1, BAL and ALT-1/6b. Tests a named intervention; better immediate artifacts do not establish durable capability.",
       "scope": "97 graduate students randomized across no-AI, on-demand and deferred hints; four-week Python course. Only 62 post-tests; matched analysis 55.",
@@ -615,19 +633,19 @@
       "locators": "Sections 3.1–3.2, 4 RQ1/RQ2, 5",
       "web_ref": "turn629590view3",
       "question_ids": [
-        "Q2"
+        "Q2",
+        "Q3"
       ],
       "hypothesis_ids": [
         "HUM-1",
         "COD",
-        "REV",
-        "OPS",
+        "BAL",
+        "H0-R",
         "ALT-1",
-        "ALT-2",
-        "ALT-5",
         "ALT-6b"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Corrected against this record's stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support."
     },
     {
       "id": "D40",
@@ -707,40 +725,56 @@
       "id": "D42",
       "arxiv": "2507.00788",
       "title": "Echoes of AI: Investigating the Downstream Effects of AI Assistants on Software Maintainability",
-      "url": "https://arxiv.org/html/2507.00788v1",
+      "url": "https://link.springer.com/article/10.1007/s10664-026-10889-1",
       "queries": [
         "Q13"
       ],
       "screening": "Select lead",
-      "reason": "Direct downstream nonauthor evolution with time/quality outcomes; must remain visible irrespective of thesis preference.",
+      "reason": "High-priority relevant candidate retained. Canonical edition identified at metadata/abstract depth; its complete methods and edition differences require the named later source review. No new full-text screen beyond the frozen cap.",
       "date": "2026-10-23",
-      "access": "Original v1 HTML: relevant methods/results/limitations inspected; no raw-data replication",
-      "version": "arXiv v1 inspected; publisher status and later-version completeness not independently established",
+      "access": "Historical v1 methods/results screen retained. Coordinator verified current landing-page/publisher metadata and abstract on 2026-10-23; current full text and edition equivalence not checked.",
+      "version": "Canonical publisher object: Empirical Software Engineering 31, article 161, published 9 June 2026, DOI 10.1007/s10664-026-10889-1. Related preprint v3: 26 February 2026; v2: 18 December 2025; v1: 1 July 2025. Publication is not an independent replication.",
       "authors_entity": "Borg, Hewett, Hagatulah, Couderc, Söderberg, Graham, Kini and Farley; industry/university collaboration",
-      "funding_conflicts": "CodeScene employment/metric ownership; Equal Experts AI-delivery consultancy; Vinnova, WASP, ELLIIT and SSF support disclosed.",
+      "funding_conflicts": "Historically recorded for arXiv v1, not reverified for the canonical edition: CodeScene employment/metric ownership; Equal Experts AI-delivery consultancy; Vinnova, WASP, ELLIIT and SSF support disclosed.",
       "replication": "No independent replication established; editions/retellings are not independent",
       "status": "Provisional, not accepted evidence",
       "owner": "#93/#97/#99",
-      "routing": "Accept for Flow A",
+      "routing": "Hold",
       "comparison": "Q2/Q3; HUM-1/DEBT/OPS and ALT-1/5/6a. Important null/contrary candidate for blanket downstream-harm predictions; not equivalence proof.",
-      "scope": "151 completed solutions, 95.4% professional; phase-two randomized unaided evolution by 75 nonauthors, 72 timing observations.",
-      "result": "Phase-two median time difference nonsignificant (p=.56); no systematic maintainability disadvantage detected within these tasks.",
+      "scope": "Historical arXiv v1 screen only: 151 completed solutions, 95.4% professional; phase-two randomized unaided evolution by 75 nonauthors, 72 timing observations.",
+      "result": "Historical arXiv v1 result only; not transferred to the current edition: Phase-two median time difference nonsignificant (p=.56); no systematic maintainability disadvantage detected within these tasks.",
       "limits": "Volunteer/attrition and bounded Java tasks; phase-one AI assignment is not the same randomized contrast; no long-term team or full-cost measurement.",
       "locators": "Sections 4.1, 5.4–5.5, 7–8, funding/conflicts",
       "web_ref": "turn629590view0",
       "question_ids": [
+        "Q2",
         "Q3"
       ],
       "hypothesis_ids": [
+        "HUM-1",
+        "DEBT-1",
+        "OPS",
         "ECO",
-        "H0-D",
-        "H0-R",
-        "BAL",
-        "VAL",
-        "ALT-6a",
-        "ALT-6b"
+        "ALT-1",
+        "ALT-5",
+        "ALT-6a"
       ],
-      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+      "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support.",
+      "mapping_basis": "Corrected against this record's stated comparison/scope (not inferred solely from retrieval query); relevance is provisional, not diagnostic support.",
+      "historical_screen": {
+        "url": "https://arxiv.org/html/2507.00788v1",
+        "version": "arXiv v1 inspected; publisher status and later-version completeness not independently established",
+        "access": "Original v1 HTML: relevant methods/results/limitations inspected; no raw-data replication",
+        "scope": "151 completed solutions, 95.4% professional; phase-two randomized unaided evolution by 75 nonauthors, 72 timing observations.",
+        "result": "Phase-two median time difference nonsignificant (p=.56); no systematic maintainability disadvantage detected within these tasks.",
+        "locators": "Sections 4.1, 5.4–5.5, 7–8, funding/conflicts",
+        "funding_conflicts": "CodeScene employment/metric ownership; Equal Experts AI-delivery consultancy; Vinnova, WASP, ELLIIT and SSF support disclosed."
+      },
+      "screened_version": "arXiv v1; historical methods/results screen only",
+      "canonical_metadata_source": [
+        "https://arxiv.org/abs/2507.00788",
+        "https://link.springer.com/article/10.1007/s10664-026-10889-1"
+      ]
     },
     {
       "id": "D43",
@@ -1066,6 +1100,88 @@
         "ALT-6b"
       ],
       "non_applicability": "No inference for other outcomes without a matching comparator and measurement. Search-query relevance is not diagnostic support."
+    },
+    {
+      "date": "2026-10-23",
+      "queries": [],
+      "search_provenance": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922772",
+      "screening": "Review-discovered metadata lead",
+      "routing": "Hold",
+      "status": "Provisional, not accepted evidence",
+      "funding_conflicts": "Unknown at this screening depth; not treated as absent.",
+      "replication": "Independence and replication not established; reviewer discovery is not a separate study.",
+      "non_applicability": "No conclusion on durable team ownership, enterprise capacity or lifecycle value from an abstract. No source or hypothesis status changes.",
+      "id": "D52",
+      "title": "When Help Hurts (review-reported title)",
+      "url": "https://doi.org/10.1145/3772318.3791176",
+      "version": "CHI peer-reviewed study reported by the independent reviewer; DOI supplied. Coordinator DOI/ACM access returned HTTP403, Crossref was inaccessible and exact lookup returned no result objects. Canonical authors, full title and publication date remain unverified by the coordinator.",
+      "authors_entity": "Not independently established by the coordinator; retrieve from DOI/publisher in later review.",
+      "access": "Independent reviewer supplied DOI and study description; coordinator attempted metadata retrieval but did not obtain inspectable publisher content. No fresh full text or abstract claimed.",
+      "reason": "Relevant omitted controlled comparison retained on Hold for identity/access and method checks, not rejected for its result.",
+      "question_ids": [
+        "Q1",
+        "Q2",
+        "Q3"
+      ],
+      "hypothesis_ids": [
+        "H0-B",
+        "REV",
+        "HUM-1",
+        "ECO",
+        "BAL",
+        "ALT-1",
+        "ALT-5",
+        "ALT-6a",
+        "ALT-6b"
+      ],
+      "owner": "#92/#93/#99",
+      "scope": "Reviewer reports three AI modes versus a no-AI cohort, measuring verification load, workload, time and correctness. These details are attributed to the review, not a coordinator original-source check.",
+      "result": "No numerical or directional empirical result adopted from an inaccessible original.",
+      "limits": "Identity, sample, tools, precision, funding and generalization unresolved. Metadata-only Hold; count of primary full-text screens unchanged.",
+      "comparison": "Q1-Q3 lead for verification burden and intervention tradeoffs. Diagnostic weight cannot be judged from this access state.",
+      "locators": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922772"
+    },
+    {
+      "date": "2026-10-23",
+      "queries": [],
+      "search_provenance": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922772",
+      "screening": "Review-discovered metadata lead",
+      "routing": "Hold",
+      "status": "Provisional, not accepted evidence",
+      "funding_conflicts": "Unknown at this screening depth; not treated as absent.",
+      "replication": "Independence and replication not established; reviewer discovery is not a separate study.",
+      "non_applicability": "No conclusion on durable team ownership, enterprise capacity or lifecycle value from an abstract. No source or hypothesis status changes.",
+      "id": "D53",
+      "title": "Less stress, better scores, same learning: The dissociation of performance and learning in AI-supported programming education",
+      "url": "https://doi.org/10.1016/j.caeai.2025.100537",
+      "version": "University publication record identifies peer-reviewed journal article, Computers and Education: Artificial Intelligence 10, article 100537, June 2026. DOI year is not treated as the publication year.",
+      "authors_entity": "Patrick Bassner, Ben Lenk-Ostendorf, Ramona Beinstingel, Tobias Wasner and Stephan Krusche; Technical University of Munich.",
+      "access": "Coordinator inspected the institutional publication metadata and abstract on 2026-10-23; no full-text method, uncertainty or funding review.",
+      "reason": "Relevant favorable/null and named-control comparison retained for full source review; frozen full-text cap reached. Hold does not dismiss the study or establish no effect.",
+      "question_ids": [
+        "Q2",
+        "Q3"
+      ],
+      "hypothesis_ids": [
+        "HUM-1",
+        "COD",
+        "BAL",
+        "H0-R",
+        "ALT-1",
+        "ALT-5",
+        "ALT-6b"
+      ],
+      "owner": "#92/#93/#99",
+      "scope": "Institutional abstract: randomized three-arm CS1 study, N=275, 90-minute concurrency exercise; Iris hints, unrestricted ChatGPT, or no-AI traditional web resources. Immediate pre/post knowledge and code comprehension, task scores and reported load/motivation.",
+      "result": "Abstract reports higher exercise scores in both AI groups, without greater knowledge-gain or comprehension advantages; lower frustration/load and an Iris motivation advantage. No effect sizes, precision or equivalence margin verified here.",
+      "limits": "Abstract-only classroom result; no delayed retention, shared operational ownership or total lifecycle economics. A reported nonsignificant contrast is not demonstrated equivalence.",
+      "comparison": "Q2/Q3: performance and learning may differ; a scaffolded control may have a motivational benefit without an established learning advantage. Full method review required.",
+      "locators": "https://portal.fis.tum.de/en/publications/less-stress-better-scores-same-learning-the-dissociation-of-perfo/"
     }
-  ]
+  ],
+  "review_correction": {
+    "date": "2026-10-23",
+    "review": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817",
+    "scope": "Four published findings only; no new topic search or full-text screen; original D01-D23 and frozen query records preserved."
+  }
 }
