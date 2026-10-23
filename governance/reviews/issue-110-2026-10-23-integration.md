@@ -1,7 +1,12 @@
 # Issue 110: approved comparison integration — primary review record
 
-**Date:** 23 October 2026. **State:** implemented candidate; not independently
-accepted, not merged, and not final source verification.
+**Current checkpoint:** independent content/integration review is Confirmed;
+see the final acceptance-recording section below. Merge/main and final source
+verification are not claimed. Earlier preparation/correction stages below are
+historical and retain their original observations.
+
+**Preparation date:** 23 October 2026. **Initial state (superseded):** implemented
+candidate, not independently accepted or merged, not final source verification.
 
 ## Approval, scope and baseline
 
@@ -295,3 +300,25 @@ explicitly dispose of the C5 historical-note concern and state whether the whole
 required comparison/integration scope is Confirmed. The primary implementer does
 not upgrade this bounded review to a full acceptance outcome. Live PR receipts
 own exact published-head checks. Main verification remains a later step.
+
+
+## Independent content acceptance recorded — 2026-10-23
+
+The separate reviewer’s [full report](issue-110-2026-10-23-independent-acceptance.md)
+is copied verbatim from [receipt 6366174999](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115#issuecomment-6366174999), for exact `22c4f589d7d9eb6adfa1b50138dc17e4471acd8f`.
+Its canonical outcome is **Confirmed** within its stated comparison/integration
+scope. The report covers C1–C9, source-check reuse, rival predictions, synthesis,
+uncertainty/dependence, retained uses and the correction dispositions. It resolves
+the C5 historical-note concern without erasing dated evidence or inventing new
+source access. Earlier Corrections required outcomes remain dated history.
+
+This recording changes nine current independent-review fields/leading notes,
+the existing work record, current reader-status wording, memory and RI. All nine
+integration states remain Needs re-verification with no verification date. Source
+identities, empirical findings, hypothesis verdicts, calculations, Current use,
+protocols and the comparison’s substantive text are unchanged. Changelog: Updated.
+The source registry therefore needs no integration/date edit at this stage.
+
+Next: independently check faithful recording, inspect final-head CI, merge the
+accepted content, verify exact main and complete the separate final verification.
+No future-main acceptance, source promotion, issue closure or #111 work is claimed.

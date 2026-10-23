@@ -10,7 +10,7 @@
   [PR #115](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/115)
   own current head, tests and acceptance; recheck them before resuming.
 - Prior #4/#109 acceptance remains history. Independent research review of the
-  #110 comparison returned Corrections required; no accepted-main or Verified claim is made.
+  #110 comparison is Confirmed at the receipt’s exact head; main/Verified remain pending.
 
 ## Active owners
 
@@ -39,7 +39,7 @@
 - All nine accepted source objects are unchanged; the new material uses require
   Flow D integration re-verification. Candidate brief and registry states match.
 - NBER publisher PDF reacquired through run 39936630504: exact accepted SHA-256
-  matched. Full independent original inspection remains pending; the May PDF and
+  matched. Independent acceptance records adequate source-check reuse; the May PDF and
   different author copy do not replace the September edition.
 - Review quality and competent shared ownership remain distinct outcomes.
   Immediate individual learning is not a measurement of long-term team ownership.
@@ -47,17 +47,17 @@
 - Audit and handoff: `reviews/issue-110-2026-10-23-integration.md`.
 - Separate review 4359943405 accepts reuse of prior source checks for C3–C9
   and confirms the NBER/Chen fixes. Seven stale current review outcomes were
-  synchronized to Corrections required; repeat acceptance is still needed.
+  corrected; the later full report confirms the content and correction scope.
 - Automated checks and primary self-checks do not supply independent acceptance.
 
 - Follow-up corrections restore C2's per-active-worker-month denominator and
   unknown regression count; C1 now links to the authenticated publisher object.
-  Initial P2 and later P1 findings are recorded; repeated acceptance is pending.
+  Initial P2 and later P1 findings are recorded and independently resolved.
 
 ## Next actions
 
-- Obtain independent research/integration review of the exact #110 candidate,
-  check the authenticated-source correction, rerun checks and only then merge.
+- Check faithful acceptance-recording against the actual separate report, inspect
+  final-head CI and merge only the accepted candidate. No new research decision.
 - Verify actual main before a separate final source-verification update;
   do not restore Verified or close #110 from an unreviewed draft or green CI.
 - Finish #110 AC evidence and reread #84 after accepted-main completion.

@@ -3,13 +3,27 @@ source_ids = ["P-2026-03"]
 evidence_review = "Reviewed brief"
 integration_audit = "Needs re-verification"
 last_verified = "—"
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/03_the_aftermath.md", "REFERENCES.md", "evidence/primary/2025-metr-experienced-developer-productivity.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # METR: follow-up selection and measurement limits
 
-## Comparative-use reset — 2026-10-23, #110
+## Comparison acceptance — 2026-10-23, #110
+
+The [independent acceptance report](../../governance/reviews/issue-110-2026-10-23-independent-acceptance.md)
+confirms the comparison and integration correction at `22c4f589d7d9eb6adfa1b50138dc17e4471acd8f`.
+It states which accepted original-source checks were reused and which fresh
+access attempts were unavailable; it does not claim a fresh reading of every PDF.
+The factual findings, accepted version, uncertainty and Current use are unchanged.
+
+Evidence review remains **Reviewed brief**. Integration remains
+**Needs re-verification / —** until the accepted content is merged and actual-main
+checks pass. Independent review is **Confirmed** for the report’s stated content
+scope, not for a future merge or a final Verified state. The dated notes below
+are history and do not replace this current checkpoint.
+
+## Comparative-use reset history — 2026-10-23, #110
 
 The maintainer [approved T1–T4](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6361681797) after the
 [nine-source comparison and exact treatment proposal](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110#issuecomment-6360324854).

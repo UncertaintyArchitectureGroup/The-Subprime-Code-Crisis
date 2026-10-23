@@ -719,9 +719,9 @@ and exploratory interaction patterns do not supply independent replications.
 ## What the nine studies tell us — comparison of explanations
 
 **Prepared 23 October 2026 under [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110).**
-This is the approved integration candidate, not an independently accepted or
-fully verified update. The [integration record](../../governance/reviews/issue-110-2026-10-23-integration.md)
-records remaining review/access work. Source processing states are in the
+This comparison has completed [independent content review](../../governance/reviews/issue-110-2026-10-23-independent-acceptance.md).
+The [integration record](../../governance/reviews/issue-110-2026-10-23-integration.md)
+records the review, corrections and verification history. Source processing states are in the
 [registry](../../evidence/SOURCES.md). The dated hypothesis verdicts above and
 below are unchanged.
 
@@ -772,7 +772,7 @@ and a specified remedy's added value (ALT-6b) are judged separately.
 
 ### Access and original-source limits
 
-**NBER access history and correction.** The accepted brief pins a 134-page publisher PDF with SHA-256 `a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711`. Initial publisher access failed; the author browsing surface mixed September text and matching table images with an older May cover. Independent review correctly required exact reacquisition rather than treating that mixed surface as one authenticated original. On 23 October 2026, a separate GitHub-hosted read-only access check downloaded the publisher PDF successfully: 1,437,135 bytes, with **exactly the accepted SHA-256**. The [access receipt](../../governance/reviews/issue-110-2026-10-23-nber-access.json) records the URL, time, response and hash. The author's copy had a different hash and was not substituted. This resolves publisher-binary identity, not the remaining independent inspection of original results and complete acceptance. Neither the May attachment nor the tool mismatch changes the accepted September source. No original PDF is redistributed.
+**NBER access history and correction.** The accepted brief pins a 134-page publisher PDF with SHA-256 `a11c3c7442a4299b54654ba303e791c92166e807d2b6e4f12af50087ee713711`. Initial publisher access failed; the author browsing surface mixed September text and matching table images with an older May cover. Independent review correctly required exact reacquisition rather than treating that mixed surface as one authenticated original. On 23 October 2026, a separate GitHub-hosted read-only access check downloaded the publisher PDF successfully: 1,437,135 bytes, with **exactly the accepted SHA-256**. The [access receipt](../../governance/reviews/issue-110-2026-10-23-nber-access.json) records the URL, time, response and hash. The author's copy had a different hash and was not substituted. This establishes publisher-binary identity. The later independent review separately accepted the source-check reuse and corrected comparison; its report distinguishes that assessment from fresh access to the PDF. Neither the May attachment nor the tool mismatch changes the accepted September source. No original PDF is redistributed.
 
 The May PDF supplied with the task is the 97-page May edition, not the accepted September edition. It is not used to replace the September estimates. Existing hashes in the briefs are inherited acquisition records, not newly computed checksums during the comparison preparation. The original source limits and reporting discrepancies already documented in the briefs remain in force.
 
