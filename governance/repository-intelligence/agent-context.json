@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "3898eeb986aae3fc4ee495411be72d07d5254bb36f47b1140d8408b2db10675b",
+    "digest": "67bc4507b9d637511f6606b43f3f3d0c3d5cc9fe1f4f1e17517767b1e28ab3cb",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "e9ecb3441e38c2dec7f5b20131fb54912641c8a9690a96be979db4d33a1ef70e"
+        "sha256": "40b3157124558d653bb1c4c19a57c1788a3bf82facf3428f46b2cd44019a98a1"
       },
       {
         "path": "CITATION.cff",
@@ -312,7 +312,7 @@
       {
         "path": "governance/README.md",
         "identity_mode": "content",
-        "sha256": "e90fcda9b5253cf15ae99104b07b3695e7885b2e3cdd8fbbd344b2431c763432"
+        "sha256": "6094336ba6b38bfa81698358725f5abb31314102b339b2c704bfc86a726e08b3"
       },
       {
         "path": "governance/content-synchronization.md",
@@ -357,7 +357,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "895204cf4f0e4f9fad94a42fd873b1a009b6e0041d5157f960297cf297f5ec96"
+        "sha256": "68ceb4f74c9ae72b269e950d2a2dc2c4af278ea16a0c39e526c1075ce0381f4b"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -418,6 +418,41 @@
         "path": "governance/reviews/issue-110-2026-10-23-source-manifest.json",
         "identity_mode": "content",
         "sha256": "9d2e869a225704145df4bf906a44d06b579f54e6559015e61fbfef6aa895e0f3"
+      },
+      {
+        "path": "governance/reviews/issue-111-2026-10-23-candidates-continuation.json",
+        "identity_mode": "content",
+        "sha256": "590ae71d05775f20c1089f416b283c7359dfb0fb76aec5cb75574615b45295a0"
+      },
+      {
+        "path": "governance/reviews/issue-111-2026-10-23-candidates.json",
+        "identity_mode": "content",
+        "sha256": "739d683b585f8af4cfd0d1790e6e131d782af27d9428510230a0e40d39b60691"
+      },
+      {
+        "path": "governance/reviews/issue-111-2026-10-23-correction.md",
+        "identity_mode": "content",
+        "sha256": "a3c858633111362ead2fa671aa0b92416f1513046c48a1eb24c1367b48f47683"
+      },
+      {
+        "path": "governance/reviews/issue-111-2026-10-23-queries.json",
+        "identity_mode": "content",
+        "sha256": "3b8229c82d70ea57d09c4e448ea2c1f10563a14bdaab9d3e0c49b4ec01445908"
+      },
+      {
+        "path": "governance/reviews/issue-111-2026-10-23-rerun.md",
+        "identity_mode": "content",
+        "sha256": "2b3fb25aaf47221262d86df8a92da8487bb18ff739f45ab3e54d9055d7c34f6e"
+      },
+      {
+        "path": "governance/reviews/issue-111-2026-10-23-search.md",
+        "identity_mode": "content",
+        "sha256": "5c1c1734664d148c540492840933b06f611de056c9c9e55de2a52ada01404b54"
+      },
+      {
+        "path": "governance/reviews/issue-111-2026-10-23-strategy.md",
+        "identity_mode": "content",
+        "sha256": "084e1a5a46c404647bf3a9e85db870b272306e47162f08935f824a1cf61531fd"
       },
       {
         "path": "governance/reviews/issue-4-2026-10-22-final-verification.md",
@@ -793,6 +828,11 @@
         "path": "governance/work-records/2026-10-23-issue-110-source-comparison.toml",
         "identity_mode": "content",
         "sha256": "94880a865d546687393e897953a05899cb70388999d3fc6b83b23b29ec93de2e"
+      },
+      {
+        "path": "governance/work-records/2026-10-23-issue-111-discovery.toml",
+        "identity_mode": "content",
+        "sha256": "d9f14e086820f24db9419d83759810aa0ee0314e14a6961c057ff34282447f21"
       },
       {
         "path": "governance/work-records/README.md",
@@ -2381,6 +2421,55 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-111-2026-10-23-candidates-continuation.json",
+      "title": "governance/reviews/issue-111-2026-10-23-candidates-continuation.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-111-2026-10-23-candidates.json",
+      "title": "governance/reviews/issue-111-2026-10-23-candidates.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-111-2026-10-23-correction.md",
+      "title": "Issue 111 — Search-record correction",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-111-2026-10-23-queries.json",
+      "title": "governance/reviews/issue-111-2026-10-23-queries.json",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-111-2026-10-23-rerun.md",
+      "title": "Issue 111 — Corrective query return ledger",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-111-2026-10-23-search.md",
+      "title": "Issue 111 — What the next evidence search found",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-111-2026-10-23-strategy.md",
+      "title": "Issue 111 — Search strategy (frozen before screening)",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-4-2026-10-22-final-verification.md",
       "title": "#4 — final source verification after accepted main",
       "instructions": [
@@ -2901,6 +2990,13 @@
     {
       "path": "governance/work-records/2026-10-23-issue-110-source-comparison.toml",
       "title": "governance/work-records/2026-10-23-issue-110-source-comparison.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-23-issue-111-discovery.toml",
+      "title": "governance/work-records/2026-10-23-issue-111-discovery.toml",
       "instructions": [
         "AGENTS.md"
       ]

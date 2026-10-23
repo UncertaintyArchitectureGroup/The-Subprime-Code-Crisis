@@ -1,0 +1,281 @@
+{
+  "date": "2026-10-23",
+  "strategy_sha256": "084e1a5a46c404647bf3a9e85db870b272306e47162f08935f824a1cf61531fd",
+  "channel": "General web index, unrestricted or domain-restricted; original-page/reference inspection is recorded separately.",
+  "queries": [
+    {
+      "id": "Q01",
+      "question": "Q1",
+      "text": "AI coding assistants longitudinal software delivery code review effort study",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q02",
+      "question": "Q1",
+      "text": "site:arxiv.org AI coding assistants longitudinal review productivity",
+      "restriction": "arxiv",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q03",
+      "question": "Q1",
+      "text": "AI coding developer field experiment productivity adaptation learning curve",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q04",
+      "question": "Q1",
+      "text": "site:nber.org software developers generative AI field experiments productivity",
+      "restriction": "nber",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q05",
+      "question": "Q1",
+      "text": "AI coding productivity replication null results task selection review bottleneck study",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q06",
+      "question": "Q1",
+      "text": "site:arxiv.org developer productivity AI randomized replication measurement",
+      "restriction": "arxiv",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q07",
+      "question": "Q2",
+      "text": "AI generated code delayed retention unaided code comprehension experiment",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q08",
+      "question": "Q2",
+      "text": "site:arxiv.org generative AI programming delayed retention learning",
+      "restriction": "arxiv",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q09",
+      "question": "Q2",
+      "text": "AI code explanations scaffolding shared understanding knowledge transfer experiment",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q10",
+      "question": "Q2",
+      "text": "generative AI programming learning retention code explanations",
+      "restriction": "dl.acm.org domain filter",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q11",
+      "question": "Q2",
+      "text": "programming AI assistance learning no negative retention controlled study",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q12",
+      "question": "Q2",
+      "text": "AI programming learning replication no effect comprehension",
+      "restriction": "arxiv.org domain filter",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q13",
+      "question": "Q3",
+      "text": "AI generated code maintenance effort longitudinal controlled experiment",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q14",
+      "question": "Q3",
+      "text": "AI code maintainability experiment maintenance costs",
+      "restriction": "arxiv.org domain filter",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q15",
+      "question": "Q3",
+      "text": "AI assisted code review randomized experiment quality time human review",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q16",
+      "question": "Q3",
+      "text": "AI code review experiment developer effort quality",
+      "restriction": "arxiv.org domain filter",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q17",
+      "question": "Q3",
+      "text": "AI code review false positives cost benefit null experiment quality",
+      "restriction": "general",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    },
+    {
+      "id": "Q18",
+      "question": "Q3",
+      "text": "AI code review maintenance productivity controlled experiment",
+      "restriction": "dl.acm.org domain filter",
+      "status": "Submitted; displayed results retained at batch/object level, not per-query rank"
+    }
+  ],
+  "batches": [
+    {
+      "id": "B1",
+      "queries": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04"
+      ],
+      "screened_research_objects": [
+        "D01",
+        "D02",
+        "D03",
+        "D04"
+      ]
+    },
+    {
+      "id": "B2",
+      "queries": [
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08"
+      ],
+      "screened_research_objects": [
+        "D05",
+        "D06",
+        "D07",
+        "D08"
+      ]
+    },
+    {
+      "id": "B3",
+      "queries": [
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12"
+      ],
+      "screened_research_objects": [
+        "D09",
+        "D10",
+        "D04",
+        "D05"
+      ]
+    },
+    {
+      "id": "B4",
+      "queries": [
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16"
+      ],
+      "screened_research_objects": [
+        "D11",
+        "D12",
+        "D13",
+        "D14"
+      ]
+    },
+    {
+      "id": "B5",
+      "queries": [
+        "Q17",
+        "Q18"
+      ],
+      "screened_research_objects": [
+        "D15",
+        "D16",
+        "D17",
+        "D18"
+      ]
+    }
+  ],
+  "execution_limitations": [
+    "The search interface pooled the batched query output. Per-query ranks and the complete raw hit lists were not preserved. Do not claim the frozen first-five-per-query selection rule was independently demonstrated.",
+    "All research objects substantively screened in this pass are retained; nonresearch navigation/news hits were triaged in categories rather than exported verbatim. This is not a PRISMA search census.",
+    "Domain filters equivalent to site: qualifiers were used for Q10/Q12/Q14/Q16/Q18.",
+    "Claims of native scholarly database coverage are not made: direct native attempts failed."
+  ],
+  "native_attempts": [
+    {
+      "channel": "arXiv native search",
+      "operation": "AI coding review productivity",
+      "result": "Cache/access failure; no result objects"
+    },
+    {
+      "channel": "NBER native search",
+      "operation": "software developers generative AI",
+      "result": "Cache/access failure; no result objects"
+    },
+    {
+      "channel": "OpenAlex works API",
+      "operation": "AI coding review productivity",
+      "result": "No retrievable response"
+    },
+    {
+      "channel": "Semantic Scholar search API",
+      "operation": "AI programming learning retention",
+      "result": "No retrievable response"
+    }
+  ],
+  "followups": [
+    {
+      "id": "F1",
+      "target": "D19",
+      "route": "D03 reference54 to arXiv version history/original"
+    },
+    {
+      "id": "F2",
+      "target": "D20",
+      "route": "D03 reference12 to arXiv version history/original"
+    },
+    {
+      "id": "F3",
+      "target": "D10",
+      "route": "Pinned v1 versus current abstract/full-text title; identity remains Hold"
+    },
+    {
+      "id": "F4",
+      "target": "D21",
+      "route": "D04 reference44; ACM inaccessible; authoritative arXiv v2 inspected"
+    },
+    {
+      "id": "F5",
+      "target": "D22",
+      "route": "D03 reference13; publisher DOI/abstract/date inspected; full methods held"
+    },
+    {
+      "id": "F6",
+      "target": "D23",
+      "route": "B4 media lead to LF announcement/landing/DOI/PDF; exact dataset unresolved"
+    }
+  ],
+  "triage": {
+    "news": "Derivative productivity, learning, security, product-launch and outage reporting; no empirical effect accepted from these hits. Linux Foundation lead traced in F6.",
+    "navigation": "Wikipedia/product pages and general tutorials: not treated as research candidates.",
+    "duplicates": "D04/D05 repeated across batches; repeated versions and indexed copies remain one object."
+  },
+  "independent_review": {
+    "request": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111#issuecomment-6369609136",
+    "report": "https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111#issuecomment-6369641845",
+    "outcome": "Review unavailable",
+    "actual_attempt": "Exact Q03 unrestricted/arXiv/ACM filters; OpenAlex/Crossref queries; original/reference inspection for D03/D19.",
+    "access": "No search records; external CONNECT proxy HTTP403. Failed retrieval is not an empty literature result.",
+    "extra_omission_queries_used": 0
+  }
+}

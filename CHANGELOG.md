@@ -4,6 +4,14 @@ This changelog records selected material changes to the repository's reader-faci
 
 It is not a complete commit ledger. Git history and pull requests remain authoritative for implementation details. [`evidence/SOURCES.md`](evidence/SOURCES.md) remains canonical for source identity and status, and evidence briefs remain canonical for source-oriented review records.
 
+## 2026-10-23 — #111 independent search-review corrections
+
+- Preserved two omitted controlled-study leads, reconciled current candidate editions
+  without transferring old results, and repaired question/owner mappings.
+- Repaired the repeat-review D48 learning/control mapping and obsolete status labels.
+- Recorded the actual whole-search Confirmed acceptance after correction; final merge/main checks are separate.
+  No accepted source, report claim, protocol or governance rule changed.
+
 ## 2026-10-23 — #110 independent comparison acceptance
 
 - Recorded the separate reviewer’s full acceptance and source-access boundaries.
@@ -21,6 +29,16 @@ It is not a complete commit ledger. Git history and pull requests remain authori
 ## Unreleased
 
 ### Added
+
+- Corrected #111's search trace with 18 individually recorded reruns, an ordered
+  return ledger and continuation D24–D51. Retained original search history,
+  explicit unknowns, contrary/null candidates and the 24-object full-text cap.
+  Independent Search Review is still required; accepted research is unchanged.
+
+- Added the #111 bounded discovery packet: frozen questions/strategy, query
+  provenance and limitations, 23 screened candidates and provisional routing.
+  Independent search access is unavailable; no source status, report claim,
+  hypothesis verdict or protocol is changed by the draft.
 
 - Added the #110 comparison of nine accepted source versions against the main
   thesis and relevant alternatives, with a concise synthesis, unchanged scoped

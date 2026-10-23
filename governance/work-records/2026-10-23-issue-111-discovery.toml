@@ -1,0 +1,24 @@
+record_version = 1
+title = "Bounded discovery on capacity, understanding and control value"
+primary_flow = "Flow E — evidence discovery; provisional candidates only"
+human_decision = "Maintainer selected issue111 after issue110 completion with Роби; issue111 comment6369320604. User authorized remaining correction; PR117 comment6370961841. No candidate integration or next-issue selection."
+independent_review = "Confirmed"
+# Whole-Flow-E acceptance: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#issuecomment-6373238690; exact reviewed babeb8d5/tree26c8d7af. Final recording/merge/main checks remain separate.
+
+[changelog]
+decision = "Updated"
+reason = "New inspectable search packet and navigation with explicit provisional status; no research claim or policy adoption."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "history", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "doctrine", "repository-architecture"]
+
+[synchronization.non_applicable]
+contributor-guidance = "Existing Flow E requirements apply unchanged; no new obligation."
+source-registry = "Discovery does not accept sources or change identities/statuses/current use."
+evidence = "Existing reviewed briefs are preserved; candidate notes are not evidence briefs."
+evidence-indexes = "No new registered source or accepted brief."
+references = "Provisional candidates are linked only in the discovery packet, not the bibliography."
+report = "No synthesis, hypothesis or reader claim is integrated or reclassified."
+protocols = "No protocol change; candidate controls remain unaccepted."
+doctrine = "Existing claim distinctions and glossary meanings are preserved."
+repository-architecture = "Uses existing governance/reviews and work-record owners; no parallel registry."

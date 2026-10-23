@@ -2,44 +2,35 @@
 
 ## Snapshot
 
-- 2026-10-23: PR115 merged at `6769de4ed9183f7c956e6980ba7fd0dce29126d8`,
-  tree `7560a286f3e75a08a0a02a6a6affc0364e7b8876`, identical to accepted166a07f.
-- Actual-main health39964585198 passed. Research, faithful recording and
-  actual-main eligibility are independently Confirmed.
-- Final metadata f75a122 is independently Confirmed in PR116 comment6366810798.
-- #110 remains active for final receipt checks/merge and resulting-main acceptance.
-  This note does not predict its own future merge or issue closure.
+- 2026-10-23: #110 is completed through PR115/116; accepted main is `9fbf674d58f0dedb10a2bc22bd825699589142be`.
+- Active #111/PR117: the 18-query trace correction was published at `49dbfe5`.
+- Separate independent Search Review is Confirmed for corrected head `babeb8d51a129142a4eb5aba148a1ce646bd47be`, tree `26c8d7af689e263905bd07054624c6af0a59f52c`; receipt6373238690.
+- This recording does not claim future merge, main verification or issue closure.
+- Actual head/check/review/merge facts must be fetched from the live PR, not inferred from this dated note.
 
 ## Active owners
 
-- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) remains the sole live plan.
-- [#110](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/110) owns comparison and final verification.
-- #111, #100 and remaining #88/#1 are queued, not started or selected here.
-- Node studies#89–99, #49 recovery, #54 pilot, #53 acquisition residue and
-  #74 publication retain their separately selected scopes.
+- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) is the sole live plan.
+- [#111](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/111) and [PR117](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117) own bounded discovery.
+- Existing node owners retain later source work. #100 and remaining #88/#1 are proposed later tasks, not started here.
 
 ## Decisions
 
-- Exact proposal6360324854 and approval6361681797 remain controlling.
-- Preserve source versions, findings, favorable/contrary evidence and verdicts.
-- No new search, source, protocol, governance exception or next-issue approval.
-- Prior original checks are reused only where independently assessed adequate;
-  unavailable PDFs are not represented as freshly read.
+- User approved the three-question search and correction/continuation; no repeat approval for ordinary fixes.
+- Flow E only. Keep frozen strategy, first-pass query log and D01-D23 unchanged.
+- No new source state, empirical verdict, protocol, governance rule or full-text-budget expansion.
 
 ## Evidence
 
-- Comparison: `report/appendices/mechanism-hypotheses.md#nine-source-comparison`.
-- Research receipt6366174999 and recording receipt6366382582 are on PR115.
-- Actual-main eligibility receipt6366534816 confirms final-state prerequisites.
-- Final owner: `reviews/issue-110-2026-10-23-final-verification.md`.
-- This candidate pairs nine Verified/2026-10-23 restorations with checkpoints;
-  findings/history/versions/uses and all other source rows remain unchanged.
-- NBER September publisher hash matched; the May input was not substituted.
+- Main entry: `reviews/issue-111-2026-10-23-search.md`.
+- Current correction: `reviews/issue-111-2026-10-23-correction.md`.
+- Current combined register: 53 objects; 14 proposed Flow A, 17 Hold, 15 Context only, 7 Reject. Primary full-text/passage screens: 24.
+- D52/D53 are review-discovered metadata leads; D38/D42 distinguish historical v1 readings from current canonical editions. These four remain Hold with later owners.
+- D48 Q2/Q3 relevance is corrected at abstract depth; its Hold route and all counts remain unchanged.
+- Review: [r4362922817](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/117#discussion_r4362922817); original retrieval failures remain history.
 
 ## Next actions
 
-- Check faithful receipt recording and final head; merge and accept actual main.
-- Finish #110 AC evidence and the #84 completion checkpoint only after acceptance.
-- Proposed next#111: bounded capacity/adaptation, shared-understanding/substitution,
-  and full-cost/remedy-value search; separate selection is required.
-- Resume from live issue/PR/check records, not a new nine-source analysis.
+- Verify faithful recording and exact-head checks; completed search acceptance is not repeated or self-issued.
+- Only after acceptance: merge PR117, inspect actual main, complete #111 ACs and reread/update #84.
+- No fresh 18-query campaign, no repeated #110 review and no automatic source integration.
