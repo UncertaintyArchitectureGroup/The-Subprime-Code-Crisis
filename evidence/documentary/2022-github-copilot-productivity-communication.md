@@ -1,8 +1,8 @@
 +++
 source_ids = ["D-2022-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "In progress"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-24"
 independent_review = "Confirmed"
 current_use = ["report/01_the_illusion.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
@@ -33,4 +33,4 @@ This record informs H0-C/MKT-1 at the bounded link described above. It does not 
 
 ## Integration and review
 
-The [all-use trace](../../governance/reviews/issue-100-2026-10-24-integration.md) covers Chapter 3, H0-C/MKT-1, bibliography and navigation/metadata. No new derived calculation or protocol claim is adopted. Primary evidence review is complete for the stated use. Integration is **In progress**, **Last verified = —**; Separate source/implementation review is [**Confirmed**](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/118#issuecomment-6382139265) for the inspected implementation candidate; merge and final verification remain pending. No Verified or accepted-main claim is made.
+The [all-use trace](../../governance/reviews/issue-100-2026-10-24-integration.md) covers Chapter 3, H0-C/MKT-1, bibliography and navigation/metadata. No new derived calculation or protocol claim is adopted. Primary evidence review is complete for the stated use. Integration is **Verified**, **Last verified = 2026-10-24** for the unchanged uses on accepted main `7e40c0b7930d4a014483b51eda68dbed802c73e7`. [Independent actual-main acceptance](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/119#issuecomment-6382855174) confirmed preservation and the applicable checks after the source/implementation review. The [final-verification record](../../governance/reviews/issue-120-2026-10-24-final-verification.md) records the eligibility and status synchronization. This verifies repository use within the stated scope, not the full causal hypothesis or a new reading of the original.
