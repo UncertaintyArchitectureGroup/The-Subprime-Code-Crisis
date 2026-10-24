@@ -7,6 +7,7 @@
 *   [Chapter 2. The SDLC produces more than code](#chapter-2-the-sdlc-produces-more-than-code)
 *   [Chapter 3. Intent — choose the problem before the solution](#chapter-3-intent--choose-the-problem-before-the-solution)
 *   [Chapter 4. Requirements — generated text is not shared meaning](#chapter-4-requirements--generated-text-is-not-shared-meaning)
+*   [Chapter 5. Design — implementation speed does not erase architectural choices](#chapter-5-design--implementation-speed-does-not-erase-architectural-choices)
 *   [Detailed research and earlier-edition sections](#detailed-research-and-earlier-edition-sections)
     *   [Task-time and delivery evidence — earlier Chapter 1](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
@@ -219,13 +220,78 @@ The product/domain and engineering owners should agree on the acceptable behavio
 
 Before implementation, the smallest useful handoff is not necessarily a detailed document. It is a **shared account of the consequential rules and a way to tell when behavior violates them**, with the right person able to resolve a dispute. Then Design, Code, Review, and Test can change form and speed without losing their common purpose.
 
-**Next:** Chapter 5 will examine **Design** under its separately owned editorial issue. The current report deliberately leaves that work unimplemented until [#133](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/133) is approved.
+**Next:** [Chapter 5 — Design](#chapter-5-design--implementation-speed-does-not-erase-architectural-choices) examines the choices that preserve behavior, responsibility and future changeability when implementation becomes faster.
+
+---
+
+## Chapter 5. Design — implementation speed does not erase architectural choices
+
+Design is not primarily the document produced before coding. It is the set of **consequential choices** about how parts of a system fit together, which behavior must be preserved, how it can fail, and who can change or recover it. Those choices remain when an AI agent proposes the structure and generates most of its implementation. Faster coding may make more designs affordable to explore; it does not select the one a team can safely operate and modify later.
+
+The output of Design includes alternatives and trade-offs, interfaces and invariants, reliability and security boundaries, an operable system model, competent shared ownership, and future changeability. These are functions, not compulsory documents or a waterfall phase. A well-defined API, an executable contract or effective automated analysis may supply a function more cheaply than an old manual meeting. **What matters is demonstrating that the necessary function survives**, not measuring architecture diagram volume.
+
+### Faster prototypes are useful; hidden dependencies have costs
+
+A team can ask an agent to implement several alternative approaches before it could previously finish a detailed design comparison. That may reveal integration constraints and help reject bad ideas early. When prototypes remain disposable, their code need not be production-ready to provide valuable learning.
+
+The adverse possibility arises when **a locally working implementation silently commits the system to dependencies and failure assumptions**. An agent may introduce a shared library, copy a domain decision between services or couple a component to another team's state. None of these changes is automatically wrong: some coupling is justified by simplicity or performance. Design asks what it buys, which future choices it restricts, how the dependency behaves under failure, and who accepts its cost.
+
+The comparison must use the **real previous engineering process**, including its gaps. Human teams already made poor interface choices and accumulated unnecessary dependencies. Existing boundaries, good contracts, automated architecture checks and AI-generated explanations might improve on that baseline. A green build or a persuasive diagram alone, however, cannot show that a system is understandable or recoverable.
+
+### A Design example: the same recovery policy
+
+Chapters [3](#a-hypothetical-recovery-decision) and [4](#the-same-recovery-policy-now-expressed-as-requirements) introduced an invented account-recovery service. **The policy is unchanged:**
+
+**Account access may be restored only after identity has been independently confirmed by the service's approved process. No payout destination may be changed before that confirmation.**
+
+The identity-check method, accessibility alternatives, exception authority, and any further payout protections remain domain decisions; an agent cannot settle them by drawing an architecture. The following are **hypothetical design options**, not security recommendations or evidence about a real organization.
+
+- **One coordinated recovery workflow** could keep confirmation state and authorize downstream transitions through a bounded component. Its conceptual advantage is a clear locus for decisions. It may also concentrate availability, coupling and change obligations; other components must handle delays and uncertainty appropriately.
+- **Rules enforced at several component boundaries** could let recovery, account access and payout operations check the same authoritative policy through documented interfaces. This may support local change and ownership, but introduces coordination and consistency questions: is the confirmation state current, who is allowed to change it, and can the separate checks diverge?
+
+Neither alternative is universally safer, faster or cheaper. Existing system structure and service boundaries may suggest a third approach. A candidate design must account for concurrent requests, retries, stale signals, partial failures, intervention and the cost of future change. If two components disagree about whether confirmation occurred, **which one can legitimately authorize a payout change, and what evidence supports that decision?** This tests whether the invariant survives the architecture, not whether an AI can generate a passing demonstration.
+
+An implementation and its generated tests could share the same wrong assumption about confirmation. A correct design needs agreement on the authoritative rule and evidence that component boundaries uphold it. No particular database transaction, state machine, consistency model or human sign-off is prescribed here: selecting those belongs to the accountable technical, domain, security and operations owners for an actual product.
+
+### What existing research does—and does not—show
+
+The accepted [Agarwal, He and Vasilescu arXiv v2 study](../evidence/primary/2026-agarwal-agent-adoption.md#design-and-measured-findings), dated **27 January 2026**, examines selected open-source repositories after the first *observable* agent-attributed pull request. Its matched, staggered observational comparisons measure **repository-month** activity and static-analysis outcomes, with different *agent-first* (AF) and *IDE-first* (IF) exposure-history groups.
+
+In Table 2, AF repositories have an estimated **+36.25% commits** and **+34.85% code/cognitive-complexity metric** after observable adoption. IF repositories have an estimated **+42.87% code/cognitive-complexity metric**; their **+3.06% commit** estimate is statistically inconclusive. The positive AF activity result and uneven effects must remain visible alongside structural-risk signals. These are **not** estimates of added complexity *per feature*, purely AI-authored code, or hours of human cognitive effort.
+
+The original research uses inferred AI exposure, selected matched repositories and assumptions about comparison trends. The IF complexity event study includes an elevated pre-treatment estimate, limiting easy causal interpretation. The source authors interpret increased structural metrics as maintainability risk; **this report treats that as a reason to investigate Design outcomes, not proof that reviewers lost understanding, maintenance cost increased, or monetary technical debt was incurred**. The [reviewed source brief](../evidence/primary/2026-agarwal-agent-adoption.md#interpretations-limitations-and-conflicts) preserves further uncertainty and the distinction between the arXiv v2 text and the unverified final publisher version.
+
+More complex code can be necessary to deliver additional valuable behavior. Different project scale, task mix, intended abstractions, and better tools can also explain why structural metrics changed. Static warnings and complexity do not measure whether a non-author can explain an invariant, safely alter a component or restore service. Those later abilities must be checked separately.
+
+### What competent ownership looks like
+
+Design also supplies a **shared working model**: what a component promises, which rules it owns, how state and errors propagate, where recovery begins, and which choices are hard to reverse. That model may be preserved through clear contracts, maintained examples, useful diagrams and demonstrated team capability. An assigned owner or a generated architecture summary, by itself, is insufficient evidence.
+
+A bounded **optional diagnostic** for a consequential change is to ask a non-author maintainer to trace its relevant invariant across interfaces, explain a likely failure, perform a small safe modification and describe a credible recovery path. Compare correctness, active effort and delay with the team's actual previous process. This tests knowledge and operability, not a universal requirement for human line-by-line inspection or proof that AI has harmed comprehension.
+
+Maintaining context costs time: documentation can become stale and automated checks can create noise. The question is whether contracts, tools or meetings preserve the required capability **at justified total cost**. If the same outcome is reliably supplied with fewer manual activities, removing those activities can be an improvement.
+
+### Test the problem and the response independently
+
+The adverse [DES-1 hypothesis](appendices/mechanism-hypotheses.md#design--des-1-and-des-2) proposes that faster implementation could expand coupling and dependencies **faster than architectural assessment and ownership adapt**, raising later change or maintenance effort. To test it, measure the relevant dependency changes, comparable delivered capabilities, actual Design decisions and later modifications or failures across a justified observation window. **DES-1 is weakened** where useful delivery accelerates with stable or improved demonstrated comprehension, changeability and operation at acceptable cost. A larger static complexity score alone does not establish the adverse mechanism.
+
+Alternatives matter: purposeful new functionality, simpler boundaries, effective existing review, successful agent-generated contracts and task selection can explain the results. An observed problem may also originate in inherited architecture rather than in AI adoption. The evaluator should not relabel every new dependency as debt just to defend the hypothesis.
+
+The distinct [DES-2 remedy hypothesis](appendices/mechanism-hypotheses.md#design--des-1-and-des-2) proposes that suitable boundaries, explicit invariants and competent ownership can reduce later burden without erasing useful acceleration. **DES-2 is weakened** if the proposed extra architecture work adds checking, coordination or documentation effort without enough reliability, recovery or later-change benefit **over the real unchanged practice**. Improvement after a team has adapted by itself does not establish that a particular new gate caused it. Both DES-1 and DES-2 remain **Open**; research owner [#91](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/91) controls any future empirical comparison.
+
+### The first architectural decision
+
+Take one recurring type of consequential change and identify its accepted domain invariant, interfaces and receiving owners. Compare **the current way** that the team makes and records design choices with a specified AI-assisted alternative, at comparable risk and scope. Record decisions and rejected options, initial design and checking effort, later modification and diagnosis, incidents and recovery, and the cost of keeping context accurate. Do not count the same saved time or work displaced elsewhere twice.
+
+The accountable technical owner, with the relevant product, security and operations owners, can then **keep the existing design process, use an effective substitute, or strengthen a specific boundary that actually failed**. Faster implementation is worthwhile when the complete system remains useful, understandable and supportable. **Design succeeds when people and tools can responsibly change and recover the result, not merely generate its first version.**
+
+**Next:** The separately owned [Chapter 6 — Code](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/126) will examine executable implementation and its handoff. It is not being rewritten within this issue.
 
 ---
 
 ## Detailed research and earlier-edition sections
 
-**The new seventeen-chapter sequence currently stops after Chapter 4.** The numbered sections below are **retained research detail from the earlier edition**, not a continuation of the new chapter numbering. Their old headings and deep links remain intact while later editorial issues reorganize them. The underlying findings and citations are still available; the new chapters do not replace their evidence.
+**The new seventeen-chapter sequence currently stops after Chapter 5.** The numbered sections below are **retained research detail from the earlier edition**, not a continuation of the new chapter numbering. Their old headings and deep links remain intact while later editorial issues reorganize them. The underlying findings and citations are still available; the new chapters do not replace their evidence.
 
 ## Chapter 1. What Productivity Studies Measure: Task Time and Delivery Outcomes
 
