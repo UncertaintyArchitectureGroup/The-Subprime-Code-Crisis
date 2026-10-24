@@ -2,30 +2,30 @@
 
 ## Snapshot
 
-- 2026-10-24: actual `main` before editorial #124 is `3c4d4d3fd8475251a1b6b3893061f1f71b05bf3b`, after merged governance [PR #137](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/137); exact-main [Main health #40117793952](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/40117793952) Success. #136 **remains open** because no independent PR review was found; the merged work record says `Review unavailable`.
-- Maintainer selected next editorial #124 by “Змержив. Ідемо далі”; this is permission for the bounded chapters 1–2, not evidence that #136's independent review happened or approval of #125.
-- Editorial #124 implementation branch `issue-124-thesis-delivery-chapters-1-2` adds two complete opening chapters to Part 1, preserves all older evidence/heading anchors, and resets only the two changed-use source pairs. **Independent acceptance, PR CI, content merge and final source-state verification are not yet complete.**
+- 2026-10-24: actual `main` before editorial #124 is `3c4d4d3fd8475251a1b6b3893061f1f71b05bf3b` after governance PR #137; [exact-main Main health #40117793952](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/40117793952) Success. #136 remains open because its merged PR has no independent review record (`Review unavailable`).
+- Maintainer approved editorial #124 by “Змержив. Ідемо далі”, then separately authorized implementation of [SR-1–SR-6 self-review corrections](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/138#issuecomment-6387899617) with “Роби”. This is still one #124 scope, not permission to implement #125.
+- [PR #138](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/138) contains both opening chapters, completed SR-1/SR-2 thesis/Chen-review-alternative corrections and bounded SR-3–SR-6 editorial corrections. **Not merged; independent substantive/agent-reader reviewer absent; source verification unresolved.** The old successful PR runs are pre-correction and must not be cited as checking new head.
 
 ## Active owners
 
-- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84): sole cross-issue plan; [#88](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88): whole first-readable edition; [#124](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/124): currently selected Chapters 1–2, with complete in-issue priority list in its live body.
-- [#136](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/136): merged governance rule, **review/AC closure gap remains**; do not count independently Confirmed. #125, #133, #126–132 remain queued editorial issues, each needing its own approval. Research #89–99 remains separate. Publishing #74/PR75 is independently owned.
+- [#124](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/124): only selected implementation issue; owns dated progress and complete priority/dependency list. [#88](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88): first readable edition parent. [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84): sole cross-issue plan.
+- #136: post-merge missing independent review remains a separate visible acceptance gap. #125, #133, #126–132: queued editorial issues, requiring separate approval. #89–99: independent node-research backlog; #74/PR75: separate browser publication and old landing-range update.
 
 ## Decisions
 
-- Preserve [#123 Option A](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513): three existing canonical report Markdown files/routes; 17 eventual logical chapter headings. No new publisher, routes or article template in #124.
-- Primary content change in #124 uses **Flow D** on unchanged P-2026-01 (September NBER revision) and P-2026-04 (Chen–Stratton 4 August). Other detailed-source uses kept byte-identical and are not blanket-reset.
-- Review preserves both quality and competent ownership, plus successful automation/substitution and real user/business outcomes. Do not present activity-to-release differences as an observed funnel or a proved negative return.
+- Preserve [#123 Option A](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513): three canonical Markdown report paths and routes, eventually 17 logical chapters; no split, route migration or publisher modification in #124.
+- Thesis now states the **conditional structural imbalance mechanism**, not a measured prevalence of organizational inability to adapt. Chen–Stratton's changed review standards/useful additional checking is an explicit rival to overload or worse draft quality, testable against active effort, waiting, scope/risk and quality/ownership.
+- Problem-framing/planning loop, optional bounded non-author ownership diagnostic and transitional legacy reader note are editorial additions **within #124**. No new approval gate, protocol, factual evidence source or research verdict.
 
 ## Evidence
 
-- [Issue #124 audit](reviews/issue-124-2026-10-24-chapter-source-route-audit.md) maps changed facts, assumptions, competing explanations, old anchors and #74 producer impacts; older Part 1 suffix was checked byte-identical (all 38 original h2–h4 headings remain).
-- P-2026-01 and P-2026-04 are `Reviewed brief / Needs re-verification / —` **in the #124 candidate**, pending independent substantive review, accepted merge and final Flow D verification. Earlier `Verified / 2026-10-24` belongs to main **before** this new changed use.
-- [#123 earlier route/source audit](reviews/issue-123-2026-10-24-readme-route-audit.md) preserves accepted September/Chen provenance and ownership; #74's unpublished `landing.md` range labels require later owner update, not deployment in #124.
+- [#124 route/source-use audit](reviews/issue-124-2026-10-24-chapter-source-route-audit.md) now documents each SR-1–SR-6 correction, actual/alternative source interpretations, legacy anchor preservation and #74 producer handoff.
+- P-2026-01 (**September** NBER) and P-2026-04 (**4 August** Chen–Stratton) remain `Reviewed brief / Needs re-verification / —` in PR #138; the original versions, empirical estimates, positive outcomes and existing `Current use` are intact. Older accepted `Verified / 2026-10-24` describes main before this changed use.
+- Original prior detailed section, all 38 h2–h4 headings/legacy anchors, remains byte-identical. #74's unpublished landing section still shows old chapter ranges and is owned by the future publisher issue, not #124.
 
 ## Next actions
 
-- Prepare and validate one reviewable #124 content PR with one work record, revised changelog, updated memory and fresh RI; use actual hosted Main health and Repository Gate results.
-- Obtain a genuinely separate independent substantive/agent-reader assessment of both new chapters, changed source-use audit and old-link compatibility; record its actual outcome, resolve corrections, repeat checks.
-- Merge accepted content only after review `Confirmed`, then check exact main, complete any final source verification PR within #124 and close all its ACs; reread/update #84 before proposing #125.
-- Keep #136's independent-review gap visible; never infer `Confirmed` from the maintainer's merge.
+- **Next internal subtask:** regenerate+verify candidate RI after correction edits; inspect the full PR patch and exact hosted Main health / Repository Gate checks for the *new head*. Record the current evidence in #124.
+- Obtain an **actually separate** substantive and agent-reader review of new text, source-status/occurrence audit and changed PR head. The previous same-author adversarial check is NOT independent confirmation.
+- If reviewer finds defects, correct inside #124 and repeat affected checks/review. When genuinely Confirmed, merge content; inspect actual main; complete any separate final Flow D restoration PR for P-2026-01/P-2026-04; only then close #124 and checkpoint #84.
+- #84 order stays #124 → #125 → #133 → #126 → #127 → #128 → #129 → #130 → #131 → #132; next editorial issue #125 needs distinct explicit approval. Publication #74 separate. Do not hide #136's independent-review gap.
