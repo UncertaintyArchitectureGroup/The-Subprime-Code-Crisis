@@ -232,8 +232,15 @@ delay and analysis cost. If it does not improve decision accuracy or outcomes
 enough to justify those costs, that weakens the response. The investment owner
 accepts the tradeoff; the test does not infer marketing intent.
 
-**Verdict: Open**, including the remedy; no direct decision-chain evidence is
-assessed here. MKT-1 separates the documentary and causal links. Next:
+**Verdict: Open**, including the remedy. The [Chapter 3 documentary comparison](../01_the_illusion.md#what-management-records-actually-show)
+distinguishes bounded product/task messages from management expectations,
+announced action and reported hiring/redeployment. Its seven source briefs preserve
+positive results, human-review caveats and related-source dependence. The records
+do not identify the complete link from a particular supplier claim to buyer
+extrapolation, inadequate complementary capacity and adverse delivery outcomes.
+MKT-1 keeps those links separate. The [source-use audit](../../governance/reviews/issue-100-2026-10-24-integration.md)
+records scope and missing observations; this addition does not weaken the separate
+central SDLC thesis or establish a remedy. Owner:
 [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100).
 
 ### H0-D — Persistent mismatch has distinct downstream costs
@@ -1337,9 +1344,18 @@ may explain decisions. No excess overcommitment or capability loss under documen
 extrapolation weakens the decision link. **Remedy:** compare the specified trace and
 outcome-based commitment process with actual prior practice; no material improvement
 in decision accuracy or useful outcomes, or disproportionate delay/cost, weakens it.
-Competent ownership and critical service outcomes remain floors. No accepted source
-here follows this decision chain; E-PENG/E-METR-Productivity show why task boundaries matter,
-not that marketing caused a decision. Owner: [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100).
+Competent ownership and critical service outcomes remain floors.
+
+**Evidence and verdict: Open.** The [seven-source documentary comparison](../01_the_illusion.md#what-management-records-actually-show)
+adds product/adviser claims, a workforce forecast, an announced organizational
+action and reported hiring/redeployment. It also preserves explicit human-review
+requirements and favorable adaptation. These are observations of different links,
+not one linked causal sequence across different companies. Supplier influence,
+necessary-capability loss and resulting delivery harm remain unestablished. The
+[use/placement audit](../../governance/reviews/issue-100-2026-10-24-integration.md)
+records each source's contribution. E-PENG/E-METR-Productivity retain their previous
+task-boundary role, not evidence that marketing caused a decision. Owner:
+[#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100).
 
 ### HUM-1 — Practice, understanding and collective ownership
 

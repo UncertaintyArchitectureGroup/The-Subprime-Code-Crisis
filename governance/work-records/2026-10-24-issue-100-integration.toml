@@ -1,0 +1,18 @@
+record_version = 1
+title = "Integrate bounded management expectations and decisions (#100)"
+primary_flow = "Flow A — seven new sources and approved bounded report integration"
+human_decision = "User approved revised T1–T4 in issue100 comment6375719920; authorization6381868126 on 2026-10-24. No protocol/governance or next-issue change."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "New source assessments and approved reader-facing comparison."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "Existing contribution/source/review procedures are unchanged."
+doctrine = "No terminology, claim class or confidence definition changes."
+repository-architecture = "Same canonical registers and report owners."
+protocols = "No protocol change, control, threshold or remedy-effectiveness claim."

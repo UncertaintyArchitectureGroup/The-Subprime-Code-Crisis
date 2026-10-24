@@ -12,6 +12,17 @@ A source appearing here is not automatically peer reviewed, independently valida
 
 ## Primary empirical research
 
+### P-2023-02 — McKinsey: task gains and the work needed to use them
+
+- [Begum Karaci Deniz, Chandra Gnanasambandam, Martin Harrysson, Alharith Hussin and Shivam Srivastava / McKinsey Digital, Unleashing developer productivity with generative AI](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/unleashing-developer-productivity-with-generative-ai).
+- Original adviser research article dated 27 June 2023; live HTML inspected 24 October 2026. Peer review is not established. [Source assessment](evidence/primary/2023-mckinsey-developer-task-study.md); processing states remain in the canonical registry/brief.
+
+### P-2026-06 — Anthropic: hiring and work during rapid growth
+
+- [Nathan Wilmers, Regina Catipon, Maxim Massenkoff and Peter McCrory / Anthropic, How employment is changing at Anthropic](https://www.anthropic.com/research/employment-at-anthropic).
+- Original institutional article dated 16 October 2026; HTML, methods and limitations inspected 24 October 2026. Linked PDF and raw data were not separately inspected or replicated. No peer-review claim. [Source assessment](evidence/primary/2026-anthropic-employment-and-organization.md); processing states remain in the canonical registry/brief.
+
+
 ### P-2026-05 — Learning with AI assistance
 
 - Judy Hanwen Shen & Alex Tamkin. [*How AI Impacts Skill Formation*](https://arxiv.org/abs/2601.20245v2). arXiv v2, **1 February 2026**; v1 28 January.
@@ -94,6 +105,32 @@ A source appearing here is not automatically peer reviewed, independently valida
 - [Primary survey brief](evidence/primary/2024-stackoverflow-ai-attitudes.md). Question-specific self-reports; 69.6% of 28,142 professional-developer answers report no current-job threat, not a rising fear/overtime effect.
 
 ## Primary documentary sources
+
+### D-2022-01 — GitHub: the scope of its Copilot productivity claim
+
+- [Eirini Kalliamvakou / GitHub, Research: quantifying GitHub Copilot’s impact on developer productivity and happiness](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/).
+- Published 7 September 2022; publisher displays an update on 21 May 2024. Live HTML inspected 24 October 2026, not an immutable archive. [Source assessment](evidence/documentary/2022-github-copilot-productivity-communication.md); processing states remain in the canonical registry/brief.
+
+### D-2025-08 — OpenAI: Codex launch and human review
+
+- [OpenAI, Introducing Codex](https://openai.com/index/introducing-codex/).
+- Launch article dated 16 May 2025. The inspected rendering includes a 3 June 2025 update and an outdated-launch notice. HTML inspected 24 October 2026; not current product documentation. [Source assessment](evidence/documentary/2025-openai-codex-launch-review-boundary.md); processing states remain in the canonical registry/brief.
+
+### D-2025-09 — Amazon: a prospective workforce expectation
+
+- [Andy Jassy / Amazon, Message from CEO Andy Jassy: Some thoughts on Generative AI](https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai).
+- Employee message reproduced by Amazon. The inspected rendering exposes no exact publication timestamp; June 2025 is discovery context, not an authenticated day. HTML inspected 24 October 2026. [Source assessment](evidence/documentary/2025-amazon-generative-ai-workforce-expectation.md); processing states remain in the canonical registry/brief.
+
+### D-2024-04 — Google: generated code still has human acceptance
+
+- [Sundar Pichai / Google, Q3 earnings call: CEO’s remarks](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2024/).
+- First-party remarks dated 29 October 2024; live HTML inspected 24 October 2026. Distinct from the registered Alphabet financial filing. [Source assessment](evidence/documentary/2024-google-ai-code-share-human-review.md); processing states remain in the canonical registry/brief.
+
+### D-2025-10 — Amazon: announced action with several rationales
+
+- [Beth Galetti / Amazon, Staying nimble and continuing to strengthen our organizations](https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction).
+- First-party employee announcement. Contemporary discovery records date it to 28 October 2025; an exact timestamp was not exposed by the inspected original rendering. HTML inspected 24 October 2026; date provenance remains qualified. [Source assessment](evidence/documentary/2025-amazon-workforce-action.md); processing states remain in the canonical registry/brief.
+
 
 ### D-2019-01 — Google engineering-system documentation
 

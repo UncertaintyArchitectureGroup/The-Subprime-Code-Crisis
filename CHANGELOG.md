@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-24 — Management expectations and decisions (#100)
+
+- Add seven bounded source assessments and the approved short Chapter 3 documentary comparison.
+- Keep H0-C/MKT-1 Open; distinguish messaging, expectations, announced action and organizational observations from unestablished supplier influence and delivery harm.
+- Preserve positive findings, human review, #61 corrections and source-family dependence; synchronize references, navigation and RI. No protocol or governance change.
+
+
 This changelog records selected material changes to the repository's reader-facing argument, evidence model, protocols, content architecture, attribution, citation identity, and governance.
 
 It is not a complete commit ledger. Git history and pull requests remain authoritative for implementation details. [`evidence/SOURCES.md`](evidence/SOURCES.md) remains canonical for source identity and status, and evidence briefs remain canonical for source-oriented review records.

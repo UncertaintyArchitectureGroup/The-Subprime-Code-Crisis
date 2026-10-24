@@ -10,6 +10,8 @@
 
 > **Navigation:** [Read the Report](report/01_the_illusion.md) | [Hypotheses](report/appendices/mechanism-hypotheses.md) | [Evidence Library](evidence/README.md) | [Operational Protocols](protocols/README.md) | [Live Work Plan](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
 
+[Management expectations and decisions](report/01_the_illusion.md#what-management-records-actually-show) — documented examples and the causal links still missing.
+
 ## The research thesis
 
 Writing code is one part of delivering software. This report examines the complete software development lifecycle (**SDLC**):

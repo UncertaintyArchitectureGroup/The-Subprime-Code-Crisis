@@ -37,3 +37,13 @@ Each brief should include:
 - [Microsoft FY25Q2 AI-business run rate](2025-microsoft-fy25q2-ai-run-rate.md) —29 January 2025 issuer statement; overall AI business, not Copilot revenue or customer ROI.
 
 The canonical source identities and statuses are maintained in [`../SOURCES.md`](../SOURCES.md).
+
+## Management expectations and decisions — issue #100
+
+- **D-2022-01** — [GitHub: the scope of its Copilot productivity claim](2022-github-copilot-productivity-communication.md). A bounded vendor task/perception claim, not an independent productivity confirmation.
+- **D-2025-08** — [OpenAI: Codex launch and human review](2025-openai-codex-launch-review-boundary.md). Historical product messaging that retains manual review, not proof of assurance effectiveness.
+- **D-2025-09** — [Amazon: a prospective workforce expectation](2025-amazon-generative-ai-workforce-expectation.md). A published prospective corporate-workforce expectation, not measured AI-attributable exits.
+- **D-2024-04** — [Google: generated code still has human acceptance](2024-google-ai-code-share-human-review.md). A code-share statement retaining engineer review, not a labor or delivery-effect estimate.
+- **D-2025-10** — [Amazon: announced action with several rationales](2025-amazon-workforce-action.md). A published organizational action and stated context, not an AI-only labor or downstream-harm effect.
+
+Consult the canonical registry for current source-review and integration states.
