@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "71b03b2f59cfaf3627a6622f4eb07faa1c38c1f83be7afbdf6fc9679d56ef59c",
+    "digest": "c02a9f6b665a2465015aa9d0cad1615068ce860812f447a1786e4dbdb5863833",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -537,7 +537,7 @@
       {
         "path": "governance/reviews/issue-133-2026-10-24-final-verification.md",
         "identity_mode": "content",
-        "sha256": "311f5dca38697ac76790e04ba1ef7f0e3cb202c947a5fd2b9015f50f103e3e58"
+        "sha256": "42fa213cf91a31879458acd88c21964398c6cf9aa6a950c2d4f85040693e8cb3"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -967,7 +967,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-133-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "149700d0a4e054252caa442f07dd37ecf4165878384ce672c6c3d55ab3161d28"
+        "sha256": "ee9d520c00c549cb815be1906b644a9bffc0d6f2286ad21e42b289d5117f0822"
       },
       {
         "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
