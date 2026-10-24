@@ -2,7 +2,7 @@ record_version = 1
 title = "Issue #123 README V2 opening and bounded report-route inventory"
 primary_flow = "Flow D — changed repository uses for P-2026-01 and P-2026-04; approved editorial and read-only route inventory"
 human_decision = "Maintainer selected #123 in issue comment 6384736791. Exact README V2 is #88 comments 6383504860 and 6383542436. Maintainer chose Option A (three canonical report files with 17 chapter anchors) in #123 comment 6385629513; no later issue is selected."
-independent_review = "Corrections required"
+independent_review = "Confirmed"
 
 [changelog]
 decision = "Updated"
