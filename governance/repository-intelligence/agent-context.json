@@ -1704,7 +1704,7 @@
       "integration_audit": "Needs re-verification",
       "last_verified": "—",
       "can_support": "Repository-month activity and static-metric estimates by observable adoption history; not per-feature debt, human cognitive load or functional correctness",
-      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4/Ch5 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2026-agarwal-agent-adoption.md"
     },
     {
