@@ -1,3 +1,5 @@
+> **Current checkpoint — 24 October 2026:** independent source and whole-implementation review is [Confirmed](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/118#issuecomment-6382139265) for head `6a9189b3f87cb2d770eff708caed2a6a801aa2af`, tree `46be65d27618fbb4a9246e05f6303b301251372c`. The dated initial state below is retained as history. All seven originals were freshly inspected by the separate reviewer; no inaccessible PDF or raw-data work is claimed. Source integration remains In progress / —. Merge, actual-main acceptance and final source verification are still pending.
+
 # Issue #100 — management records and integration audit
 
 **24 October 2026.** Active [issue #100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100), live plan [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84). Base `b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e`, tree `181615bcde9068ceb1c995b2f90b12b5866472d2`.
@@ -50,3 +52,7 @@ Primary review is complete for these stated source uses; the current candidate r
 AC1–3 retain their accepted preparation boundaries. For AC4, exact treatment is authorized and integration prepared; independent source/all-use review, accepted merge and eligible final source states remain. For AC5, synchronization is prepared; actual review, exact-head checks, merge, final-main/source verification and #84 closeout remain.
 
 Required checks:126 tests, contract/state integrity, trusted gates/transitions, fresh RI, links/anchors, source counts/use matching and protected-byte preservation. Executed results and immutable refs belong in the live PR; a green structural check cannot certify source meaning. Final verification follows accepted default-branch content under existing rules. No repeat routine approval is needed. Remaining #88/#1 is proposed next, not started.
+
+## Independent acceptance recorded
+
+Primary author: coordinating ChatGPT. Separate reviewer: Codex, report6382139265 on24October. Scope: seven originals, exact20-path implementation, all material uses, alternatives, preservation and synchronization. Outcome **Confirmed**; no material discrepancy. Reviewer checked126tests, contract/state, RI, trusted gates/transitions,463 local Markdown links and preserved35oldrows/23oldprimary-documentarybriefs. Coordinator separately inspected exact-head Main health40078988269 and Repository Gate40078988250: success, required steps executed. This recording changes only review metadata and dated handoff/audit; scientific text, source identities, Current use and integration/date stay unchanged.

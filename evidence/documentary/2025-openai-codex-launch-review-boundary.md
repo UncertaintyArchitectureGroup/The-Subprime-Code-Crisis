@@ -3,7 +3,7 @@ source_ids = ["D-2025-08"]
 evidence_review = "Reviewed brief"
 integration_audit = "In progress"
 last_verified = "—"
-independent_review = "Review unavailable"
+independent_review = "Confirmed"
 current_use = ["report/01_the_illusion.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
@@ -33,4 +33,4 @@ This record informs H0-C/MKT-1 at the bounded link described above. It does not 
 
 ## Integration and review
 
-The [all-use trace](../../governance/reviews/issue-100-2026-10-24-integration.md) covers Chapter 3, H0-C/MKT-1, bibliography and navigation/metadata. No new derived calculation or protocol claim is adopted. Primary evidence review is complete for the stated use. Integration is **In progress**, **Last verified = —**; separate source/implementation review is **Review unavailable** pending the published candidate. No Verified or accepted-main claim is made.
+The [all-use trace](../../governance/reviews/issue-100-2026-10-24-integration.md) covers Chapter 3, H0-C/MKT-1, bibliography and navigation/metadata. No new derived calculation or protocol claim is adopted. Primary evidence review is complete for the stated use. Integration is **In progress**, **Last verified = —**; Separate source/implementation review is [**Confirmed**](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/118#issuecomment-6382139265) for the inspected implementation candidate; merge and final verification remain pending. No Verified or accepted-main claim is made.

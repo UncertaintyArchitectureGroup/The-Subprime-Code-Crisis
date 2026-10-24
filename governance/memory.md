@@ -22,11 +22,11 @@
 
 - [Source-use audit](reviews/issue-100-2026-10-24-integration.md) records originals, trace, limits and synchronization.
 - The coordinating author inspected original HTML; no unseen PDF or raw-data replication is claimed.
-- Independent implementation/source review pending; new sources Reviewed brief / In progress / —, not Verified.
+- Independent source/implementation review6382139265 Confirmed; seven originals freshly checked. New sources remain Reviewed brief / In progress / —, not Verified.
 - Earlier executor local-only output was inaccessible; it is not this published candidate or its validation basis.
 
 ## Next actions
 
-- Complete independent source/all-use review and actual-head checks; correct any findings.
+- Check the acceptance-recording delta and exact-head CI; accepted research/source text is unchanged.
 - Merge only the accepted candidate; inspect actual main, then perform eligible final-source verification.
 - Close #100 only after all five criteria and the #84 checkpoint. Do not restart discovery or ask for routine approval again.

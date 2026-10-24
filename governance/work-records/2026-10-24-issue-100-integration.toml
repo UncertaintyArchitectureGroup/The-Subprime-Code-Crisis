@@ -2,7 +2,8 @@ record_version = 1
 title = "Integrate bounded management expectations and decisions (#100)"
 primary_flow = "Flow A — seven new sources and approved bounded report integration"
 human_decision = "User approved revised T1–T4 in issue100 comment6375719920; authorization6381868126 on 2026-10-24. No protocol/governance or next-issue change."
-independent_review = "Review unavailable"
+independent_review = "Confirmed"
+# Actual separate source/implementation acceptance: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/118#issuecomment-6382139265; head6a9189/tree46be65d2. Not future-main acceptance.
 
 [changelog]
 decision = "Updated"

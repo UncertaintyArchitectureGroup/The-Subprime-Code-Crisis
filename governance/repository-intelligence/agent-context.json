@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "391705dba89cffca0c07a2902a732a97def039f858a0ba4998c063c4d73da439",
+    "digest": "b37063b10ab1843cbc298dbccae072ae1a1c3886ca47eb2686fd06974c51b348",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -142,7 +142,7 @@
       {
         "path": "evidence/documentary/2022-github-copilot-productivity-communication.md",
         "identity_mode": "content",
-        "sha256": "4f4783aaabd1fcdd8c41e80396edc7f60c9c5676ed91d5bfaf4cdb9304f97d7b"
+        "sha256": "54ecffffc6f1d9d50b3880484fa08fb8b2c44d7f405d2fcdde00e34714574fa5"
       },
       {
         "path": "evidence/documentary/2024-alphabet-financial-context.md",
@@ -152,7 +152,7 @@
       {
         "path": "evidence/documentary/2024-google-ai-code-share-human-review.md",
         "identity_mode": "content",
-        "sha256": "80ede463d5fe0da3eb4929e92041c86742995fd99bc8b7057a0d8a91e0c6adc9"
+        "sha256": "5817e7196f5e2b93d11837dd8fda0a5502abbf20dc7d513936119ee992b522fc"
       },
       {
         "path": "evidence/documentary/2024-meta-financial-context.md",
@@ -167,12 +167,12 @@
       {
         "path": "evidence/documentary/2025-amazon-generative-ai-workforce-expectation.md",
         "identity_mode": "content",
-        "sha256": "ce07c6f5aaca326d5c7563ebf04700e20dbf8f11202e607479508a0e56f68e9e"
+        "sha256": "de4a9590d30ccd4a70b84c7ef05bfe558a96f8955bade0ac12e65723fda13a76"
       },
       {
         "path": "evidence/documentary/2025-amazon-workforce-action.md",
         "identity_mode": "content",
-        "sha256": "f00278d12048fc07c92e9c7cce5aaf73355a2327cc61753bb36730735b5bfe34"
+        "sha256": "3a0e1c0e99f3f93b680635f9aa51a28e684f8375af304eddf936e0ec3ec19ae3"
       },
       {
         "path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
@@ -182,7 +182,7 @@
       {
         "path": "evidence/documentary/2025-openai-codex-launch-review-boundary.md",
         "identity_mode": "content",
-        "sha256": "1914da7f2abc8f9602e59f2c78853860f789a60d28367c3ff3ec7ac507398434"
+        "sha256": "333e34f739a7f0e98df8c1235aadc07f758e68308ed64e734361dda19146b1d9"
       },
       {
         "path": "evidence/documentary/README.md",
@@ -217,7 +217,7 @@
       {
         "path": "evidence/primary/2023-mckinsey-developer-task-study.md",
         "identity_mode": "content",
-        "sha256": "c76eeb0cf79f4c30d4f2141098fc543f0c24c1e4f1ad17a28742de531005273e"
+        "sha256": "0591fd3c9cdaafcf9231e13ac1ed61747ed23d6f49de2ec29ed58e66dce19a13"
       },
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
@@ -282,7 +282,7 @@
       {
         "path": "evidence/primary/2026-anthropic-employment-and-organization.md",
         "identity_mode": "content",
-        "sha256": "e090a89cf21ae9087186985a5b7294963c013d88c049019e63151b61fa51c50d"
+        "sha256": "35f42e708952f50cd27224b9bc54e887bc0c5b2f6cf3ce1e1d33507b1172ba09"
       },
       {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "02a4f9f9c594b457db41bc9e9fd8d7c1b83980a1ffcc2698a905a551ef0d1933"
+        "sha256": "a7f2ecf9655e7f01e9d525e86f9b6518b23eda1c05cf4ab54f59c54d811997da"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -422,7 +422,7 @@
       {
         "path": "governance/reviews/issue-100-2026-10-24-integration.md",
         "identity_mode": "content",
-        "sha256": "396d0b063bf671c830f250e0f2a353b3dd05478f032f8396220a121ac1492520"
+        "sha256": "20ab57ebdcdc1a8a4e6292614e9cdace3c945b9b520df0e03e9c9ba99ee5b104"
       },
       {
         "path": "governance/reviews/issue-109-2026-10-22-comparison-method.md",
@@ -877,7 +877,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-100-integration.toml",
         "identity_mode": "content",
-        "sha256": "93389eddb45430d71a411be23ff2413879898500cf712fc2a5609eefe61e9afa"
+        "sha256": "c349033d733704f87140da6cc8d317960cb2c6bdfa0fa93b29d2a018f7665c51"
       },
       {
         "path": "governance/work-records/README.md",
