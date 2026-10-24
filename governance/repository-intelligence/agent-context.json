@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "7288c1e5aff69fd0ba37f47cb5d2d34b1bc9be07b1434521f3f42651d0d29d36",
+    "digest": "1424e35ac128fb2b5c956bee69c6813df51e0f533b609335b3350169de7b439f",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -902,7 +902,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-123-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "b72f86627e6a160ce72d3feb78a5d554c1ea07f47906624918410690c7c0e863"
+        "sha256": "2089867d8e1feee76252a9b092eeaa9646295050f939c1e4037a75376c012a78"
       },
       {
         "path": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
