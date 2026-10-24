@@ -1,13 +1,17 @@
 +++
 source_ids = ["P-2026-04"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-24"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Chen–Stratton: AI adoption and firm software production
+
+## Final accepted README use — 2026-10-24, #123
+
+The changed README V2 use merged in [PR #134](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/134) on accepted main `91bce0729227f8a2c4239bbc0edbf700683588fd` (tree `d83d3ea72353d26ab71ce1609f9631874da948ef`); independent [actual-main acceptance](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6386895191) returned `Confirmed` and exact-main CI passed. The [final Flow D record](../../governance/reviews/issue-123-2026-10-24-final-verification.md) and existing occurrence audit justify the proposed final integration status: **Reviewed brief / Verified / 2026-10-24**. It concerns the unchanged **4 August 2026** study; neither raw evidence nor the causal limitations, per-active-worker-month measures, elapsed review time, alternatives and Current use are modified. The pre-merge reset checkpoint below is dated history. Final metadata PR review, merge and actual-main acceptance remain to complete.
 
 ## README opening changed-use checkpoint — 2026-10-24, #123
 

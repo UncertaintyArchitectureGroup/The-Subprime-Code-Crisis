@@ -2,8 +2,8 @@
 
 ## Snapshot
 
-- 2026-10-24: selected issue #123 is the sole active implementation task; base `main` is `0aaccd7311af65727ddf0077f9ca605def967d22`.
-- Candidate changes the public README entry and resets only P-2026-01/P-2026-04 integration for the new condensed uses. It does not claim merge, actual-main acceptance, final verification or publication.
+- 2026-10-24: #123 remains the sole active issue. README PR #134 merged, accepted `main` `91bce0729227f8a2c4239bbc0edbf700683588fd`, tree `d83d3ea72353d26ab71ce1609f9631874da948ef`; actual-main independent review Confirmed (#123 comment6386895191).
+- New V2 README and Option A planning decision are already in accepted main. Final source-state PR is a separate in-progress step; it must complete independent review, checks and merge. No publication/deployment in #123.
 - Revalidate live issue/PR/main/check state before continuing.
 
 ## Active owners
@@ -23,11 +23,11 @@
 
 - [#123 changed-use and route audit](reviews/issue-123-2026-10-24-readme-route-audit.md) owns occurrence checks, synchronization and #74/PR75 dispositions.
 - README V2 complete candidate SHA-256 is `ed0f1c71add5ce858c0bbdb466181dce8b15aa981c286f1e59436bc6b70f8869`; opening SHA-256 is `dd69cb6aabdd849ecceba21666cb2b9040c4fcbf1cf0979807adbdd46852f1f2`.
-- Candidate source state is Reviewed brief / Needs re-verification / — for P-2026-01 and P-2026-04. Initial substantive review found only a stale review-status record and returned Corrections required; fix and repeat independent review are in progress.
+- Accepted main P-2026-01/P-2026-04 remained Reviewed brief / Needs re-verification / — before finalization. The new metadata candidate proposes Verified / 2026-10-24 and requires independent metadata acceptance, merge and main checks; findings and version identifiers remain unchanged.
 
 ## Next actions
 
 - Route A is selected and recorded; preserve the existing three canonical report files and URLs without creating new chapter architecture in #123.
-- Independently review the published candidate bytes and resolve findings; run required candidate checks.
-- Merge only after acceptance, verify actual main, then complete a narrow final-status step for the two changed uses inside #123.
+- Independently review the final source-state candidate and record exact status/CI outcomes.
+- README PR #134 is already merged and independently accepted. Merge final metadata only after its review and checks, then verify actual main and close #123.
 - After #123 is complete, reread #84 and present the full plan plus #124 as the one next proposal; do not start it without approval.

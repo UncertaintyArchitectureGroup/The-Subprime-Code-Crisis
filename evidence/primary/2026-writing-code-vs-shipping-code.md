@@ -1,13 +1,17 @@
 +++
 source_ids = ["P-2026-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-24"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md", "evidence/primary/2026-chen-stratton-firm-production.md"]
 +++
 
 # Writing Code vs. Shipping Code — September 2026 revision
+
+## Final accepted README use — 2026-10-24, #123
+
+After [PR #134](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/134) merged on `91bce0729227f8a2c4239bbc0edbf700683588fd` (tree `d83d3ea72353d26ab71ce1609f9631874da948ef`), [independent actual-main acceptance](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6386895191) was `Confirmed` and exact-main CI passed. The [final Flow D record](../../governance/reviews/issue-123-2026-10-24-final-verification.md) and existing occurrence audit justify the proposed final integration status: **Reviewed brief / Verified / 2026-10-24**. This verifies the bounded README use of the accepted **September revision**, not the May PDF, every hypothesis, or a new source reading. Current use, figures, samples, limitations and alternatives are unchanged. The older checkpoint below records the prior pre-merge reset; it does not override the newer eligible status. Actual merge and final independent review of this metadata update remain separate acceptance steps.
 
 ## README opening changed-use checkpoint — 2026-10-24, #123
 
