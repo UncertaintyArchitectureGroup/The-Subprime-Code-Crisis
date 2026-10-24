@@ -2,7 +2,9 @@ record_version = 1
 title = "Issue #125: Intent and Requirements — reader-ready chapters 3–4"
 primary_flow = "Approved editorial report synthesis of existing INT-1/2 and REQ-1/2 Open hypotheses; no new material external-source use, so no Flow D status reset"
 human_decision = "After issue #124 closure and explicit #125 proposal, maintainer said 'Давай' on 2026-10-24. Approved Chapters 3–4 only, #123 Option A canonical report path; #133 Design, node research #89/#90 and publication #74 remain separate."
-independent_review = "Review unavailable"
+independent_review = "Confirmed"
+reviewer = "Independent Cloudflare Workers AI / Google Gemma-4 26B, original full-diff review 7f9f45f20b9b4ccba970efcd4be15632, corrected full-chapter rereview b08687450b514b758ecd5ddde715db55"
+review_scope = "Independent candidate substantive and corrected-content review. Pre-merge; exact-main acceptance and checks remain required."
 
 [changelog]
 decision = "Updated"
