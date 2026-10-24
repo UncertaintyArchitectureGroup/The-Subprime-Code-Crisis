@@ -1,0 +1,82 @@
+name: Issue 100 record actual review
+on:
+  push:
+    branches: [issue-100-transfer-20261024]
+    paths: [.github/workflows/issue-100-record-review.yml]
+permissions:
+  contents: write
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    env:
+      BASE: b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e
+      EXPECTED: 6a9189b3f87cb2d770eff708caed2a6a801aa2af
+      TARGET: issue-100-documentary-integration
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: 6a9189b3f87cb2d770eff708caed2a6a801aa2af
+          fetch-depth: 0
+      - name: Record only the completed independent outcome
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED"
+          test "$(git ls-remote origin refs/heads/$TARGET | cut -f1)" = "$EXPECTED"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$BASE"
+          mkdir -p /tmp/trusted /tmp/issue100-review
+          git archive "$BASE" | tar -x -C /tmp/trusted
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request,json,os,subprocess
+          receipt='https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/118#issuecomment-6382139265'
+          req=urllib.request.Request('https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/comments/6382139265',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+          obj=json.load(urllib.request.urlopen(req));assert obj['user']['login']=='chatgpt-codex-connector[bot]'
+          assert 'Canonical outcome: **Confirmed**' in obj['body'] and os.environ['EXPECTED'] in obj['body']
+          ids={'D-2022-01','P-2023-02','D-2025-08','D-2025-09','D-2024-04','P-2026-06','D-2025-10'}
+          selected=[]
+          for p in Path('evidence').glob('*/*.md'):
+              s=p.read_text()
+              if any(f'source_ids = ["{x}"]' in s for x in ids):
+                  assert 'integration_audit = "In progress"' in s and 'last_verified = "—"' in s
+                  assert s.count('independent_review = "Review unavailable"')==1
+                  s=s.replace('independent_review = "Review unavailable"','independent_review = "Confirmed"')
+                  s=s.replace('separate source/implementation review is **Review unavailable** pending the published candidate.',f'Separate source/implementation review is [**Confirmed**]({receipt}) for the inspected implementation candidate; merge and final verification remain pending.')
+                  p.write_text(s);selected.append(str(p))
+          assert len(selected)==7
+          p=Path('governance/work-records/2026-10-24-issue-100-integration.toml');s=p.read_text();assert s.count('independent_review = "Review unavailable"')==1
+          p.write_text(s.replace('independent_review = "Review unavailable"',f'independent_review = "Confirmed"\n# Actual separate source/implementation acceptance: {receipt}; head6a9189/tree46be65d2. Not future-main acceptance.'))
+          p=Path('governance/reviews/issue-100-2026-10-24-integration.md');s=p.read_text()
+          p.write_text('> **Current checkpoint — 24 October 2026:** independent source and whole-implementation review is [Confirmed]('+receipt+') for head `6a9189b3f87cb2d770eff708caed2a6a801aa2af`, tree `46be65d27618fbb4a9246e05f6303b301251372c`. The dated initial state below is retained as history. All seven originals were freshly inspected by the separate reviewer; no inaccessible PDF or raw-data work is claimed. Source integration remains In progress / —. Merge, actual-main acceptance and final source verification are still pending.\n\n'+s+'\n## Independent acceptance recorded\n\nPrimary author: coordinating ChatGPT. Separate reviewer: Codex, report6382139265 on24October. Scope: seven originals, exact20-path implementation, all material uses, alternatives, preservation and synchronization. Outcome **Confirmed**; no material discrepancy. Reviewer checked126tests, contract/state, RI, trusted gates/transitions,463 local Markdown links and preserved35oldrows/23oldprimary-documentarybriefs. Coordinator separately inspected exact-head Main health40078988269 and Repository Gate40078988250: success, required steps executed. This recording changes only review metadata and dated handoff/audit; scientific text, source identities, Current use and integration/date stay unchanged.\n')
+          p=Path('governance/memory.md');s=p.read_text().replace('Independent implementation/source review pending; new sources Reviewed brief / In progress / —, not Verified.','Independent source/implementation review6382139265 Confirmed; seven originals freshly checked. New sources remain Reviewed brief / In progress / —, not Verified.')
+          s=s.replace('Complete independent source/all-use review and actual-head checks; correct any findings.','Check the acceptance-recording delta and exact-head CI; accepted research/source text is unchanged.')
+          p.write_text(s)
+          allowed=set(selected+['governance/work-records/2026-10-24-issue-100-integration.toml','governance/reviews/issue-100-2026-10-24-integration.md','governance/memory.md'])
+          actual=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines());assert actual==allowed,(actual,allowed)
+          PY
+      - name: Rebuild and check with trusted base policy
+        run: |
+          python tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
+          python -m unittest discover -s tests -p 'test_*.py' > /tmp/issue100-review/tests.log 2>&1
+          python -m tools.repository_validator
+          python -m tools.evidence_state_check
+          python tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
+          git diff --check
+          test "$(git diff --name-only | wc -l)" = 11
+          git add evidence governance
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Record actual source and implementation acceptance for issue100' -m 'Refs #100. Receipt6382139265; no source finding or integration-state promotion.'
+          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/repository_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base "$BASE" --head HEAD
+          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/evidence_transition_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base "$BASE"
+          test "$(git ls-remote origin refs/heads/$TARGET | cut -f1)" = "$EXPECTED"
+          git push origin HEAD:refs/heads/$TARGET
+          git show -s --format='%H %T %P' HEAD > /tmp/issue100-review/identity.txt
+          git diff --binary "$EXPECTED" HEAD > /tmp/issue100-review/recording.patch
+          git archive --format=zip HEAD > /tmp/issue100-review/repository.zip
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue100-recorded-review
+          path: /tmp/issue100-review/
+          retention-days: 3
+          if-no-files-found: error
