@@ -2,31 +2,32 @@
 
 ## Snapshot
 
-- 2026-10-24: #100 implementation base is `b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e`; #109/#110/#111 are complete.
-- This candidate does not claim its future merge or final source verification.
-- Revalidate live issue/PR/main/checks before resuming; memory is navigation, not current evidence.
+- 2026-10-24: PR #118 is merged; accepted main is `7e40c0b7930d4a014483b51eda68dbed802c73e7`, tree `26a0659a28edb927650ac168a2a8894042459ebc`.
+- #119 is completed; #120 records final verification of seven unchanged source uses.
+- Revalidate live issue/PR/main/checks. This candidate does not claim its own future merge or completion.
 
 ## Active owners
 
-- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) is the sole live plan.
-- [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100) owns the approved source/integration work.
-- Remaining #88/#1 is proposed next, not started. Held candidates and D03 retain prior owners.
+- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) remains the sole live master plan.
+- [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100) owns the approved management-evidence scope.
+- [#120](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/120) owns the narrow final-status PR; #121 owns later parent closeout.
+- #88/#1 and held candidates retain their existing boundaries and are not started here.
 
 ## Decisions
 
-- Exact T1–T4 in6375719920 approved by the user; authorization6381868126.
-- Flow A for seven new objects; no indiscriminate reset of unrelated sources sharing edited files.
-- Preserve the hypothetical scenario, #61 corrections, Open causal verdicts and all protocols/governance.
+- Exact T1–T4 approved in6381868126; #120 selected in6382964826.
+- Preserve findings, versions, Current use, #61 corrections, Open causal verdicts and all protocols/governance.
+- Do not repeat accepted source research or introduce a new review or approval layer.
 
 ## Evidence
 
-- [Source-use audit](reviews/issue-100-2026-10-24-integration.md) records originals, trace, limits and synchronization.
-- The coordinating author inspected original HTML; no unseen PDF or raw-data replication is claimed.
-- Independent source/implementation review6382139265 Confirmed; seven originals freshly checked. New sources remain Reviewed brief / In progress / —, not Verified.
-- Earlier executor local-only output was inaccessible; it is not this published candidate or its validation basis.
+- [All-use trace](reviews/issue-100-2026-10-24-integration.md) and source review6382139265 cover the seven originals and uses.
+- Recording review6382356701 and actual-main review6382855174 are Confirmed within scope.
+- Actual-main Main health40084096474 passed; accepted tree is byte-identical to the reviewed candidate.
+- [Final-verification record](reviews/issue-120-2026-10-24-final-verification.md) explains the eligible status/date pairs and unchanged content.
 
 ## Next actions
 
-- Check the acceptance-recording delta and exact-head CI; accepted research/source text is unchanged.
-- Merge only the accepted candidate; inspect actual main, then perform eligible final-source verification.
-- Close #100 only after all five criteria and the #84 checkpoint. Do not restart discovery or ask for routine approval again.
+- Check the live #120 metadata PR outcome and required checks; merge only after actual independent acceptance.
+- If already merged, inspect exact main/tree/CI and finish #120 rather than rebuilding the same change.
+- Stop after the #120 report. Parent #100 closure and current #84 entry-point reconciliation remain #121.
