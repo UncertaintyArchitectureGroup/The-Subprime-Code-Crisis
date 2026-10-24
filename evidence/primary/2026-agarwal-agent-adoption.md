@@ -1,13 +1,19 @@
 +++
 source_ids = ["P-2026-02"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-24"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Agarwal: agent adoption, activity and code structure
+
+## Final #133 Design-chapter integration checkpoint — 2026-10-24
+
+The approved Chapter 5 Design source use was merged through [PR #141](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/141) as `480c01901f81e16e71671b57a36b2b8d907f4f78`, tree `97b8e75d5bbd124cca5ce03b8dc81fb9ea176da5`, identical to independently reviewed candidate head `1982b3509a78780e1ab247501b1a8a567646de90`. Post-merge [Main health #40133864628](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/40133864628) **Success**. Independent non-author Gemma-4 reviewer `82cf2d83097d4e2ba23ba83bb3d22816` confirmed candidate content/source-use logic; Llama agent-reader `chatcmpl-738740a5-b516-4d45-b461-04facae3548c` assessed reader comprehension separately. The independent model read the supplied first-party original Table 2/Figure 2 extracts and complete patch, not raw GitHub/PDF through its own browsing.
+
+**Flow D:** this final, metadata-only #133 PR proposes restoring `Evidence review = Reviewed brief / Integration audit = Verified / Last verified = 2026-10-24` for the *unchanged* arXiv v2 source and its accepted new Chapter 5 use. Previous historical reviews and resets are preserved below. The source was not upgraded to an independently checked final ACM version; observational AF/IF results, pretrend limits and absence of measured human cognitive load, monetary debt and competent ownership remain. No source ID, finding, estimate, bibliography object or `Current use` path set changes. This narrow status PR itself still needs separate independent review, CI, merge and actual-main verification before #133 closure.
 
 ## Changed Design-chapter integration checkpoint — 2026-10-24, #133 (candidate Flow D)
 
