@@ -1,0 +1,10 @@
+# Default ownership until a dedicated reviewer team exists.
+* @oborskyivitalii
+
+# Governance and enforcement surfaces require maintainer ownership.
+/AGENTS.md @oborskyivitalii
+/.github/ @oborskyivitalii
+/governance/ @oborskyivitalii
+/tools/ @oborskyivitalii
+/tests/ @oborskyivitalii
+/evidence/SOURCES.md @oborskyivitalii
