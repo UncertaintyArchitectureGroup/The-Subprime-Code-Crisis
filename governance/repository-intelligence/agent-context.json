@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "c6805473a358312866522dedf70ec58c67978c3cb3276093e4e50ca65ae5664a",
+    "digest": "ec0f1dfd8ab643de2d60ec4e7ef8b5987d691fbeec8e83460a8cbfc2ad79fb5f",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -517,7 +517,7 @@
       {
         "path": "governance/reviews/issue-124-2026-10-24-final-verification.md",
         "identity_mode": "content",
-        "sha256": "2b1a8b828c5971ee799478cc4e96931db9d48528f1264f9084c8419853209b43"
+        "sha256": "ca25b91900ef8bc4524a2e918ae2c2b50b33a965b3fbc18b30cd7be763623dcb"
       },
       {
         "path": "governance/reviews/issue-124-2026-10-24-independent-substantive-review.md",
@@ -932,7 +932,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-124-final-verification.toml",
         "identity_mode": "content",
-        "sha256": "dc56899a3213b63c2f03509f2a0f072d23b537a98c213dff4682f9e22068d1d2"
+        "sha256": "553f296a454aff8851b6f0f9b5b51c2b04e8749aa398f7b97bdf84c55e3b1f6a"
       },
       {
         "path": "governance/work-records/2026-10-24-issue-124-thesis-sdlc.toml",
