@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "756c0cf455290e8415f73d22872f7cbb8ef6853c80704315ff4273f93ebae206",
+    "digest": "c471366b902ebff99dea0ea96acca3919aa95e873d10643f6753f01737f87537",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "5b3d20f7d5c8bd1f7164201b5591572a52fced0d89433417b8edc0b015a210f8"
+        "sha256": "a52300cd3c4a761f4c2fd2557934ab381ca9e1402e21d8a932b3eaf321a02744"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -512,7 +512,12 @@
       {
         "path": "governance/reviews/issue-124-2026-10-24-chapter-source-route-audit.md",
         "identity_mode": "content",
-        "sha256": "6da1aee84c34512f5919fd762f7079944a38306156b0c78da80869e81cddc4a8"
+        "sha256": "234752363692e4bff5f459feabc65bd5ae088a53a5787f9a6b47bdf51682e9d1"
+      },
+      {
+        "path": "governance/reviews/issue-124-2026-10-24-independent-substantive-review.md",
+        "identity_mode": "content",
+        "sha256": "02ea8db61451f97b450df113159855ba8ee3c6fe93dfd6a8d57e6c9c56573656"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -922,7 +927,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-124-thesis-sdlc.toml",
         "identity_mode": "content",
-        "sha256": "e05a7ada6cff2b167bb021011aa0c806d2dfef3db52c921dbce575b0410e6470"
+        "sha256": "5fb8e6757ce4bce5109c788e092a7e347a581e0f6ce936d12f7c675940925f44"
       },
       {
         "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
@@ -2721,6 +2726,13 @@
     {
       "path": "governance/reviews/issue-124-2026-10-24-chapter-source-route-audit.md",
       "title": "Issue #124 — First two chapters, source-use and legacy-route audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-124-2026-10-24-independent-substantive-review.md",
+      "title": "Issue #124 — independent substantive and agent-reader review",
       "instructions": [
         "AGENTS.md"
       ]
