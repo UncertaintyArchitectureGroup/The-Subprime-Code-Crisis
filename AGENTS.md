@@ -306,6 +306,52 @@ Issue status does not set Evidence review, Integration audit or Last verified.
 The registry and source flows remain canonical. Cross-repository work follows
 [the owner map](governance/repository-map.md) and each sibling's own instructions.
 
+### Within-issue checkpoints and end-of-session reporting
+
+The **selected issue** remains the execution boundary until its whole acceptance
+is completed on actual `main`. Keep a single, inspectable **within-issue task
+plan**: the full list of completed, in-progress, blocked and queued subtasks,
+their dependency/priority order and observable completion conditions. The issue
+is the owner of this execution list; [master plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
+is the sole owner of the **cross-issue** order. Neither PR comments nor memory
+replace these owners. These status words are reporting descriptions, not new
+source states, issue lifecycle states, or approval gates.
+
+After **each meaningful subtask** and before **each deliberate session end,
+pause or chat/context handoff**:
+
+1. **Return to the live owning issue.** Compare its original intent, complete
+   acceptance checklist and linked PRs with actual changes, independent-review
+   outcomes, relevant CI and the default-branch state. Append a dated progress
+   checkpoint or update the issue's dated status section: what is done, partial,
+   blocked or not verified, with exact evidence links. Tick an AC only when its
+   full pass condition holds; retain original intent and prior decisions.
+2. **Refresh the entire within-issue plan.** Keep every subtask visible with
+   status, priority, dependencies and the intended order. Identify exactly one
+   **next actionable step within the same issue**, including its expected result.
+   Remove stale instructions from the active next-step position, not from
+   historical records. Do not jump to a different issue because one PR or
+   partial task is finished.
+3. **Correct the plan proportionately.** Record a reason for routine sequencing
+   changes that stay inside the approved scope. **Ask the maintainer before**
+   a material change to scope, outcome, acceptance, dependencies or priority
+   commitments, or before switching the active issue. Do not ask again about
+   routine corrections, reviews, checks or merges already authorized.
+4. **End each work session with a user-facing status report:** active issue
+   link; what was completed and actual PR/review/CI/`main` status; AC progress,
+   blockers and unverified work; the single next subtask; the **full
+   status-and-priority-ordered subtask list within that issue**; and what
+   remains before the issue can close. Separately show the **current overall
+   issue sequence and priorities from #84**, without inventing a competing
+   master plan. Once the issue is truly complete, use the existing
+   next-issue approval checkpoint instead of inventing another task inside it.
+
+Unexpected chat loss may prevent a closing checkpoint. At resumption, reconstruct
+it from live issue/PR/default-branch evidence and report the last verified point
+and remaining steps before continuing. Never claim a review, test, merge or
+acceptance not actually observed. A reporting checkpoint does not certify
+completion or change the existing gates.
+
 ## Repository Intelligence navigation
 
 After mandatory instruction/source bootstrap, a verified
