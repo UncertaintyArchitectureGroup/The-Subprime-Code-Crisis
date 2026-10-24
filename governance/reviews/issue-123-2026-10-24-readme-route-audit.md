@@ -1,6 +1,6 @@
 # Issue #123 — README changed-use and report-route audit
 
-Date: 2026-10-24. Base: `0aaccd7311af65727ddf0077f9ca605def967d22`. Active issue: [#123](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123). Route decision: **Maintainer pending**.
+Date: 2026-10-24. Base: `0aaccd7311af65727ddf0077f9ca605def967d22`. Active issue: [#123](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123). Route decision: **Option A selected by maintainer**, [decision 6385629513](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513).
 
 ## Scope and decision record
 
@@ -89,7 +89,7 @@ Live inspection by the coordinator is recorded in [#123 comment 6384820302](http
 
 | Input | Exact observed contract | #123 disposition |
 | --- | --- | --- |
-| Issue #74 content/URL contract | Canonical Markdown stays in present locations; three report files remain three pages initially. | **Unaffected now.** Supports option A unless a later migration is explicitly chosen. |
+| Issue #74 content/URL contract | Canonical Markdown stays in present locations; three report files remain three pages initially. | **Unaffected now.** Consistent with the maintainer-selected Option A; the current three source paths remain canonical. |
 | PR #75 `tools/report_web/publication.json` | `README.md` → `/subprime/overview`; three report files → `/subprime/report/the-illusion`, `/subprime/report/broken-mechanics`, `/subprime/report/the-aftermath`. | **Affected by README content, not by route.** No manifest edit required for the existing source path. |
 | PR #75 `tools/report_web/landing.md` | Current labels/counts 1–4 / 5–7 / 8–10. | **Deferred to #74 / a later selected editorial-publication synchronization unit.** It becomes textually stale as the 17-chapter edition is assembled. |
 | PR #75 producer/link logic | Explicit source allowlist and stable slugs for the three report files. | **Unaffected by Phase A.** A later split is a producer-contract change. |
@@ -101,10 +101,14 @@ Live inspection by the coordinator is recorded in [#123 comment 6384820302](http
 - **B — later create 17 chapter-sized canonical files.** Offers one page per chapter but requires new route mapping, compatibility handling, producer changes and broader synchronization.
 - **C — hybrid.** No concrete need currently justifies mixed ownership; it risks duplicate canonical text.
 
-**Recommendation: A. Maintainer decision pending.** No chapter file, directory, alias, compatibility stub or producer change is created by #123.
+**Maintainer decision: Option A selected on 2026-10-24** ([record](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513)). Keep the three canonical Markdown report files, preserve their existing report-page routes and put the 17 planned chapters at stable anchors inside them when each later editorial issue is approved. Option B and C are not selected. No chapter file, directory, alias, compatibility stub or producer change is created by #123; no future chapter issue is automatically authorized.
 
 ## Independent-review handoff and completion boundary
 
 The reviewer must inspect exact README V2 bytes, tail preservation, both condensed source uses against accepted briefs, status resets, registry/brief synchronization, this occurrence audit, the #74/PR75 dispositions, the one work record, changelog, memory/RI and all applicable checks. Proposal review is not implemented-byte review.
 
-This candidate is not complete or merge-ready until independent review is `Confirmed`, corrections are resolved and checked, the route decision is recorded, the content PR is merged and accepted on actual `main`, and a later narrow final-status step restores the two sources only after all verification gates pass.
+This candidate is not complete or merge-ready until independent review is `Confirmed`, corrections are resolved and checked, the recorded Option A choice is respected, the content PR is merged and accepted on actual `main`, and a later narrow final-status step restores the two sources only after all verification gates pass.
+
+### Route selection and review correction — 2026-10-24
+
+The maintainer explicitly selected Option A in [#123 decision 6385629513](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513). This is a route-planning decision, not an implementation of 17 chapter headings or a publication change. The original audit preceded this decision. Independent PR review [#123 review 6385630012](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385630012) confirmed the source uses, reader text, navigation, audit and inventory, but returned `Corrections required` because the work-record review field still said `Review unavailable`. That field has been corrected in the candidate; repeated independent recheck and final metadata recording are pending.

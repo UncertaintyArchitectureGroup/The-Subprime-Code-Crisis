@@ -16,18 +16,18 @@
 ## Decisions
 
 - Exact README V2: #88 comments6383504860 +6383542436; proposal recheck6383555588.
-- Route options are recorded; recommendation is to retain three canonical report files and stable URLs. Maintainer decision remains pending.
+- Maintainer selected Option A, retaining three canonical report files and stable URLs for 17 chapter headings/anchors ([decision](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513)); no route migration is in #123.
 - Preserve the September P-2026-01 object, 4 August P-2026-04 object, positive/uncertain findings, alternatives, protocols and all unrelated source states.
 
 ## Evidence
 
 - [#123 changed-use and route audit](reviews/issue-123-2026-10-24-readme-route-audit.md) owns occurrence checks, synchronization and #74/PR75 dispositions.
 - README V2 complete candidate SHA-256 is `ed0f1c71add5ce858c0bbdb466181dce8b15aa981c286f1e59436bc6b70f8869`; opening SHA-256 is `dd69cb6aabdd849ecceba21666cb2b9040c4fcbf1cf0979807adbdd46852f1f2`.
-- Candidate source state is Reviewed brief / Needs re-verification / — for P-2026-01 and P-2026-04. Independent implemented-byte review is not yet recorded.
+- Candidate source state is Reviewed brief / Needs re-verification / — for P-2026-01 and P-2026-04. Initial substantive review found only a stale review-status record and returned Corrections required; fix and repeat independent review are in progress.
 
 ## Next actions
 
-- Obtain the maintainer's A/B route decision and record it without creating architecture in #123.
+- Route A is selected and recorded; preserve the existing three canonical report files and URLs without creating new chapter architecture in #123.
 - Independently review the published candidate bytes and resolve findings; run required candidate checks.
 - Merge only after acceptance, verify actual main, then complete a narrow final-status step for the two changed uses inside #123.
 - After #123 is complete, reread #84 and present the full plan plus #124 as the one next proposal; do not start it without approval.

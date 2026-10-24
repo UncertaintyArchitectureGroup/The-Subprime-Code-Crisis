@@ -1,8 +1,8 @@
 record_version = 1
 title = "Issue #123 README V2 opening and bounded report-route inventory"
 primary_flow = "Flow D — changed repository uses for P-2026-01 and P-2026-04; approved editorial and read-only route inventory"
-human_decision = "Maintainer selected #123 in issue comment 6384736791. Exact README V2 is #88 comments 6383504860 and 6383542436. Route architecture remains Maintainer pending; no later issue is selected."
-independent_review = "Review unavailable"
+human_decision = "Maintainer selected #123 in issue comment 6384736791. Exact README V2 is #88 comments 6383504860 and 6383542436. Maintainer chose Option A (three canonical report files with 17 chapter anchors) in #123 comment 6385629513; no later issue is selected."
+independent_review = "Corrections required"
 
 [changelog]
 decision = "Updated"
@@ -14,7 +14,7 @@ assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "reposito
 [synchronization.non_applicable]
 contributor-guidance = "No contributor obligation, workflow or issue lifecycle change."
 doctrine = "No claim class, evidence principle, term, scope or artifact relationship change."
-repository-architecture = "No chapter files, aliases, directories, publisher or canonical-route implementation; route choice remains pending."
+repository-architecture = "No chapter files, aliases, directories, publisher or canonical-route implementation; Option A has been selected; implementation of future chapter headings is deferred to separately approved editorial issues."
 evidence-indexes = "No source object, class, brief path or index membership change."
 references = "No source identity, version or bibliography change."
 report = "No report prose changes; the opening links accepted existing report/register content."
