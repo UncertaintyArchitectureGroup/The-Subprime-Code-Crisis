@@ -1,13 +1,19 @@
 +++
 source_ids = ["P-2026-04"]
 evidence_review = "Reviewed brief"
-integration_audit = "Needs re-verification"
-last_verified = "—"
+integration_audit = "Verified"
+last_verified = "2026-10-24"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Chen–Stratton: AI adoption and firm software production
+
+## Final #124 changed-use integration checkpoint — 2026-10-24
+
+The new two-chapter report use was accepted on **actual main** [PR #138](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/138), merge commit `1979e42536813f3ea8ead0511963109f6dc7a1df`, tree `5b24aab45f5b9aedef864ec27b47fc5af4b0c00a`, identical to the independently reviewed PR candidate tree. Exact-main [Main health #40126752751](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/40126752751) succeeded; [independent premerge substantive review](../../governance/reviews/issue-124-2026-10-24-independent-substantive-review.md) and [separately recorded actual-main review](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/124#issuecomment-6388770523) both reported `Confirmed` for their bounded content scope. The [#124 occurrence audit](../../governance/reviews/issue-124-2026-10-24-chapter-source-route-audit.md) checked the altered uses and surviving references, including alternative explanations.
+
+This narrow Flow D finalization restores **Evidence review = Reviewed brief / Integration audit = Verified / Last verified = 2026-10-24** for the **unchanged accepted source object** and the now-reviewed chapter use; it does **not** validate raw data independently, change the source version or assert causal review-hour overload or enterprise-wide negative value. Existing `Current use`, numeric values, prior correction history and contrary findings are unchanged. This metadata step itself still requires a distinct governed PR review, checks, merge and actual-main acceptance before issue #124 may close.
 
 ## New chapter-opening changed use — 2026-10-24, #124 (pre-merge Flow D)
 
