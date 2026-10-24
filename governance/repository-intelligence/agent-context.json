@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "b0008b18e51a0f5db0e6718a798f1b3bdbf49e89e48b96ed6ec2e16d393695a4",
+    "digest": "af5e348432f6c308dd28e749a438279d6105f5653ba61c78d3af93aca9331429",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "c65ddbb2f30aa5b0e2dcdcab0c9bd00a31ad4ae14ab83dcfc1bd6938153a17f6"
+        "sha256": "50a56577f4194bf30b7bba93c1d54ec01f8ed54e4a3ad9a01d18f721c4c151b5"
       },
       {
         "path": "CITATION.cff",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "a0d9d4f80f13147d54a4487865615c54e97fd71bb33773ef3bfb226625d43f15"
+        "sha256": "ec50f755ce15b17aec44079ffc5fad001a6202ce9ac0bc0035718bc31d2de03c"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -272,7 +272,7 @@
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "2034d0a7510ab46624abe89c9e67c2070221d2bfe93ca10a7b1476c8626e64f1"
+        "sha256": "a1f98fe8b50f88fe9c19d3b7929aed35965a6495c1159676fb858e76f378210c"
       },
       {
         "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "13e1266c7788cc4d2087133c7ed384b756bc4ec407adc77e39f61c6797d9e0e8"
+        "sha256": "27cd7047ca6dce2fc231432b2c29e03ef3ff162be37def0c9bdd7d4bf04b5b04"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -528,6 +528,11 @@
         "path": "governance/reviews/issue-125-2026-10-24-intent-requirements-source-route-audit.md",
         "identity_mode": "content",
         "sha256": "4ab2deeec1f9d98cb7bcab6b761b210d8b02eed5c28755a27d00d6ada8286334"
+      },
+      {
+        "path": "governance/reviews/issue-133-2026-10-24-design-source-route-audit.md",
+        "identity_mode": "content",
+        "sha256": "59d694cc14241b12d376f7ce58957e7b1a2e412c8090fa76006d6213d8a1e22b"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -950,6 +955,11 @@
         "sha256": "d0b2e2631c3a4d7ef8eb99a19b6ac7ec416cfd3fda6922416ea556f7a7260805"
       },
       {
+        "path": "governance/work-records/2026-10-24-issue-133-design-chapter.toml",
+        "identity_mode": "content",
+        "sha256": "a42715979db53afbb07f3a27e7ea6145e08e5d55cd54f61c0211e582a9f0ad51"
+      },
+      {
         "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
         "identity_mode": "content",
         "sha256": "1d48c5244e773d7cfb20bf991b9a9ed8ccb61179b48b326b12ffb467c00919a4"
@@ -987,7 +997,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "65335f69b3f15807295d8acd9b159becc30ecf086fb3fa381e736dcdf8c885f8"
+        "sha256": "6e9b7da80c232599da362c0010f24a3cd85c14e47c59c148e933d352164f35c5"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -1691,10 +1701,10 @@
       "path": "evidence/SOURCES.md",
       "source": "Agarwal et al., *AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-23",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Repository-month activity and static-metric estimates by observable adoption history; not per-feature debt, human cognitive load or functional correctness",
-      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
+      "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4/Ch5 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2026-agarwal-agent-adoption.md"
     },
     {
@@ -2772,6 +2782,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-133-2026-10-24-design-source-route-audit.md",
+      "title": "Issue #133 — Chapter 5 Design: source-use, hypothesis and route audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
       "title": "Issue #136 — Within-issue checkpoint governance assessment",
       "instructions": [
@@ -3355,6 +3372,13 @@
     {
       "path": "governance/work-records/2026-10-24-issue-125-intent-requirements.toml",
       "title": "governance/work-records/2026-10-24-issue-125-intent-requirements.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-24-issue-133-design-chapter.toml",
+      "title": "governance/work-records/2026-10-24-issue-133-design-chapter.toml",
       "instructions": [
         "AGENTS.md"
       ]
