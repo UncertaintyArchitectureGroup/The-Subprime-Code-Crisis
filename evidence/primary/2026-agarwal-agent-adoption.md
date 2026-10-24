@@ -1,13 +1,22 @@
 +++
 source_ids = ["P-2026-02"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-23"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md"]
 +++
 
 # Agarwal: agent adoption, activity and code structure
+
+## Changed Design-chapter integration checkpoint — 2026-10-24, #133 (candidate Flow D)
+
+An approved **new relying use** of the unchanged **27 January 2026 arXiv v2** source is added in `report/01_the_illusion.md` **Chapter 5 Design**. The chapter cites **repository-month** observational Table 2 results from the selected agent-first (AF) and IDE-first (IF) groups: AF **+36.25% commits / +34.85% code-complexity measure**, IF **+42.87% complexity measure**, with **IF +3.06% commits inconclusive**. The chapter retains both positive AF activity and structural metrics as outcomes, without converting them into per-feature technical debt, human comprehension loss, active reviewer hours, incident risk, or money-valued maintenance cost.
+
+The primary reviewed [arXiv v2 original PDF](https://arxiv.org/pdf/2601.13597v2), physical p3 **Table 2** and physical p4 **Figure 2**, was read and visually inspected again 2026-10-24. The effects remain observational staggered comparisons, sensitive to imperfect exposure attribution, source selection and pre-adoption movements (including IF complexity at t=−2). The publisher-final edition was not claimed to have been independently authenticated; no new source version or result was substituted. The accepted source's existing historical `independent_review=Confirmed` refers to prior independently reviewed uses, **not to the pending #133 candidate**.
+
+**Flow D treatment:** retain `Evidence review = Reviewed brief`; reset **Integration audit = Needs re-verification / Last verified = —** in this brief and the canonical `evidence/SOURCES.md` row. `Current use` already contains the same `report/01_the_illusion.md` path; the in-file placement now includes **Ch5** alongside historical Ch1/Ch4. The original accepted Table 2, limitations, alternate explanations and historical Verified reviews below are preserved. A dated #133 all-use/route audit and independent content review must occur before merge, and **only the accepted actual-main use** may be restored to `Verified` in a separate narrow PR. No protocol, hypothesis verdict or source identity change.
+
 
 ## Final integration checkpoint — 2026-10-23, #110
 
@@ -135,7 +144,7 @@ Selection, imperfect PR/configuration attribution, unknown actual exposure/inten
 
 ## Repository use and placement
 
-- `report/01_the_illusion.md`: Ch1 adoption-mode table and limitations, transition/conclusion/references; Ch4 structural-risk hypothesis and bounded cross-reference.
+- `report/01_the_illusion.md`: Ch1 adoption-mode table and limitations, transition/conclusion/references; legacy Ch4 structural-risk hypothesis and bounded cross-reference; **new Ch5 Design** bounded structural indicators and explicitly unmeasured future ownership/cost comparison.
 - `README.md`: Evidence Map brief navigation.
 - `REFERENCES.md`: versioned citation, conference metadata/access boundary and brief link.
 
