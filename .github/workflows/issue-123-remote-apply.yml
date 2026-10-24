@@ -29,6 +29,8 @@ jobs:
           raw = Path('/tmp/issue123_payload.b64').read_text().strip()
           Path('/tmp/issue123_apply.py').write_bytes(gzip.decompress(base64.b64decode(raw)))
           PY
+          sed -i 's@^ROOT = Path(__file__).resolve().parents\[1\]$@ROOT = Path.cwd()@' /tmp/issue123_apply.py
+          grep -Fx 'ROOT = Path.cwd()' /tmp/issue123_apply.py
           python /tmp/issue123_apply.py
       - name: Run repository checks
         shell: bash
