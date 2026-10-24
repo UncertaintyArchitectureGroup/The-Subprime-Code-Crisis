@@ -272,6 +272,36 @@ A budget covering only licenses can leave out work needed for a particular rollo
 
 ---
 
+### What Management Records Actually Show
+
+AI productivity messaging is not uniform. Some product announcements and adviser
+or vendor studies report gains on selected coding tasks while also requiring
+training, risk controls or human validation. A coding-task result is not
+automatically a promise of the same gain across the whole delivery system.
+See the bounded [GitHub communication](../evidence/documentary/2022-github-copilot-productivity-communication.md),
+[McKinsey task study and advice](../evidence/primary/2023-mckinsey-developer-task-study.md)
+and [Codex review requirement](../evidence/documentary/2025-openai-codex-launch-review-boundary.md).
+[Google's code-share statement](../evidence/documentary/2024-google-ai-code-share-human-review.md)
+also explicitly retains engineer review; code share is not engineering effort saved.
+
+AI expectations nevertheless appear in concrete workforce decisions. Amazon's CEO
+[anticipated a smaller corporate workforce](../evidence/documentary/2025-amazon-generative-ai-workforce-expectation.md);
+a [later company announcement](../evidence/documentary/2025-amazon-workforce-action.md)
+specified role reductions and invoked AI-era speed alongside bureaucracy reduction
+and resource reallocation. [Anthropic's internal report](../evidence/primary/2026-anthropic-employment-and-organization.md)
+describes changed hiring priorities and work organization, while also recording
+continued absolute technical hiring and internal redeployment. These documents
+establish expectations, announced action and reported organizational change. They
+do not establish how many roles AI actually replaced, whether an outside supplier's
+claim caused the decisions, or whether necessary review, integration or operating
+capacity became inadequate.
+
+The research question is when a management commitment gets ahead of the capability
+needed to deliver safely and usefully. Test that link with dated decisions,
+measured demand and capacity, delivered outcomes and full cost—not a coding
+percentage or adoption count alone. The causal hypothesis remains
+[Open](appendices/mechanism-hypotheses.md#h0-c--local-targets-sustain-the-mismatch).
+
 ### Enterprise Surveys: Use, Benefits and Scaling Are Different Outcomes
 
 [McKinsey's November 2025 survey](../evidence/primary/2025-mckinsey-ai-adoption-value.md) collected 1,993 responses in 105 countries between 25 June and 29 July 2025. These are respondent reports about organizations, not a census of companies or an experiment on coding-tool ROI.

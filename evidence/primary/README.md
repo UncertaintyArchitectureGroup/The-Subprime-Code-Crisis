@@ -36,3 +36,10 @@ Eligible materials include:
 A source's inclusion here does not imply that every claim in the source is correct or that its results generalize universally. Each brief must state publication status, research design, scope, measured findings, model-derived findings, and limitations.
 
 Do not place the repository's own conclusions in this directory unless they are clearly labeled as **repository interpretation**.
+
+## Management expectations and decisions — issue #100
+
+- **P-2023-02** — [McKinsey: task gains and the work needed to use them](2023-mckinsey-developer-task-study.md). Local task observations and implementation advice, not an observed enterprise staffing effect.
+- **P-2026-06** — [Anthropic: hiring and work during rapid growth](2026-anthropic-employment-and-organization.md). Qualitative internal hiring/redeployment observations with growth and adoption confounds, not causal under-capacity.
+
+Consult the canonical registry for current source-review and integration states.

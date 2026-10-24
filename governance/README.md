@@ -81,3 +81,5 @@ On a pull request, Main health executes the validator version proposed by that p
 - [Status model](status-model.md): allowed states, transitions, resets, and `Last verified`.
 - [Templates](templates.md): mandatory records used by the applicable procedures.
 - [Executable repository contract](repository-contract.toml): machine-readable structural invariants consumed by the repository validator.
+
+- [Issue #100 source and integration audit](reviews/issue-100-2026-10-24-integration.md) — approved documentary addition; live acceptance remains in its issue/PR.

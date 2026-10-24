@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "67bc4507b9d637511f6606b43f3f3d0c3d5cc9fe1f4f1e17517767b1e28ab3cb",
+    "digest": "b37063b10ab1843cbc298dbccae072ae1a1c3886ca47eb2686fd06974c51b348",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "40b3157124558d653bb1c4c19a57c1788a3bf82facf3428f46b2cd44019a98a1"
+        "sha256": "e3680113d7f1239b7f77c5644bbdfe31db0a861ced838e301603b1a335e3df78"
       },
       {
         "path": "CITATION.cff",
@@ -92,12 +92,12 @@
       {
         "path": "README.md",
         "identity_mode": "content",
-        "sha256": "fdd0d91a81d8b3bec2defa3b6ac40e1a776dbe251cd940c7b3db4a94144f9e68"
+        "sha256": "462e8408f924b550344e0f0ff83809162d2864cb4c592deebadbbcefb0a3f5c8"
       },
       {
         "path": "REFERENCES.md",
         "identity_mode": "content",
-        "sha256": "94d4647811b4b623d763dc10d6f70ad77ee305c7bc5c319f5fb4c9e3f446a63e"
+        "sha256": "b98f492ac0bced2c59684d5edc3428c9454e1c8e4175b80432261240e259901b"
       },
       {
         "path": "SCOPE.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "858fa7a5268759279728fe1e3585b9cb8a2b016b7e3537f661d70588814a13cf"
+        "sha256": "3b9bc32c8552b46139d6030ba9b41359316b9ff370d710d3dd211fa512e002cc"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -140,9 +140,19 @@
         "sha256": "a9f97f4107620632b1822385d83ec29d2db020f3e7dfad42c3f994315646bd24"
       },
       {
+        "path": "evidence/documentary/2022-github-copilot-productivity-communication.md",
+        "identity_mode": "content",
+        "sha256": "54ecffffc6f1d9d50b3880484fa08fb8b2c44d7f405d2fcdde00e34714574fa5"
+      },
+      {
         "path": "evidence/documentary/2024-alphabet-financial-context.md",
         "identity_mode": "content",
         "sha256": "f46730584652dfd43b873e1f7fc7a4814add2db33abcbd2e807033c72040a64d"
+      },
+      {
+        "path": "evidence/documentary/2024-google-ai-code-share-human-review.md",
+        "identity_mode": "content",
+        "sha256": "5817e7196f5e2b93d11837dd8fda0a5502abbf20dc7d513936119ee992b522fc"
       },
       {
         "path": "evidence/documentary/2024-meta-financial-context.md",
@@ -155,14 +165,29 @@
         "sha256": "34c14167aee1621bf666e7f3d1dcfc332fb83819bcfe512fe79a4a21450a9af1"
       },
       {
+        "path": "evidence/documentary/2025-amazon-generative-ai-workforce-expectation.md",
+        "identity_mode": "content",
+        "sha256": "de4a9590d30ccd4a70b84c7ef05bfe558a96f8955bade0ac12e65723fda13a76"
+      },
+      {
+        "path": "evidence/documentary/2025-amazon-workforce-action.md",
+        "identity_mode": "content",
+        "sha256": "3a0e1c0e99f3f93b680635f9aa51a28e684f8375af304eddf936e0ec3ec19ae3"
+      },
+      {
         "path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
         "identity_mode": "content",
         "sha256": "662c5a875f61fa524f967a793f1063b51dd6552cf32eedf36d34ca7ff6784d59"
       },
       {
+        "path": "evidence/documentary/2025-openai-codex-launch-review-boundary.md",
+        "identity_mode": "content",
+        "sha256": "333e34f739a7f0e98df8c1235aadc07f758e68308ed64e734361dda19146b1d9"
+      },
+      {
         "path": "evidence/documentary/README.md",
         "identity_mode": "content",
-        "sha256": "d764bd2f8cdeded1db156953bc31495c90d977fcd2afaa7b7cf62434e1c727be"
+        "sha256": "1fe320a47e18db8a1e47db1ee6be984570d9937503a846a76d134b9e0f214fec"
       },
       {
         "path": "evidence/documentary/project-provenance.md",
@@ -188,6 +213,11 @@
         "path": "evidence/primary/2023-copilot-task-productivity.md",
         "identity_mode": "content",
         "sha256": "0ff34e0f3717d8b2cedbe4e45f45e10a81db0f4fb919aa1537a02f3147d754bb"
+      },
+      {
+        "path": "evidence/primary/2023-mckinsey-developer-task-study.md",
+        "identity_mode": "content",
+        "sha256": "0591fd3c9cdaafcf9231e13ac1ed61747ed23d6f49de2ec29ed58e66dce19a13"
       },
       {
         "path": "evidence/primary/2024-stackoverflow-ai-attitudes.md",
@@ -250,6 +280,11 @@
         "sha256": "b5422a0625b121b9672544ce22c538f8dac356c58b8b7474d62ba3c57612f1e4"
       },
       {
+        "path": "evidence/primary/2026-anthropic-employment-and-organization.md",
+        "identity_mode": "content",
+        "sha256": "35f42e708952f50cd27224b9bc54e887bc0c5b2f6cf3ce1e1d33507b1172ba09"
+      },
+      {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
         "sha256": "2930ba15249c9c424e37c30cc15470ead4c55f7fbf6af5237ec26d27264b8c66"
@@ -267,7 +302,7 @@
       {
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
-        "sha256": "1dcf0a69234a230d330bfe9c5d734e4e74c3a6a30a8fc3429de6506090cf43ae"
+        "sha256": "841f9fee788ae478a8bbe4c51e36247843b41566c85742bb8b811bf4dc95d703"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -312,7 +347,7 @@
       {
         "path": "governance/README.md",
         "identity_mode": "content",
-        "sha256": "6094336ba6b38bfa81698358725f5abb31314102b339b2c704bfc86a726e08b3"
+        "sha256": "9d948c13ef7f2feb6adc3fad966e4a0f2d22819614ccfddb5fe3c4e0eab495c2"
       },
       {
         "path": "governance/content-synchronization.md",
@@ -357,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "68ceb4f74c9ae72b269e950d2a2dc2c4af278ea16a0c39e526c1075ce0381f4b"
+        "sha256": "a7f2ecf9655e7f01e9d525e86f9b6518b23eda1c05cf4ab54f59c54d811997da"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -383,6 +418,11 @@
         "path": "governance/repository-map.md",
         "identity_mode": "content",
         "sha256": "3378a096e6fb8857424037323a5d80d1231471a6fb98a5362a7b3401d3af340a"
+      },
+      {
+        "path": "governance/reviews/issue-100-2026-10-24-integration.md",
+        "identity_mode": "content",
+        "sha256": "20ab57ebdcdc1a8a4e6292614e9cdace3c945b9b520df0e03e9c9ba99ee5b104"
       },
       {
         "path": "governance/reviews/issue-109-2026-10-22-comparison-method.md",
@@ -835,6 +875,11 @@
         "sha256": "d9f14e086820f24db9419d83759810aa0ee0314e14a6961c057ff34282447f21"
       },
       {
+        "path": "governance/work-records/2026-10-24-issue-100-integration.toml",
+        "identity_mode": "content",
+        "sha256": "c349033d733704f87140da6cc8d317960cb2c6bdfa0fa93b29d2a018f7665c51"
+      },
+      {
         "path": "governance/work-records/README.md",
         "identity_mode": "content",
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
@@ -867,7 +912,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "3dcda51d0f5beb37351538049440cfd4dea363da9dd867cdfbc6f9f29fdc49e5"
+        "sha256": "e140bb86888e19e2daa407af4059aa8d0a9ca7bb996e807ab52e29cfe4bb8326"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -887,7 +932,7 @@
       {
         "path": "report/appendices/mechanism-hypotheses.md",
         "identity_mode": "content",
-        "sha256": "a0001ff848a50245db5f75c8dbf39c016c6ac5f83c1a7e2f1fed84eafab61103"
+        "sha256": "7791e5252fa0da43d8186a4a4553622c0a249a4af139f2821b04050efd623c59"
       },
       {
         "path": "report/appendices/tco-results.json",
@@ -1468,6 +1513,28 @@
   ],
   "sources": [
     {
+      "id": "P-2023-02",
+      "path": "evidence/SOURCES.md",
+      "source": "Begum Karaci Deniz, Chandra Gnanasambandam, Martin Harrysson, Alharith Hussin and Shivam Srivastava / McKinsey Digital, Unleashing developer productivity with generative AI; publication/version qualifications in brief",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Local task observations and implementation advice, not an observed enterprise staffing effect.",
+      "current_use": "`report/01_the_illusion.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2023-mckinsey-developer-task-study.md"
+    },
+    {
+      "id": "P-2026-06",
+      "path": "evidence/SOURCES.md",
+      "source": "Nathan Wilmers, Regina Catipon, Maxim Massenkoff and Peter McCrory / Anthropic, How employment is changing at Anthropic; publication/version qualifications in brief",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Qualitative internal hiring/redeployment observations with growth and adoption confounds, not causal under-capacity.",
+      "current_use": "`report/01_the_illusion.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/primary/2026-anthropic-employment-and-organization.md"
+    },
+    {
       "id": "P-2026-05",
       "path": "evidence/SOURCES.md",
       "source": "Shen & Tamkin, [*How AI Impacts Skill Formation*](https://arxiv.org/abs/2601.20245v2), arXiv v2, submitted 1 February 2026; v1 28 January 2026; reviewed object is a preprint",
@@ -1642,6 +1709,61 @@
       "can_support": "Self-selected respondents’ answers to identified AI attitude questions; not rising fear, overtime or measured productivity",
       "current_use": "`README.md`; `report/01_the_illusion.md` Ch1; `REFERENCES.md`",
       "brief_path": "evidence/primary/2024-stackoverflow-ai-attitudes.md"
+    },
+    {
+      "id": "D-2022-01",
+      "path": "evidence/SOURCES.md",
+      "source": "Eirini Kalliamvakou / GitHub, Research: quantifying GitHub Copilot’s impact on developer productivity and happiness; publication/version qualifications in brief",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "A bounded vendor task/perception claim, not an independent productivity confirmation.",
+      "current_use": "`report/01_the_illusion.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2022-github-copilot-productivity-communication.md"
+    },
+    {
+      "id": "D-2025-08",
+      "path": "evidence/SOURCES.md",
+      "source": "OpenAI, Introducing Codex; publication/version qualifications in brief",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "Historical product messaging that retains manual review, not proof of assurance effectiveness.",
+      "current_use": "`report/01_the_illusion.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2025-openai-codex-launch-review-boundary.md"
+    },
+    {
+      "id": "D-2025-09",
+      "path": "evidence/SOURCES.md",
+      "source": "Andy Jassy / Amazon, Message from CEO Andy Jassy: Some thoughts on Generative AI; publication/version qualifications in brief",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "A published prospective corporate-workforce expectation, not measured AI-attributable exits.",
+      "current_use": "`report/01_the_illusion.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2025-amazon-generative-ai-workforce-expectation.md"
+    },
+    {
+      "id": "D-2024-04",
+      "path": "evidence/SOURCES.md",
+      "source": "Sundar Pichai / Google, Q3 earnings call: CEO’s remarks; publication/version qualifications in brief",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "A code-share statement retaining engineer review, not a labor or delivery-effect estimate.",
+      "current_use": "`report/01_the_illusion.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2024-google-ai-code-share-human-review.md"
+    },
+    {
+      "id": "D-2025-10",
+      "path": "evidence/SOURCES.md",
+      "source": "Beth Galetti / Amazon, Staying nimble and continuing to strengthen our organizations; publication/version qualifications in brief",
+      "evidence_review": "Reviewed brief",
+      "integration_audit": "In progress",
+      "last_verified": "—",
+      "can_support": "A published organizational action and stated context, not an AI-only labor or downstream-harm effect.",
+      "current_use": "`report/01_the_illusion.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
+      "brief_path": "evidence/documentary/2025-amazon-workforce-action.md"
     },
     {
       "id": "D-2019-01",
@@ -2029,8 +2151,22 @@
       ]
     },
     {
+      "path": "evidence/documentary/2022-github-copilot-productivity-communication.md",
+      "title": "GitHub: the scope of its Copilot productivity claim",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/documentary/2024-alphabet-financial-context.md",
       "title": "Alphabet CY2024: company-wide expenses and cash investment",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/2024-google-ai-code-share-human-review.md",
+      "title": "Google: generated code still has human acceptance",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2050,8 +2186,29 @@
       ]
     },
     {
+      "path": "evidence/documentary/2025-amazon-generative-ai-workforce-expectation.md",
+      "title": "Amazon: a prospective workforce expectation",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/2025-amazon-workforce-action.md",
+      "title": "Amazon: announced action with several rationales",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "evidence/documentary/2025-microsoft-fy25q2-ai-run-rate.md",
       "title": "Microsoft: FY25Q2 AI-business run rate",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/documentary/2025-openai-codex-launch-review-boundary.md",
+      "title": "OpenAI: Codex launch and human review",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2094,6 +2251,13 @@
     {
       "path": "evidence/primary/2023-copilot-task-productivity.md",
       "title": "Copilot and a standardized programming task",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2023-mckinsey-developer-task-study.md",
+      "title": "McKinsey: task gains and the work needed to use them",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2178,6 +2342,13 @@
     {
       "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
       "title": "Shen–Tamkin: AI assistance and learning a new programming library",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "evidence/primary/2026-anthropic-employment-and-organization.md",
+      "title": "Anthropic: hiring and work during rapid growth",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2367,6 +2538,13 @@
     {
       "path": "governance/repository-map.md",
       "title": "Three-repository ownership and agent routing",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-100-2026-10-24-integration.md",
+      "title": "Issue #100 — management records and integration audit",
       "instructions": [
         "AGENTS.md"
       ]
@@ -2997,6 +3175,13 @@
     {
       "path": "governance/work-records/2026-10-23-issue-111-discovery.toml",
       "title": "governance/work-records/2026-10-23-issue-111-discovery.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-24-issue-100-integration.toml",
+      "title": "governance/work-records/2026-10-24-issue-100-integration.toml",
       "instructions": [
         "AGENTS.md"
       ]
