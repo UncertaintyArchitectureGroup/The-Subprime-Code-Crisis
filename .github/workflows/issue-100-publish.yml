@@ -1,0 +1,68 @@
+name: Issue 100 publish bounded candidate
+on:
+  push:
+    branches: [issue-100-transfer-20261024]
+    paths: [.github/workflows/issue-100-publish.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      BASE: b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e
+      TARGET: issue-100-documentary-integration
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e
+          fetch-depth: 1
+      - name: Read exact authored change script and pin trusted base
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$BASE"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$BASE"
+          test -z "$(git ls-remote --heads origin refs/heads/$TARGET)"
+          mkdir -p /tmp/trusted /tmp/issue100-out
+          git archive HEAD | tar -x -C /tmp/trusted
+          python - <<'PY'
+          import urllib.request,json,base64,os,hashlib
+          sha='257d57c100e9ddaf64f86a2b8e642f543e0ae34e'
+          url=f'https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/git/blobs/{sha}'
+          req=urllib.request.Request(url,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+          obj=json.load(urllib.request.urlopen(req)); data=base64.b64decode(obj['content'])
+          assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()==sha
+          open('/tmp/issue100-author.py','wb').write(data)
+          PY
+          python /tmp/issue100-author.py
+      - name: Validate candidate with unchanged repository rules
+        run: |
+          python tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
+          git add governance/repository-intelligence/agent-context.json
+          python -m unittest discover -s tests -p 'test_*.py' -v > /tmp/issue100-out/tests.log 2>&1
+          python -m tools.repository_validator
+          python -m tools.evidence_state_check
+          python tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
+          git diff --cached --check
+          test "$(git diff --cached --name-only | wc -l)" = 20
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Integrate approved management expectations and seven sources' -m 'Refs #100. Scoped primary source review; independent implementation review and final verification pending.'
+          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/repository_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base "$BASE" --head HEAD
+          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/evidence_state_check.py --policy-root /tmp/trusted --candidate-root "$PWD"
+          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/evidence_transition_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base "$BASE"
+      - name: Publish only isolated content branch and export exact candidate
+        run: |
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$BASE"
+          test -z "$(git ls-remote --heads origin refs/heads/$TARGET)"
+          git push origin HEAD:refs/heads/$TARGET
+          git show -s --format='%H %T %P' HEAD > /tmp/issue100-out/identity.txt
+          git diff --binary "$BASE" HEAD > /tmp/issue100-out/implementation.patch
+          git archive --format=zip HEAD > /tmp/issue100-out/repository.zip
+          git diff --stat "$BASE" HEAD > /tmp/issue100-out/diff-stat.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue100-implementation-candidate
+          path: /tmp/issue100-out/
+          if-no-files-found: error
+          retention-days: 3
