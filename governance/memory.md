@@ -25,5 +25,5 @@
 ## Next actions
 
 - Open governed #125 PR with **one** new TOML work record, changelog Updated, audit and memory; regenerate and verify RI from the candidate's exact source inputs. Run hosted Main health and Repository Gate on current head.
-- Obtain genuinely **separate non-author substantive/agent-reader review** of the entire actual changed patch, claim/use classification and the two new chapters (including consistency of hypothetical policy and INT/REQ Open verdicts). Resolve grounded findings, repeat RI/CI/review as necessary.
+- **Independent review obtained:** Google Gemma-4 26B non-author candidate reviewer `7f9f45f20b9b4ccba970efcd4be15632` Confirmed, blind Llama agent-reader checked, and corrected full-chapter Gemma rereview `b08687450b514b758ecd5ddde715db55` Confirmed. No material claims/statuses changed; green CI for final reviewed branch head and actual merge still required.
 - Merge only after `Confirmed` and current green CI; validate exact merged-main tree, link/current sources and relevant checks; close AC1–5 and issue #125; reread/update #88/#84 and propose #133 without automatically implementing it. Overall order #125 → #133 → #126 → #127 → #128 → #129 → #130 → #131 → #132; #74 publication separate.
