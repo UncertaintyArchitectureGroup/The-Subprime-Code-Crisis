@@ -1,13 +1,39 @@
 +++
 source_ids = ["P-2026-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-23"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md", "evidence/primary/2026-chen-stratton-firm-production.md"]
 +++
 
 # Writing Code vs. Shipping Code — September 2026 revision
+
+## README opening changed-use checkpoint — 2026-10-24, #123
+
+The maintainer selected the exact corrected README V2 in
+[#88 comments 6383504860 and 6383542436](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88#issuecomment-6383542436).
+This unchanged **September 2026** source now supports a new condensed opening use:
+the pooled synchronous-agent weeks 21–30 estimates of **153.2% more commits** and
+**19.8% more repository releases**. The opening preserves the positive release
+result and says the smaller gain is not measured lost work.
+
+The accepted locator is Table 6, physical PDF page 35 / printed page 33. The
+outcomes use different selected regression samples; estimates are observational
+and normalized by individual pre-period means. A repository release is a
+repository/date event, not deployed feature value, customer benefit or a common
+conversion funnel. The source does not establish universal review overload,
+ownership loss, persistent debt, negative net value or remedy efficacy. Existing
+capacity/substitutes, adaptation, experimentation/selection, task mix, release
+batching and positive net value remain visible alternatives.
+
+The [#123 occurrence audit](../../governance/reviews/issue-123-2026-10-24-readme-route-audit.md)
+checks the new README use and retained report/register/bibliography uses. Source
+identity, findings, accepted version and `Current use` are unchanged. Flow D
+retains **Evidence review = Reviewed brief** and resets integration to **Needs
+re-verification / —** pending independent implemented-byte review, accepted merge,
+required checks and actual-main acceptance. **Protocol outcome: No protocol
+change.** Final verification is not inferred from this checkpoint.
 
 ## Final integration checkpoint — 2026-10-23, #110
 

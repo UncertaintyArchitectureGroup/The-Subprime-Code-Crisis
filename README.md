@@ -4,55 +4,58 @@
 
 **An independent research synthesis on AI-assisted software delivery risk**
 
-**Our research thesis: AI coding tools have increased our ability to produce software changes faster than teams have adapted the rest of the work needed to make those changes useful. We need to examine the whole delivery process: deciding what to build, understanding and checking it, putting it into service, maintaining it and seeing whether it helps users.**
-
 **Primary author:** [Vitalii Oborskyi](https://www.linkedin.com/in/vitaliioborskyi) · **Project:** [Uncertainty Architecture Group](https://github.com/UncertaintyArchitectureGroup)
 
-> **Navigation:** [Read the Report](report/01_the_illusion.md) | [Hypotheses](report/appendices/mechanism-hypotheses.md) | [Evidence Library](evidence/README.md) | [Operational Protocols](protocols/README.md) | [Live Work Plan](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84)
-
-[Management expectations and decisions](report/01_the_illusion.md#what-management-records-actually-show) — documented examples and the causal links still missing.
+**For technical leaders responsible for a team's delivery:** use this report to decide what AI-assisted work to accept, where to invest, and what the team must still be able to understand and support. Engineers can start with the [individual practice guide](protocols/01_personal_defense.md); organization-wide decisions require accountable engineering, product and operating owners together with budget and policy owners.
 
 ## The research thesis
 
-Writing code is one part of delivering software. This report examines the complete software development lifecycle (**SDLC**):
+**AI coding tools have increased our ability to produce software changes faster than teams have adapted the rest of the work needed to make those changes useful. Improving code generation alone is therefore not a sufficient delivery strategy.** This is the report's research thesis, with separately tested parts—not a claim that every team is overloaded or every AI adoption is harmful.
+
+### What makes this worth investigating
+
+In the [September 2026 NBER working paper](evidence/primary/2026-writing-code-vs-shipping-code.md#numeric-findings-and-uncertainty), the pooled synchronous-agent estimates for weeks 21–30 are **153.2% more commits and 19.8% more repository releases**. Releases increased; the smaller gain is not a measured loss of the remaining work. These observational estimates use different outcome samples and do not measure deployed feature value.
+
+A separate observational [Chen–Stratton firm study](evidence/primary/2026-chen-stratton-firm-production.md#published-estimates-and-reproduced-calculations) reports positive coding-activity estimates, a smaller uncertain tracked-completion estimate, and about **49% longer elapsed time from PR submission to merge** after agent adoption. Non-random adoption and pre-adoption trends limit causal interpretation; elapsed time is not active review labor. Together, these findings justify examining the work around code, not declaring a universal bottleneck.
+
+### The mechanism we are testing
+
+When a team accepts changes faster than it can understand, check, integrate and maintain them at the required quality, coding gains can become waiting, rework or obligations left for later. The relevant system is the complete software development lifecycle (**SDLC**):
 
 **Intent → requirements → design → code → review → test → integration → deployment → operation → realized user outcomes → business economics → feedback to Intent.**
 
-These activities can overlap and repeat; the list does not prescribe a fixed sequence. AI can change several of them. Our proposed explanation is that teams may accept more changes than they can understand, check, integrate and maintain at the required quality. In that case, time saved while coding may turn into waiting, rework or work left for later. **Rebalancing** means finding what actually limits useful delivery and testing a response: better automation, a clearer goal, smaller changes, stronger skills or tools, or less unnecessary work. An existing process that already works well may need no change.
+These functions overlap and repeat. Review has two jobs: check the change and make sure the team can take care of it. Someone beyond its producer must be able to explain important behavior, diagnose problems and recover the system. An approval click is not that capability. AI or another practice may provide a better way to preserve a function; retaining every manual activity is not the goal.
 
-Each part of this process does more than produce a document or code. It also helps people make decisions, learn, coordinate, understand the system and take responsibility for it. **[Review has two jobs: check the change and make sure the team can take care of it](report/appendices/mechanism-hypotheses.md#review--rev-1-and-rev-2).** The team needs to explain important behavior, diagnose problems, make changes and recover from failures. Clicking “approve” does not demonstrate those abilities. We compare these outcomes with what the previous process actually achieved, including its weaknesses.
+The strongest direct challenge is that existing capacity or better tools already handle the extra work. Teams may also adapt, while useful experiments, changed task scope or release batching can explain an apparent activity-to-release gap. Those explanations need testing too. Sustained gains in comparable useful delivery, with adequate quality, team capability and total cost under unchanged practice, would limit the need for rebalancing in that setting. Benefits and added burdens can coexist; persistent debt, burnout and negative overall value need their own evidence, and a proposed remedy must justify its cost.
 
-The goal is **software that helps users, a team that can keep supporting it, and benefits that justify the total cost and risk**. More code or releases alone do not demonstrate user benefit, competitive advantage or return on investment. Providing the same useful service at lower cost can also be a gain. The [hypothesis register](report/appendices/mechanism-hypotheses.md#the-thesis-and-the-outcome-that-matters) breaks the argument into questions we can test: what changed, why gains may fail to carry through, what later costs may follow and whether a proposed response helps.
+### Start with one delivery stream
 
-The register also asks [what else could explain the results](report/appendices/mechanism-hypotheses.md#competing-explanations). These questions are numbered **ALT-1–6** for reference. They have different roles. Existing tools or team adaptation may handle the extra work; a change in the work or its measurement may explain an apparent gap. Separately, we must ask whether AI still brings an overall benefit and whether a proposed remedy is worth its added cost. Several of these answers can be true together.
+Choose one kind of change your team already delivers. Name its intended user outcome, decision owner and minimum acceptable quality and operating capability. State the AI-assisted workflow and observation period, then compare its path from request through release and support with a credible baseline. Separate active work from waiting; include checking, rework and operating effort. Check whether the team can explain and recover the result, and record what remains unmeasured.
+
+Then decide whether to **continue the current approach, address a specific constraint, or limit a use case that cannot meet its requirements**. Rebalancing may mean better automation, smaller changes, clearer requirements or less unnecessary work—not automatically more reviewers or more process. The [team guide](protocols/02_operational_defense.md) supplies the existing measurement and decision loop. **The goal is useful outcomes at justified total cost and risk; delivering the same useful service at lower cost can be a gain.** These are proposed practices, not experimentally proven universal remedies.
 
 ## Quick Start
 
-| Need | Start here |
+| Your question | Read next |
 | --- | --- |
-| Read the argument in order | [1. Evidence and Delivery Outcomes](report/01_the_illusion.md) → [2. Verification and Delivery Mechanisms](report/02_broken_mechanics.md) → [3. Scenarios and Adoption Decisions](report/03_the_aftermath.md) |
-| Examine one part of the delivery process or challenge the thesis | [Hypothesis register](report/appendices/mechanism-hypotheses.md), its [index of delivery activities](report/appendices/mechanism-hypotheses.md#node-index), and [how we evaluate a claim](governance/hypothesis-evaluation.md) |
-| Understand objections and other explanations | [What the ALT questions mean](report/appendices/mechanism-hypotheses.md#competing-explanations) and [how to tell explanations apart](governance/hypothesis-evaluation.md#compare-explanations) |
-| See what the nine core studies support, weaken or leave unanswered | [Source-by-source comparison and three next questions](report/appendices/mechanism-hypotheses.md#nine-source-comparison) |
-| Trace a claim to its source and processing state | [Evidence Library](evidence/README.md), [Source Registry](evidence/SOURCES.md), and [References](REFERENCES.md) |
-| Inspect the economic assumptions and reproduce the illustrative calculation | [Appendices and analytical tools](#appendices-and-analytical-tools) |
-| Apply practical controls | [Operational Protocols](protocols/README.md) |
-| Understand the research and reasoning boundaries | [Scope](SCOPE.md), [Doctrine](DOCTRINE.md), and [Artifact Model](ARTIFACT_MODEL.md) |
-| Contribute evidence, a correction or implementation feedback | [`AGENTS.md`](AGENTS.md), [Contributing](CONTRIBUTING.md), and [governance playbooks](governance/README.md) |
+| What supports this argument, and what challenges it? | [Part 1: evidence and delivery outcomes](report/01_the_illusion.md) → [Part 2: mechanisms and understanding](report/02_broken_mechanics.md) → [Part 3: decisions and outcomes](report/03_the_aftermath.md) |
+| What should my team do? | [Team measurement and decision guide](protocols/02_operational_defense.md); for budget and policy decisions, [organizational guide](protocols/04_systemic_cure.md) |
+| Can I inspect the evidence or challenge the explanation? | [Nine-study comparison](report/appendices/mechanism-hypotheses.md#nine-source-comparison), [other explanations](report/appendices/mechanism-hypotheses.md#competing-explanations), and [Source Registry](evidence/SOURCES.md) |
 
-The [live work plan #84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) records priorities and dependencies. We complete one approved task through review, merge and verification, then review the plan and obtain approval for the next task. Submit new evidence or suggestions through [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues); the [issue workflow](governance/issue-workflow.md) explains the process. The [backlog audit](governance/issue-backlog-audit.md) records an earlier snapshot, and the [repository ownership map](governance/repository-map.md) explains how related projects divide the work.
+The [Repository Map](#repository-map) below contains the full library, appendices, contribution guidance and [live work plan](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84). For specific management examples, see [what the records actually show](report/01_the_illusion.md#what-management-records-actually-show).
 
 ## Key Takeaways
 
-1. **AI can speed up some coding tasks.** This is a measured finding in particular settings.
-2. **Faster coding does not guarantee faster delivery of useful software.** This is a conclusion about how the delivery system works.
-3. **Extra work may exceed what another part of the process can handle.** This is a hypothesis to test. Teams that adapt successfully may keep the gains.
-4. **Risk depends on what teams choose to build and how they check and release it.** Tool behavior and the ability to verify changes also matter.
-5. **Measure the process and address the problem the evidence identifies.** This is our proposed practice. Keep existing tools and practices when they already do the job.
+**Faster coding is a local result; useful, supportable software at justified total cost and risk is the goal.**
 
-The current evidence supports parts of this argument. [September NBER](evidence/primary/2026-writing-code-vs-shipping-code.md) reports positive release gains alongside larger coding-activity gains in selected cohorts. [Chen–Stratton](evidence/primary/2026-chen-stratton-firm-production.md) adds a distinct firm setting with positive agent coding-activity estimates, a smaller uncertain tracked-completion estimate and changes in review-process measures. The [register's evidence assessment](report/appendices/mechanism-hypotheses.md#existing-evidence-and-its-exact-coverage) preserves positive, negative, null and context-dependent findings.
+<details>
+<summary>Further reading and contribution routes</summary>
 
-**The full explanation remains a research hypothesis.** Each part needs its own evidence: whether the team lacks capacity, loses understanding, accumulates checking and maintenance obligations that remain unresolved, becomes exhausted or incurs higher total cost—and whether a proposed remedy helps. Time between submitting and merging a change does not tell us how many hours people spent reviewing it or whether they understand the system. The [claim boundaries](DOCTRINE.md#claim-boundaries) and [Repository Scope](SCOPE.md) explain how we separate measured findings, our interpretation and possible future outcomes.
+Explore the [delivery-activity index](report/appendices/mechanism-hypotheses.md#node-index), [Review's two functions](report/appendices/mechanism-hypotheses.md#review--rev-1-and-rev-2), [thesis and outcome boundary](report/appendices/mechanism-hypotheses.md#the-thesis-and-the-outcome-that-matters), and [existing evidence coverage](report/appendices/mechanism-hypotheses.md#existing-evidence-and-its-exact-coverage). The [evaluation guide](governance/hypothesis-evaluation.md) explains [how to compare explanations](governance/hypothesis-evaluation.md#compare-explanations).
+
+For corrections or evidence, use [Issues](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues) and [Contributing](CONTRIBUTING.md). The [issue workflow](governance/issue-workflow.md), [repository ownership map](governance/repository-map.md) and [dated backlog audit](governance/issue-backlog-audit.md) support contributors; the live plan remains the current sequence owner.
+
+</details>
 
 ## Repository Map
 

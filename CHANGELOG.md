@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-24 — Reader entry and route inventory (#123)
+
+- Replace the public README opening with the approved V2 reader path: audience, bounded evidence, mechanism/alternatives, first action and three principal routes.
+- Reset only P-2026-01 and P-2026-04 for changed-use re-verification while preserving source identities, findings, versions and positive/uncertain boundaries.
+- Record the 17-chapter heading/anchor inventory and recommend retaining the three stable report routes; no chapter architecture, publisher change or deployment.
+
 ## 2026-10-24 — Management expectations and decisions (#100)
 
 - Add seven bounded source assessments and the approved short Chapter 3 documentary comparison.
