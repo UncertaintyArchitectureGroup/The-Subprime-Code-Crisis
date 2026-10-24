@@ -1,0 +1,22 @@
+record_version = 1
+title = "Finalize README changed-use verification for P-2026-01 and P-2026-04"
+primary_flow = "Flow D — final paired source-state synchronization after accepted issue 123 README content"
+human_decision = "Maintainer selected #123 at comment6384736791, exact README V2 in #88 and Option A at comment6385629513; content PR134 merged to main91bce07, independent actual-main eligibility Confirmed at comment6386895191."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Not required"
+reason = "The accepted public README revision and its content changelog were merged in PR134; this narrow PR only finishes evidence status/date synchronization."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "doctrine", "repository-architecture", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols", "history"]
+
+[synchronization.non_applicable]
+contributor-guidance = "No contributor obligation or workflow change."
+doctrine = "No evidence interpretation, terminology, status model or claim-confidence change."
+repository-architecture = "Three canonical report files and existing publication routes retained under approved Option A."
+reader-navigation = "README, headings and links unchanged from accepted main."
+evidence-indexes = "No new source, classification, index or brief path change."
+references = "Bibliography and source versions unchanged."
+report = "All three report chapters and hypothesis register unchanged."
+protocols = "No new control, threshold or remedy claim."
