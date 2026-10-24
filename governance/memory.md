@@ -2,31 +2,30 @@
 
 ## Snapshot
 
-- 2026-10-24: Editorial #123 completed, including merged README PR #134 and final source-status PR #135. Verified actual main `d062cd95db8f5b0f69bdb305b9d815cebcb02415`; independent accepted-main review Confirmed and Main health successful.
-- The maintainer selected a narrow within-issue session reporting governance change #136; it is a new, separately authorized task. Implementation/review/merge are not yet complete; no report publishing or editorial #124 implementation.
-- Revalidate live issue/PR/main/check state before continuing.
+- 2026-10-24: actual `main` before editorial #124 is `3c4d4d3fd8475251a1b6b3893061f1f71b05bf3b`, after merged governance [PR #137](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/137); exact-main [Main health #40117793952](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/40117793952) Success. #136 **remains open** because no independent PR review was found; the merged work record says `Review unavailable`.
+- Maintainer selected next editorial #124 by “Змержив. Ідемо далі”; this is permission for the bounded chapters 1–2, not evidence that #136's independent review happened or approval of #125.
+- Editorial #124 implementation branch `issue-124-thesis-delivery-chapters-1-2` adds two complete opening chapters to Part 1, preserves all older evidence/heading anchors, and resets only the two changed-use source pairs. **Independent acceptance, PR CI, content merge and final source-state verification are not yet complete.**
 
 ## Active owners
 
-- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) remains the sole live master plan.
-- [#88](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88) owns the first readable edition; #123 has closed. [#136](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/136) owns the currently selected session-checkpoint rule; #124 remains next proposed editorial implementation.
-- #89–99 retain research ownership; #124–133 remain queued editorial units and are not started.
-- #74 and draft PR #75 retain report-publication ownership; no deployment is part of #123.
+- [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84): sole cross-issue plan; [#88](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88): whole first-readable edition; [#124](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/124): currently selected Chapters 1–2, with complete in-issue priority list in its live body.
+- [#136](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/136): merged governance rule, **review/AC closure gap remains**; do not count independently Confirmed. #125, #133, #126–132 remain queued editorial issues, each needing its own approval. Research #89–99 remains separate. Publishing #74/PR75 is independently owned.
 
 ## Decisions
 
-- Exact README V2: #88 comments6383504860 +6383542436; proposal recheck6383555588.
-- Maintainer selected Option A, retaining three canonical report files and stable URLs for 17 chapter headings/anchors ([decision](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513)); no route migration is in #123.
-- Preserve the September P-2026-01 object, 4 August P-2026-04 object, positive/uncertain findings, alternatives, protocols and all unrelated source states.
+- Preserve [#123 Option A](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123#issuecomment-6385629513): three existing canonical report Markdown files/routes; 17 eventual logical chapter headings. No new publisher, routes or article template in #124.
+- Primary content change in #124 uses **Flow D** on unchanged P-2026-01 (September NBER revision) and P-2026-04 (Chen–Stratton 4 August). Other detailed-source uses kept byte-identical and are not blanket-reset.
+- Review preserves both quality and competent ownership, plus successful automation/substitution and real user/business outcomes. Do not present activity-to-release differences as an observed funnel or a proved negative return.
 
 ## Evidence
 
-- [#123 changed-use and route audit](reviews/issue-123-2026-10-24-readme-route-audit.md) owns occurrence checks, synchronization and #74/PR75 dispositions.
-- README V2 complete candidate SHA-256 is `ed0f1c71add5ce858c0bbdb466181dce8b15aa981c286f1e59436bc6b70f8869`; opening SHA-256 is `dd69cb6aabdd849ecceba21666cb2b9040c4fcbf1cf0979807adbdd46852f1f2`.
-- P-2026-01 and P-2026-04 are both `Reviewed brief / Verified / 2026-10-24` on actual main after #135; original evidence and version scope unchanged.
+- [Issue #124 audit](reviews/issue-124-2026-10-24-chapter-source-route-audit.md) maps changed facts, assumptions, competing explanations, old anchors and #74 producer impacts; older Part 1 suffix was checked byte-identical (all 38 original h2–h4 headings remain).
+- P-2026-01 and P-2026-04 are `Reviewed brief / Needs re-verification / —` **in the #124 candidate**, pending independent substantive review, accepted merge and final Flow D verification. Earlier `Verified / 2026-10-24` belongs to main **before** this new changed use.
+- [#123 earlier route/source audit](reviews/issue-123-2026-10-24-readme-route-audit.md) preserves accepted September/Chen provenance and ownership; #74's unpublished `landing.md` range labels require later owner update, not deployment in #124.
 
 ## Next actions
 
-- Route A is selected and recorded; preserve the existing three canonical report files and URLs without creating new chapter architecture in #123.
-- In approved governance issue #136: implement the small AGENTS/issue-workflow/contributor rule, changelog, work record, synchronization assessment and RI regeneration; obtain independent review and current CI before any merge/close claim.
-- Return to #136 at each session checkpoint with full within-issue priorities and the next subtask. #84 remains the only master plan; #124 stays queued for separate approval after governance completion.
+- Prepare and validate one reviewable #124 content PR with one work record, revised changelog, updated memory and fresh RI; use actual hosted Main health and Repository Gate results.
+- Obtain a genuinely separate independent substantive/agent-reader assessment of both new chapters, changed source-use audit and old-link compatibility; record its actual outcome, resolve corrections, repeat checks.
+- Merge accepted content only after review `Confirmed`, then check exact main, complete any final source verification PR within #124 and close all its ACs; reread/update #84 before proposing #125.
+- Keep #136's independent-review gap visible; never infer `Confirmed` from the maintainer's merge.
