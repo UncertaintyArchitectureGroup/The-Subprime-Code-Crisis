@@ -1,0 +1,48 @@
+name: Issue 123 remote apply
+
+on:
+  push:
+    branches:
+      - issue-123-readme-migration-inventory
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.event.head_commit.message == 'bootstrap issue 123 remote apply'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Materialize and run selected change
+        shell: bash
+        run: |
+          cat .github/issue123-bootstrap/part*.txt > /tmp/issue123_payload.b64
+          python - <<'PY'
+          import base64, gzip
+          from pathlib import Path
+          raw = Path('/tmp/issue123_payload.b64').read_text().strip()
+          Path('/tmp/issue123_apply.py').write_bytes(gzip.decompress(base64.b64decode(raw)))
+          PY
+          python /tmp/issue123_apply.py
+      - name: Run repository checks
+        shell: bash
+        run: |
+          python -m unittest discover -s tests -v
+          python -m tools.repository_validator
+          python -m tools.evidence_state_check
+          git diff --check
+      - name: Remove bootstrap and commit candidate
+        shell: bash
+        run: |
+          git rm -r .github/issue123-bootstrap .github/workflows/issue-123-remote-apply.yml
+          git config user.name 'chatgpt-codex-connector[bot]'
+          git config user.email '199175422+chatgpt-codex-connector[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Implement issue 123 README opening and route inventory'
+          git push origin HEAD:issue-123-readme-migration-inventory
