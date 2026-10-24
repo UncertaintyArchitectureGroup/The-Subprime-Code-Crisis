@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-24 — Intent and Requirements opening chapters (#125)
+
+- Add complete report Chapters 3 (Intent) and 4 (Requirements) to the existing Part 1 reader path: selecting valuable problems, distinguishing experiments from production obligations, shared domain meaning and independently grounded acceptance examples.
+- Trace the existing INT-1/INT-2 and REQ-1/REQ-2 **Open** hypotheses, beneficial alternatives and separate adverse/remedy falsifiers. Reuse a consistent explicitly hypothetical account-recovery policy across both chapters; do not promote unmeasured harm to empirical fact or introduce a universal release gate.
+- Preserve the previously reviewed detailed sections and original anchors byte-identically; update the Part 1 ToC and temporary navigation notice. No added external source, new Flow D source-state change, publisher route or website deployment.
+
 ## 2026-10-24 — First two report chapters and their source-use reset (#124)
 
 - Add a thesis-led Chapter 1 on the gap between coding activity and useful delivery, preserving positive NBER and Chen–Stratton findings and competing explanations.
