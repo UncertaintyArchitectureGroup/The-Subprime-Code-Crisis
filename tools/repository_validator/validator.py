@@ -11,7 +11,6 @@ from .markdown import (
     heading_lines,
     list_items_under_heading,
     scan_markdown_lines,
-    visible_text,
 )
 from .registry import RegistryParseError, SourceRecord, parse_source_registry
 
@@ -442,11 +441,12 @@ class RepositoryValidator:
                 )
             ]
 
-        active_text = "\n".join(
-            visible_text(source_line.text)
+        active_lines = tuple(
+            source_line.text
             for source_line in scan_markdown_lines(brief_text)
-            if source_line.active and visible_text(source_line.text)
+            if source_line.active and source_line.text.strip()
         )
+        active_text = "\n".join(active_lines)
         if not active_text:
             return [
                 Issue(
