@@ -1,0 +1,27 @@
+name: Issue 100 pinned snapshot
+on:
+  push:
+    branches: [issue-100-transfer-20261024]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e
+          persist-credentials: false
+      - name: Export only the pinned repository tree
+        run: |
+          test "$(git rev-parse HEAD)" = b72b50e07c11aa571ab7cdf0c839d2ea14f4b69e
+          mkdir -p /tmp/issue100-snapshot
+          git archive --format=zip HEAD > /tmp/issue100-snapshot/repository.zip
+          git show -s --format='%H %T' HEAD > /tmp/issue100-snapshot/identity.txt
+          sha256sum /tmp/issue100-snapshot/repository.zip > /tmp/issue100-snapshot/sha256.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: issue100-pinned-main
+          path: /tmp/issue100-snapshot/
+          retention-days: 2
+          if-no-files-found: error
