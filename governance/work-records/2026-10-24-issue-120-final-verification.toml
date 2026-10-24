@@ -2,8 +2,8 @@ record_version = 1
 title = "Finalize seven management-record source verifications (#120)"
 primary_flow = "Flow A — final verification of accepted #100 source integration"
 human_decision = "Maintainer selected #120 on 2026-10-24; start6382964826. Existing T1–T4 approval6381868126. Accepted main7e40c0b and independent main receipt6382855174; no new scientific treatment or next issue."
-independent_review = "Review unavailable"
-# Metadata-delta review is pending; prior source/main acceptance does not certify this delta.
+independent_review = "Confirmed"
+# Actual metadata-delta acceptance: https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/122#issuecomment-6383096812; head54667f4/tree9ef2dbef. Not future-main acceptance.
 
 [changelog]
 decision = "Not required"
