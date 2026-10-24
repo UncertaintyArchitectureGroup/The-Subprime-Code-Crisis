@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "5a7d2eed38ec0e8ea72410435cd6fd2cb6a0536ddabb15e2612170cc9ae92d67",
+    "digest": "c471366b902ebff99dea0ea96acca3919aa95e873d10643f6753f01737f87537",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "892ac7dd7dce663a1e83943667ce725a45d30baf7e08ef1fbc9291c916ec8d03"
+        "sha256": "e177ff49ee33e777ac73d786dae54a2dc97ee8c9c074ae4c2d6ad9d858ba9077"
       },
       {
         "path": "CITATION.cff",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "a0d9d4f80f13147d54a4487865615c54e97fd71bb33773ef3bfb226625d43f15"
+        "sha256": "19b2cc8564d57e6a1bbd73d4ea2a788d1469872096275e9cb6b011c9b33cc266"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -287,7 +287,7 @@
       {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
-        "sha256": "a55e883314146a33030dc31617a90f3486f6d68e0ad0fc10e29d6ac69e644e13"
+        "sha256": "ebd81cb9291a921ce8827af36244c3cac505e768f07d37f34cce4cfdbeeebbb9"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
@@ -297,7 +297,7 @@
       {
         "path": "evidence/primary/2026-writing-code-vs-shipping-code.md",
         "identity_mode": "content",
-        "sha256": "4f13a18ddb1d38b2acb24fab1b8193de4419e8f5da3f62b80513acbdfc2bf1d9"
+        "sha256": "ccdaf0e0d4c1744372225c1520c50b19ed2af20d16b8653d28fb7d40b620086e"
       },
       {
         "path": "evidence/primary/README.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "aa9365fac78d2528ce817b442efcf68cea4368c0873c957766128560752ccaef"
+        "sha256": "a52300cd3c4a761f4c2fd2557934ab381ca9e1402e21d8a932b3eaf321a02744"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -508,6 +508,16 @@
         "path": "governance/reviews/issue-123-2026-10-24-readme-route-audit.md",
         "identity_mode": "content",
         "sha256": "03ffb030069413795cdbc81a87a31718e740f7c10d12eba0c24e9550b83feb29"
+      },
+      {
+        "path": "governance/reviews/issue-124-2026-10-24-chapter-source-route-audit.md",
+        "identity_mode": "content",
+        "sha256": "234752363692e4bff5f459feabc65bd5ae088a53a5787f9a6b47bdf51682e9d1"
+      },
+      {
+        "path": "governance/reviews/issue-124-2026-10-24-independent-substantive-review.md",
+        "identity_mode": "content",
+        "sha256": "02ea8db61451f97b450df113159855ba8ee3c6fe93dfd6a8d57e6c9c56573656"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -915,6 +925,11 @@
         "sha256": "998fea3ff4b9e8f9e68cdf2330c6ff805c37b4e9178b96a96f78bafa361bf803"
       },
       {
+        "path": "governance/work-records/2026-10-24-issue-124-thesis-sdlc.toml",
+        "identity_mode": "content",
+        "sha256": "5fb8e6757ce4bce5109c788e092a7e347a581e0f6ce936d12f7c675940925f44"
+      },
+      {
         "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
         "identity_mode": "content",
         "sha256": "1d48c5244e773d7cfb20bf991b9a9ed8ccb61179b48b326b12ffb467c00919a4"
@@ -952,7 +967,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "e140bb86888e19e2daa407af4059aa8d0a9ca7bb996e807ab52e29cfe4bb8326"
+        "sha256": "4ecd5864696cd62694e01c5636e13f1c98deb428e5f71f899bbcfcf34040b712"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -1590,8 +1605,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Chen & Stratton, [*Artificial Intelligence in the Firm: Bottlenecks in Software Production*](https://fion.ac/jellyfish.pdf), Job Market Paper, 4 August 2026; first version 7 January 2026",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-24",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "Firm-level coding, uncertain tracked completion and review-process estimates; observational adoption and pre-period movements; no measured ownership or active review labor",
       "current_use": "`README.md`; `report/01_the_illusion.md`; `report/02_broken_mechanics.md`; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`",
       "brief_path": "evidence/primary/2026-chen-stratton-firm-production.md"
@@ -1601,8 +1616,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Demirer, Musolff & Yang, *Writing Code vs. Shipping Code*, NBER WP35275, May 2026 revised September 2026; original PDF pinned, May history retained",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Verified",
-      "last_verified": "2026-10-24",
+      "integration_audit": "Needs re-verification",
+      "last_verified": "—",
       "can_support": "September observational outcome estimates, positive releases, calibrated model and separate marketplace proxies; no identified universal bottleneck",
       "current_use": "`README.md`; `report/01_the_illusion.md` Ch1 synthesis; `report/02_broken_mechanics.md` Ch7 cross-reference; `report/appendices/mechanism-hypotheses.md`; `REFERENCES.md`; `evidence/primary/2026-chen-stratton-firm-production.md` (bounded comparison)",
       "brief_path": "evidence/primary/2026-writing-code-vs-shipping-code.md"
@@ -2709,6 +2724,20 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-124-2026-10-24-chapter-source-route-audit.md",
+      "title": "Issue #124 — First two chapters, source-use and legacy-route audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/reviews/issue-124-2026-10-24-independent-substantive-review.md",
+      "title": "Issue #124 — independent substantive and agent-reader review",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
       "title": "Issue #136 — Within-issue checkpoint governance assessment",
       "instructions": [
@@ -3271,6 +3300,13 @@
     {
       "path": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
       "title": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-24-issue-124-thesis-sdlc.toml",
+      "title": "governance/work-records/2026-10-24-issue-124-thesis-sdlc.toml",
       "instructions": [
         "AGENTS.md"
       ]

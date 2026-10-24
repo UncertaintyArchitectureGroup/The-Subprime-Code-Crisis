@@ -1,13 +1,19 @@
 +++
 source_ids = ["P-2026-04"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-24"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Chen–Stratton: AI adoption and firm software production
+
+## New chapter-opening changed use — 2026-10-24, #124 (pre-merge Flow D)
+
+The approved Chapter 1 opening adds a new summary of the unchanged **4 August 2026** firm study: approximately **+29.8% added lines, +22.8% PRs**, an uncertain smaller positive tracked-issue completion estimate, and **3.45 more days of PR submission-to-merge elapsed time over a 7.03-day baseline** (approximately 49%). The units are per active worker-month for the coding and tracked-completion results where applicable; elapsed time **is not active reviewer effort**. Different outcome samples and absent between-outcome testing prohibit treating these as a single conversion funnel. Non-random adoption, material pre-adoption movements, selection, coordination, task mix and successful adaptation remain explicit limitations and alternatives. The corrected chapter additionally treats **changing review standards or beneficial scrutiny** as a source-native alternative to a lower-draft-quality or constrained-capacity explanation, following the accepted [source-author/model interpretation](#model-and-source-author-interpretation). It asks for direct comparison of active effort versus elapsed waiting, change size/risk, defects and actual reviewer competence. The study does not itself measure those causal alternatives, active reviewer hours or competent ownership; no overload, quality loss or net-value harm is asserted.
+
+The prior verified #123 README use is historical. For this *new* relying chapter use, reset `Integration audit=Needs re-verification` and `Last verified=—`, retain the accepted `Reviewed brief`/source version/Current use and previous source-review confirmation; an independent review of these **changed #124 bytes** has not occurred. The dated occurrence audit, content PR, main acceptance and later final verification are still required. No other source or protocol is changed.
 
 ## Final accepted README use — 2026-10-24, #123
 

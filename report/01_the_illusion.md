@@ -3,13 +3,120 @@
 > **Navigation:** [🏠 Home](../README.md) | [🧭 Doctrine](../DOCTRINE.md) | [📖 Glossary](../GLOSSARY.md) | **Part 1** | [⚙️ Part 2: Verification and Delivery Mechanisms](02_broken_mechanics.md) | [🔥 Part 3: Scenarios and Adoption Decisions](03_the_aftermath.md) | [SDLC hypothesis register](appendices/mechanism-hypotheses.md) | [🛡️ Protocols](../protocols/README.md) | [📚 References](../REFERENCES.md)
 
 **Table of Contents:**
-*   [Chapter 1. What Productivity Studies Measure](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
+*   [Chapter 1. Faster changes, but what did the whole system gain?](#chapter-1-faster-changes-but-what-did-the-whole-system-gain)
+*   [Chapter 2. The SDLC produces more than code](#chapter-2-the-sdlc-produces-more-than-code)
+*   [Detailed research and earlier-edition sections](#detailed-research-and-earlier-edition-sections)
+    *   [Task-time and delivery evidence — earlier Chapter 1](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
     *   [Firm Evidence: The Work Around Code Changes Too](#firm-evidence-the-work-around-code-changes-too)
-*   [Chapter 2. Evaluating the Cost of AI-Assisted Delivery](#chapter-2-evaluating-the-cost-of-ai-assisted-delivery)
-*   [Chapter 3. Adoption Budgets and Delivery Capability](#chapter-3-adoption-budgets-and-delivery-capability)
-*   [Chapter 4. A Review-Capacity Scenario](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
+    *   [Cost context — earlier Chapter 2](#chapter-2-evaluating-the-cost-of-ai-assisted-delivery)
+    *   [Adoption decisions — earlier Chapter 3](#chapter-3-adoption-budgets-and-delivery-capability)
+    *   [Capacity scenario — earlier Chapter 4](#chapter-4-a-review-capacity-scenario-when-candidate-work-outruns-verification)
+
 ---
+
+## Chapter 1. Faster changes, but what did the whole system gain?
+
+Engineering starts with a problem, not a code editor: **problem statement → hypothesis → proposed solution → implementation → verification → reassess or stop**. If a problem is framed as “we need more code faster,” buying AI licenses can look like the solution before anyone asks what constrains delivery. AI tools can genuinely reduce implementation effort; the larger question is whether that gain produces useful, supportable software.
+
+**The central thesis is that AI can unbalance the SDLC when candidate-code production accelerates faster than the connected delivery functions can adapt.** If admitted changes outpace a team's effective ability to select, understand, review, test, integrate, release and operate them, the constraint moves: work may queue, return for rework, or become harder to own. This relative-capacity mismatch is the **systems mechanism this report investigates**, not a measured claim about how many organizations have fallen behind. The engineering task is to **rebalance the whole delivery system without losing the functions that make its output useful and supportable**.
+
+AI already assists design, testing, review and coordination; some teams adapt effectively or have enough capacity. **The question is which capability improved, which work or responsibility moved, and whether the resulting delivery meets its useful-outcome, quality and cost requirements.**
+
+### What changed, and what was actually measured?
+
+There are several different outcomes that are too often called “productivity” as though they were interchangeable:
+
+- **Candidate production:** generated lines, edits, commits and proposed changes. This tells us about activity, not accepted value.
+- **Accepted and integrated work:** changes reviewed, understood where necessary, tested and merged to a coherent system. A merge is not necessarily a functioning release.
+- **Released and operated software:** something made available, monitored and recoverable under its actual obligations. A repository release is not automatically a production deployment.
+- **Realized value:** a user successfully completes something worthwhile, experiences improved reliability or accessibility, or gets the same useful outcome at lower total cost and acceptable risk.
+
+Each measure captures different decisions and responsibilities. A local gain may be valuable without raising the final outcome by the same percentage.
+
+The [September 2026 revision of Demirer, Musolff and Yang's NBER working paper](../evidence/primary/2026-writing-code-vs-shipping-code.md#numeric-findings-and-uncertainty) estimates, for the pooled synchronous-agent effect in weeks 21–30, **153.2% more commits** and **19.8% more GitHub repository releases**. Both estimates are positive. They come from **different selected outcome samples** in an observational analysis, not a batch of commits followed through a conversion funnel. Release frequency is not a measure of users' benefit, code quality or lifecycle cost. The paper's complementary-production interpretation additionally depends on an explicitly calibrated model. Still, the contrast gives us a serious reason to ask where the larger upstream gain goes—and whether the smaller downstream gain is enough.
+
+A separate [Chen–Stratton firm study, 4 August 2026](../evidence/primary/2026-chen-stratton-firm-production.md#published-estimates-and-reproduced-calculations), reports agent-adoption estimates of roughly **30% more added lines and 23% more submitted PRs per active worker-month** in its selected organizational panel. Its estimated increase in tracked Jira issue completion is much smaller and statistically uncertain, **not a demonstrated zero**. The researchers also find **3.45 additional days from PR submission to merge** relative to a **7.03-day baseline**—approximately **49% longer elapsed time**—alongside more review interactions. Elapsed days include waiting and coordination; they are **not measured reviewer labor hours**. The authors' review findings are compatible with multiple mechanisms, including **changed review standards or more useful scrutiny** as well as problems with generated code. Adoption was not randomized, and visible pre-adoption movements limit causal conclusions.
+
+These studies use different populations and outcomes; they motivate examining how activity becomes useful delivery, **not inferring a shared causal bottleneck**. The [nine-source comparison](appendices/mechanism-hypotheses.md#nine-source-comparison) preserves positive, negative and uncertain task results; [detailed evidence remains below](#detailed-research-and-earlier-edition-sections).
+
+### The mechanism worth testing
+
+A delivery system combines complementary work. Someone must identify a useful problem, make consequential design choices, check what was implemented, integrate it with other work, and be able to respond after release. If the work admitted into one function grows while the next function's *effective* capability does not, work may wait, be rejected, return for rework or pass through with inadequate understanding. Each outcome has different consequences. This is a **conditional constraint mechanism**, not proof that a particular reviewer queue is overloaded.
+
+Consider an intentionally hypothetical team that can competently process **eight similarly sized, risk-comparable changes per week** at a defined quality requirement. A generator can now produce one hundred candidate changes in that week. The queue does **not** automatically grow by ninety-two: the team may admit only useful work, discard experiments, batch changes, use better checking tools, or have spare capacity elsewhere. Starting from an empty queue, it grows by ninety-two only **if all one hundred comparable changes are admitted, none is withdrawn, and competent completion remains limited to eight**. The important quantities are **admitted demand, effective service capacity, task mix, and outcomes**—not the number of tokens generated.
+
+The “subprime” analogy concerns the possibility of **recognizing the gain immediately while postponing the obligations required to understand, verify, change and operate the result**. An attractive short-term output measure can coexist with obligations whose cost is not yet on the dashboard. This is a proposed risk mechanism, not a forecast of industry collapse, universal technical debt or inevitable loss.
+
+### What else could explain the same observations?
+
+Several strong alternatives deserve the same attention as the mismatch hypothesis. Teams may have adequate capacity or effective AI-supported substitutes; extra PRs may be useful experimentation; release batching, change scope or product demand may explain differing growth rates. A smaller percentage increase in releases can coexist with **positive net value**.
+
+**More review is not necessarily failed review.** Chen–Stratton's [source interpretation](../evidence/primary/2026-chen-stratton-firm-production.md#model-and-source-author-interpretation) allows **stricter review standards** as well as a possible change in draft quality. Extra requests, comments and calendar days might reflect useful checking, learning or coordination rather than saturation. To distinguish these possibilities, compare **active review effort with waiting**, change size and risk, defects and rework, reviewer understanding and outcomes after merge. Comment counts or elapsed time alone cannot settle it.
+
+These possibilities are testable. If comparable teams repeatedly achieve **sustained gains in useful outcomes** while maintaining required quality, competent ownership, operating capability and justified total cost under their existing process, the claimed need for rebalancing in that setting is weakened. If an independently observed capacity shortfall does not produce the predicted queue or outcome effect over an appropriate period, that weakens the proposed local mechanism. Conversely, a bottleneck alone does not establish persistent defects, lost knowledge, burnout or negative economics; those consequences require their own measurements.
+
+The objective is therefore not to defend the word *crisis*. It is to find out **where work, knowledge, responsibility and cost moved**, which functions still work, and whether a change is worth making.
+
+### The first management decision
+
+Choose one recurring type of change, not an organization's total commit count. Agree on the intended user result, who accepts that result, the minimum quality and recovery capability, the relevant comparison workflow and a period long enough to include work after the merge. Follow proposed changes through acceptance, review, integration, release, operation and feedback. Count abandoned experiments separately from admitted delivery work; separate active effort from waiting and include rework and downstream ownership.
+
+Then decide among three defensible actions: **keep the existing workflow because it works; improve a demonstrated constraint; or limit the use case when obligations cannot be met**. None is predetermined. The [team operating guide](../protocols/02_operational_defense.md) describes a proposed measurement loop, not an empirically proven universal remedy.
+
+---
+
+## Chapter 2. The SDLC produces more than code
+
+A software-delivery lifecycle is often drawn as a chain of boxes, but its most valuable outputs are not always files handed from one box to the next. It also produces and preserves **decisions, shared meaning, working knowledge, coordination, accountable ownership and feedback**. Those functions may be performed concurrently, revisited, automated, or combined into one role. They do not become unnecessary merely because writing code is cheap.
+
+**Rebalancing is a higher-order design problem that starts during project planning.** Decide which functions must produce which outcomes, where the limiting capability is likely to be, and who owns the trade-offs. Buying tools or optimizing each local activity can help, but it does not answer that system-level question. Preserve a necessary function through a demonstrably adequate replacement, not a ceremony for its own sake.
+
+### Before code: choose and understand the work
+
+**Intent** asks whose problem warrants solving, what improvement counts and whether the work should be attempted at all. Cheaper prototypes can improve discovery by allowing more ideas to be tested; they can also make it easier to commit to poorly justified features. Useful experiments that are abandoned are not automatically waste. The result of Intent is a reasoned choice—including the choice to stop.
+
+**Requirements** translate the need into shared, testable meaning: business rules, unacceptable outcomes, boundaries, examples and the person entitled to make a policy decision. Generated text may help people expose ambiguity, or it may make an unresolved assumption look settled. The needed function is **agreement on meaning and acceptance**, not a particular document format.
+
+**Design** chooses structures, interfaces and constraints that will still matter after the first working demonstration. It links alternatives and trade-offs to reliability, security, operability, future change and who can explain the system. An AI agent can propose or implement a design. What matters is whether the consequential choices remain inspectable and someone can maintain them. A larger document or more generated explanations do not, on their own, demonstrate that capability.
+
+### At the implementation boundary: more than a green check
+
+**Code** turns those choices into executable behavior. AI's ability to accelerate some of this work is central to the evidence; tool version, familiarity, task choice and actual measured outcome still matter. Generated code is candidate output until an appropriate process accepts it.
+
+**Review has two distinct functions.** It can detect defects, incorrect assumptions and unacceptable changes—its **quality function**. It can also transfer the knowledge needed for another accountable person or team to **explain consequential behavior, diagnose a fault, modify the system and recover from failure**—its **competent-ownership function**. The first may improve through static checks, tests, better tooling or automated review; the second may be supported by good contracts, explanations, pairing and deliberate operational practice. Neither requires every old line-by-line ritual to survive. But neither is established by a clicked approval button, a plausible AI summary or an assigned name.
+
+For one consequential change, an **optional ownership diagnostic** is to ask a non-author team member to explain a key rule, make a small safe modification, and describe how they would diagnose and recover from a likely failure. Compare the demonstrated ability, effort and cost with the **team's real previous process**—which may also have been weak. This is a testable local practice, **not a universal release gate** or evidence that AI has already caused a loss of understanding.
+
+**Testing** needs to answer whether the result satisfies the *right* expectations, not just whether the implementation and generated tests agree with each other. If requirements, code and tests share one wrong assumption, passing tests will faithfully reproduce that mistake. Independent acceptance examples, real operational conditions and deliberate negative cases can help; verification can also be much cheaper than implementation and create significant net savings. That is a benefit to measure, not a premise to deny.
+
+**Integration** asks whether individually acceptable changes form a coherent system: compatible interfaces, state, concurrency, dependencies and a stable baseline. A conflict-free merge is a useful signal, but it does not prove the combined behavior is correct or that anyone understands the interaction.
+
+### After merge: exposure, recovery and value
+
+**Deployment** makes a decision about real exposure, environment, data migrations, observability and who receives responsibility. A GitHub release count is not the same thing as a verified production rollout. Even a technically available rollback might not undo a data change or a consequence already experienced by a user.
+
+**Operation** supplies the continuing ability to detect, diagnose, contain and repair problems; support users; maintain integrations; meet obligations; and feed lessons into new work. Regenerating the code is not necessarily the same thing as restoring state, undoing a harmful action or recovering an understandable system. No single person needs to memorize every line; the team needs demonstrable capability over the behavior it owns.
+
+**User outcomes** are the point of the exercise. A shipped feature may be valuable, ignored, too hard to discover or actively burdensome. Value also includes safer service, fewer steps, accessibility, reliability and useful learning. More functionality or higher usage is not automatically more benefit; **unchanged usage does not prove unchanged value**.
+
+**Business economics** close the loop: include the benefits and total effort of choosing, building, checking, coordinating, operating and maintaining the result over an explicit horizon, plus tool and transition costs. Freed staff capacity is not identical to reduced cash spend. A beneficial AI adoption can still have a harmful local effect, and a proposed extra control must justify *its own* incremental cost. Feedback returns these findings to **Intent**, where leaders decide what to continue, change, narrow or stop.
+
+The functional loop is **Intent → Requirements → Design → Code → Review → Test → Integration → Deployment → Operation → User outcomes → Business economics → Intent**. It is a map of dependencies and responsibilities, **not a mandate to install eleven sequential approvals**. The [node-by-node hypothesis register](appendices/mechanism-hypotheses.md#node-index) owns the detailed tests and competing explanations; later chapters examine those functions without treating their unmeasured consequences as established facts.
+
+### Rebalance the chain, not the org chart
+
+A change in one function affects demands on the others. An agent that makes more complete design choices may reduce later review effort; better tests might permit safe, faster integration; restricting weak initiatives may improve useful delivery without producing more code. Equally, handing off implementation without preserving the ability to understand or recover it can move the obligation into the future. We should test *both* trajectories rather than assume that more automation is either salvation or decay.
+
+For each actual workflow, ask: **What did the old process really achieve, including its failures? What does the AI-assisted process achieve? Which required functions are still demonstrably supplied, by whom or by what substitute, and at what full cost and risk?** The baseline is the real previous system, not an imaginary world of perfect human reviews. Some old activities were wasteful and can be removed. Some supplied knowledge or control that must be deliberately replaced.
+
+The target is **useful, understandable and operable software at acceptable quality, justified cost and risk**. Name the actual constraint and who accepts each trade-off. A rebalancing measure fails its own test if it merely moves cost out of sight, harms a critical outcome, or delivers no worthwhile improvement over unchanged practice. **Preserve what matters; remove what does not.**
+
+---
+
+## Detailed research and earlier-edition sections
+
+**The new seventeen-chapter sequence currently stops here.** The numbered sections below are **retained research detail from the earlier edition**, not a continuation of the new chapter numbering. Their old headings and deep links remain intact while later editorial issues reorganize them. The underlying findings and citations are still available; the new introduction does not replace their evidence.
 
 ## Chapter 1. What Productivity Studies Measure: Task Time and Delivery Outcomes
 

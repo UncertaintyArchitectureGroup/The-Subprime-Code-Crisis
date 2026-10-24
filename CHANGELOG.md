@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-24 — First two report chapters and their source-use reset (#124)
+
+- Add a thesis-led Chapter 1 on the gap between coding activity and useful delivery, preserving positive NBER and Chen–Stratton findings and competing explanations.
+- Add Chapter 2 on the complete SDLC/value chain and Review's distinct quality and competent-ownership functions; preserve every previously reviewed legacy section and anchor during staged migration.
+- Reset only P-2026-01/P-2026-04 for new materially changed report uses; earlier source versions, findings and other source records remain unchanged. Synchronize source status only after independent review and accepted actual main.
+- Resolve #124 self-review SR-1–SR-6: define SDLC imbalance as a conditional capacity mechanism rather than asserting organizational prevalence; add **changed Review standards / beneficial scrutiny** as a Chen–Stratton alternative; clarify the engineering planning loop, optional ownership check and retained legacy navigation without creating new controls.
+
 ## 2026-10-24 — Within-issue session reporting (#136)
 
 - Require each meaningful subtask and deliberate session handoff to reconcile the **owning issue** with real progress, AC evidence and a full priority/dependency-ordered remaining plan.

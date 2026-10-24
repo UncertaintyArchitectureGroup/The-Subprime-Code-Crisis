@@ -1,13 +1,19 @@
 +++
 source_ids = ["P-2026-01"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-24"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "REFERENCES.md", "report/appendices/mechanism-hypotheses.md", "evidence/primary/2026-chen-stratton-firm-production.md"]
 +++
 
 # Writing Code vs. Shipping Code — September 2026 revision
+
+## New chapter-opening changed use — 2026-10-24, #124 (pre-merge Flow D)
+
+The approved two-chapter editorial rewrite adds a new prominent use of the **unchanged September 2026 NBER revision** in `report/01_the_illusion.md` Chapter 1. It accurately reports **+153.2% pooled sync commits and +19.8% releases**, weeks 21–30, from **distinct outcome samples**, and states that both outcomes are positive, observational and *not* a single throughput funnel. It treats capacity migration as a **repository hypothesis**, not an identified reviewer-hour shortage or net loss. The outcome counts are not proof of realized user value; release batching, experimentation/selection and successful adaptation remain explicit competing explanations.
+
+The 2026-10-24 #123 README integration is valid historical verification for that earlier use. This new chapter use **resets integration to `Needs re-verification / —` for #124** while retaining `Evidence review=Reviewed brief`, the accepted version and the prior source-review history. No new original evidence was obtained. The new occurrence audit and an independent implemented-content review, applicable checks, merge and exact-main source-status finalization are still required. The frontmatter `independent_review=Confirmed` refers to previously accepted brief/source work; it is **not** a new review of the #124 candidate. No protocol change is proposed.
 
 ## Final accepted README use — 2026-10-24, #123
 
