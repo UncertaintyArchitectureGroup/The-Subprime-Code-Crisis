@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "af5e348432f6c308dd28e749a438279d6105f5653ba61c78d3af93aca9331429",
+    "digest": "71b03b2f59cfaf3627a6622f4eb07faa1c38c1f83be7afbdf6fc9679d56ef59c",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -127,7 +127,7 @@
       {
         "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "ec50f755ce15b17aec44079ffc5fad001a6202ce9ac0bc0035718bc31d2de03c"
+        "sha256": "56e26d30bea1a225ddbaeaab3665ec3af84b1447173ebffb90b7ae4b813eee74"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -272,7 +272,7 @@
       {
         "path": "evidence/primary/2026-agarwal-agent-adoption.md",
         "identity_mode": "content",
-        "sha256": "a1f98fe8b50f88fe9c19d3b7929aed35965a6495c1159676fb858e76f378210c"
+        "sha256": "762cd8b208c159bd4e924b2d9965ed544cf3a331d6e83f236343e0e457185efb"
       },
       {
         "path": "evidence/primary/2026-ai-impacts-skill-formation.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "27cd7047ca6dce2fc231432b2c29e03ef3ff162be37def0c9bdd7d4bf04b5b04"
+        "sha256": "274e82d4e91ed596f430278702a46ecc9a5ff91add7c322db1eed6ac9434d47f"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -533,6 +533,11 @@
         "path": "governance/reviews/issue-133-2026-10-24-design-source-route-audit.md",
         "identity_mode": "content",
         "sha256": "59d694cc14241b12d376f7ce58957e7b1a2e412c8090fa76006d6213d8a1e22b"
+      },
+      {
+        "path": "governance/reviews/issue-133-2026-10-24-final-verification.md",
+        "identity_mode": "content",
+        "sha256": "311f5dca38697ac76790e04ba1ef7f0e3cb202c947a5fd2b9015f50f103e3e58"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -958,6 +963,11 @@
         "path": "governance/work-records/2026-10-24-issue-133-design-chapter.toml",
         "identity_mode": "content",
         "sha256": "a42715979db53afbb07f3a27e7ea6145e08e5d55cd54f61c0211e582a9f0ad51"
+      },
+      {
+        "path": "governance/work-records/2026-10-24-issue-133-final-verification.toml",
+        "identity_mode": "content",
+        "sha256": "149700d0a4e054252caa442f07dd37ecf4165878384ce672c6c3d55ab3161d28"
       },
       {
         "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
@@ -1701,8 +1711,8 @@
       "path": "evidence/SOURCES.md",
       "source": "Agarwal et al., *AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents*",
       "evidence_review": "Reviewed brief",
-      "integration_audit": "Needs re-verification",
-      "last_verified": "—",
+      "integration_audit": "Verified",
+      "last_verified": "2026-10-24",
       "can_support": "Repository-month activity and static-metric estimates by observable adoption history; not per-feature debt, human cognitive load or functional correctness",
       "current_use": "`README.md` Evidence Map; `report/01_the_illusion.md` Ch1/Ch4/Ch5 and references; `REFERENCES.md`; `report/appendices/mechanism-hypotheses.md`",
       "brief_path": "evidence/primary/2026-agarwal-agent-adoption.md"
@@ -2789,6 +2799,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-133-2026-10-24-final-verification.md",
+      "title": "Issue #133 — Final Design-chapter P-2026-02 Flow D verification",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
       "title": "Issue #136 — Within-issue checkpoint governance assessment",
       "instructions": [
@@ -3379,6 +3396,13 @@
     {
       "path": "governance/work-records/2026-10-24-issue-133-design-chapter.toml",
       "title": "governance/work-records/2026-10-24-issue-133-design-chapter.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-24-issue-133-final-verification.toml",
+      "title": "governance/work-records/2026-10-24-issue-133-final-verification.toml",
       "instructions": [
         "AGENTS.md"
       ]
