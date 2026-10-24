@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "aa986c0b2506f1c7e35345b42285ff556b2ad977b6092c3fef918f14bcbb4f52",
+    "digest": "af5e348432f6c308dd28e749a438279d6105f5653ba61c78d3af93aca9331429",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -532,7 +532,7 @@
       {
         "path": "governance/reviews/issue-133-2026-10-24-design-source-route-audit.md",
         "identity_mode": "content",
-        "sha256": "bff754330842f66a28455a209e29653fcf43ede13ee3c7187bd45202d9a190d1"
+        "sha256": "59d694cc14241b12d376f7ce58957e7b1a2e412c8090fa76006d6213d8a1e22b"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -957,7 +957,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-133-design-chapter.toml",
         "identity_mode": "content",
-        "sha256": "69a30785d1ffef624e3909d5d2dbdc8b9be7a39939a8163e9a96df597ea4354a"
+        "sha256": "a42715979db53afbb07f3a27e7ea6145e08e5d55cd54f61c0211e582a9f0ad51"
       },
       {
         "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
