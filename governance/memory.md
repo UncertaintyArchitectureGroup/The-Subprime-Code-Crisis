@@ -4,7 +4,7 @@
 
 - 2026-10-24: actual `main` before editorial #124 is `3c4d4d3fd8475251a1b6b3893061f1f71b05bf3b` after governance PR #137; [exact-main Main health #40117793952](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/actions/runs/40117793952) Success. #136 remains open because its merged PR has no independent review record (`Review unavailable`).
 - Maintainer approved editorial #124 by “Змержив. Ідемо далі”, then separately authorized implementation of [SR-1–SR-6 self-review corrections](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/138#issuecomment-6387899617) with “Роби”. This is still one #124 scope, not permission to implement #125.
-- [PR #138](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/138) contains both opening chapters, completed SR-1/SR-2 thesis/Chen-review-alternative corrections and bounded SR-3–SR-6 editorial corrections. **Not merged; independent substantive/agent-reader reviewer absent; source verification unresolved.** The old successful PR runs are pre-correction and must not be cited as checking new head.
+- [PR #138](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/pull/138) contains both opening chapters, completed SR-1/SR-2 thesis/Chen-review-alternative corrections and bounded SR-3–SR-6 editorial corrections. **Independent substantive non-author Gemma-4 candidate review `Confirmed`** at head `50aed17c` (see [dated record](reviews/issue-124-2026-10-24-independent-substantive-review.md)); source PDF acquisition limits disclosed. **Not merged; actual-main and final source verification still pending.** Main health `40121944017` and Repository Gate `40121942499` passed on reviewer content head; rerun after review-record metadata edits before merge.
 
 ## Active owners
 
@@ -25,7 +25,7 @@
 
 ## Next actions
 
-- **Next internal subtask:** regenerate+verify candidate RI after correction edits; inspect the full PR patch and exact hosted Main health / Repository Gate checks for the *new head*. Record the current evidence in #124.
-- Obtain an **actually separate** substantive and agent-reader review of new text, source-status/occurrence audit and changed PR head. The previous same-author adversarial check is NOT independent confirmation.
-- If reviewer finds defects, correct inside #124 and repeat affected checks/review. When genuinely Confirmed, merge content; inspect actual main; complete any separate final Flow D restoration PR for P-2026-01/P-2026-04; only then close #124 and checkpoint #84.
+- **Next internal subtask:** regenerate RI after separately confirmed reviewer report and work record; verify Main health and Repository Gate on current metadata-recording head, then merge accepted candidate if checks remain green.
+- **Completed:** Separate externally executed Gemma-4 full-diff substantive/agent-reader review of original candidate returned `Confirmed` with original-source limits recorded. The earlier same-author adversarial check is not independent and is not counted as that outcome.
+- **After green latest-head checks:** merge independently reviewed content; inspect exact main and complete separate narrow Flow D restoration PR for P-2026-01/P-2026-04 after actual-main acceptance; only then tick #124 ACs, close #124 and checkpoint #84.
 - #84 order stays #124 → #125 → #133 → #126 → #127 → #128 → #129 → #130 → #131 → #132; next editorial issue #125 needs distinct explicit approval. Publication #74 separate. Do not hide #136's independent-review gap.
