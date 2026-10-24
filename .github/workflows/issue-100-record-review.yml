@@ -1,80 +1,86 @@
-name: Issue 120 record actual metadata review
+name: Issue 121 guarded plan checkpoint
 on:
   push:
     branches: [issue-100-transfer-20261024]
     paths: [.github/workflows/issue-100-record-review.yml]
 permissions:
-  contents: write
+  contents: read
+  issues: write
 jobs:
   record:
     runs-on: ubuntu-latest
-    env:
-      BASE: 7e40c0b7930d4a014483b51eda68dbed802c73e7
-      EXPECTED: 54667f4cc611e99859748e0584505fe432810016
-      TARGET: issue-120-final-verification
+    timeout-minutes: 3
     steps:
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
-        with:
-          ref: 54667f4cc611e99859748e0584505fe432810016
-          fetch-depth: 0
-      - name: Record only the actual independent outcome
+      - name: Update only four current-status fields in issue 84
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          test "$(git rev-parse HEAD)" = "$EXPECTED"
-          test "$(git ls-remote origin refs/heads/$TARGET | cut -f1)" = "$EXPECTED"
-          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$BASE"
-          mkdir -p /tmp/trusted /tmp/issue120-review
-          git archive "$BASE" | tar -x -C /tmp/trusted
           python - <<'PY'
-          from pathlib import Path
-          import urllib.request,json,os,subprocess
-          URL='https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
-          receipt='6383096812'; link=f'{URL}/pull/122#issuecomment-{receipt}'
-          req=urllib.request.Request(f'https://api.github.com/repos/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/comments/{receipt}',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
-          obj=json.load(urllib.request.urlopen(req))
-          assert obj['user']['login']=='chatgpt-codex-connector[bot]'
-          assert '## Independent audit — **Confirmed**' in obj['body'] and os.environ['EXPECTED'] in obj['body']
-          assert subprocess.check_output(['git','rev-parse','HEAD^{tree}'],text=True).strip()=='9ef2dbef938402cad17e6fd21c49ddec22545032'
-          p=Path('governance/work-records/2026-10-24-issue-120-final-verification.toml');s=p.read_text()
-          assert s.count('independent_review = "Review unavailable"')==1
-          s=s.replace('independent_review = "Review unavailable"','independent_review = "Confirmed"',1)
-          s=s.replace('# Metadata-delta review is pending; prior source/main acceptance does not certify this delta.',f'# Actual metadata-delta acceptance: {link}; head54667f4/tree9ef2dbef. Not future-main acceptance.')
-          p.write_text(s)
-          p=Path('governance/reviews/issue-120-2026-10-24-final-verification.md');s=p.read_text()
-          needle='The completed source and actual-main reviews are **Confirmed** in their stated scopes. The independent outcome for this metadata delta is initially **Review unavailable**, pending an actual scoped report in [#120](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/120). This is not a claim that the metadata PR is accepted or ready to merge. The new work record must record the actual metadata-review outcome before merge; no future result is asserted here.'
-          assert s.count(needle)==1
-          replacement=f'The completed source and actual-main reviews are **Confirmed** in their stated scopes. The first metadata-review attempt returned [Review unavailable]({URL}/issues/120#issuecomment-6383042391) because its issue-context checkout lacked the candidate. The separate PR-context reviewer subsequently returned [Confirmed]({link}) for exact head `54667f4cc611e99859748e0584505fe432810016`, tree `9ef2dbef938402cad17e6fd21c49ddec22545032`. This paragraph and the new work record record that actual outcome, not a future merge or final-main acceptance. The candidate review is reused only for the unchanged accepted metadata; the recording delta and actual resulting main retain their applicable checks.'
-          p.write_text(s.replace(needle,replacement))
-          assert set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())=={'governance/work-records/2026-10-24-issue-120-final-verification.toml','governance/reviews/issue-120-2026-10-24-final-verification.md'}
+          import hashlib, json, os, pathlib, urllib.request, difflib
+          REPO = 'UncertaintyArchitectureGroup/The-Subprime-Code-Crisis'
+          API = 'https://api.github.com/repos/' + REPO
+          URL = 'https://github.com/' + REPO
+          MAIN = '0aaccd7311af65727ddf0077f9ca605def967d22'
+          EXPECTED_BODY = 'd5fe47739aebb1efdbc54107a3819518f49930d4e14321d868dfd1cc42c28422'
+          HEADER = f'> **Current state — 2026-10-24:** #85, #65, #86, #87, #4, #109, #110 and #111 are completed; the #88 plain-language pass is merged through #114. **#100 approved content and all seven source flows are complete** through [PR #118]({URL}/pull/118) and [PR #122]({URL}/pull/122), accepted main `{MAIN}`. #119/#120 are completed; #121 records the final administrative closeout. [Parent acceptance mapping]({URL}/issues/100#issuecomment-6383323067) · [Current plan and next scope]({URL}/issues/84#issuecomment-6383326966). **Next proposed work: remaining #88 with #1 reader acceptance; implementation has not started.** This master issue remains open. Earlier status statements below are dated history; source follow-ups and all-node research are not first-edition prerequisites.'
+          REPLACEMENTS = {
+              '| 7 | **#111** |': 'Completed via #117; exact main b72b50e accepted. Candidate source follow-ups remain separately selected, not an indefinite edition blocker',
+              '| 8 | **#100** |': 'Completed via #118/#122; seven sources Verified/2026-10-24 on main0aaccd7. #119/#120 complete; #121 records parent closeout. H0-C/MKT-1 remain Open',
+              '| 9 | **#88**,': 'Language pass completed via #114; remaining first edition is the next proposal with #110/#111/#100 inputs ready. Not started by #121; all-node research is not a prerequisite',
+          }
+          def sha(text): return hashlib.sha256(text.encode()).hexdigest()
+          def patch(body):
+              assert sha(body) == EXPECTED_BODY, 'Unexpected body; stop rather than overwrite'
+              old_header, tail = body.split('\n\n', 1)
+              assert old_header.startswith('> **Current state — 2026-10-23:**')
+              changed = []
+              lines = tail.splitlines(keepends=True)
+              for prefix, status in REPLACEMENTS.items():
+                  matches = [i for i, line in enumerate(lines) if line.startswith(prefix)]
+                  assert len(matches) == 1, (prefix, matches)
+                  i = matches[0]; old = lines[i]
+                  parts = old.rstrip('\n').split('|')
+                  assert len(parts) == 6, parts
+                  parts[-2] = ' ' + status + ' '
+                  new = '|'.join(parts) + ('\n' if old.endswith('\n') else '')
+                  lines[i] = new; changed.append((old, new))
+              new_tail = ''.join(lines)
+              restored = new_tail
+              for old, new in changed: restored = restored.replace(new, old, 1)
+              assert restored == tail, 'History changed beyond three status cells'
+              result = HEADER + '\n\n' + new_tail
+              assert result.count('- [x] **AC-') == body.count('- [x] **AC-') == 2
+              assert sha(result) == '03cb8ce5d29f3131a4359614b1872969e0e0ed3cc4df09f9395154405dd627d0'
+              return result
+          def api(path, data=None):
+              headers = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'}
+              raw = None if data is None else json.dumps(data).encode()
+              if raw is not None: headers['Content-Type'] = 'application/json'
+              req = urllib.request.Request(API + path, data=raw, headers=headers, method='GET' if data is None else 'PATCH')
+              with urllib.request.urlopen(req, timeout=30) as res: return json.load(res)
+          out = pathlib.Path('/tmp/issue121-plan'); out.mkdir(exist_ok=True)
+          assert api('/git/ref/heads/main')['object']['sha'] == MAIN
+          for issue in (119, 120): assert api(f'/issues/{issue}')['state'] == 'closed'
+          for number, expected in ((118, '7e40c0b7930d4a014483b51eda68dbed802c73e7'), (122, MAIN)):
+              pr = api(f'/pulls/{number}'); assert pr['merged'] and pr['merge_commit_sha'] == expected
+          run = api('/actions/runs/40086484869')
+          assert run['head_sha'] == MAIN and run['conclusion'] == 'success'
+          original = api('/issues/84'); before = original['body']; after = patch(before)
+          (out/'84-before.json').write_text(json.dumps(original, ensure_ascii=False, indent=2))
+          (out/'84-after-body.md').write_text(after)
+          (out/'84-body.diff').write_text(''.join(difflib.unified_diff(before.splitlines(True), after.splitlines(True), fromfile='before', tofile='after')))
+          assert api('/issues/84')['body'] == before, 'Concurrent update; stop'
+          result = api('/issues/84', {'body': after})
+          assert result['body'] == after and result['state'] == 'open'
+          assert api('/git/ref/heads/main')['object']['sha'] == MAIN
+          summary = {'issue':84,'before_sha256':sha(before),'after_sha256':sha(after),'changes':'current header and exactly three current-sequence status cells; all other body bytes preserved','main':MAIN,'master_state':'open','repository_content_changed':False}
+          (out/'result.json').write_text(json.dumps(summary, indent=2))
+          print(json.dumps(summary, indent=2))
           PY
-      - name: Validate the three-path recording delta
-        run: |
-          python tools/repository_intelligence.py --config governance/repository-intelligence-config.json build
-          git add governance/work-records/2026-10-24-issue-120-final-verification.toml governance/reviews/issue-120-2026-10-24-final-verification.md governance/repository-intelligence/agent-context.json
-          test "$(git diff --cached --name-only | wc -l)" = 3
-          test "$(git write-tree)" = d0537d607572434b5ae121a18b0ec40c16012ca3
-          git diff --cached --exit-code -- evidence report protocols README.md REFERENCES.md AGENTS.md DOCTRINE.md GLOSSARY.md CONTRIBUTING.md CHANGELOG.md tools tests .github governance/memory.md
-          python -m unittest discover -s tests -p 'test_*.py' > /tmp/issue120-review/tests.log 2>&1
-          python -m tools.repository_validator
-          python -m tools.evidence_state_check
-          python tools/repository_intelligence.py --config governance/repository-intelligence-config.json verify
-          git diff --cached --check
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Record actual independent metadata acceptance for issue120' -m 'Refs #120, #100. Receipt6383096812; three-path recording only, accepted sources and status pairs unchanged.'
-          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/repository_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base "$BASE" --head HEAD
-          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/evidence_state_check.py --policy-root /tmp/trusted --candidate-root "$PWD"
-          PYTHONPATH=/tmp/trusted python /tmp/trusted/tools/evidence_transition_gate.py --policy-root /tmp/trusted --candidate-root "$PWD" --repo "$PWD" --base "$BASE"
-          test "$(git ls-remote origin refs/heads/$TARGET | cut -f1)" = "$EXPECTED"
-          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$BASE"
-          git push origin HEAD:refs/heads/$TARGET
-          git show -s --format='%H %T %P' HEAD > /tmp/issue120-review/identity.txt
-          git diff --binary "$EXPECTED" HEAD > /tmp/issue120-review/recording.patch
-          git archive --format=zip HEAD > /tmp/issue120-review/repository.zip
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
         with:
-          name: issue120-recorded-review
-          path: /tmp/issue120-review/
+          name: issue121-plan-checkpoint
+          path: /tmp/issue121-plan/
           retention-days: 3
-          if-no-files-found: error
+          if-no-files-found: warn
