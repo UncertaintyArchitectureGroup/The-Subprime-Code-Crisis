@@ -117,6 +117,14 @@ and one next issue/scope, and wait for explicit approval before starting it.
 Routine corrections and completion steps inside the current approved scope do
 not need repeated permission. A queued issue is not approval to implement it.
 
+After each meaningful subtask and at each deliberate session handoff, update the
+**active issue itself** with actual progress/AC evidence and the **full ordered
+subtask list**, showing done, active, blocked and remaining work with priorities
+and dependencies. The closing user report must identify the **next step in the
+same issue**, remaining acceptance and the current project issue order from #84.
+Ask before material scope or priority changes, not before routine approved steps;
+see [the canonical checkpoint rule](AGENTS.md#within-issue-checkpoints-and-end-of-session-reporting).
+
 The [dated backlog audit](governance/issue-backlog-audit.md) records open PRs and
 unprocessed research ideas. [Cross-repository ownership](governance/repository-map.md)
 and [Repository Intelligence](governance/repository-intelligence.md) provide
