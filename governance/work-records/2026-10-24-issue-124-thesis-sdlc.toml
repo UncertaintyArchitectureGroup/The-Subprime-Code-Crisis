@@ -1,0 +1,20 @@
+record_version = 1
+title = "Issue #124: first reader-ready thesis and whole-SDLC chapters"
+primary_flow = "Flow D — new materially changed chapter uses of unchanged P-2026-01 and P-2026-04; approved two-chapter editorial rewrite"
+human_decision = "Maintainer instructed 'Змержив. Ідемо далі' after PR137 merged on 2026-10-24, selecting queued #124 under the prior 11-task #88/#84 editorial plan. Preserves #123 Option A routes and explicit missing #136 review exception."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "Two new complete lead chapters and a revised Part 1 reader ToC materially change the public argument and navigation."
+
+[synchronization]
+assessed_surfaces = ["report", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "governance", "contributor-guidance", "history", "doctrine", "repository-architecture", "protocols"]
+
+[synchronization.non_applicable]
+evidence-indexes = "No new/replaced source identity or class; original source reviews retained."
+references = "No source identity, version, title or bibliography change."
+contributor-guidance = "No changes to approval, workflow, status model or contributor obligations."
+doctrine = "No new scientific claim type, research policy, or canonical vocabulary."
+repository-architecture = "Option A three-source/route architecture unchanged; chapter headings are within the first existing report file."
+protocols = "No new role, test threshold, prescription or verification policy; current team guide is linked as proposed practice."
