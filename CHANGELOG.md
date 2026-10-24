@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-24 — Design Chapter 5 and source-use audit (#133)
+
+- Add a complete Chapter 5 on architectural alternatives, interfaces and invariants, reliability/security/operation trade-offs, shared system understanding, competent ownership, later changeability and justified cost within the existing Part 1 reader path.
+- Retain the fictional recovery-policy invariant used in Intent and Requirements, without selecting a real security implementation. Clarify DES-1 and DES-2 remain **Open**, including positive AI substitutes, strong rival explanations and separate adverse/remedy falsifiers.
+- Integrate the accepted Agarwal/He/Vasilescu **arXiv v2** repository-month activity/structure estimates with their positive AF activity, distinct exposure cohorts and pre-period/design limitations; reset **only P-2026-02** changed Design use to `Needs re-verification / —` pending independent accepted main and separate final Flow D verification.
+- Preserve all reviewed historical report detail and old anchors, keep three canonical report routes, update Part 1 ToC and legacy notice. No other source statuses, protocol, methodology, hypothesis verdict or publisher deployment changed.
+
 ## 2026-10-24 — Intent and Requirements opening chapters (#125)
 
 - Add complete report Chapters 3 (Intent) and 4 (Requirements) to the existing Part 1 reader path: selecting valuable problems, distinguishing experiments from production obligations, shared domain meaning and independently grounded acceptance examples.
