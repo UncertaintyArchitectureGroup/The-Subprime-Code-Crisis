@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "3febc03c71239096ca55f7da5c21c08a3841bdb15b7e8de900101bc5f64698d9",
+    "digest": "eea6cf294f9c400b10416dc47bf5e7f939835307f6342a44409587483b5d85c5",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -60,9 +60,19 @@
         "sha256": "bdaaa11959016973a27c936d462632953b436288031a354a4ed4587530aad46f"
       },
       {
+        "path": "assets/crisis_cover.png",
+        "identity_mode": "content",
+        "sha256": "8de4839abd07cc08ad9d5a58c9676798819a03a2178ce159487b38e2f349972f"
+      },
+      {
+        "path": "assets/Pasted image 20260209153307.png",
+        "identity_mode": "content",
+        "sha256": "1514b7f8ad8f3c2e0ec993fe14b99a97531b79e00c469370ec60539d6a6a2fc0"
+      },
+      {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "28a500aa452ffe59e104339debba741147888bf7b8e3887d97203fb98375bf22"
+        "sha256": "e177ff49ee33e777ac73d786dae54a2dc97ee8c9c074ae4c2d6ad9d858ba9077"
       },
       {
         "path": "CITATION.cff",
@@ -78,56 +88,6 @@
         "path": "DOCTRINE.md",
         "identity_mode": "content",
         "sha256": "efb744d3d8d7e13077b9574cbde5cc7f5a8bfccdd03992e919f49a4480994d7f"
-      },
-      {
-        "path": "GLOSSARY.md",
-        "identity_mode": "content",
-        "sha256": "1308c961e318c154f50608ecb551b7580b828fa5117888aace29191a2d3fb1b4"
-      },
-      {
-        "path": "LICENSE.md",
-        "identity_mode": "content",
-        "sha256": "a4c5a19ccb3afc01692c66a17633e51f32db1cf9f676bc64b4672598ed583545"
-      },
-      {
-        "path": "README.md",
-        "identity_mode": "content",
-        "sha256": "ed0f1c71add5ce858c0bbdb466181dce8b15aa981c286f1e59436bc6b70f8869"
-      },
-      {
-        "path": "REFERENCES.md",
-        "identity_mode": "content",
-        "sha256": "b98f492ac0bced2c59684d5edc3428c9454e1c8e4175b80432261240e259901b"
-      },
-      {
-        "path": "SCOPE.md",
-        "identity_mode": "content",
-        "sha256": "fc36db9fad3c1e3959a8f31d5e44cf2569f7a495a6e5e925e2b8a159beebfc65"
-      },
-      {
-        "path": "TERMINOLOGY_AND_ATTRIBUTION.md",
-        "identity_mode": "content",
-        "sha256": "09dbe41609c2399c64fbccdf092a25f1517d8dd8e5d879a491d08a1a640ef290"
-      },
-      {
-        "path": "assets/Pasted image 20260209153307.png",
-        "identity_mode": "content",
-        "sha256": "1514b7f8ad8f3c2e0ec993fe14b99a97531b79e00c469370ec60539d6a6a2fc0"
-      },
-      {
-        "path": "assets/crisis_cover.png",
-        "identity_mode": "content",
-        "sha256": "8de4839abd07cc08ad9d5a58c9676798819a03a2178ce159487b38e2f349972f"
-      },
-      {
-        "path": "evidence/README.md",
-        "identity_mode": "content",
-        "sha256": "f1b74032bd0a8e963c3197e4139a8e6400de935674c370086a0c9c34f64c0aa5"
-      },
-      {
-        "path": "evidence/SOURCES.md",
-        "identity_mode": "content",
-        "sha256": "19b2cc8564d57e6a1bbd73d4ea2a788d1469872096275e9cb6b011c9b33cc266"
       },
       {
         "path": "evidence/datasets/README.md",
@@ -185,14 +145,14 @@
         "sha256": "2f94d4e67feff38b09ddb8594fc4e41362caa5ef3d20fa04f08626c9b95d11de"
       },
       {
-        "path": "evidence/documentary/README.md",
-        "identity_mode": "content",
-        "sha256": "1fe320a47e18db8a1e47db1ee6be984570d9937503a846a76d134b9e0f214fec"
-      },
-      {
         "path": "evidence/documentary/project-provenance.md",
         "identity_mode": "content",
         "sha256": "7bcfbf0c2558f527a91b8f0f014b3284f5e8dc170a8e8de0bcd59c6e8d9582f0"
+      },
+      {
+        "path": "evidence/documentary/README.md",
+        "identity_mode": "content",
+        "sha256": "1fe320a47e18db8a1e47db1ee6be984570d9937503a846a76d134b9e0f214fec"
       },
       {
         "path": "evidence/documentary/terminology-provenance.md",
@@ -287,7 +247,7 @@
       {
         "path": "evidence/primary/2026-chen-stratton-firm-production.md",
         "identity_mode": "content",
-        "sha256": "7a3db35b4d189a76a39586abd7dbe1e2a30fb522dee277687853c53c991f1e35"
+        "sha256": "ebd81cb9291a921ce8827af36244c3cac505e768f07d37f34cce4cfdbeeebbb9"
       },
       {
         "path": "evidence/primary/2026-metr-productivity-design-update.md",
@@ -303,6 +263,11 @@
         "path": "evidence/primary/README.md",
         "identity_mode": "content",
         "sha256": "841f9fee788ae478a8bbe4c51e36247843b41566c85742bb8b811bf4dc95d703"
+      },
+      {
+        "path": "evidence/README.md",
+        "identity_mode": "content",
+        "sha256": "f1b74032bd0a8e963c3197e4139a8e6400de935674c370086a0c9c34f64c0aa5"
       },
       {
         "path": "evidence/secondary/2025-banandre-mckinsey-summary.md",
@@ -345,9 +310,14 @@
         "sha256": "f25f867b5002a27b480f0139b4ece7aa51cc19b4a3c81cfa934bbd0bde7d4bfc"
       },
       {
-        "path": "governance/README.md",
+        "path": "evidence/SOURCES.md",
         "identity_mode": "content",
-        "sha256": "9d948c13ef7f2feb6adc3fad966e4a0f2d22819614ccfddb5fe3c4e0eab495c2"
+        "sha256": "19b2cc8564d57e6a1bbd73d4ea2a788d1469872096275e9cb6b011c9b33cc266"
+      },
+      {
+        "path": "GLOSSARY.md",
+        "identity_mode": "content",
+        "sha256": "1308c961e318c154f50608ecb551b7580b828fa5117888aace29191a2d3fb1b4"
       },
       {
         "path": "governance/content-synchronization.md",
@@ -392,12 +362,17 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "d8e40db2e1ec9a38b491f6ddb41dd2b1575833b31623b2437b146c0c788c4110"
+        "sha256": "5b3d20f7d5c8bd1f7164201b5591572a52fced0d89433417b8edc0b015a210f8"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
         "identity_mode": "content",
         "sha256": "9e2ece20953849c144d5e5ff6c374555a43fafddb100ff812db1e91ead486247"
+      },
+      {
+        "path": "governance/README.md",
+        "identity_mode": "content",
+        "sha256": "9d948c13ef7f2feb6adc3fad966e4a0f2d22819614ccfddb5fe3c4e0eab495c2"
       },
       {
         "path": "governance/repository-contract.toml",
@@ -512,7 +487,7 @@
       {
         "path": "governance/reviews/issue-124-2026-10-24-chapter-source-route-audit.md",
         "identity_mode": "content",
-        "sha256": "699cddd6cfb8861e0858484fc43aabdfa97952916d6bfa33aa431f9f812b8682"
+        "sha256": "6da1aee84c34512f5919fd762f7079944a38306156b0c78da80869e81cddc4a8"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -935,6 +910,11 @@
         "sha256": "23b6a23e11c7ef8791537c19f6d4b1161bf68208a0fdce39ace0e4168d1e3540"
       },
       {
+        "path": "LICENSE.md",
+        "identity_mode": "content",
+        "sha256": "a4c5a19ccb3afc01692c66a17633e51f32db1cf9f676bc64b4672598ed583545"
+      },
+      {
         "path": "protocols/01_personal_defense.md",
         "identity_mode": "content",
         "sha256": "025e667c88719da78c9b841c25196d068da267a2b6ecd3d7207f80f02e659e96"
@@ -960,9 +940,19 @@
         "sha256": "17f9ad90288a620d48dc7b0c8f3ee21142971fd5b4843fec5f1dcf140728790c"
       },
       {
+        "path": "README.md",
+        "identity_mode": "content",
+        "sha256": "ed0f1c71add5ce858c0bbdb466181dce8b15aa981c286f1e59436bc6b70f8869"
+      },
+      {
+        "path": "REFERENCES.md",
+        "identity_mode": "content",
+        "sha256": "b98f492ac0bced2c59684d5edc3428c9454e1c8e4175b80432261240e259901b"
+      },
+      {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "9b267eb93d30482e9fe1795d5e4cb9d6874a3103d2e63bfa80353c62fa4f8d3c"
+        "sha256": "4ecd5864696cd62694e01c5636e13f1c98deb428e5f71f899bbcfcf34040b712"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -998,6 +988,16 @@
         "path": "report/appendices/tco-sensitivity.md",
         "identity_mode": "content",
         "sha256": "3f39181bd9c301d0c09667eb63d562c134cea13bace44bfa318f60d5e83b26e7"
+      },
+      {
+        "path": "SCOPE.md",
+        "identity_mode": "content",
+        "sha256": "fc36db9fad3c1e3959a8f31d5e44cf2569f7a495a6e5e925e2b8a159beebfc65"
+      },
+      {
+        "path": "TERMINOLOGY_AND_ATTRIBUTION.md",
+        "identity_mode": "content",
+        "sha256": "09dbe41609c2399c64fbccdf092a25f1517d8dd8e5d879a491d08a1a640ef290"
       },
       {
         "path": "tests/__init__.py",
@@ -1043,16 +1043,6 @@
         "path": "tests/test_tco_sensitivity.py",
         "identity_mode": "content",
         "sha256": "47ad65b8fea4a4781bc501b6b72659a7c0ae34819a8dd235c9a9d1badaecd5a2"
-      },
-      {
-        "path": "tools/RI-LICENSE.md",
-        "identity_mode": "content",
-        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
-      },
-      {
-        "path": "tools/RI-NOTICE.md",
-        "identity_mode": "content",
-        "sha256": "d86fcd477d5ebbe7909d80dacec89038d165d01882a5bcdce78b22be17273ac7"
       },
       {
         "path": "tools/__init__.py",
@@ -1113,6 +1103,16 @@
         "path": "tools/repository_validator/validator.py",
         "identity_mode": "content",
         "sha256": "d3405cc1d5cd5533e459b0ff1c4c8acb0c60169277570df890595f2fc6c0b046"
+      },
+      {
+        "path": "tools/RI-LICENSE.md",
+        "identity_mode": "content",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      },
+      {
+        "path": "tools/RI-NOTICE.md",
+        "identity_mode": "content",
+        "sha256": "d86fcd477d5ebbe7909d80dacec89038d165d01882a5bcdce78b22be17273ac7"
       },
       {
         "path": "tools/tco_sensitivity.py",
