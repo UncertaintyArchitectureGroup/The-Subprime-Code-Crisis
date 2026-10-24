@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "9972edac21c1450cae22ee818f8604f0bc39ec716ddc2c1e3b457636ce53b3ac",
+    "digest": "ea53f8bdb299629887244c9e313e77856b0a4dcbada1dcd403ca2346cd106c54",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -897,7 +897,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
         "identity_mode": "content",
-        "sha256": "597937d3a6a7e7aa8a52ca5bce2dcc4c8e5e50ea2d0a33f6b9a23cbd432f50d2"
+        "sha256": "998fea3ff4b9e8f9e68cdf2330c6ff805c37b4e9178b96a96f78bafa361bf803"
       },
       {
         "path": "governance/work-records/README.md",
