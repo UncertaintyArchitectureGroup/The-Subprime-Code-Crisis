@@ -5,6 +5,8 @@
 **Table of Contents:**
 *   [Chapter 1. Faster changes, but what did the whole system gain?](#chapter-1-faster-changes-but-what-did-the-whole-system-gain)
 *   [Chapter 2. The SDLC produces more than code](#chapter-2-the-sdlc-produces-more-than-code)
+*   [Chapter 3. Intent — choose the problem before the solution](#chapter-3-intent--choose-the-problem-before-the-solution)
+*   [Chapter 4. Requirements — generated text is not shared meaning](#chapter-4-requirements--generated-text-is-not-shared-meaning)
 *   [Detailed research and earlier-edition sections](#detailed-research-and-earlier-edition-sections)
     *   [Task-time and delivery evidence — earlier Chapter 1](#chapter-1-what-productivity-studies-measure-task-time-and-delivery-outcomes)
     *   [Writing Code vs. Shipping Code](#writing-code-vs-shipping-code)
@@ -114,9 +116,116 @@ The target is **useful, understandable and operable software at acceptable quali
 
 ---
 
+## Chapter 3. Intent — choose the problem before the solution
+
+When implementation is expensive, a team often has to choose which ideas deserve the effort. AI can lower that cost, sometimes substantially. This can be a genuine advantage: a team may explore needs it could not afford to investigate before. But **the ability to build an idea is not evidence that the idea solves the right problem**. Faster implementation changes the price of testing a solution; it does not make the decision to pursue that solution correct.
+
+The first part of the software-development lifecycle, **Intent**, is where a problem becomes a decision: investigate, experiment, commit to delivery, or stop. Its output is more than a backlog entry. It is a defensible explanation of *whose problem matters, what would improve, what cannot be sacrificed, and who owns the choice*. Those outputs must still exist if an agent drafts the entire proposal.
+
+### Four decisions that should not be confused
+
+A **need** is a condition worth changing: users cannot accomplish something, a service is unreliable, or a business process consumes avoidable effort. A **solution idea** is one possible response. A **prototype** is an experiment to learn whether a response has merit. A **production commitment** means accepting the longer-lived work of operating, supporting, changing, and eventually retiring it.
+
+These can be close together, but they are not synonyms. An impressive prototype may show technical feasibility while leaving the user need, safety obligations, adoption prospects, or cost of ownership unanswered. Conversely, an experiment abandoned before release may have delivered exactly the learning the team paid for. **A useful stop is an outcome, not a failed release count.**
+
+Consider a team that can now produce five plausible feature demonstrations for the previous cost of one. Its ability to compare possible solutions may improve. The failure mode would be to treat all five demonstrations as approved commitments, each adding requirements, support work, and future maintenance before anyone has selected a useful problem. The mechanism is **admission without sufficient selection**, not AI-generated prototypes themselves. No study reviewed here measures how often this happens across organizations.
+
+### A hypothetical recovery decision
+
+Consider an invented online service where customers sometimes lose both their password and their second authentication factor. The problem is not initially “build an AI-generated recovery page.” It is **restore rightful access while preventing an impostor from taking over an account**, with reasonable effort for users and support staff. The product owner needs to understand both harms: locking out a legitimate customer and granting control to the wrong person.
+
+For this example only, suppose the organization's chosen policy is:
+
+**Account access may be restored only after identity has been independently confirmed by the service's approved process. No payout destination may be changed before that confirmation.**
+
+This is an **illustrative local policy**, not a security standard or evidence that this is the right recovery policy for a real provider. The exact identity-check method, accessibility alternatives, exception authority, residual fraud risk, and any additional rules for payout changes are still decisions for the relevant product, security, and operations owners.
+
+A fast generated interface might help users discover confusing instructions or help a team compare assisted and human-supported recovery paths. Neither prototype should silently decide what counts as independent identity confirmation. That is the boundary between exploring a solution and delegating a consequential policy choice. Chapter 4 carries **this same hypothetical policy**, unchanged, into requirements and acceptance examples.
+
+### When faster exploration helps — and when it might hurt
+
+AI may help organize interview notes, propose competing hypotheses, model service flows, write disposable experiments, and compare alternative journeys. Those uses can improve selection and learning, especially where the real previous workflow relied on slow documentation or a narrow range of ideas. There is no virtue in preserving unnecessary handoffs simply because humans once performed them.
+
+The adverse hypothesis, [INT-1](appendices/mechanism-hypotheses.md#intent--int-1-and-int-2), is narrower: **cheaper implementation combined with activity-driven admission** might increase poorly justified commitments and reduce useful outcomes per invested effort. The strongest alternatives are that unmet demand is finally served, cheaper experiments improve discovery, or the team already has effective selection and stop practices. More admitted work or a larger backlog does not, by itself, distinguish these accounts.
+
+To test the concern, examine a comparable portfolio of **evaluated initiatives**, not just approved features. For each, record the problem evidence available at the decision, alternatives considered, exposure to AI-assisted work, reason for admission or stopping, time and capacity invested, and later user outcome or useful learning. Include rejected and abandoned experiments. Look at **value or justified learning per invested effort**, not the percentage of prototypes shipped. Ask who had authority to expand the commitment and what existing work was displaced.
+
+**What would weaken the adverse hypothesis?** Comparable selection quality and stronger downstream outcomes despite cheaper implementation, including valuable discarded experiments, would limit a claim that weak intent selection is deteriorating in that setting. **What would weaken the proposed remedy [INT-2](appendices/mechanism-hypotheses.md#intent--int-1-and-int-2)?** If an extra decision brief, explicit stop criterion, or product-owner check costs time without improving decisions, learning, or value against the team's *real previous practice*, it may not be worth retaining. A prettier backlog is not evidence of better Intent.
+
+### The decision before the project plan
+
+Before committing to implementation, the accountable product or portfolio owner should be able to answer a small number of consequential questions in ordinary language: Which observed need are we addressing? What outcome would count as useful? What other option might serve it? What could make us stop? What will the team have to own if the experiment succeeds?
+
+The answer need not be a long document. A short decision shared by the people who bear the trade-offs may be better than an elaborate generated plan nobody can explain. Where these decisions are already made well, **leave the process alone or make it cheaper**. Where they are missing and later harm is observable, improve selection before increasing the rate of commitments.
+
+**Evidence boundary:** the repository's INT-1 and INT-2 verdicts are both **Open**. Existing coding-activity, deployment, marketplace, or management-survey results do not directly establish AI-caused deterioration of organizational Intent, nor the incremental benefit of this proposed selection practice. [The source and hypothesis register](appendices/mechanism-hypotheses.md#intent--int-1-and-int-2) owns the open research question; [the retained management-record discussion](#what-management-records-actually-show) remains relevant context, not causal proof.
+
+---
+
+## Chapter 4. Requirements — generated text is not shared meaning
+
+Intent selects a problem worth addressing. **Requirements** turn that intent into behavior and constraints people can understand, test, and accept. A generated specification can describe an entire interface in seconds. It may also describe the *wrong rule* in confident, consistent language. The engineering challenge is not to slow down drafting; it is to ensure that the meaning behind the draft belongs to the people entitled to make the decision.
+
+A requirement supplies more than words. It helps a team **discover ambiguity, negotiate scope, agree on consequential domain rules, define acceptance from an accountable perspective, and preserve meaning as design, code, tests, and operations evolve**. These functions can be carried by examples, conversations, executable checks, short policy records, or tools. They do not require a universal document format or a second bureaucracy.
+
+### Faster drafts can reveal gaps — or conceal disagreement
+
+AI can generate alternative use cases, summarize a conversation, search for missing branches in a flow, or suggest edge cases for a domain expert to judge. This may improve a weak manual process and reduce routine transcription. An agent may also produce polished language before the people involved have agreed on the meaning. **Apparent completeness can hide unresolved authority.**
+
+Suppose a product manager says “make recovery simple,” an engineer assumes that a verified email address is enough, and a security owner understands “identity independently confirmed” to require something else. An agent might generate requirements, implementation, and tests that all agree with the engineer's assumption. The suite could pass while the intended policy is violated. In this **hypothetical scenario**, the danger is a *shared mistaken assumption*, not a measured AI defect rate or proof that generated tests are generally unreliable.
+
+The previous human process may have had precisely the same problem: vague tickets, informal exceptions, inaccessible domain experts, or tests written from the implementer's assumptions. The fair comparison is **actual previous requirements practice versus a specified AI-assisted practice**, for changes of similar risk and scope, not an ideal human specification versus an unchecked agent.
+
+### The same recovery policy, now expressed as requirements
+
+Carry the hypothetical policy from [Chapter 3](#a-hypothetical-recovery-decision) **without changing its meaning**:
+
+**Account access may be restored only after identity has been independently confirmed by the service's approved process. No payout destination may be changed before that confirmation.**
+
+This says what the service must uphold; it does **not** yet define which identity evidence is sufficient, which accessibility route applies when the usual method is unavailable, or how disputes are resolved. Those are unresolved domain decisions. A generator must not silently settle them by inventing a convenient check.
+
+A product/domain owner, with security and operations input, could agree on independent examples before implementation:
+
+| Situation (hypothetical) | Agreed expectation | Decision still owned by people |
+| --- | --- | --- |
+| A legitimate customer loses both factors and completes the service's independently approved identity check | Restoring access **may** proceed subject to other applicable rules | What evidence makes the identity check valid, and who handles exceptions |
+| A request arrives without independently confirmed identity | Do **not** restore access or change the payout destination based on that request | How the customer can safely continue or appeal |
+| A request tries to change the payout destination while identity remains unconfirmed | Do **not** make that change | Additional rules that may still apply **after** confirmation |
+| A generated recovery test assumes access can be restored through an unconfirmed email link alone | The test is **not** an adequate oracle for this policy, even if its implementation passes | Which independently grounded cases must challenge the shared assumption |
+
+These are **proposed acceptance examples for an invented service**, not measured observations, comprehensive fraud controls, an exhaustive recovery design, or a requirement that every team introduce manual approval for every task. They deliberately leave undecided matters visible. For a real product, domain experts must set and accept its actual policy, including the competing harms of exclusion and unauthorized access.
+
+### What checking must remain independent of drafting?
+
+The critical distinction is between **a test that agrees with a generated implementation** and **a test that checks the agreed domain meaning**. The first can be useful, but agreement among requirements, code, and tests produced from the same flawed assumption will not challenge the assumption itself. Independently grounded examples or a trusted acceptance oracle can break that common-source dependency. “Independent” here means **independent grounding of the expectation**, not a universal requirement for a separate department or a human to manually approve every generated artifact.
+
+A domain owner should be able to explain which behavior is acceptable in an unseen case. An engineer should be able to find how that rule reached the implementation and tests. If the policy changes, the team needs a way to update the relevant checks and downstream understanding without preserving a mountain of stale links. Traceability is useful to the extent that someone can **locate a disputed assumption, correct it, and verify the correction**.
+
+Useful substitutes are allowed. A well-maintained executable example, a reliable domain contract, or an automated cross-check against independently supplied policy may be more effective than a long requirements document. Its effectiveness is something to demonstrate in the relevant context, not infer from having more text or more test cases.
+
+### Compare harm and remedy separately
+
+The adverse hypothesis, [REQ-1](appendices/mechanism-hypotheses.md#requirements--req-1-and-req-2), is that rapid drafting might allow unresolved domain assumptions to propagate into code and generated tests, producing semantic rework or failures. Alternatives include **better examples, earlier domain involvement, improved task selection, effective existing checks, or a less ambiguous project**. A low number of requirement defects after AI adoption could reflect successful assistance, not hidden debt.
+
+A useful local comparison would select similar domain changes and record their **actual** prior process, AI exposure or drafting method, independent domain cases, resolution of disagreements, effort spent checking meaning, and later semantic corrections or user failures. Follow changes beyond the merge where possible. Separate mistakes in policy formulation from implementation bugs; passing more generated tests is not sufficient evidence either way.
+
+The proposed remedy, [REQ-2](appendices/mechanism-hypotheses.md#requirements--req-1-and-req-2), is to ground consequential acceptance examples and maintain useful traceability. **What would weaken REQ-1?** Clearer AI-assisted requirements with stable or lower semantic error/rework, at comparable risk, weaken the prediction of harm. **What would weaken REQ-2?** If extra oracle-building, review, or linking does not reduce meaningful errors or improve understanding enough to justify its total cost relative to the *unchanged real process*, the remedy is not established. An added checkpoint that merely moves work elsewhere is not an improvement.
+
+The product/domain and engineering owners should agree on the acceptable behavior and necessary quality floor; they also bear the costs of defining and maintaining it. Work can be more valuable with **less specification prose** if the required shared meaning, decision rights, and correct behavior survive. What matters is the accepted rule and the team's ability to maintain it.
+
+**Evidence boundary:** both REQ-1 and REQ-2 remain **Open** in the [requirements card](appendices/mechanism-hypotheses.md#requirements--req-1-and-req-2). The recovery-policy example demonstrates a plausible propagation failure and a way to test for it. It establishes neither the incidence of that failure nor a measured benefit of independent acceptance checks. These unanswered comparisons belong to [research issue #90](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/90), not to an assumed result of this chapter rewrite.
+
+### The handoff that matters
+
+Before implementation, the smallest useful handoff is not necessarily a detailed document. It is a **shared account of the consequential rules and a way to tell when behavior violates them**, with the right person able to resolve a dispute. Then Design, Code, Review, and Test can change form and speed without losing their common purpose.
+
+**Next:** Chapter 5 will examine **Design** under its separately owned editorial issue. The current report deliberately leaves that work unimplemented until [#133](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/133) is approved.
+
+---
+
 ## Detailed research and earlier-edition sections
 
-**The new seventeen-chapter sequence currently stops here.** The numbered sections below are **retained research detail from the earlier edition**, not a continuation of the new chapter numbering. Their old headings and deep links remain intact while later editorial issues reorganize them. The underlying findings and citations are still available; the new introduction does not replace their evidence.
+**The new seventeen-chapter sequence currently stops after Chapter 4.** The numbered sections below are **retained research detail from the earlier edition**, not a continuation of the new chapter numbering. Their old headings and deep links remain intact while later editorial issues reorganize them. The underlying findings and citations are still available; the new chapters do not replace their evidence.
 
 ## Chapter 1. What Productivity Studies Measure: Task Time and Delivery Outcomes
 
