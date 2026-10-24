@@ -1,0 +1,20 @@
+record_version = 1
+title = "Issue #133: Design chapter 5 and changed-use Agarwal source audit"
+primary_flow = "Flow D — new material Design-chapter use of unchanged P-2026-02 arXiv v2 original, with approved single-chapter editorial synthesis"
+human_decision = "Maintainer explicitly said 'Пиши' after #125 closed and #133 was proposed on 2026-10-24. Approved Chapter 5 Design only in existing Part1, no new research, protocols, site deployment or chapter6."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "Adds a complete reader-facing Design Chapter 5 and changed P-2026-02 research-use interpretation; updates Part1 navigation and evidence-status audit."
+
+[synchronization]
+assessed_surfaces = ["report", "reader-navigation", "source-registry", "evidence", "evidence-indexes", "references", "governance", "contributor-guidance", "history", "doctrine", "repository-architecture", "protocols"]
+
+[synchronization.non_applicable]
+evidence-indexes = "No new source classification or source object. Existing arXiv v2 citation and index remain accurate."
+references = "Existing source identity, authors, version and source bibliography remain unchanged; new direct relying use is a chapter inside the already-listed report path."
+contributor-guidance = "No changes to contributor obligations or technical workflow."
+doctrine = "No new empirical claim type, theory status rule or canonical terminology; DES-1/DES-2 remain Open."
+repository-architecture = "Three accepted Option A report Markdown files and route slugs unchanged. Ch5 is inside existing report/01_the_illusion.md."
+protocols = "The hypothetical recovery system options are examples, not new security/authorization requirements, universal checks, thresholds or protocol decisions."
