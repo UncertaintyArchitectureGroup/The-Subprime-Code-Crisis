@@ -169,3 +169,17 @@ next actions where a PR cannot record its own future merge. Rebuild/verify RI
 after memory changes. RI verifies local bytes and reproduces source fields; it
 does not fetch GitHub or decide whether an issue, review or scientific audit is
 complete. Missing live access stays unresolved.
+
+### Within-issue session checkpoint
+
+Follow the canonical [within-issue checkpoint rule](../AGENTS.md#within-issue-checkpoints-and-end-of-session-reporting):
+after each meaningful subtask and before a deliberate session handoff, return to
+the owning issue, reconcile completed/partial/open ACs and actual PR/review/check
+evidence, and maintain its **complete** status-, priority- and
+dependency-ordered subtask list. Present one next actionable subtask **within
+that issue** and the remaining closure conditions. The user-facing closing
+report also shows the separately maintained cross-issue priorities from #84.
+A substantive plan or priority-commitment change needs the maintainer's
+decision; a routine in-scope reorder needs a recorded reason, not repeat approval.
+At unexpected interruption, recover from live state without fabricating a
+missed session checkpoint. No new workflow or verification state is created.

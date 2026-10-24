@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "1424e35ac128fb2b5c956bee69c6813df51e0f533b609335b3350169de7b439f",
+    "digest": "5a7d2eed38ec0e8ea72410435cd6fd2cb6a0536ddabb15e2612170cc9ae92d67",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -52,7 +52,7 @@
       {
         "path": "AGENTS.md",
         "identity_mode": "content",
-        "sha256": "a09ba433512d6f440c23679990c5cd2f2c3c083becb80d4759281afff49e44b8"
+        "sha256": "17af07147ca45657df275ccd86e065991b15c2782422afffca4ddc7ed2a7e846"
       },
       {
         "path": "ARTIFACT_MODEL.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "537a5babfa15d2f4395ce355c66f87785a571bb3491667160bd748ca1ad071ee"
+        "sha256": "892ac7dd7dce663a1e83943667ce725a45d30baf7e08ef1fbc9291c916ec8d03"
       },
       {
         "path": "CITATION.cff",
@@ -72,7 +72,7 @@
       {
         "path": "CONTRIBUTING.md",
         "identity_mode": "content",
-        "sha256": "0e8cfc33bfce93db7434a1d4037abc1fcb9d192ba08e8c55065d508f06ae9ecf"
+        "sha256": "6fa3c3228a3bbad03581ce0aa3c51b196d81e7e271a79d5cf8422390de15e54e"
       },
       {
         "path": "DOCTRINE.md",
@@ -387,12 +387,12 @@
       {
         "path": "governance/issue-workflow.md",
         "identity_mode": "content",
-        "sha256": "7e109fa450beef33edf0fb5b6e056673114dc9dccb7718b722d852a8a1c0580e"
+        "sha256": "2ea9dc9e3294a04d168b6f17437b7152ac9b3a8ef842f7f19d459fddbd947322"
       },
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "6acd17212c23047bb366582d6e271f83248c71b230dcb8cb752bbc4c6e91247d"
+        "sha256": "aa9365fac78d2528ce817b442efcf68cea4368c0873c957766128560752ccaef"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -508,6 +508,11 @@
         "path": "governance/reviews/issue-123-2026-10-24-readme-route-audit.md",
         "identity_mode": "content",
         "sha256": "03ffb030069413795cdbc81a87a31718e740f7c10d12eba0c24e9550b83feb29"
+      },
+      {
+        "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
+        "identity_mode": "content",
+        "sha256": "aaaea3002565099e3b16cc4a5adb12b840920be40332ce315f709378f5f44085"
       },
       {
         "path": "governance/reviews/issue-4-2026-10-22-final-verification.md",
@@ -908,6 +913,11 @@
         "path": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
         "identity_mode": "content",
         "sha256": "998fea3ff4b9e8f9e68cdf2330c6ff805c37b4e9178b96a96f78bafa361bf803"
+      },
+      {
+        "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
+        "identity_mode": "content",
+        "sha256": "1d48c5244e773d7cfb20bf991b9a9ed8ccb61179b48b326b12ffb467c00919a4"
       },
       {
         "path": "governance/work-records/README.md",
@@ -2699,6 +2709,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
+      "title": "Issue #136 — Within-issue checkpoint governance assessment",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-4-2026-10-22-final-verification.md",
       "title": "#4 — final source verification after accepted main",
       "instructions": [
@@ -3254,6 +3271,13 @@
     {
       "path": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
       "title": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
+      "title": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
       "instructions": [
         "AGENTS.md"
       ]

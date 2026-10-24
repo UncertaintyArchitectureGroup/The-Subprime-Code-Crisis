@@ -1,0 +1,23 @@
+record_version = 1
+title = "Issue #136: Within-issue progress and session handoff rule"
+primary_flow = "Maintainer-approved governance clarification of existing one-issue workflow; no Flow A-E"
+human_decision = "Maintainer explicitly requested AGENTS.md rule on 2026-10-24, tracked in issue #136. Clarify existing within-issue reporting without new gate, status, or second master plan."
+independent_review = "Review unavailable"
+
+[changelog]
+decision = "Updated"
+reason = "New explicit per-session, within-issue progress/priorities reporting obligation for contributors and agents."
+
+[synchronization]
+assessed_surfaces = ["governance", "contributor-guidance", "history", "reader-navigation", "doctrine", "repository-architecture", "source-registry", "evidence", "evidence-indexes", "references", "report", "protocols"]
+
+[synchronization.non_applicable]
+reader-navigation = "README research navigation and existing contribution links remain accurate; reporting obligation is in canonical AGENTS, contributor guide and existing issue workflow."
+doctrine = "No research interpretation rule, claim class, term or source-state change."
+repository-architecture = "No site, render route, page, source architecture or artifact boundary change."
+source-registry = "No source identity, evidence review, current use or integration-state change."
+evidence = "No evidence brief or factual source interpretation changed."
+evidence-indexes = "No classification or source-index change."
+references = "No bibliography or citation change."
+report = "No report claim, number or argument changed."
+protocols = "No operational recommendation, role, guard, metric or intervention change."
