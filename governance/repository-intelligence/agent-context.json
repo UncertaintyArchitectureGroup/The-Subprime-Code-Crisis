@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "348bc6adb837daa6699f2af989b68d32269a619655fb0c411268eddc45bdf3c3",
+    "digest": "9972edac21c1450cae22ee818f8604f0bc39ec716ddc2c1e3b457636ce53b3ac",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -392,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "765b6d623ae52cb72dcc1071578d301960368346a13f76e4b017ee77a5262bc6"
+        "sha256": "3059a53ff97468e2c2b3ef98f34db078ca313f7d8c48e95f5f811079bee32de4"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -502,7 +502,7 @@
       {
         "path": "governance/reviews/issue-123-2026-10-24-readme-route-audit.md",
         "identity_mode": "content",
-        "sha256": "60d185545359139d6957e25afc083631dc1e165a66855222ac0153713f1bc54c"
+        "sha256": "03ffb030069413795cdbc81a87a31718e740f7c10d12eba0c24e9550b83feb29"
       },
       {
         "path": "governance/reviews/issue-4-2026-10-22-final-verification.md",
@@ -897,7 +897,7 @@
       {
         "path": "governance/work-records/2026-10-24-issue-123-readme-inventory.toml",
         "identity_mode": "content",
-        "sha256": "67d0f4b55f33ff302c9a91f1285fc0bcec9c11a4382a3fc5fbffac431e9d70ac"
+        "sha256": "597937d3a6a7e7aa8a52ca5bce2dcc4c8e5e50ea2d0a33f6b9a23cbd432f50d2"
       },
       {
         "path": "governance/work-records/README.md",
