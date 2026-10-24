@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "aeb6893f9802ad3b476517b2d7a3b6128bccff06b9f9126212a269d88169ab5b",
+    "digest": "348bc6adb837daa6699f2af989b68d32269a619655fb0c411268eddc45bdf3c3",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -30,54 +30,9 @@
         "sha256": "af43fc6d19efec9e886a2f0caa6f4658585044ef43157040f04f23ad0b4a1c42"
       },
       {
-        "path": ".github/issue123-bootstrap/part01.txt",
-        "identity_mode": "content",
-        "sha256": "e592410702de01da20c0ee0730367b601e0efd5a64f00acfe7015d7925a2d6ef"
-      },
-      {
-        "path": ".github/issue123-bootstrap/part02.txt",
-        "identity_mode": "content",
-        "sha256": "9e15d427db174a182f9f26542c4150e51d49d4f8b76f3e8444c21854c019bb51"
-      },
-      {
-        "path": ".github/issue123-bootstrap/part03.txt",
-        "identity_mode": "content",
-        "sha256": "5b7c832c076888ae9cdb91e3c8e1de1367d39f5ed323875f16734d6bd85f0994"
-      },
-      {
-        "path": ".github/issue123-bootstrap/part04.txt",
-        "identity_mode": "content",
-        "sha256": "170371c9996c11cc63b8964c8709e1293318e9205b74edd94445463f38deb8b8"
-      },
-      {
-        "path": ".github/issue123-bootstrap/part05.txt",
-        "identity_mode": "content",
-        "sha256": "3321cce67f6d0035ff4b00a69ee288e1422a4a4bcd367ba51b050843758fb353"
-      },
-      {
-        "path": ".github/issue123-bootstrap/part06.txt",
-        "identity_mode": "content",
-        "sha256": "965685654031bd237a0d1f79642da89208d006e0bc5f9ea10a47289974e3e509"
-      },
-      {
-        "path": ".github/issue123-bootstrap/part07.txt",
-        "identity_mode": "content",
-        "sha256": "92cdd259d10112740e0a59dc173d120e72eff593d4f0a427bbe72bc5bde8209b"
-      },
-      {
-        "path": ".github/issue123-bootstrap/part08.txt",
-        "identity_mode": "content",
-        "sha256": "140628abfd6243a5c2358e988d9e367b8def74a51d08c25c07a1f1cd623f02f5"
-      },
-      {
         "path": ".github/pull_request_template.md",
         "identity_mode": "content",
         "sha256": "6238ed21d57c12c1c9de75143dbd91c56ec3f7aaf0ec32302f99b9c8017e3978"
-      },
-      {
-        "path": ".github/workflows/issue-123-remote-apply.yml",
-        "identity_mode": "content",
-        "sha256": "5be3866b3b598595ea1a103db95a4740105bb604f50d87faba426a5bcc641aae"
       },
       {
         "path": ".github/workflows/main-health.yml",
@@ -2062,71 +2017,8 @@
       ]
     },
     {
-      "path": ".github/issue123-bootstrap/part01.txt",
-      "title": ".github/issue123-bootstrap/part01.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/issue123-bootstrap/part02.txt",
-      "title": ".github/issue123-bootstrap/part02.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/issue123-bootstrap/part03.txt",
-      "title": ".github/issue123-bootstrap/part03.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/issue123-bootstrap/part04.txt",
-      "title": ".github/issue123-bootstrap/part04.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/issue123-bootstrap/part05.txt",
-      "title": ".github/issue123-bootstrap/part05.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/issue123-bootstrap/part06.txt",
-      "title": ".github/issue123-bootstrap/part06.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/issue123-bootstrap/part07.txt",
-      "title": ".github/issue123-bootstrap/part07.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/issue123-bootstrap/part08.txt",
-      "title": ".github/issue123-bootstrap/part08.txt",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
       "path": ".github/pull_request_template.md",
       "title": ".github/pull_request_template.md",
-      "instructions": [
-        "AGENTS.md"
-      ]
-    },
-    {
-      "path": ".github/workflows/issue-123-remote-apply.yml",
-      "title": ".github/workflows/issue-123-remote-apply.yml",
       "instructions": [
         "AGENTS.md"
       ]
