@@ -2,32 +2,32 @@
 
 ## Snapshot
 
-- 2026-10-24: PR #118 is merged; accepted main is `7e40c0b7930d4a014483b51eda68dbed802c73e7`, tree `26a0659a28edb927650ac168a2a8894042459ebc`.
-- #119 is completed; #120 records final verification of seven unchanged source uses.
-- Revalidate live issue/PR/main/checks. This candidate does not claim its own future merge or completion.
+- 2026-10-24: selected issue #123 is the sole active implementation task; base `main` is `0aaccd7311af65727ddf0077f9ca605def967d22`.
+- Candidate changes the public README entry and resets only P-2026-01/P-2026-04 integration for the new condensed uses. It does not claim merge, actual-main acceptance, final verification or publication.
+- Revalidate live issue/PR/main/check state before continuing.
 
 ## Active owners
 
 - [#84](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/84) remains the sole live master plan.
-- [#100](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/100) owns the approved management-evidence scope.
-- [#120](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/120) owns the narrow final-status PR; #121 owns later parent closeout.
-- #88/#1 and held candidates retain their existing boundaries and are not started here.
+- [#88](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88) owns the first readable edition; [#123](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/123) owns the selected README/route slice.
+- #89–99 retain research ownership; #124–133 remain queued editorial units and are not started.
+- #74 and draft PR #75 retain report-publication ownership; no deployment is part of #123.
 
 ## Decisions
 
-- Exact T1–T4 approved in6381868126; #120 selected in6382964826.
-- Preserve findings, versions, Current use, #61 corrections, Open causal verdicts and all protocols/governance.
-- Do not repeat accepted source research or introduce a new review or approval layer.
+- Exact README V2: #88 comments6383504860 +6383542436; proposal recheck6383555588.
+- Route options are recorded; recommendation is to retain three canonical report files and stable URLs. Maintainer decision remains pending.
+- Preserve the September P-2026-01 object, 4 August P-2026-04 object, positive/uncertain findings, alternatives, protocols and all unrelated source states.
 
 ## Evidence
 
-- [All-use trace](reviews/issue-100-2026-10-24-integration.md) and source review6382139265 cover the seven originals and uses.
-- Recording review6382356701 and actual-main review6382855174 are Confirmed within scope.
-- Actual-main Main health40084096474 passed; accepted tree is byte-identical to the reviewed candidate.
-- [Final-verification record](reviews/issue-120-2026-10-24-final-verification.md) explains the eligible status/date pairs and unchanged content.
+- [#123 changed-use and route audit](reviews/issue-123-2026-10-24-readme-route-audit.md) owns occurrence checks, synchronization and #74/PR75 dispositions.
+- README V2 complete candidate SHA-256 is `ed0f1c71add5ce858c0bbdb466181dce8b15aa981c286f1e59436bc6b70f8869`; opening SHA-256 is `dd69cb6aabdd849ecceba21666cb2b9040c4fcbf1cf0979807adbdd46852f1f2`.
+- Candidate source state is Reviewed brief / Needs re-verification / — for P-2026-01 and P-2026-04. Independent implemented-byte review is not yet recorded.
 
 ## Next actions
 
-- Check the live #120 metadata PR outcome and required checks; merge only after actual independent acceptance.
-- If already merged, inspect exact main/tree/CI and finish #120 rather than rebuilding the same change.
-- Stop after the #120 report. Parent #100 closure and current #84 entry-point reconciliation remain #121.
+- Obtain the maintainer's A/B route decision and record it without creating architecture in #123.
+- Independently review the published candidate bytes and resolve findings; run required candidate checks.
+- Merge only after acceptance, verify actual main, then complete a narrow final-status step for the two changed uses inside #123.
+- After #123 is complete, reread #84 and present the full plan plus #124 as the one next proposal; do not start it without approval.

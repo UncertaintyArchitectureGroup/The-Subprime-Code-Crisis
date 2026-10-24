@@ -1,13 +1,37 @@
 +++
 source_ids = ["P-2026-04"]
 evidence_review = "Reviewed brief"
-integration_audit = "Verified"
-last_verified = "2026-10-23"
+integration_audit = "Needs re-verification"
+last_verified = "—"
 independent_review = "Confirmed"
 current_use = ["README.md", "report/01_the_illusion.md", "report/02_broken_mechanics.md", "report/appendices/mechanism-hypotheses.md", "REFERENCES.md"]
 +++
 
 # Chen–Stratton: AI adoption and firm software production
+
+## README opening changed-use checkpoint — 2026-10-24, #123
+
+The maintainer selected the exact corrected README V2 in
+[#88 comments 6383504860 and 6383542436](https://github.com/UncertaintyArchitectureGroup/The-Subprime-Code-Crisis/issues/88#issuecomment-6383542436).
+This unchanged **4 August 2026** source supports a condensed opening use that
+preserves positive coding-activity estimates, the smaller uncertain tracked-
+completion estimate and the reported **3.45 additional elapsed days** over a
+**7.03-day** baseline, approximately **49.1%**, after agent adoption.
+
+Coding and tracked-completion outcomes are measured per active worker-month where
+applicable. The 49.1% comparison is PR submission-to-merge **elapsed time**, not
+active reviewer labor. Adoption is observational and non-random; material
+pre-period movement limits causal interpretation. The source supplies no formal
+between-outcome test, no proof of zero completion benefit and no universal review
+saturation, defect, ownership or downstream-harm result.
+
+The [#123 occurrence audit](../../governance/reviews/issue-123-2026-10-24-readme-route-audit.md)
+checks the new README use and retained report/register/bibliography uses. Source
+identity, findings, accepted version and `Current use` are unchanged. Flow D
+retains **Evidence review = Reviewed brief** and resets integration to **Needs
+re-verification / —** pending independent implemented-byte review, accepted merge,
+required checks and actual-main acceptance. **Protocol outcome: No protocol
+change.** Final verification is not inferred from this checkpoint.
 
 ## Final integration checkpoint — 2026-10-23, #110
 
