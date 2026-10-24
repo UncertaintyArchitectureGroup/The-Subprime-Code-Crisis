@@ -17,7 +17,7 @@
   ],
   "source_identity": {
     "algorithm": "sha256-path-content-v2",
-    "digest": "ec0f1dfd8ab643de2d60ec4e7ef8b5987d691fbeec8e83460a8cbfc2ad79fb5f",
+    "digest": "b0008b18e51a0f5db0e6718a798f1b3bdbf49e89e48b96ed6ec2e16d393695a4",
     "inputs": [
       {
         "path": ".github/ISSUE_TEMPLATE/research-input.md",
@@ -62,7 +62,7 @@
       {
         "path": "CHANGELOG.md",
         "identity_mode": "content",
-        "sha256": "e177ff49ee33e777ac73d786dae54a2dc97ee8c9c074ae4c2d6ad9d858ba9077"
+        "sha256": "c65ddbb2f30aa5b0e2dcdcab0c9bd00a31ad4ae14ab83dcfc1bd6938153a17f6"
       },
       {
         "path": "CITATION.cff",
@@ -392,7 +392,7 @@
       {
         "path": "governance/memory.md",
         "identity_mode": "content",
-        "sha256": "cb8d226c689a36e19b6ab1ac81d5719debeda3d82f75178d5f340bba8a67ea6d"
+        "sha256": "13e1266c7788cc4d2087133c7ed384b756bc4ec407adc77e39f61c6797d9e0e8"
       },
       {
         "path": "governance/pr-process-and-synchronization.md",
@@ -523,6 +523,11 @@
         "path": "governance/reviews/issue-124-2026-10-24-independent-substantive-review.md",
         "identity_mode": "content",
         "sha256": "02ea8db61451f97b450df113159855ba8ee3c6fe93dfd6a8d57e6c9c56573656"
+      },
+      {
+        "path": "governance/reviews/issue-125-2026-10-24-intent-requirements-source-route-audit.md",
+        "identity_mode": "content",
+        "sha256": "4ab2deeec1f9d98cb7bcab6b761b210d8b02eed5c28755a27d00d6ada8286334"
       },
       {
         "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
@@ -940,6 +945,11 @@
         "sha256": "5fb8e6757ce4bce5109c788e092a7e347a581e0f6ce936d12f7c675940925f44"
       },
       {
+        "path": "governance/work-records/2026-10-24-issue-125-intent-requirements.toml",
+        "identity_mode": "content",
+        "sha256": "d0b2e2631c3a4d7ef8eb99a19b6ac7ec416cfd3fda6922416ea556f7a7260805"
+      },
+      {
         "path": "governance/work-records/2026-10-24-issue-136-session-checkpoints.toml",
         "identity_mode": "content",
         "sha256": "1d48c5244e773d7cfb20bf991b9a9ed8ccb61179b48b326b12ffb467c00919a4"
@@ -977,7 +987,7 @@
       {
         "path": "report/01_the_illusion.md",
         "identity_mode": "content",
-        "sha256": "4ecd5864696cd62694e01c5636e13f1c98deb428e5f71f899bbcfcf34040b712"
+        "sha256": "65335f69b3f15807295d8acd9b159becc30ecf086fb3fa381e736dcdf8c885f8"
       },
       {
         "path": "report/02_broken_mechanics.md",
@@ -2755,6 +2765,13 @@
       ]
     },
     {
+      "path": "governance/reviews/issue-125-2026-10-24-intent-requirements-source-route-audit.md",
+      "title": "Issue #125 — Intent and Requirements: source, rival and route audit",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
       "path": "governance/reviews/issue-136-2026-10-24-session-governance-assessment.md",
       "title": "Issue #136 — Within-issue checkpoint governance assessment",
       "instructions": [
@@ -3331,6 +3348,13 @@
     {
       "path": "governance/work-records/2026-10-24-issue-124-thesis-sdlc.toml",
       "title": "governance/work-records/2026-10-24-issue-124-thesis-sdlc.toml",
+      "instructions": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "governance/work-records/2026-10-24-issue-125-intent-requirements.toml",
+      "title": "governance/work-records/2026-10-24-issue-125-intent-requirements.toml",
       "instructions": [
         "AGENTS.md"
       ]
