@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-24 — Within-issue session reporting (#136)
+
+- Require each meaningful subtask and deliberate session handoff to reconcile the **owning issue** with real progress, AC evidence and a full priority/dependency-ordered remaining plan.
+- Require closing status reports to name the next task **inside the same issue**, completion blockers and the separately sourced #84 cross-issue sequence. Preserve existing approvals, reviews and source-state rules; no new workflow or gate.
+
 ## 2026-10-24 — Reader entry and route inventory (#123)
 
 - Replace the public README opening with the approved V2 reader path: audience, bounded evidence, mechanism/alternatives, first action and three principal routes.
